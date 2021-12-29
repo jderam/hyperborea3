@@ -23,5 +23,13 @@ run_test_flask: ## Run flask test server
 	FLASK_DEBUG=1
 	flask run
 
+docker_build: ## build the docker container
+	docker build -t hyperborea-app .
+
+docker_run: ## run the docker container
+	docker run --detach --publish 8000:8000 hyperborea-app
+
+docker_build_and_run: docker_build docker_run ## build AND run!!!
+
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
