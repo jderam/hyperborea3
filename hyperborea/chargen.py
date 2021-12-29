@@ -1,9 +1,10 @@
+from pathlib import Path
 import random
 import sqlite3
-from typing import Dict
+from typing import Dict, List
 
 
-DB = "hyperborea.sqlite3"
+DB = f"{Path(__file__).parent}/hyperborea.sqlite3"
 con = sqlite3.connect(DB)
 con.row_factory = sqlite3.Row
 c = con.cursor()
@@ -53,8 +54,11 @@ def class_name_to_id(class_name: str):
     return class_id
 
 
+def class_id_to_name(class_id: int) -> str:
+    c.execute("SELECT class_name FROM classes WHERE class_id = ?;", (class_id,))
+    return dict(c.fetchone())["class_name"]
+
 def get_class_requirements(class_id: int):
-    print(class_id) # debug
     c.execute("SELECT * FROM class_attr_req WHERE class_id = ?;", (class_id,))
     return [dict(x) for x in c.fetchall()]
 
@@ -175,6 +179,28 @@ def get_attr(method: int = 3, class_id: int = 0) -> Dict:
         mods = get_attr_mod(stat, score)
         attr[stat] = mods
     return attr
+
+
+def get_qualifying_classes(attr: Dict) -> List[int]:
+    """ Return list of class_ids that can be used given the attr.
+    """
+    # Okay, this isn't the easiest code to parse. ¯\_(ツ)_/¯
+    c.execute("SELECT * FROM class_attr_req;")
+    class_req = [dict(x) for x in c.fetchall()]
+    not_met = list(set([x["class_id"] for x in class_req if x["min_score"] > attr[x["attr"]]["score"]]))
+    qual_classes = list(set([x["class_id"] for x in class_req if x["class_id"] not in not_met]))
+    return qual_classes
+
+
+def select_random_class(attr: Dict) -> int:
+    """ Given a set of stats, determine an appropriate class.
+        1. Find all qualifying classes by checking stat requirements.
+        2. Randomly choose from among them.
+        TODO: Might decide to add weighting based on primary attributes.
+    """
+    qual_classes = get_qualifying_classes(attr)
+    class_id = random.choice(qual_classes)
+    return class_id
 
 
 def ac_to_aac(ac: int):

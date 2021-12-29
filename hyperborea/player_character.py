@@ -1,9 +1,13 @@
 import json
 from typing import List
-from chargen import (
+from hyperborea.chargen import (
+    ac_to_aac,
+    class_id_to_name,
     class_name_to_id,
     get_attr,
+    select_random_class,
 )
+
 
 class PlayerCharacter:
     def __init__(
@@ -15,27 +19,34 @@ class PlayerCharacter:
     ):
         # Always use Method VI if a specific class is chosen
         if selected_class.lower() != "random":
-            method = 6
+            self.method = 6
             self.class_id = class_name_to_id(selected_class)
-        self.method: int = method
+            self.class_name = class_id_to_name(self.class_id)
+            self.attr = get_attr(
+                method=self.method,
+                class_id=self.class_id,
+            )
+        else:
+            self.method: int = method
+            self.attr = get_attr(
+                method=self.method,
+                class_id=0,
+            )
+            self.class_id = select_random_class(self.attr)
+            self.class_name = class_id_to_name(self.class_id)
         
-        # Convert selected_class to class_id
-        self.class_id = None
-        
-        self.name = ""
-        
-        self.class_name = ""
-        self.race_id = 0
-        self.race_name = ""
         self.xp: int = xp
         self.level: int = 0
-        self.attr = get_attr(
-            method=method,
-            class_id=class_name_to_id(selected_class),
-        )
+
+        self.hd = 0
         self.hp = 0
+        self.name = ""
+        self.race_id = 0
+        self.race_name = ""
+
+        
         self.ac = 0
-        self.aac = 0
+        self.aac = ac_to_aac(self.ac)
         self.fa = 0
         self.ca = 0
         self.ta = 0
@@ -49,8 +60,10 @@ class PlayerCharacter:
                 "sorcery": 0,
             },
         }
-        self.mv = 0
+        
         self.armour = []
+        self.shields = []
+        self.mv = 0
         self.weapons = []
         self.gear = []
 
