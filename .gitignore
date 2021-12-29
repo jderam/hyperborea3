@@ -1,5 +1,11 @@
 *__pycache__*
 *.ipynb*
+.pytest_cache/
 .python-version
+.vscode
+hyperborea.egg-info
+hyperborea.sqlite3
 settings.json
 *.pyc
+build/
+dist/
