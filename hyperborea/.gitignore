@@ -1,2 +1,5 @@
 *__pycache__*
 *.ipynb*
+.python-version
+settings.json
+*.pyc
