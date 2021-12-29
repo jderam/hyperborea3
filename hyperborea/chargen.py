@@ -5,7 +5,7 @@ from typing import Dict, List
 
 
 DB = f"{Path(__file__).parent}/hyperborea.sqlite3"
-con = sqlite3.connect(DB)
+con = sqlite3.connect(DB, check_same_thread=False)
 con.row_factory = sqlite3.Row
 c = con.cursor()
 
@@ -47,7 +47,7 @@ def class_name_to_id(class_name: str):
         class_list = get_class_list()
         class_names = [x["class_name"].lower() for x in class_list]
         if class_name.lower() not in class_names:
-            raise ValueError(f"class name not regognized: {class_name}")
+            raise ValueError(f"class name not recognized: {class_name}")
         class_id_list = [x["class_id"] for x in class_list if x["class_name"].lower() == class_name.lower()]
         assert len(class_id_list) == 1, "Ambiguous result"
         class_id = class_id_list[0]

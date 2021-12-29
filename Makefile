@@ -16,7 +16,12 @@ test: ## run tests
 	python -m pytest tests
 
 gen_requirements_txt: ## Generate a new requirements.txt file
-	@pip-compile requirements.in > requirements.txt
+	pip-compile requirements.in > requirements.txt
+
+run_test_flask: ## Run flask test server
+	FLASK_APP=app
+	FLASK_DEBUG=1
+	flask run
 
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
