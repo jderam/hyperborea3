@@ -203,6 +203,45 @@ def select_random_class(attr: Dict) -> int:
     return class_id
 
 
-def ac_to_aac(ac: int):
+def get_starting_armour(class_id: int) -> List[Dict]:
+    """ Get starting armour by class.
+        The SQL should always return one and only one result.
+    """
+    c.execute("""
+        SELECT a.*
+          FROM starting_armour s
+          JOIN t074_armour a
+            ON s.armour_id = a.armour_id
+         WHERE s.class_id = ?
+    """, (class_id,))
+    result = c.fetchone()
+    armour = dict(result) if result is not None else result
+    return armour
+
+
+def get_starting_shield(class_id: int) -> List[Dict]:
+    """ Get starting shield by class.
+        SQL should return one or zero results.
+    """
+    c.execute("""
+        SELECT ts.*
+          FROM starting_shield ss
+          JOIN t075_shields ts
+            ON ss.shield_id = ts.shield_id
+         WHERE ss.class_id = ?
+    """, (class_id,))
+    result = c.fetchone()
+    shield = dict(result) if result is not None else result
+    return shield
+
+
+def calculate_ac(armour_ac: int, shield_def_mod: int, dx_def_adj: int) -> int:
+    ac = armour_ac
+    ac -= shield_def_mod
+    ac -= dx_def_adj
+    return ac
+
+
+def ac_to_aac(ac: int) -> int:
     aac = 19 - ac
     return aac

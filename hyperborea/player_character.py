@@ -2,9 +2,12 @@ import json
 from typing import List
 from hyperborea.chargen import (
     ac_to_aac,
+    calculate_ac,
     class_id_to_name,
     class_name_to_id,
     get_attr,
+    get_starting_armour,
+    get_starting_shield,
     select_random_class,
 )
 
@@ -45,8 +48,7 @@ class PlayerCharacter:
         self.race_name = ""
 
         
-        self.ac = 0
-        self.aac = ac_to_aac(self.ac)
+
         self.fa = 0
         self.ca = 0
         self.ta = 0
@@ -61,9 +63,16 @@ class PlayerCharacter:
             },
         }
         
-        self.armour = []
-        self.shields = []
-        self.mv = 0
+        self.armour = get_starting_armour(self.class_id)
+        self.shield = get_starting_shield(self.class_id)
+
+        self.ac = calculate_ac(
+            self.armour["ac"],
+            self.shield["def_mod"] if self.shield is not None else 0,
+            self.attr["dx"]["def_adj"],
+        )
+        self.aac = ac_to_aac(self.ac)
+
         self.weapons = []
         self.gear = []
 
