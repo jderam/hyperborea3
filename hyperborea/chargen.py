@@ -203,6 +203,21 @@ def select_random_class(attr: Dict) -> int:
     return class_id
 
 
+def get_alignment(class_id: int) -> Dict:
+    """ Choose a random alignment based on the options available to a given class.
+    """
+    c.execute(f"""
+        SELECT a.*
+          FROM class_alignment ca
+          JOIN alignment a
+            ON ca.align_id = a.align_id
+         WHERE ca.class_id = ?
+    """, (class_id,))
+    allowed_alignments = [dict(x) for x in c.fetchall()]
+    alignment = random.choice(allowed_alignments)
+    return alignment
+
+
 def get_starting_armour(class_id: int) -> List[Dict]:
     """ Get starting armour by class.
         The SQL should always return one and only one result.
