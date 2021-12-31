@@ -1,0 +1,13 @@
+default_language_version:
+    python: python3.10
+
+repos:
+  - repo: 'https://github.com/psf/black'
+    rev: 21.12b0
+    hooks:
+      - id: black
+        args: [--target-version=py310]
+  - repo: 'https://gitlab.com/pycqa/flake8'
+    rev: 4.0.1
+    hooks:
+      - id: flake8

@@ -34,4 +34,3 @@ def hyperborea_character():
         subclasses=subclasses,
         xp=xp,
     ).to_dict()
-

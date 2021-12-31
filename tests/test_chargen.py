@@ -1,22 +1,29 @@
 from pathlib import Path
-import pytest
 from hyperborea.chargen import (
     DB,
     ac_to_aac,
     calculate_ac,
     get_alignment,
     get_attr_mod,
+    get_class_list,
     get_starting_armour,
     get_starting_shield,
 )
 
 
-
 def test_db():
     assert Path(DB).is_file()
 
+
+def test_get_class_list():
+    class_list = get_class_list(subclasses=True)
+    assert len(class_list) == 33
+    class_list = get_class_list(subclasses=False)
+    assert len(class_list) == 4
+
+
 def test_starting_armour():
-    for class_id in range(1,34):
+    for class_id in range(1, 34):
         armour = get_starting_armour(class_id)
         assert list(armour.keys()) == [
             "armour_id",
@@ -27,11 +34,12 @@ def test_starting_armour():
             "mv",
             "cost",
             "weight",
-            "description"
+            "description",
         ]
 
+
 def test_starting_shield():
-    for class_id in range(1,34):
+    for class_id in range(1, 34):
         shield = get_starting_shield(class_id)
         assert shield is None or list(shield.keys()) == [
             "shield_id",
@@ -40,14 +48,14 @@ def test_starting_shield():
             "cost",
             "weight",
         ]
-    
+
 
 def test_calculate_ac():
-    for class_id in range(1,34):
+    for class_id in range(1, 34):
         armour = get_starting_armour(class_id)
         shield = get_starting_shield(class_id)
         shield_def_mod = shield["def_mod"] if shield is not None else 0
-        for dx_score in range(3,19):
+        for dx_score in range(3, 19):
             dx_mod = get_attr_mod("dx", dx_score)
             ac = calculate_ac(
                 armour["ac"],
@@ -57,7 +65,9 @@ def test_calculate_ac():
             # all AC values for starting characters should be 1 to 11 (level 1)
             # This may need updating after we include higher-level PCs,
             #   depending on if they have any abilities that improve AC
-            assert ac in range(1,12), f"""invalid ac:
+            assert ac in range(
+                1, 12
+            ), f"""invalid ac:
                 class_id       = {class_id}
                 armour_ac      = {armour["ac"]}
                 shield_def_mod = {shield_def_mod}
@@ -66,6 +76,7 @@ def test_calculate_ac():
                 ac             = {ac}
             """
 
+
 def test_ac_to_aac():
     for ac in range(-10, 20):
         aac = ac_to_aac(ac)
@@ -73,21 +84,21 @@ def test_ac_to_aac():
 
 
 def test_alignment():
-    for class_id in range(1,34):
+    for class_id in range(1, 34):
         alignment = get_alignment(class_id)
-        if class_id in [1,2,3,7,8,11,13,18,19]:
+        if class_id in [1, 2, 3, 7, 8, 11, 13, 18, 19]:
             allowed_alignments = ["CE", "CG", "LE", "LG", "N"]
-        elif class_id in [4,24,25,26,31]:
+        elif class_id in [4, 24, 25, 26, 31]:
             allowed_alignments = ["CE", "CG", "LE", "N"]
         elif class_id == 10:
             allowed_alignments = ["CG", "LG", "N"]
-        elif class_id in [14,22,30]:
+        elif class_id in [14, 22, 30]:
             allowed_alignments = ["CE", "LE", "N"]
-        elif class_id in [15,16,21,23,29,32]:
+        elif class_id in [15, 16, 21, 23, 29, 32]:
             allowed_alignments = ["CE", "CG", "N"]
-        elif class_id in [12,28]:
+        elif class_id in [12, 28]:
             allowed_alignments = ["LE", "LG", "N"]
-        elif class_id in [5,6,20]:
+        elif class_id in [5, 6, 20]:
             allowed_alignments = ["CE", "CG"]
         elif class_id == 33:
             allowed_alignments = ["LE", "N"]
@@ -99,7 +110,10 @@ def test_alignment():
             allowed_alignments = ["N"]
         else:
             raise ValueError(f"Unexpected class_id: {class_id}")
-            
-        assert alignment["short_name"] in allowed_alignments, f"""
-            Unexpected alignment '{alignment}' not in allowed values {allowed_alignments}
+
+        assert (
+            alignment["short_name"] in allowed_alignments
+        ), f"""
+            Unexpected alignment '{alignment}' not in
+            allowed values {allowed_alignments}
         """
