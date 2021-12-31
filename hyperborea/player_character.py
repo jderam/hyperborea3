@@ -5,6 +5,7 @@ from hyperborea.chargen import (
     calculate_ac,
     class_id_to_name,
     class_name_to_id,
+    get_alignment,
     get_attr,
     get_starting_armour,
     get_starting_shield,
@@ -41,14 +42,10 @@ class PlayerCharacter:
         self.xp: int = int(xp)
         self.level: int = 0
 
+        self.alignment = get_alignment(self.class_id)
+
         self.hd = 0
         self.hp = 0
-        self.name = ""
-        self.race_id = 0
-        self.race_name = ""
-
-        
-
         self.fa = 0
         self.ca = 0
         self.ta = 0
@@ -62,7 +59,12 @@ class PlayerCharacter:
                 "sorcery": 0,
             },
         }
-        
+
+        self.race_id = 0
+        self.race_name = ""
+
+        self.name = ""
+
         self.armour = get_starting_armour(self.class_id)
         self.shield = get_starting_shield(self.class_id)
 
@@ -76,25 +78,13 @@ class PlayerCharacter:
         self.weapons = []
         self.gear = []
 
-        # get scores
 
-        # get mods
-
-        # get qualifying classes
-
-        # get class
 
         # calculate level
-
-        # get alignment
-
-        # get st bonuses
 
         # get allowed armour, shields, weapons
 
         # get starting equip
-
-        # calculate ac
 
         # fill out weapon details
 
@@ -107,7 +97,3 @@ class PlayerCharacter:
     def to_json(self):
         char_json = json.dumps(self.__dict__)
         return char_json
-
-if __name__ == "__main__":
-    pc = PlayerCharacter()
-    print(pc.to_dict())

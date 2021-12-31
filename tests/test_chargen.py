@@ -4,6 +4,7 @@ from hyperborea.chargen import (
     DB,
     ac_to_aac,
     calculate_ac,
+    get_alignment,
     get_attr_mod,
     get_starting_armour,
     get_starting_shield,
@@ -69,3 +70,36 @@ def test_ac_to_aac():
     for ac in range(-10, 20):
         aac = ac_to_aac(ac)
         assert ac + aac == 19
+
+
+def test_alignment():
+    for class_id in range(1,34):
+        alignment = get_alignment(class_id)
+        if class_id in [1,2,3,7,8,11,13,18,19]:
+            allowed_alignments = ["CE", "CG", "LE", "LG", "N"]
+        elif class_id in [4,24,25,26,31]:
+            allowed_alignments = ["CE", "CG", "LE", "N"]
+        elif class_id == 10:
+            allowed_alignments = ["CG", "LG", "N"]
+        elif class_id in [14,22,30]:
+            allowed_alignments = ["CE", "LE", "N"]
+        elif class_id in [15,16,21,23,29,32]:
+            allowed_alignments = ["CE", "CG", "N"]
+        elif class_id in [12,28]:
+            allowed_alignments = ["LE", "LG", "N"]
+        elif class_id in [5,6,20]:
+            allowed_alignments = ["CE", "CG"]
+        elif class_id == 33:
+            allowed_alignments = ["LE", "N"]
+        elif class_id == 9:
+            allowed_alignments = ["LG"]
+        elif class_id == 27:
+            allowed_alignments = ["LE"]
+        elif class_id == 17:
+            allowed_alignments = ["N"]
+        else:
+            raise ValueError(f"Unexpected class_id: {class_id}")
+            
+        assert alignment["short_name"] in allowed_alignments, f"""
+            Unexpected alignment '{alignment}' not in allowed values {allowed_alignments}
+        """
