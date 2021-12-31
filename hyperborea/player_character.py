@@ -1,5 +1,4 @@
 import json
-from typing import List
 from hyperborea.chargen import (
     ac_to_aac,
     calculate_ac,
@@ -38,7 +37,7 @@ class PlayerCharacter:
             )
             self.class_id = select_random_class(self.attr)
             self.class_name = class_id_to_name(self.class_id)
-        
+
         self.xp: int = int(xp)
         self.level: int = 0
 
@@ -77,8 +76,6 @@ class PlayerCharacter:
 
         self.weapons = []
         self.gear = []
-
-
 
         # calculate level
 
