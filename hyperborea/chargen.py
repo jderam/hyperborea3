@@ -218,6 +218,65 @@ def select_random_class(attr: Dict) -> int:
     return class_id
 
 
+def get_level(class_id: int, xp: int) -> int:
+    c.execute(
+        """
+        SELECT Max(level) as level
+          FROM class_level
+         WHERE class_id = ?
+           AND xp <= ?
+    """,
+        (class_id, xp),
+    )
+    level = dict(c.fetchone())["level"]
+    return level
+
+
+def get_class_level_data(class_id: int, level: int) -> Dict:
+    c.execute(
+        """
+        SELECT *
+          FROM classes c
+          JOIN class_level cl
+            ON c.class_id = cl.class_id
+         WHERE c.class_id = ?
+           AND cl.level = ?
+    """,
+        (class_id, level),
+    )
+    result = dict(c.fetchone())
+    return result
+
+
+def get_hd(class_id: int, level: int) -> str:
+    """Returns string form of HD, e.g. '4d8' or '9d10+3'"""
+    cl_data = get_class_level_data(class_id, level)
+    hd_qty = cl_data["hd_qty"]
+    hd_size = cl_data["hd_size"]
+    hp_plus = cl_data["hp_plus"]
+    hd = f"{hd_qty}d{hd_size}"
+    if hp_plus > 0:
+        hd += f"+{hp_plus}"
+    return hd
+
+
+def roll_hit_points(class_id: int, level: int, hp_adj: int) -> int:
+    """Roll hit points for the PC.
+    Minimum 1 hp per level.
+    """
+    cl_data = get_class_level_data(class_id, level)
+    hd_qty = cl_data["hd_qty"]
+    hd_size = cl_data["hd_size"]
+    hp_plus = cl_data["hp_plus"]
+    hp = roll_dice(hd_qty, hd_size) + hp_plus + (level * hp_adj)
+    # TODO: If we want to get pedantic about this, it should actually be a minimum
+    # of 1 hp on each die roll. We can do an accumulator instead, although this
+    # is likely an edge case where no one would actually be playing a PC this bad.
+    if hp < level:
+        hp = level
+    return hp
+
+
 def get_alignment(class_id: int) -> Dict:
     """Choose a random alignment based on the options available to a given class."""
     c.execute(

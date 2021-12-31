@@ -5,9 +5,13 @@ from hyperborea.chargen import (
     calculate_ac,
     get_alignment,
     get_attr_mod,
+    get_class_level_data,
     get_class_list,
+    get_hd,
+    get_level,
     get_starting_armour,
     get_starting_shield,
+    roll_hit_points,
 )
 
 
@@ -20,6 +24,50 @@ def test_get_class_list():
     assert len(class_list) == 33
     class_list = get_class_list(subclasses=False)
     assert len(class_list) == 4
+
+
+def test_get_level():
+    for class_id in range(1, 34):
+        for xp in range(0, 1000000, 1000):
+            level = get_level(class_id, xp)
+            assert level in range(1, 13)
+
+
+def test_get_class_level_data():
+    for class_id in range(1, 34):
+        for level in range(1, 13):
+            cl_data = get_class_level_data(class_id, level)
+            assert cl_data["fa"] in range(0, 13)
+            assert cl_data["ca"] in range(0, 13)
+            assert cl_data["ta"] in range(0, 13)
+            assert cl_data["sv"] in range(11, 17)
+
+
+def test_get_hd():
+    for class_id in range(1, 34):
+        for level in range(1, 13):
+            hd = get_hd(class_id, level)
+            qty = hd.split("d")[0]
+            # number of dice in 1-9
+            assert int(qty) in range(1, 10)
+            part2 = hd.split("d")[1].split("+")
+            assert len(part2) in [1, 2]
+            # die size in d4, d6, d8, d10, d12
+            assert int(part2[0]) in [4, 6, 8, 10, 12]
+            if len(part2) == 2:
+                # +hp in 1,2,3; 2,4,6; 3,6,9; 4,8,12
+                assert int(part2[1]) in [1, 2, 3, 4, 6, 8, 9, 12]
+
+
+def test_roll_hit_points():
+    max_possible_hp = (10 * 12) + (12 * 3)  # Barbarian
+    for class_id in range(1, 34):
+        for level in range(1, 13):
+            for cn_score in range(3, 19):
+                mods = get_attr_mod("cn", cn_score)
+                hp_adj = mods["hp_adj"]
+                hp = roll_hit_points(class_id, level, hp_adj)
+                assert level <= hp <= max_possible_hp
 
 
 def test_starting_armour():
