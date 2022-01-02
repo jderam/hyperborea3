@@ -9,6 +9,7 @@ from hyperborea.chargen import (
     get_class_list,
     get_hd,
     get_level,
+    get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
     roll_hit_points,
@@ -31,6 +32,19 @@ def test_get_level():
         for xp in range(0, 1000000, 1000):
             level = get_level(class_id, xp)
             assert level in range(1, 13)
+
+
+def test_get_save_bonuses():
+    for class_id in range(1, 34):
+        sv_bonus = get_save_bonuses(class_id)
+        for k, v in sv_bonus.items():
+            assert v in [0, 2]
+        # barbarians, berserkers, and paladins get +2 to all saves
+        if class_id in [5, 6, 9, 27]:
+            assert sum([v for v in sv_bonus.values()]) == 10
+        # all others get +2 to two saves
+        else:
+            assert sum([v for v in sv_bonus.values()]) == 4
 
 
 def test_get_class_level_data():

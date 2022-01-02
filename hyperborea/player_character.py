@@ -9,6 +9,7 @@ from hyperborea.chargen import (
     get_class_level_data,
     get_hd,
     get_level,
+    get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
     roll_hit_points,
@@ -57,7 +58,7 @@ class PlayerCharacter:
         self.ca = get_class_level_data(self.class_id, self.level)["ca"]
         self.ta = get_class_level_data(self.class_id, self.level)["ta"]
         self.sv = get_class_level_data(self.class_id, self.level)["sv"]
-        self.sv_bonuses = {}
+        self.sv_bonus = get_save_bonuses(self.class_id)
 
         self.race_id = 0
         self.race_name = ""
