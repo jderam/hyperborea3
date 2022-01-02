@@ -232,6 +232,23 @@ def get_level(class_id: int, xp: int) -> int:
     return level
 
 
+def get_save_bonuses(class_id: int) -> Dict:
+    c.execute(
+        """
+        SELECT death
+             , transformation
+             , device
+             , avoidance
+             , sorcery
+          FROM classes
+         WHERE class_id = ?
+    """,
+        (class_id,),
+    )
+    sv_bonus = dict(c.fetchone())
+    return sv_bonus
+
+
 def get_class_level_data(class_id: int, level: int) -> Dict:
     c.execute(
         """
