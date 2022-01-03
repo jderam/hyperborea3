@@ -12,7 +12,7 @@ build_wheel: ## build the wheel for this package
 pip_install: ## pip install this package
 	pip install dist/hyperborea-*-py3-none-any.whl --force-reinstall
 
-test: ## run tests
+test: ## Run pytest tests
 	python -m pytest tests
 
 gen_requirements_txt: ## Generate a new requirements.txt file
@@ -23,13 +23,16 @@ run_test_flask: ## Run flask test server
 	FLASK_DEBUG=1
 	flask run
 
-docker_build: ## build the docker container
+d_build: ## Build the docker container
 	docker build -t hyperborea-app .
 
-docker_run: ## run the docker container
-	docker run --detach --publish 8000:8000 hyperborea-app
+d_run: ## Run the docker container
+	docker run --name hyperborea-tools --detach --publish 8000:8000 hyperborea-app
 
-docker_build_and_run: docker_build docker_run ## build AND run!!!
+d_build_and_run: d_build d_run ## build AND run!!!
+
+d_stop: ## Stop running docker container
+	docker stop hyperborea-tools
 
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
