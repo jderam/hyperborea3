@@ -4,11 +4,13 @@ from hyperborea.chargen import (
     ac_to_aac,
     calculate_ac,
     get_alignment,
+    get_attr,
     get_attr_mod,
     get_class_level_data,
     get_class_list,
     get_hd,
     get_level,
+    get_qualifying_classes,
     get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
@@ -25,6 +27,21 @@ def test_get_class_list():
     assert len(class_list) == 33
     class_list = get_class_list(subclasses=False)
     assert len(class_list) == 4
+
+
+def test_get_qualifying_classes():
+    subclasses = True
+    for i in range(1000):
+        attr = get_attr()
+        qual_classes = get_qualifying_classes(attr, subclasses)
+        for c in qual_classes:
+            assert c in range(1, 34)
+    subclasses = False
+    for i in range(1000):
+        attr = get_attr()
+        qual_classes = get_qualifying_classes(attr, subclasses)
+        for c in qual_classes:
+            assert c in range(1, 5)
 
 
 def test_get_level():

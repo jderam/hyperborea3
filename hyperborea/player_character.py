@@ -40,7 +40,7 @@ class PlayerCharacter:
                 method=self.method,
                 class_id=0,
             )
-            self.class_id = select_random_class(self.attr)
+            self.class_id = select_random_class(self.attr, subclasses)
             self.class_name = class_id_to_name(self.class_id)
 
         self.xp: int = int(xp)

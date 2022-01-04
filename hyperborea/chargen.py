@@ -187,10 +187,21 @@ def get_attr(method: int = 3, class_id: int = 0) -> Dict:
     return attr
 
 
-def get_qualifying_classes(attr: Dict) -> List[int]:
+def get_qualifying_classes(attr: Dict, subclasses: bool) -> List[int]:
     """Return list of class_ids that can be used given the attr."""
     # Okay, this isn't the easiest code to parse. ¯\_(ツ)_/¯
-    c.execute("SELECT * FROM class_attr_req;")
+    if subclasses is True:
+        c.execute("SELECT * FROM class_attr_req;")
+    else:
+        c.execute(
+            """
+            SELECT car.*
+              FROM classes c
+              JOIN class_attr_req car
+                ON c.class_id = car.class_id
+             WHERE c.class_type = 'P';
+        """
+        )
     class_req = [dict(x) for x in c.fetchall()]
     not_met = list(
         set(
@@ -207,13 +218,13 @@ def get_qualifying_classes(attr: Dict) -> List[int]:
     return qual_classes
 
 
-def select_random_class(attr: Dict) -> int:
+def select_random_class(attr: Dict, subclasses: bool) -> int:
     """Given a set of stats, determine an appropriate class.
     1. Find all qualifying classes by checking stat requirements.
     2. Randomly choose from among them.
     TODO: Might decide to add weighting based on primary attributes.
     """
-    qual_classes = get_qualifying_classes(attr)
+    qual_classes = get_qualifying_classes(attr, subclasses)
     class_id = random.choice(qual_classes)
     return class_id
 
