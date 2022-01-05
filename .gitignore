@@ -1,5 +1,5 @@
 *__pycache__*
-*.ipynb*
+*.ipynb_checkpoints*
 .pytest_cache/
 .python-version
 .vscode
@@ -9,3 +9,4 @@ settings.json
 *.pyc
 build/
 dist/
+local/
