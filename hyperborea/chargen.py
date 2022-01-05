@@ -177,21 +177,19 @@ def roll_stats(method: int = 3, class_id: int = 0) -> Dict:
 
 
 def get_attr_mod(stat: str, score: int):
-    match stat:
-        case "st":
-            tbl = "t001_strength"
-        case "dx":
-            tbl = "t002_dexterity"
-        case "cn":
-            tbl = "t003_constitution"
-        case "in":
-            tbl = "t004_intelligence"
-        case "ws":
-            tbl = "t005_wisdom"
-        case "ch":
-            tbl = "t006_charisma"
-        case _:
-            raise ValueError(f"Unrecognized value for stat: {stat}")
+    """Get the mods for a given stat."""
+    if stat.lower() not in ["st", "dx", "cn", "in", "ws", "ch"]:
+        raise ValueError(f"Invalid value for stat: {stat}")
+    stat = stat.lower()
+    tbl_map = {
+        "st": "t001_strength",
+        "dx": "t002_dexterity",
+        "cn": "t003_constitution",
+        "in": "t004_intelligence",
+        "ws": "t005_wisdom",
+        "ch": "t006_charisma",
+    }
+    tbl = tbl_map[stat]
     c.execute(f"SELECT * FROM {tbl} WHERE score = ?;", (score,))
     result = dict(c.fetchone())
     return result
