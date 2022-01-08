@@ -362,6 +362,50 @@ def get_alignment(class_id: int) -> Dict:
     return alignment
 
 
+def get_race_id() -> int:
+    """Roll on race tables to get a randomly selected race."""
+    d100_roll = roll_dice(1, 100)
+    c.execute(
+        """SELECT race_id
+             FROM t066_primary_races
+            WHERE ? BETWEEN d100_min AND d100_max;
+        """,
+        (d100_roll,),
+    )
+    race_id = dict(c.fetchone())["race_id"]
+    if race_id == 99:
+        d12_roll = roll_dice(1, 12)
+        c.execute(
+            """SELECT race_id
+                 FROM t067_ancillary_races
+                WHERE d12_roll = ?;
+            """,
+            (d12_roll,),
+        )
+        race_id = dict(c.fetchone())["race_id"]
+    if race_id not in range(1, 25):
+        raise ValueError(f"Unexpected race_id value: {race_id}. d100_roll={d100_roll}")
+    return race_id
+
+
+def get_race(race_id: int) -> str:
+    c.execute(
+        """SELECT race
+             FROM v_race_lkp
+            WHERE race_id = ?;
+        """,
+        (race_id,),
+    )
+    race = dict(c.fetchone())["race"]
+    return race
+
+
+def get_gender():
+    genders = ["Male", "Female", "Non-Binary"]
+    gender = random.choices(genders, weights=[47.5, 47.5, 5.0])[0]
+    return gender
+
+
 def get_starting_armour(class_id: int) -> List[Dict]:
     """Get starting armour by class.
     The SQL should always return one and only one result.
