@@ -1,0 +1,15 @@
+VALID_ABILITIES = ["st", "dx", "cn", "in", "ws", "ch"]
+VALID_ABILITY_SCORES = list(range(3, 19))
+VALID_ALIGMENTS_SHORT = ["CE", "CG", "LE", "LG", "N"]
+VALID_CA = list(range(13))
+VALID_CLASS_IDS = list(range(1, 34))
+VALID_DICE_METHODS = [1, 2, 3, 4, 5, 6]
+VALID_FA = list(range(13))
+VALID_GENDERS = ["Male", "Female", "Non-Binary"]
+VALID_LEVELS = list(range(1, 13))
+VALID_RACE_IDS = list(range(1, 25))
+VALID_SAVES = list(range(11, 17))
+VALID_HD_QTY = list(range(1, 10))
+VALID_HD_SIZE = [4, 6, 8, 10, 12]
+VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
+VALID_TA = list(range(13))
