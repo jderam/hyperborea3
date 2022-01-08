@@ -12,6 +12,7 @@ from hyperborea.chargen import (
     get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
+    get_thief_skills,
     roll_hit_points,
     select_random_class,
 )
@@ -78,15 +79,19 @@ class PlayerCharacter:
         self.weapons = []
         self.gear = []
 
-        # calculate level
+        self.thief_skills = get_thief_skills(
+            self.class_id,
+            self.level,
+            self.attr["dx"]["score"],
+            self.attr["in"]["score"],
+            self.attr["ws"]["score"],
+        )
 
         # get allowed armour, shields, weapons
 
         # get starting equip
 
         # fill out weapon details
-
-        # calculate hp
 
     def to_dict(self):
         char_dict = self.__dict__
@@ -95,3 +100,10 @@ class PlayerCharacter:
     def to_json(self):
         char_json = json.dumps(self.__dict__)
         return char_json
+
+
+if __name__ == "__main__":
+    from pprint import pprint
+
+    pc = PlayerCharacter(subclasses=True)
+    pprint(pc.to_dict())
