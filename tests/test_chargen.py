@@ -1,6 +1,6 @@
 from pathlib import Path
 from hyperborea.chargen import (
-    DB,
+    URI,
     ac_to_aac,
     calculate_ac,
     get_alignment,
@@ -39,6 +39,7 @@ from valid_data import (
 
 
 def test_db():
+    DB = URI.split(":")[1].split("?")[0]
     assert Path(DB).is_file()
 
 
