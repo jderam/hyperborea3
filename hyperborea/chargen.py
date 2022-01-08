@@ -4,10 +4,10 @@ import sqlite3
 from typing import Dict, List
 
 
-DB = f"{Path(__file__).parent}/hyperborea.sqlite3"
-con = sqlite3.connect(DB, check_same_thread=False)
+URI = f"file:{Path(__file__).parent}/hyperborea.sqlite3?mode=ro"
+con = sqlite3.connect(URI, check_same_thread=False, uri=True)
 con.row_factory = sqlite3.Row
-c = con.cursor()
+cur = con.cursor()
 
 
 def roll_dice(qty: int, sides: int) -> int:
@@ -35,8 +35,8 @@ def get_class_list(subclasses: bool = True):
           """
     if subclasses is False:
         sql += " WHERE class_type = 'P'"
-    c.execute(f"{sql};")
-    result = [dict(x) for x in c.fetchall()]
+    cur.execute(f"{sql};")
+    result = [dict(x) for x in cur.fetchall()]
     return result
 
 
@@ -59,13 +59,13 @@ def class_name_to_id(class_name: str):
 
 
 def class_id_to_name(class_id: int) -> str:
-    c.execute("SELECT class_name FROM classes WHERE class_id = ?;", (class_id,))
-    return dict(c.fetchone())["class_name"]
+    cur.execute("SELECT class_name FROM classes WHERE class_id = ?;", (class_id,))
+    return dict(cur.fetchone())["class_name"]
 
 
 def get_class_requirements(class_id: int):
-    c.execute("SELECT * FROM class_attr_req WHERE class_id = ?;", (class_id,))
-    return [dict(x) for x in c.fetchall()]
+    cur.execute("SELECT * FROM class_attr_req WHERE class_id = ?;", (class_id,))
+    return [dict(x) for x in cur.fetchall()]
 
 
 def roll_stats(method: int = 3, class_id: int = 0) -> Dict:
@@ -190,8 +190,8 @@ def get_attr_mod(stat: str, score: int):
         "ch": "t006_charisma",
     }
     tbl = tbl_map[stat]
-    c.execute(f"SELECT * FROM {tbl} WHERE score = ?;", (score,))
-    result = dict(c.fetchone())
+    cur.execute(f"SELECT * FROM {tbl} WHERE score = ?;", (score,))
+    result = dict(cur.fetchone())
     return result
 
 
@@ -208,18 +208,18 @@ def get_qualifying_classes(attr: Dict, subclasses: bool) -> List[int]:
     """Return list of class_ids that can be used given the attr."""
     # Okay, this isn't the easiest code to parse. ¯\_(ツ)_/¯
     if subclasses is True:
-        c.execute("SELECT * FROM class_attr_req;")
+        cur.execute("SELECT * FROM class_attr_req;")
     else:
-        c.execute(
+        cur.execute(
             """
             SELECT car.*
               FROM classes c
               JOIN class_attr_req car
                 ON c.class_id = car.class_id
              WHERE c.class_type = 'P';
-        """
+            """
         )
-    class_req = [dict(x) for x in c.fetchall()]
+    class_req = [dict(x) for x in cur.fetchall()]
     not_met = list(
         set(
             [
@@ -248,43 +248,43 @@ def select_random_class(attr: Dict, subclasses: bool) -> int:
 
 
 def get_level(class_id: int, xp: int) -> int:
-    c.execute(
+    cur.execute(
         """
         SELECT Max(level) as level
           FROM class_level
          WHERE class_id = ?
            AND xp <= ?
-    """,
+        """,
         (class_id, xp),
     )
-    level = dict(c.fetchone())["level"]
+    level = dict(cur.fetchone())["level"]
     return level
 
 
 def get_xp_to_next(class_id: int, level: int) -> int:
     """Get XP need to reach next level."""
     next_level = level + 1
-    c.execute(
+    cur.execute(
         "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;",
         (class_id, next_level),
     )
-    xp_to_next = dict(c.fetchone())["xp"]
+    xp_to_next = dict(cur.fetchone())["xp"]
     return xp_to_next
 
 
 def get_xp_bonus(class_id: int, attr: Dict) -> bool:
     """Determine if character qualifies for +10% XP bonus."""
-    c.execute(
+    cur.execute(
         "SELECT attr FROM class_prime_attr WHERE class_id = ?;",
         (class_id,),
     )
-    prime_attrs = [dict(x)["attr"] for x in c.fetchall()]
+    prime_attrs = [dict(x)["attr"] for x in cur.fetchall()]
     xp_bonus = all([attr[p]["score"] >= 16 for p in prime_attrs])
     return xp_bonus
 
 
 def get_save_bonuses(class_id: int) -> Dict:
-    c.execute(
+    cur.execute(
         """
         SELECT death
              , transformation
@@ -293,15 +293,15 @@ def get_save_bonuses(class_id: int) -> Dict:
              , sorcery
           FROM classes
          WHERE class_id = ?
-    """,
+        """,
         (class_id,),
     )
-    sv_bonus = dict(c.fetchone())
+    sv_bonus = dict(cur.fetchone())
     return sv_bonus
 
 
 def get_class_level_data(class_id: int, level: int) -> Dict:
-    c.execute(
+    cur.execute(
         """
         SELECT *
           FROM classes c
@@ -309,10 +309,10 @@ def get_class_level_data(class_id: int, level: int) -> Dict:
             ON c.class_id = cl.class_id
          WHERE c.class_id = ?
            AND cl.level = ?
-    """,
+        """,
         (class_id, level),
     )
-    result = dict(c.fetchone())
+    result = dict(cur.fetchone())
     return result
 
 
@@ -347,17 +347,17 @@ def roll_hit_points(class_id: int, level: int, hp_adj: int) -> int:
 
 def get_alignment(class_id: int) -> Dict:
     """Choose a random alignment based on the options available to a given class."""
-    c.execute(
+    cur.execute(
         """
         SELECT a.*
           FROM class_alignment ca
           JOIN alignment a
             ON ca.align_id = a.align_id
          WHERE ca.class_id = ?
-    """,
+        """,
         (class_id,),
     )
-    allowed_alignments = [dict(x) for x in c.fetchall()]
+    allowed_alignments = [dict(x) for x in cur.fetchall()]
     alignment = random.choice(allowed_alignments)
     return alignment
 
@@ -365,38 +365,38 @@ def get_alignment(class_id: int) -> Dict:
 def get_race_id() -> int:
     """Roll on race tables to get a randomly selected race."""
     d100_roll = roll_dice(1, 100)
-    c.execute(
+    cur.execute(
         """SELECT race_id
              FROM t066_primary_races
             WHERE ? BETWEEN d100_min AND d100_max;
         """,
         (d100_roll,),
     )
-    race_id = dict(c.fetchone())["race_id"]
+    race_id = dict(cur.fetchone())["race_id"]
     if race_id == 99:
         d12_roll = roll_dice(1, 12)
-        c.execute(
+        cur.execute(
             """SELECT race_id
                  FROM t067_ancillary_races
                 WHERE d12_roll = ?;
             """,
             (d12_roll,),
         )
-        race_id = dict(c.fetchone())["race_id"]
+        race_id = dict(cur.fetchone())["race_id"]
     if race_id not in range(1, 25):
         raise ValueError(f"Unexpected race_id value: {race_id}. d100_roll={d100_roll}")
     return race_id
 
 
 def get_race(race_id: int) -> str:
-    c.execute(
+    cur.execute(
         """SELECT race
              FROM v_race_lkp
             WHERE race_id = ?;
         """,
         (race_id,),
     )
-    race = dict(c.fetchone())["race"]
+    race = dict(cur.fetchone())["race"]
     return race
 
 
@@ -410,17 +410,17 @@ def get_starting_armour(class_id: int) -> List[Dict]:
     """Get starting armour by class.
     The SQL should always return one and only one result.
     """
-    c.execute(
+    cur.execute(
         """
         SELECT a.*
           FROM starting_armour s
           JOIN t074_armour a
             ON s.armour_id = a.armour_id
          WHERE s.class_id = ?
-    """,
+        """,
         (class_id,),
     )
-    result = c.fetchone()
+    result = cur.fetchone()
     armour = dict(result) if result is not None else result
     return armour
 
@@ -429,17 +429,17 @@ def get_starting_shield(class_id: int) -> List[Dict]:
     """Get starting shield by class.
     SQL should return one or zero results.
     """
-    c.execute(
+    cur.execute(
         """
         SELECT ts.*
           FROM starting_shield ss
           JOIN t075_shields ts
             ON ss.shield_id = ts.shield_id
          WHERE ss.class_id = ?
-    """,
+        """,
         (class_id,),
     )
-    result = c.fetchone()
+    result = cur.fetchone()
     shield = dict(result) if result is not None else result
     return shield
 
@@ -482,14 +482,14 @@ def get_thief_skills(
         raise ValueError(f"Invalid value for ws_score: {ws_score}")
 
     # get the skills for this class
-    c.execute(
+    cur.execute(
         """SELECT thief_skill
              FROM class_thief_abilities
             WHERE class_id = ?;
         """,
         (class_id,),
     )
-    skills_list = [dict(x) for x in c.fetchall()]
+    skills_list = [dict(x) for x in cur.fetchall()]
     if len(skills_list) == 0:
         return None
 
@@ -505,15 +505,15 @@ def get_thief_skills(
     # get thief skill scores
     for sk in skills_list:
         sql = f"SELECT {sk['thief_skill']} FROM t016_thief_abilities WHERE level = ?;"
-        c.execute(sql, (level,))
-        skill_roll = dict(c.fetchone())[sk["thief_skill"]]
+        cur.execute(sql, (level,))
+        skill_roll = dict(cur.fetchone())[sk["thief_skill"]]
         sk.update({"skill_roll": skill_roll})
 
     # apply bonuses (if any)
     for sk in skills_list:
         sql = "SELECT stat FROM thief_ability_bonuses WHERE thief_skill = ?;"
-        c.execute(sql, (sk["thief_skill"],))
-        stat = dict(c.fetchone())["stat"]
+        cur.execute(sql, (sk["thief_skill"],))
+        stat = dict(cur.fetchone())["stat"]
         sk.update({"stat": stat})
         if stat == "dx" and dx_score >= 16:
             sk["skill_roll"] += 1
