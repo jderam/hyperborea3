@@ -8,19 +8,53 @@ from hyperborea.chargen import (
     get_attr_mod,
     get_class_level_data,
     get_class_list,
+    get_gender,
     get_hd,
     get_level,
     get_qualifying_classes,
+    get_race_id,
     get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
     get_thief_skills,
     roll_hit_points,
+    roll_stats,
+)
+from valid_data import (
+    VALID_ABILITY_SCORES,
+    VALID_ABILITIES,
+    VALID_CA,
+    VALID_CLASS_IDS,
+    VALID_DICE_METHODS,
+    VALID_FA,
+    VALID_GENDERS,
+    VALID_HD_PLUS,
+    VALID_HD_QTY,
+    VALID_HD_SIZE,
+    VALID_LEVELS,
+    VALID_RACE_IDS,
+    VALID_SAVES,
+    VALID_TA,
 )
 
 
 def test_db():
     assert Path(DB).is_file()
+
+
+def test_roll_stats():
+    for class_id in VALID_CLASS_IDS:
+        for i in range(100):
+            attr = roll_stats(method=6, class_id=class_id)
+            for stat in attr.keys():
+                assert stat in VALID_ABILITIES
+                assert attr[stat]["score"] in VALID_ABILITY_SCORES
+    for method in VALID_DICE_METHODS[:5]:
+        for i in range(1000):
+            attr = roll_stats(method=method)
+            for stat in attr.keys():
+                assert stat in VALID_ABILITIES
+                assert attr[stat]["score"] in VALID_ABILITY_SCORES
 
 
 def test_get_class_list():
@@ -36,7 +70,7 @@ def test_get_qualifying_classes():
         attr = get_attr()
         qual_classes = get_qualifying_classes(attr, subclasses)
         for c in qual_classes:
-            assert c in range(1, 34)
+            assert c in VALID_CLASS_IDS
     subclasses = False
     for i in range(1000):
         attr = get_attr()
@@ -46,14 +80,26 @@ def test_get_qualifying_classes():
 
 
 def test_get_level():
-    for class_id in range(1, 34):
+    for class_id in VALID_CLASS_IDS:
         for xp in range(0, 1000000, 1000):
             level = get_level(class_id, xp)
-            assert level in range(1, 13)
+            assert level in VALID_LEVELS
+
+
+def test_get_race_id():
+    for i in range(1000):
+        race_id = get_race_id()
+        assert race_id in VALID_RACE_IDS
+
+
+def test_get_gender():
+    for i in range(1000):
+        gender = get_gender()
+        assert gender in VALID_GENDERS
 
 
 def test_get_save_bonuses():
-    for class_id in range(1, 34):
+    for class_id in VALID_CLASS_IDS:
         sv_bonus = get_save_bonuses(class_id)
         for k, v in sv_bonus.items():
             assert v in [0, 2]
@@ -66,29 +112,29 @@ def test_get_save_bonuses():
 
 
 def test_get_class_level_data():
-    for class_id in range(1, 34):
-        for level in range(1, 13):
+    for class_id in VALID_CLASS_IDS:
+        for level in VALID_LEVELS:
             cl_data = get_class_level_data(class_id, level)
-            assert cl_data["fa"] in range(0, 13)
-            assert cl_data["ca"] in range(0, 13)
-            assert cl_data["ta"] in range(0, 13)
-            assert cl_data["sv"] in range(11, 17)
+            assert cl_data["fa"] in VALID_FA
+            assert cl_data["ca"] in VALID_CA
+            assert cl_data["ta"] in VALID_TA
+            assert cl_data["sv"] in VALID_SAVES
 
 
 def test_get_hd():
-    for class_id in range(1, 34):
-        for level in range(1, 13):
+    for class_id in VALID_CLASS_IDS:
+        for level in VALID_LEVELS:
             hd = get_hd(class_id, level)
             qty = hd.split("d")[0]
             # number of dice in 1-9
-            assert int(qty) in range(1, 10)
+            assert int(qty) in VALID_HD_QTY
             part2 = hd.split("d")[1].split("+")
             assert len(part2) in [1, 2]
             # die size in d4, d6, d8, d10, d12
-            assert int(part2[0]) in [4, 6, 8, 10, 12]
+            assert int(part2[0]) in VALID_HD_SIZE
             if len(part2) == 2:
                 # +hp in 1,2,3; 2,4,6; 3,6,9; 4,8,12
-                assert int(part2[1]) in [1, 2, 3, 4, 6, 8, 9, 12]
+                assert int(part2[1]) in VALID_HD_PLUS
 
 
 def test_roll_hit_points():
@@ -164,7 +210,7 @@ def test_ac_to_aac():
 
 
 def test_alignment():
-    for class_id in range(1, 34):
+    for class_id in VALID_CLASS_IDS:
         alignment = get_alignment(class_id)
         if class_id in [1, 2, 3, 7, 8, 11, 13, 18, 19]:
             allowed_alignments = ["CE", "CG", "LE", "LG", "N"]
