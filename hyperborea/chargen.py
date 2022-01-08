@@ -388,3 +388,72 @@ def calculate_ac(armour_ac: int, shield_def_mod: int, dx_def_adj: int) -> int:
 def ac_to_aac(ac: int) -> int:
     aac = 19 - ac
     return aac
+
+
+def get_thief_skills(
+    class_id: int,
+    level: int,
+    dx_score: int,
+    in_score: int,
+    ws_score: int,
+) -> List[Dict]:
+    """Returns a list of dictionaries of thief skills.
+    thief_skill (str): The key value for the skill used in db lookups
+    skill_name  (str): The user-friendly name of the skill for display
+    skill_roll  (int): The x in 12 chance of success
+    stat        (str): The associated ability, which grats a +1 bonus for 16+
+    """
+    # input validation
+    if class_id not in range(1, 34):
+        raise ValueError(f"Invalid class_id: {class_id}")
+    if level not in range(1, 13):
+        raise ValueError(f"Invalid value for level: {level}")
+    if dx_score not in range(1, 19):
+        raise ValueError(f"Invalid value for dx_score: {dx_score}")
+    if in_score not in range(1, 19):
+        raise ValueError(f"Invalid value for in_score: {in_score}")
+    if ws_score not in range(1, 19):
+        raise ValueError(f"Invalid value for ws_score: {ws_score}")
+
+    # get the skills for this class
+    c.execute(
+        """SELECT thief_skill
+             FROM class_thief_abilities
+            WHERE class_id = ?;
+        """,
+        (class_id,),
+    )
+    skills_list = [dict(x) for x in c.fetchall()]
+    if len(skills_list) == 0:
+        return None
+
+    # get friendly skill names, with special rule for Huntsman
+    # ("Manipulate Traps" becomes "Wilderness Traps" for Huntsman only)
+    for sk in skills_list:
+        if class_id == 8 and sk["thief_skill"] == "manipulate_traps":
+            skill_name = "Wilderness Traps"
+        else:
+            skill_name = sk["thief_skill"].replace("_", " ").title()
+        sk.update({"skill_name": skill_name})
+
+    # get thief skill scores
+    for sk in skills_list:
+        sql = f"SELECT {sk['thief_skill']} FROM t016_thief_abilities WHERE level = ?;"
+        c.execute(sql, (level,))
+        skill_roll = dict(c.fetchone())[sk["thief_skill"]]
+        sk.update({"skill_roll": skill_roll})
+
+    # apply bonuses (if any)
+    for sk in skills_list:
+        sql = "SELECT stat FROM thief_ability_bonuses WHERE thief_skill = ?;"
+        c.execute(sql, (sk["thief_skill"],))
+        stat = dict(c.fetchone())["stat"]
+        sk.update({"stat": stat})
+        if stat == "dx" and dx_score >= 16:
+            sk["skill_roll"] += 1
+        if stat == "in" and in_score >= 16 and sk["skill_roll"] is not None:
+            sk["skill_roll"] += 1
+        if stat == "ws" and ws_score >= 16:
+            sk["skill_roll"] += 1
+
+    return skills_list

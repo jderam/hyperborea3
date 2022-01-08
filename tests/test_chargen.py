@@ -14,6 +14,7 @@ from hyperborea.chargen import (
     get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
+    get_thief_skills,
     roll_hit_points,
 )
 
@@ -196,3 +197,232 @@ def test_alignment():
             Unexpected alignment '{alignment}' not in
             allowed values {allowed_alignments}
         """
+
+
+def test_get_thief_skills():
+    # classes without thief skills
+    for class_id in [
+        1,
+        2,
+        3,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        27,
+        28,
+        29,
+        30,
+    ]:
+        thief_skills = get_thief_skills(class_id, 1, 10, 10, 10)
+        assert (
+            thief_skills is None
+        ), f"class_id: {class_id} is not supposed to have thief skills"
+
+    # level 1 thief with 10's
+    expected_thief_skills = [
+        {"thief_skill": "climb", "skill_name": "Climb", "skill_roll": 8, "stat": "dx"},
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 0,
+            "stat": "in",
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 4,
+            "stat": "ws",
+        },
+        {"thief_skill": "hide", "skill_name": "Hide", "skill_roll": 5, "stat": "dx"},
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 3,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 5,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 3,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 4,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "read_scrolls",
+            "skill_name": "Read Scrolls",
+            "skill_roll": None,
+            "stat": "in",
+        },
+    ]
+    thief_skills = get_thief_skills(4, 1, 10, 10, 10)
+    assert thief_skills == expected_thief_skills
+
+    # level 1 thief with 16's
+    expected_thief_skills = [
+        {"thief_skill": "climb", "skill_name": "Climb", "skill_roll": 9, "stat": "dx"},
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 1,
+            "stat": "in",
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 5,
+            "stat": "ws",
+        },
+        {"thief_skill": "hide", "skill_name": "Hide", "skill_roll": 6, "stat": "dx"},
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 4,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 6,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 4,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 5,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "read_scrolls",
+            "skill_name": "Read Scrolls",
+            "skill_roll": None,
+            "stat": "in",
+        },
+    ]
+    thief_skills = get_thief_skills(4, 1, 16, 16, 16)
+    assert thief_skills == expected_thief_skills
+
+    # level 12 thief with 10's
+    expected_thief_skills = [
+        {"thief_skill": "climb", "skill_name": "Climb", "skill_roll": 10, "stat": "dx"},
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 5,
+            "stat": "in",
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 9,
+            "stat": "ws",
+        },
+        {"thief_skill": "hide", "skill_name": "Hide", "skill_roll": 10, "stat": "dx"},
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 8,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 10,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 8,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 9,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "read_scrolls",
+            "skill_name": "Read Scrolls",
+            "skill_roll": 5,
+            "stat": "in",
+        },
+    ]
+    thief_skills = get_thief_skills(4, 12, 10, 10, 10)
+    assert thief_skills == expected_thief_skills
+
+    # level 12 thief with 16's
+    expected_thief_skills = [
+        {"thief_skill": "climb", "skill_name": "Climb", "skill_roll": 11, "stat": "dx"},
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 6,
+            "stat": "in",
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 10,
+            "stat": "ws",
+        },
+        {"thief_skill": "hide", "skill_name": "Hide", "skill_roll": 11, "stat": "dx"},
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 9,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 11,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 9,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 10,
+            "stat": "dx",
+        },
+        {
+            "thief_skill": "read_scrolls",
+            "skill_name": "Read Scrolls",
+            "skill_roll": 6,
+            "stat": "in",
+        },
+    ]
+    thief_skills = get_thief_skills(4, 12, 16, 16, 16)
+    assert thief_skills == expected_thief_skills
