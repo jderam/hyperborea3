@@ -13,6 +13,8 @@ from hyperborea.chargen import (
     get_starting_armour,
     get_starting_shield,
     get_thief_skills,
+    get_xp_bonus,
+    get_xp_to_next,
     roll_hit_points,
     select_random_class,
 )
@@ -46,6 +48,8 @@ class PlayerCharacter:
 
         self.xp: int = int(xp)
         self.level: int = get_level(self.class_id, self.xp)
+        self.xp_to_next: int = get_xp_to_next(self.class_id, self.level)
+        self.xp_bonus: bool = get_xp_bonus(self.class_id, self.attr)
 
         self.alignment = get_alignment(self.class_id)
 
