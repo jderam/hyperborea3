@@ -7,8 +7,11 @@ from hyperborea.chargen import (
     get_alignment,
     get_attr,
     get_class_level_data,
+    get_gender,
     get_hd,
     get_level,
+    get_race,
+    get_race_id,
     get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
@@ -52,6 +55,9 @@ class PlayerCharacter:
         self.xp_bonus: bool = get_xp_bonus(self.class_id, self.attr)
 
         self.alignment = get_alignment(self.class_id)
+        self.race_id = get_race_id()
+        self.race = get_race(self.race_id)
+        self.gender = get_gender()
 
         self.hd = get_hd(self.class_id, self.level)
         self.hp = roll_hit_points(
@@ -64,9 +70,6 @@ class PlayerCharacter:
         self.ta = get_class_level_data(self.class_id, self.level)["ta"]
         self.sv = get_class_level_data(self.class_id, self.level)["sv"]
         self.sv_bonus = get_save_bonuses(self.class_id)
-
-        self.race_id = 0
-        self.race_name = ""
 
         self.name = ""
 
