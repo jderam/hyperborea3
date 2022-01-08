@@ -24,10 +24,11 @@ run_test_flask: ## Run flask test server
 	flask run
 
 d_build: ## Build the docker container
+	# docker rm hyperborea-tools
 	docker build -t hyperborea-app .
 
 d_run: ## Run the docker container
-	docker run --name hyperborea-tools --detach --publish 8000:8000 hyperborea-app
+	docker run --name hyperborea-tools --detach --rm --publish 8000:8000 hyperborea-app
 
 d_build_and_run: d_build d_run ## build AND run!!!
 
