@@ -261,6 +261,28 @@ def get_level(class_id: int, xp: int) -> int:
     return level
 
 
+def get_xp_to_next(class_id: int, level: int) -> int:
+    """Get XP need to reach next level."""
+    next_level = level + 1
+    c.execute(
+        "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;",
+        (class_id, next_level),
+    )
+    xp_to_next = dict(c.fetchone())["xp"]
+    return xp_to_next
+
+
+def get_xp_bonus(class_id: int, attr: Dict) -> bool:
+    """Determine if character qualifies for +10% XP bonus."""
+    c.execute(
+        "SELECT attr FROM class_prime_attr WHERE class_id = ?;",
+        (class_id,),
+    )
+    prime_attrs = [dict(x)["attr"] for x in c.fetchall()]
+    xp_bonus = all([attr[p]["score"] >= 16 for p in prime_attrs])
+    return xp_bonus
+
+
 def get_save_bonuses(class_id: int) -> Dict:
     c.execute(
         """
