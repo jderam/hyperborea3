@@ -14,6 +14,8 @@ from hyperborea.chargen import (
     get_race_id,
     get_save_bonuses,
     get_starting_armour,
+    get_starting_gear,
+    get_starting_money,
     get_starting_shield,
     get_starting_weapons_melee,
     get_starting_weapons_missile,
@@ -87,7 +89,8 @@ class PlayerCharacter:
 
         self.weapons_melee = get_starting_weapons_melee(self.class_id)
         self.weapons_missile = get_starting_weapons_missile(self.class_id)
-        self.gear = []
+        self.equipment = get_starting_gear(self.class_id)
+        self.money = get_starting_money()
 
         self.thief_skills = get_thief_skills(
             self.class_id,
