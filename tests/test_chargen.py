@@ -16,6 +16,8 @@ from hyperborea.chargen import (
     get_save_bonuses,
     get_starting_armour,
     get_starting_shield,
+    get_starting_weapons_melee,
+    get_starting_weapons_missile,
     get_thief_skills,
     roll_hit_points,
     roll_stats,
@@ -175,6 +177,21 @@ def test_starting_shield():
             "cost",
             "weight",
         ]
+
+
+def test_starting_weapons_melee():
+    for class_id in VALID_CLASS_IDS:
+        melee_weapons = get_starting_weapons_melee(class_id)
+        assert 1 <= len(melee_weapons) <= 3
+
+
+def test_starting_weapons_missile():
+    for class_id in VALID_CLASS_IDS:
+        missile_weapons = get_starting_weapons_missile(class_id)
+        if class_id == 8:
+            assert len(missile_weapons) == 2
+        else:
+            assert len(missile_weapons) in [0, 1]
 
 
 def test_calculate_ac():
