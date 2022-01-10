@@ -19,6 +19,7 @@ from hyperborea.chargen import (
     get_starting_weapons_melee,
     get_starting_weapons_missile,
     get_thief_skills,
+    get_xp_to_next,
     roll_hit_points,
     roll_stats,
 )
@@ -43,6 +44,14 @@ from valid_data import (
 def test_db():
     DB = URI.split(":")[1].split("?")[0]
     assert Path(DB).is_file()
+
+
+def test_xp_to_next():
+    # if character is already at max level, should return None
+    level = 12
+    for class_id in VALID_CLASS_IDS:
+        xp_to_next = get_xp_to_next(class_id, level)
+        assert xp_to_next is None
 
 
 def test_roll_stats():

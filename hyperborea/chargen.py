@@ -263,6 +263,9 @@ def get_level(class_id: int, xp: int) -> int:
 
 def get_xp_to_next(class_id: int, level: int) -> int:
     """Get XP need to reach next level."""
+    # if level is 12, there is no "next level"
+    if level == 12:
+        return None
     next_level = level + 1
     cur.execute(
         "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;",
