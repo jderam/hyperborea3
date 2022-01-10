@@ -444,6 +444,41 @@ def get_starting_shield(class_id: int) -> List[Dict]:
     return shield
 
 
+def get_starting_weapons_melee(class_id: int) -> List[Dict]:
+    """Get starting melee weapons by class."""
+    cur.execute(
+        """
+        SELECT w.*
+             , sw.qty
+          FROM starting_weapons_melee sw
+          JOIN t076_melee_weapons w
+            ON sw.weapon_id = w.weapon_id
+         WHERE sw.class_id = ?;
+        """,
+        (class_id,),
+    )
+    melee_weapons = [dict(x) for x in cur.fetchall()]
+    return melee_weapons
+
+
+def get_starting_weapons_missile(class_id: int) -> List[Dict]:
+    """Get starting missile weapons by class."""
+    cur.execute(
+        """
+        SELECT w.*
+             , sw.qty
+             , sw.ammunition
+          FROM starting_weapons_missile sw
+          JOIN t077_missile_weapons w
+            ON sw.weapon_id = w.weapon_id
+         WHERE sw.class_id = ?;
+        """,
+        (class_id,),
+    )
+    missile_weapons = [dict(x) for x in cur.fetchall()]
+    return missile_weapons
+
+
 def calculate_ac(armour_ac: int, shield_def_mod: int, dx_def_adj: int) -> int:
     ac = armour_ac
     ac -= shield_def_mod
