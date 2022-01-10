@@ -15,6 +15,8 @@ from hyperborea.chargen import (
     get_race_id,
     get_save_bonuses,
     get_starting_armour,
+    get_starting_gear,
+    get_starting_money,
     get_starting_shield,
     get_starting_weapons_melee,
     get_starting_weapons_missile,
@@ -23,14 +25,16 @@ from hyperborea.chargen import (
     roll_hit_points,
     roll_stats,
 )
-from valid_data import (
+from tests.valid_data import (
     VALID_ABILITY_SCORES,
     VALID_ABILITIES,
     VALID_CA,
     VALID_CLASS_IDS,
+    VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
     VALID_FA,
     VALID_GENDERS,
+    VALID_GP,
     VALID_HD_PLUS,
     VALID_HD_QTY,
     VALID_HD_SIZE,
@@ -201,6 +205,25 @@ def test_starting_weapons_missile():
             assert len(missile_weapons) == 2
         else:
             assert len(missile_weapons) in [0, 1]
+
+
+def test_get_starting_gear():
+    for class_id in VALID_CLASS_IDS:
+        equip = get_starting_gear(class_id)
+        assert len(equip) > 0
+        for item in equip:
+            assert isinstance(item, str)
+
+
+def test_get_starting_money():
+    for i in range(100):
+        money = get_starting_money()
+        assert list(money.keys()) == VALID_DENOMINATIONS
+        for k in VALID_DENOMINATIONS:
+            if k == "gp":
+                assert money[k] in VALID_GP
+            else:
+                assert money[k] == 0
 
 
 def test_calculate_ac():
