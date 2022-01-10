@@ -1,11 +1,13 @@
 from hyperborea.player_character import PlayerCharacter
-from valid_data import (
+from tests.valid_data import (
     VALID_ABILITY_SCORES,
     VALID_ALIGMENTS_SHORT,
     VALID_CA,
+    VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
     VALID_FA,
     VALID_GENDERS,
+    VALID_GP,
     VALID_LEVELS,
     VALID_RACE_IDS,
     VALID_SAVES,
@@ -32,3 +34,9 @@ def test_pc():
         assert pc.ca in VALID_CA
         assert pc.ta in VALID_TA
         assert pc.sv in VALID_SAVES
+        assert len(pc.equipment) > 0
+        for k in VALID_DENOMINATIONS:
+            if k == "gp":
+                assert pc.money[k] in VALID_GP
+            else:
+                assert pc.money[k] == 0

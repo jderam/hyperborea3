@@ -1,0 +1,359 @@
+class_id,item
+1,arrow quiver
+1,backpack
+1,bandages
+1,winter blanket
+1,soft leather pouch
+1,iron rations (1 week)
+1,hemp rope (50-ft.)
+1,large sack
+1,one-person canvas tent
+1,tinderbox
+1,torches ×2
+1,wineskin (full)
+2,backpack
+2,bandages
+2,winter blanket
+2,chalk (piece)
+2,ink and quill
+2,incendiary oil
+2,parchment ×2
+2,soft leather pouch
+2,standard rations (1 week)
+2,silk rope (50-ft.)
+2,small sack
+2,tinderbox
+2,torches ×3
+2,wineskin (full)
+2,writing stick
+2,spell book
+3,backpack
+3,bandages
+3,silver holy symbol
+3,holy water
+3,soft
+3,leather pouch
+3,iron rations (1 week)
+3,small sack
+3,tinderbox
+3,torches ×3
+3,wineskin (full)
+3,writing stick
+4,backpack
+4,bandages
+4,chalk (piece)
+4,dice
+4,fishing hooks ×12
+4,fishing string
+4,grappling hook
+4,soft leather pouch
+4,iron rations (1 week)
+4,silk rope (50-ft.)
+4,large sack
+4,thieves’ tools
+4,tinderbox
+4,torches ×2
+4,wineskin (full)
+4,spool of wire
+4,writing stick
+5,arrow quiver
+5,backpack
+5,bandages
+5,fishing net
+5,hunting horn
+5,soft leather pouch
+5,standard rations (1 week)
+5,large sack
+5,torches ×3
+5,wineskin (full)
+6,backpack
+6,soft leather pouch
+6,iron rations (1 week)
+6,large sack
+6,tinderbox
+6,torches ×3
+6,wineskin (full)
+7,backpack
+7,bandages
+7,hooded lantern
+7,lamp oil
+7,soft leather pouch
+7,iron rations (1 week)
+7,large sack
+7,tinderbox
+7,wineskin (full)
+8,arrow quiver
+8,backpack
+8,sinew cord (100-ft. ball)
+8,hunting horn
+8,soft leather pouch
+8,standard rations (1 week)
+8,torches ×2
+8,wineskin (full)
+9,backpack
+9,wooden holy symbol
+9,soft leather pouch
+9,iron rations (1 week)
+9,tinderbox
+9,torches ×2
+9,wineskin (full)
+10,arrow quiver
+10,backpack
+10,bandages
+10,winter blanket
+10,standard rations (1 week)
+10,hemp rope (50-ft.)
+10,large sack
+10,torches ×3
+10,wineskin (full)
+11,backpack
+11,bandages
+11,bolt case
+11,ink and quill
+11,soft leather pouch
+11,iron rations (1 week)
+11,hemp rope (50-ft.)
+11,tinderbox
+11,torches ×2
+11,wineskin (full)
+11,spell book
+12,backpack
+12,bandages
+12,winter blanket
+12,beeswax candles ×3
+12,chalk (piece)
+12,crampons
+12,small hammer
+12,ink and quill
+12,bull’s-eye lantern
+12,lamp oil ×2
+12,parchment ×3
+12,hard leather pouch
+12,soft leather pouch
+12,iron rations (1 week)
+12,silk rope (50-ft.)
+12,large sack
+12,iron spikes ×12
+12,tinderbox
+12,wineskin (full)
+12,writing stick
+12,spell book
+13,backpack
+13,bandages
+13,winter blanket
+13,chalk (piece)
+13,ink and quill
+13,hooded lantern
+13,silver mirror
+13,lamp oil ×2
+13,parchment ×3
+13,soft leather pouch
+13,iron rations (1 week)
+13,silk rope (50-ft.)
+13,small sack
+13,tinderbox
+13,wineskin (full)
+13,writing stick
+13,spell book
+14,backpack
+14,winter blanket
+14,chalk (piece)
+14,wooden holy symbol
+14,ink and quill
+14,hooded lantern
+14,polished steel mirror
+14,incendiary oil
+14,lamp oil ×2
+14,parchment ×3
+14,hard leather pouch
+14,soft leather pouch
+14,iron rations (1 week)
+14,silk rope (50-ft.)
+14,small sack
+14,tinderbox
+14,wineskin (full)
+14,writing stick
+14,spell book
+15,backpack
+15,bandages
+15,winter blanket
+15,chalk (piece)
+15,ink and quill
+15,incendiary oil
+15,parchment ×5
+15,hard leather pouch
+15,soft leather pouch
+15,iron rations (1 week)
+15,hemp rope (50-ft.)
+15,small sack
+15,tinderbox
+15,torches ×3
+15,wineskin (full)
+15,writing stick
+15,spell book
+16,backpack
+16,bandages
+16,winter blanket
+16,beeswax candles ×2
+16,brass censer
+16,chalk (piece)
+16,incense sticks ×12
+16,ink and quill
+16,body paint (crock)
+16,parchment ×2
+16,soft leather pouch
+16,iron rations (1 week)
+16,wooden rattle
+16,hemp rope (50-ft.)
+16,small sack
+16,tinderbox
+16,torches ×3
+16,wineskin (full)
+16,wolfsbane
+16,writing stick
+16,spell book
+17,arrow quiver
+17,backpack
+17,bandages
+17,wooden holy symbol
+17,iron rations (1 week)
+17,body paint (crock)
+17,parchment ×3
+17,soft leather pouch
+17,small sack
+17,tinderbox
+17,torches ×3
+17,wineskin (full)
+17,wolfsbane
+17,writing stick
+18,backpack
+18,bandages
+18,winter blanket
+18,fishing hooks ×12
+18,fishing string
+18,incense sticks ×12
+18,soft leather pouch
+18,iron rations (1 week)
+18,silk rope (50-ft.)
+18,small sack
+18,tinderbox
+18,torches ×3
+18,wineskin (full)
+18,writing stick
+19,backpack
+19,bandages
+19,winter blanket
+19,religious clothing
+19,silver holy symbol
+19,holy water
+19,soft leather pouch
+19,wooden prayer beads
+19,iron rations (1 week)
+19,small sack
+19,tinderbox
+19,torches ×3
+19,wineskin (full)
+19,writing stick
+20,arrow quiver
+20,backpack
+20,bandages
+20,chalk (piece)
+20,dice
+20,wooden holy symbol
+20,drinking horn (full)
+20,soft leather pouch
+20,iron rations (1 week)
+20,tinderbox
+20,torches ×2
+20,waterskin
+20,writing stick
+21,backpack
+21,bandages
+21,belladonna
+21,brass censer
+21,wooden holy symbol (totem)
+21,incense sticks ×12
+21,wooden mask
+21,soft leather pouch
+21,wooden rattle
+21,iron rations (1 week)
+21,hemp rope (50-ft.)
+21,small sack
+21,tinderbox
+21,torches ×3
+21,wineskin (full)
+21,bark sheet spell book
+22,backpack
+22,winter blanket
+22,bolt case
+22,disguise clothing
+22,soft leather pouch
+22,iron rations (1 week)
+22,hemp rope (50-ft.)
+22,small sack
+22,thieves’ tools
+22,tinderbox
+22,torches ×3
+22,wineskin (full)
+23,arrow quiver
+23,backpack
+23,bandages
+23,chalk (piece)
+23,flute
+23,ink and quill
+23,parchment ×3
+23,soft leather pouch
+23,iron rations (1 week)
+23,hemp rope (50-ft.)
+23,large sack
+23,tinderbox
+23,torches ×2
+23,wineskin (full)
+23,spell book
+24,backpack
+24,bandages
+24,winter blanket
+24,ink and quill
+24,parchment
+24,soft leather pouch
+24,iron rations (1 week)
+24,hemp rope (50-ft.)
+24,small sack
+24,thieves’ tools
+24,tinderbox
+24,torches ×2
+24,wineskin (full)
+24,spell book
+25,backpack
+25,bandages
+25,winter blanket
+25,dice
+25,wooden holy symbol
+25,holy water
+25,soft leather pouch
+25,iron rations (1 week)
+25,small sack
+25,thieves’ tools
+25,tinderbox
+25,torches ×2
+25,wineskin (full)
+25,writing stick
+26,backpack
+26,bandages
+26,winter blanket
+26,chalk (piece)
+26,disguise clothing
+26,grappling hook
+26,grease
+26,marbles ×20
+26,parchment
+26,wooden pole (10-ft.)
+26,soft leather pouch
+26,iron rations (1 week)
+26,hemp rope (50-ft.)
+26,small sack
+26,thieves’ tools
+26,tinderbox
+26,torches ×3
+26,wineskin (full)
+26,writing stick

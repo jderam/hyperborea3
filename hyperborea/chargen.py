@@ -482,6 +482,33 @@ def get_starting_weapons_missile(class_id: int) -> List[Dict]:
     return missile_weapons
 
 
+def get_starting_gear(class_id: int) -> List[str]:
+    """Get starting equipment items by class."""
+    cur.execute(
+        """
+        SELECT item
+          FROM starting_gear
+         WHERE class_id = ?;
+        """,
+        (class_id,),
+    )
+    equipment = [x["item"] for x in cur.fetchall()]
+    return equipment
+
+
+def get_starting_money() -> Dict[str, int]:
+    """Get starting money."""
+    gp = roll_dice(1, 4) + 1
+    money = {
+        "pp": 0,
+        "gp": gp,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0,
+    }
+    return money
+
+
 def calculate_ac(armour_ac: int, shield_def_mod: int, dx_def_adj: int) -> int:
     ac = armour_ac
     ac -= shield_def_mod
