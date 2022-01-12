@@ -2,7 +2,7 @@ import sys
 import sqlite3
 
 
-con = sqlite3.connect("../hyperborea/hyperborea.sqlite3")
+con = sqlite3.connect("../../hyperborea/hyperborea.sqlite3")
 con.row_factory = sqlite3.Row
 cur = con.cursor()
 
@@ -73,7 +73,7 @@ for line in lines:
         try:
             spell_id = dict(result)["spell_id"]
         except Exception:
-            raise Exception("Failure to look up spell_id by name")
+            raise Exception(f"Failure to look up spell_id by name: {spell_name}")
 
         roll_range = spell_info.split("(")[1]
         roll_range = roll_range.replace("-", "–")
