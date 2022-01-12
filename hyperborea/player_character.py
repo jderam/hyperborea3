@@ -13,6 +13,7 @@ from hyperborea.chargen import (
     get_race,
     get_race_id,
     get_save_bonuses,
+    get_spells,
     get_starting_armour,
     get_starting_gear,
     get_starting_money,
@@ -89,6 +90,7 @@ class PlayerCharacter:
 
         self.weapons_melee = get_starting_weapons_melee(self.class_id)
         self.weapons_missile = get_starting_weapons_missile(self.class_id)
+        # fill out weapon details
         self.equipment = get_starting_gear(self.class_id)
         self.money = get_starting_money()
 
@@ -100,11 +102,7 @@ class PlayerCharacter:
             self.attr["ws"]["score"],
         )
 
-        # get allowed armour, shields, weapons
-
-        # get starting equip
-
-        # fill out weapon details
+        self.spells = get_spells(self.class_id, self.level, self.ca)
 
     def to_dict(self):
         char_dict = self.__dict__
