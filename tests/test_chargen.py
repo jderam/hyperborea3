@@ -6,6 +6,7 @@ from hyperborea.chargen import (
     get_alignment,
     get_attr,
     get_attr_mod,
+    get_caster_schools,
     get_class_level_data,
     get_class_list,
     get_gender,
@@ -13,7 +14,9 @@ from hyperborea.chargen import (
     get_level,
     get_qualifying_classes,
     get_race_id,
+    get_random_spell,
     get_save_bonuses,
+    get_spells,
     get_starting_armour,
     get_starting_gear,
     get_starting_money,
@@ -41,6 +44,9 @@ from tests.valid_data import (
     VALID_LEVELS,
     VALID_RACE_IDS,
     VALID_SAVES,
+    VALID_SCHOOLS,
+    VALID_SCHOOLS_BY_CLASS_ID,
+    VALID_SPELL_LEVELS,
     VALID_TA,
 )
 
@@ -155,9 +161,9 @@ def test_get_hd():
 
 def test_roll_hit_points():
     max_possible_hp = (10 * 12) + (12 * 3)  # Barbarian
-    for class_id in range(1, 34):
-        for level in range(1, 13):
-            for cn_score in range(3, 19):
+    for class_id in VALID_CLASS_IDS:
+        for level in VALID_LEVELS:
+            for cn_score in VALID_ABILITY_SCORES:
                 mods = get_attr_mod("cn", cn_score)
                 hp_adj = mods["hp_adj"]
                 hp = roll_hit_points(class_id, level, hp_adj)
@@ -165,7 +171,7 @@ def test_roll_hit_points():
 
 
 def test_starting_armour():
-    for class_id in range(1, 34):
+    for class_id in VALID_CLASS_IDS:
         armour = get_starting_armour(class_id)
         assert list(armour.keys()) == [
             "armour_id",
@@ -181,7 +187,7 @@ def test_starting_armour():
 
 
 def test_starting_shield():
-    for class_id in range(1, 34):
+    for class_id in VALID_CLASS_IDS:
         shield = get_starting_shield(class_id)
         assert shield is None or list(shield.keys()) == [
             "shield_id",
@@ -227,11 +233,11 @@ def test_get_starting_money():
 
 
 def test_calculate_ac():
-    for class_id in range(1, 34):
+    for class_id in VALID_CLASS_IDS:
         armour = get_starting_armour(class_id)
         shield = get_starting_shield(class_id)
         shield_def_mod = shield["def_mod"] if shield is not None else 0
-        for dx_score in range(3, 19):
+        for dx_score in VALID_ABILITY_SCORES:
             dx_mod = get_attr_mod("dx", dx_score)
             ac = calculate_ac(
                 armour["ac"],
@@ -522,3 +528,55 @@ def test_get_thief_skills():
     ]
     thief_skills = get_thief_skills(4, 12, 16, 16, 16)
     assert thief_skills == expected_thief_skills
+
+
+def test_get_caster_schools():
+    for class_id in VALID_CLASS_IDS:
+        for level in VALID_LEVELS:
+            schools = get_caster_schools(class_id, level)
+            if class_id == 21:
+                assert schools in [
+                    ["clr", "mag"],
+                    ["clr", "nec"],
+                    ["drd", "mag"],
+                    ["drd", "nec"],
+                ]
+            else:
+                assert schools == VALID_SCHOOLS_BY_CLASS_ID[class_id]
+
+
+def test_spell_data():
+    for school in VALID_SCHOOLS:
+        for spell_level in VALID_SPELL_LEVELS:
+            for d100_roll in range(1, 101):
+                spell = get_random_spell(school, spell_level, d100_roll)
+                assert spell is not None
+
+
+def test_get_random_spell():
+    for school in VALID_SCHOOLS:
+        for spell_level in VALID_SPELL_LEVELS:
+            for i in range(1000):
+                spell = get_random_spell(school, spell_level)
+                assert spell["school"] == school
+                assert spell["spell_level"] == spell_level
+
+
+def test_get_spells():
+    for class_id in VALID_CLASS_IDS:
+        for level in VALID_LEVELS:
+            cl_data = get_class_level_data(class_id, level)
+            ca = cl_data["ca"]
+            spells = get_spells(class_id, level, ca)
+            if ca > 0:
+                schools = list(spells.keys())
+            else:
+                schools = []
+
+            if ca > 1:
+                assert schools == VALID_SCHOOLS_BY_CLASS_ID[class_id]
+
+            # classes without spells
+            if ca == 0:
+                assert spells is None, f"{class_id=} {level=}"
+            # classes with no spells at early levels

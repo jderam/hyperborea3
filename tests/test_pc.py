@@ -40,3 +40,5 @@ def test_pc():
                 assert pc.money[k] in VALID_GP
             else:
                 assert pc.money[k] == 0
+        if pc.ca == 0:
+            assert pc.spells is None
