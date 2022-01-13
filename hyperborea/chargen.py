@@ -709,6 +709,8 @@ def apply_spells_per_day_bonus(
     """Increase spells per day for high IN/WS scores. Must already have at least
     one spell per day already for the given level.
     """
+    if spells is None:
+        return None
     for school in spells.keys():
         if school in ["clr", "drd"]:
             for i in range(bonus_spells_ws, 0, -1):

@@ -1,6 +1,7 @@
 import json
 from hyperborea.chargen import (
     ac_to_aac,
+    apply_spells_per_day_bonus,
     calculate_ac,
     class_id_to_name,
     class_name_to_id,
@@ -102,7 +103,13 @@ class PlayerCharacter:
             self.attr["ws"]["score"],
         )
 
-        self.spells = get_spells(self.class_id, self.level, self.ca)
+        # TODO: Make a wrapper function for all the functions needed
+        # to get final spell list (familiar, etc.)
+        self.spells = apply_spells_per_day_bonus(
+            spells=get_spells(self.class_id, self.level, self.ca),
+            bonus_spells_in=self.attr["in"]["bonus_spells"],
+            bonus_spells_ws=self.attr["ws"]["bonus_spells"],
+        )
 
     def to_dict(self):
         char_dict = self.__dict__

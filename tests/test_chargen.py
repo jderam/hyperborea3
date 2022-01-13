@@ -568,13 +568,21 @@ def test_get_spells():
             cl_data = get_class_level_data(class_id, level)
             ca = cl_data["ca"]
             spells = get_spells(class_id, level, ca)
-            if ca > 0:
+            if ca > 0 and class_id != 20:
+                assert spells, f"{class_id=} {level=} {spells=}"
                 schools = list(spells.keys())
             else:
                 schools = []
 
-            if ca > 1:
+            if ca > 1 and class_id != 21:
                 assert schools == VALID_SCHOOLS_BY_CLASS_ID[class_id]
+            elif class_id == 21:
+                assert schools in [
+                    ["clr", "mag"],
+                    ["clr", "nec"],
+                    ["drd", "mag"],
+                    ["drd", "nec"],
+                ]
 
             # classes without spells
             if ca == 0:
