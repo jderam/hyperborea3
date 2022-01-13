@@ -588,3 +588,151 @@ def get_thief_skills(
             sk["skill_roll"] += 1
 
     return skills_list
+
+
+def get_caster_schools(class_id: int, level: int) -> List[str]:
+    """Get the school(s) the character will get their spells known from."""
+    cur.execute(
+        "SELECT school_code FROM classes WHERE class_id = ?;",
+        (class_id,),
+    )
+    schools = cur.fetchone()["school_code"]
+    if schools is None:
+        return []
+    schools = [x.strip() for x in schools.split(",")]
+    # need to make a random school selection for shaman
+    if len(schools) > 1:
+        for i in range(len(schools)):
+            school_choices = schools[i].split("/")
+            if len(school_choices) > 1:
+                schools[i] = random.choice(school_choices)
+    return schools
+
+
+def get_random_spell(school: str, spell_level: int, d100_roll: int = None) -> Dict:
+    """Get a randomly rolled-for spell."""
+    if d100_roll is None:
+        d100_roll = roll_dice(1, 100)
+    assert d100_roll in range(1, 101)
+    cur.execute(
+        """
+        SELECT school
+             , spell_level
+             , spell_id
+             , spell_name
+             , rng as 'range'
+             , dur as duration
+             , reversible
+             , pp
+             , spell_desc_html as spell_desc
+          FROM v_complete_spell_list
+         WHERE school = ?
+           AND spell_level = ?
+           AND ? BETWEEN d100_min AND d100_max;
+        """,
+        (school, spell_level, d100_roll),
+    )
+    try:
+        result = dict(cur.fetchone())
+    except TypeError:
+        print(f"Got no result back. {school=} {spell_level=} {d100_roll=}")
+        raise
+    return result
+
+
+def get_spells(class_id: int, level: int, ca: int) -> List[Dict]:
+    """Return the list of spells known for the character."""
+    if ca == 0:
+        return None
+    schools = get_caster_schools(class_id, level)
+    if len(schools) == 0:
+        return None
+    else:
+        spells = {}
+    for school in schools:
+        spells[school] = {}
+        cur.execute(
+            """
+            SELECT *
+            FROM class_spells_by_level
+            WHERE class_id = ?
+              AND level = ?
+              AND school = ?;
+            """,
+            (class_id, level, school),
+        )
+        result = cur.fetchone()
+        if result is None:
+            continue
+        try:
+            class_spells = dict(result)
+        except TypeError:
+            print(
+                "No entry found in class_spells_by_level."
+                f" {class_id=} {level=} {school=}"
+            )
+            raise
+        spells[school]["spells_per_day"] = {
+            "lvl1": class_spells["spells_per_day1"],
+            "lvl2": class_spells["spells_per_day2"],
+            "lvl3": class_spells["spells_per_day3"],
+            "lvl4": class_spells["spells_per_day4"],
+            "lvl5": class_spells["spells_per_day5"],
+            "lvl6": class_spells["spells_per_day6"],
+        }
+        spells[school]["spells_known"] = []
+        for k in [
+            "spells_known1",
+            "spells_known2",
+            "spells_known3",
+            "spells_known4",
+            "spells_known5",
+            "spells_known6",
+        ]:
+            spell_level = int(k[-1])
+            spell_qty = class_spells[k]
+            added_counter = 0
+            while added_counter < spell_qty:
+                random_spell = get_random_spell(school, spell_level)
+                already_known = [x["spell_id"] for x in spells[school]["spells_known"]]
+                if random_spell["spell_id"] not in already_known:
+                    spells[school]["spells_known"].append(random_spell)
+                    added_counter += 1
+    return spells
+
+
+def apply_spells_per_day_bonus(
+    spells: Dict,
+    bonus_spells_in: int,
+    bonus_spells_ws: int,
+) -> Dict:
+    """Increase spells per day for high IN/WS scores. Must already have at least
+    one spell per day already for the given level.
+    """
+    if spells is None:
+        return None
+    for school in spells.keys():
+        if school in ["clr", "drd"]:
+            for i in range(bonus_spells_ws, 0, -1):
+                lvl_key = f"lvl{i}"
+                if spells[school]["spells_per_day"][lvl_key] > 0:
+                    spells[school]["spells_per_day"][lvl_key] += 1
+        elif school in [
+            "mag",
+            "cry",
+            "ill",
+            "nec",
+            "pyr",
+            "wch",
+        ]:
+            for i in range(bonus_spells_in, 0, -1):
+                lvl_key = f"lvl{i}"
+                if spells[school]["spells_per_day"][lvl_key] > 0:
+                    spells[school]["spells_per_day"][lvl_key] += 1
+        else:
+            raise ValueError(f"Invalid value for school: {school}")
+    return spells
+
+
+def familiar_spells_per_day_bonus():
+    pass

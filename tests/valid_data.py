@@ -14,4 +14,42 @@ VALID_SAVES = list(range(11, 17))
 VALID_HD_QTY = list(range(1, 10))
 VALID_HD_SIZE = [4, 6, 8, 10, 12]
 VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
+VALID_SCHOOLS = ["clr", "cry", "drd", "ill", "mag", "nec", "pyr", "wch"]
+VALID_SPELL_LEVELS = list(range(1, 7))
 VALID_TA = list(range(13))
+
+VALID_SCHOOLS_BY_CLASS_ID = {
+    1: [],
+    2: ["mag"],
+    3: ["clr"],
+    4: [],
+    5: [],
+    6: [],
+    7: [],
+    8: [],
+    9: ["clr"],
+    10: ["drd", "mag"],
+    11: ["mag"],
+    12: ["cry"],
+    13: ["ill"],
+    14: ["nec"],
+    15: ["pyr"],
+    16: ["wch"],
+    17: ["drd"],
+    18: [],
+    19: ["clr"],
+    20: [],
+    # 21: Shaman intentinally omitted as they have special rules
+    22: [],
+    23: ["drd", "ill"],
+    24: ["mag"],
+    25: ["clr"],
+    26: [],
+    27: ["clr"],
+    28: ["cry"],
+    29: ["pyr"],
+    30: ["nec"],
+    31: ["ill"],
+    32: ["pyr"],
+    33: ["cry"],
+}
