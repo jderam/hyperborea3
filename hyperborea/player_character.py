@@ -8,6 +8,7 @@ from hyperborea.chargen import (
     get_alignment,
     get_attr,
     get_class_level_data,
+    get_combat_matrix,
     get_gender,
     get_hd,
     get_level,
@@ -71,11 +72,15 @@ class PlayerCharacter:
             self.level,
             self.attr["cn"]["hp_adj"],
         )
-        self.fa = get_class_level_data(self.class_id, self.level)["fa"]
-        self.ca = get_class_level_data(self.class_id, self.level)["ca"]
-        self.ta = get_class_level_data(self.class_id, self.level)["ta"]
-        self.sv = get_class_level_data(self.class_id, self.level)["sv"]
+        cl_data = get_class_level_data(self.class_id, self.level)
+        self.fa = cl_data["fa"]
+        self.ca = cl_data["ca"]
+        self.ta = cl_data["ta"]
+        self.sv = cl_data["sv"]
+
         self.sv_bonus = get_save_bonuses(self.class_id)
+
+        self.combat_matrix = get_combat_matrix(self.fa)
 
         self.name = ""
 
