@@ -9,6 +9,7 @@ from hyperborea.chargen import (
     get_caster_schools,
     get_class_level_data,
     get_class_list,
+    get_combat_matrix,
     get_gender,
     get_hd,
     get_level,
@@ -168,6 +169,13 @@ def test_roll_hit_points():
                 hp_adj = mods["hp_adj"]
                 hp = roll_hit_points(class_id, level, hp_adj)
                 assert level <= hp <= max_possible_hp
+
+
+def test_get_combat_matrix():
+    for fa in VALID_FA:
+        combat_matrix = get_combat_matrix(fa)
+        assert list(combat_matrix.keys()) == list(range(-9, 10))
+        assert combat_matrix[0] == 20 - fa
 
 
 def test_starting_armour():
