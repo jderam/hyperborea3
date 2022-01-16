@@ -348,6 +348,14 @@ def roll_hit_points(class_id: int, level: int, hp_adj: int) -> int:
     return hp
 
 
+def get_combat_matrix(fa: int) -> Dict[int, int]:
+    """Return combat matrix based on FA."""
+    combat_matrix = {}
+    for k in range(-9, 10):
+        combat_matrix[k] = 20 - k - fa
+    return combat_matrix
+
+
 def get_alignment(class_id: int) -> Dict:
     """Choose a random alignment based on the options available to a given class."""
     cur.execute(
