@@ -598,6 +598,44 @@ def get_thief_skills(
     return skills_list
 
 
+def get_turn_undead_matrix(ta: int, turn_adj: int) -> Dict[str, str]:
+    """Get turn undead matrix. Apply CH turning adjustment if applicable."""
+    if ta == 0:
+        return None
+    cur.execute(
+        """
+        SELECT undead_type_00
+             , undead_type_01
+             , undead_type_02
+             , undead_type_03
+             , undead_type_04
+             , undead_type_05
+             , undead_type_06
+             , undead_type_07
+             , undead_type_08
+             , undead_type_09
+             , undead_type_10
+             , undead_type_11
+             , undead_type_12
+             , undead_type_13
+          FROM t013_turn_undead
+         WHERE ta = ?;
+        """,
+        (ta,),
+    )
+    turn_undead_matrix = dict(cur.fetchone())
+    if turn_adj != 0:
+        for k, v in turn_undead_matrix.items():
+            if ":" in v:
+                turn_roll = int(v.split(":")[0])
+                turn_roll += turn_adj
+                if turn_roll > 0:
+                    turn_undead_matrix[k] = f"{turn_roll}:12"
+                else:
+                    turn_undead_matrix[k] = "NT"
+    return turn_undead_matrix
+
+
 def get_caster_schools(class_id: int, level: int) -> List[str]:
     """Get the school(s) the character will get their spells known from."""
     cur.execute(
