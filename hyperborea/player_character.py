@@ -23,6 +23,7 @@ from hyperborea.chargen import (
     get_starting_weapons_melee,
     get_starting_weapons_missile,
     get_thief_skills,
+    get_turn_undead_matrix,
     get_xp_bonus,
     get_xp_to_next,
     roll_hit_points,
@@ -106,6 +107,11 @@ class PlayerCharacter:
             self.attr["dx"]["score"],
             self.attr["in"]["score"],
             self.attr["ws"]["score"],
+        )
+
+        self.turn_undead_matrix = get_turn_undead_matrix(
+            self.ta,
+            self.attr["ch"]["turn_adj"],
         )
 
         # TODO: Make a wrapper function for all the functions needed

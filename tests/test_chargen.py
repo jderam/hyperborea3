@@ -25,6 +25,7 @@ from hyperborea.chargen import (
     get_starting_weapons_melee,
     get_starting_weapons_missile,
     get_thief_skills,
+    get_turn_undead_matrix,
     get_xp_to_next,
     roll_hit_points,
     roll_stats,
@@ -551,6 +552,82 @@ def test_get_caster_schools():
                 ]
             else:
                 assert schools == VALID_SCHOOLS_BY_CLASS_ID[class_id]
+
+
+def test_get_turn_undead_matrix():
+    for ta in VALID_TA:
+        for turn_adj in [-1, 0, 1]:
+            turn_undead_matrix = get_turn_undead_matrix(ta, turn_adj)
+            if ta == 0:
+                assert turn_undead_matrix is None
+            if ta == 1 and turn_adj == -1:
+                assert turn_undead_matrix == {
+                    "undead_type_00": "9:12",
+                    "undead_type_01": "6:12",
+                    "undead_type_02": "3:12",
+                    "undead_type_03": "NT",
+                    "undead_type_04": "NT",
+                    "undead_type_05": "NT",
+                    "undead_type_06": "NT",
+                    "undead_type_07": "NT",
+                    "undead_type_08": "NT",
+                    "undead_type_09": "NT",
+                    "undead_type_10": "NT",
+                    "undead_type_11": "NT",
+                    "undead_type_12": "NT",
+                    "undead_type_13": "NT",
+                }
+            if ta == 1 and turn_adj == 0:
+                assert turn_undead_matrix == {
+                    "undead_type_00": "10:12",
+                    "undead_type_01": "7:12",
+                    "undead_type_02": "4:12",
+                    "undead_type_03": "1:12",
+                    "undead_type_04": "NT",
+                    "undead_type_05": "NT",
+                    "undead_type_06": "NT",
+                    "undead_type_07": "NT",
+                    "undead_type_08": "NT",
+                    "undead_type_09": "NT",
+                    "undead_type_10": "NT",
+                    "undead_type_11": "NT",
+                    "undead_type_12": "NT",
+                    "undead_type_13": "NT",
+                }
+            if ta == 12 and turn_adj == 0:
+                assert turn_undead_matrix == {
+                    "undead_type_00": "UD",
+                    "undead_type_01": "UD",
+                    "undead_type_02": "UD",
+                    "undead_type_03": "UD",
+                    "undead_type_04": "UD",
+                    "undead_type_05": "UD",
+                    "undead_type_06": "D",
+                    "undead_type_07": "D",
+                    "undead_type_08": "D",
+                    "undead_type_09": "T",
+                    "undead_type_10": "T",
+                    "undead_type_11": "10:12",
+                    "undead_type_12": "7:12",
+                    "undead_type_13": "4:12",
+                }
+            if ta == 12 and turn_adj == 1:
+                assert turn_undead_matrix == {
+                    "undead_type_00": "UD",
+                    "undead_type_01": "UD",
+                    "undead_type_02": "UD",
+                    "undead_type_03": "UD",
+                    "undead_type_04": "UD",
+                    "undead_type_05": "UD",
+                    "undead_type_06": "D",
+                    "undead_type_07": "D",
+                    "undead_type_08": "D",
+                    "undead_type_09": "T",
+                    "undead_type_10": "T",
+                    "undead_type_11": "11:12",
+                    "undead_type_12": "8:12",
+                    "undead_type_13": "5:12",
+                }
 
 
 def test_spell_data():
