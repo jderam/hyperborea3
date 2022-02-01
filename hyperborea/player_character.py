@@ -179,7 +179,8 @@ class PlayerCharacter:
         return
 
     def cleanup(self):
-        pass
+        for a in self.class_abilities:
+            del a["upd_function"]
 
     def to_dict(self):
         char_dict = self.__dict__
