@@ -140,7 +140,7 @@ def roll_stats(method: int = 3, class_id: int = 0) -> Dict:
         elif method == 5:
             """Roll 2d6+6 for each attribute in order of strength, dexterity,
             constitution, intelligence, wisdom, and charisma; the results
-            are your character’s attribute scores.
+            are your character's attribute scores.
             """
             for stat in attr.keys():
                 attr[stat]["score"] = roll_dice(qty=2, sides=6) + 6
@@ -778,6 +778,21 @@ def apply_spells_per_day_bonus(
         else:
             raise ValueError(f"Invalid value for school: {school}")
     return spells
+
+
+def get_class_abilities(class_id: int, level: int) -> Dict:
+    """Get class abilities from class abilities table."""
+    cur.execute(
+        """
+        SELECT *
+          FROM class_abilities
+         WHERE class_id = ?
+           AND level <= ?;
+        """,
+        (class_id, level),
+    )
+    class_abilities = [dict(x) for x in cur.fetchall()]
+    return class_abilities
 
 
 def familiar_spells_per_day_bonus():
