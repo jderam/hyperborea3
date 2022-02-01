@@ -1,4 +1,7 @@
 import json
+import random  # noqa: F401
+from typing import Dict, List
+
 from hyperborea.chargen import (
     ac_to_aac,
     apply_spells_per_day_bonus,
@@ -7,8 +10,10 @@ from hyperborea.chargen import (
     class_name_to_id,
     get_alignment,
     get_attr,
+    get_class_abilities,
     get_class_level_data,
     get_combat_matrix,
+    get_deity,
     get_gender,
     get_hd,
     get_level,
@@ -63,6 +68,7 @@ class PlayerCharacter:
         self.xp_bonus: bool = get_xp_bonus(self.class_id, self.attr)
 
         self.alignment = get_alignment(self.class_id)
+        self.deity = get_deity(self.alignment["short_name"])
         self.race_id = get_race_id()
         self.race = get_race(self.race_id)
         self.gender = get_gender()
@@ -121,6 +127,60 @@ class PlayerCharacter:
             bonus_spells_in=self.attr["in"]["bonus_spells"],
             bonus_spells_ws=self.attr["ws"]["bonus_spells"],
         )
+
+        self.class_abilities = get_class_abilities(self.class_id, self.level)
+        self.apply_class_ability_funcs(self.class_abilities)
+
+        self.cleanup()
+
+    def apply_class_ability_funcs(self, class_abilities: List[Dict]) -> None:
+        """"""
+
+        def extraordinary(stats: List[str]):
+            for stat in stats:
+                self.attr[stat]["feat"] += 8
+
+        def gain_familiar():
+            pass
+
+        def improve_attack_rate():
+            pass
+
+        def improve_mv(mv: int):
+            pass
+
+        def mastery(weapon_ids: List[int]):
+            pass
+
+        def monk_ac_bonus(level: int):
+            pass
+
+        def monk_empty_hand(level: int):
+            pass
+
+        def monk_run(level: int):
+            pass
+
+        def priest_specialized_faith(alignment: str, level: int):
+            pass
+
+        def runegraving(level: int):
+            pass
+
+        def skilful_defender(level: int):
+            pass
+
+        upd_functions = [
+            x["upd_function"] for x in class_abilities if x["upd_function"] is not None
+        ]
+        for uf in upd_functions:
+            eval(uf)
+
+        return
+
+    def cleanup(self):
+        for a in self.class_abilities:
+            del a["upd_function"]
 
     def to_dict(self):
         char_dict = self.__dict__

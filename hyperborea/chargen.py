@@ -3,6 +3,8 @@ import random
 import sqlite3
 from typing import Dict, List
 
+from hyperborea.valid_data import VALID_ALIGMENTS_SHORT
+
 
 URI = f"file:{Path(__file__).parent}/hyperborea.sqlite3?mode=ro"
 con = sqlite3.connect(URI, check_same_thread=False, uri=True)
@@ -140,7 +142,7 @@ def roll_stats(method: int = 3, class_id: int = 0) -> Dict:
         elif method == 5:
             """Roll 2d6+6 for each attribute in order of strength, dexterity,
             constitution, intelligence, wisdom, and charisma; the results
-            are your character’s attribute scores.
+            are your character's attribute scores.
             """
             for stat in attr.keys():
                 attr[stat]["score"] = roll_dice(qty=2, sides=6) + 6
@@ -371,6 +373,14 @@ def get_alignment(class_id: int) -> Dict:
     allowed_alignments = [dict(x) for x in cur.fetchall()]
     alignment = random.choice(allowed_alignments)
     return alignment
+
+
+def get_deity(short_alignment: str) -> Dict:
+    """Randomly select a deity based on alignment."""
+    assert (
+        short_alignment in VALID_ALIGMENTS_SHORT
+    ), f"Invalid alignment: {short_alignment}"
+    return None
 
 
 def get_race_id() -> int:
@@ -778,6 +788,21 @@ def apply_spells_per_day_bonus(
         else:
             raise ValueError(f"Invalid value for school: {school}")
     return spells
+
+
+def get_class_abilities(class_id: int, level: int) -> Dict:
+    """Get class abilities from class abilities table."""
+    cur.execute(
+        """
+        SELECT *
+          FROM class_abilities
+         WHERE class_id = ?
+           AND level <= ?;
+        """,
+        (class_id, level),
+    )
+    class_abilities = [dict(x) for x in cur.fetchall()]
+    return class_abilities
 
 
 def familiar_spells_per_day_bonus():
