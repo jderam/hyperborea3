@@ -13,6 +13,7 @@ from hyperborea.chargen import (
     get_class_abilities,
     get_class_level_data,
     get_combat_matrix,
+    get_deity,
     get_gender,
     get_hd,
     get_level,
@@ -67,6 +68,7 @@ class PlayerCharacter:
         self.xp_bonus: bool = get_xp_bonus(self.class_id, self.attr)
 
         self.alignment = get_alignment(self.class_id)
+        self.deity = get_deity(self.alignment["short_name"])
         self.race_id = get_race_id()
         self.race = get_race(self.race_id)
         self.gender = get_gender()
@@ -171,8 +173,6 @@ class PlayerCharacter:
         upd_functions = [
             x["upd_function"] for x in class_abilities if x["upd_function"] is not None
         ]
-        level = self.level  # noqa: F841
-
         for uf in upd_functions:
             eval(uf)
 

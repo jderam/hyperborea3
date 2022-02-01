@@ -3,6 +3,8 @@ import random
 import sqlite3
 from typing import Dict, List
 
+from hyperborea.valid_data import VALID_ALIGMENTS_SHORT
+
 
 URI = f"file:{Path(__file__).parent}/hyperborea.sqlite3?mode=ro"
 con = sqlite3.connect(URI, check_same_thread=False, uri=True)
@@ -371,6 +373,14 @@ def get_alignment(class_id: int) -> Dict:
     allowed_alignments = [dict(x) for x in cur.fetchall()]
     alignment = random.choice(allowed_alignments)
     return alignment
+
+
+def get_deity(short_alignment: str) -> Dict:
+    """Randomly select a deity based on alignment."""
+    assert (
+        short_alignment in VALID_ALIGMENTS_SHORT
+    ), f"Invalid alignment: {short_alignment}"
+    return None
 
 
 def get_race_id() -> int:
