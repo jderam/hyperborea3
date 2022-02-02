@@ -20,6 +20,7 @@ from hyperborea3.chargen import (
     get_next_atk_rate,
     get_race,
     get_race_id,
+    get_random_familiar,
     get_save_bonuses,
     get_spells,
     get_starting_armour,
@@ -32,6 +33,7 @@ from hyperborea3.chargen import (
     get_turn_undead_matrix,
     get_xp_bonus,
     get_xp_to_next,
+    roll_dice,
     roll_hit_points,
     select_random_class,
 )
@@ -156,7 +158,24 @@ class PlayerCharacter:
                 self.attr[stat]["feat"] += 8
 
         def gain_familiar():
-            pass
+            animal = get_random_familiar()
+            hp = roll_dice(1, 3) + 1
+            self.hp += hp
+            if self.class_id == 2:
+                school = "mag"
+            elif self.class_id == 16:
+                school = "wch"
+            else:
+                ValueError(
+                    "Only expecting Magician (2) or Witch (16). "
+                    f"Got {self.class_id=}"
+                )
+            for spd_lvl in self.spells[school]["spells_per_day"].keys():
+                if self.spells[school]["spells_per_day"][spd_lvl] > 0:
+                    self.spells[school]["spells_per_day"][spd_lvl] += 1
+            for cls_abl in self.class_abilities:
+                if cls_abl["ability_title"] == "Familiar":
+                    cls_abl["brief_desc"] += f". [{animal}, {hp} hp]"
 
         def improve_attack_rate():
             for w in self.weapons_melee:

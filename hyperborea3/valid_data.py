@@ -6,6 +6,23 @@ VALID_CLASS_IDS = list(range(1, 34))
 VALID_DENOMINATIONS = ["pp", "gp", "ep", "sp", "cp"]
 VALID_DICE_METHODS = [1, 2, 3, 4, 5, 6]
 VALID_FA = list(range(13))
+VALID_FAMILIARS = [
+    "Archæopteryx",
+    "Ice Toad",
+    "Falcon/Hawk",
+    "Squirrel",
+    "Hare",
+    "Gull",
+    "Owl",
+    "Cat",
+    "Rat",
+    "Bat",
+    "Raven",
+    "Weasel",
+    "Fox",
+    "Viper",
+    "Pegomastax",
+]
 VALID_GENDERS = ["Male", "Female", "Non-Binary"]
 VALID_GP = range(2, 6)
 VALID_LEVELS = list(range(1, 13))

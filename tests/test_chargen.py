@@ -15,6 +15,7 @@ from hyperborea3.chargen import (
     get_level,
     get_qualifying_classes,
     get_race_id,
+    get_random_familiar,
     get_random_spell,
     get_save_bonuses,
     get_spells,
@@ -38,6 +39,7 @@ from hyperborea3.valid_data import (
     VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
     VALID_FA,
+    VALID_FAMILIARS,
     VALID_GENDERS,
     VALID_GP,
     VALID_HD_PLUS,
@@ -673,3 +675,9 @@ def test_get_spells():
             if ca == 0:
                 assert spells is None, f"{class_id=} {level=}"
             # classes with no spells at early levels
+
+
+def test_get_random_familiar():
+    for i in range(1000):
+        animal = get_random_familiar()
+        assert animal in VALID_FAMILIARS, f"{animal=} not in {VALID_FAMILIARS}"
