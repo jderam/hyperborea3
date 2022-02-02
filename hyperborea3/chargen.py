@@ -831,5 +831,16 @@ def get_class_abilities(class_id: int, level: int) -> Dict:
     return class_abilities
 
 
-def familiar_spells_per_day_bonus():
-    pass
+def get_random_familiar() -> str:
+    """Roll 2d8 to get a random familiar."""
+    roll = roll_dice(2, 8)
+    cur.execute(
+        """
+        SELECT animal
+          FROM t010_familiars
+         WHERE roll_2d8 = ?;
+        """,
+        (roll,),
+    )
+    animal = cur.fetchone()["animal"]
+    return animal
