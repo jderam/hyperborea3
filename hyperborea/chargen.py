@@ -479,6 +479,13 @@ def get_starting_weapons_melee(class_id: int) -> List[Dict]:
         (class_id,),
     )
     melee_weapons = [dict(x) for x in cur.fetchall()]
+    for mw in melee_weapons:
+        mw["hurlable"] = bool(mw["hurlable"])
+        mw["atk_rate"] = "1/1"
+        mw["melee_atk"] = 0
+        mw["hurled_atk"] = 0 if mw["hurlable"] else None
+        mw["dmg_adj"] = 0
+        mw["mastery"] = False
     return melee_weapons
 
 
@@ -497,6 +504,12 @@ def get_starting_weapons_missile(class_id: int) -> List[Dict]:
         (class_id,),
     )
     missile_weapons = [dict(x) for x in cur.fetchall()]
+    for mw in missile_weapons:
+        mw["hurled"] = bool(mw["hurled"])
+        mw["launched"] = bool(mw["launched"])
+        mw["missile_atk"] = 0
+        mw["dmg_adj"] = 0
+        mw["mastery"] = False
     return missile_weapons
 
 
@@ -532,6 +545,19 @@ def calculate_ac(armour_ac: int, shield_def_mod: int, dx_def_adj: int) -> int:
     ac -= shield_def_mod
     ac -= dx_def_adj
     return ac
+
+
+def get_next_atk_rate(atk_rate: str) -> str:
+    atk_progression = [
+        "1/1",
+        "3/2",
+        "2/1",
+        "5/2",
+        "3/1",
+    ]
+    atk_prog_idx = atk_progression.index(atk_rate)
+    atk_prog_idx += 1
+    return atk_progression[atk_prog_idx]
 
 
 def ac_to_aac(ac: int) -> int:
