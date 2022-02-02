@@ -3,7 +3,7 @@ import random  # noqa: F401
 from typing import Dict, List
 
 from hyperborea.chargen import (
-    ac_to_aac,
+    # ac_to_aac,
     apply_spells_per_day_bonus,
     calculate_ac,
     class_id_to_name,
@@ -17,6 +17,7 @@ from hyperborea.chargen import (
     get_gender,
     get_hd,
     get_level,
+    get_next_atk_rate,
     get_race,
     get_race_id,
     get_save_bonuses,
@@ -99,11 +100,11 @@ class PlayerCharacter:
             self.shield["def_mod"] if self.shield is not None else 0,
             self.attr["dx"]["def_adj"],
         )
-        self.aac = ac_to_aac(self.ac)
+        # self.aac = ac_to_aac(self.ac)
 
         self.weapons_melee = get_starting_weapons_melee(self.class_id)
         self.weapons_missile = get_starting_weapons_missile(self.class_id)
-        # fill out weapon details
+        self.update_weapons_atk_dmg()
         self.equipment = get_starting_gear(self.class_id)
         self.money = get_starting_money()
 
@@ -133,6 +134,20 @@ class PlayerCharacter:
 
         self.cleanup()
 
+    def update_weapons_atk_dmg(self):
+        for w in self.weapons_melee:
+            w["melee_atk"] += self.fa
+            w["melee_atk"] += self.attr["st"]["atk_mod"]
+            w["dmg_adj"] += self.attr["st"]["dmg_adj"]
+            if w["hurlable"]:
+                w["hurled_atk"] += self.fa
+                w["hurled_atk"] += self.attr["dx"]["atk_mod"]
+        for w in self.weapons_missile:
+            w["missile_atk"] += self.fa
+            w["missile_atk"] += self.attr["dx"]["atk_mod"]
+            if w["hurled"]:
+                w["dmg_adj"] += self.attr["st"]["dmg_adj"]
+
     def apply_class_ability_funcs(self, class_abilities: List[Dict]) -> None:
         """"""
 
@@ -144,13 +159,45 @@ class PlayerCharacter:
             pass
 
         def improve_attack_rate():
-            pass
+            for w in self.weapons_melee:
+                w["atk_rate"] = get_next_atk_rate(w["atk_rate"])
 
         def improve_mv(mv: int):
             pass
 
         def mastery(weapon_ids: List[int]):
-            pass
+            for w in self.weapons_melee:
+                if w["weapon_id"] in weapon_ids:
+                    w["mastery"] = True
+                    w["atk_rate"] = get_next_atk_rate(w["atk_rate"])
+                    w["melee_atk"] += 1
+                    w["dmg_adj"] += 1
+                    if w["hurlable"]:
+                        w["hurled_rof"] = get_next_atk_rate(w["hurled_rof"])
+                        w["hurled_atk"] += 1
+
+            for w in self.weapons_missile:
+                if w["weapon_id"] in weapon_ids:
+                    w["mastery"] = True
+                    w["missile_atk"] += 1
+                    w["dmg_adj"] += 1
+                    # Long Bow and Short Bow
+                    if w["weapon_id"] in [209, 211]:
+                        # advance once for levels 1-6
+                        w["rof"] = get_next_atk_rate(w["rof"])
+                        # advance again for levels 7-12
+                        if self.level >= 7:
+                            w["rof"] = get_next_atk_rate(w["rof"])
+                    # Light Crossbow
+                    elif w["weapon_id"] == 214:
+                        # only advance for levels 7-12
+                        if self.level >= 7:
+                            w["rof"] = get_next_atk_rate(w["rof"])
+                    else:
+                        raise ValueError(
+                            "Only expecting mastery for missile weapons 209/211/214, "
+                            f"not weapon_id={w['weapon_id']}"
+                        )
 
         def monk_ac_bonus(level: int):
             pass

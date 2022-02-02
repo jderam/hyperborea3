@@ -1,3 +1,4 @@
+import random
 from hyperborea.player_character import PlayerCharacter
 from tests.valid_data import (
     VALID_ABILITY_SCORES,
@@ -18,7 +19,7 @@ from tests.valid_data import (
 def test_pc():
     # stress test on building a bunch of characters
     for i in range(10000):
-        pc = PlayerCharacter()
+        pc = PlayerCharacter(xp=random.randint(1, 1000) * 1000)
         assert pc.attr["st"]["score"] in VALID_ABILITY_SCORES
         assert pc.attr["dx"]["score"] in VALID_ABILITY_SCORES
         assert pc.attr["cn"]["score"] in VALID_ABILITY_SCORES
