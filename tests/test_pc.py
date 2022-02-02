@@ -1,6 +1,6 @@
 import random
-from hyperborea.player_character import PlayerCharacter
-from tests.valid_data import (
+from hyperborea3.player_character import PlayerCharacter
+from hyperborea3.valid_data import (
     VALID_ABILITY_SCORES,
     VALID_ALIGMENTS_SHORT,
     VALID_CA,

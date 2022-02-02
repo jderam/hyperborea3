@@ -3,7 +3,7 @@ import random
 import sqlite3
 from typing import Dict, List
 
-from hyperborea.valid_data import VALID_ALIGMENTS_SHORT
+from hyperborea3.valid_data import VALID_ALIGMENTS_SHORT
 
 
 URI = f"file:{Path(__file__).parent}/hyperborea.sqlite3?mode=ro"

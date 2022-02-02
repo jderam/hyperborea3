@@ -10,7 +10,7 @@ build_wheel: ## build the wheel for this package
 	python setup.py sdist bdist_wheel
 
 pip_install: ## pip install this package
-	pip install dist/hyperborea-*-py3-none-any.whl --force-reinstall
+	pip install dist/hyperborea3-*-py3-none-any.whl --force-reinstall
 
 test: ## Run pytest tests
 	python -m pytest tests

@@ -1,11 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name="hyperborea",
-    version="0.1.0",
+    name="hyperborea3",
+    version="0.2.0",
     author="Jeremy Deram",
     author_email="jderam@gmail.com",
-    description="Character Generator plus other tools for the Hyperborea RPG",
+    description="Character Generator plus other tools for the Hyperborea RPG, 3rd Edition",  # noqa: E501
     # long_description=long_description,
     # long_description_content_type="text/markdown",
     url="https://github.com/jderam/hyperborea-tools",

@@ -2,7 +2,7 @@ import json
 import random  # noqa: F401
 from typing import Dict, List
 
-from hyperborea.chargen import (
+from hyperborea3.chargen import (
     # ac_to_aac,
     apply_spells_per_day_bonus,
     calculate_ac,
