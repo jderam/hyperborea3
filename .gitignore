@@ -3,8 +3,7 @@
 .pytest_cache/
 .python-version
 .vscode
-hyperborea.egg-info
-hyperborea.sqlite3
+hyperborea3.egg-info
 settings.json
 *.pyc
 build/

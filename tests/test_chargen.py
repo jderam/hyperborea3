@@ -1,5 +1,5 @@
 from pathlib import Path
-from hyperborea.chargen import (
+from hyperborea3.chargen import (
     URI,
     ac_to_aac,
     calculate_ac,
@@ -30,7 +30,7 @@ from hyperborea.chargen import (
     roll_hit_points,
     roll_stats,
 )
-from tests.valid_data import (
+from hyperborea3.valid_data import (
     VALID_ABILITY_SCORES,
     VALID_ABILITIES,
     VALID_CA,

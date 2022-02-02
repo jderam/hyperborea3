@@ -1,5 +1,5 @@
 from flask import Flask, request
-from hyperborea.player_character import PlayerCharacter
+from hyperborea3.player_character import PlayerCharacter
 
 
 app = Flask(__name__)
