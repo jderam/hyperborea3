@@ -34,6 +34,7 @@ VALID_HD_SIZE = [4, 6, 8, 10, 12]
 VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
 VALID_SCHOOLS = ["clr", "cry", "drd", "ill", "mag", "nec", "pyr", "wch"]
 VALID_SPELL_LEVELS = list(range(1, 7))
+VALID_SUBCLASS_PARAMS = [0, 1, 2]
 VALID_TA = list(range(13))
 
 VALID_SCHOOLS_BY_CLASS_ID = {

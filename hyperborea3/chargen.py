@@ -42,22 +42,22 @@ def get_class_list(subclasses: bool = True):
     return result
 
 
-def class_name_to_id(class_name: str):
-    if class_name.lower() == "random":
-        class_id = 0
-    else:
-        class_list = get_class_list()
-        class_names = [x["class_name"].lower() for x in class_list]
-        if class_name.lower() not in class_names:
-            raise ValueError(f"class name not recognized: {class_name}")
-        class_id_list = [
-            x["class_id"]
-            for x in class_list
-            if x["class_name"].lower() == class_name.lower()
-        ]
-        assert len(class_id_list) == 1, "Ambiguous result"
-        class_id = class_id_list[0]
-    return class_id
+# def class_name_to_id(class_name: str):
+#     if class_name.lower() == "random":
+#         class_id = 0
+#     else:
+#         class_list = get_class_list()
+#         class_names = [x["class_name"].lower() for x in class_list]
+#         if class_name.lower() not in class_names:
+#             raise ValueError(f"class name not recognized: {class_name}")
+#         class_id_list = [
+#             x["class_id"]
+#             for x in class_list
+#             if x["class_name"].lower() == class_name.lower()
+#         ]
+#         assert len(class_id_list) == 1, "Ambiguous result"
+#         class_id = class_id_list[0]
+#     return class_id
 
 
 def class_id_to_name(class_id: int) -> str:
@@ -206,12 +206,24 @@ def get_attr(method: int = 3, class_id: int = 0) -> Dict:
     return attr
 
 
-def get_qualifying_classes(attr: Dict, subclasses: bool) -> List[int]:
+def get_qualifying_classes(attr: Dict, subclasses: int) -> List[int]:
     """Return list of class_ids that can be used given the attr."""
-    # Okay, this isn't the easiest code to parse. ¯\_(ツ)_/¯
-    if subclasses is True:
+    # principal classes, subclasses, and sub-subclasses
+    if subclasses == 2:
         cur.execute("SELECT * FROM class_attr_req;")
-    else:
+    # principal classes and subclasses
+    elif subclasses == 1:
+        cur.execute(
+            """
+            SELECT car.*
+              FROM classes c
+              JOIN class_attr_req car
+                ON c.class_id = car.class_id
+             WHERE c.class_type IN ('P', 'S');
+            """
+        )
+    # principal classes only
+    elif subclasses == 0:
         cur.execute(
             """
             SELECT car.*
@@ -238,7 +250,7 @@ def get_qualifying_classes(attr: Dict, subclasses: bool) -> List[int]:
     return qual_classes
 
 
-def select_random_class(attr: Dict, subclasses: bool) -> int:
+def select_random_class(attr: Dict, subclasses: int) -> int:
     """Given a set of stats, determine an appropriate class.
     1. Find all qualifying classes by checking stat requirements.
     2. Randomly choose from among them.
@@ -380,7 +392,34 @@ def get_deity(short_alignment: str) -> Dict:
     assert (
         short_alignment in VALID_ALIGMENTS_SHORT
     ), f"Invalid alignment: {short_alignment}"
-    return None
+    if short_alignment[0] == "C":
+        lkp_align = "Chaotic"
+    elif short_alignment[0] == "L":
+        lkp_align = "Lawful"
+    elif short_alignment[0] == "N":
+        lkp_align = "Neutral"
+    cur.execute(
+        """
+        SELECT *
+          FROM deities
+         WHERE primary_alignment = ?;
+        """,
+        (lkp_align,),
+    )
+    deities = [dict(x) for x in cur.fetchall()]
+    if short_alignment in ["CE", "LE"]:
+        lkp_align = "Evil"
+        cur.execute(
+            """
+            SELECT *
+            FROM deities
+            WHERE primary_alignment = ?;
+            """,
+            (lkp_align,),
+        )
+        deities.extend([dict(x) for x in cur.fetchall()])
+    deity = random.choice(deities)
+    return deity
 
 
 def get_race_id() -> int:
@@ -797,7 +836,8 @@ def apply_spells_per_day_bonus(
         if school in ["clr", "drd"]:
             for i in range(bonus_spells_ws, 0, -1):
                 lvl_key = f"lvl{i}"
-                if spells[school]["spells_per_day"][lvl_key] > 0:
+                # if spells[school]["spells_per_day"][lvl_key] > 0:
+                if spells[school].get("spells_per_day", {}).get(lvl_key, 0) > 0:
                     spells[school]["spells_per_day"][lvl_key] += 1
         elif school in [
             "mag",
@@ -809,7 +849,8 @@ def apply_spells_per_day_bonus(
         ]:
             for i in range(bonus_spells_in, 0, -1):
                 lvl_key = f"lvl{i}"
-                if spells[school]["spells_per_day"][lvl_key] > 0:
+                # if spells[school]["spells_per_day"][lvl_key] > 0:
+                if spells[school].get("spells_per_day", {}).get(lvl_key, 0) > 0:
                     spells[school]["spells_per_day"][lvl_key] += 1
         else:
             raise ValueError(f"Invalid value for school: {school}")
