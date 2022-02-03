@@ -1,5 +1,6 @@
 VALID_ABILITIES = ["st", "dx", "cn", "in", "ws", "ch"]
 VALID_ABILITY_SCORES = list(range(3, 19))
+VALID_AC_TYPES = ["ascending", "descending"]
 VALID_ALIGMENTS_SHORT = ["CE", "CG", "LE", "LG", "N"]
 VALID_CA = list(range(13))
 VALID_CLASS_IDS = list(range(1, 34))
