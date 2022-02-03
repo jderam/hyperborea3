@@ -1,5 +1,6 @@
 VALID_ABILITIES = ["st", "dx", "cn", "in", "ws", "ch"]
 VALID_ABILITY_SCORES = list(range(3, 19))
+VALID_AC_TYPES = ["ascending", "descending"]
 VALID_ALIGMENTS_SHORT = ["CE", "CG", "LE", "LG", "N"]
 VALID_CA = list(range(13))
 VALID_CLASS_IDS = list(range(1, 34))
@@ -33,6 +34,7 @@ VALID_HD_SIZE = [4, 6, 8, 10, 12]
 VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
 VALID_SCHOOLS = ["clr", "cry", "drd", "ill", "mag", "nec", "pyr", "wch"]
 VALID_SPELL_LEVELS = list(range(1, 7))
+VALID_SUBCLASS_PARAMS = [0, 1, 2]
 VALID_TA = list(range(13))
 
 VALID_SCHOOLS_BY_CLASS_ID = {

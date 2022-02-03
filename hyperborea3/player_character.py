@@ -4,10 +4,10 @@ from typing import Dict, List
 
 from hyperborea3.chargen import (
     # ac_to_aac,
+    ac_to_aac,
     apply_spells_per_day_bonus,
     calculate_ac,
     class_id_to_name,
-    class_name_to_id,
     get_alignment,
     get_attr,
     get_class_abilities,
@@ -37,20 +37,33 @@ from hyperborea3.chargen import (
     roll_hit_points,
     select_random_class,
 )
+from hyperborea3.valid_data import (
+    VALID_AC_TYPES,
+    VALID_CLASS_IDS,
+    VALID_DICE_METHODS,
+    VALID_SUBCLASS_PARAMS,
+)
 
 
 class PlayerCharacter:
     def __init__(
         self,
         method: int = 3,
-        selected_class: str = "random",
-        subclasses: bool = False,
+        class_id: int = 0,
+        subclasses: int = 2,
         xp: int = 0,
+        ac_type: str = "descending",
     ):
+        # validations
+        assert method in VALID_DICE_METHODS
+        assert class_id in [0] + VALID_CLASS_IDS
+        assert subclasses in VALID_SUBCLASS_PARAMS
+        assert ac_type in VALID_AC_TYPES
+
         # Always use Method VI if a specific class is chosen
-        if selected_class.lower() != "random":
+        if class_id != 0:
             self.method = 6
-            self.class_id = class_name_to_id(selected_class)
+            self.class_id = class_id
             self.class_name = class_id_to_name(self.class_id)
             self.attr = get_attr(
                 method=self.method,
@@ -60,7 +73,7 @@ class PlayerCharacter:
             self.method: int = method
             self.attr = get_attr(
                 method=self.method,
-                class_id=0,
+                class_id=class_id,
             )
             self.class_id = select_random_class(self.attr, subclasses)
             self.class_name = class_id_to_name(self.class_id)
@@ -72,6 +85,7 @@ class PlayerCharacter:
 
         self.alignment = get_alignment(self.class_id)
         self.deity = get_deity(self.alignment["short_name"])
+
         self.race_id = get_race_id()
         self.race = get_race(self.race_id)
         self.gender = get_gender()
@@ -90,7 +104,8 @@ class PlayerCharacter:
 
         self.sv_bonus = get_save_bonuses(self.class_id)
 
-        self.combat_matrix = get_combat_matrix(self.fa)
+        if ac_type == "descending":
+            self.combat_matrix = get_combat_matrix(self.fa)
 
         self.name = ""
 
@@ -102,6 +117,7 @@ class PlayerCharacter:
             self.shield["def_mod"] if self.shield is not None else 0,
             self.attr["dx"]["def_adj"],
         )
+        self.mv = self.armour["mv"]
         # self.aac = ac_to_aac(self.ac)
 
         self.weapons_melee = get_starting_weapons_melee(self.class_id)
@@ -134,18 +150,21 @@ class PlayerCharacter:
         self.class_abilities = get_class_abilities(self.class_id, self.level)
         self.apply_class_ability_funcs(self.class_abilities)
 
+        if ac_type == "ascending":
+            self.ascending_ac()
+
         self.cleanup()
 
     def update_weapons_atk_dmg(self):
         for w in self.weapons_melee:
-            w["melee_atk"] += self.fa
+            # w["melee_atk"] += self.fa
             w["melee_atk"] += self.attr["st"]["atk_mod"]
             w["dmg_adj"] += self.attr["st"]["dmg_adj"]
             if w["hurlable"]:
-                w["hurled_atk"] += self.fa
+                # w["hurled_atk"] += self.fa
                 w["hurled_atk"] += self.attr["dx"]["atk_mod"]
         for w in self.weapons_missile:
-            w["missile_atk"] += self.fa
+            # w["missile_atk"] += self.fa
             w["missile_atk"] += self.attr["dx"]["atk_mod"]
             if w["hurled"]:
                 w["dmg_adj"] += self.attr["st"]["dmg_adj"]
@@ -182,7 +201,7 @@ class PlayerCharacter:
                 w["atk_rate"] = get_next_atk_rate(w["atk_rate"])
 
         def improve_mv(mv: int):
-            pass
+            self.mv = mv
 
         def mastery(weapon_ids: List[int]):
             for w in self.weapons_melee:
@@ -219,13 +238,29 @@ class PlayerCharacter:
                         )
 
         def monk_ac_bonus(level: int):
-            pass
+            ac_bonus = (level + 1) // 2
+            self.ac -= ac_bonus
+            for cls_abl in self.class_abilities:
+                if cls_abl["ability_title"] == "Defensive Ability":
+                    cls_abl["brief_desc"] += f" (+{ac_bonus})"
 
         def monk_empty_hand(level: int):
-            pass
+            empty_hand_dice = (level + 2) // 3
+            empty_hand_damage = f"{empty_hand_dice}d4"
+            for w in self.weapons_melee:
+                if w["weapon_id"] == 104:
+                    w["atk_rate"] = "2/1"
+                    w["damage"] = f"{empty_hand_damage}+1"
+                    if self.level >= 5:
+                        w["melee_atk"] += 1
+            for cls_abl in self.class_abilities:
+                if cls_abl["ability_title"] == "Empty Hand":
+                    cls_abl["brief_desc"] += f" ({empty_hand_damage} damage)"
 
         def monk_run(level: int):
-            pass
+            self.mv = 50
+            if level >= 7:
+                self.mv = 60
 
         def priest_specialized_faith(alignment: str, level: int):
             pass
@@ -234,7 +269,13 @@ class PlayerCharacter:
             pass
 
         def skilful_defender(level: int):
-            pass
+            ac_bonus = 1
+            if level >= 7:
+                ac_bonus = 2
+            self.ac -= ac_bonus
+            for cls_abl in self.class_abilities:
+                if cls_abl["ability_title"] == "Skilful Defender":
+                    cls_abl["brief_desc"] += f" (+{ac_bonus})"
 
         upd_functions = [
             x["upd_function"] for x in class_abilities if x["upd_function"] is not None
@@ -243,6 +284,16 @@ class PlayerCharacter:
             eval(uf)
 
         return
+
+    def ascending_ac(self):
+        self.armour["ac"] = ac_to_aac(self.armour["ac"])
+        self.ac = ac_to_aac(self.ac)
+        for w in self.weapons_melee:
+            w["melee_atk"] += self.fa
+            if w["hurlable"]:
+                w["hurled_atk"] += self.fa
+        for w in self.weapons_missile:
+            w["missile_atk"] += self.fa
 
     def cleanup(self):
         for a in self.class_abilities:
