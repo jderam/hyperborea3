@@ -18,10 +18,8 @@ test: ## Run pytest tests
 gen_requirements_txt: ## Generate a new requirements.txt file
 	pip-compile requirements.in > requirements.txt
 
-run_test_flask: ## Run flask test server
-	FLASK_APP=app
-	FLASK_DEBUG=1
-	flask run
+run_test_uvicorn: ## Run fastapi/uvicorn test server
+	uvicorn main:app --reload
 
 d_build: ## Build the docker container
 	# docker rm hyperborea-tools

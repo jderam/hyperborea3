@@ -8,4 +8,4 @@ RUN python setup.py sdist bdist_wheel
 RUN pip install dist/hyperborea3-*-py3-none-any.whl
 RUN python -m pytest tests
 
-CMD ["gunicorn", "app:app", "--workers", "2", "--threads", "2", "-b", "0.0.0.0:8000"]
+CMD ["uvicorn", "main:app", "--workers", "2", "--host", "0.0.0.0", "--port", "8000"]
