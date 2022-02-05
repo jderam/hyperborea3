@@ -864,7 +864,8 @@ def get_class_abilities(class_id: int, level: int) -> Dict:
         SELECT *
           FROM class_abilities
          WHERE class_id = ?
-           AND level <= ?;
+           AND level <= ?
+        ORDER BY level, ability_title;
         """,
         (class_id, level),
     )
