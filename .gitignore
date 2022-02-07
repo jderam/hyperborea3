@@ -9,3 +9,4 @@ settings.json
 build/
 dist/
 local/
+.DS_Store
