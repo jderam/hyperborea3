@@ -711,7 +711,7 @@ def get_turn_undead_matrix(ta: int, turn_adj: int) -> Dict[str, str]:
     return turn_undead_matrix
 
 
-def get_caster_schools(class_id: int, level: int) -> List[str]:
+def get_caster_schools(class_id: int) -> List[str]:
     """Get the school(s) the character will get their spells known from."""
     cur.execute(
         "SELECT school_code FROM classes WHERE class_id = ?;",
@@ -765,7 +765,7 @@ def get_spells(class_id: int, level: int, ca: int) -> List[Dict]:
     """Return the list of spells known for the character."""
     if ca == 0:
         return None
-    schools = get_caster_schools(class_id, level)
+    schools = get_caster_schools(class_id)
     if len(schools) == 0:
         return None
     else:
@@ -814,7 +814,15 @@ def get_spells(class_id: int, level: int, ca: int) -> List[Dict]:
             spell_qty = class_spells[k]
             added_counter = 0
             while added_counter < spell_qty:
-                random_spell = get_random_spell(school, spell_level)
+                # Make a 1-99 roll for Runegravers so we don't have one of the 3
+                # runes having a 1% greater chance of getting selected.
+                if class_id == 20:
+                    d100_roll = roll_dice(1, 99)
+                    random_spell = get_random_spell(
+                        school, spell_level, d100_roll=d100_roll
+                    )
+                else:
+                    random_spell = get_random_spell(school, spell_level)
                 already_known = [x["spell_id"] for x in spells[school]["spells_known"]]
                 if random_spell["spell_id"] not in already_known:
                     spells[school]["spells_known"].append(random_spell)
@@ -828,7 +836,7 @@ def apply_spells_per_day_bonus(
     bonus_spells_ws: int,
 ) -> Dict:
     """Increase spells per day for high IN/WS scores. Must already have at least
-    one spell per day already for the given level.
+    one spell per day for the given level.
     """
     if spells is None:
         return None
@@ -852,6 +860,9 @@ def apply_spells_per_day_bonus(
                 # if spells[school]["spells_per_day"][lvl_key] > 0:
                 if spells[school].get("spells_per_day", {}).get(lvl_key, 0) > 0:
                     spells[school]["spells_per_day"][lvl_key] += 1
+        elif school == "run":
+            # no bonus for runegravers
+            continue
         else:
             raise ValueError(f"Invalid value for school: {school}")
     return spells
