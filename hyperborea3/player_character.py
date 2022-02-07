@@ -18,6 +18,7 @@ from hyperborea3.chargen import (
     get_hd,
     get_level,
     get_next_atk_rate,
+    get_priest_abilities,
     get_race,
     get_race_id,
     get_random_familiar,
@@ -153,6 +154,7 @@ class PlayerCharacter:
         if ac_type == "ascending":
             self.ascending_ac()
 
+        self.sort_class_abilities()
         self.cleanup()
 
     def update_weapons_atk_dmg(self):
@@ -262,8 +264,25 @@ class PlayerCharacter:
             if level >= 7:
                 self.mv = 60
 
-        def priest_specialized_faith(alignment: str, level: int):
-            pass
+        def priest_specialized_faith(deity_id: str, level: int):
+            ability_name = f"Specialized Faith ({self.deity['deity_name']})"
+            priest_abilities = get_priest_abilities(deity_id, level)
+            for p in priest_abilities:
+                self.class_abilities.append(
+                    {
+                        "class_id": self.class_id,
+                        "level": p["level"],
+                        "ability_title": ability_name,
+                        "brief_desc": p["ability_desc"],
+                        "ability_desc": None,
+                        "upd_function": None,
+                    }
+                )
+            self.class_abilities = [
+                x
+                for x in self.class_abilities
+                if x["ability_title"] != "Specialized Faith"
+            ]
 
         def runegraving(level: int):
             pass
@@ -294,6 +313,11 @@ class PlayerCharacter:
                 w["hurled_atk"] += self.fa
         for w in self.weapons_missile:
             w["missile_atk"] += self.fa
+
+    def sort_class_abilities(self):
+        self.class_abilities = sorted(
+            self.class_abilities, key=lambda x: (x["level"], x["ability_title"])
+        )
 
     def cleanup(self):
         for a in self.class_abilities:
