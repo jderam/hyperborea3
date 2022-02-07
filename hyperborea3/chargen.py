@@ -886,3 +886,19 @@ def get_random_familiar() -> str:
     )
     animal = cur.fetchone()["animal"]
     return animal
+
+
+def get_priest_abilities(deity_id: int, level: int) -> List[Dict]:
+    """Get priest Specialized Faith abilities."""
+    cur.execute(
+        """
+        SELECT *
+          FROM t047_priest_abilities
+         WHERE deity_id = ?
+           AND level <= ?
+        ORDER BY level;
+        """,
+        (deity_id, level),
+    )
+    priest_abilities = [dict(x) for x in cur.fetchall()]
+    return priest_abilities
