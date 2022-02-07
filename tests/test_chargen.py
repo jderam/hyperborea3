@@ -543,17 +543,16 @@ def test_get_thief_skills():
 
 def test_get_caster_schools():
     for class_id in VALID_CLASS_IDS:
-        for level in VALID_LEVELS:
-            schools = get_caster_schools(class_id, level)
-            if class_id == 21:
-                assert schools in [
-                    ["clr", "mag"],
-                    ["clr", "nec"],
-                    ["drd", "mag"],
-                    ["drd", "nec"],
-                ]
-            else:
-                assert schools == VALID_SCHOOLS_BY_CLASS_ID[class_id]
+        schools = get_caster_schools(class_id)
+        if class_id == 21:
+            assert schools in [
+                ["clr", "mag"],
+                ["clr", "nec"],
+                ["drd", "mag"],
+                ["drd", "nec"],
+            ]
+        else:
+            assert schools == VALID_SCHOOLS_BY_CLASS_ID[class_id]
 
 
 def test_get_turn_undead_matrix():
@@ -655,7 +654,7 @@ def test_get_spells():
             cl_data = get_class_level_data(class_id, level)
             ca = cl_data["ca"]
             spells = get_spells(class_id, level, ca)
-            if ca > 0 and class_id != 20:
+            if ca > 0:
                 assert spells, f"{class_id=} {level=} {spells=}"
                 schools = list(spells.keys())
             else:
