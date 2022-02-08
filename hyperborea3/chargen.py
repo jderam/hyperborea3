@@ -1,12 +1,13 @@
-from pathlib import Path
+from importlib.resources import path
 import random
 import sqlite3
 from typing import Dict, List
 
 from hyperborea3.valid_data import VALID_ALIGMENTS_SHORT
 
-
-URI = f"file:{Path(__file__).parent}/hyperborea.sqlite3?mode=ro"
+with path("hyperborea3", "hyperborea.sqlite3") as p:
+    DBPATH = p
+URI = f"file:{str(DBPATH)}?mode=ro"
 con = sqlite3.connect(URI, check_same_thread=False, uri=True)
 con.row_factory = sqlite3.Row
 cur = con.cursor()
