@@ -1,0 +1,325 @@
+{
+    "method": 6,
+    "class_id": 21,
+    "class_name": "Shaman",
+    "attr": {
+        "st": {
+            "score": 15,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "dx": {
+            "score": 14,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
+        "cn": {
+            "score": 6,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ch": {
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 5000,
+    "level": 3,
+    "xp_to_next": 10000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Female",
+    "hd": "3d6",
+    "hp": 6,
+    "fa": 1,
+    "ca": 3,
+    "ta": 1,
+    "sv": 15,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 28,
+        "-8": 27,
+        "-7": 26,
+        "-6": 25,
+        "-5": 24,
+        "-4": 23,
+        "-3": 22,
+        "-2": 21,
+        "-1": 20,
+        "0": 19,
+        "1": 18,
+        "2": 17,
+        "3": 16,
+        "4": 15,
+        "5": 14,
+        "6": 13,
+        "7": 12,
+        "8": 11,
+        "9": 10
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 5,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 107,
+            "weapon_type": "War Club",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": "1d8",
+            "cost": 3,
+            "weight": 4,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "belladonna",
+        "brass censer",
+        "wooden holy symbol (totem)",
+        "incense sticks \u00d712",
+        "wooden mask",
+        "soft leather pouch",
+        "wooden rattle",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "bark sheet spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 5,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "10:12",
+        "undead_type_01": "7:12",
+        "undead_type_02": "4:12",
+        "undead_type_03": "1:12",
+        "undead_type_04": "NT",
+        "undead_type_05": "NT",
+        "undead_type_06": "NT",
+        "undead_type_07": "NT",
+        "undead_type_08": "NT",
+        "undead_type_09": "NT",
+        "undead_type_10": "NT",
+        "undead_type_11": "NT",
+        "undead_type_12": "NT",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "drd": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 1,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        },
+        "mag": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 0,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 366,
+                    "spell_name": "Sorcerous Armour",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Draw Poison",
+            "brief_desc": "draw and spit poison from venomous bite",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Harvest Venom",
+            "brief_desc": "9:12 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to clerics and magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Medicine Man",
+            "brief_desc": "treat wounds 1 person/day/level; treat poison/disease 1/week",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke scrolls from known schools",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast spells from selected schools",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Totem",
+            "brief_desc": "beseech totem spirit 1/week as per contact otherworldly being spell",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 3,
+            "ability_title": "Turn Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        }
+    ]
+}

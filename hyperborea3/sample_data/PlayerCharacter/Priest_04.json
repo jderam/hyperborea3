@@ -1,0 +1,444 @@
+{
+    "method": 6,
+    "class_id": 19,
+    "class_name": "Priest",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 9,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 5,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ch": {
+            "score": 17,
+            "react_adj": 2,
+            "max_henchmen": 10,
+            "turn_adj": 1
+        }
+    },
+    "xp": 8000,
+    "level": 4,
+    "xp_to_next": 16000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
+    },
+    "deity": {
+        "deity_id": 19,
+        "deity_name": "Yig",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Female",
+    "hd": "4d4",
+    "hp": 6,
+    "fa": 1,
+    "ca": 4,
+    "ta": 4,
+    "sv": 15,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 28,
+        "-8": 27,
+        "-7": 26,
+        "-6": 25,
+        "-5": 24,
+        "-4": 23,
+        "-3": 22,
+        "-2": 21,
+        "-1": 20,
+        "0": 19,
+        "1": 18,
+        "2": 17,
+        "3": 16,
+        "4": 15,
+        "5": 14,
+        "6": 13,
+        "7": 12,
+        "8": 11,
+        "9": 10
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 1,
+        "armour_type": "None",
+        "ac": 9,
+        "dr": 0,
+        "weight_class": null,
+        "mv": 40,
+        "cost": null,
+        "weight": null,
+        "description": null
+    },
+    "shield": null,
+    "ac": 9,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 109,
+            "weapon_type": "Silver Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 25,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 126,
+            "weapon_type": "Quarterstaff",
+            "wc": 3,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 5,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 143,
+            "weapon_type": "Whip",
+            "wc": 5,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d2",
+            "damage_2h": null,
+            "cost": 1,
+            "weight": 2,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "religious clothing",
+        "silver holy symbol",
+        "holy water",
+        "soft leather pouch",
+        "wooden prayer beads",
+        "iron rations (1 week)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "D",
+        "undead_type_01": "T",
+        "undead_type_02": "T",
+        "undead_type_03": "11:12",
+        "undead_type_04": "8:12",
+        "undead_type_05": "5:12",
+        "undead_type_06": "2:12",
+        "undead_type_07": "NT",
+        "undead_type_08": "NT",
+        "undead_type_09": "NT",
+        "undead_type_10": "NT",
+        "undead_type_11": "NT",
+        "undead_type_12": "NT",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "clr": {
+            "spells_per_day": {
+                "lvl1": 5,
+                "lvl2": 4,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 32,
+                    "spell_name": "Bless Oil or Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 31,
+                    "spell_name": "Bless",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 107,
+                    "spell_name": "Detect Evil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 48,
+                    "spell_name": "Ceremony of Consecration",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 283,
+                    "spell_name": "Perceive Disguise",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 24,
+                    "spell_name": "Augury",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 6,
+                    "spell_name": "Aid",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": 0,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 446,
+                    "spell_name": "Weird War Hammer",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 232,
+                    "spell_name": "Invisibility to Undead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 127,
+                    "spell_name": "Distinguish Alignment",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 19,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke clerical scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 19,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 19,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast clerical spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 19,
+            "level": 1,
+            "ability_title": "Specialized Faith (Yig)",
+            "brief_desc": "1/day cast befriend animals (reptiles only)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 19,
+            "level": 1,
+            "ability_title": "Turn Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        },
+        {
+            "class_id": 19,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

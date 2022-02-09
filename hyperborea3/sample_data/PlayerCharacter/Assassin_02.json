@@ -1,0 +1,288 @@
+{
+    "method": 6,
+    "class_id": 22,
+    "class_name": "Assassin",
+    "attr": {
+        "st": {
+            "score": 14,
+            "atk_mod": 0,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
+        "dx": {
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "cn": {
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 9,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 1750,
+    "level": 2,
+    "xp_to_next": 3500,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
+    },
+    "deity": {
+        "deity_id": 11,
+        "deity_name": "Lunaqqua",
+        "primary_alignment": "Neutral"
+    },
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
+    "gender": "Female",
+    "hd": "2d6",
+    "hp": 5,
+    "fa": 1,
+    "ca": 0,
+    "ta": 0,
+    "sv": 16,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 2,
+        "avoidance": 2,
+        "sorcery": 0
+    },
+    "combat_matrix": {
+        "-9": 28,
+        "-8": 27,
+        "-7": 26,
+        "-6": 25,
+        "-5": 24,
+        "-4": 23,
+        "-3": 22,
+        "-2": 21,
+        "-1": 20,
+        "0": 19,
+        "1": 18,
+        "2": 17,
+        "3": 16,
+        "4": 15,
+        "5": 14,
+        "6": 13,
+        "7": 12,
+        "8": 11,
+        "9": 10
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 3,
+        "armour_type": "Leather Armour",
+        "ac": 7,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 15,
+        "weight": 15,
+        "description": null
+    },
+    "shield": null,
+    "ac": 7,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 135,
+            "weapon_type": "Short Sword",
+            "wc": 1,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 10,
+            "weight": 3,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 214,
+            "weapon_type": "Light Crossbow",
+            "rof": "1/1",
+            "range_sml": "60/120/180",
+            "damage": "1d6+1",
+            "hurled": false,
+            "launched": true,
+            "cost": 15,
+            "weight": 5,
+            "qty": 1,
+            "ammunition": "light bolts \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "winter blanket",
+        "bolt case",
+        "disguise clothing",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "small sack",
+        "thieves\u2019 tools",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 8,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 4,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 5,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 3,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 5,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 3,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": null,
+    "class_abilities": [
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Agile",
+            "brief_desc": "+1 AC when unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Assassinate (Backstab)",
+            "brief_desc": "+4 to hit, instant death or damage multiplied",
+            "ability_desc": null
+        },
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Disguise",
+            "brief_desc": "alter appearance as per disguise self spell",
+            "ability_desc": null
+        },
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Harvest Venom",
+            "brief_desc": "9:12 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Poison Resistance",
+            "brief_desc": "+1 to saves vs. poison",
+            "ability_desc": null
+        },
+        {
+            "class_id": 22,
+            "level": 1,
+            "ability_title": "Poison Use",
+            "brief_desc": "employ toxins to kill or assassinate",
+            "ability_desc": null
+        }
+    ]
+}

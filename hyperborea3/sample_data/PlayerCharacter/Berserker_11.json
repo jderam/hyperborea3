@@ -1,0 +1,282 @@
+{
+    "method": 6,
+    "class_id": 6,
+    "class_name": "Berserker",
+    "attr": {
+        "st": {
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 24
+        },
+        "dx": {
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 17,
+            "hp_adj": 2,
+            "poison_adj": 1,
+            "trauma_surv": 90,
+            "test": 4,
+            "feat": 32
+        },
+        "in": {
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 11,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 640000,
+    "level": 11,
+    "xp_to_next": 800000,
+    "xp_bonus": true,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 21,
+        "deity_name": "Ymir",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
+    "hd": "9d12+8",
+    "hp": 80,
+    "fa": 11,
+    "ca": 0,
+    "ta": 0,
+    "sv": 11,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 2,
+        "device": 2,
+        "avoidance": 2,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 18,
+        "-8": 17,
+        "-7": 16,
+        "-6": 15,
+        "-5": 14,
+        "-4": 13,
+        "-3": 12,
+        "-2": 11,
+        "-1": 10,
+        "0": 9,
+        "1": 8,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2,
+        "8": 1,
+        "9": 0
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 5,
+        "armour_type": "Scale Mail",
+        "ac": 6,
+        "dr": 1,
+        "weight_class": "Medium",
+        "mv": 30,
+        "cost": 50,
+        "weight": 25,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 30,
+    "weapons_melee": [
+        {
+            "weapon_id": 102,
+            "weapon_type": "Battle Axe",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 101,
+            "weapon_type": "Hand Axe",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "1/1",
+            "range_sml": "15/30/45",
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 5,
+            "weight": 2,
+            "qty": 2,
+            "atk_rate": "3/2",
+            "melee_atk": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 136,
+            "weapon_type": "Broad Sword",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 20,
+            "weight": 4,
+            "qty": 1,
+            "atk_rate": "2/1",
+            "melee_atk": 2,
+            "hurled_atk": null,
+            "dmg_adj": 2,
+            "mastery": true
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "large sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 10,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": null,
+    "class_abilities": [
+        {
+            "class_id": 6,
+            "level": 1,
+            "ability_title": "Berserk Rage",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feats of ST and CN",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 1,
+            "ability_title": "Hardy",
+            "brief_desc": "+2 to all saves",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 1,
+            "ability_title": "Leap",
+            "brief_desc": "25' horizontal, 5' vertical",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 1,
+            "ability_title": "Thick Skin",
+            "brief_desc": "AC bonus if light or no armour",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 7,
+            "ability_title": "Bestial Form",
+            "brief_desc": "transmogrify while in berserk rage",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 7,
+            "ability_title": "Melee Expert",
+            "brief_desc": "improved melee attack rate",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 8,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 6,
+            "level": 9,
+            "ability_title": "Lordship",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

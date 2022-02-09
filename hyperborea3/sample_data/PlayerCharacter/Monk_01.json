@@ -1,0 +1,303 @@
+{
+    "method": 6,
+    "class_id": 18,
+    "class_name": "Monk",
+    "attr": {
+        "st": {
+            "score": 11,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "cn": {
+            "score": 12,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 8,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ws": {
+            "score": 18,
+            "will_adj": 2,
+            "bonus_spells": 4,
+            "learn_spell": 95
+        },
+        "ch": {
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 0,
+    "level": 1,
+    "xp_to_next": 2500,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
+    },
+    "deity": {
+        "deity_id": 17,
+        "deity_name": "Ullr",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Female",
+    "hd": "1d8",
+    "hp": 4,
+    "fa": 0,
+    "ca": 0,
+    "ta": 0,
+    "sv": 16,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 2,
+        "sorcery": 0
+    },
+    "combat_matrix": {
+        "-9": 29,
+        "-8": 28,
+        "-7": 27,
+        "-6": 26,
+        "-5": 25,
+        "-4": 24,
+        "-3": 23,
+        "-2": 22,
+        "-1": 21,
+        "0": 20,
+        "1": 19,
+        "2": 18,
+        "3": 17,
+        "4": 16,
+        "5": 15,
+        "6": 14,
+        "7": 13,
+        "8": 12,
+        "9": 11
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 1,
+        "armour_type": "None",
+        "ac": 9,
+        "dr": 0,
+        "weight_class": null,
+        "mv": 40,
+        "cost": null,
+        "weight": null,
+        "description": null
+    },
+    "shield": null,
+    "ac": 7,
+    "mv": 50,
+    "weapons_melee": [
+        {
+            "weapon_id": 104,
+            "weapon_type": "C\u00e6stuses",
+            "wc": 0,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d4+1",
+            "damage_2h": null,
+            "cost": 1,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "2/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 109,
+            "weapon_type": "Silver Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 25,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 113,
+            "weapon_type": "Halberd",
+            "wc": 4,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d10",
+            "damage_2h": null,
+            "cost": 15,
+            "weight": 8,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 204,
+            "weapon_type": "Hooked Throwing Knife",
+            "rof": "1/1",
+            "range_sml": "30/60/90",
+            "damage": "1d6",
+            "hurled": true,
+            "launched": false,
+            "cost": 20,
+            "weight": 2,
+            "qty": 1,
+            "ammunition": null,
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "fishing hooks \u00d712",
+        "fishing string",
+        "incense sticks \u00d712",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "silk rope (50-ft.)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 8,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 5,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 5,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 5,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": null,
+    "class_abilities": [
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Block Missile",
+            "brief_desc": "avoidance save to negate missile attack",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Cellular Adjustment",
+            "brief_desc": "once per day heal 2 hp/level",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Controlled Fall",
+            "brief_desc": "ignore 10' per level of falling damage (if near stable surface)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Defensive Ability",
+            "brief_desc": "AC bonus that increases with level (+1)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Empty Hand",
+            "brief_desc": "increased potency of unarmed attacks (1d4 damage)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feats of ST and DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Run",
+            "brief_desc": "improved MV if unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Superior Willpower",
+            "brief_desc": "+2 to saves vs. mind-affecting sorcery",
+            "ability_desc": null
+        }
+    ]
+}

@@ -1,0 +1,519 @@
+{
+    "method": 6,
+    "class_id": 3,
+    "class_name": "Cleric",
+    "attr": {
+        "st": {
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "dx": {
+            "score": 7,
+            "atk_mod": 0,
+            "def_adj": -1,
+            "test": 2,
+            "feat": 2
+        },
+        "cn": {
+            "score": 5,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 5,
+            "lang": -1,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ws": {
+            "score": 17,
+            "will_adj": 1,
+            "bonus_spells": 3,
+            "learn_spell": 85
+        },
+        "ch": {
+            "score": 9,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 128000,
+    "level": 8,
+    "xp_to_next": 256000,
+    "xp_bonus": true,
+    "alignment": {
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
+    },
+    "deity": {
+        "deity_id": 1,
+        "deity_name": "Apollo",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 10,
+    "race": "Pict",
+    "gender": "Female",
+    "hd": "8d8",
+    "hp": 28,
+    "fa": 5,
+    "ca": 8,
+    "ta": 8,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 24,
+        "-8": 23,
+        "-7": 22,
+        "-6": 21,
+        "-5": 20,
+        "-4": 19,
+        "-3": 18,
+        "-2": 17,
+        "-1": 16,
+        "0": 15,
+        "1": 14,
+        "2": 13,
+        "3": 12,
+        "4": 11,
+        "5": 10,
+        "6": 9,
+        "7": 8,
+        "8": 7,
+        "9": 6
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 7,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 115,
+            "weapon_type": "War Hammer",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "silver holy symbol",
+        "holy water",
+        "soft",
+        "leather pouch",
+        "iron rations (1 week)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "UD",
+        "undead_type_01": "UD",
+        "undead_type_02": "D",
+        "undead_type_03": "D",
+        "undead_type_04": "D",
+        "undead_type_05": "T",
+        "undead_type_06": "T",
+        "undead_type_07": "10:12",
+        "undead_type_08": "7:12",
+        "undead_type_09": "4:12",
+        "undead_type_10": "1:12",
+        "undead_type_11": "NT",
+        "undead_type_12": "NT",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "clr": {
+            "spells_per_day": {
+                "lvl1": 4,
+                "lvl2": 4,
+                "lvl3": 3,
+                "lvl4": 2,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 48,
+                    "spell_name": "Ceremony of Consecration",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 111,
+                    "spell_name": "Detect Malady",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 283,
+                    "spell_name": "Perceive Disguise",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 277,
+                    "spell_name": "Omen",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 232,
+                    "spell_name": "Invisibility to Undead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 454,
+                    "spell_name": "Wyvern Warden",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 219,
+                    "spell_name": "Incantation",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 135,
+                    "spell_name": "Enthral",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 127,
+                    "spell_name": "Distinguish Alignment",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 444,
+                    "spell_name": "Water Walk",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 87,
+                    "spell_name": "Cure Disease",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 250,
+                    "spell_name": "Magic Vestment",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 84,
+                    "spell_name": "Cure Blindness",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 188,
+                    "spell_name": "Glyph of Warding",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 128,
+                    "spell_name": "Divination",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 412,
+                    "spell_name": "Tongues",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 40,
+                    "spell_name": "Brink of Death",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 274,
+                    "spell_name": "Neutralize Poison",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 74,
+                    "spell_name": "Control Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke clerical scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast clerical spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Turn Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

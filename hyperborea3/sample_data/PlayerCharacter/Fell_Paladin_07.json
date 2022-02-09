@@ -1,0 +1,342 @@
+{
+    "method": 6,
+    "class_id": 27,
+    "class_name": "Fell Paladin",
+    "attr": {
+        "st": {
+            "score": 18,
+            "atk_mod": 2,
+            "dmg_adj": 3,
+            "test": 5,
+            "feat": 40
+        },
+        "dx": {
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 15,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
+        },
+        "in": {
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 13,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ch": {
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
+        }
+    },
+    "xp": 88000,
+    "level": 7,
+    "xp_to_next": 176000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
+    },
+    "deity": {
+        "deity_id": 19,
+        "deity_name": "Yig",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "hd": "7d10",
+    "hp": 41,
+    "fa": 7,
+    "ca": 1,
+    "ta": 3,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 2,
+        "device": 2,
+        "avoidance": 2,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 22,
+        "-8": 21,
+        "-7": 20,
+        "-6": 19,
+        "-5": 18,
+        "-4": 17,
+        "-3": 16,
+        "-2": 15,
+        "-1": 14,
+        "0": 13,
+        "1": 12,
+        "2": 11,
+        "3": 10,
+        "4": 9,
+        "5": 8,
+        "6": 7,
+        "7": 6,
+        "8": 5,
+        "9": 4
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 5,
+        "armour_type": "Scale Mail",
+        "ac": 6,
+        "dr": 1,
+        "weight_class": "Medium",
+        "mv": 30,
+        "cost": 50,
+        "weight": 25,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 30,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 2,
+            "hurled_atk": 0,
+            "dmg_adj": 3,
+            "mastery": false
+        },
+        {
+            "weapon_id": 120,
+            "weapon_type": "Footman's Mace",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 2,
+            "hurled_atk": null,
+            "dmg_adj": 3,
+            "mastery": false
+        },
+        {
+            "weapon_id": 137,
+            "weapon_type": "Long Sword",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 20,
+            "weight": 4,
+            "qty": 1,
+            "atk_rate": "2/1",
+            "melee_atk": 3,
+            "hurled_atk": null,
+            "dmg_adj": 4,
+            "mastery": true
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "wooden holy symbol",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "T",
+        "undead_type_01": "T",
+        "undead_type_02": "11:12",
+        "undead_type_03": "8:12",
+        "undead_type_04": "5:12",
+        "undead_type_05": "2:12",
+        "undead_type_06": "NT",
+        "undead_type_07": "NT",
+        "undead_type_08": "NT",
+        "undead_type_09": "NT",
+        "undead_type_10": "NT",
+        "undead_type_11": "NT",
+        "undead_type_12": "NT",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "clr": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 0,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Divine Protection",
+            "brief_desc": "disease immunity, +2 to all saves, +1 AC vs. good creatures",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Honour",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Horsemanship",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Sapping Hands",
+            "brief_desc": "drain 2 hp/day/level; cure disease 1/week",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Sense Good",
+            "brief_desc": "60-foot range, requires concentration",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Valiant Resolve",
+            "brief_desc": "immune to magical fear",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 3,
+            "ability_title": "Righteous Wrath",
+            "brief_desc": "+1 dmg per level when charging vs. good foe",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 5,
+            "ability_title": "Command Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 5,
+            "ability_title": "Sacred Mount",
+            "brief_desc": "quest for an extraordinary mount",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 7,
+            "ability_title": "Melee Expert",
+            "brief_desc": "improved melee attack rate",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 7,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke clerical scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 27,
+            "level": 7,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast clerical spells",
+            "ability_desc": null
+        }
+    ]
+}

@@ -1,0 +1,367 @@
+{
+    "method": 6,
+    "class_id": 2,
+    "class_name": "Magician",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 4,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 8,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ch": {
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
+            "turn_adj": 0
+        }
+    },
+    "xp": 80000,
+    "level": 7,
+    "xp_to_next": 160000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
+    },
+    "deity": {
+        "deity_id": 2,
+        "deity_name": "Artemis",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 2,
+    "race": "Amazon",
+    "gender": "Male",
+    "hd": "7d4",
+    "hp": 17,
+    "fa": 3,
+    "ca": 7,
+    "ta": 0,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 2,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 26,
+        "-8": 25,
+        "-7": 24,
+        "-6": 23,
+        "-5": 22,
+        "-4": 21,
+        "-3": 20,
+        "-2": 19,
+        "-1": 18,
+        "0": 17,
+        "1": 16,
+        "2": 15,
+        "3": 14,
+        "4": 13,
+        "5": 12,
+        "6": 11,
+        "7": 10,
+        "8": 9,
+        "9": 8
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 1,
+        "armour_type": "None",
+        "ac": 9,
+        "dr": 0,
+        "weight_class": null,
+        "mv": 40,
+        "cost": null,
+        "weight": null,
+        "description": null
+    },
+    "shield": null,
+    "ac": 9,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 109,
+            "weapon_type": "Silver Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 25,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 126,
+            "weapon_type": "Quarterstaff",
+            "wc": 3,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 5,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 216,
+            "weapon_type": "Sling",
+            "rof": "1/1",
+            "range_sml": "50/100/150",
+            "damage": "1d4",
+            "hurled": false,
+            "launched": true,
+            "cost": 2,
+            "weight": 1,
+            "qty": 1,
+            "ammunition": "bullets \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "chalk (piece)",
+        "ink and quill",
+        "incendiary oil",
+        "parchment \u00d72",
+        "soft leather pouch",
+        "standard rations (1 week)",
+        "silk rope (50-ft.)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "mag": {
+            "spells_per_day": {
+                "lvl1": 6,
+                "lvl2": 4,
+                "lvl3": 3,
+                "lvl4": 2,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 9,
+                    "spell_name": "Alarm",
+                    "range": "10 feet per CA level",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": 0,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 375,
+                    "spell_name": "Spider Climb",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 347,
+                    "spell_name": "Shatter",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 173,
+                    "spell_name": "Fool\u2019s Gold",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 44,
+                    "spell_name": "Cataleptic State",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 4,
+                    "spell_id": 129,
+                    "spell_name": "Dweomered Weapon",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Alchemy",
+            "brief_desc": "identify potions by taste",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Familiar",
+            "brief_desc": "magical animal companion. [Bat, 3 hp]",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke magician scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast magician spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

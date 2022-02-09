@@ -1,0 +1,345 @@
+{
+    "method": 6,
+    "class_id": 18,
+    "class_name": "Monk",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "cn": {
+            "score": 7,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
+        },
+        "in": {
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 9,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 160000,
+    "level": 8,
+    "xp_to_next": 320000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
+    },
+    "deity": {
+        "deity_id": 1,
+        "deity_name": "Apollo",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
+    "hd": "8d8",
+    "hp": 29,
+    "fa": 7,
+    "ca": 0,
+    "ta": 0,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 2,
+        "sorcery": 0
+    },
+    "combat_matrix": {
+        "-9": 22,
+        "-8": 21,
+        "-7": 20,
+        "-6": 19,
+        "-5": 18,
+        "-4": 17,
+        "-3": 16,
+        "-2": 15,
+        "-1": 14,
+        "0": 13,
+        "1": 12,
+        "2": 11,
+        "3": 10,
+        "4": 9,
+        "5": 8,
+        "6": 7,
+        "7": 6,
+        "8": 5,
+        "9": 4
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 1,
+        "armour_type": "None",
+        "ac": 9,
+        "dr": 0,
+        "weight_class": null,
+        "mv": 40,
+        "cost": null,
+        "weight": null,
+        "description": null
+    },
+    "shield": null,
+    "ac": 5,
+    "mv": 60,
+    "weapons_melee": [
+        {
+            "weapon_id": 104,
+            "weapon_type": "C\u00e6stuses",
+            "wc": 0,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "3d4+1",
+            "damage_2h": null,
+            "cost": 1,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "2/1",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 109,
+            "weapon_type": "Silver Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 25,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 113,
+            "weapon_type": "Halberd",
+            "wc": 4,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d10",
+            "damage_2h": null,
+            "cost": 15,
+            "weight": 8,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 204,
+            "weapon_type": "Hooked Throwing Knife",
+            "rof": "1/1",
+            "range_sml": "30/60/90",
+            "damage": "1d6",
+            "hurled": true,
+            "launched": false,
+            "cost": 20,
+            "weight": 2,
+            "qty": 1,
+            "ammunition": null,
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "fishing hooks \u00d712",
+        "fishing string",
+        "incense sticks \u00d712",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "silk rope (50-ft.)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 5,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 9,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 7,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 8,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 8,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": null,
+    "class_abilities": [
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Block Missile",
+            "brief_desc": "avoidance save to negate missile attack",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Cellular Adjustment",
+            "brief_desc": "once per day heal 2 hp/level",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Controlled Fall",
+            "brief_desc": "ignore 10' per level of falling damage (if near stable surface)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Defensive Ability",
+            "brief_desc": "AC bonus that increases with level (+4)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Empty Hand",
+            "brief_desc": "increased potency of unarmed attacks (3d4 damage)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feats of ST and DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Run",
+            "brief_desc": "improved MV if unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 1,
+            "ability_title": "Superior Willpower",
+            "brief_desc": "+2 to saves vs. mind-affecting sorcery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 4,
+            "ability_title": "Speak with Nature",
+            "brief_desc": "speak with animals 1/day",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 5,
+            "ability_title": "Simulate Death",
+            "brief_desc": "feign death as per the cataleptic state spell",
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 18,
+            "level": 8,
+            "ability_title": "Speak with Nature",
+            "brief_desc": "speak with plants 1/day",
+            "ability_desc": null
+        }
+    ]
+}
