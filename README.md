@@ -1,5 +1,7 @@
 # hyperborea-tools
 
+![Tests](https://github.com/jderam/hyperborea-tools/actions/workflows/tests.yml/badge.svg)
+
 An app for creating randomly-generated characters for the [Hyperborea](https://www.hyperborea.tv/) 3rd edition tabletop roleplaying game. 
 
 ## Installation
