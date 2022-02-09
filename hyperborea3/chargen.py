@@ -28,37 +28,19 @@ def roll_ndn_drop_lowest(qty: int, sides: int, drop_qty: int) -> int:
     return sum(result[drop_qty:])
 
 
-def get_class_list(subclasses: bool = True):
+def get_class_id_map():
+    """Get mapping between class_id and class_name"""
     sql = """
             SELECT class_id
                  , class_name
-                 , class_type
-                 , subclass_of
               FROM classes
           """
-    if subclasses is False:
-        sql += " WHERE class_type = 'P'"
     cur.execute(f"{sql};")
     result = [dict(x) for x in cur.fetchall()]
-    return result
-
-
-# def class_name_to_id(class_name: str):
-#     if class_name.lower() == "random":
-#         class_id = 0
-#     else:
-#         class_list = get_class_list()
-#         class_names = [x["class_name"].lower() for x in class_list]
-#         if class_name.lower() not in class_names:
-#             raise ValueError(f"class name not recognized: {class_name}")
-#         class_id_list = [
-#             x["class_id"]
-#             for x in class_list
-#             if x["class_name"].lower() == class_name.lower()
-#         ]
-#         assert len(class_id_list) == 1, "Ambiguous result"
-#         class_id = class_id_list[0]
-#     return class_id
+    class_map = {}
+    for r in result:
+        class_map[r["class_id"]] = r["class_name"]
+    return class_map
 
 
 def class_id_to_name(class_id: int) -> str:

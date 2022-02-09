@@ -6,8 +6,8 @@ from hyperborea3.chargen import (
     get_attr,
     get_attr_mod,
     get_caster_schools,
+    get_class_id_map,
     get_class_level_data,
-    get_class_list,
     get_combat_matrix,
     get_gender,
     get_hd,
@@ -34,6 +34,7 @@ from hyperborea3.valid_data import (
     VALID_ABILITY_SCORES,
     VALID_ABILITIES,
     VALID_CA,
+    VALID_CLASS_ID_MAP,
     VALID_CLASS_IDS,
     VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
@@ -81,11 +82,9 @@ def test_roll_stats():
                 assert attr[stat]["score"] in VALID_ABILITY_SCORES
 
 
-def test_get_class_list():
-    class_list = get_class_list(subclasses=True)
-    assert len(class_list) == 33
-    class_list = get_class_list(subclasses=False)
-    assert len(class_list) == 4
+def test_get_class_id_map():
+    class_id_map = get_class_id_map()
+    assert class_id_map == VALID_CLASS_ID_MAP
 
 
 def test_get_qualifying_classes():
