@@ -2,4 +2,5 @@ flake8
 tox
 pytest
 pytest-cov
+pytest-repeat
 mypy

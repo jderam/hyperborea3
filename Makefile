@@ -10,13 +10,22 @@ build_wheel: ## build the wheel for this package
 	python setup.py sdist bdist_wheel
 
 pip_install: ## pip install this package
-	pip install dist/hyperborea3-*-py3-none-any.whl --force-reinstall
+	python -m pip install dist/hyperborea3-*-py3-none-any.whl --force-reinstall
+
+pip_install_dev: ## pip install in editable mode
+	python -m pip install -e . --force-reinstall
 
 test: ## Run pytest tests
-	python -m pytest tests
+	python -m pytest
+
+mypy_check: ## Run mypy type checker
+	mypy hyperborea3 tests
 
 gen_requirements_txt: ## Generate a new requirements.txt file
 	pip-compile requirements.in > requirements.txt
+
+gen_requirements_dev: ## Generate a new requirements.txt file
+	pip-compile requirements_dev.in > requirements_dev.txt
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uvicorn main:app --reload
