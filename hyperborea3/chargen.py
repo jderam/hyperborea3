@@ -1,7 +1,7 @@
 from importlib.resources import path
 import random
 import sqlite3
-from typing import Dict, List
+from typing import Any, Dict, List, Optional
 
 from hyperborea3.valid_data import VALID_ALIGMENTS_SHORT
 
@@ -45,7 +45,8 @@ def get_class_id_map():
 
 def class_id_to_name(class_id: int) -> str:
     cur.execute("SELECT class_name FROM classes WHERE class_id = ?;", (class_id,))
-    return dict(cur.fetchone())["class_name"]
+    class_name = str(cur.fetchone()["class_name"])
+    return class_name
 
 
 def get_class_requirements(class_id: int):
@@ -53,7 +54,7 @@ def get_class_requirements(class_id: int):
     return [dict(x) for x in cur.fetchall()]
 
 
-def roll_stats(method: int = 3, class_id: int = 0) -> Dict:
+def roll_stats(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
     """Roll stats using the various methods in the Player's Manual"""
     attr = {
         "st": {
@@ -161,7 +162,7 @@ def roll_stats(method: int = 3, class_id: int = 0) -> Dict:
     return attr
 
 
-def get_attr_mod(stat: str, score: int):
+def get_attr_mod(stat: str, score: int) -> Dict[str, int]:
     """Get the mods for a given stat."""
     if stat.lower() not in ["st", "dx", "cn", "in", "ws", "ch"]:
         raise ValueError(f"Invalid value for stat: {stat}")
@@ -180,7 +181,7 @@ def get_attr_mod(stat: str, score: int):
     return result
 
 
-def get_attr(method: int = 3, class_id: int = 0) -> Dict:
+def get_attr(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
     attr = roll_stats(method, class_id)
     for stat in attr.keys():
         score = attr[stat]["score"]
@@ -189,7 +190,9 @@ def get_attr(method: int = 3, class_id: int = 0) -> Dict:
     return attr
 
 
-def get_qualifying_classes(attr: Dict, subclasses: int) -> List[int]:
+def get_qualifying_classes(
+    attr: Dict[str, Dict[str, int]], subclasses: int
+) -> List[int]:
     """Return list of class_ids that can be used given the attr."""
     # principal classes, subclasses, and sub-subclasses
     if subclasses == 2:
@@ -233,7 +236,7 @@ def get_qualifying_classes(attr: Dict, subclasses: int) -> List[int]:
     return qual_classes
 
 
-def select_random_class(attr: Dict, subclasses: int) -> int:
+def select_random_class(attr: Dict[str, Dict[str, int]], subclasses: int) -> int:
     """Given a set of stats, determine an appropriate class.
     1. Find all qualifying classes by checking stat requirements.
     2. Randomly choose from among them.
@@ -254,11 +257,11 @@ def get_level(class_id: int, xp: int) -> int:
         """,
         (class_id, xp),
     )
-    level = dict(cur.fetchone())["level"]
+    level: int = cur.fetchone()["level"]
     return level
 
 
-def get_xp_to_next(class_id: int, level: int) -> int:
+def get_xp_to_next(class_id: int, level: int) -> Optional[int]:
     """Get XP need to reach next level."""
     # if level is 12, there is no "next level"
     if level == 12:
@@ -268,11 +271,11 @@ def get_xp_to_next(class_id: int, level: int) -> int:
         "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;",
         (class_id, next_level),
     )
-    xp_to_next = dict(cur.fetchone())["xp"]
+    xp_to_next: int = cur.fetchone()["xp"]
     return xp_to_next
 
 
-def get_xp_bonus(class_id: int, attr: Dict) -> bool:
+def get_xp_bonus(class_id: int, attr: Dict[str, Dict[str, int]]) -> bool:
     """Determine if character qualifies for +10% XP bonus."""
     cur.execute(
         "SELECT attr FROM class_prime_attr WHERE class_id = ?;",
@@ -283,7 +286,7 @@ def get_xp_bonus(class_id: int, attr: Dict) -> bool:
     return xp_bonus
 
 
-def get_save_bonuses(class_id: int) -> Dict:
+def get_save_bonuses(class_id: int) -> Dict[str, int]:
     cur.execute(
         """
         SELECT death
@@ -300,7 +303,7 @@ def get_save_bonuses(class_id: int) -> Dict:
     return sv_bonus
 
 
-def get_class_level_data(class_id: int, level: int) -> Dict:
+def get_class_level_data(class_id: int, level: int) -> Dict[str, Any]:
     cur.execute(
         """
         SELECT *
@@ -336,7 +339,7 @@ def roll_hit_points(class_id: int, level: int, hp_adj: int) -> int:
     hd_qty = cl_data["hd_qty"]
     hd_size = cl_data["hd_size"]
     hp_plus = cl_data["hp_plus"]
-    hp = roll_dice(hd_qty, hd_size) + hp_plus + (level * hp_adj)
+    hp: int = roll_dice(hd_qty, hd_size) + hp_plus + (level * hp_adj)
     # TODO: If we want to get pedantic about this, it should actually be a minimum
     # of 1 hp on each die roll. We can do an accumulator instead, although this
     # is likely an edge case where no one would actually be playing a PC this bad.
@@ -353,7 +356,7 @@ def get_combat_matrix(fa: int) -> Dict[int, int]:
     return combat_matrix
 
 
-def get_alignment(class_id: int) -> Dict:
+def get_alignment(class_id: int) -> Dict[str, Any]:
     """Choose a random alignment based on the options available to a given class."""
     cur.execute(
         """
@@ -370,7 +373,7 @@ def get_alignment(class_id: int) -> Dict:
     return alignment
 
 
-def get_deity(short_alignment: str) -> Dict:
+def get_deity(short_alignment: str) -> Dict[str, Any]:
     """Randomly select a deity based on alignment."""
     assert (
         short_alignment in VALID_ALIGMENTS_SHORT
@@ -415,7 +418,7 @@ def get_race_id() -> int:
         """,
         (d100_roll,),
     )
-    race_id = dict(cur.fetchone())["race_id"]
+    race_id: int = cur.fetchone()["race_id"]
     if race_id == 99:
         d12_roll = roll_dice(1, 12)
         cur.execute(
@@ -425,7 +428,7 @@ def get_race_id() -> int:
             """,
             (d12_roll,),
         )
-        race_id = dict(cur.fetchone())["race_id"]
+        race_id = cur.fetchone()["race_id"]
     if race_id not in range(1, 25):
         raise ValueError(f"Unexpected race_id value: {race_id}. d100_roll={d100_roll}")
     return race_id
@@ -439,7 +442,7 @@ def get_race(race_id: int) -> str:
         """,
         (race_id,),
     )
-    race = dict(cur.fetchone())["race"]
+    race: str = cur.fetchone()["race"]
     return race
 
 
@@ -449,7 +452,7 @@ def get_gender():
     return gender
 
 
-def get_starting_armour(class_id: int) -> List[Dict]:
+def get_starting_armour(class_id: int) -> Dict[str, Any]:
     """Get starting armour by class.
     The SQL should always return one and only one result.
     """
@@ -463,12 +466,11 @@ def get_starting_armour(class_id: int) -> List[Dict]:
         """,
         (class_id,),
     )
-    result = cur.fetchone()
-    armour = dict(result) if result is not None else result
+    armour = dict(cur.fetchone())
     return armour
 
 
-def get_starting_shield(class_id: int) -> List[Dict]:
+def get_starting_shield(class_id: int) -> Optional[Dict[str, Any]]:
     """Get starting shield by class.
     SQL should return one or zero results.
     """
@@ -487,7 +489,7 @@ def get_starting_shield(class_id: int) -> List[Dict]:
     return shield
 
 
-def get_starting_weapons_melee(class_id: int) -> List[Dict]:
+def get_starting_weapons_melee(class_id: int) -> List[Dict[str, Any]]:
     """Get starting melee weapons by class."""
     cur.execute(
         """
@@ -511,7 +513,7 @@ def get_starting_weapons_melee(class_id: int) -> List[Dict]:
     return melee_weapons
 
 
-def get_starting_weapons_missile(class_id: int) -> List[Dict]:
+def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
     """Get starting missile weapons by class."""
     cur.execute(
         """
@@ -593,7 +595,7 @@ def get_thief_skills(
     dx_score: int,
     in_score: int,
     ws_score: int,
-) -> List[Dict]:
+) -> Optional[List[Dict[str, Any]]]:
     """Returns a list of dictionaries of thief skills.
     thief_skill (str): The key value for the skill used in db lookups
     skill_name  (str): The user-friendly name of the skill for display
@@ -656,7 +658,7 @@ def get_thief_skills(
     return skills_list
 
 
-def get_turn_undead_matrix(ta: int, turn_adj: int) -> Dict[str, str]:
+def get_turn_undead_matrix(ta: int, turn_adj: int) -> Optional[Dict[str, str]]:
     """Get turn undead matrix. Apply CH turning adjustment if applicable."""
     if ta == 0:
         return None
@@ -700,10 +702,10 @@ def get_caster_schools(class_id: int) -> List[str]:
         "SELECT school_code FROM classes WHERE class_id = ?;",
         (class_id,),
     )
-    schools = cur.fetchone()["school_code"]
-    if schools is None:
+    school_code: Optional[str] = cur.fetchone()["school_code"]
+    if school_code is None:
         return []
-    schools = [x.strip() for x in schools.split(",")]
+    schools = [x.strip() for x in school_code.split(",")]
     # need to make a random school selection for shaman
     if len(schools) > 1:
         for i in range(len(schools)):
@@ -713,7 +715,11 @@ def get_caster_schools(class_id: int) -> List[str]:
     return schools
 
 
-def get_random_spell(school: str, spell_level: int, d100_roll: int = None) -> Dict:
+def get_random_spell(
+    school: str,
+    spell_level: int,
+    d100_roll: Optional[int] = None,
+) -> Dict[str, Any]:
     """Get a randomly rolled-for spell."""
     if d100_roll is None:
         d100_roll = roll_dice(1, 100)
@@ -744,7 +750,7 @@ def get_random_spell(school: str, spell_level: int, d100_roll: int = None) -> Di
     return result
 
 
-def get_spells(class_id: int, level: int, ca: int) -> List[Dict]:
+def get_spells(class_id: int, level: int, ca: int) -> Optional[Dict[str, Any]]:
     """Return the list of spells known for the character."""
     if ca == 0:
         return None
@@ -752,7 +758,7 @@ def get_spells(class_id: int, level: int, ca: int) -> List[Dict]:
     if len(schools) == 0:
         return None
     else:
-        spells = {}
+        spells: Dict[str, Any] = {}
     for school in schools:
         spells[school] = {}
         cur.execute(
@@ -814,10 +820,10 @@ def get_spells(class_id: int, level: int, ca: int) -> List[Dict]:
 
 
 def apply_spells_per_day_bonus(
-    spells: Dict,
+    spells: Optional[Dict[str, Any]],
     bonus_spells_in: int,
     bonus_spells_ws: int,
-) -> Dict:
+) -> Optional[Dict[str, Any]]:
     """Increase spells per day for high IN/WS scores. Must already have at least
     one spell per day for the given level.
     """
@@ -851,7 +857,7 @@ def apply_spells_per_day_bonus(
     return spells
 
 
-def get_class_abilities(class_id: int, level: int) -> Dict:
+def get_class_abilities(class_id: int, level: int) -> List[Dict[str, Any]]:
     """Get class abilities from class abilities table."""
     cur.execute(
         """
@@ -878,11 +884,11 @@ def get_random_familiar() -> str:
         """,
         (roll,),
     )
-    animal = cur.fetchone()["animal"]
+    animal: str = cur.fetchone()["animal"]
     return animal
 
 
-def get_priest_abilities(deity_id: int, level: int) -> List[Dict]:
+def get_priest_abilities(deity_id: int, level: int) -> List[Dict[str, Any]]:
     """Get priest Specialized Faith abilities."""
     cur.execute(
         """

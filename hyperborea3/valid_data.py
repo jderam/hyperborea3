@@ -39,6 +39,32 @@ VALID_CLASS_ID_MAP = {
     33: "Ice Thief",
 }
 VALID_CLASS_IDS = list(range(1, 34))
+VALID_DEITIES = [
+    "Apollo",
+    "Artemis",
+    "Aurorus",
+    "Azathoth",
+    "Boetzu",
+    "Boreas",
+    "Helios",
+    "Kraken",
+    "Kthulhu",
+    "Krimmr",
+    "Lunaqqua",
+    "Mordezzan",
+    "Raven",
+    "Rel",
+    "Thaumagorga",
+    "Tlakk-Nakka",
+    "Ullr",
+    "Xathoqqua",
+    "Yig",
+    "Yikkorth",
+    "Ymir",
+    "Yoon'Deh",
+    "Ythaqqa",
+    "Yug",
+]
 VALID_DENOMINATIONS = ["pp", "gp", "ep", "sp", "cp"]
 VALID_DICE_METHODS = [1, 2, 3, 4, 5, 6]
 VALID_FA = list(range(13))
