@@ -327,8 +327,8 @@ class PlayerCharacter:
         char_dict = self.__dict__
         return char_dict
 
-    def to_json(self):
-        char_json = json.dumps(self.__dict__)
+    def to_json(self, indent=None):
+        char_json = json.dumps(self.__dict__, indent=indent)
         return char_json
 
 
