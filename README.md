@@ -4,6 +4,17 @@
 
 An app for creating randomly-generated characters for the [Hyperborea](https://www.hyperborea.tv/) 3rd edition tabletop roleplaying game.
 
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Options](#options)
+* [Sample Output](#sample-output)
+* [`class_id_map`](#classidmap)
+* [Use Cases](#use-cases)
+* [Links](#links)
+* [Future Development](#future-development)
+* [Contributions](#contributions)
+
 
 
 ## Installation
@@ -16,12 +27,12 @@ $ python -m pip install hyperborea3
 
 ## Usage
 
-By default, a random character will be generated with the following options:
+The main entry point to this application is the `PlayerCharacter` class. By default, a random character will be generated with the following options:
 
-* Abilities are rolled using dice method III
-* Class is randomly selected, ensuring minimum ability requirements are met
+* Abilities are rolled using dice method III (4d6 drop lowest)
+* Class is randomly selected from amongst those where ability score requirements are met
 * 0 experience points
-* All subclasses are enabled
+* All character class options are enabled
 * The by-the-book descending Armour Class system is used
 
 ``` python
@@ -31,44 +42,46 @@ from hyperborea3.player_character import PlayerCharacter
 pc = PlayerCharacter()
 pprint(pc.to_dict())
 ```
+See [Sample Output](#sample-output) for some examples of what the generated characters look like.
 
+## Parameters
 
+Parameter | Description
+----------|------------
+`method` | _int, default 3_<br>Dice method used to roll ability scores. <br>**Allowed Values**: If no `class_id` is passed, `1`, `2`, `3`, `4`, `5` may be used. If a specific `class_id` other than `0` is passed, any value passed is ignored and `method=6` is automatically used.<br>**Example**: `pc = PlayerCharacter(method=5)` to create a random-classed PC using dice method V for rolling ability scores.
+`class_id` | _int, default 0_<br>If `0`, a random class will be selected and dice methods 1 through 5 can be used. Otherwise, a value of 1 to 33 can be entered, and the dice method will automatically be set to 6, regardless of what is passed.<br>**Allowed Values**: `0` through `33`. See [`class_id_map`](#classidmap) below.<br>**Example**: `pc = PlayerCharacter(class_id=10)` to create a Ranger.
+`subclasses` | _int, default 2_<br>Determines which classes are selected from when generating a character of a random class.<br>**Allowed Values**: `0`=Principal classes only (Fighter, Magician, Cleric, Thief); `1`=Principal classes plus subclasses; `2`=Principal classes, subclasses, and variant subclasses like the Ice Thief and Fell Paladin.<br>**Example**: `pc = PlayerCharacter(subclasses=0)` to create a random character from one of the 4 principal classes.
+`xp` | _int, default 0_<br>The number of experience points the character has. This will determine the character's level, which is capped at 12.<br>**Allowed Values**: Any positive integer<br>**Example**: `pc = PlayerCharacter(class_id=1, xp=4000)` to create a 3rd-level Fighter.
+`ac_type` | _str, default "descending"_<br>Choose whether to use ascending or descending AC system.<br>**Allowed Values**: `"descending"`, `"ascending"`<br>**Example**: `pc = PlayerCharacter(ac_type="ascending")`
 
-## Sample Output
-
-Check out the [directory of sample characters](https://github.com/jderam/hyperborea-tools/tree/main/hyperborea3/sample_data/PlayerCharacter) to examine and explore the data structures.
-
-
-
-
-## Additional Options
+<!--
+## Options
 
 The PlayerCharacter object accepts the following options:
 
-`method`
+`method`  
 
-> **Description**: The dice method used to roll ability scores. Methods I through V are used with randomly chosen classes. Method VI is always used when a specific class is chosen.
->
-> > *Method I*: 3d6 in order
-> >
-> > *Method II*: Best of three sets of 3d6 in order
-> >
-> > *Method III*: 4d6 drop lowest
-> >
-> > *Method IV*: Best of three 3d6 rolls for each attribute
-> >
-> > *Method V*: 2d6+6 in order.
-> >
-> > *Method VI*: 3d6 for each attribute that doesn't have a required minimum. 4d6 drop lowest for each attribute that does have a required minimum, rerolling as necessary until the requisite minumum score is achieved.
->
-> **Type**: int
->
-> **Default**: 3
->
-> **Valid Values**: 1 through 5 when `class_id=0` (q.v.), 6 for any other `class_id` value.
+**Description**: The dice method used to roll ability scores. Methods I through V are used with randomly chosen classes. Method VI is always used when a specific class is chosen.  
+* *Method I*: 3d6 in order  
+* *Method II*: Best of three sets of 3d6 in order  
+* *Method III*: 4d6 drop lowest  
+* *Method IV*: Best of three 3d6 rolls for each attribute  
+* *Method V*: 2d6+6 in order.  
+* *Method VI*: 3d6 for each attribute that doesn't have a required minimum. 4d6 drop lowest for each attribute that does have a required minimum, rerolling as necessary until the requisite minumum score is achieved.  
+
+**Type**: int  
+
+**Default**: 3  
+
+**Valid Values**: 1 through 5 when `class_id=0` (q.v.), 6 for any other `class_id` value.  
 
 
 
+
+***
+
+  
+  
 `class_id`
 
 > **Description**: If `0`, a random class will be selected and dice methods 1 through 5 can be used. Otherwise, a value of 1 to 33 can be entered, and the dice method will automatically be set to 6, regardless of what is passed.
@@ -80,7 +93,7 @@ The PlayerCharacter object accepts the following options:
 > **Valid Values**: 0 through 33. See `class_id_map` below.
 
 ​	 
-
+***
 `subclasses`
 
 > **Description**: Determines which Only relevant when generating a character of a random class. 
@@ -122,8 +135,17 @@ The PlayerCharacter object accepts the following options:
 > **Valid Values**: "descending" or "ascending"
 
 ​	
+-->
 
-### `class_id_map`
+## Sample Output
+
+Check out the [directory of sample characters](https://github.com/jderam/hyperborea-tools/tree/main/hyperborea3/sample_data/PlayerCharacter) to examine and explore the data structures.
+
+
+
+
+
+## `class_id_map`
 
 ``` python
 1: "Fighter"
