@@ -18,6 +18,11 @@ pip_install_dev: ## pip install in editable mode
 test: ## Run pytest tests
 	python -m pytest
 
+check: ## Run all linting/formatting checks
+	black . --check
+	flake8
+	mypy hyperborea3 tests
+
 mypy_check: ## Run mypy type checker
 	mypy hyperborea3 tests
 
