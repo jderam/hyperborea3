@@ -152,6 +152,7 @@ Check out the [directory of sample characters](https://github.com/jderam/hyperbo
 2: "Magician"
 3: "Cleric"
 4: "Thief"
+# --------------> subclasses=0 will return a choice from above this line
 5: "Barbarian"
 6: "Berserker"
 7: "Cataphract"
@@ -174,6 +175,7 @@ Check out the [directory of sample characters](https://github.com/jderam/hyperbo
 24: "Legerdemainist"
 25: "Purloiner"
 26: "Scout"
+# --------------> subclasses=1 will return a choice from above this line
 27: "Fell Paladin"
 28: "Ice Lord"
 29: "Fire Lord"
@@ -181,6 +183,7 @@ Check out the [directory of sample characters](https://github.com/jderam/hyperbo
 31: "Mountebank"
 32: "Fire Thief"
 33: "Ice Thief"
+# --------------> subclasses=2 will return a choice from above this line
 ```
 
 
