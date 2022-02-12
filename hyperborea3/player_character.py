@@ -2,6 +2,7 @@ import json
 import random  # noqa: F401
 from typing import Any, Dict, List, Optional
 
+from hyperborea3 import __version__ as HYPERBOREA3_VERSION
 from hyperborea3.chargen import (
     ac_to_aac,
     apply_spells_per_day_bonus,
@@ -59,6 +60,8 @@ class PlayerCharacter:
         assert class_id in [0] + VALID_CLASS_IDS
         assert subclasses in VALID_SUBCLASS_PARAMS
         assert ac_type in VALID_AC_TYPES
+
+        self.app_version = HYPERBOREA3_VERSION
 
         # Always use Method VI if a specific class is chosen
         if class_id != 0:
