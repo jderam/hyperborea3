@@ -1,6 +1,6 @@
 # hyperborea3
 
-![Tests](https://github.com/jderam/hyperborea-tools/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/jderam/hyperborea3/actions/workflows/tests.yml/badge.svg)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 An app for creating randomly-generated characters for the [Hyperborea](https://www.hyperborea.tv/) 3rd edition tabletop roleplaying game.
@@ -60,7 +60,7 @@ Parameter | Description
 
 ## Sample Output
 
-Check out the [directory of sample characters](https://github.com/jderam/hyperborea-tools/tree/main/hyperborea3/sample_data/PlayerCharacter) to examine and explore the data structures.
+Check out the [directory of sample characters](https://github.com/jderam/hyperborea3/tree/main/hyperborea3/sample_data/PlayerCharacter) to examine and explore the data structures.
 
 
 
