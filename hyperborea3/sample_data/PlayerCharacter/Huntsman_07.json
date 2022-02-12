@@ -1,0 +1,323 @@
+{
+    "method": 6,
+    "class_id": 8,
+    "class_name": "Huntsman",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "cn": {
+            "score": 9,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 9,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
+        }
+    },
+    "xp": 72000,
+    "level": 7,
+    "xp_to_next": 144000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
+    },
+    "deity": {
+        "deity_id": 5,
+        "deity_name": "Boetzu",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 2,
+    "race": "Amazon",
+    "gender": "Female",
+    "hd": "7d10",
+    "hp": 30,
+    "fa": 7,
+    "ca": 0,
+    "ta": 0,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 0
+    },
+    "combat_matrix": {
+        "-9": 22,
+        "-8": 21,
+        "-7": 20,
+        "-6": 19,
+        "-5": 18,
+        "-4": 17,
+        "-3": 16,
+        "-2": 15,
+        "-1": 14,
+        "0": 13,
+        "1": 12,
+        "2": 11,
+        "3": 10,
+        "4": 9,
+        "5": 8,
+        "6": 7,
+        "7": 6,
+        "8": 5,
+        "9": 4
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 3,
+        "armour_type": "Leather Armour",
+        "ac": 7,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 15,
+        "weight": 15,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 101,
+            "weapon_type": "Hand Axe",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "1/1",
+            "range_sml": "15/30/45",
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 5,
+            "weight": 2,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 0,
+            "hurled_atk": 1,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 131,
+            "weapon_type": "Short Spear",
+            "wc": 3,
+            "hurlable": true,
+            "hurled_rof": "1/1",
+            "range_sml": "15/30/45",
+            "damage": "1d6",
+            "damage_2h": "1d8",
+            "cost": 4,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 0,
+            "hurled_atk": 1,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 206,
+            "weapon_type": "Fighting Net",
+            "rof": "1/2",
+            "range_sml": "10 feet",
+            "damage": null,
+            "hurled": true,
+            "launched": false,
+            "cost": 5,
+            "weight": 7,
+            "qty": 1,
+            "ammunition": null,
+            "missile_atk": 1,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 209,
+            "weapon_type": "Long Bow",
+            "rof": "5/2",
+            "range_sml": "70/140/210",
+            "damage": "1d6",
+            "hurled": false,
+            "launched": true,
+            "cost": 60,
+            "weight": 3,
+            "qty": 1,
+            "ammunition": "arrows \u00d712, silver arrows \u00d72",
+            "missile_atk": 2,
+            "dmg_adj": 1,
+            "mastery": true
+        }
+    ],
+    "equipment": [
+        "arrow quiver",
+        "backpack",
+        "sinew cord (100-ft. ball)",
+        "hunting horn",
+        "soft leather pouch",
+        "standard rations (1 week)",
+        "torches \u00d72",
+        "wineskin (full)"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 9,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 8,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Wilderness Traps",
+            "skill_roll": 6,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 8,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": null,
+    "class_abilities": [
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Alertness",
+            "brief_desc": "-1 chance to be surprized",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Ambusher",
+            "brief_desc": "+1 chance to surprize others",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Harvest Venom",
+            "brief_desc": "9:12 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Predator",
+            "brief_desc": "+1 dmg per level vs. animals",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Subdue Animal",
+            "brief_desc": "tame a creature",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Track",
+            "brief_desc": "10:12 in wilderness, else 5:12",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 1,
+            "ability_title": "Wilderness Survival",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 4,
+            "ability_title": "Werewolf Slayer",
+            "brief_desc": "+1 dmg/lvl vs. lycanthropes with magic/silver wpns",
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 8,
+            "level": 7,
+            "ability_title": "Melee Expert",
+            "brief_desc": "improved melee attack rate",
+            "ability_desc": null
+        }
+    ]
+}

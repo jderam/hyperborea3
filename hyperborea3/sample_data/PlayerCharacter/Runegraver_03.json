@@ -1,0 +1,274 @@
+{
+    "method": 6,
+    "class_id": 20,
+    "class_name": "Runegraver",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 6,
+            "atk_mod": -1,
+            "def_adj": -1,
+            "test": 1,
+            "feat": 1
+        },
+        "cn": {
+            "score": 14,
+            "hp_adj": 1,
+            "poison_adj": 0,
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
+        },
+        "in": {
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ch": {
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
+            "turn_adj": 0
+        }
+    },
+    "xp": 6000,
+    "level": 3,
+    "xp_to_next": 12000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
+    "hd": "3d8",
+    "hp": 10,
+    "fa": 3,
+    "ca": 3,
+    "ta": 0,
+    "sv": 15,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 26,
+        "-8": 25,
+        "-7": 24,
+        "-6": 23,
+        "-5": 22,
+        "-4": 21,
+        "-3": 20,
+        "-2": 19,
+        "-1": 18,
+        "0": 17,
+        "1": 16,
+        "2": 15,
+        "3": 14,
+        "4": 13,
+        "5": 12,
+        "6": 11,
+        "7": 10,
+        "8": 9,
+        "9": 8
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 7,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 102,
+            "weapon_type": "Battle Axe",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": -1,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 211,
+            "weapon_type": "Short Bow",
+            "rof": "3/2",
+            "range_sml": "50/100/150",
+            "damage": "1d6",
+            "hurled": false,
+            "launched": true,
+            "cost": 20,
+            "weight": 2,
+            "qty": 1,
+            "ammunition": "arrows \u00d712, silver arrows \u00d72",
+            "missile_atk": -1,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "arrow quiver",
+        "backpack",
+        "bandages",
+        "chalk (piece)",
+        "dice",
+        "wooden holy symbol",
+        "drinking horn (full)",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "tinderbox",
+        "torches \u00d72",
+        "waterskin",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "run": {
+            "spells_per_day": {
+                "lvl1": 3,
+                "lvl2": 1,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "run",
+                    "spell_level": 1,
+                    "spell_id": 63,
+                    "spell_name": "Man [Command]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 1,
+                    "spell_id": 270,
+                    "spell_name": "Riding [Mount]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 1,
+                    "spell_id": 133,
+                    "spell_name": "Giant [Enlargement]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 2,
+                    "spell_id": 173,
+                    "spell_name": "Wealth [Fool\u2019s Gold]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 20,
+            "level": 1,
+            "ability_title": "Ale Horn",
+            "brief_desc": "create enchanted ale 1/day, magical mead 1/week",
+            "ability_desc": null
+        },
+        {
+            "class_id": 20,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 20,
+            "level": 1,
+            "ability_title": "Grave Runes",
+            "brief_desc": "sacrifice hp to invoke magical runes",
+            "ability_desc": null
+        }
+    ]
+}

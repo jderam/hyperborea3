@@ -1,0 +1,532 @@
+{
+    "method": 6,
+    "class_id": 21,
+    "class_name": "Shaman",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 3,
+            "hp_adj": -1,
+            "poison_adj": -2,
+            "trauma_surv": 45,
+            "test": 1,
+            "feat": 0
+        },
+        "in": {
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
+            "turn_adj": 0
+        }
+    },
+    "xp": 800000,
+    "level": 12,
+    "xp_to_next": null,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
+    },
+    "deity": {
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 8,
+    "race": "Kimmerian",
+    "gender": "Male",
+    "hd": "9d6+6",
+    "hp": 20,
+    "fa": 7,
+    "ca": 12,
+    "ta": 10,
+    "sv": 11,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 22,
+        "-8": 21,
+        "-7": 20,
+        "-6": 19,
+        "-5": 18,
+        "-4": 17,
+        "-3": 16,
+        "-2": 15,
+        "-1": 14,
+        "0": 13,
+        "1": 12,
+        "2": 11,
+        "3": 10,
+        "4": 9,
+        "5": 8,
+        "6": 7,
+        "7": 6,
+        "8": 5,
+        "9": 4
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 107,
+            "weapon_type": "War Club",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": "1d8",
+            "cost": 3,
+            "weight": 4,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "belladonna",
+        "brass censer",
+        "wooden holy symbol (totem)",
+        "incense sticks \u00d712",
+        "wooden mask",
+        "soft leather pouch",
+        "wooden rattle",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "bark sheet spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "UD",
+        "undead_type_01": "UD",
+        "undead_type_02": "UD",
+        "undead_type_03": "UD",
+        "undead_type_04": "D",
+        "undead_type_05": "D",
+        "undead_type_06": "D",
+        "undead_type_07": "T",
+        "undead_type_08": "T",
+        "undead_type_09": "10:12",
+        "undead_type_10": "7:12",
+        "undead_type_11": "4:12",
+        "undead_type_12": "1:12",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "drd": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 2,
+                "lvl3": 2,
+                "lvl4": 1,
+                "lvl5": 1,
+                "lvl6": 1
+            },
+            "spells_known": [
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 160,
+                    "spell_name": "Fire Trap",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 443,
+                    "spell_name": "Water Breathing",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 27,
+                    "spell_name": "Black Cloud",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 202,
+                    "spell_name": "Hold Vegetation",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 5,
+                    "spell_id": 389,
+                    "spell_name": "Summon Animal II",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 6,
+                    "spell_id": 150,
+                    "spell_name": "Feeblemind",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        },
+        "mag": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 2,
+                "lvl3": 2,
+                "lvl4": 1,
+                "lvl5": 1,
+                "lvl6": 1
+            },
+            "spells_known": [
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 58,
+                    "spell_name": "Clairvoyance",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 44,
+                    "spell_name": "Cataleptic State",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 4,
+                    "spell_id": 158,
+                    "spell_name": "Fire Shield",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 5,
+                    "spell_id": 407,
+                    "spell_name": "Teleport",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 6,
+                    "spell_id": 74,
+                    "spell_name": "Control Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Draw Poison",
+            "brief_desc": "draw and spit poison from venomous bite",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Harvest Venom",
+            "brief_desc": "9:12 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to clerics and magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Medicine Man",
+            "brief_desc": "treat wounds 1 person/day/level; treat poison/disease 1/week",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke scrolls from known schools",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast spells from selected schools",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 1,
+            "ability_title": "Totem",
+            "brief_desc": "beseech totem spirit 1/week as per contact otherworldly being spell",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 3,
+            "ability_title": "Turn Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 9,
+            "ability_title": "Lordship",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 11,
+            "ability_title": "Longevity",
+            "brief_desc": "age 1 year per Hyperborean cycle (13 yrs)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 21,
+            "level": 12,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

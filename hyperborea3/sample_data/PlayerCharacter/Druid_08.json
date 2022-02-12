@@ -1,0 +1,558 @@
+{
+    "method": 6,
+    "class_id": 17,
+    "class_name": "Druid",
+    "attr": {
+        "st": {
+            "score": 10,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 9,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 5,
+            "lang": -1,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ws": {
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 128000,
+    "level": 8,
+    "xp_to_next": 256000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
+    },
+    "deity": {
+        "deity_id": 7,
+        "deity_name": "Helios",
+        "primary_alignment": "Neutral"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
+    "hd": "8d8",
+    "hp": 37,
+    "fa": 5,
+    "ca": 8,
+    "ta": 0,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 24,
+        "-8": 23,
+        "-7": 22,
+        "-6": 21,
+        "-5": 20,
+        "-4": 19,
+        "-3": 18,
+        "-2": 17,
+        "-1": 16,
+        "0": 15,
+        "1": 14,
+        "2": 13,
+        "3": 12,
+        "4": 11,
+        "5": 10,
+        "6": 9,
+        "7": 8,
+        "8": 7,
+        "9": 6
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 131,
+            "weapon_type": "Short Spear",
+            "wc": 3,
+            "hurlable": true,
+            "hurled_rof": "1/1",
+            "range_sml": "15/30/45",
+            "damage": "1d6",
+            "damage_2h": "1d8",
+            "cost": 4,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 211,
+            "weapon_type": "Short Bow",
+            "rof": "3/2",
+            "range_sml": "50/100/150",
+            "damage": "1d6",
+            "hurled": false,
+            "launched": true,
+            "cost": 20,
+            "weight": 2,
+            "qty": 1,
+            "ammunition": "arrows \u00d712",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "arrow quiver",
+        "backpack",
+        "bandages",
+        "wooden holy symbol",
+        "iron rations (1 week)",
+        "body paint (crock)",
+        "parchment \u00d73",
+        "soft leather pouch",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "wolfsbane",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 3,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "drd": {
+            "spells_per_day": {
+                "lvl1": 4,
+                "lvl2": 4,
+                "lvl3": 3,
+                "lvl4": 2,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 302,
+                    "spell_name": "Precipitate",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 314,
+                    "spell_name": "Purify Food and Drink",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 349,
+                    "spell_name": "Shillelagh",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 259,
+                    "spell_name": "Messenger Bird",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 189,
+                    "spell_name": "Goodberry",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 442,
+                    "spell_name": "Warp Wood",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 164,
+                    "spell_name": "Flame Blade",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 276,
+                    "spell_name": "Obscure",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 378,
+                    "spell_name": "Starlight",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 198,
+                    "spell_name": "Hold Animal",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 27,
+                    "spell_name": "Black Cloud",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 281,
+                    "spell_name": "Pass without Trace, 15\u0384 r.",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 274,
+                    "spell_name": "Neutralize Poison",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 255,
+                    "spell_name": "Meld into Stone",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 372,
+                    "spell_name": "Speak with Plants",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 202,
+                    "spell_name": "Hold Vegetation",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 36,
+                    "spell_name": "Boil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 253,
+                    "spell_name": "Mass Treemorph",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 388,
+                    "spell_name": "Summon Animal I",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 410,
+                    "spell_name": "Them",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 17,
+            "level": 1,
+            "ability_title": "Druidic Tongue",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 1,
+            "ability_title": "Fire/Heat Affinity",
+            "brief_desc": "+2 to saves vs. fire/heat",
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 1,
+            "ability_title": "Natural Identifications",
+            "brief_desc": "recognize drinkable water, identify plants and animals",
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke druid scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast druid spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 1,
+            "ability_title": "Traverse Overgrowth",
+            "brief_desc": "negotiate difficult wilderness at full speed without leaving tracks",
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 5,
+            "ability_title": "Charm Immunity",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 5,
+            "ability_title": "Shapechange",
+            "brief_desc": "assume the form of an animal",
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 17,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

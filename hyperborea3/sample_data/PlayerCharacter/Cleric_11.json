@@ -1,0 +1,625 @@
+{
+    "method": 6,
+    "class_id": 3,
+    "class_name": "Cleric",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 10,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ch": {
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 512000,
+    "level": 11,
+    "xp_to_next": 640000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 6,
+        "deity_name": "Boreas",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Male",
+    "hd": "9d8+4",
+    "hp": 41,
+    "fa": 7,
+    "ca": 11,
+    "ta": 11,
+    "sv": 11,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 22,
+        "-8": 21,
+        "-7": 20,
+        "-6": 19,
+        "-5": 18,
+        "-4": 17,
+        "-3": 16,
+        "-2": 15,
+        "-1": 14,
+        "0": 13,
+        "1": 12,
+        "2": 11,
+        "3": 10,
+        "4": 9,
+        "5": 8,
+        "6": 7,
+        "7": 6,
+        "8": 5,
+        "9": 4
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 115,
+            "weapon_type": "War Hammer",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "silver holy symbol",
+        "holy water",
+        "soft",
+        "leather pouch",
+        "iron rations (1 week)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "UD",
+        "undead_type_01": "UD",
+        "undead_type_02": "UD",
+        "undead_type_03": "UD",
+        "undead_type_04": "UD",
+        "undead_type_05": "D",
+        "undead_type_06": "D",
+        "undead_type_07": "D",
+        "undead_type_08": "T",
+        "undead_type_09": "T",
+        "undead_type_10": "10:12",
+        "undead_type_11": "7:12",
+        "undead_type_12": "4:12",
+        "undead_type_13": "1:12"
+    },
+    "spells": {
+        "clr": {
+            "spells_per_day": {
+                "lvl1": 5,
+                "lvl2": 4,
+                "lvl3": 3,
+                "lvl4": 3,
+                "lvl5": 2,
+                "lvl6": 1
+            },
+            "spells_known": [
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 32,
+                    "spell_name": "Bless Oil or Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 277,
+                    "spell_name": "Omen",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 314,
+                    "spell_name": "Purify Food and Drink",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 91,
+                    "spell_name": "Cure Moderate Wounds",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 135,
+                    "spell_name": "Enthral",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 188,
+                    "spell_name": "Glyph of Warding",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 326,
+                    "spell_name": "Remove Paralysis",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 371,
+                    "spell_name": "Speak with Dead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 255,
+                    "spell_name": "Meld into Stone",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 16,
+                    "spell_name": "Animate Dead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 250,
+                    "spell_name": "Magic Vestment",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 376,
+                    "spell_name": "Spike Growth",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 216,
+                    "spell_name": "Imbue with Spell Ability",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 119,
+                    "spell_name": "Discern Lie",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 354,
+                    "spell_name": "Shroud of Fear",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 128,
+                    "spell_name": "Divination",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 412,
+                    "spell_name": "Tongues",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 154,
+                    "spell_name": "Finger of Death",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 165,
+                    "spell_name": "Flame Strike",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 64,
+                    "spell_name": "Commune",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 22,
+                    "spell_name": "Atonement",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 296,
+                    "spell_name": "Plane Shift",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 227,
+                    "spell_name": "Inoculate",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 6,
+                    "spell_id": 30,
+                    "spell_name": "Blade Barrier",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 6,
+                    "spell_id": 152,
+                    "spell_name": "Find the Path",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 6,
+                    "spell_id": 451,
+                    "spell_name": "Word of Recall",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke clerical scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast clerical spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 1,
+            "ability_title": "Turn Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 3,
+            "level": 9,
+            "ability_title": "Lordship",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

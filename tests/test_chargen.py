@@ -1,14 +1,18 @@
+import pytest
+
 from hyperborea3.chargen import (
     DBPATH,
     ac_to_aac,
     calculate_ac,
+    class_id_to_name,
     get_alignment,
     get_attr,
     get_attr_mod,
     get_caster_schools,
+    get_class_id_map,
     get_class_level_data,
-    get_class_list,
     get_combat_matrix,
+    get_deity,
     get_gender,
     get_hd,
     get_level,
@@ -33,8 +37,11 @@ from hyperborea3.chargen import (
 from hyperborea3.valid_data import (
     VALID_ABILITY_SCORES,
     VALID_ABILITIES,
+    VALID_ALIGMENTS_SHORT,
     VALID_CA,
+    VALID_CLASS_ID_MAP,
     VALID_CLASS_IDS,
+    VALID_DEITIES,
     VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
     VALID_FA,
@@ -81,11 +88,18 @@ def test_roll_stats():
                 assert attr[stat]["score"] in VALID_ABILITY_SCORES
 
 
-def test_get_class_list():
-    class_list = get_class_list(subclasses=True)
-    assert len(class_list) == 33
-    class_list = get_class_list(subclasses=False)
-    assert len(class_list) == 4
+def test_get_class_id_map():
+    class_id_map = get_class_id_map()
+    assert class_id_map == VALID_CLASS_ID_MAP
+
+
+@pytest.mark.parametrize(
+    "class_id,expected",
+    [(k, v) for k, v in VALID_CLASS_ID_MAP.items()],
+)
+def test_class_id_to_name(class_id: int, expected: str) -> None:
+    class_name = class_id_to_name(class_id)
+    assert class_name == expected
 
 
 def test_get_qualifying_classes():
@@ -198,13 +212,24 @@ def test_starting_armour():
 def test_starting_shield():
     for class_id in VALID_CLASS_IDS:
         shield = get_starting_shield(class_id)
-        assert shield is None or list(shield.keys()) == [
-            "shield_id",
-            "shield_type",
-            "def_mod",
-            "cost",
-            "weight",
-        ]
+        if class_id in [1, 9, 27]:
+            assert shield == {
+                "shield_id": 2,
+                "shield_type": "Large Shield",
+                "def_mod": 2,
+                "cost": 10,
+                "weight": 10,
+            }
+        elif class_id in [5, 7, 24, 26, 31, 32, 33]:
+            assert shield == {
+                "shield_id": 1,
+                "shield_type": "Small Shield",
+                "def_mod": 1,
+                "cost": 5,
+                "weight": 5,
+            }
+        else:
+            assert shield is None
 
 
 def test_starting_weapons_melee():
@@ -274,7 +299,7 @@ def test_ac_to_aac():
         assert ac + aac == 19
 
 
-def test_alignment():
+def test_get_alignment():
     for class_id in VALID_CLASS_IDS:
         alignment = get_alignment(class_id)
         if class_id in [1, 2, 3, 7, 8, 11, 13, 18, 19]:
@@ -308,6 +333,13 @@ def test_alignment():
             Unexpected alignment '{alignment}' not in
             allowed values {allowed_alignments}
         """
+
+
+@pytest.mark.repeat(20)
+def test_get_deity():
+    for short_align in VALID_ALIGMENTS_SHORT:
+        deity = get_deity(short_align)
+        assert deity["deity_name"] in VALID_DEITIES
 
 
 def test_get_thief_skills():

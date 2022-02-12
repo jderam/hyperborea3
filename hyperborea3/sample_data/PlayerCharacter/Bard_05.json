@@ -1,0 +1,366 @@
+{
+    "method": 6,
+    "class_id": 23,
+    "class_name": "Bard",
+    "attr": {
+        "st": {
+            "score": 14,
+            "atk_mod": 0,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
+        "dx": {
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "cn": {
+            "score": 6,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ch": {
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
+        }
+    },
+    "xp": 20000,
+    "level": 5,
+    "xp_to_next": 40000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 10,
+        "deity_name": "Krimmr",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "hd": "5d8",
+    "hp": 15,
+    "fa": 3,
+    "ca": 5,
+    "ta": 0,
+    "sv": 14,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 2,
+        "avoidance": 2,
+        "sorcery": 0
+    },
+    "combat_matrix": {
+        "-9": 26,
+        "-8": 25,
+        "-7": 24,
+        "-6": 23,
+        "-5": 22,
+        "-4": 21,
+        "-3": 20,
+        "-2": 19,
+        "-1": 18,
+        "0": 17,
+        "1": 16,
+        "2": 15,
+        "3": 14,
+        "4": 13,
+        "5": 12,
+        "6": 11,
+        "7": 10,
+        "8": 9,
+        "9": 8
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 2,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 120,
+            "weapon_type": "Footman's Mace",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 211,
+            "weapon_type": "Short Bow",
+            "rof": "3/2",
+            "range_sml": "50/100/150",
+            "damage": "1d6",
+            "hurled": false,
+            "launched": true,
+            "cost": 20,
+            "weight": 2,
+            "qty": 1,
+            "ammunition": "arrows \u00d712",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "arrow quiver",
+        "backpack",
+        "bandages",
+        "chalk (piece)",
+        "flute",
+        "ink and quill",
+        "parchment \u00d73",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "large sack",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 3,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 2,
+            "stat": "in"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 6,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 7,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 7,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": {
+        "drd": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 1,
+                "lvl3": 1,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 26,
+                    "spell_name": "Befriend Animals",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 164,
+                    "spell_name": "Flame Blade",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 91,
+                    "spell_name": "Cure Moderate Wounds",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        },
+        "ill": {
+            "spells_per_day": {
+                "lvl1": 1,
+                "lvl2": 1,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "ill",
+                    "spell_level": 1,
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 447,
+                    "spell_name": "Whispering Wind",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Countersong",
+            "brief_desc": "base 9:12 chance to negate auditory sorceries",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Folklore",
+            "brief_desc": "chance to recall a pice of lore",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Insprit Allies",
+            "brief_desc": "sing to grant allies +1 melee atk/dmg",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to clerics and magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Mesmerize",
+            "brief_desc": "song or music stuns hostile creatures within 40' usable 1/day",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke druid and illusionist scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 23,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast druid and illusionist spells",
+            "ability_desc": null
+        }
+    ]
+}

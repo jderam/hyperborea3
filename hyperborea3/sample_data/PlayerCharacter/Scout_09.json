@@ -1,0 +1,325 @@
+{
+    "method": 6,
+    "class_id": 26,
+    "class_name": "Scout",
+    "attr": {
+        "st": {
+            "score": 7,
+            "atk_mod": 0,
+            "dmg_adj": -1,
+            "test": 2,
+            "feat": 2
+        },
+        "dx": {
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "cn": {
+            "score": 9,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 10,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 9,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 9,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 224000,
+    "level": 9,
+    "xp_to_next": 336000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
+    "hd": "9d6",
+    "hp": 41,
+    "fa": 6,
+    "ca": 0,
+    "ta": 0,
+    "sv": 12,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 2,
+        "avoidance": 2,
+        "sorcery": 0
+    },
+    "combat_matrix": {
+        "-9": 23,
+        "-8": 22,
+        "-7": 21,
+        "-6": 20,
+        "-5": 19,
+        "-4": 18,
+        "-3": 17,
+        "-2": 16,
+        "-1": 15,
+        "0": 14,
+        "1": 13,
+        "2": 12,
+        "3": 11,
+        "4": 10,
+        "5": 9,
+        "6": 8,
+        "7": 7,
+        "8": 6,
+        "9": 5
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 2,
+        "armour_type": "Padded Armour",
+        "ac": 8,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 10,
+        "weight": 10,
+        "description": null
+    },
+    "shield": {
+        "shield_id": 1,
+        "shield_type": "Small Shield",
+        "def_mod": 1,
+        "cost": 5,
+        "weight": 5
+    },
+    "ac": 6,
+    "mv": 50,
+    "weapons_melee": [
+        {
+            "weapon_id": 101,
+            "weapon_type": "Hand Axe",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "1/1",
+            "range_sml": "15/30/45",
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 5,
+            "weight": 2,
+            "qty": 2,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": -1,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 203,
+            "weapon_type": "Dart",
+            "rof": "2/1",
+            "range_sml": "15/30/45",
+            "damage": "1d3",
+            "hurled": true,
+            "launched": false,
+            "cost": 1,
+            "weight": 1,
+            "qty": 4,
+            "ammunition": null,
+            "missile_atk": 0,
+            "dmg_adj": -1,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "chalk (piece)",
+        "disguise clothing",
+        "grappling hook",
+        "grease",
+        "marbles \u00d720",
+        "parchment",
+        "wooden pole (10-ft.)",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "small sack",
+        "thieves\u2019 tools",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 5,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 10,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 8,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 9,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 7,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 9,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 7,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": null,
+    "class_abilities": [
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Agile",
+            "brief_desc": "+1 AC when unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Alertness",
+            "brief_desc": "-1 chance to be surprized",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Backstab",
+            "brief_desc": "+4 to hit, damage multiplied",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Controlled Fall",
+            "brief_desc": "ignore 10' per level of falling damage (if near stable surface)",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Determine Depth and Grade",
+            "brief_desc": "chance to determine depth of pit or slope of passages",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Disguise",
+            "brief_desc": "alter appearance as per disguise self spell",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Run",
+            "brief_desc": "MV 50' if light or no armour",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 1,
+            "ability_title": "Track",
+            "brief_desc": "7:12 in wilderness, else 9:12",
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 26,
+            "level": 9,
+            "ability_title": "Lordship",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

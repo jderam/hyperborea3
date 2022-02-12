@@ -1,0 +1,374 @@
+{
+    "method": 6,
+    "class_id": 14,
+    "class_name": "Necromancer",
+    "attr": {
+        "st": {
+            "score": 6,
+            "atk_mod": -1,
+            "dmg_adj": -1,
+            "test": 1,
+            "feat": 1
+        },
+        "dx": {
+            "score": 7,
+            "atk_mod": 0,
+            "def_adj": -1,
+            "test": 2,
+            "feat": 2
+        },
+        "cn": {
+            "score": 6,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ws": {
+            "score": 11,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
+        }
+    },
+    "xp": 40000,
+    "level": 6,
+    "xp_to_next": 80000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 4,
+        "deity_name": "Azathoth",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
+    "hd": "6d4",
+    "hp": 10,
+    "fa": 2,
+    "ca": 6,
+    "ta": 4,
+    "sv": 14,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 27,
+        "-8": 26,
+        "-7": 25,
+        "-6": 24,
+        "-5": 23,
+        "-4": 22,
+        "-3": 21,
+        "-2": 20,
+        "-1": 19,
+        "0": 18,
+        "1": 17,
+        "2": 16,
+        "3": 15,
+        "4": 14,
+        "5": 13,
+        "6": 12,
+        "7": 11,
+        "8": 10,
+        "9": 9
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 1,
+        "armour_type": "None",
+        "ac": 9,
+        "dr": 0,
+        "weight_class": null,
+        "mv": 40,
+        "cost": null,
+        "weight": null,
+        "description": null
+    },
+    "shield": null,
+    "ac": 10,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 130,
+            "weapon_type": "Sickle",
+            "wc": 1,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 3,
+            "weight": 2,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": -1,
+            "hurled_atk": null,
+            "dmg_adj": -1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 143,
+            "weapon_type": "Whip",
+            "wc": 5,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d2",
+            "damage_2h": null,
+            "cost": 1,
+            "weight": 2,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": -1,
+            "hurled_atk": null,
+            "dmg_adj": -1,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 216,
+            "weapon_type": "Sling",
+            "rof": "1/1",
+            "range_sml": "50/100/150",
+            "damage": "1d4",
+            "hurled": false,
+            "launched": true,
+            "cost": 2,
+            "weight": 1,
+            "qty": 1,
+            "ammunition": "bullets \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "winter blanket",
+        "chalk (piece)",
+        "wooden holy symbol",
+        "ink and quill",
+        "hooded lantern",
+        "polished steel mirror",
+        "incendiary oil",
+        "lamp oil \u00d72",
+        "parchment \u00d73",
+        "hard leather pouch",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "silk rope (50-ft.)",
+        "small sack",
+        "tinderbox",
+        "wineskin (full)",
+        "writing stick",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "D",
+        "undead_type_01": "T",
+        "undead_type_02": "T",
+        "undead_type_03": "11:12",
+        "undead_type_04": "8:12",
+        "undead_type_05": "5:12",
+        "undead_type_06": "2:12",
+        "undead_type_07": "NT",
+        "undead_type_08": "NT",
+        "undead_type_09": "NT",
+        "undead_type_10": "NT",
+        "undead_type_11": "NT",
+        "undead_type_12": "NT",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "nec": {
+            "spells_per_day": {
+                "lvl1": 5,
+                "lvl2": 4,
+                "lvl3": 2,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 232,
+                    "spell_name": "Invisibility to Undead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 141,
+                    "spell_name": "Extermination",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 28,
+                    "spell_name": "Black Hand",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 343,
+                    "spell_name": "Serpent Charm",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 2,
+                    "spell_id": 336,
+                    "spell_name": "Scythe of the Reaper",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 2,
+                    "spell_id": 184,
+                    "spell_name": "Ghoul Touch",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 3,
+                    "spell_id": 342,
+                    "spell_name": "Sepia Snake Sigil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 3,
+                    "spell_id": 87,
+                    "spell_name": "Cure Disease",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 14,
+            "level": 1,
+            "ability_title": "Alchemy",
+            "brief_desc": "identify potions by taste",
+            "ability_desc": null
+        },
+        {
+            "class_id": 14,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 14,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke necromancer scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 14,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 14,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast necromancer spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 14,
+            "level": 3,
+            "ability_title": "Command Undead",
+            "brief_desc": "cause undead to submit and serve",
+            "ability_desc": null
+        },
+        {
+            "class_id": 14,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 14,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

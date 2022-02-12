@@ -1,0 +1,289 @@
+{
+    "method": 6,
+    "class_id": 29,
+    "class_name": "Fire Lord",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 8,
+            "atk_mod": 0,
+            "def_adj": -1,
+            "test": 2,
+            "feat": 2
+        },
+        "cn": {
+            "score": 16,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
+        },
+        "in": {
+            "score": 14,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
+            "turn_adj": 0
+        }
+    },
+    "xp": 12000,
+    "level": 4,
+    "xp_to_next": 24000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
+    "gender": "Male",
+    "hd": "4d8",
+    "hp": 28,
+    "fa": 4,
+    "ca": 4,
+    "ta": 0,
+    "sv": 15,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 25,
+        "-8": 24,
+        "-7": 23,
+        "-6": 22,
+        "-5": 21,
+        "-4": 20,
+        "-3": 19,
+        "-2": 18,
+        "-1": 17,
+        "0": 16,
+        "1": 15,
+        "2": 14,
+        "3": 13,
+        "4": 12,
+        "5": 11,
+        "6": 10,
+        "7": 9,
+        "8": 8,
+        "9": 7
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 5,
+        "armour_type": "Scale Mail",
+        "ac": 6,
+        "dr": 1,
+        "weight_class": "Medium",
+        "mv": 30,
+        "cost": 50,
+        "weight": 25,
+        "description": null
+    },
+    "shield": null,
+    "ac": 7,
+    "mv": 30,
+    "weapons_melee": [
+        {
+            "weapon_id": 102,
+            "weapon_type": "Battle Axe",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": true
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 214,
+            "weapon_type": "Light Crossbow",
+            "rof": "1/1",
+            "range_sml": "60/120/180",
+            "damage": "1d6+1",
+            "hurled": false,
+            "launched": true,
+            "cost": 15,
+            "weight": 5,
+            "qty": 1,
+            "ammunition": "light bolts \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "bolt case",
+        "ink and quill",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "pyr": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 1,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 41,
+                    "spell_name": "Burning Hands",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 2,
+                    "spell_id": 230,
+                    "spell_name": "Invisibility",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 2,
+                    "spell_id": 185,
+                    "spell_name": "Glitterdust",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 29,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 29,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 29,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 29,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke pyromancer scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 29,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 29,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast pyromancer spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 29,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        },
+        {
+            "class_id": 29,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        }
+    ]
+}

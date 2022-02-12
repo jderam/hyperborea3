@@ -1,9 +1,8 @@
 import json
 import random  # noqa: F401
-from typing import Dict, List
+from typing import Any, Dict, List, Optional
 
 from hyperborea3.chargen import (
-    # ac_to_aac,
     ac_to_aac,
     apply_spells_per_day_bonus,
     calculate_ac,
@@ -63,7 +62,7 @@ class PlayerCharacter:
 
         # Always use Method VI if a specific class is chosen
         if class_id != 0:
-            self.method = 6
+            self.method: int = 6
             self.class_id = class_id
             self.class_name = class_id_to_name(self.class_id)
             self.attr = get_attr(
@@ -71,7 +70,7 @@ class PlayerCharacter:
                 class_id=self.class_id,
             )
         else:
-            self.method: int = method
+            self.method = method
             self.attr = get_attr(
                 method=self.method,
                 class_id=class_id,
@@ -81,7 +80,7 @@ class PlayerCharacter:
 
         self.xp: int = int(xp)
         self.level: int = get_level(self.class_id, self.xp)
-        self.xp_to_next: int = get_xp_to_next(self.class_id, self.level)
+        self.xp_to_next: Optional[int] = get_xp_to_next(self.class_id, self.level)
         self.xp_bonus: bool = get_xp_bonus(self.class_id, self.attr)
 
         self.alignment = get_alignment(self.class_id)
@@ -171,7 +170,7 @@ class PlayerCharacter:
             if w["hurled"]:
                 w["dmg_adj"] += self.attr["st"]["dmg_adj"]
 
-    def apply_class_ability_funcs(self, class_abilities: List[Dict]) -> None:
+    def apply_class_ability_funcs(self, class_abilities: List[Dict[str, Any]]) -> None:
         """"""
 
         def extraordinary(stats: List[str]):
@@ -191,9 +190,10 @@ class PlayerCharacter:
                     "Only expecting Magician (2) or Witch (16). "
                     f"Got {self.class_id=}"
                 )
-            for spd_lvl in self.spells[school]["spells_per_day"].keys():
-                if self.spells[school]["spells_per_day"][spd_lvl] > 0:
-                    self.spells[school]["spells_per_day"][spd_lvl] += 1
+            if self.spells is not None:
+                for spd_lvl in self.spells[school]["spells_per_day"].keys():
+                    if self.spells[school]["spells_per_day"][spd_lvl] > 0:
+                        self.spells[school]["spells_per_day"][spd_lvl] += 1
             for cls_abl in self.class_abilities:
                 if cls_abl["ability_title"] == "Familiar":
                     cls_abl["brief_desc"] += f". [{animal}, {hp} hp]"
@@ -264,7 +264,7 @@ class PlayerCharacter:
             if level >= 7:
                 self.mv = 60
 
-        def priest_specialized_faith(deity_id: str, level: int):
+        def priest_specialized_faith(deity_id: int, level: int):
             ability_name = f"Specialized Faith ({self.deity['deity_name']})"
             priest_abilities = get_priest_abilities(deity_id, level)
             for p in priest_abilities:
@@ -327,8 +327,8 @@ class PlayerCharacter:
         char_dict = self.__dict__
         return char_dict
 
-    def to_json(self):
-        char_json = json.dumps(self.__dict__)
+    def to_json(self, indent=None):
+        char_json = json.dumps(self.__dict__, indent=indent)
         return char_json
 
 

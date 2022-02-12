@@ -1,0 +1,354 @@
+{
+    "method": 6,
+    "class_id": 28,
+    "class_name": "Ice Lord",
+    "attr": {
+        "st": {
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 24
+        },
+        "dx": {
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 5,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 16,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ch": {
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 192000,
+    "level": 8,
+    "xp_to_next": 384000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
+    },
+    "deity": {
+        "deity_id": 5,
+        "deity_name": "Boetzu",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Female",
+    "hd": "8d8",
+    "hp": 28,
+    "fa": 8,
+    "ca": 8,
+    "ta": 0,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 21,
+        "-8": 20,
+        "-7": 19,
+        "-6": 18,
+        "-5": 17,
+        "-4": 16,
+        "-3": 15,
+        "-2": 14,
+        "-1": 13,
+        "0": 12,
+        "1": 11,
+        "2": 10,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 5,
+        "8": 4,
+        "9": 3
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 5,
+        "armour_type": "Scale Mail",
+        "ac": 6,
+        "dr": 1,
+        "weight_class": "Medium",
+        "mv": 30,
+        "cost": 50,
+        "weight": 25,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 30,
+    "weapons_melee": [
+        {
+            "weapon_id": 102,
+            "weapon_type": "Battle Axe",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "2/1",
+            "melee_atk": 2,
+            "hurled_atk": null,
+            "dmg_adj": 2,
+            "mastery": true
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 214,
+            "weapon_type": "Light Crossbow",
+            "rof": "1/1",
+            "range_sml": "60/120/180",
+            "damage": "1d6+1",
+            "hurled": false,
+            "launched": true,
+            "cost": 15,
+            "weight": 5,
+            "qty": 1,
+            "ammunition": "light bolts \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "bolt case",
+        "ink and quill",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "cry": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 2,
+                "lvl3": 1,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "cry",
+                    "spell_level": 1,
+                    "spell_id": 245,
+                    "spell_name": "Magic Ice Dart",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 1,
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 1,
+                    "spell_id": 178,
+                    "spell_name": "Freezing Hands",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 2,
+                    "spell_id": 440,
+                    "spell_name": "Wall of Vapours",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 2,
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 2,
+                    "spell_id": 106,
+                    "spell_name": "Detect Body Heat",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 3,
+                    "spell_id": 449,
+                    "spell_name": "Wind Wall",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 3,
+                    "spell_id": 27,
+                    "spell_name": "Black Cloud",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 28,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke cryomancer scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast cryomancer spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 7,
+            "ability_title": "Melee Expert",
+            "brief_desc": "improved melee attack rate",
+            "ability_desc": null
+        },
+        {
+            "class_id": 28,
+            "level": 8,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        }
+    ]
+}

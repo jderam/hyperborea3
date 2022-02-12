@@ -1,0 +1,397 @@
+{
+    "method": 6,
+    "class_id": 31,
+    "class_name": "Mountebank",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "cn": {
+            "score": 17,
+            "hp_adj": 2,
+            "poison_adj": 1,
+            "trauma_surv": 90,
+            "test": 4,
+            "feat": 24
+        },
+        "in": {
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 7,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ch": {
+            "score": 17,
+            "react_adj": 2,
+            "max_henchmen": 10,
+            "turn_adj": 1
+        }
+    },
+    "xp": 22000,
+    "level": 5,
+    "xp_to_next": 44000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
+    },
+    "deity": {
+        "deity_id": 12,
+        "deity_name": "Mordezzan",
+        "primary_alignment": "Neutral"
+    },
+    "race_id": 12,
+    "race": "Viking",
+    "gender": "Non-Binary",
+    "hd": "5d6",
+    "hp": 28,
+    "fa": 3,
+    "ca": 5,
+    "ta": 0,
+    "sv": 14,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 2,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 26,
+        "-8": 25,
+        "-7": 24,
+        "-6": 23,
+        "-5": 22,
+        "-4": 21,
+        "-3": 20,
+        "-2": 19,
+        "-1": 18,
+        "0": 17,
+        "1": 16,
+        "2": 15,
+        "3": 14,
+        "4": 13,
+        "5": 12,
+        "6": 11,
+        "7": 10,
+        "8": 9,
+        "9": 8
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": {
+        "shield_id": 1,
+        "shield_type": "Small Shield",
+        "def_mod": 1,
+        "cost": 5,
+        "weight": 5
+    },
+    "ac": 5,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 2,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 110,
+            "weapon_type": "Falcata",
+            "wc": 1,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 10,
+            "weight": 3,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 216,
+            "weapon_type": "Sling",
+            "rof": "1/1",
+            "range_sml": "50/100/150",
+            "damage": "1d4",
+            "hurled": false,
+            "launched": true,
+            "cost": 2,
+            "weight": 1,
+            "qty": 1,
+            "ammunition": "bullets \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "ink and quill",
+        "parchment",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "small sack",
+        "thieves\u2019 tools",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 9,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 2,
+            "stat": "in"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 6,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 7,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 5,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 7,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 5,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 6,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": {
+        "ill": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 1,
+                "lvl3": 1,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "ill",
+                    "spell_level": 1,
+                    "spell_id": 321,
+                    "spell_name": "Reflexion",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 1,
+                    "spell_id": 62,
+                    "spell_name": "Colour Spray",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 45,
+                    "spell_name": "Cause Blindness",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 173,
+                    "spell_name": "Fool\u2019s Gold",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 3,
+                    "spell_id": 193,
+                    "spell_name": "Hallucinatory Terrain",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Agile",
+            "brief_desc": "+1 AC when unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Backstab",
+            "brief_desc": "+4 to hit, damage multiplied",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke illusionist scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast illusionist spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Thieves' Cant",
+            "brief_desc": "secret language of thieves",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

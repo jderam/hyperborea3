@@ -1,0 +1,218 @@
+{
+    "method": 6,
+    "class_id": 1,
+    "class_name": "Fighter",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 4,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
+        "in": {
+            "score": 14,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 16,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ch": {
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 32000,
+    "level": 6,
+    "xp_to_next": 64000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
+    },
+    "deity": {
+        "deity_id": 10,
+        "deity_name": "Krimmr",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Male",
+    "hd": "6d10",
+    "hp": 19,
+    "fa": 6,
+    "ca": 0,
+    "ta": 0,
+    "sv": 14,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 0
+    },
+    "combat_matrix": {
+        "-9": 23,
+        "-8": 22,
+        "-7": 21,
+        "-6": 20,
+        "-5": 19,
+        "-4": 18,
+        "-3": 17,
+        "-2": 16,
+        "-1": 15,
+        "0": 14,
+        "1": 13,
+        "2": 12,
+        "3": 11,
+        "4": 10,
+        "5": 9,
+        "6": 8,
+        "7": 7,
+        "8": 6,
+        "9": 5
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": {
+        "shield_id": 2,
+        "shield_type": "Large Shield",
+        "def_mod": 2,
+        "cost": 10,
+        "weight": 10
+    },
+    "ac": 4,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 136,
+            "weapon_type": "Broad Sword",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 20,
+            "weight": 4,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": true
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 211,
+            "weapon_type": "Short Bow",
+            "rof": "2/1",
+            "range_sml": "50/100/150",
+            "damage": "1d6",
+            "hurled": false,
+            "launched": true,
+            "cost": 20,
+            "weight": 2,
+            "qty": 1,
+            "ammunition": "arrows \u00d712",
+            "missile_atk": 1,
+            "dmg_adj": 1,
+            "mastery": true
+        }
+    ],
+    "equipment": [
+        "arrow quiver",
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "large sack",
+        "one-person canvas tent",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": null,
+    "class_abilities": [
+        {
+            "class_id": 1,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 1,
+            "level": 1,
+            "ability_title": "Heroic Fighting",
+            "brief_desc": "2x attacks vs. creatures of 1 HD or less",
+            "ability_desc": null
+        },
+        {
+            "class_id": 1,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "two weapons get +1 atk/dmg, increased attack rate",
+            "ability_desc": null
+        },
+        {
+            "class_id": 1,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery or grand mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 1,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

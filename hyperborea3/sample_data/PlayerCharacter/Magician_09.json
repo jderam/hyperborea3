@@ -1,0 +1,403 @@
+{
+    "method": 6,
+    "class_id": 2,
+    "class_name": "Magician",
+    "attr": {
+        "st": {
+            "score": 10,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 9,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 17,
+            "hp_adj": 2,
+            "poison_adj": 1,
+            "trauma_surv": 90,
+            "test": 4,
+            "feat": 24
+        },
+        "in": {
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 4,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
+        }
+    },
+    "xp": 320000,
+    "level": 9,
+    "xp_to_next": 480000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 17,
+        "deity_name": "Ullr",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "hd": "9d4",
+    "hp": 43,
+    "fa": 4,
+    "ca": 9,
+    "ta": 0,
+    "sv": 12,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 2,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 25,
+        "-8": 24,
+        "-7": 23,
+        "-6": 22,
+        "-5": 21,
+        "-4": 20,
+        "-3": 19,
+        "-2": 18,
+        "-1": 17,
+        "0": 16,
+        "1": 15,
+        "2": 14,
+        "3": 13,
+        "4": 12,
+        "5": 11,
+        "6": 10,
+        "7": 9,
+        "8": 8,
+        "9": 7
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 1,
+        "armour_type": "None",
+        "ac": 9,
+        "dr": 0,
+        "weight_class": null,
+        "mv": 40,
+        "cost": null,
+        "weight": null,
+        "description": null
+    },
+    "shield": null,
+    "ac": 9,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 109,
+            "weapon_type": "Silver Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 25,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 126,
+            "weapon_type": "Quarterstaff",
+            "wc": 3,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 5,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 216,
+            "weapon_type": "Sling",
+            "rof": "1/1",
+            "range_sml": "50/100/150",
+            "damage": "1d4",
+            "hurled": false,
+            "launched": true,
+            "cost": 2,
+            "weight": 1,
+            "qty": 1,
+            "ammunition": "bullets \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "chalk (piece)",
+        "ink and quill",
+        "incendiary oil",
+        "parchment \u00d72",
+        "soft leather pouch",
+        "standard rations (1 week)",
+        "silk rope (50-ft.)",
+        "small sack",
+        "tinderbox",
+        "torches \u00d73",
+        "wineskin (full)",
+        "writing stick",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 3,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "mag": {
+            "spells_per_day": {
+                "lvl1": 6,
+                "lvl2": 5,
+                "lvl3": 4,
+                "lvl4": 3,
+                "lvl5": 2,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 169,
+                    "spell_name": "Floating Disc",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 258,
+                    "spell_name": "Message",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 431,
+                    "spell_name": "Ventriloquism",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 133,
+                    "spell_name": "Enlargement",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 78,
+                    "spell_name": "Cool Metal",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 248,
+                    "spell_name": "Magic Mouth",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 331,
+                    "spell_name": "Rope Trick",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 4,
+                    "spell_id": 187,
+                    "spell_name": "Globe of Invulnerability, Lesser",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 4,
+                    "spell_id": 383,
+                    "spell_name": "Stoneskin",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 5,
+                    "spell_id": 407,
+                    "spell_name": "Teleport",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Alchemy",
+            "brief_desc": "identify potions by taste",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Familiar",
+            "brief_desc": "magical animal companion. [Owl, 4 hp]",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke magician scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast magician spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 8,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 2,
+            "level": 9,
+            "ability_title": "Lordship",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

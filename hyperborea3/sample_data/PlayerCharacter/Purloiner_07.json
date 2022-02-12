@@ -1,0 +1,519 @@
+{
+    "method": 6,
+    "class_id": 25,
+    "class_name": "Purloiner",
+    "attr": {
+        "st": {
+            "score": 13,
+            "atk_mod": 0,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
+        "dx": {
+            "score": 16,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 24
+        },
+        "cn": {
+            "score": 8,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
+        },
+        "in": {
+            "score": 6,
+            "lang": -1,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ws": {
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 80000,
+    "level": 7,
+    "xp_to_next": 160000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
+    },
+    "deity": {
+        "deity_id": 8,
+        "deity_name": "Kraken",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 5,
+    "race": "Hyperborean",
+    "gender": "Female",
+    "hd": "7d6",
+    "hp": 29,
+    "fa": 5,
+    "ca": 7,
+    "ta": 5,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 2,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 24,
+        "-8": 23,
+        "-7": 22,
+        "-6": 21,
+        "-5": 20,
+        "-4": 19,
+        "-3": 18,
+        "-2": 17,
+        "-1": 16,
+        "0": 15,
+        "1": 14,
+        "2": 13,
+        "3": 12,
+        "4": 11,
+        "5": 10,
+        "6": 9,
+        "7": 8,
+        "8": 7,
+        "9": 6
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 3,
+        "armour_type": "Leather Armour",
+        "ac": 7,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 15,
+        "weight": 15,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 1,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 122,
+            "weapon_type": "Morning Star",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 15,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 216,
+            "weapon_type": "Sling",
+            "rof": "1/1",
+            "range_sml": "50/100/150",
+            "damage": "1d4",
+            "hurled": false,
+            "launched": true,
+            "cost": 2,
+            "weight": 1,
+            "qty": 1,
+            "ammunition": "bullets \u00d720",
+            "missile_atk": 1,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "dice",
+        "wooden holy symbol",
+        "holy water",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "small sack",
+        "thieves\u2019 tools",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 4,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 10,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 3,
+            "stat": "in"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 7,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 9,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 7,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 9,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 7,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 8,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": {
+        "undead_type_00": "D",
+        "undead_type_01": "D",
+        "undead_type_02": "T",
+        "undead_type_03": "T",
+        "undead_type_04": "10:12",
+        "undead_type_05": "7:12",
+        "undead_type_06": "4:12",
+        "undead_type_07": "1:12",
+        "undead_type_08": "NT",
+        "undead_type_09": "NT",
+        "undead_type_10": "NT",
+        "undead_type_11": "NT",
+        "undead_type_12": "NT",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "clr": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 1,
+                "lvl3": 1,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 63,
+                    "spell_name": "Command",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 314,
+                    "spell_name": "Purify Food and Drink",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 343,
+                    "spell_name": "Serpent Charm",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 127,
+                    "spell_name": "Distinguish Alignment",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 87,
+                    "spell_name": "Cure Disease",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 188,
+                    "spell_name": "Glyph of Warding",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 371,
+                    "spell_name": "Speak with Dead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 301,
+                    "spell_name": "Prayer",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Agile",
+            "brief_desc": "+1 AC when unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Backstab",
+            "brief_desc": "+4 to hit, damage multiplied",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to clerics",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke clerical scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast clerical spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 1,
+            "ability_title": "Thieves' Cant",
+            "brief_desc": "secret language of thieves",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 3,
+            "ability_title": "Turn Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 4,
+            "ability_title": "New Weapon Skill",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 25,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        }
+    ]
+}

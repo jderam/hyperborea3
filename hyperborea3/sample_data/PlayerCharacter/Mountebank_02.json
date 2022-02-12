@@ -1,0 +1,357 @@
+{
+    "method": 6,
+    "class_id": 31,
+    "class_name": "Mountebank",
+    "attr": {
+        "st": {
+            "score": 11,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 14,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "cn": {
+            "score": 13,
+            "hp_adj": 1,
+            "poison_adj": 0,
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
+        },
+        "in": {
+            "score": 14,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 10,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ch": {
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
+            "turn_adj": 0
+        }
+    },
+    "xp": 2750,
+    "level": 2,
+    "xp_to_next": 5500,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
+    },
+    "deity": {
+        "deity_id": 21,
+        "deity_name": "Ymir",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Male",
+    "hd": "2d6",
+    "hp": 7,
+    "fa": 1,
+    "ca": 2,
+    "ta": 0,
+    "sv": 16,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 0,
+        "device": 0,
+        "avoidance": 2,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 28,
+        "-8": 27,
+        "-7": 26,
+        "-6": 25,
+        "-5": 24,
+        "-4": 23,
+        "-3": 22,
+        "-2": 21,
+        "-1": 20,
+        "0": 19,
+        "1": 18,
+        "2": 17,
+        "3": 16,
+        "4": 15,
+        "5": 14,
+        "6": 13,
+        "7": 12,
+        "8": 11,
+        "9": 10
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": {
+        "shield_id": 1,
+        "shield_type": "Small Shield",
+        "def_mod": 1,
+        "cost": 5,
+        "weight": 5
+    },
+    "ac": 4,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 2,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 110,
+            "weapon_type": "Falcata",
+            "wc": 1,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d6",
+            "damage_2h": null,
+            "cost": 10,
+            "weight": 3,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 216,
+            "weapon_type": "Sling",
+            "rof": "1/1",
+            "range_sml": "50/100/150",
+            "damage": "1d4",
+            "hurled": false,
+            "launched": true,
+            "cost": 2,
+            "weight": 1,
+            "qty": 1,
+            "ammunition": "bullets \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "winter blanket",
+        "ink and quill",
+        "parchment",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "small sack",
+        "thieves\u2019 tools",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 3,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": [
+        {
+            "thief_skill": "climb",
+            "skill_name": "Climb",
+            "skill_roll": 8,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "decipher_script",
+            "skill_name": "Decipher Script",
+            "skill_roll": 0,
+            "stat": "in"
+        },
+        {
+            "thief_skill": "discern_noise",
+            "skill_name": "Discern Noise",
+            "skill_roll": 4,
+            "stat": "ws"
+        },
+        {
+            "thief_skill": "hide",
+            "skill_name": "Hide",
+            "skill_roll": 5,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "manipulate_traps",
+            "skill_name": "Manipulate Traps",
+            "skill_roll": 3,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "move_silently",
+            "skill_name": "Move Silently",
+            "skill_roll": 5,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "open_locks",
+            "skill_name": "Open Locks",
+            "skill_roll": 3,
+            "stat": "dx"
+        },
+        {
+            "thief_skill": "pick_pockets",
+            "skill_name": "Pick Pockets",
+            "skill_roll": 4,
+            "stat": "dx"
+        }
+    ],
+    "turn_undead_matrix": null,
+    "spells": {
+        "ill": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 0,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "ill",
+                    "spell_level": 1,
+                    "spell_id": 453,
+                    "spell_name": "Write Spell",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 1,
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Agile",
+            "brief_desc": "+1 AC when unarmoured",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Backstab",
+            "brief_desc": "+4 to hit, damage multiplied",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Detect Secret Doors",
+            "brief_desc": "3:6 chance",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of DX",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke illusionist scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast illusionist spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 31,
+            "level": 1,
+            "ability_title": "Thieves' Cant",
+            "brief_desc": "secret language of thieves",
+            "ability_desc": null
+        }
+    ]
+}

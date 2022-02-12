@@ -1,0 +1,372 @@
+{
+    "method": 6,
+    "class_id": 20,
+    "class_name": "Runegraver",
+    "attr": {
+        "st": {
+            "score": 10,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 8,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
+        },
+        "in": {
+            "score": 9,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ch": {
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
+            "turn_adj": 0
+        }
+    },
+    "xp": 192000,
+    "level": 8,
+    "xp_to_next": 384000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 10,
+    "race": "Pict",
+    "gender": "Female",
+    "hd": "8d8",
+    "hp": 39,
+    "fa": 8,
+    "ca": 8,
+    "ta": 0,
+    "sv": 13,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 21,
+        "-8": 20,
+        "-7": 19,
+        "-6": 18,
+        "-5": 17,
+        "-4": 16,
+        "-3": 15,
+        "-2": 14,
+        "-1": 13,
+        "0": 12,
+        "1": 11,
+        "2": 10,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 5,
+        "8": 4,
+        "9": 3
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 4,
+        "armour_type": "Studded Armour",
+        "ac": 6,
+        "dr": 0,
+        "weight_class": "Light",
+        "mv": 40,
+        "cost": 25,
+        "weight": 20,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 40,
+    "weapons_melee": [
+        {
+            "weapon_id": 102,
+            "weapon_type": "Battle Axe",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 0,
+            "mastery": false
+        },
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 211,
+            "weapon_type": "Short Bow",
+            "rof": "3/2",
+            "range_sml": "50/100/150",
+            "damage": "1d6",
+            "hurled": false,
+            "launched": true,
+            "cost": 20,
+            "weight": 2,
+            "qty": 1,
+            "ammunition": "arrows \u00d712, silver arrows \u00d72",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "arrow quiver",
+        "backpack",
+        "bandages",
+        "chalk (piece)",
+        "dice",
+        "wooden holy symbol",
+        "drinking horn (full)",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "tinderbox",
+        "torches \u00d72",
+        "waterskin",
+        "writing stick"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "run": {
+            "spells_per_day": {
+                "lvl1": 3,
+                "lvl2": 3,
+                "lvl3": 3,
+                "lvl4": 2,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "run",
+                    "spell_level": 1,
+                    "spell_id": 270,
+                    "spell_name": "Riding [Mount]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 1,
+                    "spell_id": 133,
+                    "spell_name": "Giant [Enlargement]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 1,
+                    "spell_id": 63,
+                    "spell_name": "Man [Command]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 2,
+                    "spell_id": 27,
+                    "spell_name": "Shower [Black Cloud]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 2,
+                    "spell_id": 173,
+                    "spell_name": "Wealth [Fool\u2019s Gold]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 2,
+                    "spell_id": 200,
+                    "spell_name": "Constraint [Hold Person]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 3,
+                    "spell_id": 425,
+                    "spell_name": "Yew [Twofold Missile]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 3,
+                    "spell_id": 80,
+                    "spell_name": "Plenty [Create Food and Water]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 3,
+                    "spell_id": 87,
+                    "spell_name": "Ulcer [Inflict Disease]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 4,
+                    "spell_id": 209,
+                    "spell_name": "Hail [Ice Storm (Hail)]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 4,
+                    "spell_id": 177,
+                    "spell_name": "Ice [Freeze Surface]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 20,
+            "level": 1,
+            "ability_title": "Ale Horn",
+            "brief_desc": "create enchanted ale 1/day, magical mead 1/week",
+            "ability_desc": null
+        },
+        {
+            "class_id": 20,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 20,
+            "level": 1,
+            "ability_title": "Grave Runes",
+            "brief_desc": "sacrifice hp to invoke magical runes",
+            "ability_desc": null
+        },
+        {
+            "class_id": 20,
+            "level": 5,
+            "ability_title": "Casting of Lots",
+            "brief_desc": "spend 1 turn performing a ritual as per augury spell",
+            "ability_desc": null
+        },
+        {
+            "class_id": 20,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 20,
+            "level": 7,
+            "ability_title": "Nithing Pole",
+            "brief_desc": "create effect of bestow curse spell, usable 1/month",
+            "ability_desc": null
+        }
+    ]
+}

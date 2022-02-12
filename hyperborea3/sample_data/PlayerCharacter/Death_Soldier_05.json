@@ -1,0 +1,300 @@
+{
+    "method": 6,
+    "class_id": 30,
+    "class_name": "Death Soldier",
+    "attr": {
+        "st": {
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "dx": {
+            "score": 9,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 14,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ch": {
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
+        }
+    },
+    "xp": 24000,
+    "level": 5,
+    "xp_to_next": 48000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
+    },
+    "deity": {
+        "deity_id": 12,
+        "deity_name": "Mordezzan",
+        "primary_alignment": "Neutral"
+    },
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Female",
+    "hd": "5d8",
+    "hp": 21,
+    "fa": 5,
+    "ca": 5,
+    "ta": 0,
+    "sv": 14,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 24,
+        "-8": 23,
+        "-7": 22,
+        "-6": 21,
+        "-5": 20,
+        "-4": 19,
+        "-3": 18,
+        "-2": 17,
+        "-1": 16,
+        "0": 15,
+        "1": 14,
+        "2": 13,
+        "3": 12,
+        "4": 11,
+        "5": 10,
+        "6": 9,
+        "7": 8,
+        "8": 7,
+        "9": 6
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 5,
+        "armour_type": "Scale Mail",
+        "ac": 6,
+        "dr": 1,
+        "weight_class": "Medium",
+        "mv": 30,
+        "cost": 50,
+        "weight": 25,
+        "description": null
+    },
+    "shield": null,
+    "ac": 6,
+    "mv": 30,
+    "weapons_melee": [
+        {
+            "weapon_id": 102,
+            "weapon_type": "Battle Axe",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": true
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 214,
+            "weapon_type": "Light Crossbow",
+            "rof": "1/1",
+            "range_sml": "60/120/180",
+            "damage": "1d6+1",
+            "hurled": false,
+            "launched": true,
+            "cost": 15,
+            "weight": 5,
+            "qty": 1,
+            "ammunition": "light bolts \u00d720",
+            "missile_atk": 0,
+            "dmg_adj": 0,
+            "mastery": false
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "bolt case",
+        "ink and quill",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 5,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "nec": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 1,
+                "lvl3": 1,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 343,
+                    "spell_name": "Serpent Charm",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 13,
+                    "spell_name": "Animate Carrion",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 2,
+                    "spell_id": 83,
+                    "spell_name": "Cudgel of Bone",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 2,
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 3,
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke necromancer scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast necromancer spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        }
+    ]
+}

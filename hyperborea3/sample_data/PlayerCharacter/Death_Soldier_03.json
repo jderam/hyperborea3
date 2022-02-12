@@ -1,0 +1,271 @@
+{
+    "method": 6,
+    "class_id": 30,
+    "class_name": "Death Soldier",
+    "attr": {
+        "st": {
+            "score": 17,
+            "atk_mod": 1,
+            "dmg_adj": 2,
+            "test": 4,
+            "feat": 32
+        },
+        "dx": {
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
+        "cn": {
+            "score": 12,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 13,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ch": {
+            "score": 3,
+            "react_adj": -3,
+            "max_henchmen": 1,
+            "turn_adj": -1
+        }
+    },
+    "xp": 6000,
+    "level": 3,
+    "xp_to_next": 12000,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
+    },
+    "deity": {
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
+    },
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
+    "gender": "Male",
+    "hd": "3d8",
+    "hp": 16,
+    "fa": 3,
+    "ca": 3,
+    "ta": 0,
+    "sv": 15,
+    "sv_bonus": {
+        "death": 0,
+        "transformation": 2,
+        "device": 0,
+        "avoidance": 0,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 26,
+        "-8": 25,
+        "-7": 24,
+        "-6": 23,
+        "-5": 22,
+        "-4": 21,
+        "-3": 20,
+        "-2": 19,
+        "-1": 18,
+        "0": 17,
+        "1": 16,
+        "2": 15,
+        "3": 14,
+        "4": 13,
+        "5": 12,
+        "6": 11,
+        "7": 10,
+        "8": 9,
+        "9": 8
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 5,
+        "armour_type": "Scale Mail",
+        "ac": 6,
+        "dr": 1,
+        "weight_class": "Medium",
+        "mv": 30,
+        "cost": 50,
+        "weight": 25,
+        "description": null
+    },
+    "shield": null,
+    "ac": 5,
+    "mv": 30,
+    "weapons_melee": [
+        {
+            "weapon_id": 102,
+            "weapon_type": "Battle Axe",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 2,
+            "mastery": false
+        }
+    ],
+    "weapons_missile": [
+        {
+            "weapon_id": 214,
+            "weapon_type": "Light Crossbow",
+            "rof": "1/1",
+            "range_sml": "60/120/180",
+            "damage": "1d6+1",
+            "hurled": false,
+            "launched": true,
+            "cost": 15,
+            "weight": 5,
+            "qty": 1,
+            "ammunition": "light bolts \u00d720",
+            "missile_atk": 1,
+            "dmg_adj": 1,
+            "mastery": true
+        }
+    ],
+    "equipment": [
+        "backpack",
+        "bandages",
+        "bolt case",
+        "ink and quill",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "hemp rope (50-ft.)",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)",
+        "spell book"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 2,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": null,
+    "spells": {
+        "nec": {
+            "spells_per_day": {
+                "lvl1": 1,
+                "lvl2": 1,
+                "lvl3": 0,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 13,
+                    "spell_name": "Animate Carrion",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 141,
+                    "spell_name": "Extermination",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 2,
+                    "spell_id": 373,
+                    "spell_name": "Spectral Hand",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Magic Item Use",
+            "brief_desc": "use magic items normally restricted to magicians",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Read Magic",
+            "brief_desc": "decipher magical inscriptions",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke necromancer scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Scroll Writing",
+            "brief_desc": "scribe a known spell onto a scroll",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast necromancer spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 30,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        }
+    ]
+}

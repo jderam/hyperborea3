@@ -1,0 +1,424 @@
+{
+    "method": 6,
+    "class_id": 9,
+    "class_name": "Paladin",
+    "attr": {
+        "st": {
+            "score": 14,
+            "atk_mod": 0,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "dx": {
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 14,
+            "hp_adj": 1,
+            "poison_adj": 0,
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
+        },
+        "in": {
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
+        "ch": {
+            "score": 18,
+            "react_adj": 3,
+            "max_henchmen": 12,
+            "turn_adj": 1
+        }
+    },
+    "xp": 880000,
+    "level": 12,
+    "xp_to_next": null,
+    "xp_bonus": false,
+    "alignment": {
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
+    },
+    "deity": {
+        "deity_id": 5,
+        "deity_name": "Boetzu",
+        "primary_alignment": "Lawful"
+    },
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "hd": "9d10+9",
+    "hp": 72,
+    "fa": 12,
+    "ca": 6,
+    "ta": 8,
+    "sv": 11,
+    "sv_bonus": {
+        "death": 2,
+        "transformation": 2,
+        "device": 2,
+        "avoidance": 2,
+        "sorcery": 2
+    },
+    "combat_matrix": {
+        "-9": 17,
+        "-8": 16,
+        "-7": 15,
+        "-6": 14,
+        "-5": 13,
+        "-4": 12,
+        "-3": 11,
+        "-2": 10,
+        "-1": 9,
+        "0": 8,
+        "1": 7,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 0,
+        "9": -1
+    },
+    "name": "",
+    "armour": {
+        "armour_id": 5,
+        "armour_type": "Scale Mail",
+        "ac": 6,
+        "dr": 1,
+        "weight_class": "Medium",
+        "mv": 30,
+        "cost": 50,
+        "weight": 25,
+        "description": null
+    },
+    "shield": {
+        "shield_id": 2,
+        "shield_type": "Large Shield",
+        "def_mod": 2,
+        "cost": 10,
+        "weight": 10
+    },
+    "ac": 4,
+    "mv": 30,
+    "weapons_melee": [
+        {
+            "weapon_id": 108,
+            "weapon_type": "Dagger",
+            "wc": 1,
+            "hurlable": true,
+            "hurled_rof": "3/2",
+            "range_sml": "10/20/30",
+            "damage": "1d4",
+            "damage_2h": null,
+            "cost": 4,
+            "weight": 1,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 120,
+            "weapon_type": "Footman's Mace",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 10,
+            "weight": 5,
+            "qty": 1,
+            "atk_rate": "3/2",
+            "melee_atk": 0,
+            "hurled_atk": null,
+            "dmg_adj": 1,
+            "mastery": false
+        },
+        {
+            "weapon_id": 137,
+            "weapon_type": "Long Sword",
+            "wc": 2,
+            "hurlable": false,
+            "hurled_rof": null,
+            "range_sml": null,
+            "damage": "1d8",
+            "damage_2h": "1d10",
+            "cost": 20,
+            "weight": 4,
+            "qty": 1,
+            "atk_rate": "2/1",
+            "melee_atk": 1,
+            "hurled_atk": null,
+            "dmg_adj": 2,
+            "mastery": true
+        }
+    ],
+    "weapons_missile": [],
+    "equipment": [
+        "backpack",
+        "wooden holy symbol",
+        "soft leather pouch",
+        "iron rations (1 week)",
+        "tinderbox",
+        "torches \u00d72",
+        "wineskin (full)"
+    ],
+    "money": {
+        "pp": 0,
+        "gp": 5,
+        "ep": 0,
+        "sp": 0,
+        "cp": 0
+    },
+    "thief_skills": null,
+    "turn_undead_matrix": {
+        "undead_type_00": "UD",
+        "undead_type_01": "UD",
+        "undead_type_02": "D",
+        "undead_type_03": "D",
+        "undead_type_04": "D",
+        "undead_type_05": "T",
+        "undead_type_06": "T",
+        "undead_type_07": "11:12",
+        "undead_type_08": "8:12",
+        "undead_type_09": "5:12",
+        "undead_type_10": "2:12",
+        "undead_type_11": "NT",
+        "undead_type_12": "NT",
+        "undead_type_13": "NT"
+    },
+    "spells": {
+        "clr": {
+            "spells_per_day": {
+                "lvl1": 3,
+                "lvl2": 2,
+                "lvl3": 2,
+                "lvl4": 0,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 302,
+                    "spell_name": "Precipitate",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 87,
+                    "spell_name": "Cure Disease",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        }
+    },
+    "class_abilities": [
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Divine Protection",
+            "brief_desc": "disease immunity, +2 to all saves, +1 AC vs. evil creatures",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Extraordinary",
+            "brief_desc": "+8% feat of ST",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Healing Hands",
+            "brief_desc": "restore 2 hp/day/level; cure disease 1/week",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Honour",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Horsemanship",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Sense Evil",
+            "brief_desc": "60-foot range, requires concentration",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Valiant Resolve",
+            "brief_desc": "immune to magical fear",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 1,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "+1 atk/dmg, increased attack rate with one weapon",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 3,
+            "ability_title": "Righteous Wrath",
+            "brief_desc": "+1 dmg per level when charging vs. evil foe",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 4,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 5,
+            "ability_title": "Sacred Mount",
+            "brief_desc": "quest for an extraordinary mount",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 5,
+            "ability_title": "Turn Undead",
+            "brief_desc": "exert control over undead",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 6,
+            "ability_title": "Enlist Henchmen",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 7,
+            "ability_title": "Melee Expert",
+            "brief_desc": "improved melee attack rate",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 7,
+            "ability_title": "Scroll Use",
+            "brief_desc": "decipher and invoke clerical scrolls",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 7,
+            "ability_title": "Sorcery",
+            "brief_desc": "cast clerical spells",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 8,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 9,
+            "ability_title": "Lordship",
+            "brief_desc": null,
+            "ability_desc": null
+        },
+        {
+            "class_id": 9,
+            "level": 12,
+            "ability_title": "Weapon Mastery",
+            "brief_desc": "additional weapon mastery",
+            "ability_desc": null
+        }
+    ]
+}
