@@ -1,6 +1,7 @@
 # hyperborea3
 
 ![Tests](https://github.com/jderam/hyperborea-tools/actions/workflows/tests.yml/badge.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 An app for creating randomly-generated characters for the [Hyperborea](https://www.hyperborea.tv/) 3rd edition tabletop roleplaying game.
 
