@@ -4,43 +4,43 @@
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 14,
+            "score": 7,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "dx": {
-            "score": 13,
-            "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "cn": {
-            "score": 8,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 65,
+            "dmg_adj": -1,
             "test": 2,
             "feat": 2
         },
+        "dx": {
+            "score": 9,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 17,
+            "hp_adj": 2,
+            "poison_adj": 1,
+            "trauma_surv": 90,
+            "test": 4,
+            "feat": 24
+        },
         "in": {
-            "score": 13,
+            "score": 14,
             "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ws": {
-            "score": 17,
-            "will_adj": 1,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "score": 13,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 12,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 21,
-        "deity_name": "Ymir",
+        "deity_id": 24,
+        "deity_name": "Yug",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 4,
+    "race": "Esquimaux",
     "gender": "Female",
     "hd": "4d4",
-    "hp": 11,
+    "hp": 23,
     "fa": 1,
     "ca": 4,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -173,7 +173,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -194,8 +194,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 375,
-                    "spell_name": "Spider Climb",
+                    "spell_id": 53,
+                    "spell_name": "Charm Person",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -205,8 +205,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
+                    "spell_id": 358,
+                    "spell_name": "Sleep",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -216,8 +216,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -227,8 +227,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 244,
-                    "spell_name": "Locate the Dead",
+                    "spell_id": 334,
+                    "spell_name": "Scare",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -238,8 +238,8 @@
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 184,
-                    "spell_name": "Ghoul Touch",
+                    "spell_id": 236,
+                    "spell_name": "Levitate",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -249,8 +249,8 @@
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
+                    "spell_id": 276,
+                    "spell_name": "Obscure",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -279,7 +279,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Falcon/Hawk, 2 hp]",
+            "brief_desc": "magical animal companion. [Squirrel, 4 hp]",
             "ability_desc": null
         },
         {

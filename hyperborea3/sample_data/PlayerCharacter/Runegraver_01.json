@@ -11,37 +11,37 @@
             "feat": 16
         },
         "dx": {
-            "score": 9,
+            "score": 11,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 8,
+            "score": 11,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 65,
+            "trauma_surv": 75,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "in": {
-            "score": 12,
+            "score": 9,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 12,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 12,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 16,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
         }
     },
     "xp": 0,
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 12,
+    "race": "Viking",
     "gender": "Female",
     "hd": "1d8",
-    "hp": 3,
+    "hp": 5,
     "fa": 1,
     "ca": 1,
     "ta": 0,
@@ -183,7 +183,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -204,8 +204,8 @@
                 {
                     "school": "run",
                     "spell_level": 1,
-                    "spell_id": 270,
-                    "spell_name": "Riding [Mount]",
+                    "spell_id": 63,
+                    "spell_name": "Man [Command]",
                     "range": null,
                     "duration": null,
                     "reversible": null,

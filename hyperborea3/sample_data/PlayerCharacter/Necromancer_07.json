@@ -4,38 +4,38 @@
     "class_name": "Necromancer",
     "attr": {
         "st": {
-            "score": 10,
+            "score": 7,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
-        },
-        "dx": {
-            "score": 13,
-            "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "cn": {
-            "score": 8,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 65,
+            "dmg_adj": -1,
             "test": 2,
             "feat": 2
         },
-        "in": {
+        "dx": {
             "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 12,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
+        "in": {
+            "score": 9,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 14,
+            "score": 12,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
             "score": 12,
@@ -49,17 +49,17 @@
     "xp_to_next": 160000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 14,
-        "deity_name": "Rel",
-        "primary_alignment": "Neutral"
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 2,
-    "race": "Amazon",
+    "race_id": 12,
+    "race": "Viking",
     "gender": "Female",
     "hd": "7d4",
     "hp": 19,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -189,7 +189,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -225,8 +225,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 63,
-                    "spell_name": "Command",
+                    "spell_id": 115,
+                    "spell_name": "Detect Undead",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -236,19 +236,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 334,
-                    "spell_name": "Scare",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -268,9 +257,9 @@
                 },
                 {
                     "school": "nec",
-                    "spell_level": 2,
-                    "spell_id": 176,
-                    "spell_name": "Forest of Bones",
+                    "spell_level": 1,
+                    "spell_id": 63,
+                    "spell_name": "Command",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -280,8 +269,19 @@
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 392,
-                    "spell_name": "Summon D\u00e6mon I",
+                    "spell_id": 371,
+                    "spell_name": "Speak with Dead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 2,
+                    "spell_id": 95,
+                    "spell_name": "Danse Macabre",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -291,8 +291,8 @@
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 124,
-                    "spell_name": "Dispel Magic",
+                    "spell_id": 170,
+                    "spell_name": "Floating Skull",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -313,8 +313,8 @@
                 {
                     "school": "nec",
                     "spell_level": 4,
-                    "spell_id": 226,
-                    "spell_name": "Inner Eye",
+                    "spell_id": 324,
+                    "spell_name": "Remove Curse",
                     "range": null,
                     "duration": null,
                     "reversible": null,

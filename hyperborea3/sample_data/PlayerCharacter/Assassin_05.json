@@ -4,18 +4,18 @@
     "class_name": "Assassin",
     "attr": {
         "st": {
-            "score": 16,
-            "atk_mod": 1,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 9,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 24
         },
         "cn": {
             "score": 8,
@@ -26,22 +26,22 @@
             "feat": 2
         },
         "in": {
-            "score": 16,
+            "score": 13,
             "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 15,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 7,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 0
         },
         "ch": {
-            "score": 17,
-            "react_adj": 2,
-            "max_henchmen": 10,
-            "turn_adj": 1
+            "score": 5,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
         }
     },
     "xp": 14000,
@@ -49,20 +49,20 @@
     "xp_to_next": 28000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 5,
-        "deity_name": "Boetzu",
-        "primary_alignment": "Lawful"
+        "deity_id": 8,
+        "deity_name": "Kraken",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 24,
-    "race": "Yakut",
-    "gender": "Male",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
     "hd": "5d6",
-    "hp": 14,
+    "hp": 22,
     "fa": 3,
     "ca": 0,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 7,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +124,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
-            "hurled_atk": 0,
-            "dmg_adj": 1,
+            "melee_atk": 0,
+            "hurled_atk": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -161,7 +161,7 @@
             "weight": 5,
             "qty": 1,
             "ammunition": "light bolts \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -182,7 +182,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0

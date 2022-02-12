@@ -4,35 +4,35 @@
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 10,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 10,
+            "score": 11,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 7,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 65,
-            "test": 2,
-            "feat": 2
+            "score": 5,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
         },
         "in": {
-            "score": 13,
+            "score": 14,
             "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ws": {
-            "score": 14,
+            "score": 13,
             "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
@@ -49,20 +49,20 @@
     "xp_to_next": 960000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 11,
-        "deity_name": "Lunaqqua",
-        "primary_alignment": "Neutral"
+        "deity_id": 6,
+        "deity_name": "Boreas",
+        "primary_alignment": "Chaotic"
     },
     "race_id": 7,
     "race": "Kelt",
     "gender": "Male",
     "hd": "9d4+2",
-    "hp": 28,
+    "hp": 18,
     "fa": 5,
     "ca": 11,
     "ta": 0,
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -173,7 +173,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -194,8 +194,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
+                    "spell_id": 334,
+                    "spell_name": "Scare",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -205,8 +205,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 180,
-                    "spell_name": "Friends",
+                    "spell_id": 258,
+                    "spell_name": "Message",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -216,8 +216,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 358,
-                    "spell_name": "Sleep",
+                    "spell_id": 201,
+                    "spell_name": "Hold Portal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -238,8 +238,8 @@
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 450,
-                    "spell_name": "Witch Fire",
+                    "spell_id": 242,
+                    "spell_name": "Locate Object",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -249,8 +249,8 @@
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 294,
-                    "spell_name": "Placate",
+                    "spell_id": 347,
+                    "spell_name": "Shatter",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -260,8 +260,8 @@
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 326,
-                    "spell_name": "Remove Paralysis",
+                    "spell_id": 392,
+                    "spell_name": "Summon D\u00e6mon I",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -271,8 +271,8 @@
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 429,
-                    "spell_name": "Vampiric Touch",
+                    "spell_id": 58,
+                    "spell_name": "Clairvoyance",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -282,8 +282,8 @@
                 {
                     "school": "wch",
                     "spell_level": 4,
-                    "spell_id": 393,
-                    "spell_name": "Summon D\u00e6mon II",
+                    "spell_id": 269,
+                    "spell_name": "Moonlight",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -293,8 +293,8 @@
                 {
                     "school": "wch",
                     "spell_level": 4,
-                    "spell_id": 29,
-                    "spell_name": "Black Tentacles",
+                    "spell_id": 413,
+                    "spell_name": "Transfer Wounds",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -304,8 +304,8 @@
                 {
                     "school": "wch",
                     "spell_level": 5,
-                    "spell_id": 20,
-                    "spell_name": "Anti-Magic Field",
+                    "spell_id": 394,
+                    "spell_name": "Summon D\u00e6mon III",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -315,8 +315,8 @@
                 {
                     "school": "wch",
                     "spell_level": 5,
-                    "spell_id": 122,
-                    "spell_name": "Dismissal",
+                    "spell_id": 344,
+                    "spell_name": "Shadow Conjuration",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -326,8 +326,8 @@
                 {
                     "school": "wch",
                     "spell_level": 6,
-                    "spell_id": 18,
-                    "spell_name": "Animate Objects",
+                    "spell_id": 73,
+                    "spell_name": "Control Lycanthrope",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -356,7 +356,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Rat, 2 hp]",
+            "brief_desc": "magical animal companion. [Bat, 3 hp]",
             "ability_desc": null
         },
         {

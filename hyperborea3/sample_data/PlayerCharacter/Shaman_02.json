@@ -4,21 +4,21 @@
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 11,
+            "score": 10,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 11,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 10,
+            "score": 9,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,21 +26,21 @@
             "feat": 4
         },
         "in": {
-            "score": 11,
+            "score": 9,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 12,
+            "score": 13,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +49,20 @@
     "xp_to_next": 5000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 11,
-        "deity_name": "Lunaqqua",
-        "primary_alignment": "Neutral"
+        "deity_id": 8,
+        "deity_name": "Kraken",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 7,
+    "race": "Kelt",
     "gender": "Male",
     "hd": "2d6",
-    "hp": 8,
+    "hp": 6,
     "fa": 0,
     "ca": 2,
     "ta": 0,
@@ -177,9 +177,9 @@
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
-        "clr": {
+        "drd": {
             "spells_per_day": {
-                "lvl1": 1,
+                "lvl1": 2,
                 "lvl2": 0,
                 "lvl3": 0,
                 "lvl4": 0,
@@ -188,10 +188,10 @@
             },
             "spells_known": [
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
+                    "spell_id": 26,
+                    "spell_name": "Befriend Animals",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -213,8 +213,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
+                    "spell_id": 56,
+                    "spell_name": "Chill Touch",
                     "range": null,
                     "duration": null,
                     "reversible": null,

@@ -4,18 +4,18 @@
     "class_name": "Druid",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 10,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 15,
-            "atk_mod": 1,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
             "score": 9,
@@ -26,16 +26,16 @@
             "feat": 4
         },
         "in": {
-            "score": 7,
-            "lang": 0,
+            "score": 5,
+            "lang": -1,
             "bonus_spells": 0,
             "learn_spell": 0
         },
         "ws": {
-            "score": 13,
+            "score": 12,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
             "score": 12,
@@ -54,15 +54,15 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 22,
-        "deity_name": "Yoon'Deh",
+        "deity_id": 7,
+        "deity_name": "Helios",
         "primary_alignment": "Neutral"
     },
     "race_id": 1,
     "race": "Common",
-    "gender": "Non-Binary",
+    "gender": "Female",
     "hd": "8d8",
-    "hp": 44,
+    "hp": 37,
     "fa": 5,
     "ca": 8,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,8 +125,8 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -143,8 +143,8 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -161,7 +161,7 @@
             "weight": 2,
             "qty": 1,
             "ammunition": "arrows \u00d712",
-            "missile_atk": 1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -194,7 +194,7 @@
     "spells": {
         "drd": {
             "spells_per_day": {
-                "lvl1": 5,
+                "lvl1": 4,
                 "lvl2": 4,
                 "lvl3": 3,
                 "lvl4": 2,
@@ -205,8 +205,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 370,
-                    "spell_name": "Speak with Animals",
+                    "spell_id": 302,
+                    "spell_name": "Precipitate",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -216,8 +216,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 156,
-                    "spell_name": "Fire Resistance",
+                    "spell_id": 314,
+                    "spell_name": "Purify Food and Drink",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -227,8 +227,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 26,
-                    "spell_name": "Befriend Animals",
+                    "spell_id": 349,
+                    "spell_name": "Shillelagh",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -238,8 +238,19 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 333,
-                    "spell_name": "Sanctuary from Animals",
+                    "spell_id": 259,
+                    "spell_name": "Messenger Bird",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -251,50 +262,6 @@
                     "spell_level": 1,
                     "spell_id": 189,
                     "spell_name": "Goodberry",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 1,
-                    "spell_id": 243,
-                    "spell_name": "Locate Ordinary Animal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 2,
-                    "spell_id": 25,
-                    "spell_name": "Barkskin",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 2,
-                    "spell_id": 81,
-                    "spell_name": "Create Water",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 2,
-                    "spell_id": 196,
-                    "spell_name": "Heat Metal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -315,17 +282,6 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 89,
-                    "spell_name": "Cure Light Wounds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 2,
                     "spell_id": 104,
                     "spell_name": "Delay Poison",
                     "range": null,
@@ -336,9 +292,9 @@
                 },
                 {
                     "school": "drd",
-                    "spell_level": 3,
-                    "spell_id": 422,
-                    "spell_name": "Tree Shape",
+                    "spell_level": 2,
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -347,9 +303,9 @@
                 },
                 {
                     "school": "drd",
-                    "spell_level": 3,
-                    "spell_id": 255,
-                    "spell_name": "Meld into Stone",
+                    "spell_level": 2,
+                    "spell_id": 164,
+                    "spell_name": "Flame Blade",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -358,9 +314,20 @@
                 },
                 {
                     "school": "drd",
-                    "spell_level": 3,
-                    "spell_id": 376,
-                    "spell_name": "Spike Growth",
+                    "spell_level": 2,
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 276,
+                    "spell_name": "Obscure",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -381,6 +348,17 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
+                    "spell_id": 198,
+                    "spell_name": "Hold Animal",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
                     "spell_id": 27,
                     "spell_name": "Black Cloud",
                     "range": null,
@@ -392,8 +370,30 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 91,
-                    "spell_name": "Cure Moderate Wounds",
+                    "spell_id": 281,
+                    "spell_name": "Pass without Trace, 15\u0384 r.",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 274,
+                    "spell_name": "Neutralize Poison",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 255,
+                    "spell_name": "Meld into Stone",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -403,8 +403,8 @@
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 240,
-                    "spell_name": "Lightning Protection",
+                    "spell_id": 372,
+                    "spell_name": "Speak with Plants",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -414,8 +414,8 @@
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 93,
-                    "spell_name": "Cure Serious Wounds",
+                    "spell_id": 202,
+                    "spell_name": "Hold Vegetation",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -436,8 +436,8 @@
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 307,
-                    "spell_name": "Produce Bonfire",
+                    "spell_id": 253,
+                    "spell_name": "Mass Treemorph",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -447,8 +447,8 @@
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 193,
-                    "spell_name": "Hallucinatory Terrain",
+                    "spell_id": 388,
+                    "spell_name": "Summon Animal I",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -458,8 +458,8 @@
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 237,
-                    "spell_name": "Lifeglobe",
+                    "spell_id": 410,
+                    "spell_name": "Them",
                     "range": null,
                     "duration": null,
                     "reversible": null,

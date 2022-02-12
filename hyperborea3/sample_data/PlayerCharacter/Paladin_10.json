@@ -4,26 +4,26 @@
     "class_name": "Paladin",
     "attr": {
         "st": {
-            "score": 16,
-            "atk_mod": 1,
+            "score": 14,
+            "atk_mod": 0,
             "dmg_adj": 1,
-            "test": 3,
-            "feat": 24
-        },
-        "dx": {
-            "score": 16,
-            "atk_mod": 1,
-            "def_adj": 1,
             "test": 3,
             "feat": 16
         },
+        "dx": {
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
         "cn": {
-            "score": 10,
-            "hp_adj": 0,
+            "score": 14,
+            "hp_adj": 1,
             "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
         },
         "in": {
             "score": 10,
@@ -32,37 +32,37 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 10,
+            "score": 11,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 17,
-            "react_adj": 2,
-            "max_henchmen": 10,
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
             "turn_adj": 1
         }
     },
     "xp": 528000,
     "level": 10,
     "xp_to_next": 704000,
-    "xp_bonus": true,
+    "xp_bonus": false,
     "alignment": {
         "align_id": 4,
         "short_name": "LG",
         "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 2,
-        "deity_name": "Artemis",
+        "deity_id": 1,
+        "deity_name": "Apollo",
         "primary_alignment": "Lawful"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
+    "race_id": 7,
+    "race": "Kelt",
     "gender": "Male",
     "hd": "9d10+3",
-    "hp": 64,
+    "hp": 72,
     "fa": 10,
     "ca": 4,
     "ta": 6,
@@ -130,8 +130,8 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 1,
-            "hurled_atk": 1,
+            "melee_atk": 0,
+            "hurled_atk": 0,
             "dmg_adj": 1,
             "mastery": false
         },
@@ -148,7 +148,7 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
             "dmg_adj": 1,
             "mastery": false
@@ -166,7 +166,7 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "2/1",
-            "melee_atk": 2,
+            "melee_atk": 1,
             "hurled_atk": null,
             "dmg_adj": 2,
             "mastery": true
@@ -220,8 +220,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 249,
-                    "spell_name": "Magic Stone",
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -231,8 +231,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 61,
-                    "spell_name": "Cold Resistance",
+                    "spell_id": 48,
+                    "spell_name": "Ceremony of Consecration",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -242,8 +242,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
+                    "spell_id": 91,
+                    "spell_name": "Cure Moderate Wounds",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -253,8 +253,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 232,
-                    "spell_name": "Invisibility to Undead",
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
                     "range": null,
                     "duration": null,
                     "reversible": null,

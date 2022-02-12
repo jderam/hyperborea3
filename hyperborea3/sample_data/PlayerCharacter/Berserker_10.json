@@ -11,14 +11,14 @@
             "feat": 32
         },
         "dx": {
-            "score": 12,
+            "score": 14,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
-            "score": 16,
+            "score": 15,
             "hp_adj": 1,
             "poison_adj": 1,
             "trauma_surv": 85,
@@ -26,7 +26,7 @@
             "feat": 24
         },
         "in": {
-            "score": 11,
+            "score": 12,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
@@ -38,31 +38,31 @@
             "learn_spell": 50
         },
         "ch": {
-            "score": 13,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
     "xp": 480000,
     "level": 10,
     "xp_to_next": 640000,
-    "xp_bonus": true,
+    "xp_bonus": false,
     "alignment": {
         "align_id": 1,
         "short_name": "CE",
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 17,
-        "deity_name": "Ullr",
+        "deity_id": 8,
+        "deity_name": "Kraken",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 7,
-    "race": "Kelt",
-    "gender": "Female",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Male",
     "hd": "9d12+4",
-    "hp": 93,
+    "hp": 67,
     "fa": 10,
     "ca": 0,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 5,
     "mv": 30,
     "weapons_melee": [
         {
@@ -178,7 +178,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0

@@ -11,11 +11,11 @@
             "feat": 4
         },
         "dx": {
-            "score": 4,
-            "atk_mod": -1,
+            "score": 7,
+            "atk_mod": 0,
             "def_adj": -1,
-            "test": 1,
-            "feat": 1
+            "test": 2,
+            "feat": 2
         },
         "cn": {
             "score": 5,
@@ -26,16 +26,16 @@
             "feat": 1
         },
         "in": {
-            "score": 11,
+            "score": 12,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 17,
+            "score": 16,
             "will_adj": 1,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
             "score": 15,
@@ -54,15 +54,15 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 16,
-        "deity_name": "Tlakk-Nakka",
+        "deity_id": 7,
+        "deity_name": "Helios",
         "primary_alignment": "Neutral"
     },
-    "race_id": 12,
-    "race": "Viking",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Male",
     "hd": "5d8",
-    "hp": 10,
+    "hp": 13,
     "fa": 3,
     "ca": 5,
     "ta": 0,
@@ -125,7 +125,7 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": -1,
+            "hurled_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         },
@@ -143,7 +143,7 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": -1,
+            "hurled_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -161,7 +161,7 @@
             "weight": 2,
             "qty": 1,
             "ammunition": "arrows \u00d712",
-            "missile_atk": -1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -184,7 +184,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -196,23 +196,12 @@
             "spells_per_day": {
                 "lvl1": 4,
                 "lvl2": 3,
-                "lvl3": 2,
+                "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
                 "lvl6": 0
             },
             "spells_known": [
-                {
-                    "school": "drd",
-                    "spell_level": 1,
-                    "spell_id": 314,
-                    "spell_name": "Purify Food and Drink",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
                 {
                     "school": "drd",
                     "spell_level": 1,
@@ -227,8 +216,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 302,
-                    "spell_name": "Precipitate",
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -238,8 +227,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 243,
-                    "spell_name": "Locate Ordinary Animal",
+                    "spell_id": 26,
+                    "spell_name": "Befriend Animals",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -249,8 +238,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -260,8 +249,19 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 116,
-                    "spell_name": "Detect Venom",
+                    "spell_id": 79,
+                    "spell_name": "Create Firewood",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 189,
+                    "spell_name": "Goodberry",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -271,8 +271,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -282,8 +282,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 81,
-                    "spell_name": "Create Water",
+                    "spell_id": 25,
+                    "spell_name": "Barkskin",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -293,8 +293,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 164,
-                    "spell_name": "Flame Blade",
+                    "spell_id": 308,
+                    "spell_name": "Produce Flame",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -315,8 +315,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
+                    "spell_id": 276,
+                    "spell_name": "Obscure",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -326,8 +326,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
+                    "spell_id": 196,
+                    "spell_name": "Heat Metal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -337,8 +337,8 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 380,
-                    "spell_name": "Stone Shape",
+                    "spell_id": 50,
+                    "spell_name": "Chameleon",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -348,8 +348,8 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 198,
-                    "spell_name": "Hold Animal",
+                    "spell_id": 281,
+                    "spell_name": "Pass without Trace, 15\u0384 r.",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -359,8 +359,8 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 315,
-                    "spell_name": "Pyrotechnics",
+                    "spell_id": 378,
+                    "spell_name": "Starlight",
                     "range": null,
                     "duration": null,
                     "reversible": null,

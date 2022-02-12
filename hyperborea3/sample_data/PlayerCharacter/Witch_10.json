@@ -4,44 +4,44 @@
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 11,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 7,
+            "score": 11,
             "atk_mod": 0,
-            "def_adj": -1,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 8,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
             "test": 2,
             "feat": 2
         },
-        "cn": {
-            "score": 16,
-            "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
-            "test": 3,
-            "feat": 16
-        },
         "in": {
-            "score": 9,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
-        },
-        "ws": {
-            "score": 14,
-            "will_adj": 0,
+            "score": 13,
+            "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
+        "ws": {
+            "score": 11,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
         "ch": {
-            "score": 17,
-            "react_adj": 2,
-            "max_henchmen": 10,
-            "turn_adj": 1
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
+            "turn_adj": 0
         }
     },
     "xp": 576000,
@@ -49,20 +49,20 @@
     "xp_to_next": 768000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 3,
-        "deity_name": "Aurorus",
+        "deity_id": 24,
+        "deity_name": "Yug",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 6,
-    "race": "Ixian",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
     "hd": "9d4+1",
-    "hp": 39,
+    "hp": 28,
     "fa": 4,
     "ca": 10,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 10,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -173,7 +173,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -183,7 +183,7 @@
     "spells": {
         "wch": {
             "spells_per_day": {
-                "lvl1": 6,
+                "lvl1": 7,
                 "lvl2": 5,
                 "lvl3": 5,
                 "lvl4": 4,
@@ -191,17 +191,6 @@
                 "lvl6": 0
             },
             "spells_known": [
-                {
-                    "school": "wch",
-                    "spell_level": 1,
-                    "spell_id": 334,
-                    "spell_name": "Scare",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
                 {
                     "school": "wch",
                     "spell_level": 1,
@@ -216,8 +205,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Enlargement",
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -227,8 +216,19 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
+                    "spell_id": 11,
+                    "spell_name": "Alter Self",
+                    "range": "0",
+                    "duration": "1d6 turns",
+                    "reversible": 0,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "wch",
+                    "spell_level": 1,
+                    "spell_id": 257,
+                    "spell_name": "Mending",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -238,8 +238,8 @@
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 236,
-                    "spell_name": "Levitate",
+                    "spell_id": 26,
+                    "spell_name": "Befriend Animals",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -249,8 +249,8 @@
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 314,
-                    "spell_name": "Purify Food and Drink",
+                    "spell_id": 294,
+                    "spell_name": "Placate",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -260,8 +260,8 @@
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 449,
-                    "spell_name": "Wind Wall",
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -271,8 +271,8 @@
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 57,
-                    "spell_name": "Clairaudience",
+                    "spell_id": 126,
+                    "spell_name": "Dissipate Gas",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -282,8 +282,8 @@
                 {
                     "school": "wch",
                     "spell_level": 4,
-                    "spell_id": 188,
-                    "spell_name": "Glyph of Warding",
+                    "spell_id": 413,
+                    "spell_name": "Transfer Wounds",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -293,8 +293,8 @@
                 {
                     "school": "wch",
                     "spell_level": 4,
-                    "spell_id": 393,
-                    "spell_name": "Summon D\u00e6mon II",
+                    "spell_id": 363,
+                    "spell_name": "Sorcerer Eye",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -304,8 +304,8 @@
                 {
                     "school": "wch",
                     "spell_level": 5,
-                    "spell_id": 20,
-                    "spell_name": "Anti-Magic Field",
+                    "spell_id": 307,
+                    "spell_name": "Produce Bonfire",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -315,8 +315,8 @@
                 {
                     "school": "wch",
                     "spell_level": 5,
-                    "spell_id": 359,
-                    "spell_name": "Sleep Everlasting",
+                    "spell_id": 16,
+                    "spell_name": "Animate Dead",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -345,7 +345,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Cat, 4 hp]",
+            "brief_desc": "magical animal companion. [Gull, 2 hp]",
             "ability_desc": null
         },
         {

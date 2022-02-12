@@ -4,44 +4,44 @@
     "class_name": "Thief",
     "attr": {
         "st": {
-            "score": 13,
-            "atk_mod": 0,
+            "score": 15,
+            "atk_mod": 1,
             "dmg_adj": 1,
             "test": 3,
-            "feat": 8
+            "feat": 16
         },
         "dx": {
-            "score": 12,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 12
         },
         "cn": {
-            "score": 13,
-            "hp_adj": 1,
+            "score": 12,
+            "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
-            "score": 9,
+            "score": 8,
             "lang": 0,
             "bonus_spells": 0,
-            "learn_spell": 50
+            "learn_spell": 0
         },
         "ws": {
-            "score": 11,
+            "score": 14,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 16,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 4,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
         }
     },
     "xp": 288000,
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 9,
-        "deity_name": "Kthulhu",
+        "deity_id": 4,
+        "deity_name": "Azathoth",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 11,
-    "race": "Pict (Half-Blood)",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
     "hd": "9d6+2",
-    "hp": 42,
+    "hp": 30,
     "fa": 7,
     "ca": 0,
     "ta": 0,
@@ -124,7 +124,7 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
             "dmg_adj": 1,
             "mastery": false
@@ -169,7 +169,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0

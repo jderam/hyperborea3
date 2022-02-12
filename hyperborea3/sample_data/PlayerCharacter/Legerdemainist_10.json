@@ -4,32 +4,32 @@
     "class_name": "Legerdemainist",
     "attr": {
         "st": {
+            "score": 15,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "dx": {
             "score": 12,
             "atk_mod": 0,
-            "dmg_adj": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
+        },
+        "cn": {
+            "score": 12,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
             "test": 2,
             "feat": 4
         },
-        "dx": {
-            "score": 14,
-            "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
-        },
-        "cn": {
-            "score": 15,
-            "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
-            "test": 3,
-            "feat": 16
-        },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 14,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
             "score": 11,
@@ -38,9 +38,9 @@
             "learn_spell": 50
         },
         "ch": {
-            "score": 13,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 10,
-        "deity_name": "Krimmr",
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 11,
-    "race": "Pict (Half-Blood)",
-    "gender": "Male",
+    "race_id": 8,
+    "race": "Kimmerian",
+    "gender": "Female",
     "hd": "9d6+2",
-    "hp": 43,
+    "hp": 31,
     "fa": 7,
     "ca": 10,
     "ta": 0,
@@ -114,7 +114,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 4,
+    "ac": 5,
     "mv": 40,
     "weapons_melee": [
         {
@@ -130,9 +130,9 @@
             "weight": 1,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -148,9 +148,9 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -190,7 +190,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -249,7 +249,7 @@
     "spells": {
         "mag": {
             "spells_per_day": {
-                "lvl1": 3,
+                "lvl1": 4,
                 "lvl2": 2,
                 "lvl3": 2,
                 "lvl4": 0,
@@ -260,8 +260,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 270,
-                    "spell_name": "Mount",
+                    "spell_id": 233,
+                    "spell_name": "Jump",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -271,8 +271,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 53,
-                    "spell_name": "Charm Person",
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -282,8 +282,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
+                    "spell_id": 258,
+                    "spell_name": "Message",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -293,8 +293,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 358,
-                    "spell_name": "Sleep",
+                    "spell_id": 169,
+                    "spell_name": "Floating Disc",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -304,8 +304,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 315,
-                    "spell_name": "Pyrotechnics",
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -315,8 +315,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 230,
-                    "spell_name": "Invisibility",
+                    "spell_id": 78,
+                    "spell_name": "Cool Metal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -326,8 +326,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
+                    "spell_id": 334,
+                    "spell_name": "Scare",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -337,8 +337,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 360,
-                    "spell_name": "Slow",
+                    "spell_id": 386,
+                    "spell_name": "Suggestion",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -348,8 +348,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 162,
-                    "spell_name": "Fireball",
+                    "spell_id": 412,
+                    "spell_name": "Tongues",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -359,8 +359,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 163,
-                    "spell_name": "Flame Arrow",
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
                     "range": null,
                     "duration": null,
                     "reversible": null,

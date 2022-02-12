@@ -4,18 +4,18 @@
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 16,
-            "atk_mod": 1,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 9,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 15,
-            "atk_mod": 1,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
             "score": 12,
@@ -26,22 +26,22 @@
             "feat": 4
         },
         "in": {
-            "score": 13,
-            "lang": 1,
+            "score": 9,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
-        "ws": {
-            "score": 18,
-            "will_adj": 2,
-            "bonus_spells": 4,
-            "learn_spell": 95
-        },
         "ch": {
-            "score": 13,
-            "react_adj": 1,
-            "max_henchmen": 6,
-            "turn_adj": 0
+            "score": 18,
+            "react_adj": 3,
+            "max_henchmen": 12,
+            "turn_adj": 1
         }
     },
     "xp": 160000,
@@ -49,20 +49,20 @@
     "xp_to_next": 320000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 12,
-        "deity_name": "Mordezzan",
-        "primary_alignment": "Neutral"
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 2,
-    "race": "Amazon",
-    "gender": "Female",
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Male",
     "hd": "8d6",
-    "hp": 25,
+    "hp": 32,
     "fa": 4,
     "ca": 8,
     "ta": 6,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +124,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
-            "hurled_atk": 1,
-            "dmg_adj": 1,
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -169,7 +169,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -181,10 +181,10 @@
         "undead_type_02": "D",
         "undead_type_03": "T",
         "undead_type_04": "T",
-        "undead_type_05": "10:12",
-        "undead_type_06": "7:12",
-        "undead_type_07": "4:12",
-        "undead_type_08": "1:12",
+        "undead_type_05": "11:12",
+        "undead_type_06": "8:12",
+        "undead_type_07": "5:12",
+        "undead_type_08": "2:12",
         "undead_type_09": "NT",
         "undead_type_10": "NT",
         "undead_type_11": "NT",
@@ -192,74 +192,7 @@
         "undead_type_13": "NT"
     },
     "spells": {
-        "clr": {
-            "spells_per_day": {
-                "lvl1": 3,
-                "lvl2": 2,
-                "lvl3": 2,
-                "lvl4": 2,
-                "lvl5": 0,
-                "lvl6": 0
-            },
-            "spells_known": [
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 61,
-                    "spell_name": "Cold Resistance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 325,
-                    "spell_name": "Remove Fear",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 200,
-                    "spell_name": "Hold Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 326,
-                    "spell_name": "Remove Paralysis",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 4,
-                    "spell_id": 312,
-                    "spell_name": "Protection from Evil, 15\u0384 r.",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                }
-            ]
-        },
-        "mag": {
+        "drd": {
             "spells_per_day": {
                 "lvl1": 3,
                 "lvl2": 1,
@@ -270,10 +203,10 @@
             },
             "spells_known": [
                 {
-                    "school": "mag",
+                    "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 180,
-                    "spell_name": "Friends",
+                    "spell_id": 333,
+                    "spell_name": "Sanctuary from Animals",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -281,10 +214,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "mag",
+                    "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
+                    "spell_id": 302,
+                    "spell_name": "Precipitate",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -292,10 +225,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "mag",
+                    "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 78,
-                    "spell_name": "Cool Metal",
+                    "spell_id": 25,
+                    "spell_name": "Barkskin",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -303,10 +236,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "mag",
+                    "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 200,
-                    "spell_name": "Hold Person",
+                    "spell_id": 380,
+                    "spell_name": "Stone Shape",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -314,10 +247,77 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "mag",
+                    "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 52,
-                    "spell_name": "Charm Monster",
+                    "spell_id": 410,
+                    "spell_name": "Them",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                }
+            ]
+        },
+        "nec": {
+            "spells_per_day": {
+                "lvl1": 2,
+                "lvl2": 1,
+                "lvl3": 1,
+                "lvl4": 1,
+                "lvl5": 0,
+                "lvl6": 0
+            },
+            "spells_known": [
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 28,
+                    "spell_name": "Black Hand",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 232,
+                    "spell_name": "Invisibility to Undead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 2,
+                    "spell_id": 184,
+                    "spell_name": "Ghoul Touch",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 3,
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 4,
+                    "spell_id": 226,
+                    "spell_name": "Inner Eye",
                     "range": null,
                     "duration": null,
                     "reversible": null,

@@ -11,7 +11,7 @@
             "feat": 16
         },
         "dx": {
-            "score": 11,
+            "score": 12,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
@@ -26,21 +26,21 @@
             "feat": 8
         },
         "in": {
-            "score": 11,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
-        },
-        "ws": {
-            "score": 14,
-            "will_adj": 0,
+            "score": 13,
+            "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
+        "ws": {
+            "score": 16,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -58,11 +58,11 @@
         "deity_name": "Boetzu",
         "primary_alignment": "Lawful"
     },
-    "race_id": 5,
-    "race": "Hyperborean",
+    "race_id": 6,
+    "race": "Ixian",
     "gender": "Male",
     "hd": "2d10",
-    "hp": 16,
+    "hp": 6,
     "fa": 2,
     "ca": 0,
     "ta": 0,
@@ -168,7 +168,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0

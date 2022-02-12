@@ -4,18 +4,18 @@
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 10,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
-        },
-        "dx": {
             "score": 7,
             "atk_mod": 0,
-            "def_adj": -1,
+            "dmg_adj": -1,
             "test": 2,
             "feat": 2
+        },
+        "dx": {
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
             "score": 10,
@@ -26,19 +26,19 @@
             "feat": 4
         },
         "in": {
-            "score": 14,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 17,
+            "lang": 2,
+            "bonus_spells": 3,
+            "learn_spell": 85
         },
         "ws": {
-            "score": 14,
+            "score": 13,
             "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ch": {
-            "score": 14,
+            "score": 13,
             "react_adj": 1,
             "max_henchmen": 6,
             "turn_adj": 0
@@ -49,20 +49,20 @@
     "xp_to_next": 40000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 20,
-        "deity_name": "Yikkorth",
-        "primary_alignment": "Neutral"
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
     },
     "race_id": 1,
     "race": "Common",
     "gender": "Female",
     "hd": "5d6",
-    "hp": 10,
+    "hp": 15,
     "fa": 2,
     "ca": 5,
     "ta": 3,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 7,
+    "ac": 5,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -169,7 +169,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -205,8 +205,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 243,
-                    "spell_name": "Locate Ordinary Animal",
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -227,8 +227,8 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 443,
-                    "spell_name": "Water Breathing",
+                    "spell_id": 297,
+                    "spell_name": "Plant Growth",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -240,7 +240,7 @@
         "nec": {
             "spells_per_day": {
                 "lvl1": 2,
-                "lvl2": 1,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -250,8 +250,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 28,
-                    "spell_name": "Black Hand",
+                    "spell_id": 56,
+                    "spell_name": "Chill Touch",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -261,8 +261,8 @@
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 222,
-                    "spell_name": "Infernal Tongues",
+                    "spell_id": 95,
+                    "spell_name": "Danse Macabre",
                     "range": null,
                     "duration": null,
                     "reversible": null,

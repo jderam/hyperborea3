@@ -11,11 +11,11 @@
             "feat": 4
         },
         "dx": {
-            "score": 9,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
             "score": 8,
@@ -26,21 +26,21 @@
             "feat": 2
         },
         "in": {
-            "score": 10,
+            "score": 11,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 14,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 17,
+            "will_adj": 1,
+            "bonus_spells": 3,
+            "learn_spell": 85
         },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 8,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -54,12 +54,12 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 21,
-        "deity_name": "Ymir",
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 22,
-    "race": "Roman",
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
     "gender": "Female",
     "hd": "7d4",
     "hp": 21,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -161,7 +161,7 @@
             "weight": 1,
             "qty": 4,
             "ammunition": null,
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -187,7 +187,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -208,8 +208,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
+                    "spell_id": 94,
+                    "spell_name": "Dancing Lights",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -230,8 +230,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -241,8 +241,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -252,8 +252,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 167,
-                    "spell_name": "Flaming Sphere",
+                    "spell_id": 230,
+                    "spell_name": "Invisibility",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -263,8 +263,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 308,
-                    "spell_name": "Produce Flame",
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -274,8 +274,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 412,
-                    "spell_name": "Tongues",
+                    "spell_id": 163,
+                    "spell_name": "Flame Arrow",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -285,8 +285,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 124,
-                    "spell_name": "Dispel Magic",
+                    "spell_id": 450,
+                    "spell_name": "Witch Fire",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -296,8 +296,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 433,
-                    "spell_name": "Wall of Fire",
+                    "spell_id": 329,
+                    "spell_name": "Resilient Sphere",
                     "range": null,
                     "duration": null,
                     "reversible": null,

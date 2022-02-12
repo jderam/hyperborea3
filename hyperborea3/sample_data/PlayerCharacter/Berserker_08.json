@@ -4,14 +4,14 @@
     "class_name": "Berserker",
     "attr": {
         "st": {
-            "score": 16,
-            "atk_mod": 1,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 24
+            "score": 18,
+            "atk_mod": 2,
+            "dmg_adj": 3,
+            "test": 5,
+            "feat": 40
         },
         "dx": {
-            "score": 5,
+            "score": 6,
             "atk_mod": -1,
             "def_adj": -1,
             "test": 1,
@@ -32,16 +32,16 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 10,
+            "score": 14,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 12,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
         }
     },
     "xp": 160000,
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 3,
-        "deity_name": "Aurorus",
-        "primary_alignment": "Chaotic"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
     "race_id": 1,
     "race": "Common",
-    "gender": "Female",
+    "gender": "Male",
     "hd": "8d12",
-    "hp": 58,
+    "hp": 50,
     "fa": 8,
     "ca": 0,
     "ta": 0,
@@ -124,9 +124,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "2/1",
-            "melee_atk": 2,
+            "melee_atk": 3,
             "hurled_atk": null,
-            "dmg_adj": 2,
+            "dmg_adj": 4,
             "mastery": true
         },
         {
@@ -142,9 +142,9 @@
             "weight": 2,
             "qty": 2,
             "atk_rate": "3/2",
-            "melee_atk": 1,
+            "melee_atk": 2,
             "hurled_atk": -1,
-            "dmg_adj": 1,
+            "dmg_adj": 3,
             "mastery": false
         },
         {
@@ -160,9 +160,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 1,
+            "melee_atk": 2,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 3,
             "mastery": false
         }
     ],
@@ -178,7 +178,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0

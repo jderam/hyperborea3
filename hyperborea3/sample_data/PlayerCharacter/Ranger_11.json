@@ -4,65 +4,65 @@
     "class_name": "Ranger",
     "attr": {
         "st": {
-            "score": 11,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 12
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 24
         },
         "dx": {
-            "score": 12,
+            "score": 10,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 5,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 15,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
         },
         "in": {
-            "score": 11,
+            "score": 10,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 15,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 18,
+            "will_adj": 2,
+            "bonus_spells": 4,
+            "learn_spell": 95
         },
         "ch": {
-            "score": 9,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 8,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
     "xp": 576000,
     "level": 11,
     "xp_to_next": 720000,
-    "xp_bonus": false,
+    "xp_bonus": true,
     "alignment": {
         "align_id": 5,
         "short_name": "N",
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 7,
-        "deity_name": "Helios",
+        "deity_id": 16,
+        "deity_name": "Tlakk-Nakka",
         "primary_alignment": "Neutral"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Non-Binary",
     "hd": "9d10+6",
-    "hp": 43,
+    "hp": 70,
     "fa": 11,
     "ca": 5,
     "ta": 0,
@@ -124,9 +124,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -141,18 +141,18 @@
             "cost": 20,
             "weight": 4,
             "qty": 1,
-            "atk_rate": "2/1",
+            "atk_rate": "3/2",
             "melee_atk": 1,
             "hurled_atk": null,
             "dmg_adj": 1,
-            "mastery": true
+            "mastery": false
         }
     ],
     "weapons_missile": [
         {
             "weapon_id": 209,
             "weapon_type": "Long Bow",
-            "rof": "3/2",
+            "rof": "5/2",
             "range_sml": "70/140/210",
             "damage": "1d6",
             "hurled": false,
@@ -161,9 +161,9 @@
             "weight": 3,
             "qty": 1,
             "ammunition": "arrows \u00d712",
-            "missile_atk": 0,
-            "dmg_adj": 0,
-            "mastery": false
+            "missile_atk": 1,
+            "dmg_adj": 1,
+            "mastery": true
         }
     ],
     "equipment": [
@@ -194,7 +194,7 @@
         {
             "thief_skill": "discern_noise",
             "skill_name": "Discern Noise",
-            "skill_roll": 9,
+            "skill_roll": 10,
             "stat": "ws"
         },
         {
@@ -216,7 +216,7 @@
             "spells_per_day": {
                 "lvl1": 2,
                 "lvl2": 2,
-                "lvl3": 1,
+                "lvl3": 2,
                 "lvl4": 0,
                 "lvl5": 0,
                 "lvl6": 0
@@ -225,8 +225,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 333,
-                    "spell_name": "Sanctuary from Animals",
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -236,8 +236,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 89,
-                    "spell_name": "Cure Light Wounds",
+                    "spell_id": 151,
+                    "spell_name": "Find Plants",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -247,8 +247,8 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 50,
-                    "spell_name": "Chameleon",
+                    "spell_id": 297,
+                    "spell_name": "Plant Growth",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -270,8 +270,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
+                    "spell_id": 431,
+                    "spell_name": "Ventriloquism",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -281,8 +281,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 334,
-                    "spell_name": "Scare",
+                    "spell_id": 108,
+                    "spell_name": "Detect Illusion",
                     "range": null,
                     "duration": null,
                     "reversible": null,

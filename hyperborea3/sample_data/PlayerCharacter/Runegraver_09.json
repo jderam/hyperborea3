@@ -4,32 +4,32 @@
     "class_name": "Runegraver",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 10,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 12
         },
         "dx": {
-            "score": 11,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 7,
-            "hp_adj": 0,
+            "score": 14,
+            "hp_adj": 1,
             "poison_adj": 0,
-            "trauma_surv": 65,
-            "test": 2,
-            "feat": 2
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
         },
         "in": {
-            "score": 9,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 14,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
             "score": 14,
@@ -38,10 +38,10 @@
             "learn_spell": 65
         },
         "ch": {
-            "score": 4,
-            "react_adj": -2,
-            "max_henchmen": 2,
-            "turn_adj": -1
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 384000,
@@ -49,20 +49,20 @@
     "xp_to_next": 576000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 17,
-        "deity_name": "Ullr",
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
-    "gender": "Female",
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Male",
     "hd": "9d8",
-    "hp": 29,
+    "hp": 58,
     "fa": 9,
     "ca": 9,
     "ta": 0,
@@ -204,6 +204,17 @@
                 {
                     "school": "run",
                     "spell_level": 1,
+                    "spell_id": 270,
+                    "spell_name": "Riding [Mount]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 1,
                     "spell_id": 63,
                     "spell_name": "Man [Command]",
                     "range": null,
@@ -225,9 +236,9 @@
                 },
                 {
                     "school": "run",
-                    "spell_level": 1,
-                    "spell_id": 270,
-                    "spell_name": "Riding [Mount]",
+                    "spell_level": 2,
+                    "spell_id": 27,
+                    "spell_name": "Shower [Black Cloud]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -239,17 +250,6 @@
                     "spell_level": 2,
                     "spell_id": 200,
                     "spell_name": "Constraint [Hold Person]",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "run",
-                    "spell_level": 2,
-                    "spell_id": 27,
-                    "spell_name": "Shower [Black Cloud]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -281,17 +281,6 @@
                 {
                     "school": "run",
                     "spell_level": 3,
-                    "spell_id": 87,
-                    "spell_name": "Ulcer [Inflict Disease]",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "run",
-                    "spell_level": 3,
                     "spell_id": 425,
                     "spell_name": "Yew [Twofold Missile]",
                     "range": null,
@@ -302,9 +291,20 @@
                 },
                 {
                     "school": "run",
+                    "spell_level": 3,
+                    "spell_id": 87,
+                    "spell_name": "Ulcer [Inflict Disease]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
                     "spell_level": 4,
-                    "spell_id": 129,
-                    "spell_name": "Tyr [Dweomered Weapon]",
+                    "spell_id": 209,
+                    "spell_name": "Hail [Ice Storm (Hail)]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -325,8 +325,8 @@
                 {
                     "school": "run",
                     "spell_level": 4,
-                    "spell_id": 209,
-                    "spell_name": "Hail [Ice Storm (Hail)]",
+                    "spell_id": 129,
+                    "spell_name": "Tyr [Dweomered Weapon]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -336,8 +336,8 @@
                 {
                     "school": "run",
                     "spell_level": 5,
-                    "spell_id": 423,
-                    "spell_name": "God [True Seeing]",
+                    "spell_id": 165,
+                    "spell_name": "Sun [Flame Strike]",
                     "range": null,
                     "duration": null,
                     "reversible": null,

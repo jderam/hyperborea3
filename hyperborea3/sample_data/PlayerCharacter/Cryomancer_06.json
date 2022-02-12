@@ -4,26 +4,26 @@
     "class_name": "Cryomancer",
     "attr": {
         "st": {
-            "score": 11,
+            "score": 9,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 11,
+            "score": 7,
             "atk_mod": 0,
-            "def_adj": 0,
+            "def_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "cn": {
-            "score": 11,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
+            "score": 6,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
         },
         "in": {
             "score": 14,
@@ -38,10 +38,10 @@
             "learn_spell": 75
         },
         "ch": {
-            "score": 15,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 40000,
@@ -49,20 +49,20 @@
     "xp_to_next": 80000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 15,
-        "deity_name": "Thaumagorga",
-        "primary_alignment": "Evil"
+        "deity_id": 1,
+        "deity_name": "Apollo",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 6,
-    "race": "Ixian",
+    "race_id": 8,
+    "race": "Kimmerian",
     "gender": "Female",
     "hd": "6d4",
-    "hp": 15,
+    "hp": 12,
     "fa": 2,
     "ca": 6,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 10,
     "mv": 40,
     "weapons_melee": [
         {
@@ -213,8 +213,8 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
+                    "spell_id": 245,
+                    "spell_name": "Magic Ice Dart",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -224,8 +224,8 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
+                    "spell_id": 353,
+                    "spell_name": "Shove",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -235,8 +235,8 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
+                    "spell_id": 348,
+                    "spell_name": "Shield",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -246,8 +246,8 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
+                    "spell_id": 211,
+                    "spell_name": "Identify",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -257,8 +257,8 @@
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 206,
-                    "spell_name": "Ice Axe",
+                    "spell_id": 185,
+                    "spell_name": "Glitterdust",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -268,8 +268,8 @@
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 347,
-                    "spell_name": "Shatter",
+                    "spell_id": 440,
+                    "spell_name": "Wall of Vapours",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -279,8 +279,8 @@
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 411,
-                    "spell_name": "Tiny Hut",
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -290,8 +290,8 @@
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 60,
-                    "spell_name": "Cold Protection",
+                    "spell_id": 338,
+                    "spell_name": "Secret Page",
                     "range": null,
                     "duration": null,
                     "reversible": null,

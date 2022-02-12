@@ -4,18 +4,18 @@
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 15,
-            "atk_mod": 1,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 9,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 14,
+            "score": 8,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "def_adj": -1,
+            "test": 2,
+            "feat": 2
         },
         "cn": {
             "score": 10,
@@ -26,10 +26,10 @@
             "feat": 4
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 9,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
             "score": 15,
@@ -38,10 +38,10 @@
             "learn_spell": 75
         },
         "ch": {
-            "score": 13,
-            "react_adj": 1,
-            "max_henchmen": 6,
-            "turn_adj": 0
+            "score": 5,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
         }
     },
     "xp": 80000,
@@ -49,20 +49,20 @@
     "xp_to_next": 160000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
         "deity_id": 10,
         "deity_name": "Krimmr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 7,
-    "race": "Kelt",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
     "hd": "7d6",
-    "hp": 27,
+    "hp": 19,
     "fa": 4,
     "ca": 7,
     "ta": 5,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 7,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +124,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -169,7 +169,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -180,10 +180,10 @@
         "undead_type_01": "D",
         "undead_type_02": "T",
         "undead_type_03": "T",
-        "undead_type_04": "10:12",
-        "undead_type_05": "7:12",
-        "undead_type_06": "4:12",
-        "undead_type_07": "1:12",
+        "undead_type_04": "9:12",
+        "undead_type_05": "6:12",
+        "undead_type_06": "3:12",
+        "undead_type_07": "NT",
         "undead_type_08": "NT",
         "undead_type_09": "NT",
         "undead_type_10": "NT",
@@ -192,7 +192,7 @@
         "undead_type_13": "NT"
     },
     "spells": {
-        "clr": {
+        "drd": {
             "spells_per_day": {
                 "lvl1": 3,
                 "lvl2": 2,
@@ -203,10 +203,10 @@
             },
             "spells_known": [
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 325,
-                    "spell_name": "Remove Fear",
+                    "spell_id": 134,
+                    "spell_name": "Entangle",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -214,10 +214,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 343,
-                    "spell_name": "Serpent Charm",
+                    "spell_id": 54,
+                    "spell_name": "Charm Person or Beast",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -225,10 +225,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 301,
-                    "spell_name": "Prayer",
+                    "spell_id": 443,
+                    "spell_name": "Water Breathing",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -236,10 +236,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 93,
-                    "spell_name": "Cure Serious Wounds",
+                    "spell_id": 372,
+                    "spell_name": "Speak with Plants",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -250,7 +250,7 @@
         },
         "nec": {
             "spells_per_day": {
-                "lvl1": 2,
+                "lvl1": 1,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 0,
@@ -261,8 +261,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
+                    "spell_id": 343,
+                    "spell_name": "Serpent Charm",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -272,8 +272,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -283,8 +283,8 @@
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 432,
-                    "spell_name": "Visualize Death",
+                    "spell_id": 356,
+                    "spell_name": "Skeletal Hands",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -294,8 +294,8 @@
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 312,
-                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "spell_id": 412,
+                    "spell_name": "Tongues",
                     "range": null,
                     "duration": null,
                     "reversible": null,

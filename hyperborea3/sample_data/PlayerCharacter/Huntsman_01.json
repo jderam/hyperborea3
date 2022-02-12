@@ -4,14 +4,14 @@
     "class_name": "Huntsman",
     "attr": {
         "st": {
-            "score": 15,
-            "atk_mod": 1,
+            "score": 13,
+            "atk_mod": 0,
             "dmg_adj": 1,
             "test": 3,
-            "feat": 24
+            "feat": 16
         },
         "dx": {
-            "score": 12,
+            "score": 10,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
@@ -26,21 +26,21 @@
             "feat": 2
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 10,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 10,
+            "score": 12,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 14,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -49,20 +49,20 @@
     "xp_to_next": 2250,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 3,
-        "deity_name": "Aurorus",
-        "primary_alignment": "Chaotic"
+        "deity_id": 19,
+        "deity_name": "Yig",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 5,
-    "race": "Hyperborean",
-    "gender": "Male",
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Female",
     "hd": "1d10",
-    "hp": 10,
+    "hp": 3,
     "fa": 1,
     "ca": 0,
     "ta": 0,
@@ -124,7 +124,7 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": 0,
             "dmg_adj": 1,
             "mastery": false
@@ -142,7 +142,7 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": 0,
             "dmg_adj": 1,
             "mastery": false

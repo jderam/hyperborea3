@@ -4,21 +4,21 @@
     "class_name": "Cataphract",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 13,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 12
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 14,
-            "atk_mod": 0,
+            "score": 15,
+            "atk_mod": 1,
             "def_adj": 1,
             "test": 3,
-            "feat": 8
+            "feat": 16
         },
         "cn": {
-            "score": 8,
+            "score": 7,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 65,
@@ -26,22 +26,22 @@
             "feat": 2
         },
         "in": {
-            "score": 12,
-            "lang": 0,
+            "score": 6,
+            "lang": -1,
             "bonus_spells": 0,
-            "learn_spell": 50
+            "learn_spell": 0
         },
         "ws": {
-            "score": 16,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 13,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 16,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 9,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 144000,
@@ -49,20 +49,20 @@
     "xp_to_next": 288000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 14,
-        "deity_name": "Rel",
-        "primary_alignment": "Neutral"
+        "deity_id": 5,
+        "deity_name": "Boetzu",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 15,
-    "race": "Esquimaux-Ixian",
-    "gender": "Non-Binary",
+    "race_id": 13,
+    "race": "Anglo-Saxon",
+    "gender": "Male",
     "hd": "8d10",
-    "hp": 51,
+    "hp": 44,
     "fa": 8,
     "ca": 0,
     "ta": 0,
@@ -132,7 +132,7 @@
             "atk_rate": "3/2",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -150,7 +150,7 @@
             "atk_rate": "2/1",
             "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 2,
             "mastery": true
         }
     ],
@@ -168,7 +168,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0

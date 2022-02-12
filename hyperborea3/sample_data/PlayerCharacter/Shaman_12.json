@@ -4,43 +4,43 @@
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 10,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 10,
+            "score": 11,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 10,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
+            "score": 3,
+            "hp_adj": -1,
+            "poison_adj": -2,
+            "trauma_surv": 45,
+            "test": 1,
+            "feat": 0
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 13,
+            "score": 12,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 7,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +49,20 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 9,
-        "deity_name": "Kthulhu",
+        "deity_id": 24,
+        "deity_name": "Yug",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 4,
-    "race": "Esquimaux",
+    "race_id": 8,
+    "race": "Kimmerian",
     "gender": "Male",
     "hd": "9d6+6",
-    "hp": 39,
+    "hp": 20,
     "fa": 7,
     "ca": 12,
     "ta": 10,
@@ -169,7 +169,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -192,9 +192,9 @@
         "undead_type_13": "NT"
     },
     "spells": {
-        "clr": {
+        "drd": {
             "spells_per_day": {
-                "lvl1": 3,
+                "lvl1": 2,
                 "lvl2": 2,
                 "lvl3": 2,
                 "lvl4": 1,
@@ -203,10 +203,10 @@
             },
             "spells_known": [
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 302,
-                    "spell_name": "Precipitate",
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -214,10 +214,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 31,
-                    "spell_name": "Bless",
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -225,10 +225,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 219,
-                    "spell_name": "Incantation",
+                    "spell_id": 160,
+                    "spell_name": "Fire Trap",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -236,10 +236,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 232,
-                    "spell_name": "Invisibility to Undead",
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -247,10 +247,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 87,
-                    "spell_name": "Cure Disease",
+                    "spell_id": 443,
+                    "spell_name": "Water Breathing",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -258,10 +258,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 324,
-                    "spell_name": "Remove Curse",
+                    "spell_id": 27,
+                    "spell_name": "Black Cloud",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -269,10 +269,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 128,
-                    "spell_name": "Divination",
+                    "spell_id": 202,
+                    "spell_name": "Hold Vegetation",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -280,10 +280,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 5,
-                    "spell_id": 296,
-                    "spell_name": "Plane Shift",
+                    "spell_id": 389,
+                    "spell_name": "Summon Animal II",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -291,7 +291,7 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "clr",
+                    "school": "drd",
                     "spell_level": 6,
                     "spell_id": 150,
                     "spell_name": "Feeblemind",
@@ -303,9 +303,9 @@
                 }
             ]
         },
-        "nec": {
+        "mag": {
             "spells_per_day": {
-                "lvl1": 3,
+                "lvl1": 2,
                 "lvl2": 2,
                 "lvl3": 2,
                 "lvl4": 1,
@@ -314,18 +314,7 @@
             },
             "spells_known": [
                 {
-                    "school": "nec",
-                    "spell_level": 1,
-                    "spell_id": 141,
-                    "spell_name": "Extermination",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 1,
                     "spell_id": 110,
                     "spell_name": "Detect Magic",
@@ -336,10 +325,21 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 371,
-                    "spell_name": "Speak with Dead",
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -347,10 +347,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 222,
-                    "spell_name": "Infernal Tongues",
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -358,10 +358,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 99,
-                    "spell_name": "Death Masque",
+                    "spell_id": 58,
+                    "spell_name": "Clairvoyance",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -369,10 +369,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 384,
-                    "spell_name": "Strangle",
+                    "spell_id": 44,
+                    "spell_name": "Cataleptic State",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -380,10 +380,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 4,
-                    "spell_id": 424,
-                    "spell_name": "Turn Sticks to Serpents",
+                    "spell_id": 158,
+                    "spell_name": "Fire Shield",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -391,10 +391,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 5,
-                    "spell_id": 199,
-                    "spell_name": "Hold Monster",
+                    "spell_id": 407,
+                    "spell_name": "Teleport",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -402,10 +402,10 @@
                     "spell_desc": null
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 6,
-                    "spell_id": 154,
-                    "spell_name": "Finger of Death",
+                    "spell_id": 74,
+                    "spell_name": "Control Water",
                     "range": null,
                     "duration": null,
                     "reversible": null,

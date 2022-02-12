@@ -4,11 +4,11 @@
     "class_name": "Paladin",
     "attr": {
         "st": {
-            "score": 12,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 12
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 24
         },
         "dx": {
             "score": 15,
@@ -18,12 +18,12 @@
             "feat": 16
         },
         "cn": {
-            "score": 6,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 7,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
         },
         "in": {
             "score": 10,
@@ -32,7 +32,7 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 10,
+            "score": 11,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
@@ -58,11 +58,11 @@
         "deity_name": "Apollo",
         "primary_alignment": "Lawful"
     },
-    "race_id": 4,
-    "race": "Esquimaux",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
     "hd": "8d10",
-    "hp": 39,
+    "hp": 41,
     "fa": 8,
     "ca": 2,
     "ta": 4,
@@ -130,9 +130,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 1,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -148,9 +148,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -166,9 +166,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "2/1",
-            "melee_atk": 1,
+            "melee_atk": 2,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 2,
             "mastery": true
         }
     ],
@@ -184,7 +184,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0

@@ -4,65 +4,65 @@
     "class_name": "Fell Paladin",
     "attr": {
         "st": {
-            "score": 18,
-            "atk_mod": 2,
-            "dmg_adj": 3,
-            "test": 5,
-            "feat": 40
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
         },
         "dx": {
-            "score": 14,
+            "score": 10,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
-            "score": 3,
+            "score": 6,
             "hp_adj": -1,
-            "poison_adj": -2,
-            "trauma_surv": 45,
+            "poison_adj": -1,
+            "trauma_surv": 55,
             "test": 1,
-            "feat": 0
+            "feat": 1
         },
         "in": {
-            "score": 4,
-            "lang": -1,
+            "score": 8,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 0
         },
         "ws": {
-            "score": 11,
+            "score": 13,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 18,
-            "react_adj": 3,
-            "max_henchmen": 12,
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
             "turn_adj": 1
         }
     },
     "xp": 0,
     "level": 1,
     "xp_to_next": 2750,
-    "xp_bonus": true,
+    "xp_bonus": false,
     "alignment": {
         "align_id": 3,
         "short_name": "LE",
         "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 5,
-        "deity_name": "Boetzu",
-        "primary_alignment": "Lawful"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
-    "race_id": 23,
-    "race": "Tlingit",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Male",
     "hd": "1d10",
-    "hp": 6,
+    "hp": 9,
     "fa": 1,
     "ca": 0,
     "ta": 0,
@@ -107,8 +107,14 @@
         "weight": 25,
         "description": null
     },
-    "shield": null,
-    "ac": 5,
+    "shield": {
+        "shield_id": 2,
+        "shield_type": "Large Shield",
+        "def_mod": 2,
+        "cost": 10,
+        "weight": 10
+    },
+    "ac": 4,
     "mv": 30,
     "weapons_melee": [
         {
@@ -124,9 +130,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 2,
+            "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 3,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +148,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 2,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 3,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -160,9 +166,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 3,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 4,
+            "dmg_adj": 1,
             "mastery": true
         }
     ],
@@ -178,7 +184,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0

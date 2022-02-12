@@ -18,24 +18,24 @@
             "feat": 4
         },
         "cn": {
-            "score": 8,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 65,
-            "test": 2,
-            "feat": 2
+            "score": 16,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 15,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 10,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
             "score": 12,
@@ -58,9 +58,9 @@
         "deity_name": "Yug",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Male",
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Female",
     "hd": "2d4",
     "hp": 7,
     "fa": 0,
@@ -173,7 +173,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -183,7 +183,7 @@
     "spells": {
         "wch": {
             "spells_per_day": {
-                "lvl1": 4,
+                "lvl1": 3,
                 "lvl2": 0,
                 "lvl3": 0,
                 "lvl4": 0,
@@ -194,8 +194,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 321,
-                    "spell_name": "Reflexion",
+                    "spell_id": 431,
+                    "spell_name": "Ventriloquism",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -205,8 +205,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -216,8 +216,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -227,8 +227,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 257,
-                    "spell_name": "Mending",
+                    "spell_id": 350,
+                    "spell_name": "Shocking Grasp",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -257,7 +257,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Owl, 2 hp]",
+            "brief_desc": "magical animal companion. [Hare, 2 hp]",
             "ability_desc": null
         },
         {

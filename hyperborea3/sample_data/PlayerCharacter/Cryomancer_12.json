@@ -4,21 +4,21 @@
     "class_name": "Cryomancer",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 13,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 9,
+            "score": 8,
             "atk_mod": 0,
-            "def_adj": 0,
+            "def_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "cn": {
-            "score": 11,
+            "score": 10,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,19 +26,19 @@
             "feat": 4
         },
         "in": {
-            "score": 16,
+            "score": 14,
             "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 15,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 10,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 10,
+            "score": 9,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +49,20 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 13,
-        "deity_name": "Raven",
-        "primary_alignment": "Neutral"
+        "deity_id": 1,
+        "deity_name": "Apollo",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 10,
+    "race": "Pict",
     "gender": "Male",
     "hd": "9d4+3",
-    "hp": 26,
+    "hp": 24,
     "fa": 5,
     "ca": 12,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 10,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -162,7 +162,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -192,7 +192,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -203,7 +203,7 @@
         "cry": {
             "spells_per_day": {
                 "lvl1": 6,
-                "lvl2": 6,
+                "lvl2": 5,
                 "lvl3": 4,
                 "lvl4": 4,
                 "lvl5": 3,
@@ -213,8 +213,8 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
+                    "spell_id": 302,
+                    "spell_name": "Precipitate",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -246,8 +246,8 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
+                    "spell_id": 238,
+                    "spell_name": "Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -257,8 +257,8 @@
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 276,
-                    "spell_name": "Obscure",
+                    "spell_id": 78,
+                    "spell_name": "Cool Metal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -279,8 +279,8 @@
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 126,
-                    "spell_name": "Dissipate Gas",
+                    "spell_id": 443,
+                    "spell_name": "Water Breathing",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -290,8 +290,8 @@
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 177,
-                    "spell_name": "Freeze Surface",
+                    "spell_id": 226,
+                    "spell_name": "Inner Eye",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -301,8 +301,8 @@
                 {
                     "school": "cry",
                     "spell_level": 4,
-                    "spell_id": 362,
-                    "spell_name": "Solid Fog",
+                    "spell_id": 352,
+                    "spell_name": "Shout",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -312,8 +312,19 @@
                 {
                     "school": "cry",
                     "spell_level": 4,
-                    "spell_id": 208,
-                    "spell_name": "Ice Javelin",
+                    "spell_id": 158,
+                    "spell_name": "Fire Shield",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 5,
+                    "spell_id": 199,
+                    "spell_name": "Hold Monster",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -333,9 +344,9 @@
                 },
                 {
                     "school": "cry",
-                    "spell_level": 5,
-                    "spell_id": 282,
-                    "spell_name": "Passwall",
+                    "spell_level": 6,
+                    "spell_id": 182,
+                    "spell_name": "Geas",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -345,19 +356,8 @@
                 {
                     "school": "cry",
                     "spell_level": 6,
-                    "spell_id": 235,
-                    "spell_name": "Legend Lore",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "cry",
-                    "spell_level": 6,
-                    "spell_id": 55,
-                    "spell_name": "Chill of Death",
+                    "spell_id": 387,
+                    "spell_name": "Summon Aerial Minion",
                     "range": null,
                     "duration": null,
                     "reversible": null,

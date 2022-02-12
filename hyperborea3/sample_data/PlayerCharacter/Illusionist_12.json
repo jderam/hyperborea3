@@ -4,11 +4,11 @@
     "class_name": "Illusionist",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 12,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
             "score": 13,
@@ -18,30 +18,30 @@
             "feat": 16
         },
         "cn": {
-            "score": 17,
-            "hp_adj": 2,
+            "score": 15,
+            "hp_adj": 1,
             "poison_adj": 1,
-            "trauma_surv": 90,
-            "test": 4,
-            "feat": 24
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
         },
         "in": {
-            "score": 17,
-            "lang": 2,
-            "bonus_spells": 3,
-            "learn_spell": 85
-        },
-        "ws": {
-            "score": 11,
-            "will_adj": 0,
+            "score": 12,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
+        "ws": {
+            "score": 8,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
         }
     },
     "xp": 800000,
@@ -49,20 +49,20 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
-        "primary_alignment": "Chaotic"
+        "deity_id": 5,
+        "deity_name": "Boetzu",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
     "hd": "9d4+3",
-    "hp": 50,
+    "hp": 45,
     "fa": 5,
     "ca": 12,
     "ta": 0,
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -197,9 +197,9 @@
     "spells": {
         "ill": {
             "spells_per_day": {
-                "lvl1": 6,
-                "lvl2": 6,
-                "lvl3": 5,
+                "lvl1": 5,
+                "lvl2": 5,
+                "lvl3": 4,
                 "lvl4": 4,
                 "lvl5": 3,
                 "lvl6": 2
@@ -208,8 +208,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 287,
-                    "spell_name": "Phantasm",
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -219,8 +219,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 108,
-                    "spell_name": "Detect Illusion",
+                    "spell_id": 409,
+                    "spell_name": "Terrify",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -230,8 +230,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 440,
-                    "spell_name": "Wall of Vapours",
+                    "spell_id": 204,
+                    "spell_name": "Hypnotism",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -241,8 +241,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 62,
-                    "spell_name": "Colour Spray",
+                    "spell_id": 303,
+                    "spell_name": "Prismatic Orb",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -252,8 +252,8 @@
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 35,
-                    "spell_name": "Blur",
+                    "spell_id": 173,
+                    "spell_name": "Fool\u2019s Gold",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -263,11 +263,22 @@
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 11,
-                    "spell_name": "Alter Self",
-                    "range": "0",
-                    "duration": "1d6 turns",
-                    "reversible": 0,
+                    "spell_id": 46,
+                    "spell_name": "Cause Deafness",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 3,
+                    "spell_id": 345,
+                    "spell_name": "Shadow Sending",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
                     "pp": null,
                     "spell_desc": null
                 },
@@ -284,9 +295,9 @@
                 },
                 {
                     "school": "ill",
-                    "spell_level": 3,
-                    "spell_id": 278,
-                    "spell_name": "Paralyze",
+                    "spell_level": 4,
+                    "spell_id": 318,
+                    "spell_name": "Rainbow Pattern",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -296,19 +307,8 @@
                 {
                     "school": "ill",
                     "spell_level": 4,
-                    "spell_id": 33,
-                    "spell_name": "Blinding Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "ill",
-                    "spell_level": 4,
-                    "spell_id": 131,
-                    "spell_name": "Emotion",
+                    "spell_id": 261,
+                    "spell_name": "Minor Creation",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -318,8 +318,8 @@
                 {
                     "school": "ill",
                     "spell_level": 5,
-                    "spell_id": 251,
-                    "spell_name": "Major Creation",
+                    "spell_id": 223,
+                    "spell_name": "Inflict Madness",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -329,19 +329,19 @@
                 {
                     "school": "ill",
                     "spell_level": 5,
-                    "spell_id": 3,
-                    "spell_name": "Advanced Hypnotism",
-                    "range": "30 feet",
-                    "duration": "special",
-                    "reversible": 0,
+                    "spell_id": 265,
+                    "spell_name": "Mirror, Mirror",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
                     "pp": null,
                     "spell_desc": null
                 },
                 {
                     "school": "ill",
                     "spell_level": 6,
-                    "spell_id": 286,
-                    "spell_name": "Permanent Phantasm",
+                    "spell_id": 262,
+                    "spell_name": "Mirage Arcana",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -351,8 +351,8 @@
                 {
                     "school": "ill",
                     "spell_level": 6,
-                    "spell_id": 267,
-                    "spell_name": "Mislead",
+                    "spell_id": 286,
+                    "spell_name": "Permanent Phantasm",
                     "range": null,
                     "duration": null,
                     "reversible": null,

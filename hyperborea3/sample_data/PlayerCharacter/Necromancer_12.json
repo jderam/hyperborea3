@@ -4,18 +4,18 @@
     "class_name": "Necromancer",
     "attr": {
         "st": {
-            "score": 12,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 17,
+            "atk_mod": 1,
+            "dmg_adj": 2,
+            "test": 4,
+            "feat": 24
         },
         "dx": {
-            "score": 8,
+            "score": 12,
             "atk_mod": 0,
-            "def_adj": -1,
+            "def_adj": 0,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "cn": {
             "score": 11,
@@ -26,22 +26,22 @@
             "feat": 4
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
-        },
-        "ws": {
-            "score": 12,
-            "will_adj": 0,
+            "score": 9,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
+        "ws": {
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
         "ch": {
-            "score": 6,
-            "react_adj": -2,
-            "max_henchmen": 2,
-            "turn_adj": -1
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
+            "turn_adj": 0
         }
     },
     "xp": 800000,
@@ -49,20 +49,20 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 7,
-        "deity_name": "Helios",
-        "primary_alignment": "Neutral"
+        "deity_id": 5,
+        "deity_name": "Boetzu",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Male",
     "hd": "9d4+3",
-    "hp": 24,
+    "hp": 34,
     "fa": 5,
     "ca": 12,
     "ta": 10,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 10,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +124,9 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 2,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 2,
             "mastery": false
         }
     ],
@@ -189,7 +189,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -205,16 +205,16 @@
         "undead_type_06": "D",
         "undead_type_07": "T",
         "undead_type_08": "T",
-        "undead_type_09": "9:12",
-        "undead_type_10": "6:12",
-        "undead_type_11": "3:12",
-        "undead_type_12": "NT",
+        "undead_type_09": "10:12",
+        "undead_type_10": "7:12",
+        "undead_type_11": "4:12",
+        "undead_type_12": "1:12",
         "undead_type_13": "NT"
     },
     "spells": {
         "nec": {
             "spells_per_day": {
-                "lvl1": 6,
+                "lvl1": 5,
                 "lvl2": 5,
                 "lvl3": 4,
                 "lvl4": 4,
@@ -225,8 +225,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -236,8 +236,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
+                    "spell_id": 453,
+                    "spell_name": "Write Spell",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -247,8 +247,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 343,
-                    "spell_name": "Serpent Charm",
+                    "spell_id": 28,
+                    "spell_name": "Black Hand",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -258,8 +258,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 244,
-                    "spell_name": "Locate the Dead",
+                    "spell_id": 111,
+                    "spell_name": "Detect Malady",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -269,8 +269,8 @@
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 222,
-                    "spell_name": "Infernal Tongues",
+                    "spell_id": 176,
+                    "spell_name": "Forest of Bones",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -280,8 +280,8 @@
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 336,
-                    "spell_name": "Scythe of the Reaper",
+                    "spell_id": 284,
+                    "spell_name": "Perceive Heartbeat",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -291,19 +291,19 @@
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 99,
-                    "spell_name": "Death Masque",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
+                    "spell_id": 5,
+                    "spell_name": "Agonizing Touch",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": 0,
                     "pp": null,
                     "spell_desc": null
                 },
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 405,
-                    "spell_name": "Summon Toad Swarm",
+                    "spell_id": 384,
+                    "spell_name": "Strangle",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -324,8 +324,8 @@
                 {
                     "school": "nec",
                     "spell_level": 4,
-                    "spell_id": 223,
-                    "spell_name": "Inflict Madness",
+                    "spell_id": 37,
+                    "spell_name": "Brain Death",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -335,8 +335,8 @@
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 344,
-                    "spell_name": "Shadow Conjuration",
+                    "spell_id": 98,
+                    "spell_name": "Death",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -346,8 +346,8 @@
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 59,
-                    "spell_name": "Cloudkill",
+                    "spell_id": 295,
+                    "spell_name": "Plague Rats",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -357,8 +357,8 @@
                 {
                     "school": "nec",
                     "spell_level": 6,
-                    "spell_id": 17,
-                    "spell_name": "Animate Dead II",
+                    "spell_id": 382,
+                    "spell_name": "Stone to Flesh",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -368,8 +368,8 @@
                 {
                     "school": "nec",
                     "spell_level": 6,
-                    "spell_id": 49,
-                    "spell_name": "Chain Lightning",
+                    "spell_id": 319,
+                    "spell_name": "Raise Dead",
                     "range": null,
                     "duration": null,
                     "reversible": null,

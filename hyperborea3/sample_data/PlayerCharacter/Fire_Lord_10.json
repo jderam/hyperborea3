@@ -4,26 +4,26 @@
     "class_name": "Fire Lord",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 14,
             "atk_mod": 0,
             "dmg_adj": 1,
             "test": 3,
             "feat": 16
         },
         "dx": {
-            "score": 13,
-            "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "score": 6,
+            "atk_mod": -1,
+            "def_adj": -1,
+            "test": 1,
+            "feat": 1
         },
         "cn": {
-            "score": 8,
+            "score": 10,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 65,
+            "trauma_surv": 75,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "in": {
             "score": 12,
@@ -32,16 +32,16 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 18,
-            "will_adj": 2,
-            "bonus_spells": 4,
-            "learn_spell": 95
+            "score": 12,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
-            "turn_adj": 0
+            "score": 5,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
         }
     },
     "xp": 576000,
@@ -58,9 +58,9 @@
         "deity_name": "Boreas",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
-    "gender": "Female",
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
+    "gender": "Male",
     "hd": "9d8+2",
     "hp": 34,
     "fa": 10,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 7,
     "mv": 30,
     "weapons_melee": [
         {
@@ -123,18 +123,18 @@
             "cost": 10,
             "weight": 5,
             "qty": 1,
-            "atk_rate": "3/2",
-            "melee_atk": 0,
+            "atk_rate": "2/1",
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 1,
-            "mastery": false
+            "dmg_adj": 2,
+            "mastery": true
         }
     ],
     "weapons_missile": [
         {
             "weapon_id": 214,
             "weapon_type": "Light Crossbow",
-            "rof": "3/2",
+            "rof": "1/1",
             "range_sml": "60/120/180",
             "damage": "1d6+1",
             "hurled": false,
@@ -143,9 +143,9 @@
             "weight": 5,
             "qty": 1,
             "ammunition": "light bolts \u00d720",
-            "missile_atk": 1,
-            "dmg_adj": 1,
-            "mastery": true
+            "missile_atk": -1,
+            "dmg_adj": 0,
+            "mastery": false
         }
     ],
     "equipment": [
@@ -163,7 +163,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -184,8 +184,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 366,
-                    "spell_name": "Sorcerous Armour",
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -195,8 +195,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 453,
-                    "spell_name": "Write Spell",
+                    "spell_id": 168,
+                    "spell_name": "Flash",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -206,8 +206,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 166,
-                    "spell_name": "Flaming Missile",
+                    "spell_id": 41,
+                    "spell_name": "Burning Hands",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -217,8 +217,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 361,
-                    "spell_name": "Smoke Cloud",
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -228,8 +228,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 320,
-                    "spell_name": "Ray of Enfeeblement",
+                    "spell_id": 308,
+                    "spell_name": "Produce Flame",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -250,19 +250,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 161,
-                    "spell_name": "Fire Web",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 3,
-                    "spell_id": 124,
-                    "spell_name": "Dispel Magic",
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -283,8 +272,19 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 220,
-                    "spell_name": "Incinerate Normal Missiles",
+                    "spell_id": 194,
+                    "spell_name": "Haste",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 3,
+                    "spell_id": 163,
+                    "spell_name": "Flame Arrow",
                     "range": null,
                     "duration": null,
                     "reversible": null,

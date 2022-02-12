@@ -4,7 +4,7 @@
     "class_name": "Berserker",
     "attr": {
         "st": {
-            "score": 16,
+            "score": 15,
             "atk_mod": 1,
             "dmg_adj": 1,
             "test": 3,
@@ -18,15 +18,15 @@
             "feat": 4
         },
         "cn": {
-            "score": 17,
-            "hp_adj": 2,
+            "score": 15,
+            "hp_adj": 1,
             "poison_adj": 1,
-            "trauma_surv": 90,
-            "test": 4,
-            "feat": 32
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 24
         },
         "in": {
-            "score": 12,
+            "score": 9,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
@@ -38,31 +38,31 @@
             "learn_spell": 50
         },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
     "xp": 640000,
     "level": 11,
     "xp_to_next": 800000,
-    "xp_bonus": true,
+    "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 21,
-        "deity_name": "Ymir",
+        "deity_id": 10,
+        "deity_name": "Krimmr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Male",
     "hd": "9d12+8",
-    "hp": 80,
+    "hp": 83,
     "fa": 11,
     "ca": 0,
     "ta": 0,
@@ -123,11 +123,11 @@
             "cost": 10,
             "weight": 5,
             "qty": 1,
-            "atk_rate": "3/2",
-            "melee_atk": 1,
+            "atk_rate": "2/1",
+            "melee_atk": 2,
             "hurled_atk": null,
-            "dmg_adj": 1,
-            "mastery": false
+            "dmg_adj": 2,
+            "mastery": true
         },
         {
             "weapon_id": 101,
@@ -159,11 +159,11 @@
             "cost": 20,
             "weight": 4,
             "qty": 1,
-            "atk_rate": "2/1",
-            "melee_atk": 2,
+            "atk_rate": "3/2",
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 2,
-            "mastery": true
+            "dmg_adj": 1,
+            "mastery": false
         }
     ],
     "weapons_missile": [],
@@ -178,7 +178,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0

@@ -4,29 +4,29 @@
     "class_name": "Magician",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": -1,
+            "test": 2,
+            "feat": 2
         },
         "dx": {
-            "score": 11,
+            "score": 7,
             "atk_mod": 0,
-            "def_adj": 0,
+            "def_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "cn": {
-            "score": 10,
+            "score": 7,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 75,
+            "trauma_surv": 65,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "in": {
-            "score": 15,
+            "score": 16,
             "lang": 1,
             "bonus_spells": 2,
             "learn_spell": 75
@@ -38,7 +38,7 @@
             "learn_spell": 65
         },
         "ch": {
-            "score": 10,
+            "score": 9,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -47,22 +47,22 @@
     "xp": 10000,
     "level": 4,
     "xp_to_next": 20000,
-    "xp_bonus": false,
+    "xp_bonus": true,
     "alignment": {
         "align_id": 1,
         "short_name": "CE",
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 15,
-        "deity_name": "Thaumagorga",
-        "primary_alignment": "Evil"
+        "deity_id": 8,
+        "deity_name": "Kraken",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 4,
-    "race": "Esquimaux",
-    "gender": "Male",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Female",
     "hd": "4d4",
-    "hp": 13,
+    "hp": 10,
     "fa": 1,
     "ca": 4,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 10,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -186,7 +186,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -207,19 +207,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 1,
-                    "spell_id": 270,
-                    "spell_name": "Mount",
+                    "spell_id": 358,
+                    "spell_name": "Sleep",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -250,9 +239,9 @@
                 },
                 {
                     "school": "mag",
-                    "spell_level": 2,
-                    "spell_id": 260,
-                    "spell_name": "Mind Blank",
+                    "spell_level": 1,
+                    "spell_id": 256,
+                    "spell_name": "Melt Ice",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -262,8 +251,19 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 248,
-                    "spell_name": "Magic Mouth",
+                    "spell_id": 347,
+                    "spell_name": "Shatter",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 2,
+                    "spell_id": 107,
+                    "spell_name": "Detect Evil",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -285,7 +285,7 @@
             "class_id": 2,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Squirrel, 3 hp]",
+            "brief_desc": "magical animal companion. [Falcon/Hawk, 3 hp]",
             "ability_desc": null
         },
         {

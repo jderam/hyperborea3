@@ -4,18 +4,18 @@
     "class_name": "Illusionist",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": -1,
+            "test": 2,
+            "feat": 2
         },
         "dx": {
-            "score": 18,
-            "atk_mod": 2,
-            "def_adj": 3,
-            "test": 5,
-            "feat": 40
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
         },
         "cn": {
             "score": 12,
@@ -26,21 +26,21 @@
             "feat": 4
         },
         "in": {
-            "score": 13,
+            "score": 14,
             "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ws": {
-            "score": 8,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 0
+            "score": 17,
+            "will_adj": 1,
+            "bonus_spells": 3,
+            "learn_spell": 85
         },
         "ch": {
-            "score": 17,
-            "react_adj": 2,
-            "max_henchmen": 10,
+            "score": 16,
+            "react_adj": 1,
+            "max_henchmen": 8,
             "turn_adj": 1
         }
     },
@@ -49,20 +49,20 @@
     "xp_to_next": 2500,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 10,
-        "deity_name": "Krimmr",
-        "primary_alignment": "Chaotic"
+        "deity_id": 1,
+        "deity_name": "Apollo",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Male",
+    "race_id": 12,
+    "race": "Viking",
+    "gender": "Female",
     "hd": "1d4",
-    "hp": 4,
+    "hp": 2,
     "fa": 0,
     "ca": 1,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,8 +125,8 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 2,
-            "dmg_adj": 1,
+            "hurled_atk": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -161,7 +161,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 2,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -208,8 +208,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 287,
-                    "spell_name": "Phantasm",
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -219,8 +219,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 453,
-                    "spell_name": "Write Spell",
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -230,8 +230,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 431,
-                    "spell_name": "Ventriloquism",
+                    "spell_id": 204,
+                    "spell_name": "Hypnotism",
                     "range": null,
                     "duration": null,
                     "reversible": null,

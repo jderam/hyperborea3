@@ -11,36 +11,36 @@
             "feat": 12
         },
         "dx": {
-            "score": 9,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 5,
+            "atk_mod": -1,
+            "def_adj": -1,
+            "test": 1,
+            "feat": 1
         },
         "cn": {
-            "score": 13,
-            "hp_adj": 1,
-            "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "score": 6,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
         },
         "in": {
-            "score": 13,
+            "score": 14,
             "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ws": {
-            "score": 12,
+            "score": 13,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 7,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 23,
-        "deity_name": "Ythaqqa",
+        "deity_id": 13,
+        "deity_name": "Raven",
         "primary_alignment": "Neutral"
     },
-    "race_id": 10,
-    "race": "Pict",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
     "hd": "9d8+4",
-    "hp": 55,
+    "hp": 39,
     "fa": 11,
     "ca": 11,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 7,
     "mv": 30,
     "weapons_melee": [
         {
@@ -143,7 +143,7 @@
             "weight": 5,
             "qty": 1,
             "ammunition": "light bolts \u00d720",
-            "missile_atk": 0,
+            "missile_atk": -1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -163,7 +163,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -184,8 +184,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -195,19 +195,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -227,9 +216,9 @@
                 },
                 {
                     "school": "pyr",
-                    "spell_level": 2,
-                    "spell_id": 167,
-                    "spell_name": "Flaming Sphere",
+                    "spell_level": 1,
+                    "spell_id": 41,
+                    "spell_name": "Burning Hands",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -239,8 +228,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 161,
-                    "spell_name": "Fire Web",
+                    "spell_id": 185,
+                    "spell_name": "Glitterdust",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -261,8 +250,19 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 315,
-                    "spell_name": "Pyrotechnics",
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 2,
+                    "spell_id": 196,
+                    "spell_name": "Heat Metal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -272,8 +272,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 215,
-                    "spell_name": "Illusory Wall of Fire",
+                    "spell_id": 162,
+                    "spell_name": "Fireball",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -283,8 +283,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 124,
-                    "spell_name": "Dispel Magic",
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -294,8 +294,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 194,
-                    "spell_name": "Haste",
+                    "spell_id": 33,
+                    "spell_name": "Blinding Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,

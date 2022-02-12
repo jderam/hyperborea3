@@ -4,26 +4,26 @@
     "class_name": "Pyromancer",
     "attr": {
         "st": {
-            "score": 4,
-            "atk_mod": -1,
-            "dmg_adj": -1,
-            "test": 1,
-            "feat": 1
+            "score": 9,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 9,
+            "score": 10,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 15,
-            "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
-            "test": 3,
-            "feat": 16
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
             "score": 12,
@@ -32,15 +32,15 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 14,
+            "score": 9,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 7,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 9,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 16,
-        "deity_name": "Tlakk-Nakka",
+        "deity_id": 12,
+        "deity_name": "Mordezzan",
         "primary_alignment": "Neutral"
     },
     "race_id": 7,
     "race": "Kelt",
-    "gender": "Male",
+    "gender": "Female",
     "hd": "8d4",
-    "hp": 26,
+    "hp": 19,
     "fa": 3,
     "ca": 8,
     "ta": 0,
@@ -124,9 +124,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -162,7 +162,7 @@
             "qty": 4,
             "ammunition": null,
             "missile_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -187,7 +187,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -219,8 +219,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -230,8 +230,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -252,8 +252,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 308,
-                    "spell_name": "Produce Flame",
+                    "spell_id": 185,
+                    "spell_name": "Glitterdust",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -263,8 +263,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 236,
-                    "spell_name": "Levitate",
+                    "spell_id": 230,
+                    "spell_name": "Invisibility",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -285,8 +285,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 162,
-                    "spell_name": "Fireball",
+                    "spell_id": 163,
+                    "spell_name": "Flame Arrow",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -296,8 +296,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 51,
-                    "spell_name": "Change Temperature",
+                    "spell_id": 160,
+                    "spell_name": "Fire Trap",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -307,8 +307,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 363,
-                    "spell_name": "Sorcerer Eye",
+                    "spell_id": 158,
+                    "spell_name": "Fire Shield",
                     "range": null,
                     "duration": null,
                     "reversible": null,

@@ -4,41 +4,41 @@
     "class_name": "Fell Paladin",
     "attr": {
         "st": {
-            "score": 15,
-            "atk_mod": 1,
+            "score": 14,
+            "atk_mod": 0,
             "dmg_adj": 1,
             "test": 3,
-            "feat": 24
+            "feat": 16
         },
         "dx": {
-            "score": 17,
-            "atk_mod": 1,
-            "def_adj": 2,
-            "test": 4,
-            "feat": 24
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
-            "score": 6,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 8,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
         },
         "in": {
-            "score": 6,
-            "lang": -1,
+            "score": 8,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 0
         },
         "ws": {
-            "score": 13,
+            "score": 11,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 15,
+            "score": 16,
             "react_adj": 1,
             "max_henchmen": 8,
             "turn_adj": 1
@@ -54,15 +54,15 @@
         "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 5,
-        "deity_name": "Boetzu",
-        "primary_alignment": "Lawful"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
-    "race_id": 6,
-    "race": "Ixian",
-    "gender": "Male",
+    "race_id": 12,
+    "race": "Viking",
+    "gender": "Female",
     "hd": "3d10",
-    "hp": 14,
+    "hp": 17,
     "fa": 3,
     "ca": 0,
     "ta": 0,
@@ -107,7 +107,13 @@
         "weight": 25,
         "description": null
     },
-    "shield": null,
+    "shield": {
+        "shield_id": 2,
+        "shield_type": "Large Shield",
+        "def_mod": 2,
+        "cost": 10,
+        "weight": 10
+    },
     "ac": 4,
     "mv": 30,
     "weapons_melee": [
@@ -124,8 +130,8 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
-            "hurled_atk": 1,
+            "melee_atk": 0,
+            "hurled_atk": 0,
             "dmg_adj": 1,
             "mastery": false
         },
@@ -142,7 +148,7 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
             "dmg_adj": 1,
             "mastery": false
@@ -160,7 +166,7 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "3/2",
-            "melee_atk": 2,
+            "melee_atk": 1,
             "hurled_atk": null,
             "dmg_adj": 2,
             "mastery": true
@@ -178,7 +184,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0

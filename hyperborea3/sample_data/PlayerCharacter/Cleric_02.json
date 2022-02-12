@@ -4,21 +4,21 @@
     "class_name": "Cleric",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 9,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "dx": {
-            "score": 12,
-            "atk_mod": 0,
-            "def_adj": 0,
+            "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "dx": {
+            "score": 14,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
         "cn": {
-            "score": 12,
+            "score": 10,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,19 +26,19 @@
             "feat": 4
         },
         "in": {
-            "score": 9,
+            "score": 10,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 14,
+            "score": 11,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 11,
+            "score": 12,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +49,20 @@
     "xp_to_next": 4000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
         "deity_id": 1,
         "deity_name": "Apollo",
         "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Male",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Female",
     "hd": "2d8",
-    "hp": 12,
+    "hp": 13,
     "fa": 1,
     "ca": 2,
     "ta": 2,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 5,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -190,7 +190,7 @@
     "spells": {
         "clr": {
             "spells_per_day": {
-                "lvl1": 3,
+                "lvl1": 2,
                 "lvl2": 0,
                 "lvl3": 0,
                 "lvl4": 0,
@@ -201,30 +201,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 283,
-                    "spell_name": "Perceive Disguise",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 81,
-                    "spell_name": "Create Water",
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -245,8 +223,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
+                    "spell_id": 63,
+                    "spell_name": "Command",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -256,8 +234,30 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 48,
-                    "spell_name": "Ceremony of Consecration",
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
                     "range": null,
                     "duration": null,
                     "reversible": null,

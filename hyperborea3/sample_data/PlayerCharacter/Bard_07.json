@@ -4,26 +4,26 @@
     "class_name": "Bard",
     "attr": {
         "st": {
-            "score": 11,
+            "score": 9,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 14,
+            "score": 9,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
         },
         "cn": {
-            "score": 9,
+            "score": 8,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 75,
+            "trauma_surv": 65,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "in": {
             "score": 15,
@@ -32,13 +32,13 @@
             "learn_spell": 75
         },
         "ws": {
-            "score": 9,
+            "score": 11,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 15,
+            "score": 16,
             "react_adj": 1,
             "max_henchmen": 8,
             "turn_adj": 1
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 21,
-        "deity_name": "Ymir",
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 2,
-    "race": "Amazon",
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
     "gender": "Male",
     "hd": "7d8",
-    "hp": 38,
+    "hp": 42,
     "fa": 5,
     "ca": 7,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -185,7 +185,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -231,8 +231,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 314,
-                    "spell_name": "Purify Food and Drink",
+                    "spell_id": 243,
+                    "spell_name": "Locate Ordinary Animal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -242,8 +242,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 160,
-                    "spell_name": "Fire Trap",
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -264,8 +264,8 @@
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 298,
-                    "spell_name": "Plant Portal",
+                    "spell_id": 93,
+                    "spell_name": "Cure Serious Wounds",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -287,8 +287,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -298,8 +298,8 @@
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
+                    "spell_id": 50,
+                    "spell_name": "Chameleon",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -309,8 +309,8 @@
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 374,
-                    "spell_name": "Spectral Phantasm",
+                    "spell_id": 231,
+                    "spell_name": "Invisibility Hemisphere",
                     "range": null,
                     "duration": null,
                     "reversible": null,

@@ -4,44 +4,44 @@
     "class_name": "Magician",
     "attr": {
         "st": {
-            "score": 14,
+            "score": 10,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 12,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 16,
-            "hp_adj": 1,
+            "score": 17,
+            "hp_adj": 2,
             "poison_adj": 1,
-            "trauma_surv": 85,
-            "test": 3,
-            "feat": 16
+            "trauma_surv": 90,
+            "test": 4,
+            "feat": 24
         },
         "in": {
-            "score": 12,
+            "score": 11,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 11,
+            "score": 12,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 12,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 4,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
         }
     },
     "xp": 320000,
@@ -49,20 +49,20 @@
     "xp_to_next": 480000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 9,
-        "deity_name": "Kthulhu",
+        "deity_id": 17,
+        "deity_name": "Ullr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 4,
-    "race": "Esquimaux",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
     "hd": "9d4",
-    "hp": 32,
+    "hp": 43,
     "fa": 4,
     "ca": 9,
     "ta": 0,
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -186,7 +186,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -207,8 +207,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 97,
-                    "spell_name": "Dash",
+                    "spell_id": 169,
+                    "spell_name": "Floating Disc",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -218,8 +218,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
+                    "spell_id": 258,
+                    "spell_name": "Message",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -229,8 +229,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 41,
-                    "spell_name": "Burning Hands",
+                    "spell_id": 431,
+                    "spell_name": "Ventriloquism",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -240,8 +240,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
+                    "spell_id": 133,
+                    "spell_name": "Enlargement",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -251,8 +251,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 385,
-                    "spell_name": "Strengthen",
+                    "spell_id": 78,
+                    "spell_name": "Cool Metal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -262,8 +262,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 445,
-                    "spell_name": "Web",
+                    "spell_id": 248,
+                    "spell_name": "Magic Mouth",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -273,8 +273,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 312,
-                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -284,8 +284,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 200,
-                    "spell_name": "Hold Person",
+                    "spell_id": 331,
+                    "spell_name": "Rope Trick",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -295,8 +295,8 @@
                 {
                     "school": "mag",
                     "spell_level": 4,
-                    "spell_id": 297,
-                    "spell_name": "Plant Growth",
+                    "spell_id": 187,
+                    "spell_name": "Globe of Invulnerability, Lesser",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -306,8 +306,8 @@
                 {
                     "school": "mag",
                     "spell_level": 4,
-                    "spell_id": 129,
-                    "spell_name": "Dweomered Weapon",
+                    "spell_id": 383,
+                    "spell_name": "Stoneskin",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -317,8 +317,8 @@
                 {
                     "school": "mag",
                     "spell_level": 5,
-                    "spell_id": 199,
-                    "spell_name": "Hold Monster",
+                    "spell_id": 407,
+                    "spell_name": "Teleport",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -340,7 +340,7 @@
             "class_id": 2,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Gull, 2 hp]",
+            "brief_desc": "magical animal companion. [Owl, 4 hp]",
             "ability_desc": null
         },
         {

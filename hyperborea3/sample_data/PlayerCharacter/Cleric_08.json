@@ -4,11 +4,11 @@
     "class_name": "Cleric",
     "attr": {
         "st": {
-            "score": 16,
-            "atk_mod": 1,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 11,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
             "score": 7,
@@ -18,24 +18,24 @@
             "feat": 2
         },
         "cn": {
-            "score": 5,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 14,
+            "hp_adj": 1,
+            "poison_adj": 0,
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
         },
         "in": {
-            "score": 5,
-            "lang": -1,
-            "bonus_spells": 0,
-            "learn_spell": 0
+            "score": 16,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 17,
+            "score": 16,
             "will_adj": 1,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
             "score": 9,
@@ -54,15 +54,15 @@
         "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
+        "deity_id": 19,
+        "deity_name": "Yig",
         "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
+    "race_id": 8,
+    "race": "Kimmerian",
     "gender": "Female",
     "hd": "8d8",
-    "hp": 28,
+    "hp": 46,
     "fa": 5,
     "ca": 8,
     "ta": 8,
@@ -124,9 +124,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -165,7 +165,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -192,7 +192,7 @@
             "spells_per_day": {
                 "lvl1": 4,
                 "lvl2": 4,
-                "lvl3": 3,
+                "lvl3": 2,
                 "lvl4": 2,
                 "lvl5": 0,
                 "lvl6": 0
@@ -201,30 +201,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 48,
-                    "spell_name": "Ceremony of Consecration",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 111,
-                    "spell_name": "Detect Malady",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 283,
-                    "spell_name": "Perceive Disguise",
+                    "spell_id": 238,
+                    "spell_name": "Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -245,8 +223,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
+                    "spell_id": 332,
+                    "spell_name": "Sanctuary",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -256,8 +234,30 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 249,
-                    "spell_name": "Magic Stone",
+                    "spell_id": 32,
+                    "spell_name": "Bless Oil or Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 325,
+                    "spell_name": "Remove Fear",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -267,8 +267,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 370,
-                    "spell_name": "Speak with Animals",
+                    "spell_id": 446,
+                    "spell_name": "Weird War Hammer",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -278,8 +278,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 232,
-                    "spell_name": "Invisibility to Undead",
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -289,8 +289,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 454,
-                    "spell_name": "Wyvern Warden",
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -300,8 +300,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 219,
-                    "spell_name": "Incantation",
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -311,8 +311,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 135,
-                    "spell_name": "Enthral",
+                    "spell_id": 355,
+                    "spell_name": "Silence",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -322,19 +322,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 127,
-                    "spell_name": "Distinguish Alignment",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 444,
-                    "spell_name": "Water Walk",
+                    "spell_id": 91,
+                    "spell_name": "Cure Moderate Wounds",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -355,19 +344,8 @@
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 250,
-                    "spell_name": "Magic Vestment",
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -388,8 +366,30 @@
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 188,
-                    "spell_name": "Glyph of Warding",
+                    "spell_id": 86,
+                    "spell_name": "Cure Deafness",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 371,
+                    "spell_name": "Speak with Dead",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -399,8 +399,19 @@
                 {
                     "school": "clr",
                     "spell_level": 4,
-                    "spell_id": 312,
-                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "spell_id": 74,
+                    "spell_name": "Control Water",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 372,
+                    "spell_name": "Speak with Plants",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -432,8 +443,8 @@
                 {
                     "school": "clr",
                     "spell_level": 4,
-                    "spell_id": 40,
-                    "spell_name": "Brink of Death",
+                    "spell_id": 335,
+                    "spell_name": "Scrying Font",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -443,19 +454,8 @@
                 {
                     "school": "clr",
                     "spell_level": 4,
-                    "spell_id": 274,
-                    "spell_name": "Neutralize Poison",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 4,
-                    "spell_id": 74,
-                    "spell_name": "Control Water",
+                    "spell_id": 354,
+                    "spell_name": "Shroud of Fear",
                     "range": null,
                     "duration": null,
                     "reversible": null,

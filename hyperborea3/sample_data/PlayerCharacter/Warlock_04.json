@@ -4,32 +4,32 @@
     "class_name": "Warlock",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 13,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 12
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 14,
+            "score": 11,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "cn": {
-            "score": 10,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "def_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "cn": {
+            "score": 6,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
         "in": {
-            "score": 14,
+            "score": 16,
             "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
             "score": 8,
@@ -38,7 +38,7 @@
             "learn_spell": 0
         },
         "ch": {
-            "score": 12,
+            "score": 11,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +49,20 @@
     "xp_to_next": 24000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 16,
-        "deity_name": "Tlakk-Nakka",
-        "primary_alignment": "Neutral"
+        "deity_id": 21,
+        "deity_name": "Ymir",
+        "primary_alignment": "Chaotic"
     },
     "race_id": 7,
     "race": "Kelt",
-    "gender": "Female",
+    "gender": "Male",
     "hd": "4d8",
-    "hp": 28,
+    "hp": 19,
     "fa": 4,
     "ca": 4,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 30,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "3/2",
             "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 2,
             "mastery": true
         }
     ],
@@ -163,7 +163,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -174,7 +174,7 @@
         "mag": {
             "spells_per_day": {
                 "lvl1": 2,
-                "lvl2": 1,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -184,8 +184,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 97,
-                    "spell_name": "Dash",
+                    "spell_id": 201,
+                    "spell_name": "Hold Portal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -195,8 +195,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 53,
-                    "spell_name": "Charm Person",
+                    "spell_id": 190,
+                    "spell_name": "Grease",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -206,8 +206,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 264,
-                    "spell_name": "Mirror Image",
+                    "spell_id": 234,
+                    "spell_name": "Knock",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -217,8 +217,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 173,
-                    "spell_name": "Fool\u2019s Gold",
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,

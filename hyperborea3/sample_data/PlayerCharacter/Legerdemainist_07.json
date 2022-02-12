@@ -11,36 +11,36 @@
             "feat": 4
         },
         "dx": {
-            "score": 16,
-            "atk_mod": 1,
+            "score": 14,
+            "atk_mod": 0,
             "def_adj": 1,
             "test": 3,
-            "feat": 24
+            "feat": 16
         },
         "cn": {
-            "score": 13,
-            "hp_adj": 1,
+            "score": 12,
+            "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
-        },
-        "ws": {
-            "score": 13,
-            "will_adj": 0,
+            "score": 14,
+            "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
+        "ws": {
+            "score": 9,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,18 +49,18 @@
     "xp_to_next": 176000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
-        "primary_alignment": "Lawful"
+        "deity_id": 20,
+        "deity_name": "Yikkorth",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 2,
-    "race": "Amazon",
-    "gender": "Female",
+    "race_id": 10,
+    "race": "Pict",
+    "gender": "Male",
     "hd": "7d6",
     "hp": 25,
     "fa": 5,
@@ -131,7 +131,7 @@
             "qty": 2,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 1,
+            "hurled_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         },
@@ -167,7 +167,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -190,7 +190,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -199,7 +199,7 @@
         {
             "thief_skill": "climb",
             "skill_name": "Climb",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
@@ -217,31 +217,31 @@
         {
             "thief_skill": "hide",
             "skill_name": "Hide",
-            "skill_roll": 9,
+            "skill_roll": 8,
             "stat": "dx"
         },
         {
             "thief_skill": "manipulate_traps",
             "skill_name": "Manipulate Traps",
-            "skill_roll": 7,
+            "skill_roll": 6,
             "stat": "dx"
         },
         {
             "thief_skill": "move_silently",
             "skill_name": "Move Silently",
-            "skill_roll": 9,
+            "skill_roll": 8,
             "stat": "dx"
         },
         {
             "thief_skill": "open_locks",
             "skill_name": "Open Locks",
-            "skill_roll": 7,
+            "skill_roll": 6,
             "stat": "dx"
         },
         {
             "thief_skill": "pick_pockets",
             "skill_name": "Pick Pockets",
-            "skill_roll": 8,
+            "skill_roll": 7,
             "stat": "dx"
         }
     ],
@@ -249,7 +249,7 @@
     "spells": {
         "mag": {
             "spells_per_day": {
-                "lvl1": 2,
+                "lvl1": 3,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 0,
@@ -260,8 +260,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
+                    "spell_id": 453,
+                    "spell_name": "Write Spell",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -271,8 +271,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 375,
-                    "spell_name": "Spider Climb",
+                    "spell_id": 97,
+                    "spell_name": "Dash",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -282,8 +282,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Enlargement",
+                    "spell_id": 233,
+                    "spell_name": "Jump",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -293,8 +293,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 248,
-                    "spell_name": "Magic Mouth",
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -304,8 +304,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 260,
-                    "spell_name": "Mind Blank",
+                    "spell_id": 242,
+                    "spell_name": "Locate Object",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -326,8 +326,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 386,
-                    "spell_name": "Suggestion",
+                    "spell_id": 44,
+                    "spell_name": "Cataleptic State",
                     "range": null,
                     "duration": null,
                     "reversible": null,

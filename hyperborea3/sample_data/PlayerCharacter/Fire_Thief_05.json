@@ -11,14 +11,14 @@
             "feat": 4
         },
         "dx": {
-            "score": 12,
+            "score": 13,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 9,
+            "score": 10,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,10 +26,10 @@
             "feat": 4
         },
         "in": {
-            "score": 14,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
             "score": 13,
@@ -38,7 +38,7 @@
             "learn_spell": 65
         },
         "ch": {
-            "score": 10,
+            "score": 12,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 10,
-        "deity_name": "Krimmr",
+        "deity_id": 3,
+        "deity_name": "Aurorus",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 3,
-    "race": "Atlantean",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
     "hd": "5d6",
-    "hp": 22,
+    "hp": 16,
     "fa": 3,
     "ca": 5,
     "ta": 0,
@@ -114,7 +114,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 5,
+    "ac": 4,
     "mv": 40,
     "weapons_melee": [
         {
@@ -190,7 +190,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -249,7 +249,7 @@
     "spells": {
         "pyr": {
             "spells_per_day": {
-                "lvl1": 2,
+                "lvl1": 1,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 0,
@@ -260,8 +260,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 145,
-                    "spell_name": "F\u00e6rie Fire",
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -271,8 +271,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
+                    "spell_id": 166,
+                    "spell_name": "Flaming Missile",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -282,8 +282,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -293,8 +293,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 164,
-                    "spell_name": "Flame Blade",
+                    "spell_id": 161,
+                    "spell_name": "Fire Web",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -304,8 +304,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 33,
-                    "spell_name": "Blinding Light",
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
                     "range": null,
                     "duration": null,
                     "reversible": null,

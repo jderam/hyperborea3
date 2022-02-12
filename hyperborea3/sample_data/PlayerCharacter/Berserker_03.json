@@ -11,7 +11,7 @@
             "feat": 24
         },
         "dx": {
-            "score": 10,
+            "score": 12,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
@@ -26,10 +26,10 @@
             "feat": 24
         },
         "in": {
-            "score": 6,
-            "lang": -1,
+            "score": 12,
+            "lang": 0,
             "bonus_spells": 0,
-            "learn_spell": 0
+            "learn_spell": 50
         },
         "ws": {
             "score": 10,
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 6,
-        "deity_name": "Boreas",
+        "deity_id": 17,
+        "deity_name": "Ullr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Non-Binary",
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
+    "gender": "Female",
     "hd": "3d12",
-    "hp": 26,
+    "hp": 21,
     "fa": 3,
     "ca": 0,
     "ta": 0,

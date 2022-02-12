@@ -4,18 +4,18 @@
     "class_name": "Runegraver",
     "attr": {
         "st": {
-            "score": 11,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 12
         },
         "dx": {
-            "score": 13,
+            "score": 9,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
             "score": 8,
@@ -26,21 +26,21 @@
             "feat": 2
         },
         "in": {
-            "score": 11,
+            "score": 8,
             "lang": 0,
             "bonus_spells": 0,
-            "learn_spell": 50
+            "learn_spell": 0
         },
         "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 14,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 4,
-        "deity_name": "Azathoth",
+        "deity_id": 17,
+        "deity_name": "Ullr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Male",
+    "race_id": 5,
+    "race": "Hyperborean",
+    "gender": "Female",
     "hd": "6d8",
-    "hp": 26,
+    "hp": 18,
     "fa": 6,
     "ca": 6,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -204,8 +204,8 @@
                 {
                     "school": "run",
                     "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Giant [Enlargement]",
+                    "spell_id": 270,
+                    "spell_name": "Riding [Mount]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -226,8 +226,8 @@
                 {
                     "school": "run",
                     "spell_level": 1,
-                    "spell_id": 270,
-                    "spell_name": "Riding [Mount]",
+                    "spell_id": 133,
+                    "spell_name": "Giant [Enlargement]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -270,8 +270,8 @@
                 {
                     "school": "run",
                     "spell_level": 3,
-                    "spell_id": 425,
-                    "spell_name": "Yew [Twofold Missile]",
+                    "spell_id": 80,
+                    "spell_name": "Plenty [Create Food and Water]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -281,8 +281,8 @@
                 {
                     "school": "run",
                     "spell_level": 3,
-                    "spell_id": 80,
-                    "spell_name": "Plenty [Create Food and Water]",
+                    "spell_id": 425,
+                    "spell_name": "Yew [Twofold Missile]",
                     "range": null,
                     "duration": null,
                     "reversible": null,

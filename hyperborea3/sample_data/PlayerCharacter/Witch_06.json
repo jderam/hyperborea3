@@ -4,18 +4,18 @@
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 4,
-            "atk_mod": -1,
+            "score": 8,
+            "atk_mod": 0,
             "dmg_adj": -1,
-            "test": 1,
-            "feat": 1
+            "test": 2,
+            "feat": 2
         },
         "dx": {
-            "score": 5,
-            "atk_mod": -1,
-            "def_adj": -1,
-            "test": 1,
-            "feat": 1
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
             "score": 10,
@@ -26,22 +26,22 @@
             "feat": 4
         },
         "in": {
-            "score": 14,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 14,
+            "score": 9,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 14,
-            "react_adj": 1,
-            "max_henchmen": 6,
-            "turn_adj": 0
+            "score": 17,
+            "react_adj": 2,
+            "max_henchmen": 10,
+            "turn_adj": 1
         }
     },
     "xp": 48000,
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
+        "deity_id": 3,
+        "deity_name": "Aurorus",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 12,
-    "race": "Viking",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
     "hd": "6d4",
-    "hp": 19,
+    "hp": 18,
     "fa": 2,
     "ca": 6,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 10,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,8 +124,8 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
-            "hurled_atk": -1,
+            "melee_atk": 0,
+            "hurled_atk": 0,
             "dmg_adj": -1,
             "mastery": false
         }
@@ -143,7 +143,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "blowgun needles \u00d710",
-            "missile_atk": -1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -173,7 +173,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -183,7 +183,7 @@
     "spells": {
         "wch": {
             "spells_per_day": {
-                "lvl1": 6,
+                "lvl1": 5,
                 "lvl2": 4,
                 "lvl3": 3,
                 "lvl4": 0,
@@ -194,8 +194,8 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 201,
-                    "spell_name": "Hold Portal",
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -205,8 +205,19 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 115,
-                    "spell_name": "Detect Undead",
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "wch",
+                    "spell_level": 1,
+                    "spell_id": 321,
+                    "spell_name": "Reflexion",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -226,9 +237,9 @@
                 },
                 {
                     "school": "wch",
-                    "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
+                    "spell_level": 2,
+                    "spell_id": 242,
+                    "spell_name": "Locate Object",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -238,19 +249,8 @@
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 294,
-                    "spell_name": "Placate",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "wch",
-                    "spell_level": 2,
-                    "spell_id": 347,
-                    "spell_name": "Shatter",
+                    "spell_id": 276,
+                    "spell_name": "Obscure",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -260,8 +260,8 @@
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 371,
-                    "spell_name": "Speak with Dead",
+                    "spell_id": 324,
+                    "spell_name": "Remove Curse",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -271,8 +271,8 @@
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 312,
-                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "spell_id": 392,
+                    "spell_name": "Summon D\u00e6mon I",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -301,7 +301,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Weasel, 3 hp]",
+            "brief_desc": "magical animal companion. [Gull, 2 hp]",
             "ability_desc": null
         },
         {

@@ -4,11 +4,11 @@
     "class_name": "Warlock",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 12
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
             "score": 11,
@@ -18,12 +18,12 @@
             "feat": 4
         },
         "cn": {
-            "score": 3,
-            "hp_adj": -1,
-            "poison_adj": -2,
-            "trauma_surv": 45,
-            "test": 1,
-            "feat": 0
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
             "score": 15,
@@ -32,10 +32,10 @@
             "learn_spell": 75
         },
         "ws": {
-            "score": 7,
+            "score": 11,
             "will_adj": 0,
             "bonus_spells": 0,
-            "learn_spell": 0
+            "learn_spell": 50
         },
         "ch": {
             "score": 9,
@@ -49,20 +49,20 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 9,
-        "deity_name": "Kthulhu",
-        "primary_alignment": "Chaotic"
+        "deity_id": 2,
+        "deity_name": "Artemis",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Female",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Male",
     "hd": "9d8+6",
-    "hp": 31,
+    "hp": 46,
     "fa": 12,
     "ca": 12,
     "ta": 0,
@@ -126,7 +126,7 @@
             "atk_rate": "2/1",
             "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 2,
             "mastery": true
         }
     ],
@@ -163,7 +163,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -195,8 +195,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 190,
-                    "spell_name": "Grease",
+                    "spell_id": 97,
+                    "spell_name": "Dash",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -206,8 +206,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 431,
-                    "spell_name": "Ventriloquism",
+                    "spell_id": 169,
+                    "spell_name": "Floating Disc",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -217,8 +217,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -228,8 +228,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
+                    "spell_id": 260,
+                    "spell_name": "Mind Blank",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -239,8 +239,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
+                    "spell_id": 248,
+                    "spell_name": "Magic Mouth",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -250,19 +250,19 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 1,
-                    "spell_name": "Acid Arrow",
-                    "range": "30 feet",
-                    "duration": "special",
-                    "reversible": 0,
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
                     "pp": null,
                     "spell_desc": null
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 23,
-                    "spell_name": "Auditory Glamour",
+                    "spell_id": 385,
+                    "spell_name": "Strengthen",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -272,19 +272,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 449,
-                    "spell_name": "Wind Wall",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 3,
-                    "spell_id": 137,
-                    "spell_name": "Explosive Runes",
+                    "spell_id": 386,
+                    "spell_name": "Suggestion",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -305,8 +294,19 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 162,
-                    "spell_name": "Fireball",
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 443,
+                    "spell_name": "Water Breathing",
                     "range": null,
                     "duration": null,
                     "reversible": null,

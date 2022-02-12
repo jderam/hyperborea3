@@ -4,43 +4,43 @@
     "class_name": "Warlock",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 12,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 16
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
         },
         "dx": {
-            "score": 6,
-            "atk_mod": -1,
-            "def_adj": -1,
-            "test": 1,
-            "feat": 1
-        },
-        "cn": {
             "score": 11,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "atk_mod": 0,
+            "def_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "cn": {
+            "score": 7,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
+        },
         "in": {
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
+        "ws": {
             "score": 14,
-            "lang": 1,
+            "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
-        "ws": {
-            "score": 7,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 0
-        },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
+        "deity_id": 2,
+        "deity_name": "Artemis",
         "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
     "hd": "6d8",
-    "hp": 21,
+    "hp": 23,
     "fa": 6,
     "ca": 6,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 7,
+    "ac": 6,
     "mv": 30,
     "weapons_melee": [
         {
@@ -123,11 +123,11 @@
             "cost": 10,
             "weight": 5,
             "qty": 1,
-            "atk_rate": "3/2",
-            "melee_atk": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 2,
-            "mastery": true
+            "dmg_adj": 0,
+            "mastery": false
         }
     ],
     "weapons_missile": [
@@ -143,9 +143,9 @@
             "weight": 5,
             "qty": 1,
             "ammunition": "light bolts \u00d720",
-            "missile_atk": -1,
-            "dmg_adj": 0,
-            "mastery": false
+            "missile_atk": 1,
+            "dmg_adj": 1,
+            "mastery": true
         }
     ],
     "equipment": [
@@ -173,7 +173,7 @@
     "spells": {
         "mag": {
             "spells_per_day": {
-                "lvl1": 2,
+                "lvl1": 1,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 0,
@@ -184,8 +184,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
+                    "spell_id": 350,
+                    "spell_name": "Shocking Grasp",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -195,8 +195,8 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
+                    "spell_id": 201,
+                    "spell_name": "Hold Portal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -206,8 +206,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 230,
-                    "spell_name": "Invisibility",
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -217,8 +217,8 @@
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 392,
-                    "spell_name": "Summon D\u00e6mon I",
+                    "spell_id": 334,
+                    "spell_name": "Scare",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -228,8 +228,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 58,
-                    "spell_name": "Clairvoyance",
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -239,8 +239,8 @@
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 338,
-                    "spell_name": "Secret Page",
+                    "spell_id": 239,
+                    "spell_name": "Lightning Bolt",
                     "range": null,
                     "duration": null,
                     "reversible": null,

@@ -4,26 +4,26 @@
     "class_name": "Fell Paladin",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 9,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 16
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 12
         },
         "dx": {
-            "score": 11,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
-        },
-        "cn": {
             "score": 14,
-            "hp_adj": 1,
-            "poison_adj": 0,
-            "trauma_surv": 80,
+            "atk_mod": 0,
+            "def_adj": 1,
             "test": 3,
             "feat": 8
+        },
+        "cn": {
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
             "score": 12,
@@ -32,10 +32,10 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 11,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
             "score": 17,
@@ -54,15 +54,15 @@
         "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
+        "deity_id": 5,
+        "deity_name": "Boetzu",
         "primary_alignment": "Lawful"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 6,
+    "race": "Ixian",
     "gender": "Female",
     "hd": "6d10",
-    "hp": 37,
+    "hp": 35,
     "fa": 6,
     "ca": 0,
     "ta": 2,
@@ -107,8 +107,14 @@
         "weight": 25,
         "description": null
     },
-    "shield": null,
-    "ac": 6,
+    "shield": {
+        "shield_id": 2,
+        "shield_type": "Large Shield",
+        "def_mod": 2,
+        "cost": 10,
+        "weight": 10
+    },
+    "ac": 3,
     "mv": 30,
     "weapons_melee": [
         {
@@ -126,7 +132,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +150,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -162,7 +168,7 @@
             "atk_rate": "3/2",
             "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 2,
+            "dmg_adj": 1,
             "mastery": true
         }
     ],
@@ -178,7 +184,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0

@@ -4,43 +4,43 @@
     "class_name": "Huntsman",
     "attr": {
         "st": {
-            "score": 11,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 12
         },
         "dx": {
-            "score": 14,
+            "score": 10,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "cn": {
-            "score": 9,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "def_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "cn": {
+            "score": 5,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
         "in": {
-            "score": 11,
+            "score": 8,
             "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ws": {
+            "score": 11,
+            "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
-        "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
-        },
         "ch": {
-            "score": 13,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 20,
-        "deity_name": "Yikkorth",
+        "deity_id": 23,
+        "deity_name": "Ythaqqa",
         "primary_alignment": "Neutral"
     },
     "race_id": 12,
     "race": "Viking",
     "gender": "Male",
     "hd": "2d10",
-    "hp": 9,
+    "hp": 3,
     "fa": 2,
     "ca": 0,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 7,
     "mv": 40,
     "weapons_melee": [
         {
@@ -194,7 +194,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0

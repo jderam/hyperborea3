@@ -4,29 +4,29 @@
     "class_name": "Assassin",
     "attr": {
         "st": {
-            "score": 10,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
-        },
-        "dx": {
-            "score": 16,
-            "atk_mod": 1,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 24
-        },
-        "cn": {
-            "score": 13,
-            "hp_adj": 1,
-            "poison_adj": 0,
-            "trauma_surv": 80,
+            "dmg_adj": 1,
             "test": 3,
             "feat": 8
         },
+        "dx": {
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "cn": {
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
         "in": {
-            "score": 12,
+            "score": 9,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
@@ -38,10 +38,10 @@
             "learn_spell": 50
         },
         "ch": {
-            "score": 11,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
         }
     },
     "xp": 224000,
@@ -54,15 +54,15 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 14,
-        "deity_name": "Rel",
+        "deity_id": 11,
+        "deity_name": "Lunaqqua",
         "primary_alignment": "Neutral"
     },
-    "race_id": 7,
-    "race": "Kelt",
-    "gender": "Male",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
     "hd": "9d6",
-    "hp": 42,
+    "hp": 26,
     "fa": 6,
     "ca": 0,
     "ta": 0,
@@ -125,8 +125,8 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -161,7 +161,7 @@
             "weight": 5,
             "qty": 1,
             "ammunition": "light bolts \u00d720",
-            "missile_atk": 1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -191,7 +191,7 @@
         {
             "thief_skill": "climb",
             "skill_name": "Climb",
-            "skill_roll": 11,
+            "skill_roll": 10,
             "stat": "dx"
         },
         {
@@ -203,25 +203,25 @@
         {
             "thief_skill": "hide",
             "skill_name": "Hide",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
             "thief_skill": "manipulate_traps",
             "skill_name": "Manipulate Traps",
-            "skill_roll": 8,
+            "skill_roll": 7,
             "stat": "dx"
         },
         {
             "thief_skill": "move_silently",
             "skill_name": "Move Silently",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
             "thief_skill": "open_locks",
             "skill_name": "Open Locks",
-            "skill_roll": 8,
+            "skill_roll": 7,
             "stat": "dx"
         }
     ],

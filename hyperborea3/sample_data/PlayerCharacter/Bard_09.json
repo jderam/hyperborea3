@@ -4,32 +4,32 @@
     "class_name": "Bard",
     "attr": {
         "st": {
-            "score": 9,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
-        },
-        "dx": {
-            "score": 17,
-            "atk_mod": 1,
-            "def_adj": 2,
-            "test": 4,
+            "score": 18,
+            "atk_mod": 2,
+            "dmg_adj": 3,
+            "test": 5,
             "feat": 32
         },
-        "cn": {
-            "score": 10,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+        "dx": {
+            "score": 12,
+            "atk_mod": 0,
+            "def_adj": 0,
             "test": 2,
-            "feat": 4
+            "feat": 12
+        },
+        "cn": {
+            "score": 15,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
         },
         "in": {
-            "score": 9,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
             "score": 13,
@@ -38,31 +38,31 @@
             "learn_spell": 65
         },
         "ch": {
-            "score": 18,
-            "react_adj": 3,
-            "max_henchmen": 12,
+            "score": 17,
+            "react_adj": 2,
+            "max_henchmen": 10,
             "turn_adj": 1
         }
     },
     "xp": 320000,
     "level": 9,
     "xp_to_next": 480000,
-    "xp_bonus": true,
+    "xp_bonus": false,
     "alignment": {
         "align_id": 2,
         "short_name": "CG",
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
+        "deity_id": 17,
+        "deity_name": "Ullr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 12,
-    "race": "Viking",
-    "gender": "Male",
+    "race_id": 8,
+    "race": "Kimmerian",
+    "gender": "Female",
     "hd": "9d8",
-    "hp": 20,
+    "hp": 50,
     "fa": 6,
     "ca": 9,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 4,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +124,9 @@
             "weight": 1,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 0,
+            "melee_atk": 2,
+            "hurled_atk": 0,
+            "dmg_adj": 3,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 2,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 3,
             "mastery": false
         }
     ],
@@ -161,7 +161,7 @@
             "weight": 2,
             "qty": 1,
             "ammunition": "arrows \u00d712",
-            "missile_atk": 1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -185,7 +185,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -206,13 +206,13 @@
         {
             "thief_skill": "hide",
             "skill_name": "Hide",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
             "thief_skill": "move_silently",
             "skill_name": "Move Silently",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         }
     ],
@@ -231,8 +231,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 302,
-                    "spell_name": "Precipitate",
+                    "spell_id": 116,
+                    "spell_name": "Detect Venom",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -242,8 +242,8 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -253,8 +253,8 @@
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 192,
-                    "spell_name": "Gust of Wind",
+                    "spell_id": 196,
+                    "spell_name": "Heat Metal",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -264,8 +264,8 @@
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 376,
-                    "spell_name": "Spike Growth",
+                    "spell_id": 27,
+                    "spell_name": "Black Cloud",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -275,8 +275,8 @@
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 93,
-                    "spell_name": "Cure Serious Wounds",
+                    "spell_id": 269,
+                    "spell_name": "Moonlight",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -287,7 +287,7 @@
         },
         "ill": {
             "spells_per_day": {
-                "lvl1": 1,
+                "lvl1": 2,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 1,
@@ -298,8 +298,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -309,8 +309,8 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 62,
-                    "spell_name": "Colour Spray",
+                    "spell_id": 440,
+                    "spell_name": "Wall of Vapours",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -320,8 +320,8 @@
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 45,
-                    "spell_name": "Cause Blindness",
+                    "spell_id": 437,
+                    "spell_name": "Wall of Shadow",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -331,8 +331,8 @@
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 293,
-                    "spell_name": "Phantom Steed",
+                    "spell_id": 278,
+                    "spell_name": "Paralyze",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -342,8 +342,8 @@
                 {
                     "school": "ill",
                     "spell_level": 4,
-                    "spell_id": 318,
-                    "spell_name": "Rainbow Pattern",
+                    "spell_id": 146,
+                    "spell_name": "Faithful Hound",
                     "range": null,
                     "duration": null,
                     "reversible": null,

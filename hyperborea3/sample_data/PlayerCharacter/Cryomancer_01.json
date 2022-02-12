@@ -4,21 +4,21 @@
     "class_name": "Cryomancer",
     "attr": {
         "st": {
-            "score": 9,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
-        },
-        "dx": {
-            "score": 16,
+            "score": 15,
             "atk_mod": 1,
-            "def_adj": 1,
+            "dmg_adj": 1,
             "test": 3,
             "feat": 16
         },
-        "cn": {
+        "dx": {
             "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 9,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,22 +26,22 @@
             "feat": 4
         },
         "in": {
-            "score": 11,
+            "score": 12,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 12,
+            "score": 14,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 16,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
         }
     },
     "xp": 0,
@@ -49,20 +49,20 @@
     "xp_to_next": 2500,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 4,
-        "short_name": "LG",
-        "long_name": "Lawful Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 2,
-        "deity_name": "Artemis",
-        "primary_alignment": "Lawful"
+        "deity_id": 22,
+        "deity_name": "Yoon'Deh",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 10,
+    "race": "Pict",
     "gender": "Male",
     "hd": "1d4",
-    "hp": 4,
+    "hp": 1,
     "fa": 0,
     "ca": 1,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +124,9 @@
             "weight": 2,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 0,
+            "melee_atk": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -142,9 +142,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 0,
+            "melee_atk": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -160,9 +160,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 0,
+            "melee_atk": 1,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -192,7 +192,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -213,17 +213,6 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "cry",
-                    "spell_level": 1,
                     "spell_id": 211,
                     "spell_name": "Identify",
                     "range": null,
@@ -237,6 +226,17 @@
                     "spell_level": 1,
                     "spell_id": 350,
                     "spell_name": "Shocking Grasp",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 1,
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
                     "range": null,
                     "duration": null,
                     "reversible": null,

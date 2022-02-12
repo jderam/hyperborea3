@@ -11,37 +11,37 @@
             "feat": 12
         },
         "dx": {
-            "score": 13,
+            "score": 12,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
-            "score": 14,
-            "hp_adj": 1,
+            "score": 9,
+            "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
-            "score": 7,
+            "score": 12,
             "lang": 0,
             "bonus_spells": 0,
-            "learn_spell": 0
+            "learn_spell": 50
         },
         "ws": {
-            "score": 10,
+            "score": 12,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 4,
-            "react_adj": -2,
-            "max_henchmen": 2,
-            "turn_adj": -1
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 256000,
@@ -49,20 +49,20 @@
     "xp_to_next": 384000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 10,
-        "deity_name": "Krimmr",
-        "primary_alignment": "Chaotic"
+        "deity_id": 1,
+        "deity_name": "Apollo",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Male",
     "hd": "9d10",
-    "hp": 46,
+    "hp": 42,
     "fa": 9,
     "ca": 0,
     "ta": 0,
@@ -114,7 +114,7 @@
         "cost": 10,
         "weight": 10
     },
-    "ac": 3,
+    "ac": 4,
     "mv": 40,
     "weapons_melee": [
         {

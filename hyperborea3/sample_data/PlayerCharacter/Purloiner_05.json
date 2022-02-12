@@ -4,18 +4,18 @@
     "class_name": "Purloiner",
     "attr": {
         "st": {
-            "score": 7,
-            "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
-        },
-        "dx": {
             "score": 12,
             "atk_mod": 0,
-            "def_adj": 0,
+            "dmg_adj": 0,
             "test": 2,
-            "feat": 12
+            "feat": 4
+        },
+        "dx": {
+            "score": 14,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
             "score": 12,
@@ -32,15 +32,15 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 13,
+            "score": 12,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 7,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 20,
-        "deity_name": "Yikkorth",
+        "deity_id": 7,
+        "deity_name": "Helios",
         "primary_alignment": "Neutral"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Male",
     "hd": "5d6",
-    "hp": 18,
+    "hp": 25,
     "fa": 3,
     "ca": 5,
     "ta": 3,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 7,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -184,7 +184,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -258,7 +258,7 @@
     "spells": {
         "clr": {
             "spells_per_day": {
-                "lvl1": 2,
+                "lvl1": 1,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 0,
@@ -269,8 +269,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
+                    "spell_id": 283,
+                    "spell_name": "Perceive Disguise",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -280,8 +280,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 116,
-                    "spell_name": "Detect Venom",
+                    "spell_id": 325,
+                    "spell_name": "Remove Fear",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -291,8 +291,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 332,
-                    "spell_name": "Sanctuary",
+                    "spell_id": 48,
+                    "spell_name": "Ceremony of Consecration",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -313,8 +313,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 156,
-                    "spell_name": "Fire Resistance",
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -324,8 +324,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
+                    "spell_id": 232,
+                    "spell_name": "Invisibility to Undead",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -335,8 +335,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 219,
-                    "spell_name": "Incantation",
+                    "spell_id": 343,
+                    "spell_name": "Serpent Charm",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -346,8 +346,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 355,
-                    "spell_name": "Silence",
+                    "spell_id": 24,
+                    "spell_name": "Augury",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -357,8 +357,8 @@
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 250,
-                    "spell_name": "Magic Vestment",
+                    "spell_id": 326,
+                    "spell_name": "Remove Paralysis",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -368,8 +368,8 @@
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
+                    "spell_id": 444,
+                    "spell_name": "Water Walk",
                     "range": null,
                     "duration": null,
                     "reversible": null,

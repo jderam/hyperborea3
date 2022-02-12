@@ -11,36 +11,36 @@
             "feat": 16
         },
         "dx": {
-            "score": 10,
+            "score": 11,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 16,
-            "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
-            "test": 3,
-            "feat": 16
+            "score": 6,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
         },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -49,20 +49,20 @@
     "xp_to_next": 96000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 7,
-        "deity_name": "Helios",
-        "primary_alignment": "Neutral"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
-    "race_id": 7,
-    "race": "Kelt",
-    "gender": "Female",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Male",
     "hd": "6d8",
-    "hp": 28,
+    "hp": 16,
     "fa": 6,
     "ca": 6,
     "ta": 0,
@@ -163,7 +163,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -173,8 +173,8 @@
     "spells": {
         "nec": {
             "spells_per_day": {
-                "lvl1": 1,
-                "lvl2": 1,
+                "lvl1": 2,
+                "lvl2": 2,
                 "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -184,8 +184,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 115,
-                    "spell_name": "Detect Undead",
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -195,8 +195,8 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
+                    "spell_id": 273,
+                    "spell_name": "Necromantic Ventriloquism",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -206,8 +206,8 @@
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 455,
-                    "spell_name": "Zombie Visage",
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -217,8 +217,8 @@
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 371,
-                    "spell_name": "Speak with Dead",
+                    "spell_id": 83,
+                    "spell_name": "Cudgel of Bone",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -228,8 +228,8 @@
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 342,
-                    "spell_name": "Sepia Snake Sigil",
+                    "spell_id": 87,
+                    "spell_name": "Cure Disease",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -239,8 +239,8 @@
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 99,
-                    "spell_name": "Death Masque",
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
                     "range": null,
                     "duration": null,
                     "reversible": null,

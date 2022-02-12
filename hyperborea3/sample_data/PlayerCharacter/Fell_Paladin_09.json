@@ -4,7 +4,7 @@
     "class_name": "Fell Paladin",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 14,
             "atk_mod": 0,
             "dmg_adj": 1,
             "test": 3,
@@ -18,12 +18,12 @@
             "feat": 8
         },
         "cn": {
-            "score": 13,
-            "hp_adj": 1,
+            "score": 8,
+            "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
         },
         "in": {
             "score": 12,
@@ -32,10 +32,10 @@
             "learn_spell": 50
         },
         "ws": {
-            "score": 12,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 18,
+            "will_adj": 2,
+            "bonus_spells": 4,
+            "learn_spell": 95
         },
         "ch": {
             "score": 15,
@@ -54,15 +54,15 @@
         "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 15,
-        "deity_name": "Thaumagorga",
-        "primary_alignment": "Evil"
+        "deity_id": 19,
+        "deity_name": "Yig",
+        "primary_alignment": "Lawful"
     },
     "race_id": 6,
     "race": "Ixian",
     "gender": "Female",
     "hd": "9d10",
-    "hp": 61,
+    "hp": 40,
     "fa": 9,
     "ca": 3,
     "ta": 5,
@@ -107,8 +107,14 @@
         "weight": 25,
         "description": null
     },
-    "shield": null,
-    "ac": 5,
+    "shield": {
+        "shield_id": 2,
+        "shield_type": "Large Shield",
+        "def_mod": 2,
+        "cost": 10,
+        "weight": 10
+    },
+    "ac": 3,
     "mv": 30,
     "weapons_melee": [
         {
@@ -178,7 +184,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -203,8 +209,8 @@
     "spells": {
         "clr": {
             "spells_per_day": {
-                "lvl1": 2,
-                "lvl2": 1,
+                "lvl1": 3,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -214,8 +220,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 302,
-                    "spell_name": "Precipitate",
+                    "spell_id": 238,
+                    "spell_name": "Light",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -225,8 +231,8 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 249,
-                    "spell_name": "Magic Stone",
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -236,8 +242,8 @@
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 104,
-                    "spell_name": "Delay Poison",
+                    "spell_id": 454,
+                    "spell_name": "Wyvern Warden",
                     "range": null,
                     "duration": null,
                     "reversible": null,

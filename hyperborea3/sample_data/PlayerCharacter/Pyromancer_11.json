@@ -11,36 +11,36 @@
             "feat": 4
         },
         "dx": {
-            "score": 14,
+            "score": 9,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "cn": {
-            "score": 10,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "def_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "cn": {
+            "score": 7,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
+        },
         "in": {
-            "score": 17,
-            "lang": 2,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 14,
+            "score": 13,
             "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ch": {
-            "score": 11,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 8,
-        "deity_name": "Kraken",
+        "deity_id": 17,
+        "deity_name": "Ullr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 12,
-    "race": "Viking",
-    "gender": "Male",
+    "race_id": 2,
+    "race": "Amazon",
+    "gender": "Female",
     "hd": "9d4+2",
-    "hp": 26,
+    "hp": 24,
     "fa": 5,
     "ca": 11,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -187,7 +187,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -199,34 +199,12 @@
             "spells_per_day": {
                 "lvl1": 6,
                 "lvl2": 6,
-                "lvl3": 5,
+                "lvl3": 4,
                 "lvl4": 3,
                 "lvl5": 2,
                 "lvl6": 1
             },
             "spells_known": [
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
-                    "spell_id": 453,
-                    "spell_name": "Write Spell",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
-                    "spell_id": 94,
-                    "spell_name": "Dancing Lights",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
                 {
                     "school": "pyr",
                     "spell_level": 1,
@@ -241,8 +219,30 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 366,
+                    "spell_name": "Sorcerous Armour",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -252,8 +252,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 164,
-                    "spell_name": "Flame Blade",
+                    "spell_id": 308,
+                    "spell_name": "Produce Flame",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -263,8 +263,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 192,
-                    "spell_name": "Gust of Wind",
+                    "spell_id": 315,
+                    "spell_name": "Pyrotechnics",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -274,8 +274,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 312,
-                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "spell_id": 385,
+                    "spell_name": "Strengthen",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -285,8 +285,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 33,
-                    "spell_name": "Blinding Light",
+                    "spell_id": 412,
+                    "spell_name": "Tongues",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -296,8 +296,8 @@
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 138,
-                    "spell_name": "Extend Spell I",
+                    "spell_id": 158,
+                    "spell_name": "Fire Shield",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -307,8 +307,19 @@
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 51,
-                    "spell_name": "Change Temperature",
+                    "spell_id": 160,
+                    "spell_name": "Fire Trap",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 5,
+                    "spell_id": 165,
+                    "spell_name": "Flame Strike",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -328,20 +339,9 @@
                 },
                 {
                     "school": "pyr",
-                    "spell_level": 5,
-                    "spell_id": 122,
-                    "spell_name": "Dismissal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
                     "spell_level": 6,
-                    "spell_id": 310,
-                    "spell_name": "Project Image",
+                    "spell_id": 157,
+                    "spell_name": "Fire Seeds",
                     "range": null,
                     "duration": null,
                     "reversible": null,

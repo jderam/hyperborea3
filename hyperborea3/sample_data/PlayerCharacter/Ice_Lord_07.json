@@ -4,32 +4,32 @@
     "class_name": "Ice Lord",
     "attr": {
         "st": {
-            "score": 14,
+            "score": 13,
             "atk_mod": 0,
             "dmg_adj": 1,
             "test": 3,
             "feat": 16
         },
         "dx": {
-            "score": 10,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 12,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
+            "score": 4,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
         },
         "in": {
-            "score": 16,
-            "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
             "score": 13,
@@ -54,15 +54,15 @@
         "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 2,
-        "deity_name": "Artemis",
+        "deity_id": 5,
+        "deity_name": "Boetzu",
         "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
+    "race_id": 8,
+    "race": "Kimmerian",
     "gender": "Male",
     "hd": "7d8",
-    "hp": 32,
+    "hp": 24,
     "fa": 7,
     "ca": 7,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 5,
     "mv": 30,
     "weapons_melee": [
         {
@@ -143,7 +143,7 @@
             "weight": 5,
             "qty": 1,
             "ammunition": "light bolts \u00d720",
-            "missile_atk": 1,
+            "missile_atk": 2,
             "dmg_adj": 1,
             "mastery": true
         }
@@ -163,7 +163,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -173,14 +173,25 @@
     "spells": {
         "cry": {
             "spells_per_day": {
-                "lvl1": 3,
-                "lvl2": 2,
+                "lvl1": 2,
+                "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
                 "lvl6": 0
             },
             "spells_known": [
+                {
+                    "school": "cry",
+                    "spell_level": 1,
+                    "spell_id": 256,
+                    "spell_name": "Melt Ice",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
                 {
                     "school": "cry",
                     "spell_level": 1,
@@ -195,19 +206,8 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 178,
-                    "spell_name": "Freezing Hands",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "cry",
-                    "spell_level": 1,
-                    "spell_id": 56,
-                    "spell_name": "Chill Touch",
+                    "spell_id": 302,
+                    "spell_name": "Precipitate",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -217,8 +217,8 @@
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 440,
-                    "spell_name": "Wall of Vapours",
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -228,8 +228,8 @@
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 78,
-                    "spell_name": "Cool Metal",
+                    "spell_id": 320,
+                    "spell_name": "Ray of Enfeeblement",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -239,8 +239,8 @@
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 226,
-                    "spell_name": "Inner Eye",
+                    "spell_id": 338,
+                    "spell_name": "Secret Page",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -250,8 +250,8 @@
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 412,
-                    "spell_name": "Tongues",
+                    "spell_id": 443,
+                    "spell_name": "Water Breathing",
                     "range": null,
                     "duration": null,
                     "reversible": null,

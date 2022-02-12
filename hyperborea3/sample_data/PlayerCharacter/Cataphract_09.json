@@ -4,32 +4,32 @@
     "class_name": "Cataphract",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 12
         },
         "dx": {
-            "score": 9,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 17,
+            "atk_mod": 1,
+            "def_adj": 2,
+            "test": 4,
+            "feat": 24
         },
         "cn": {
-            "score": 6,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 16,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
         },
         "in": {
-            "score": 7,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 0
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
             "score": 9,
@@ -38,9 +38,9 @@
             "learn_spell": 50
         },
         "ch": {
-            "score": 11,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +49,20 @@
     "xp_to_next": 432000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 4,
-        "short_name": "LG",
-        "long_name": "Lawful Good"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 5,
-        "deity_name": "Boetzu",
-        "primary_alignment": "Lawful"
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 7,
-    "race": "Kelt",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
     "gender": "Male",
     "hd": "9d10",
-    "hp": 25,
+    "hp": 57,
     "fa": 9,
     "ca": 0,
     "ta": 0,
@@ -114,7 +114,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 3,
+    "ac": 1,
     "mv": 30,
     "weapons_melee": [
         {
@@ -168,7 +168,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0

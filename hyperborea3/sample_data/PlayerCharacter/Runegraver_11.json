@@ -4,18 +4,18 @@
     "class_name": "Runegraver",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 12
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 9,
+            "score": 14,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
             "score": 8,
@@ -26,13 +26,13 @@
             "feat": 2
         },
         "in": {
-            "score": 10,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 17,
+            "lang": 2,
+            "bonus_spells": 3,
+            "learn_spell": 85
         },
         "ws": {
-            "score": 13,
+            "score": 14,
             "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
@@ -54,15 +54,15 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 17,
-        "deity_name": "Ullr",
+        "deity_id": 3,
+        "deity_name": "Aurorus",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 10,
-    "race": "Pict",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
     "hd": "9d8+4",
-    "hp": 36,
+    "hp": 53,
     "fa": 11,
     "ca": 11,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 5,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +126,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -183,7 +183,7 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
@@ -201,6 +201,17 @@
                 "lvl6": 0
             },
             "spells_known": [
+                {
+                    "school": "run",
+                    "spell_level": 1,
+                    "spell_id": 63,
+                    "spell_name": "Man [Command]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
                 {
                     "school": "run",
                     "spell_level": 1,
@@ -225,31 +236,9 @@
                 },
                 {
                     "school": "run",
-                    "spell_level": 1,
-                    "spell_id": 63,
-                    "spell_name": "Man [Command]",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "run",
                     "spell_level": 2,
                     "spell_id": 200,
                     "spell_name": "Constraint [Hold Person]",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "run",
-                    "spell_level": 2,
-                    "spell_id": 173,
-                    "spell_name": "Wealth [Fool\u2019s Gold]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -269,9 +258,9 @@
                 },
                 {
                     "school": "run",
-                    "spell_level": 3,
-                    "spell_id": 87,
-                    "spell_name": "Ulcer [Inflict Disease]",
+                    "spell_level": 2,
+                    "spell_id": 173,
+                    "spell_name": "Wealth [Fool\u2019s Gold]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -302,9 +291,9 @@
                 },
                 {
                     "school": "run",
-                    "spell_level": 4,
-                    "spell_id": 177,
-                    "spell_name": "Ice [Freeze Surface]",
+                    "spell_level": 3,
+                    "spell_id": 87,
+                    "spell_name": "Ulcer [Inflict Disease]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -314,8 +303,8 @@
                 {
                     "school": "run",
                     "spell_level": 4,
-                    "spell_id": 129,
-                    "spell_name": "Tyr [Dweomered Weapon]",
+                    "spell_id": 177,
+                    "spell_name": "Ice [Freeze Surface]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -335,9 +324,9 @@
                 },
                 {
                     "school": "run",
-                    "spell_level": 5,
-                    "spell_id": 74,
-                    "spell_name": "Water [Control Water]",
+                    "spell_level": 4,
+                    "spell_id": 129,
+                    "spell_name": "Tyr [Dweomered Weapon]",
                     "range": null,
                     "duration": null,
                     "reversible": null,
@@ -349,6 +338,17 @@
                     "spell_level": 5,
                     "spell_id": 423,
                     "spell_name": "God [True Seeing]",
+                    "range": null,
+                    "duration": null,
+                    "reversible": null,
+                    "pp": null,
+                    "spell_desc": null
+                },
+                {
+                    "school": "run",
+                    "spell_level": 5,
+                    "spell_id": 74,
+                    "spell_name": "Water [Control Water]",
                     "range": null,
                     "duration": null,
                     "reversible": null,

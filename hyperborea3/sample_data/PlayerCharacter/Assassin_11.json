@@ -4,26 +4,26 @@
     "class_name": "Assassin",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 12,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 9,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 24
         },
         "cn": {
-            "score": 15,
-            "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
-            "test": 3,
-            "feat": 16
+            "score": 7,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
         },
         "in": {
             "score": 13,
@@ -32,10 +32,10 @@
             "learn_spell": 65
         },
         "ws": {
-            "score": 11,
+            "score": 7,
             "will_adj": 0,
             "bonus_spells": 0,
-            "learn_spell": 50
+            "learn_spell": 0
         },
         "ch": {
             "score": 9,
@@ -49,20 +49,20 @@
     "xp_to_next": 560000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 23,
-        "deity_name": "Ythaqqa",
-        "primary_alignment": "Neutral"
+        "deity_id": 2,
+        "deity_name": "Artemis",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 9,
-    "race": "Kimmeri-Kelt",
-    "gender": "Female",
+    "race_id": 2,
+    "race": "Amazon",
+    "gender": "Male",
     "hd": "9d6+4",
-    "hp": 51,
+    "hp": 38,
     "fa": 7,
     "ca": 0,
     "ta": 0,
@@ -108,7 +108,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 7,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,8 +125,8 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
-            "dmg_adj": 1,
+            "hurled_atk": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +144,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -161,7 +161,7 @@
             "weight": 5,
             "qty": 1,
             "ammunition": "light bolts \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
