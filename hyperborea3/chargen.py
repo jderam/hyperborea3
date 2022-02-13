@@ -3,7 +3,7 @@ import random
 import sqlite3
 from typing import Any, Dict, List, Optional
 
-from hyperborea3.valid_data import VALID_ALIGMENTS_SHORT
+from hyperborea3.valid_data import VALID_ALIGMENTS_SHORT, VALID_SQL_TABLES
 
 with path("hyperborea3", "hyperborea.sqlite3") as p:
     DBPATH = p
@@ -11,6 +11,48 @@ URI = f"file:{str(DBPATH)}?mode=ro"
 con = sqlite3.connect(URI, check_same_thread=False, uri=True)
 con.row_factory = sqlite3.Row
 cur = con.cursor()
+
+
+def list_tables() -> List[str]:
+    """List all tables in sqlite database."""
+    cur.execute(
+        """
+        SELECT name
+          FROM sqlite_schema
+         WHERE type = 'table'
+           AND name NOT LIKE 'sqlite_%'
+        ORDER BY name;
+        """
+    )
+    tables: List[str] = [dict(x)["name"] for x in cur.fetchall()]
+    return tables
+
+
+def list_views() -> List[str]:
+    """List all views in sqlite database."""
+    cur.execute(
+        """
+        SELECT name
+          FROM sqlite_schema
+         WHERE type = 'view'
+        ORDER BY name;
+        """
+    )
+    views: List[str] = [dict(x)["name"] for x in cur.fetchall()]
+    return views
+
+
+def get_count_from_table(table_name: str) -> int:
+    """Get the row count of a table in sqlite database."""
+    assert table_name in VALID_SQL_TABLES
+    cur.execute(
+        f"""
+        SELECT Count(1) AS row_count
+          FROM {table_name};
+        """
+    )
+    row_count: int = cur.fetchone()["row_count"]
+    return row_count
 
 
 def roll_dice(qty: int, sides: int) -> int:
@@ -535,6 +577,61 @@ def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
         mw["dmg_adj"] = 0
         mw["mastery"] = False
     return missile_weapons
+
+
+def get_unskilled_weapon_penalty(class_id: int) -> int:
+    """Get penalty when using a weapon not in the favoured list."""
+    cur.execute(
+        """
+        SELECT attack_penalty
+          FROM t134_unskilled_weapon_attack_penalty
+         WHERE class_id = ?;
+        """,
+        (class_id,),
+    )
+    unskilled_penalty: int = cur.fetchone()["attack_penalty"]
+    return unskilled_penalty
+
+
+def get_favoured_weapons(class_id: int) -> Dict[str, Any]:
+    """Get list of favoured weapons for a given class_id."""
+    # get favoured melee weapons
+    cur.execute(
+        """
+        SELECT tmw.*
+          FROM class_favoured_weapons_melee cfwm
+          JOIN t076_melee_weapons tmw
+            ON cfwm.weapon_id = tmw.weapon_id
+         WHERE cfwm.class_id = ?
+        ORDER BY tmw.weapon_id;
+        """,
+        (class_id,),
+    )
+    fav_wpns_melee: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    # get favoured missile weapons
+    cur.execute(
+        """
+        SELECT tmw.*
+          FROM class_favoured_weapons_missile cfwm
+          JOIN t077_missile_weapons tmw
+            ON cfwm.weapon_id = tmw.weapon_id
+         WHERE cfwm.class_id = ?
+        ORDER BY tmw.weapon_id;
+        """,
+        (class_id,),
+    )
+    fav_wpns_missile: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    # get unskilled penalty
+    unskilled_penalty = get_unskilled_weapon_penalty(class_id)
+    # get "any" (set True for classes proficient in any/all weapons)
+    favoured_any: bool = True if unskilled_penalty == 0 else False
+    favoured_weapons = {
+        "any": favoured_any,
+        "weapons_melee": fav_wpns_melee,
+        "weapons_missile": fav_wpns_missile,
+        "unskilled_penalty": unskilled_penalty,
+    }
+    return favoured_weapons
 
 
 def get_starting_gear(class_id: int) -> List[str]:

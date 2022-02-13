@@ -2,6 +2,7 @@ import json
 import random  # noqa: F401
 from typing import Any, Dict, List, Optional
 
+from hyperborea3 import __version__ as HYPERBOREA3_VERSION
 from hyperborea3.chargen import (
     ac_to_aac,
     apply_spells_per_day_bonus,
@@ -13,6 +14,7 @@ from hyperborea3.chargen import (
     get_class_level_data,
     get_combat_matrix,
     get_deity,
+    get_favoured_weapons,
     get_gender,
     get_hd,
     get_level,
@@ -59,6 +61,8 @@ class PlayerCharacter:
         assert class_id in [0] + VALID_CLASS_IDS
         assert subclasses in VALID_SUBCLASS_PARAMS
         assert ac_type in VALID_AC_TYPES
+
+        self.app_version = HYPERBOREA3_VERSION
 
         # Always use Method VI if a specific class is chosen
         if class_id != 0:
@@ -118,13 +122,13 @@ class PlayerCharacter:
             self.attr["dx"]["def_adj"],
         )
         self.mv = self.armour["mv"]
-        # self.aac = ac_to_aac(self.ac)
 
         self.weapons_melee = get_starting_weapons_melee(self.class_id)
         self.weapons_missile = get_starting_weapons_missile(self.class_id)
         self.update_weapons_atk_dmg()
         self.equipment = get_starting_gear(self.class_id)
         self.money = get_starting_money()
+        self.favoured_weapons = get_favoured_weapons(self.class_id)
 
         self.thief_skills = get_thief_skills(
             self.class_id,

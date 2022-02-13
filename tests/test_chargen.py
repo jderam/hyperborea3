@@ -13,6 +13,7 @@ from hyperborea3.chargen import (
     get_class_level_data,
     get_combat_matrix,
     get_deity,
+    get_favoured_weapons,
     get_gender,
     get_hd,
     get_level,
@@ -30,7 +31,10 @@ from hyperborea3.chargen import (
     get_starting_weapons_missile,
     get_thief_skills,
     get_turn_undead_matrix,
+    get_unskilled_weapon_penalty,
     get_xp_to_next,
+    list_tables,
+    list_views,
     roll_hit_points,
     roll_stats,
 )
@@ -46,6 +50,7 @@ from hyperborea3.valid_data import (
     VALID_DICE_METHODS,
     VALID_FA,
     VALID_FAMILIARS,
+    VALID_FAVOURED_WEAPONS,
     VALID_GENDERS,
     VALID_GP,
     VALID_HD_PLUS,
@@ -57,12 +62,35 @@ from hyperborea3.valid_data import (
     VALID_SCHOOLS,
     VALID_SCHOOLS_BY_CLASS_ID,
     VALID_SPELL_LEVELS,
+    VALID_SQL_TABLES,
+    VALID_SQL_VIEWS,
     VALID_TA,
+    VALID_UNSKILLED_PENALTIES,
 )
 
 
 def test_db():
     assert DBPATH.is_file()
+
+
+@pytest.mark.skip(
+    reason=(
+        "Currently failing on github "
+        "'sqlite3.OperationalError: no such table: sqlite_schema'"
+    )
+)
+def test_db_tables():
+    assert list_tables() == VALID_SQL_TABLES
+
+
+@pytest.mark.skip(
+    reason=(
+        "Currently failing on github "
+        "'sqlite3.OperationalError: no such table: sqlite_schema'"
+    )
+)
+def test_db_views():
+    assert list_views() == VALID_SQL_VIEWS
 
 
 def test_xp_to_next():
@@ -245,6 +273,31 @@ def test_starting_weapons_missile():
             assert len(missile_weapons) == 2
         else:
             assert len(missile_weapons) in [0, 1]
+
+
+def test_unskilled_penalty():
+    for class_id in VALID_CLASS_IDS:
+        assert (
+            get_unskilled_weapon_penalty(class_id)
+            == VALID_UNSKILLED_PENALTIES[class_id]
+        )
+
+
+def test_get_favoured_weapons():
+    for class_id in VALID_CLASS_IDS:
+        print(f"{class_id=}")
+        favoured_weapons = get_favoured_weapons(class_id)
+        actual_melee_wpn_ids = [
+            x["weapon_id"] for x in favoured_weapons["weapons_melee"]
+        ]
+        actual_missile_wpn_ids = [
+            x["weapon_id"] for x in favoured_weapons["weapons_missile"]
+        ]
+        expected = VALID_FAVOURED_WEAPONS[class_id]
+        assert favoured_weapons["any"] == expected["any"]
+        assert actual_melee_wpn_ids == expected["melee_wpns"]
+        assert actual_missile_wpn_ids == expected["missile_wpns"]
+        assert favoured_weapons["unskilled_penalty"] == expected["unskilled_penalty"]
 
 
 def test_get_starting_gear():
