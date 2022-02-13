@@ -14,6 +14,7 @@ from hyperborea3.chargen import (
     get_class_level_data,
     get_combat_matrix,
     get_deity,
+    get_favoured_weapons,
     get_gender,
     get_hd,
     get_level,
@@ -121,13 +122,13 @@ class PlayerCharacter:
             self.attr["dx"]["def_adj"],
         )
         self.mv = self.armour["mv"]
-        # self.aac = ac_to_aac(self.ac)
 
         self.weapons_melee = get_starting_weapons_melee(self.class_id)
         self.weapons_missile = get_starting_weapons_missile(self.class_id)
         self.update_weapons_atk_dmg()
         self.equipment = get_starting_gear(self.class_id)
         self.money = get_starting_money()
+        self.favoured_weapons = get_favoured_weapons(self.class_id)
 
         self.thief_skills = get_thief_skills(
             self.class_id,
