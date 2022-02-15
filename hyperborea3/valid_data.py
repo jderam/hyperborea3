@@ -366,6 +366,7 @@ VALID_HD_QTY = list(range(1, 10))
 VALID_HD_SIZE = [4, 6, 8, 10, 12]
 VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
 VALID_SCHOOLS = ["clr", "cry", "drd", "ill", "mag", "nec", "pyr", "run", "wch"]
+VALID_SPELL_IDS = list(range(1, 456))
 VALID_SPELL_LEVELS = list(range(1, 7))
 VALID_SQL_TABLES = [
     "alignment",
