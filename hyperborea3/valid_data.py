@@ -359,12 +359,13 @@ VALID_FAVOURED_WEAPONS = {
 }
 VALID_GENDERS = ["Male", "Female", "Non-Binary"]
 VALID_GP = range(2, 6)
-VALID_LEVELS = list(range(1, 13))
-VALID_RACE_IDS = list(range(1, 25))
-VALID_SAVES = list(range(11, 17))
 VALID_HD_QTY = list(range(1, 10))
 VALID_HD_SIZE = [4, 6, 8, 10, 12]
 VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
+VALID_LEVELS = list(range(1, 13))
+VALID_MONSTER_IDS = [1, 2, 3]
+VALID_RACE_IDS = list(range(1, 25))
+VALID_SAVES = list(range(11, 17))
 VALID_SCHOOLS = ["clr", "cry", "drd", "ill", "mag", "nec", "pyr", "run", "wch"]
 VALID_SPELL_IDS = list(range(1, 456))
 VALID_SPELL_LEVELS = list(range(1, 7))
