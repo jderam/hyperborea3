@@ -12,6 +12,25 @@ con.row_factory = sqlite3.Row
 cur = con.cursor()
 
 
+def get_all_spells() -> List[Dict[str, Any]]:
+    """Get all spells from database."""
+    cur.execute(
+        """
+        SELECT spell_id
+             , spell_name
+             , NULL as level
+             , rng
+             , dur
+             , reversible
+             , pp
+             , spell_desc_html
+          FROM spells;
+        """,
+    )
+    spell_list: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    return spell_list
+
+
 def get_spell(spell_id: int) -> Dict[str, Any]:
     """Get a spell from database."""
     if spell_id not in VALID_SPELL_IDS:
