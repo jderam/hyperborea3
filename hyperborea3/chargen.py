@@ -831,7 +831,7 @@ def get_random_spell(
              , dur as duration
              , reversible
              , pp
-             , spell_desc_html as spell_desc
+             , spell_desc
           FROM v_complete_spell_list
          WHERE school = ?
            AND spell_level = ?

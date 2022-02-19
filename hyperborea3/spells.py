@@ -23,11 +23,31 @@ def get_all_spells() -> List[Dict[str, Any]]:
              , dur
              , reversible
              , pp
-             , spell_desc_html
+             , spell_desc
           FROM spells;
         """,
     )
     spell_list: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    cur.execute(
+        """
+        SELECT spell_id
+             , school
+             , spell_level
+          FROM v_complete_spell_list
+         WHERE school != 'run'
+        ORDER BY school;
+        """,
+    )
+    school_data: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    for spell in spell_list:
+        level = (", ").join(
+            [
+                f"{x['school']} {x['spell_level']}"
+                for x in school_data
+                if x["spell_id"] == spell["spell_id"]
+            ]
+        )
+        spell["level"] = level
     return spell_list
 
 
@@ -44,7 +64,7 @@ def get_spell(spell_id: int) -> Dict[str, Any]:
              , dur
              , reversible
              , pp
-             , spell_desc_html
+             , spell_desc
           FROM spells
          WHERE spell_id = ?;
         """,
@@ -68,7 +88,7 @@ def get_spell(spell_id: int) -> Dict[str, Any]:
             "level": (", ").join(
                 [f"{x['school']} {x['spell_level']}" for x in schools]
             ),
-            "reversible": bool(spell_data["reversible"]),
+            # "reversible": bool(spell_data["reversible"]),
         }
     )
     return spell_data
