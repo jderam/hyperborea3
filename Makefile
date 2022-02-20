@@ -9,6 +9,27 @@ build_and_test: build_wheel pip_install test ## Build wheel, install, and execut
 build_wheel: ## build the wheel for this package
 	python setup.py sdist bdist_wheel
 
+clean: ## clean out dist/ directory
+	rm dist/*
+
+deploy_test: ## run all checks, build dist files, upload to test pypi
+	black . --check
+	flake8
+	mypy hyperborea3 tests
+	rm -f dist/*
+	python setup.py sdist bdist_wheel
+	twine check dist/*
+	twine upload --repository hyperborea3test dist/*
+
+deploy_prod: ## run all checks, build dist files, upload to prod pypi
+	black . --check
+	flake8
+	mypy hyperborea3 tests
+	rm -f dist/*
+	python setup.py sdist bdist_wheel
+	twine check dist/*
+	twine upload --repository hyperborea3prod dist/*
+
 pip_install: ## pip install this package
 	python -m pip install dist/hyperborea3-*-py3-none-any.whl --force-reinstall
 
