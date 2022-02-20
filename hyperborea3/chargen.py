@@ -831,7 +831,7 @@ def get_random_spell(
              , dur as duration
              , reversible
              , pp
-             , spell_desc_html as spell_desc
+             , spell_desc
           FROM v_complete_spell_list
          WHERE school = ?
            AND spell_level = ?
@@ -844,6 +844,8 @@ def get_random_spell(
     except TypeError:
         print(f"Got no result back. {school=} {spell_level=} {d100_roll=}")
         raise
+    if result["reversible"] is not None:
+        result["reversible"] = bool(result["reversible"])
     return result
 
 

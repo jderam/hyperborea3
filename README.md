@@ -131,8 +131,6 @@ That being said, I also plan to hone my own web skills and try to build a web-ba
 I plan to implement the following features into this package, as time and motivation allows:
 
 * Additional character data:
-  * Favoured weapons
-  * Non-Proficiency Penalties
   * Secondary Skills
   * Random name generation based on the tables in the rulebook
   * Height and Weight based on the tables in the rulebook
