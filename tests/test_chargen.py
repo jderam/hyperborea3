@@ -729,6 +729,7 @@ def test_get_random_spell():
                 spell = get_random_spell(school, spell_level)
                 assert spell["school"] == school
                 assert spell["spell_level"] == spell_level
+                assert spell["reversible"] in [None, True, False]
 
 
 def test_get_spells():

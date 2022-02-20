@@ -844,6 +844,8 @@ def get_random_spell(
     except TypeError:
         print(f"Got no result back. {school=} {spell_level=} {d100_roll=}")
         raise
+    if result["reversible"] is not None:
+        result["reversible"] = bool(result["reversible"])
     return result
 
 

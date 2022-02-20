@@ -48,6 +48,8 @@ def get_all_spells() -> List[Dict[str, Any]]:
             ]
         )
         spell["level"] = level
+        if spell["reversible"] is not None:
+            spell["reversible"] = bool(spell["reversible"])
     return spell_list
 
 
@@ -88,7 +90,7 @@ def get_spell(spell_id: int) -> Dict[str, Any]:
             "level": (", ").join(
                 [f"{x['school']} {x['spell_level']}" for x in schools]
             ),
-            # "reversible": bool(spell_data["reversible"]),
+            "reversible": bool(spell_data["reversible"]),
         }
     )
     return spell_data

@@ -13,6 +13,7 @@ def test_get_spell():
     for spell_id in VALID_SPELL_IDS:
         spell_data = get_spell(spell_id)
         assert spell_data["spell_id"] == spell_id
+        assert spell_data["reversible"] in [None, True, False]
 
 
 def test_get_invalid_spell():
@@ -26,3 +27,5 @@ def test_get_invalid_spell():
 def test_get_all_spells():
     spells = get_all_spells()
     assert [x["spell_id"] for x in spells] == VALID_SPELL_IDS
+    for spell in spells:
+        assert spell["reversible"] in [None, True, False]
