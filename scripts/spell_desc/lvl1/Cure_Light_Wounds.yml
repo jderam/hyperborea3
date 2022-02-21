@@ -1,0 +1,10 @@
+name: Cure Light Wounds (reversible)
+id: 89
+pp: 188
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Heals a living creature for 1d8 hp of damage previously
+sustained. The reverse of this spell, <i>inflict light
+wounds</i>, is used to harm a living creature for 1d8 hp
+damage upon a successful touch attack.</p>"

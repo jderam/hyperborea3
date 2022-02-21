@@ -1,0 +1,14 @@
+name: Command
+id: 63
+pp: 184
+Rng: 30 feet
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>The caster ensorcells the target of this spell with a
+single word of <i>command</i>, a word the victim is compelled
+to obey. The caster and victim must understand
+the same language, and the <i>command</i> must be clear.
+Typical <i>commands</i> include “Die!”, “Fall!”, “Flee!”,
+“Jump!”, “Sit!”, “Sleep!”, and “Stop!” The victim will
+not actually die if commanded to do so but may fall and
+enter a state of unconsciousness, unless disturbed.</p>"

@@ -1,0 +1,18 @@
+name: Colour Spray
+id: 62
+pp: 184
+Rng: 20 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>From the sorcerer’s hands emerges a rainbow of colours,
+forming a wedge 5 feet wide at its base, 20 feet
+long, and 20 feet wide at its terminus. <i>Colour spray</i>
+affects 1d6 creatures within this area of effect, beginning
+with those closest to the caster. Targets are allowed
+<i>sorcery</i> saving throws. Victims of 5 HD or fewer that
+fail their save are stricken unconscious for 2d4 rounds.
+Victims of 6 HD or more that fail their saving throws
+are blinded for 1d4 rounds. Blind creatures always lose
+initiative and suffer −4 penalties on attack rolls, armour
+class, and saving throws. <i>N.B.:</i> Undead, constructs, and
+blind or sightless creatures are unaffected by this spell.</p>"

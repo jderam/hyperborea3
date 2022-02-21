@@ -1,0 +1,14 @@
+name: Chill Touch
+id: 56
+pp: 183
+Rng: 0
+Dur: 1 turn
+Rev: 0
+Desc: "<p>A violet glow emanates from the hands of the sorcerer.
+The next foe struck (bare hand or a melee weapon) sustains
+an additional 1d4 hp of energy-sapping damage,
+followed by a <i>sorcery</i> saving throw. If the saving throw
+fails, the victim is weakened, suffering penalties of −1
+on attack and damage rolls for the spell’s duration. The
+dweomer fades if the caster does not strike a foe before
+the spell expires.</p>"

@@ -1,0 +1,15 @@
+name: Create Water
+id: 81
+pp: 187
+Rng: 10 feet
+Dur: permanent
+Rev: 1
+Desc: "<p>The sorcerer conjures as much as three gallons of
+water per CA level. The water is fresh, clean, and potable.
+It can be placed within one or more appropriate
+containers so long as they are touching, or it can be
+evoked to appear in the air within the spell’s range.
+The reverse of this spell, <i>destroy water</i>, vaporizes a
+like amount of water. If used offensively (e.g., several
+gallons of water dropped on the head of an enemy),
+the target is allowed an <i>avoidance</i> saving throw.</p>"

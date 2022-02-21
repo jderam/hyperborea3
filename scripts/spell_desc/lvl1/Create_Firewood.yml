@@ -1,0 +1,12 @@
+name: Create Firewood
+id: 79
+pp: 187
+Rng: 10 feet
+Dur: special
+Rev: 0
+Desc: "<p>Dry, seasoned, split firewood is conjured, a stack measuring
+2 × 2 × 4 feet. At CA 5, this amount increases to
+2 × 2 × 8 feet of stacked, split wood. The wood appears
+on solid ground 10 feet in front of the caster’s outstretched
+hands. If the firewood is not utilized within
+48 hours, it disappears from whence it came.</p>"

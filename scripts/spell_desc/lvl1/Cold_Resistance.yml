@@ -1,0 +1,11 @@
+name: Cold Resistance
+id: 61
+pp: 184
+Rng: touch
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Inures the subject’s body to the effects of cold. Even unclothed
+the subject can withstand temperatures as low
+as −15°F without suffering ill effects. Against magical
+cold attacks (e.g., <i>cone of cold</i>, a <b>winter wolf’s</b> breath),
+the recipient enjoys a +2 saving throw bonus.</p>"
