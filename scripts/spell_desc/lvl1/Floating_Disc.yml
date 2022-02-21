@@ -1,0 +1,13 @@
+id: 169
+name: Floating Disc
+pp: 199
+Rng: 10 feet
+Dur: 12 turns (2 hours) per CA level
+Rev: 0
+Desc: "<p>Causes a flat, shield-sized disc to materialize behind
+the caster. The <i>floating disc</i> glides horizontally and
+follows the caster at about waist level, remaining 6–10
+feet behind and moving at the caster’s MV rate. The
+<i>disc</i> can bear 500 pounds; anything greater will ground
+it. When the spell ends, the <i>floating disc</i> disappears,
+and anything it bore falls to the ground.</p>"

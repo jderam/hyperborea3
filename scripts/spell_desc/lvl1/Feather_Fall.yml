@@ -1,0 +1,10 @@
+id: 149
+name: Feather Fall
+pp: 196
+Rng: 60 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Causes the caster or other willing recipient to assume
+the mass and weight of a feather so that a precipitous
+fall causes no damage (at least for the duration of the
+spell). This spell does not work on unwilling recipients.</p>"

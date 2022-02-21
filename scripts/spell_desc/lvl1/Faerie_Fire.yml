@@ -1,0 +1,15 @@
+id: 145
+name: Færie Fire
+pp: 196
+Rng: 60 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Suffuses the area of effect in a lambent glow, the colour
+of which may be chosen by the caster. Ten square feet
+per CA level can be affected thus; or, one Medium creature
+or two Small creatures per CA level, no saving
+throw allowed. For larger creatures, the referee must
+determine a reasonable number of potential targets
+using the above guidelines (e.g., a <b>mountain ape</b> may
+be considered the equivalent of two people). Illumed
+creatures suffer −1 AC penalties.</p>"

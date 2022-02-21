@@ -1,0 +1,13 @@
+id: 178
+name: Freezing Hands
+pp: 201
+Rng: 5 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Plumes of thin, blue-white frost spring from the fingertips
+of the caster, fanning out in a 120° horizontal
+arc and causing 2 hp damage per CA level, with no
+saving throw allowed. Small fires can be extinguished
+by <i>freezing hands</i>. Modest quantities of water, wine, or
+ale can be frozen, but liquids of higher alcohol content
+will be unaffected.</p>"
