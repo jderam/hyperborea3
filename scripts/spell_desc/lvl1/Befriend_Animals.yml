@@ -1,0 +1,7 @@
+name: Befriend Animals
+id: 26
+pp: 178
+Rng: 10 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>The sorcerer enchants normal animals. The subjects must be Neutral, non-magical creatures of ordinary sort: amphibians, birds, fish, mammals, or reptiles. The sorcerer can control 1 HD of animals per CA level. Each such animal is granted a <i>sorcery</i> saving throw. Torpid or non-hostile animals make normal saving throws, but attacking animals save at +2. Animals that fail their saves are mesmerized and will follow the sorcerer to the best of their ability; those that make their saving throws will wander away or attack the caster, depending on the animal’s nature. An enchanted animal can be taught three tricks on par with what a trained dog or cat might learn, depending on its intelligence and capability. Each trick requires about a week of uninterrupted training; i.e., not during the course of adventure.</p>"

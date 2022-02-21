@@ -1,0 +1,7 @@
+name: Alarm
+id: 9
+pp: 176
+Rng: "10 feet per CA level"
+Dur: "12 turns (2 hours) per CA level"
+Rev: 0
+Desc: "<p>Cast upon as many doors, gates, portals, or other point of ingress/egress that are within the caster’s range. This spell is triggered by the passage of any living creature larger than a rat (3+ lbs.), evoking a sound not unlike bells pealing. Undead, constructs, and other non-living entities will not activate the <i>alarm</i> spell; neither will incorporeal beings, though invisible creatures will set off the spell.</p>"

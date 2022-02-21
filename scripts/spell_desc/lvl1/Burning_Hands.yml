@@ -1,0 +1,12 @@
+name: Burning Hands
+id: 41
+pp: 181
+Rng: 5 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Jets of thin, multihued flames spring from the fingertips
+of the caster’s enveloped-in-flames hands, fanning
+out in a 120° horizontal arc and causing 2 hp damage
+per CA level, with no saving throw allowed. Combustible
+materials (e.g., cloth, paper, dry wood) are likely
+ignited if exposed to <i>burning hands</i>.</p>"

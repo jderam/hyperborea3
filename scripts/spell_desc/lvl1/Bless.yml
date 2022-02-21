@@ -1,0 +1,18 @@
+name: Bless
+id: 31
+pp: 179
+Rng: 0
+Dur: 3 turns
+Rev: 1
+Desc: "<p>All allies within 25 feet of the caster are sanctified by
+this spell, gaining a +1 to any saving throw versus fear
+effects (whether <i>sorcery</i> or <i>device</i>), and a +1 bonus on all
+attack rolls. Furthermore, NPCs (henchmen, hirelings,
+etc.) each gain a +1 bonus on any <i>morale</i> (ML) check.</p>
+<p>The reverse form of this spell, <i>blight</i>, curses all hostile
+creatures within 25 feet of the caster, effecting −1
+morale, −1 on saving throws versus fear effects, and a
+−1 penalty on all attack rolls. <i>N.B.:</i> Either form of this
+spell affects only those within range at the moment the
+spell is cast; i.e., subsequently moving into or out of
+range has no bearing on the spell’s effects.</p>"

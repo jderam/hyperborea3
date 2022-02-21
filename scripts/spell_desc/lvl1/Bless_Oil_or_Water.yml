@@ -1,0 +1,21 @@
+name: Bless Oil or Water
+id: 32
+pp: 180
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>This 6-turn (1-hour) ritual is performed exclusively
+by sorcerers of Good alignment. A holy benediction
+is placed on an eight-ounce vessel of vegetable oil or
+fresh water, thus creating a dose of holy oil or holy
+water. Sorcerers of CA 1–4 can cast this spell but once
+per month; those of CA 5–8 can cast this spell twice
+per month; and those of CA 9–12 can cast this spell
+thrice per month. <i>Bless oil or water</i> must be cast on
+hallowed ground, or on that which has been sanctified
+by a <i>ceremony of consecration</i> spell. A glass vessel of
+holy oil/water thrown as a missile at an undead target
+delivers 1d8 hp damage per round for 2 rounds if a hit
+is scored. Hurling a vessel of holy oil/water is executed
+by use of the <i>flask hurling</i> rules (see Chapter 9:
+Combat, combat options).</p>"
