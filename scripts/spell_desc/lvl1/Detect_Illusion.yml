@@ -1,0 +1,12 @@
+id: 108
+name: Detect Illusion
+pp: 191
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Allows the caster to perceive phantasms for what they
+are. Illusions and phantasms within a 30-foot radius of
+the caster appear translucent. This spell requires minimal
+concentration; the caster can move and continue
+to <i>detect illusion</i>, but cannot run, fight, or perform
+other like actions.</p>"

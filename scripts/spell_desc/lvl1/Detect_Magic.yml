@@ -1,0 +1,16 @@
+id: 110
+name: Detect Magic
+pp: 191
+Rng: 60 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Allows the caster to sense the presence of magic items
+or other dweomered persons, places, or things (e.g.,
+an enchanted treasure chest, a <i>sorcerer locked</i> door).
+The dweomered items will glow before the eyes of the
+caster in a path of detection 60 feet long and 10 feet
+wide. From a stationary position the caster can slowly
+rotate, covering 360° before the spell ends. <i>Detect magic</i>
+is obstructed by metal of one-inch thickness, stone
+of six-inch thickness, or wood of one-foot thickness;
+lead always masks the presence of magic.</p>"

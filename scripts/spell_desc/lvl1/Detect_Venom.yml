@@ -1,0 +1,15 @@
+id: 116
+name: Detect Venom
+pp: 192
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>This spell has two functions: First, it reveals if an ailing
+person suffers the effects of poison, whether from
+a trap, snakebite, spider venom, or the like. The second
+function determines if a creature is venomous, or if an
+object is laced or trapped with poison. The creature
+or object in question must be viewed by the caster;
+obstructions will preclude the spell from functioning.
+From a stationary position the caster can slowly rotate,
+covering 360° before the spell ends.</p>"

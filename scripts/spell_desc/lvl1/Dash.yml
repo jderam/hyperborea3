@@ -1,0 +1,13 @@
+id: 97
+name: Dash
+pp: 190
+Rng: touch
+Dur: 1d4+2 hours
+Rev: 0
+Desc: "<p>The movement rate of this spell’s recipient is increased
+by +20 (maximum 70 MV) for the duration of the spell;
+e.g., a character with 40 MV can move at 60 MV (120
+feet per round running). The secondary effect of this
+spell is marathon-like endurance: The runner can <i>dash</i>
+for 1d4+2 hours before the spell ends, unless terminated
+earlier by the caster or a <i>dispel magic</i> spell.</p>"

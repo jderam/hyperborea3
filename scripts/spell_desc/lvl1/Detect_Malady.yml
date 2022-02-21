@@ -1,0 +1,11 @@
+id: 111
+name: Detect Malady
+pp: 191
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>By laying hands on the afflicted, the sorcerer detects
+the presence of a curse, disease, or poison. The type
+of malady and its exact nature are revealed (e.g., the
+caster will discern poison and differentiate between a
+spider’s venom and an alchemical concoction).</p>"

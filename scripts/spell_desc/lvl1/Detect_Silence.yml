@@ -1,0 +1,13 @@
+id: 113
+name: Detect Silence
+pp: 192
+Rng: 120 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Allows the caster to hear that which is magically
+<i>silenced</i> or <i>moving silently</i> (thieves, barbarians, assassins,
+et al.) in a 120-foot radius. The spell attunes the
+caster to subtleties of sound otherwise imperceptible,
+such as a whisper behind a closed door. If the caster
+enters a deep trance, <i>detect silence</i> can also be used to
+perceive noises made in parallel dimensions.</p>"

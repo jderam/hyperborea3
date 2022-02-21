@@ -1,0 +1,15 @@
+id: 96
+name: Darkness
+pp: 190
+Rng: 120 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Evokes magical blackness to consume a 15-foot radius
+from its selected target point. Torch and lantern light
+are rendered ineffective, and <i>infrared vision</i> is futile.
+If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i>
+saving throw is allowed to negate the spell. Creatures
+affected by <i>darkness</i> suffer effects similar to blindness:
+automatic loss of initiative and −4 penalties on attack
+rolls, armour class, and saving throws. <i>Darkness</i> can
+counter <i>continuous light</i> and <i>light</i>.</p>"

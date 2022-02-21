@@ -1,0 +1,13 @@
+id: 109
+name: Detect Invisibility
+pp: 191
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Allows the caster to discern the presence of any invisible
+objects, persons, or monsters within a 30-foot
+radius; also reveals those who exercise the <i>hide</i> ability
+(thieves, rangers, assassins, et al.). This spell requires
+minimal concentration; the caster can move and continue
+to <i>detect invisibility</i>, but cannot run, fight, or
+perform other like actions.</p>"
