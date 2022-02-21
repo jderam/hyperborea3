@@ -1,0 +1,78 @@
+94 Dancing Lights
+96 Darkness
+97 Dash
+103 Decipher Language
+107 Detect Evil
+108 Detect Illusion
+109 Detect Invisibility
+110 Detect Magic
+111 Detect Malady
+113 Detect Silence
+114 Detect Snares and Pits
+115 Detect Undead
+116 Detect Venom
+120 Disguise Self
+133 Enlargement
+134 Entangle
+141 Extermination
+149 Feather Fall
+156 Fire Resistance
+166 Flaming Missile
+168 Flash
+169 Floating Disc
+178 Freezing Hands
+180 Friends
+145 Færie Fire
+133 Giant [Enlargement]
+189 Goodberry
+190 Grease
+201 Hold Portal
+204 Hypnotism
+211 Identify
+224 Influence Normal Fire
+232 Invisibility to Undead
+233 Jump
+238 Light
+243 Locate Ordinary Animal
+244 Locate the Dead
+245 Magic Ice Dart
+247 Magic Missile
+249 Magic Stone
+256 Melt Ice
+257 Mending
+258 Message
+259 Messenger Bird
+263 Mirror Gaze
+264 Mirror Image
+270 Mount
+273 Necromantic Ventriloquism
+277 Omen
+280 Pass without Trace
+283 Perceive Disguise
+287 Phantasm
+302 Precipitate
+303 Prismatic Orb
+311 Protection from Evil
+314 Purify Food and Drink
+321 Reflexion
+325 Remove Fear
+332 Sanctuary
+333 Sanctuary from Animals
+334 Scare
+343 Serpent Charm
+348 Shield
+349 Shillelagh
+350 Shocking Grasp
+353 Shove
+357 Skeletal Servant
+358 Sleep
+361 Smoke Cloud
+365 Sorcerer Mark
+366 Sorcerous Armour
+370 Speak with Animals
+375 Spider Climb
+409 Terrify
+428 Unseen Servant
+431 Ventriloquism
+440 Wall of Vapours
+453 Write Spell
