@@ -1,0 +1,20 @@
+id: 224
+name: Influence Normal Fire
+pp: 208
+Lvl: 
+  - mag 1
+  - pyr 1
+  - wch 1
+  - drd 1
+Rng: 60 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Allows the caster to affect non-magical fires from as
+small as a torch to as large as a three-foot-diameter
+bonfire. With a wave of the hand, a fire may be doubled
+or shrunk to the size of a lit match. The fire’s fuel consumption
+is influenced by the spell, but heat output is
+not. Normal fire causes 1d4 damage per round to those
+who are directly exposed to the flames. If, for example,
+a bonfire is doubled, and enemies are huddled around
+it, each may make an <i>avoidance</i> save to escape harm.</p>"

@@ -1,0 +1,15 @@
+id: 190
+name: Grease
+pp: 203
+Rng: 10 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>A fatty, unctuous film coats an area of effect equal to
+2 × 2 feet per CA level (e.g., a CA 10 sorcerer affects
+an area not exceeding 20 × 20 feet). Any creature that
+steps on the <i>greased</i> area will slip and fall unless it
+makes an <i>avoidance</i> saving throw. A fallen victim is
+momentarily <i>prone</i>. <i>Grease</i> is not limited to flooring;
+it can be used to lubricate a rope, a chair, or other objects.
+If the spell is cast on something an enemy holds
+or wears, a <i>sorcery</i> saving throw negates the effects.</p>"

@@ -1,0 +1,20 @@
+id: 244
+name: Locate the Dead
+pp: 211
+Lvl: 
+  - nec 1
+  - wch 1
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Detects the presence of deceased creatures in a
+30-foot radius. The caster walks at half speed, chanting,
+gesticulating, and attuning to the presence of
+death. Although <i>locate the dead</i> can detect the presence
+of undead creatures, it does not distinguish between
+death and undeath. This spell penetrates 10 feet
+of packed earth, five feet of wood, three feet of stone,
+or one inch of metal (except lead). <i>Locate the dead</i> also
+can be used to seek a specific dead person or creature;
+however, the caster must possess a personal item or
+memento of the sought-after corpse.</p>"

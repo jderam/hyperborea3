@@ -1,0 +1,23 @@
+id: 204
+name: Hypnotism
+pp: 205
+Lvl: 
+  - ill 1
+  - wch 2
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>The sorcerer’s eyes become kaleidoscopic as he or she
+makes weird, mesmerizing gestures and speaks in low,
+reverberating tones. The sorcerer can <i>hypnotize</i> 1d6
+selected creatures. Targets are allowed <i>sorcery</i> saving
+throws to resist; the saves are modified by <i>willpower
+adjustment</i>, if applicable. Hostile (i.e., already on the
+attack) creatures gain a +2 bonus on their saving
+throws. <i>Hypnotized</i> creatures might be convinced
+to take some simple course of action (uttered by the
+sorcerer in a brief sentence), but it cannot be a self-destructive
+action or the connexion will be broken. The
+caster may utter this proposition at any time after the
+<i>hypnosis</i> takes effect, though before the spell’s duration
+elapses; once the spell ends, all effects terminate.</p>"

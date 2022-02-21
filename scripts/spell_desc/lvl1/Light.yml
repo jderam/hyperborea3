@@ -1,0 +1,23 @@
+id: 238
+name: Light
+pp: 211
+Lvl: 
+  - mag 1
+  - cry 1
+  - ill 1
+  - pyr 1
+  - wch 1
+  - clr 1
+  - drd 1
+Rng: 120 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance,
+somewhat dimmer than full daylight. The spell
+can be centred on an object, on a person, or in the air. If
+<i>light</i> is centred on the visual organs of a creature, and it
+fails a <i>sorcery</i> saving throw, the victim is partially blinded
+for the duration of the spell, suffering −2 “to hit,” −2
+AC, and −2 saving throws. This spell can be ended at
+will by the caster. A <i>light</i> spell can counter a <i>darkness</i>
+spell, and vice versa, but not <i>continuous darkness</i>.</p>"
