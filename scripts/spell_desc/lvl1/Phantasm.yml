@@ -1,1 +1,41 @@
 id: 287
+name: Phantasm
+pp: 218
+Lvl: 
+  - mag 3
+  - ill 1
+  - wch 3
+Rng: 240 feet
+Dur: special
+Rev: 0
+Desc: "<p>A visual illusion is created, a projected image of
+nearly anything the caster can imagine, as large as
+20 × 20 × 20 feet in area. Victims must be living creatures
+of animal intelligence or greater; undead, constructs,
+oozes, and the like are unaffected. <i>Phantasm</i>
+can be used to create an attacking monster or another
+damaging hazard, but the illusion is strictly of sight,
+not of sound, smell, or temperature.</p>
+<p>Once cast, this spell persists as long as the caster concentrates,
+unless the illusion is touched or terminated
+via a <i>dispel phantasm</i> spell. A <i>phantasmal</i> monster is
+AC 9 and will disappear if hit; otherwise, it can continue
+to attack as manipulated by the caster. The caster
+can direct the illusion to move anywhere within the
+spell’s range; such manoeuvres require complete concentration,
+and no movement is allowed.</p>
+<p><i>Phantasm</i> targets are not allowed saving throws unless
+the referee feels the illusion is unbelievable to the
+viewers, in which case <i>sorcery</i> saving throws should
+be rolled, modified by <i>willpower adjustment</i>, if applicable.
+Credibility may come into question because
+of the soundlessness of the illusion (e.g., a charging
+mammoth); in other instances, such as a <i>phantasm</i> of
+fire, a lack of thermal properties can create suspicion.
+To the eyes of the disbeliever, the <i>phantasm</i> becomes a
+flawed and flickering transparent image. An intelligent
+disbeliever may then alert allies, whose saves are made
+at a bonus of +4. Otherwise, this illusion can inflict real
+physical damage: 1d4 hp base damage, +1 hp damage
+per CA level, per round to each victim. Such damage
+remains even if the spell is subsequently broken.</p>"

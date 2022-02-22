@@ -1,1 +1,18 @@
 id: 302
+name: Precipitate
+pp: 220
+Lvl: 
+  - cry 1
+  - clr 1
+  - drd 1
+Rng: special
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Cast outdoors under an at least partly cloudy sky, this
+spell involves a chanting ritual that requires 1 turn to
+complete. The spell invokes the clouds to release their
+water vapour for the duration of the spell. The heaviness
+and consistency of the rain depend on the cloud
+cover and the prevailing temperature; hence, <i>precipitation</i>
+could be sleet if the temperature is at or near
+freezing, or snow if below freezing.</p>"

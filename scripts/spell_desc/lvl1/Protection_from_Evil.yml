@@ -1,1 +1,21 @@
 id: 311
+name: Protection from Evil
+pp: 222
+Lvl: 
+  - mag 1
+  - cry 1
+  - nec 1
+  - pyr 1
+  - wch 1
+  - clr 1
+Rng: 0
+Dur: 6 turns (1 hour)
+Rev: 1
+Desc: "<p>A pale circle of light surrounds the caster, preventing
+summoned creatures (e.g., dæmons, elementals) from
+attacking. Against other Evil creatures, the sorcerer
+enjoys a +1 bonus to AC, DR, and saving throws versus
+their attacks. The reverse of this spell, <i>protection
+from good</i>, can be cast only by Evil or Neutral sorcerers;
+it functions the same way, except versus creatures
+of Good alignment.</p>"

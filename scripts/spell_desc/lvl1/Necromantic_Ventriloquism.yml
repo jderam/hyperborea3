@@ -1,1 +1,14 @@
 id: 273
+name: Necromantic Ventriloquism
+pp: 216
+Lvl: 
+  - nec 1
+Rng: 120 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The voice of the sorcerer is thrown from the corpse
+of a dead human, <b>skeleton</b>, or <b>zombie</b> that is within
+range. The thrown voice is not that of the caster, but
+simulates that which a dead or undead creature might
+issue; i.e., a cold, raspy skeletal timbre, or a gurgling,
+maggot-infested resonance.</p>"

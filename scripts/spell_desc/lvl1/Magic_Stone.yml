@@ -11,8 +11,8 @@ Desc: "<p>Enchants a stone that functions at +1 “to hit” and
 damage (i.e., 2 hp if thrown, or 1d4+1 hp if fired from
 a sling). Each stone issues a sharp report upon impact.
 For every 3 CA levels one stone is enchanted:</p>
-<b>Table 103: Magic Stone Spell</b>
 <table>
+<caption><b>Table 103: Magic Stone Spell</b></caption>
 <tr><th>CA Level</th> <th>No. of Stones</th></tr>
 <tr><td>1–3</td> <td>1</td></tr>
 <tr><td>4–6</td> <td>2</td></tr>

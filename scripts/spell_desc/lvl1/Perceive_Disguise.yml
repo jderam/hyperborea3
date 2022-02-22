@@ -1,1 +1,17 @@
 id: 283
+name: Perceive Disguise
+pp: 217
+Lvl: 
+  - clr 1
+Rng: 30 feet
+Dur: 1 round
+Rev: 0
+Desc: "<p>Allows the caster to determine if one creature per CA
+level within range pretends to be something it is not,
+whether via sorcery or artifice. The spell will not reveal
+the exact nature of the creature; neither will it detect
+alignment or allow the caster to glean any additional
+information, but merely that the target is not what it
+feigns to be. Targets of this subtle spell are almost always
+unaware that sorcery is at work. Each, however,
+is allowed a <i>sorcery</i> saving throw to resist the spell.</p>"
