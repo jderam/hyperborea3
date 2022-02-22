@@ -1,6 +1,9 @@
 name: Chill Touch
 id: 56
 pp: 183
+Lvl: 
+  - cry 1
+  - nec 1
 Rng: 0
 Dur: 1 turn
 Rev: 0

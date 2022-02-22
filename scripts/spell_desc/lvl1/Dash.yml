@@ -1,6 +1,8 @@
 id: 97
 name: Dash
 pp: 190
+Lvl: 
+  - mag 1
 Rng: touch
 Dur: 1d4+2 hours
 Rev: 0

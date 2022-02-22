@@ -1,6 +1,10 @@
 id: 107
 name: Detect Evil
 pp: 191
+Lvl: 
+  - mag 2
+  - wch 1
+  - clr 1
 Rng: 60 feet
 Dur: 1 turn
 Rev: 1

@@ -1,6 +1,9 @@
 id: 149
 name: Feather Fall
 pp: 196
+Lvl: 
+  - mag 1
+  - wch 1
 Rng: 60 feet
 Dur: 1 turn
 Rev: 0

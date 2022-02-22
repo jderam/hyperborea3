@@ -1,6 +1,9 @@
 name: Bless
 id: 31
 pp: 179
+Lvl: 
+  - wch 2
+  - clr 1
 Rng: 0
 Dur: 3 turns
 Rev: 1

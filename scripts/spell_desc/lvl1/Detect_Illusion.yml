@@ -1,6 +1,10 @@
 id: 108
 name: Detect Illusion
 pp: 191
+Lvl: 
+  - mag 2
+  - ill 1
+  - wch 1
 Rng: 30 feet
 Dur: 1 turn
 Rev: 0

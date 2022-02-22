@@ -1,6 +1,9 @@
 name: Burning Hands
 id: 41
 pp: 181
+Lvl: 
+  - mag 1
+  - pyr 1
 Rng: 5 feet
 Dur: instantaneous
 Rev: 0

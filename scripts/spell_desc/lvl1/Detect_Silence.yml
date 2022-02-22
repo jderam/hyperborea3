@@ -1,6 +1,11 @@
 id: 113
 name: Detect Silence
 pp: 192
+Lvl: 
+  - mag 2
+  - ill 1
+  - wch 2
+  - clr 2
 Rng: 120 feet
 Dur: 1 turn per CA level
 Rev: 0

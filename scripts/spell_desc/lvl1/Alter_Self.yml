@@ -1,6 +1,9 @@
 name: Alter Self
 id: 11
 pp: 176
+Lvl: 
+  - ill 2
+  - wch 1
 Rng: 0
 Dur: 1d6 turns
 Rev: 0

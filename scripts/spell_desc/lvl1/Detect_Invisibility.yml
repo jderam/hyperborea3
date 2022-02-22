@@ -1,6 +1,10 @@
 id: 109
 name: Detect Invisibility
 pp: 191
+Lvl: 
+  - mag 2
+  - ill 1
+  - wch 2
 Rng: 30 feet
 Dur: 1 turn
 Rev: 0

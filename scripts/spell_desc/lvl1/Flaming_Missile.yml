@@ -1,6 +1,8 @@
 id: 166
 name: Flaming Missile
 pp: 199
+Lvl: 
+  - pyr 1
 Rng: 90 feet
 Dur: instantaneous
 Rev: 0

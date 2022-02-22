@@ -1,6 +1,8 @@
 id: 169
 name: Floating Disc
 pp: 199
+Lvl: 
+  - mag 1
 Rng: 10 feet
 Dur: 12 turns (2 hours) per CA level
 Rev: 0

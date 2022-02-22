@@ -1,6 +1,10 @@
 id: 145
 name: Færie Fire
 pp: 196
+Lvl: 
+  - pyr 1
+  - wch 1
+  - drd 1
 Rng: 60 feet
 Dur: 6 turns (1 hour)
 Rev: 0

@@ -1,6 +1,9 @@
 id: 116
 name: Detect Venom
 pp: 192
+Lvl: 
+  - clr 1
+  - drd 1
 Rng: 30 feet
 Dur: 1 turn
 Rev: 0

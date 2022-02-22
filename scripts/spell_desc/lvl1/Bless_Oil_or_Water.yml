@@ -1,6 +1,8 @@
 name: Bless Oil or Water
 id: 32
 pp: 180
+Lvl: 
+  - clr 1
 Rng: touch
 Dur: permanent
 Rev: 0

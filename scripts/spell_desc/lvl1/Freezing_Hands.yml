@@ -1,6 +1,8 @@
 id: 178
 name: Freezing Hands
 pp: 201
+Lvl: 
+  - cry 1
 Rng: 5 feet
 Dur: instantaneous
 Rev: 0

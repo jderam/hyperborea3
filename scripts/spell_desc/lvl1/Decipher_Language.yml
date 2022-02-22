@@ -1,6 +1,13 @@
 id: 103
 name: Decipher Language
 pp: 190
+Lvl: 
+  - mag 1
+  - cry 1
+  - ill 1
+  - nec 1
+  - pyr 1
+  - wch 1
 Rng: 0
 Dur: 1 turn per CA level
 Rev: 0

@@ -1,6 +1,9 @@
 name: Command
 id: 63
 pp: 184
+Lvl: 
+  - nec 1
+  - clr 1
 Rng: 30 feet
 Dur: 6 rounds (1 minute)
 Rev: 0

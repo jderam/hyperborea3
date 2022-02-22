@@ -1,6 +1,8 @@
 name: Ceremony of Consecration
 id: 48
 pp: 182
+Lvl: 
+  - clr 1
 Rng: touch
 Dur: permanent
 Rev: 1

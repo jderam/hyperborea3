@@ -1,6 +1,8 @@
 name: Animate Carrion
 id: 13
 pp: 177
+Lvl: 
+  - nec 1
 Rng: 10 feet
 Dur: permanent
 Rev: 0

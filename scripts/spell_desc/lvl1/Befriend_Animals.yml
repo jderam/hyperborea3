@@ -1,6 +1,9 @@
 name: Befriend Animals
 id: 26
 pp: 178
+Lvl: 
+  - wch 2
+  - drd 1
 Rng: 10 feet
 Dur: permanent
 Rev: 0

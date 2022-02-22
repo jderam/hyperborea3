@@ -1,6 +1,9 @@
 id: 189
 name: Goodberry
 pp: 202
+Lvl: 
+  - wch 2
+  - drd 1
 Rng: touch
 Dur: 1 day + 1 day per CA level
 Rev: 1

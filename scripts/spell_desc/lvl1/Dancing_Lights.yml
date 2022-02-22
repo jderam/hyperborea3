@@ -1,6 +1,10 @@
 id: 94
 name: Dancing Lights
 pp: 188
+Lvl: 
+  - mag 1
+  - ill 1
+  - pyr 1
 Rng: 120 feet
 Dur: 1 turn
 Rev: 0

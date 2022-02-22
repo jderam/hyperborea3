@@ -1,6 +1,9 @@
 id: 133
 name: Enlargement
 pp: 194
+Lvl: 
+  - mag 1
+  - wch 1
 Rng: 5 feet per CA level
 Dur: 1 turn
 Rev: 1

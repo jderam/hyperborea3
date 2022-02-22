@@ -1,6 +1,10 @@
 name: Cold Resistance
 id: 61
 pp: 184
+Lvl: 
+  - cry 1
+  - nec 2
+  - clr 1
 Rng: touch
 Dur: 6 turns (1 hour) per CA level
 Rev: 0

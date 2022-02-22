@@ -1,6 +1,10 @@
 id: 156
 name: Fire Resistance
 pp: 197
+Lvl: 
+  - pyr 1
+  - clr 2
+  - drd 1
 Rng: touch
 Dur: 6 turns (1 hour) per CA level
 Rev: 0

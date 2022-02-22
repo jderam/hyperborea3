@@ -1,6 +1,8 @@
 id: 120
 name: Disguise Self
 pp: 192
+Lvl: 
+  - ill 1
 Rng: 0
 Dur: 1d6 turns
 Rev: 0
