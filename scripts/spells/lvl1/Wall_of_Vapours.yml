@@ -1,0 +1,17 @@
+id: 440
+name: Wall of Vapours
+pp: 245
+Lvl: 
+  - cry 2
+  - ill 1
+Rng: 60 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Evokes a hedge of Æthereal mists as large as
+10 × 30 × 30 feet in volume. These <i>vapours</i> are opaque
+and normal sight cannot penetrate them; likewise, <i>infrared
+vision</i> is blocked. The <i>wall of vapours</i>, however,
+is easily dispersed. A <i>gust of wind</i> spell, or any natural
+wind of 10 mph or greater, will diffuse the effect. The
+cryomancer version of this spell generates a mist of ice
+crystals.</p>"

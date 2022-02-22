@@ -1,0 +1,19 @@
+id: 115
+name: Detect Undead
+pp: 192
+Lvl: 
+  - nec 1
+  - wch 1
+Rng: 60 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>In a 60-foot-long, 10-foot-wide path, the caster
+discerns the presence of lesser undead creatures
+(<i>Undead Types 0–5</i>). Casters of CA 7 or greater will
+detect any undead creature. The detected abominations
+will glow a putrid green before the eyes of the
+caster. From a stationary position the caster can slowly
+rotate, covering 360° before the spell ends. <i>Detect
+undead</i> is obstructed by metal of one-inch thickness,
+stone of six-inch thickness, or wood of one-foot thickness;
+lead completely foils the spell.</p>"

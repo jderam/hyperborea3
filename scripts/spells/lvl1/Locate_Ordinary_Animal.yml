@@ -1,0 +1,16 @@
+id: 243
+name: Locate Ordinary Animal
+pp: 211
+Lvl: 
+  - drd 1
+Rng: 300 feet
+Dur: 2 turns
+Rev: 0
+Desc: "<p>The sorcerer selects a known animal type to be found
+(e.g., bear, eagle, wolf). The type must be well known
+by the caster; another person describing the animal
+type is insufficient (though a detailed picture may
+suffice), and magical or supernatural creatures do not
+qualify. If an animal of the stated type is indeed within
+range of the spell, the caster will know which direction
+to seek, but not the precise distance.</p>"

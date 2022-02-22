@@ -1,0 +1,18 @@
+id: 333
+name: Sanctuary from Animals
+pp: 226
+Lvl: 
+  - drd 1
+Rng: 0
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Persuades animals to ignore the caster completely if
+they fail their <i>sorcery</i> saving throws. The caster can
+move about freely, taking other inoffensive actions
+until the spell’s duration terminates. However, <i>sanctuary
+from animals</i> provides no special protection if the
+caster happens to be in the area of effect of an animal’s
+special attack (e.g., a <b>giant ferret’s</b> musk), such as
+when a nearby ally is targeted. Any offensive actions
+taken by the caster (physical attacks, harmful spells,
+or the like) break the spell.</p>"

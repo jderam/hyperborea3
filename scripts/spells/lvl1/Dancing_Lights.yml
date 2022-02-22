@@ -1,0 +1,17 @@
+id: 94
+name: Dancing Lights
+pp: 188
+Lvl: 
+  - mag 1
+  - ill 1
+  - pyr 1
+Rng: 120 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Effects 1d4+2 bouncing flames that simulate a marching
+group of torch-bearing patrollers. With a word,
+the caster can direct the <i>dancing lights</i> to move, even
+around corners, though only within the range of the
+spell; if guided otherwise, they will disappear. Directing
+a <i>dancing lights</i> spell does not require continued
+concentration, but simply a flick of the hand or finger.</p>"

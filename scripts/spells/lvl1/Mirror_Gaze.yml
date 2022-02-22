@@ -1,0 +1,18 @@
+id: 263
+name: Mirror Gaze
+pp: 214
+Lvl: 
+  - ill 1
+Rng: 0
+Dur: 1 turn
+Rev: 0
+Desc: "<p>A round, shimmering mirror appears before the caster,
+reflecting the gaze of any creature that uses its eyes
+to attack or beguile. Such gaze attacks are reflected
+at the gazer, and if the gazer does not make a saving
+throw (<i>sorcery</i> or <i>transformation</i>, as the case may be),
+it becomes a victim of its own devices. If the sorcerer’s
+CA is 5 or more, a subtler version of the spell may be
+cast: Sometimes called <i>mirror eyes</i>, this alternative
+form causes the caster’s eyes to become mirrored for
+the duration of the spell.</p>"

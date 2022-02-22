@@ -1,0 +1,16 @@
+id: 314
+name: Purify Food and Drink
+pp: 223
+Lvl: 
+  - wch 2
+  - clr 1
+  - drd 1
+Rng: 10 feet
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Decontaminates one cubic foot of spoilt or rotten foodstuffs
+per CA level. Even poisonous food is made pure
+by this spell. The reverse of this spell, <i>putrefy food
+and drink</i>, spoils and rots an equal amount of food and
+drink; it cannot make food “poisonous,” but putrefied
+food may well sicken a consumer.</p>"

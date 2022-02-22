@@ -1,0 +1,14 @@
+id: 349
+name: Shillelagh
+pp: 229
+Lvl: 
+  - drd 1
+Rng: 0
+Dur: 2 turns
+Rev: 0
+Desc: "<p>Transforms the sorcerer’s oaken club or unshod staff
+into a magical weapon that is +1 “to hit” and inflicts
+2d4+1 hp damage. Only the caster may effectively
+wield the <i>shillelagh</i>. If another should attempt to use
+it, it is effective for one successful hit before crumbling
+to wood chips.</p>"

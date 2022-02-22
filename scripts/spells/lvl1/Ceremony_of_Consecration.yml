@@ -1,0 +1,10 @@
+name: Ceremony of Consecration
+id: 48
+pp: 182
+Lvl: 
+  - clr 1
+Rng: touch
+Dur: permanent
+Rev: 1
+Desc: "<p>Sanctifies a square area with sides no more than 10 feet long per CA level (e.g., a CA 9 sorcerer can consecrate a 90 × 90-foot temple). The <i>consecration</i> hallows the area to whatever deities, otherworldly powers, or alignment the sorcerer serves. Once <i>consecrated</i>, creatures opposed to the caster’s faith suffer penalty of −1 saving throw and morale penalties whilst in the consecrated area.</p>
+<p>The reverse of this spell, <i>ceremony of desecration</i>, negates <i>consecration</i> by another sorcerer of equal or lower CA; e.g., a shrine <i>consecrated</i> by a 7th-level cleric cannot be <i>desecrated</i> by a 3rd-level priest. Either ritual requires 6 turns (1 hour) to complete and requires a sacrifice of blood and gems valued at 500 gp per 10-foot length of the area <i>consecrated/desecrated</i> (e.g., a 90 × 90-foot temple requires a sacrifice of 4,500 gp in gems).</p>"

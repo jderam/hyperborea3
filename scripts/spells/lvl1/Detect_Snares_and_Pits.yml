@@ -1,0 +1,17 @@
+id: 114
+name: Detect Snares and Pits
+pp: 192
+Lvl: 
+  - drd 1
+Rng: 30 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The caster notices outdoor traps, including deadfalls,
+pits, snares, and spring traps; even natural hazards
+may be discerned. The path of detection is 30 feet
+long and 10 feet wide. The sorcerer must continue to
+concentrate, with hands spread wide. Walking is permitted,
+but no jogging, running, or the like. Except for
+pits, snares, and other simple traps as noted above,
+this spell will not detect the sort of complex mechanical
+or magical traps typically found in dungeons.</p>"

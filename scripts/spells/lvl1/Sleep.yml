@@ -1,0 +1,21 @@
+id: 358
+name: Sleep
+pp: 230
+Lvl: 
+  - mag 1
+  - wch 1
+Rng: 120 feet
+Dur: 2d8 turns
+Rev: 0
+Desc: "<p>Induces victims of 4 HD or fewer to slumber, with no
+saving throws possible. This enchantment encompasses
+a 30-foot-diameter area and affects 2d8 HD of creatures,
+starting with the lowest HD creatures first. Note
+that any “+” to hit dice should be ignored when determining
+the HD value of affected targets (e.g., a 3+1 HD
+creature counts as 3 HD, though a 3 HD creature will be
+ensorcelled before a 3+1 HD creature). Alternatively,
+this spell can be targeted at a single creature of 5 HD
+or fewer. <i>Sleeping</i> victims will not awaken from normal
+noise, though they will rouse if shaken or slapped. Undead
+and constructs are unaffected by this spell.</p>"

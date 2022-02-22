@@ -1,0 +1,14 @@
+id: 277
+name: Omen
+pp: 216
+Lvl: 
+  - clr 1
+Rng: touch
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The sorcerer or other recipient receives an <i>omen</i> regarding
+the near future. The next time the recipient
+rolls to attack or for a saving throw, three rolls may be
+made and the best result selected. This supersedure can
+be done but once, and if the <i>omen</i> is not utilized before
+the spell’s duration has passed, the dweomer is lost.</p>"

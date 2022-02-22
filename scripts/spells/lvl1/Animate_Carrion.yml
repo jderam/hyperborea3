@@ -1,0 +1,9 @@
+name: Animate Carrion
+id: 13
+pp: 177
+Lvl: 
+  - nec 1
+Rng: 10 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Raised are the bones or carrion of Small animals: amphibians, birds, mammals, and reptiles of natural sort. The <b>small undead animals</b> will obey the simple instructions of the caster (essentially one-word commands) and follow the sorcerer unless slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion between the sorcerer and the undead animal. The caster can <i>animate</i> and maintain no more than 1 HD of undead animals per CA level. <i>Animated carrion</i> loses any special abilities possessed in life (e.g., flight, musk, venom).</p>"

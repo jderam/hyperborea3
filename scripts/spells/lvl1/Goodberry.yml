@@ -1,0 +1,27 @@
+id: 189
+name: Goodberry
+pp: 202
+Lvl: 
+  - wch 2
+  - drd 1
+Rng: touch
+Dur: 1 day + 1 day per CA level
+Rev: 1
+Desc: "<p>This dweomer is placed upon a handful of fresh berries,
+2d4 of which are enchanted to <i>goodberries</i>. The
+berries must be no more than 5 days removed from the
+branch, and they must be stored in a cool, dry place.
+Only the caster knows which berries are enchanted,
+though <i>detect magic</i> can also reveal them. A single
+<i>goodberry</i> can nourish a person for a day or cure 1 hp
+of damage; the choice a sort of mini-wish made by the
+consumer. However, only eight healing berries can be
+consumed by one person in a 24-hour period.</p>
+<p>The reverse of this spell, <i>badberry</i>, must be cast on
+spoilt or rotten berries. It makes them appear fresh.
+These berries deliver mild poison to the consumer for
+1 hp damage each, negated by a <i>death</i> (poison) saving
+throw. If multiple <i>badberries</i> are consumed at the
+same time, only one saving throw is allowed, though
+the same maximum of eight <i>badberries</i> are effective
+(thus 8 hp damage).</p>"

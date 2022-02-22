@@ -1,0 +1,21 @@
+id: 357
+name: Skeletal Servant
+pp: 230
+Lvl: 
+  - nec 1
+Rng: 240 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>This ritual requires 1 turn to cast, using the complete
+skeleton of a human or humanoid. The skeleton is animated
+to an undead creature of limited means. This
+<i>skeletal servant</i> will attend the caster; it can clean,
+fetch/carry a 10-pound item (or drag a 20-pound item),
+tie a simple knot, mend a torn cloth or sack, open an
+unlocked door, or perform other menial tasks throughout
+the duration of the spell, so long as it remains
+within 240 feet of the sorcerer. The creature cannot
+fight. Its relevant statistics are: <b>AL</b> CE; <b>SZ</b> M; <b>MV</b> 30;
+<b>AC</b> 7; <b>HD</b> ½; <b>#A</b> 0; <b>D</b> —; <b>SV</b> 17. <i>Special:</i> Immune
+to <i>sleep</i>, <i>charm</i>, and cold magic. Edged and piercing
+weapons inflict ½ damage. <i>Turned as Undead Type 0</i>.</p>"

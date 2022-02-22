@@ -1,0 +1,28 @@
+id: 211
+name: Identify
+pp: 206
+Lvl: 
+  - mag 1
+  - cry 1
+  - ill 1
+  - nec 1
+  - pyr 1
+  - wch 2
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful
+environment and necessitates the sacrifice of 100 gp
+worth of treasure (e.g., gold, gems) per item <i>identified</i>.
+The spell enables the caster to perceive the magical
+properties of one magic item per CA level, each item
+requiring 1 turn to properly <i>identify</i>. Note that whereas
+the properties of a magic item can be <i>identified</i>, the
+charges of a wand or like item may not be reckoned,
+and the exact description of such magical properties
+is always at the referee’s discretion. This ritual is exhausting;
+consequently, the caster will suffer a temporary
+8-point constitution drain until appropriate rest is
+taken. One point of constitution is restored per hour. If
+the constitution loss results in a score of 3 or less, the
+caster will fall unconscious for 24 hours.</p>"

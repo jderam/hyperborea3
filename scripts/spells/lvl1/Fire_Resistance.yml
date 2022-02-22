@@ -1,0 +1,15 @@
+id: 156
+name: Fire Resistance
+pp: 197
+Lvl: 
+  - pyr 1
+  - clr 2
+  - drd 1
+Rng: touch
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Inures the subject’s body to the effects of intense heat.
+Even clad in full armour, the recipient can withstand
+temperatures as high as 120°F without suffering any ill
+effects. Fire and magical fire attacks are saved against
+with a +2 bonus.</p>"

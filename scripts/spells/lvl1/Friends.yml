@@ -1,0 +1,20 @@
+id: 180
+name: Friends
+pp: 201
+Lvl: 
+  - mag 1
+  - wch 1
+Rng: 0
+Dur: 1 turn
+Rev: 0
+Desc: "<p>The caster’s charisma score is improved by 2d4 points
+(to 18 maximum). Creatures who speak with the caster
+must make immediate <i>reaction rolls</i>, modified by the
+<i>reaction/loyalty adjustment</i> of the sorcerer’s improved
+charisma score. If the result is favourable (score of 9+),
+the caster is at once viewed as a charming and impressive
+person worthy of help, consideration, and support.
+The caster is convincing to those who are affected, so
+long as he or she is not overly abrasive. Once the spell’s
+duration has expired, those who were influenced by the
+caster will realize they were ensorcelled.</p>"

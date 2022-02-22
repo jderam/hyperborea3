@@ -1,0 +1,19 @@
+id: 168
+name: Flash
+pp: 199
+Lvl: 
+  - pyr 1
+Rng: 0
+Dur: 24 hours
+Rev: 0
+Desc: "<p>Requires one hour to cast, using the bladder of an ungulate
+such as a cow, goat, or sheep. The spell creates
+five small capsules of densely packed powder, each of
+which can be hurled at a single creature. This is executed
+by use of the <i>flask hurling</i> rules (see <b>Chapter 9:
+Combat</b>, <i>combat options</i>). If a hit is scored, the capsule
+explodes in a blinding <i>flash</i>, and the victim is blinded
+for 1d4 rounds; a miss indicates failure, a small, ineffective
+puff of smoke. Blind creatures always lose initiative
+and suffer −4 penalties on attack rolls, armour
+class, and saving throws.</p>"

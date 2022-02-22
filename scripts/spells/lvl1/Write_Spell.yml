@@ -1,0 +1,26 @@
+id: 453
+name: Write Spell
+pp: 246
+Lvl: 
+  - mag 1
+  - cry 1
+  - ill 1
+  - nec 1
+  - pyr 1
+  - wch 1
+Rng: 0
+Dur: permanent
+Rev: 0
+Desc: "<p>Allows the sorcerer to transfer a spell from one spell
+book to another. The caster need not comprehend the
+spell being transferred, but it must be a spell from the
+sorcerer’s respective spell list. Once a spell is transferred,
+it disappears from its original volume. Completing
+this spell requires 6 turns (1 hour) per spell
+level and necessitates sorcerer’s ink (such as sepia), a
+fine quill, and a crushed gem of 100-gp value or greater.
+Upon completing the transfer, the sorcerer must make
+a <i>sorcery</i> saving throw or suffer 1d4 hp damage and
+be knocked unconscious for 1d4 turns. If the sorcerer
+is disrupted whilst performing this ritual, the transferred
+spell will be lost, ruined.</p>"

@@ -1,0 +1,16 @@
+id: 431
+name: Ventriloquism
+pp: 244
+Lvl: 
+  - mag 1
+  - ill 1
+  - wch 1
+Rng: 60 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sound of the sorcerer’s voice and very words are
+made to issue from something, someplace, or someone
+else. Examples may include a painting or statue,
+or simply from behind a door. If cast on an unwilling
+subject, the effect can be negated by a <i>sorcery</i> saving
+throw, modified by <i>willpower adjustment</i>, if applicable.</p>"

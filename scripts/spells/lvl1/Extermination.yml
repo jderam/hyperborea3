@@ -1,0 +1,16 @@
+id: 141
+name: Extermination
+pp: 195
+Lvl: 
+  - nec 1
+Rng: 10 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Eradicates rodents and vermin in a 1 × 1 × 1 foot
+area per CA level (e.g., a CA 5 sorcerer can affect a
+5 × 5 × 5-foot area). Flies, mosquitoes, mice, ordinary
+beetles, centipedes, and spiders instantly are killed by this
+spell; Small animals of ¼ HD (e.g., bats, rats, small birds)
+are allowed <i>death</i> saving throws. <i>Extermination</i> slays
+two Small animals (¼ HD apiece) per CA level, so a
+CA 2 sorcerer may slay 4 bats upon uttering this spell.</p>"

@@ -1,0 +1,16 @@
+id: 258
+name: Message
+pp: 214
+Lvl: 
+  - mag 1
+  - wch 1
+Rng: 1 mile
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer points at the recipient and whispers a
+<i>message</i> that is heard as though the two stood side by
+side. The recipient can then reply if the spell’s duration
+has not elapsed. The caster and the recipient must be
+able to see each other. If the spell is cast at an unwilling
+target, a <i>sorcery</i> saving throw can be made to block the
+audibility of the spell.</p>"

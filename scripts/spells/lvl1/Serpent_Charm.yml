@@ -1,0 +1,22 @@
+id: 343
+name: Serpent Charm
+pp: 228
+Lvl: 
+  - nec 1
+  - clr 2
+Rng: 60 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>By piping a flute, hypnotize as many as 2 HD of snakes
+as the sorcerer has CA levels. The snakes stare at the
+caster, some (usually cobras) posturing themselves
+erect and swaying side to side. Slowly, the caster and
+any allies can move away whilst the snakes remain
+thus, though any violent or sudden movement will jar
+them from the charm. The effectiveness of this spell
+is predicated on the circumstances: An approaching
+snake—even one with intent to attack—or a torpid or
+otherwise unsuspecting snake is not allowed a saving
+throw; the effects are automatic. Snakes that are already
+engaged in combat are allowed <i>sorcery</i> saving
+throws to resist.</p>"

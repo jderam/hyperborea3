@@ -1,0 +1,20 @@
+id: 232
+name: Invisibility to Undead
+pp: 210
+Lvl: 
+  - nec 1
+  - clr 2
+Rng: touch
+Dur: 12 turns (2 hours) per CA level
+Rev: 0
+Desc: "<p>Causes undead to completely ignore the subject; living
+creatures are unaffected. The recipient remains invisible
+to undead until the spell is cancelled or <i>dispelled</i>, or
+if the subject harms another creature—be it undead or
+not. (In this instance, “harm” is defined as any action
+that would directly cause damage to another creature.)
+The recipient of this spell cannot <i>turn undead</i>. Intelligent
+undead creatures of 10 or more HD can make <i>sorcery</i>
+saving throws if the spell’s recipient approaches
+within 30 feet; if successful, they will discern the spell’s
+recipient as an apparition of sorts.</p>"

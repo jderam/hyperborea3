@@ -1,0 +1,16 @@
+name: Black Hand
+id: 28
+pp: 178
+Lvl: 
+  - nec 1
+Rng: 0
+Dur: 3 rounds + 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer’s right hand turns dark as pitch and
+emits tiny motes of black and violet. The <i>black hand</i>
+enhances touch spells of harmful intent, such as <i>inflict
+disease</i>, <i>ghoul touch</i>, and <i>shocking grasp</i>. These subsequent
+touch attacks are made at +1 “to hit” for every
+4 CA levels:</p><ul><li>CA 1–4 = +1</li><li>CA 5–8 = +2</li><li>CA 9–12 = +3</li></ul><p>The <i>black hand</i> spell does not expire after a touch
+spell is successfully delivered; it persists for the full
+duration noted above.</p>"

@@ -1,0 +1,15 @@
+id: 233
+name: Jump
+pp: 210
+Lvl: 
+  - mag 1
+Rng: touch
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Allows the recipient to leap 40 feet forwards (with a
+10-foot apex), 10 feet backwards, or 20 feet straight up.
+For every additional 3 CA levels of the sorcerer, the
+affected can make another <i>jump</i>; thus, a CA 4 sorcerer
+can empower two such <i>jumps</i>, a CA 7 sorcerer can empower
+three, and a CA 10 sorcerer four, so long as all
+<i>jumps</i> occur before the spell’s expiration.</p>"

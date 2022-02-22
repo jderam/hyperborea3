@@ -1,0 +1,28 @@
+id: 133
+name: Enlargement
+pp: 194
+Lvl: 
+  - mag 1
+  - wch 1
+Rng: 5 feet per CA level
+Dur: 1 turn
+Rev: 1
+Desc: "<p>Induces unnatural growth in a single object or creature,
+augmenting ×1.5 the size and mass of organic
+matter, or augmenting ×2 the size and mass of inorganic
+matter. <i>Enlarged</i> creatures gain a +50% damage
+bonus to all attacks (attack damage totalled and then
+multiplied ×1.5). For objects, the area of effect is limited
+to 10 cubic feet per CA level; e.g., a CA 10 caster can
+double the size of an earthen mound not exceeding 100
+cubic feet in initial volume. This spell will not increase
+the magical nature of any object: A portcullis can be
+swollen shut, a dagger can be doubled to a short sword,
+but an enlarged <b>potion of healing</b> does not become
+the equivalent of two potions. The reverse of this spell,
+<i>reduction</i>, halves the size and mass of a creature or object
+(no more than 10 cubic feet per CA level). Affected
+creatures suffer a −50% damage penalty on all attacks
+(attack damage totalled and then halved). Unwilling
+creatures are allowed <i>transformation</i> saving throws
+to resist <i>enlargement</i> or <i>reduction</i>.</p>"

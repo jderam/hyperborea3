@@ -1,0 +1,14 @@
+id: 247
+name: Magic Missile
+pp: 212
+Lvl: 
+  - mag 1
+Rng: 150 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>A glowing arrow shoots from the pointed forefinger
+of the caster, automatically striking any visible target
+for 1d4+1 hp damage. At CA 3, two missiles are fired;
+three missiles at CA 5; four missiles at CA 7; and so
+on. <i>Magic missiles</i> can be divided amongst multiple
+targets, so long as they are all within range.</p>"

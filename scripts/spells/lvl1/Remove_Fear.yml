@@ -1,0 +1,19 @@
+id: 325
+name: Remove Fear
+pp: 225
+Lvl: 
+  - clr 1
+Rng: touch
+Dur: special
+Rev: 1
+Desc: "<p>Grants the recipient steely resolve against the effects of
+sorcerous fright. Cast as a preparatory spell, any fearbased
+saving throws are made at +4 for 1 turn + 1 turn
+per CA level. Cast on one who already suffers the effects
+of fear, a new saving throw is allowed at a +2 bonus. The
+reverse of this spell, <i>cause fear</i>, requires a touch attack.
+If the target is struck and fails its <i>sorcery</i> saving throw,
+modified by <i>willpower adjustment</i>, if applicable, it must
+flee from the caster at maximum MV for 1 round per CA
+level (or simply cower if cornered). <i>Cause fear</i> is broken
+if the victim is attacked.</p>"

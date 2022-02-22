@@ -1,0 +1,25 @@
+name: Charm Person
+id: 53
+pp: 183
+Lvl: 
+  - mag 1
+  - wch 1
+Rng: 120 feet
+Dur: special
+Rev: 0
+Desc: "<p>The target of this spell (human, humanoid, or giant)
+must make a <i>sorcery</i> saving throw, modified by <i>willpower
+adjustment</i>, if applicable. If the save fails, the
+victim views the caster as a close and trusted comrade
+to be protected and defended for the duration of the
+spell. If the ensorcelled victim understands the caster’s
+language, the caster can “suggest” the victim perform
+various tasks, so long as they are not diametrically opposite
+to the victim’s nature.</p>
+<p>The spell <i>dispel magic</i> can cancel this spell. Otherwise,
+additional <i>sorcery</i> saving throws (<i>willpower adjustment</i>
+applies) are allowed to break the spell at a time
+predicated on the targets intelligence (IN) score.:</p>
+<ul><li>13–18 IN = new save every 6 turns</li>
+<li>9–12 IN = new save every 24 hours</li>
+<li>3–8 IN = new save once per week</li></ul>"

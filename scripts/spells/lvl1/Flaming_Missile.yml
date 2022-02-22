@@ -1,0 +1,14 @@
+id: 166
+name: Flaming Missile
+pp: 199
+Lvl: 
+  - pyr 1
+Rng: 90 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>A fiery dart shoots from the caster’s pointed forefinger,
+automatically striking any visible target for 1d4+1 hp
+damage (1d6+1 hp versus undead). At CA 3, two darts
+can be fired; three darts at CA 5; four darts at CA 7;
+and so on. <i>Flaming missiles</i> can be divided amongst
+multiple targets, so long as they are all within range.</p>"

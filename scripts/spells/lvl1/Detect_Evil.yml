@@ -1,0 +1,25 @@
+id: 107
+name: Detect Evil
+pp: 191
+Lvl: 
+  - mag 2
+  - wch 1
+  - clr 1
+Rng: 60 feet
+Dur: 1 turn
+Rev: 1
+Desc: "<p>The sorcerer detects potent emanations of Evil in a
+60-foot-long, 10-foot-wide path. Sources of Evil emanations
+might include Evil artefacts, dæmons, or the undead.
+<i>Detect evil</i> will not discern the alignment of other
+characters, even if they are Evil, unless the subject
+is of a pure and intense Evil (empowered by dæmons,
+for example) or is about to commit a most vile act.
+Clerics must brandish their holy symbols to cast this
+spell. From a stationary position the caster can slowly
+rotate, covering 360° before the spell ends. <i>Detect evil</i>
+is obstructed by metal of one-inch thickness, stone of
+six-inch thickness, or wood of one-foot thickness; lead
+completely foils the spell. Evil sorcerers cast the reverse
+version of this spell, <i>detect good</i>, which functions
+the same way with regard to emanations of Good.</p>"
