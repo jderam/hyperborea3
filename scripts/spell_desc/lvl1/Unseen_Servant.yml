@@ -1,1 +1,25 @@
 id: 428
+name: Unseen Servant
+pp: 243
+Lvl: 
+  - mag 1
+  - cry 1
+  - ill 1
+  - pyr 1
+  - wch 1
+Rng: 120 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>This spell requires 1 turn to cast and necessitates the
+sacrifice of a 50-gp gem. It summons an invisible entity
+of limited means. The <i>unseen servant</i> can clean, fetch
+and carry a 10-pound item (or drag a 20-pound item),
+tie a simple knot, mend a torn cloth or sack, open an
+unlocked door, or perform other menial tasks throughout
+the duration of the spell.</p>
+<p>The entity cannot fight, though it is not easy to kill:
+Magical weapons or spells must be used. The <i>unseen
+servant</i> has the following statistics: <b>MV</b> 30 (but it
+cannot run); <b>AC</b> 5; <b>HD</b> 1 (<b>hp</b> 6); <b>#A</b> 0; <b>D</b> —; <b>SV</b> 17.
+If the caster moves farther than 120 feet away from
+the <i>unseen servant</i>, it will disappear.</p>"

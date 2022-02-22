@@ -1,1 +1,17 @@
 id: 370
+name: Speak with Animals
+pp: 232
+Lvl: 
+  - wch 2
+  - clr 2
+  - drd 1
+Rng: 20 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Allows the sorcerer to communicate with any normal
+sort of animal (not magical beasts, monsters, or other
+supernatural creatures). The animals will reply in kind;
+such responses are usually limited to brief one- or twoword
+statements predicated on the intelligence of the
+animal, at the referee’s discretion. Friendly animals
+might be convinced to perform some minor service.</p>"

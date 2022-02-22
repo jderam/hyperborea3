@@ -1,1 +1,21 @@
 id: 350
+name: Shocking Grasp
+pp: 229
+Lvl: 
+  - mag 1
+  - cry 1
+  - nec 1
+  - wch 1
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The sorcerer touches a target, unleashing a jolt of
+electricity that delivers 1d8 hp damage, +1 hp per CA
+level (so a CA 3 sorcerer delivers 1d8+3 hp damage).
+The sorcerer must be able to touch the victim or a
+reasonable conductor in contact with the victim. If the
+sorcerer’s attack is a miss, subsequent attempts may
+be made in the following rounds of combat, but any action
+other than half movement breaks the spell. <i>N.B.:</i>
+Metal armour is ignored when calculating the victim’s
+armour class, if applicable.</p>"

@@ -1,1 +1,15 @@
 id: 348
+name: Shield
+pp: 229
+Lvl: 
+  - mag 1
+  - cry 1
+Rng: 0
+Dur: 2 turns
+Rev: 0
+Desc: "<p>A magical barrier surrounds the caster and provides
+protection equivalent to plate mail armour versus missile
+attacks (AC 3, DR 2) and chain mail armour versus
+melee attacks (AC 5, DR 1). This spell will block an <i>acid
+arrow</i>, <i>flaming missile</i>, <i>magic ice dart</i>, <i>magic missile</i>
+spell, but such an attack effectively destroys the <i>shield</i>.</p>"

@@ -1,1 +1,19 @@
 id: 334
+name: Scare
+pp: 226
+Lvl: 
+  - mag 2
+  - nec 1
+  - wch 1
+Rng: 10 feet
+Dur: 2d6 rounds
+Rev: 0
+Desc: "<p>A spell to frighten an opponent. The caster can direct
+the spell at but one creature, which is allowed a <i>sorcery</i>
+saving throw, modified by <i>willpower adjustment</i>, if applicable.
+If the save fails, the victim enters a state of
+utter fear, at once cowering and trembling uncontrollably.
+If attacked or cornered, however, the frightened
+creature will fight back, though at a −1 “to hit” until
+the spell ends. Undead and other creatures devoid of
+emotion are unaffected by this spell.</p>"

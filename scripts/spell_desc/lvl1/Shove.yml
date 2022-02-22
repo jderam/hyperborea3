@@ -1,1 +1,23 @@
 id: 353
+name: Shove
+pp: 229
+Lvl: 
+  - mag 1
+  - cry 1
+Rng: 50 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Evokes an invisible force to push a creature or object.
+The caster discharges 10 pounds of force per CA level.
+Inanimate objects do not gain saving throws but
+might not be affected depending on their weight and
+mass, as judged by the referee. A targeted creature is
+allowed a <i>sorcery</i> saving throw to negate the effects of
+this spell. An affected target is pushed five feet, plus
+one foot per CA level. Generally, 20–30 pounds of force
+will push a Small creature, 40–60 pounds of force will
+push a Medium creature, and 70+ pounds of force will
+push a Large creature. Of course, common sense must
+prevail; e.g., an <b>albino ape</b> may be pushed back by
+90 pounds of force, but <b>woolly mammoths</b> and other
+huge creatures are unlikely to be moved.</p>"

@@ -1,1 +1,16 @@
 id: 366
+name: Sorcerous Armour
+pp: 231
+Lvl: 
+  - mag 1
+  - pyr 1
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>A sorcerous force field equivalent to leather armour
+(AC 7) surrounds the beneficiary of this enchantment.
+The spell has no effect on an armoured recipient, but
+a creature with natural AC 7 or better gains a +1 AC
+bonus. This spell persists until <i>dispelled</i>, or until the
+recipient sustains cumulative damage totalling 10 hp,
++1 hp per CA level.</p>"

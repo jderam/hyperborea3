@@ -1,1 +1,22 @@
 id: 365
+name: Sorcerer Mark
+pp: 231
+Lvl: 
+  - mag 1
+  - cry 1
+  - ill 1
+  - nec 1
+  - pyr 1
+  - wch 1
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>The sorcerer etches a magical rune on a surface such
+as leather, paper, wood, stone, or even metal. The rune
+can be the personal symbol of the caster, or the sorcerer
+can effect a magical inscription of no more than
+seven words, plus one word per CA level; this lettering
+may be read by one who can <i>read magic</i>. Alternatively,
+the sorcerer can scribe an invisible <i>sorcerer mark</i> or
+inscription, but such is revealed by <i>detect magic</i> or
+<i>detect invisibility</i>.</p>"

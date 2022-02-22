@@ -1,1 +1,24 @@
 id: 409
+name: Terrify
+pp: 239
+Lvl: 
+  - ill 1
+Rng: 10 feet
+Dur: 2 rounds + 1 round per CA level
+Rev: 0
+Desc: "<p>The fears of the subject (human, humanoid, or giant
+only) are exploited by this enchantment. Eye contact
+must be established, and a <i>sorcery</i> saving throw, modified
+by <i>willpower adjustment</i>, if applicable, allows one
+to resist the spell’s effects.</p>
+<p>A subject who fails the saving throw imagines the caster
+as something that is poignantly malefic in a personal
+way. This menace could be the monster of childhood
+nightmares, or some other horror from the subject’s
+past—something that compels a phobic reaction. The
+caster must pretend to approach the victim in a deliberate
+and threatening manner despite not knowing
+what the victim imagines. The <i>terrified</i> will flee for
+the duration of the spell, and if cornered, will simply
+cringe in fear; if a cowering subject is attacked, the
+spell is broken.</p>"

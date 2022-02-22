@@ -1,1 +1,21 @@
 id: 375
+name: Spider Climb
+pp: 232
+Lvl: 
+  - mag 1
+  - wch 1
+Rng: touch
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Allows the spell’s recipient to scale sheer or vertical
+surfaces, including those that are smooth and polished,
+like marble. The fingertips and toes of the climber become
+sticky, like those of a spider, with magical cilia
+providing adhesion. A <i>spider climb</i> recipient can climb
+up walls and move along ceilings at one-half their normal
+movement rate. Whilst climbing, the recipient cannot
+manipulate objects that weigh less than one pound
+because such objects will cling to the hands. Spell
+casters cannot cast other spells, but they can trigger
+magical devices. <i>N.B.:</i> Gauntlets and heavy footwear
+must be removed to benefit from this spell.</p>"

@@ -1,1 +1,12 @@
 id: 321
+name: Reflexion
+pp: 224
+Lvl: 
+  - ill 1
+  - wch 1
+Rng: 10 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Evokes an image to appear on any mirrored surface.
+The <i>reflexion</i> is still as a picture but can be as vague or
+detailed as the sorcerer wishes.</p>"
