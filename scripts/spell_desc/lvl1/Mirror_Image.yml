@@ -1,1 +1,21 @@
 id: 264
+name: Mirror Image
+pp: 214
+Lvl: 
+  - mag 2
+  - ill 1
+Rng: 0
+Dur: 2 rounds per CA level
+Rev: 0
+Desc: "<p>Evokes 1d4+1 illusory duplicates of the sorcerer.
+Each <i>mirror image</i> is indistinguishable from the caster.
+Each is AC 9, modified by the <i>defence adjustment</i>
+of the caster, if applicable; each dissipates if struck.
+When the caster is attacked, the referee must assign
+a probability by which the <i>mirror images</i> have
+an equal chance to be targeted. For example, if two
+<i>images</i> appear, a d6 may be used: <i>1–2</i> = the caster;
+<i>3–4</i> = <i>image</i> one; <i>5–6</i> = <i>image</i> two. The <i>images</i> duplicate
+the movements of the caster and appear to switch
+places with one another, so even in melee the caster is
+indistinguishable from the duplicates.</p>"

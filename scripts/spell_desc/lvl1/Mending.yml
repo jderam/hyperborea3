@@ -1,1 +1,17 @@
 id: 257
+name: Mending
+pp: 213
+Lvl: 
+  - mag 1
+  - ill 1
+  - wch 1
+Rng: 30 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Repairs small breaks or tears in objects. The spell can
+weld a broken metallic article, such as a chain link,
+dagger, or knife; stitch a torn cloth, a frayed or severed
+rope, or perforated leather; fuse the shards of a broken
+bottle; and so forth. At CA 7, larger breaks or tears
+can be repaired, subject to referee approval. <i>Mending</i>
+cannot be used to repair magical devices.</p>"

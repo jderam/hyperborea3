@@ -1,1 +1,19 @@
 id: 270
+name: Mount
+pp: 215
+Lvl: 
+  - mag 1
+Rng: 10 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>A tame <b>riding horse</b> or <b>camel</b> (caster’s choice) is summoned,
+the beast serving the caster for the duration
+(unless killed) before disappearing whence it came. On
+a 2-in-6 chance, the creature arrives with saddle and
+harness; in such cases, a distinct possibility exists that
+a rider somewhere in Hyperborea has been temporarily
+deprived of his or her steed. Dead or alive, the mount
+will return whence it came. Rolled in secret by the
+referee, there exists a 1% chance that the owner of a
+stolen <i>mount</i> may have the means and/or wherewithal
+to divine the identity of the “borrower.”</p>"

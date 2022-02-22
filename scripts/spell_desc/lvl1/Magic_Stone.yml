@@ -1,1 +1,30 @@
 id: 249
+name: Magic Stone
+pp: 212
+Lvl: 
+  - clr 1
+  - drd 1
+Rng: touch
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Enchants a stone that functions at +1 “to hit” and
+damage (i.e., 2 hp if thrown, or 1d4+1 hp if fired from
+a sling). Each stone issues a sharp report upon impact.
+For every 3 CA levels one stone is enchanted:</p>
+<b>Table 103: Magic Stone Spell</b>
+<table>
+<tr><th>CA Level</th> <th>No. of Stones</th></tr>
+<tr><td>1–3</td> <td>1</td></tr>
+<tr><td>4–6</td> <td>2</td></tr>
+<tr><td>7–9</td> <td>3</td></tr>
+<tr><td>10–12</td> <td>4</td></tr>
+</table>
+<p><i>Magic stones</i> can be launched with a sling or hurled as
+normal stones by the caster or an ally. Only one stone
+can be hurled at a time unless the target is no more
+than 10 feet away, in which case multiple stones may be
+hurled. Once a <i>magic stone</i> is tossed, its enchantment
+is lost, whether it strikes its intended target or not. If
+a sorcerer is struck by a <i>magic stone</i> whilst casting a
+spell, the spell is disrupted, even if the optional <i>concentration
+check</i> is in play, and spell loss is automatic.</p>"

@@ -1,1 +1,19 @@
 id: 256
+name: Melt Ice
+pp: 213
+Lvl: 
+  - mag 1
+  - cry 1
+  - pyr 1
+  - drd 2
+Rng: 30 feet
+Dur: special
+Rev: 0
+Desc: "<p>Causes ice or hard-packed snow to thaw, liquescing a
+volume equal to 10 cubic feet per CA level. Each 10
+cubic feet of ice requires 1 round to melt. So, a 5th-level
+sorcerer can thaw a sheet of ice that measures
+50 × 1 × 1 feet, or 25 × 2 × 1 feet, and it would take
+5 rounds to complete. If <i>melt ice</i> is cast under the feet
+of an opponent, the victim is allowed an <i>avoidance</i> saving
+throw to elude the melting area.</p>"

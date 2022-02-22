@@ -1,1 +1,26 @@
 id: 259
+name: Messenger Bird
+pp: 214
+Lvl: 
+  - drd 1
+Rng: 1 mile
+Dur: 1 day per CA level
+Rev: 0
+Desc: "<p>Casting this spell requires 1 turn. The sorcerer must
+whistle an incantation, thus calling forth a tiny bird
+such as a finch, sparrow, or titmouse. The arriving bird
+is afforded a <i>sorcery</i> saving throw (17 or greater roll
+required; 18 if the sorcerer’s charisma is 13+). If the
+save succeeds, the bird flies away; if it fails, the bird will
+perch on the hand or shoulder of the sorcerer and remain
+for the duration of the spell, acting on the caster’s
+behalf. The caster can assign it a simple task or affix to
+its leg a small note to be delivered; the recipient cannot
+use the <i>messenger bird</i> to reply. This spell does not
+confer the ability to converse with the summoned bird,
+but uncannily it understands the wishes of the caster,
+forming a picture in its mind of the recipient and location;
+however, the task cannot be overly complex. Time,
+not distance, is the limiting factor, as the bird can fly at
+about 80 MV (48 miles per day). Once the spell terminates,
+the bird will resume its normal activity.</p>"

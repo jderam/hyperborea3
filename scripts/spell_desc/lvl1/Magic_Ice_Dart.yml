@@ -1,1 +1,19 @@
 id: 245
+name: Magic Ice Dart
+pp: 211
+Lvl: 
+  - cry 1
+Rng: 60 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Cyan-glowing icicles form in the hand of the caster and
+fire at single target for 1d6+1 hp damage. For every
+CA level, the sorcerer can fire an equal amount of magic
+ice darts (i.e., one at CA 1, two at CA 2, three at CA 3,
+and so forth). All missiles are fired at once, though each
+requires a separate attack roll, modified by dexterity
+<i>attack modifier</i>, if applicable. Cryomancers (but not
+other sorcerers) gain +1 “to hit” for every 2 CA levels
+(i.e., CA 1–2 = +1, CA 3–4 = +2, and so forth). <i>N.B.:</i> If
+using the optional <i>critical hits and misses</i> rules, each
+<i>magic ice dart</i> is subject to critical success or failure.</p>"
