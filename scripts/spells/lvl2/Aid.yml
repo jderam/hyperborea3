@@ -1,0 +1,17 @@
+id: 6
+name: Aid
+pp: 176
+Lvl: 
+  - clr 2
+Rng: touch
+Dur: 1 turn
+Rev: 0
+Desc: "<p>A single recipient gains a +1 bonus on any saving
+throw versus fear effects (whether <i>sorcery</i> or <i>device</i>),
+a +1 bonus on all attack rolls, and a temporary 1d8
+hit point boost. These hit points may exceed the recipient’s
+normal hp maximum. Any subsequent damage
+is drawn from the temporary hp first, the remainder
+disappearing when the spell ends. Lastly, if cast upon
+an NPC ally (henchman, hireling, etc.), the recipient
+gains a +1 bonus on any <i>morale</i> (ML) check.</p>"

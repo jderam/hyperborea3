@@ -1,0 +1,23 @@
+id: 72
+name: Continuous Light
+pp: 186
+Lvl: 
+  - mag 2
+  - cry 2
+  - ill 2
+  - pyr 2
+  - wch 3
+  - clr 3
+  - drd 2
+Rng: 120 feet
+Dur: special
+Rev: 0
+Desc: "<p>Creates a 60-foot-diameter sphere of lambent light,
+the subtle hue of which may be selected by the caster.
+It cannot be cast on a single target or object,
+but rather on an area. The effect is permanent (unless
+<i>dispelled</i>), so long as the caster remains within
+10 miles; otherwise, the dweomer begins to dissipate
+in subtle degrees, ending in a number of months equal
+to the sorcerer’s CA. <i>Continuous light</i> can counter
+<i>continuous darkness</i> and <i>darkness</i>.</p>"

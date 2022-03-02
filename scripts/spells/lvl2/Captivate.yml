@@ -1,0 +1,28 @@
+id: 43
+name: Captivate
+pp: 181
+Lvl: 
+  - ill 2
+Rng: 10 feet
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer fascinates the subject of this spell if it
+fails its <i>sorcery</i> saving throw, modified by <i>willpower
+adjustment</i>, if applicable. The <i>captivated</i> creature
+sees the caster as pleasing, desirable, or ideal. The
+sorcerer can direct the <i>captivated</i> one, who will trust,
+follow, and obey the caster. However, every time a new
+request is made, no matter how small or large, the victim
+of the spell rolls 3d6. If the total exceeds the caster’s
+charisma score, the spell is broken. Furthermore,
+if the request is unreasonable or potentially harmful to
+the victim, the roll may be made with a bonus of +1 to
++3, as judged by the referee. If the spell is broken, the
+subject will be filled with unbridled rage, attacking the
+caster at +2 “to hit” and damage rolls.</p>
+<p>Normal animals also are subject to the <i>captivate</i> spell
+and will follow the caster for 1d4 days. If the animal
+is of a sort that might be tamed, and if it has been fed
+and treated well, it becomes a loyal ally if a 3d6 roll
+does not exceed the caster’s charisma score. It will,
+however, resent other animal companions.</p>"

@@ -1,0 +1,12 @@
+id: 35
+name: Blur
+pp: 180
+Lvl: 
+  - ill 2
+Rng: 0
+Dur: 1d4+4 rounds
+Rev: 0
+Desc: "<p>The sorcerer becomes vague, hazy, and nebulous. For
+the duration of the spell, the caster gains a +2 bonus
+to armour class and <i>device</i> saving throws (e.g., rods,
+staves, wands, some rings).</p>"

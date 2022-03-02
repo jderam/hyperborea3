@@ -1,0 +1,13 @@
+id: 25
+name: Barkskin
+pp: 178
+Lvl: 
+  - wch 3
+  - drd 2
+Rng: touch
+Dur: 1 turn + 1 turn per CA level
+Rev: 0
+Desc: "<p>Toughens the recipient’s flesh to the strength of oak
+bark, providing an armour class equivalent to chain
+mail (AC 5, DR 1), or +1 AC if other armour is worn.
+<i>Barkskin</i> does not encumber the recipient in any way.</p>"

@@ -1,0 +1,13 @@
+id: 91
+name: Cure Moderate Wounds
+pp: 188
+Lvl: 
+  - clr 2
+  - drd 3
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Heals a living creature for 2d8 hp of damage previously
+sustained. The reverse of this spell, <i>inflict moderate
+wounds</i>, is used to harm a living creature for 2d8 hp
+damage upon a successful touch attack.</p>"

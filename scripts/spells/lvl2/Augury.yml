@@ -1,0 +1,19 @@
+id: 24
+name: Augury
+pp: 178
+Lvl: 
+  - clr 2
+Rng: 0
+Dur: special
+Rev: 0
+Desc: "<p>Through communion with otherworldly agents, the
+sorcerer learns whether an action in the near future
+(within 3 turns) will be advantageous or disadvantageous.
+The caster must clearly and concisely articulate
+the considered action (or inaction, as it were) through
+prayer and cogitation over a 1-turn period. The referee
+then informs the player if the proposed action is for
+weal, for woe, or inconsequential. The chance to successfully
+divine the future is 7-in-10, which should be
+rolled secretly by the referee; a failed result yields an
+inaccurate <i>augury</i>.</p>"

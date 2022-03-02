@@ -1,0 +1,31 @@
+id: 1
+name: Acid Arrow
+pp: 175
+Lvl: 
+  - mag 2
+Rng: 30 feet
+Dur: special
+Rev: 0
+Desc: "<p>A magic arrow darts from the finger of the caster. On
+a successful attack roll (<i>dexterity</i> modifier applies), the
+<i>acid arrow</i> strikes for 1d4+1 hp physical damage, plus
+an additional 2d4 hp acid damage in the same round.
+Magicians (but not other sorcerers) enjoy a +1 bonus
+to the attack roll for every 2 CA levels (CA 3–4 = +2,
+CA 5–6 = +3, and so forth). Acid damage will persist
+for higher level sorcerers:</p>
+<ul><li>1 extra round for CA 4–6</li>
+<li>2 extra rounds for CA 7–9</li>
+<li>3 extra rounds for CA 10 or greater.</li></ul>
+<p>For example, an <i>acid arrow</i> fired by a CA 12 sorcerer
+on round 1 would inflict 1d4+1 hp base damage plus
+2d4 hp acid damage on round 1, 2d4 hp acid damage
+on round 2, 2d4 hp acid damage on round 3, and a final
+2d4 hp acid damage on round 4. The acid may ruin armour
+or clothing per referee discretion. <i>N.B.:</i> If using
+the optional <i>critical hits and misses</i> rules, <i>acid arrow</i>
+is subject to critical success or failure; however, magicians
+should use the “fighter” column in each such
+instance. Also, any multiplied damage that results
+from a critical hit or critical miss applies strictly to the
+arrow’s physical damage, not the acid.</p>"
