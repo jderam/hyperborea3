@@ -1,0 +1,21 @@
+id: 173
+name: Fool's Gold
+pp: 200
+Lvl: 
+  - mag 2
+  - ill 2
+Rng: 10 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Temporarily transforms baser coins to gold, affecting
+100 coins per CA level. Laying this dweomer requires
+one gold coin per 100 coins to be altered. The component
+coin must be ground to dust and sprinkled over
+the coins to be transmuted. To the unwary, the coins
+have the look, feel, and weight of gold; to the canny,
+they may be identified as counterfeits. <i>Sorcery</i> saving
+throws may be made by those who handle the <i>fool’s
+gold</i>. The saving throws are modified by <i>willpower adjustment</i>,
+if applicable; magicians, thieves, and some
+professionals (e.g., jewellers, shrewd merchants or
+barkeeps) gain +3 save bonuses.</p>"

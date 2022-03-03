@@ -1,1 +1,22 @@
 id: 161
+name: Fire Web
+pp: 198
+Lvl: 
+  - pyr 2
+Rng: 90 feet
+Dur: 3 rounds
+Rev: 0
+Desc: "<p>From the sorcerer’s fingertips shoots a flaming web
+that ensnares and burns one Medium or smaller
+creature for 3d4 hp damage. The victim is allowed an
+<i>avoidance</i> saving throw. If the save is successful, the
+victim suffers half damage and is not ensnared; i.e., the
+target is merely grazed, and the <i>fire web</i> collapses into
+a small ball for the duration of the spell. If the save
+fails, the target is trapped in the burning web for the
+spell’s duration (i.e., <i>prone</i>), and subsequent damage is
+sustained: 2d4 hp on round 2, and 1d4 hp on round 3.
+Furthermore, any flammable clothing or gear is likely
+destroyed (cloaks smoulder, cloth sacks burn and spill
+their contents, and so forth). The <i>dispel magic</i> spell
+extinguishes this dweomer.</p>"

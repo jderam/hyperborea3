@@ -1,1 +1,40 @@
 id: 176
+name: Forest of Bones
+pp: 201
+Lvl: 
+  - nec 2
+Rng: 90 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Skeletal hands and claws emerge from the earth, grabbing
+and clutching at all within this spell’s 40-foot-diameter
+area of effect. Those that fail <i>avoidance</i> saving
+throws are held
+fast for the duration
+of the spell.
+Those that succeed
+can negotiate
+through at
+half their normal
+movement rates.
+Any creature
+that subsequently
+enters the
+enchanted area
+during the spell’s
+duration is likewise
+subject to
+its effects. Giant
+humanoids, monsters,
+or robust
+animals save
+at +4, or they
+might be unaffected
+by this
+spell, as judged
+by the referee.
+Confined victims can attempt an <i>extraordinary feat of
+strength</i> to break free. Confined spell casters may be
+required to make an <i>extraordinary feat of dexterity</i> in
+order to cast a spell. Note that <i>turn undead</i> does not
+affect the <i>forest of bones</i>.</p>"

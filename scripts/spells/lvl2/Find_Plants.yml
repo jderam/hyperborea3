@@ -1,1 +1,17 @@
 id: 151
+name: Find Plants
+pp: 197
+Lvl: 
+  - drd 2
+Rng: 240 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Allows the sorcerer to locate any sought-after plant or
+plant type, providing it is available. Specific plants with
+which the caster is familiar may be sought, including
+roots, fruits and berries, and fungi. Only one species or
+type can be selected when the spell is cast. The radius
+of detection is 240 feet from the caster, who may move
+as normal (though not run) throughout the duration of
+the spell. Full concentration is not necessary, but the
+effect is lost if another spell or ability is used.</p>"
