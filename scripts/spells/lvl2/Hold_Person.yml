@@ -1,1 +1,25 @@
 id: 200
+name: Hold Person
+pp: 204
+Lvl: 
+  - mag 3
+  - cry 3
+  - nec 3
+  - wch 2
+  - clr 2
+Rng: 120 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed.
+This enchantment affects humans, humanoids,
+and giants. It can be cast at a single opponent
+or a group of individuals, so long as they are within a
+10-foot radius of the spell’s primary target.</p>
+<p>When cast at a group, as many as four individuals may
+be affected, beginning with those closest to the primary
+target. Each target is allowed a <i>sorcery</i> saving throw
+to resist the spell; if but a single target is selected, its
+saving throw is made at a −2 penalty. Any targets of
+9 HD or greater gain a +4 saving throw bonus. Saving
+throws are modified by <i>willpower adjustment</i>, if
+applicable.</p>"

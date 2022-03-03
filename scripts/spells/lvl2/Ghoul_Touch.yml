@@ -1,1 +1,16 @@
 id: 184
+name: Ghoul Touch
+pp: 202
+Lvl: 
+  - nec 2
+  - wch 2
+Rng: touch
+Dur: 2d4 rounds
+Rev: 1
+Desc: "<p>The sorcerer’s touch becomes like that of a <b>ghoul</b>. The
+first person touched must make a <i>death</i> saving throw
+or become locked in rigid paralysis. The reverse of this
+spell, <i>reverse ghoul touch</i>, removes such paralysis, as
+well as that caused by actual ghouls; it is ineffective
+versus paralysis from other sources, such as the <i>hold
+person</i> spell.</p>"

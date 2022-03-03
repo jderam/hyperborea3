@@ -1,1 +1,34 @@
 id: 196
+name: Heat Metal
+pp: 204
+Lvl: 
+  - pyr 2
+  - drd 2
+Rng: 30 feet
+Dur: 9 rounds
+Rev: 0
+Desc: "<p>Heats metallic objects to searing temperatures. For
+every CA level of the sorcerer, five square feet of metal
+can be affected, equivalent to one Small creature per
+CA level, or one Medium creature per 2 CA levels; e.g.,
+a CA 6 sorcerer can affect three adjacent armoured
+people. For larger creatures, the referee must determine
+a reasonable number of potential targets using
+the above guidelines (e.g., a <b>mountain ape</b> may be
+considered the equivalent of two people). <i>Heat metal</i>
+is quick to warm, burn, and then sear; likewise, it is
+quick to cool. The dweomer persists for 9 rounds, with
+metal treated thusly if in contact with skin:</p>
+<ul><li><b>Round 1:</b> Metal becomes <i>hot</i>, uncomfortable to
+the touch</li>
+<li><b>Rounds 2–4:</b> Metal becomes <i>extremely hot</i>,
+burning for 1d4 hp damage per round</li>
+<li><b>Round 5:</b> Metal <i>sears</i> for 2d4 hp damage</li>
+<li><b>Rounds 6–8:</b> Metal cools to <i>extremely hot</i>,
+burning for 1d4 hp damage per round</li>
+<li><b>Round 9:</b> Metal cools to <i>hot</i></li></ul>
+<p>Materials such as cloth, leather, or wood in touch with
+<i>searing</i> metal are subject to smouldering or even combusting,
+as per the referee’s judgment. <i>Fire protection</i>
+and <i>fire resistance</i> negate the harmful effects of this
+spell.</p>"
