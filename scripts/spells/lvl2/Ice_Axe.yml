@@ -1,1 +1,16 @@
 id: 206
+name: Ice Axe
+pp: 205
+Lvl: 
+  - cry 2
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer must grip a 1½-foot haft of wood to cast
+this dweomer. Upon incanting the spell, an axe blade
+composed of steely-blue ice forms at the end of the
+haft. The <i>ice axe</i> can be wielded as though it were a
+magical hand axe; it functions at a +2 “to hit” and delivers
+1d6+2 hp damage. If hurled (90-foot range), the
+<i>ice axe</i> automatically strikes its target for 1d6+4 hp
+damage, but this attack ends the spell.</p>"

@@ -1,1 +1,20 @@
 id: 225
+name: Infrared Vision
+pp: 208
+Lvl: 
+  - mag 3
+  - cry 2
+  - nec 3
+  - pyr 2
+Rng: touch
+Dur: 2 hours + 1 hour per CA level
+Rev: 0
+Desc: "<p>The caster or other recipient can perceive light in the
+infrared spectrum, effectively seeing in the dark to a
+range of 60 feet. All subtle differences of heat radiation
+are defined before the eyes of the recipient so that a
+warm-blooded creature stands out against the cool walls
+of a dungeon chamber. Fire or other notable heat in the
+proximity of the viewer can be a hindrance (e.g., lantern,
+torch) or a complete obstruction (e.g., bonfire, lava).
+This spell does not reveal invisible objects or creatures.</p>"

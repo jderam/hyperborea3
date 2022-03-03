@@ -1,1 +1,14 @@
 id: 234
+name: Knock
+pp: 210
+Lvl: 
+  - mag 2
+Rng: 60 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Automatically opens any stuck or locked door, gate, or
+other portal, including a locked box, chest, coffin, set of
+manacles, or even a secret door within the range of the
+spell. Even a <i>sorcerer locked</i> door can be opened by this
+spell, though but temporarily (resumes after 1 turn). Of
+course, this spell does not disarm trapped portals.</p>"

@@ -1,1 +1,16 @@
 id: 219
+name: Incantation
+pp: 207
+Lvl: 
+  - clr 2
+Rng: 0
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer chants eldritch invocations that effect a
+potent benison to allies—and a malison to enemies—within
+a 25-foot radius. Allies gain +1 “to hit” and +1
+to saving throws; enemies are penalized −1 “to hit”
+and −1 saving throws. The bonuses/penalties persist
+as long as the caster continues to chant and remains
+perfectly stationary (no dexterity bonuses applicable).
+<i>Dispel magic</i> or <i>silence</i> can break this spell.</p>"

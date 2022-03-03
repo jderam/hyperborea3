@@ -1,1 +1,68 @@
 id: 230
+name: Invisibility
+pp: 209
+Lvl: 
+  - mag 2
+  - cry 2
+  - ill 2
+  - pyr 2
+Rng: touch
+Dur: 12 turns (2 hours) per CA level
+Rev: 0
+Desc: "<p>Renders the spell’s recipient (human, humanoid, or giant)
+invisible until the spell is cancelled or <i>dispelled</i>, or if
+the subject directly causes harm (i.e., damages or forces
+a saving throw roll) to another creature, or if the duration
+has elapsed. <i>Invisibility</i> recipients cannot be seen
+by <i>detect magic</i> or <i>infrared vision</i>, but <i>detect invisibility</i>
+will reveal them. The following guidelines apply:</p>
+<ul><li><i>Invisibility</i> extends to the clothes/armour worn
+and gear carried by the subject.</li>
+<li>A rope or other lengthy item becomes visible
+beyond five feet of the subject.</li>
+<li>If an item is picked up after the spell was cast,
+that item will not become invisible.</li>
+<li>If an item is removed from the persons of an <i>invisibility</i>
+recipient, that object becomes visible.</li>
+<li>If the invisible person bears a light source (e.g.,
+lantern, torch) before the spell is cast, the light
+source becomes invisible, but light still radiates.</li>
+<li>In bright sunlight, an invisible form casts a faint
+shadow.</li>
+<li><i>Invisibility</i> recipients see themselves and the
+objects they carry as faint outlines.</li>
+<li><i>Invisibility</i> recipients attack at +4 “to hit.”</li>
+<li>If an <i>invisible</i> creature’s attack attempt is a
+miss, <i>invisibility</i> is not broken.</li>
+<li>+4 AC whilst invisible, and any attacker must
+have an idea of the invisible target’s whereabouts;
+otherwise, the attack is futile.</li>
+<li>10 HD or greater creatures may make a <i>sorcery</i>
+saving throw when an invisible creature
+approaches within 30 feet of them. If successful,
+they clearly discern the invisible creature as a
+translucent figure.</li></ul>
+<p><i>What constitutes harm:</i> “Harm” is defined as any
+action (melee, missile, spell, item use, etc.) that would
+directly damage another creature; i.e., cause <i>hit point</i>
+(hp) loss or cause the target to roll a saving throw.
+Damaging objects does not break the spell. Causing
+harm indirectly to another creature does not break the
+spell. Casting a spell that does not allow for a saving
+throw and does not physically harm the target will not
+break the spell (a convenient loophole, if you would).</p>
+<p>Thus, without breaking the spell, an invisible person
+can force open a door, lift a portcullis, steal a coin
+purse, pick a lock, cast a <i>cure light wounds</i> spell, cast
+a <i>protection from evil</i> spell, and even cast a <i>summon
+monster</i> spell (harm caused by summoned monster
+is indirect). One can set aflame the wooden tower of
+a <b>vampire</b> and not break the spell, even if the undead
+beast burns, but if one throws a <i>fireball</i> at the same
+vampire, that is direct harm. Set a deadfall trap with a
+boulder to crush the skull of a <b>giant weasel</b>? <i>Invisibility</i>
+does not break. Shoot the same beast with a heavy
+crossbow? <i>Invisibility</i> breaks. <i>Sleep</i> spell causes no
+harm and typically involves no saving throw, so it will
+not break <i>invisibility</i>. Of course, the referee should be
+the final arbiter of all such cases.</p>"

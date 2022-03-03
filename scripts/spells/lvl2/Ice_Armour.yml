@@ -1,1 +1,18 @@
 id: 205
+name: Ice Armour
+pp: 205
+Lvl: 
+  - cry 2
+Rng: 0
+Dur: 1 turn + 1 turn per CA level
+Rev: 0
+Desc: "<p>A suit of frozen laminated armour clads the sorcerer.
+<i>Ice armour</i> is formed of dense blue ice that is cold to
+the touch for all but the caster. It provides AC 5 and
+DR 1. <i>Ice armour</i> is so perfectly articulated and lightweight
+that it does not impinge the sorcerer’s spell
+casting in any way, though the standard 30 MV applies.
+<i>Ice armour</i> is vaporized by magical fire (neutralizing a
+single magical fire attack), but normal fire has minimal
+impact. When the spell ends, <i>ice armour</i> crumbles to a
+thousand shards of ice.</p>"
