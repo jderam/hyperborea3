@@ -1,1 +1,26 @@
 id: 143
+name: Extrasensory Perception
+pp: 196
+Lvl: 
+  - mag 2
+  - wch 2
+Rng: 60 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Allows the caster, who must pinch a copper coin betwixt
+thumb and forefinger, to detect the vague surface
+thoughts (not precise words) of any creature within
+the spell’s range, so long as the creature has thoughts.
+(Most undead and constructs, for example, do not.)
+<i>Extrasensory perception</i> targets a single creature;
+once selected, another cannot be targeted. No saving
+throw is allowed unless the target is of 6 HD or greater.
+If so, a <i>sorcery</i> saving throw, modified by <i>willpower
+adjustment</i>, if applicable, must be made. When reading
+the surface thoughts of a lower-order creature,
+only its most basic instincts will be revealed. The spell
+also can be used to determine if a monster lurks behind
+a door or down a dark tunnel (so long as the monster
+is within range). The spell can penetrate one inch of
+metal, six inches of stone, or one foot of wood; however,
+the thinnest sheet of lead will obstruct it.</p>"

@@ -1,1 +1,15 @@
 id: 127
+name: Distinguish Alignment
+pp: 193
+Lvl: 
+  - clr 2
+Rng: 10 feet
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>Allows the sorcerer to determine the exact alignment
+of the selected individual(s). One round is required for
+each person scanned, so six creatures can be scrutinized
+if all are within range. The caster must remain
+stationary, staring at each subject. No saving throw
+is allowed for this spell, and if the sorcerer exercises
+discretion, the spell’s casting might go unnoticed.</p>"
