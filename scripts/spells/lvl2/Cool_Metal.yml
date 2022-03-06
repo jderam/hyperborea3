@@ -1,0 +1,35 @@
+id: 78
+name: Cool Metal
+pp: 187
+Lvl: 
+  - mag 2
+  - cry 2
+Rng: 30 feet
+Dur: 9 rounds
+Rev: 0
+Desc: "<p>Freezes metallic objects to blistering temperatures.
+For every CA level of the sorcerer, as much as five
+square feet of metal can be affected, equivalent to one
+Small creature per CA level, or one Medium creature
+per 2 CA levels; e.g., a CA 6 sorcerer can affect three
+adjacent armoured humans. For larger creatures, the
+referee must determine a reasonable number of potential
+targets using the above guidelines (e.g., a mailclad
+giant may be considered the equivalent of four
+fighters). <i>Cool metal</i> is quick to cool, freeze, and then
+blister; likewise, it is quick to warm. The dweomer
+persists for 9 rounds, with metal treated thusly if in
+contact with skin:</p>
+<ul><li><b>Round 1:</b> Metal becomes <i>cold</i>,
+uncomfortable to the touch</li>
+<li><b>Rounds 2–4:</b> Metal <i>freezes</i>,
+biting for 1d4 hp damage per round</li>
+<li><b>Round 5:</b> Metal <i>blisters</i> for 2d4 hp damage</li>
+<li><b>Rounds 6–8:</b> Metal warms to <i>freezing</i>,
+biting for 1d4 hp damage per round</li>
+<li><b>Round 9:</b> Metal warms to <i>cold</i></li></ul>
+<p>Metal affected by <i>blistering cold</i> (round 5 of the spell)
+is subject to brittleness. If affected normal (nonmagical)
+armour is struck, it may shatter. The same applies
+to a normal sword, axe blade, etc. <i>Cold protection</i> and
+<i>cold resistance</i> negate the harmful effects of this spell.</p>"

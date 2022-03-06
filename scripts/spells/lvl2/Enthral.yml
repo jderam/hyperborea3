@@ -1,0 +1,27 @@
+id: 135
+name: Enthral
+pp: 195
+Lvl: 
+  - clr 2
+Rng: 30 feet
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer orates, preaches, or sermonizes; hence,
+the listeners must comprehend the language of the
+speaker and listen for at least two minutes. Then, with
+clever imperceptibility, the spell is laid. The caster may
+<i>enthral</i> an audience whose members have 4 HD or fewer
+unless they make <i>sorcery</i> saving throws, modified
+by <i>willpower adjustment</i>, if applicable. If the audience
+is not of the caster’s species (humanoids or giants, for
+example), or if they are otherwise unfriendly towards
+the caster’s particular background, the saving throw
+is made at a +1 to +4 bonus (as judged by the referee).
+For a large audience, similar HD listeners may be
+grouped together. <i>Enthralled</i> creatures will continue
+to listen to the expounding sorcerer, viewing the orator
+as having 18 charisma. Those who make the save
+may have an unfavorable reaction, seeing the orator as
+boring, offensive, foolish, and/or disgusting. Once the
+sorcerer ceases evangelizing, the spell will terminate,
+but effects remain for 1 turn.</p>"

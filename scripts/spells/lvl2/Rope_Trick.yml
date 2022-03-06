@@ -1,0 +1,19 @@
+id: 331
+name: Rope Trick
+pp: 226
+Lvl: 
+  - mag 3
+  - ill 2
+Rng: 0
+Dur: 2 turns per CA level
+Rev: 0
+Desc: "<p>The sorcerer casts skyward a rope of 5- to 25-foot
+length. The rope stands rigid and upright; it then may
+be climbed. At the apex, the caster and as many as
+five allies can enter and hide in a small extra-dimensional
+space. This pocket dimension is a grey, opaque,
+featureless cube of 20 × 20 × 20 feet, illumed dimly
+within, the air breathable. The rope remains hanging;
+if pulled, the hiders will fall out, spilling to the ground.
+Similarly, if the spell expires, those within the extra-dimensional
+space precipitate to the ground.</p>"

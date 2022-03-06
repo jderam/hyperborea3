@@ -1,0 +1,28 @@
+id: 236
+name: Levitate
+pp: 210
+Lvl: 
+  - mag 2
+  - cry 2
+  - pyr 2
+  - wch 2
+Rng: 20 feet per CA level
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The caster or other recipient floats up or down in the
+air at a rate of 10 MV. Maximum <i>levitation</i> weight is
+300 pounds. Horizontal movement is impossible unless
+some surface such as a ceiling is reached, in which
+case the <i>levitated</i> person can use his hands and feet
+to travel at 10 MV. One can cast spells whilst floating,
+but combat (melee and missiles) is more difficult, the
+<i>levitate</i> recipient suffering −2 “to hit” on attack rolls
+and losing any DX bonus to AC.</p>
+<p>If this spell is cast on another person, the sorcerer
+must concentrate on directing the target, <i>levitating</i>
+him a maximum distance of 20 feet per CA level. If
+<i>levitate</i> is cast on an unwilling subject, it is allowed
+a <i>sorcery</i> saving throw to resist the effect, and if its
+HD is greater than the sorcerer’s, the saving throw is
+rolled with a +4 bonus. The spell can be cancelled at a
+time of the caster’s choosing.</p>"

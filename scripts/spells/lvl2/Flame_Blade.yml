@@ -1,0 +1,24 @@
+id: 164
+name: Flame Blade
+pp: 199
+Lvl: 
+  - pyr 2
+  - drd 2
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer must grip a bladeless hilt (of any sword
+or dagger) to cast this spell. Upon reciting a sibilant incantation,
+a <i>flame blade</i> in the shape of a long scimitar
+springs from the bladeless hilt. The <i>flame blade</i> may
+be wielded as though it were a magical scimitar, whether
+or not the sorcerer is skilled with such a weapon;
+i.e., no unskilled weapon attack penalty applies.</p>
+<p>The <i>flame blade</i> functions at +2 “to hit” and inflicts
+1d8+2 hp damage (1d10+2 hp if held in two hands),
+with an additional +2 damage bonus versus undead
+(1d8+4 or 1d10+4 hp total). Fire-resistant creatures,
+however, are afforded their standard resistance (usually
+half damage). <i>Flame blade</i> also can be used to
+ignite oil and other combustibles (e.g., cloth, paper,
+parchment, wood).</p>"

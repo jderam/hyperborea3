@@ -1,0 +1,21 @@
+id: 371
+name: Speak with Dead
+pp: 232
+Lvl: 
+  - nec 2
+  - wch 3
+  - clr 3
+Rng: 10 feet
+Dur: special
+Rev: 0
+Desc: "<p>Allows the sorcerer to converse with a dead human,
+quasi-man, humanoid, or giant, providing they speak
+(or spoke, as it were) the same language. The spell can
+be cast on an incomplete corpse or skeleton, so long
+as at least the skull remains. The sorcerer may ask as
+many as three direct questions (i.e., neither ambiguous
+nor multipart questions). The deceased will then answer,
+rasping its reply in a fashion and degree of truthfulness
+as best determined by the referee. This spell
+cannot be cast on the same subject more than once;
+neither does it function on the undead.</p>"

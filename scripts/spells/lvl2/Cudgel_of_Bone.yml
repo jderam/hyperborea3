@@ -1,0 +1,19 @@
+id: 83
+name: Cudgel of Bone
+pp: 187
+Lvl: 
+  - nec 2
+Rng: touch
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer casts this spell upon the femur of a
+human, humanoid, or Medium animal to create a
+<b>+1 war club</b> (1d6+1 hp damage, or 1d8+1 hp if wielded
+two-handed), whether or not the sorcerer is skilled
+with such a weapon; i.e., no unskilled weapon attack
+penalty applies. The club is more effective versus undead,
+functioning as a <b>+2 war club</b> (1d6+2 or 1d8+2 hp
+damage). The sorcerer cannot attack with the <i>cudgel of
+bone</i> on the same round the spell is cast; neither can it
+be used by another individual. Upon the spell’s termination,
+the <i>cudgel of bone</i> reverts to a normal thighbone.</p>"

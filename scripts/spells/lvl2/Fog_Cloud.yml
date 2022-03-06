@@ -1,0 +1,19 @@
+id: 172
+name: Fog Cloud
+pp: 200
+Lvl: 
+  - ill 2
+Rng: 10 feet
+Dur: 4 rounds + 1 round per CA level
+Rev: 0
+Desc: "<p>A thick mass of green-hued, foul-smelling vapour is
+evoked by the caster, the cloud being 40 × 20 × 20 feet
+in volume. The <i>fog cloud</i> travels away from the caster
+at a rate of 10 MV until the spell’s duration ends, moving
+in a direction pointed by the caster; or it can be
+left to remain stationary. Once the sorcerer points, the
+<i>cloud’s</i> momentum cannot be altered unless significant
+wind exists, which always prevails over the will of the
+sorcerer. Those who are consumed by the <i>fog cloud</i> can
+see no farther than five feet, and the range of <i>infrared
+vision</i> is halved.</p>"

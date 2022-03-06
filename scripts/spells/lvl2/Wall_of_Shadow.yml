@@ -1,0 +1,22 @@
+id: 437
+name: Wall of Shadow
+pp: 244
+Lvl: 
+  - mag 2
+  - ill 2
+Rng: 60 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer conjures from the Black Gulf a barrier
+of darkness. The <i>wall of shadow</i> must be 10 feet thick
+and 10 feet high; only the length is malleable, allow for
+10 feet per CA level (e.g., a CA 7 sorcerer may create a
+10 × 10-foot wall that is 70 feet long). The <i>wall</i> can be
+straight or form a semicircle.</p>
+<p>The <i>wall of shadow</i> is not impenetrable; persons and
+objects can be seen through it, but they are vague, hazy,
+and nebulous. Missile fire directed at a person beyond
+the wall is at a −2 penalty. Other benefits might be
+derived from this spell; e.g., a thief attempting to <i>hide</i>
+might gain a bonus to his chance-in-twelve, or perhaps
+even automatic success, at the referee’s discretion.</p>"

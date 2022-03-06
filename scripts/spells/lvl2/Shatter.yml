@@ -1,0 +1,16 @@
+id: 347
+name: Shatter
+pp: 229
+Lvl: 
+  - mag 2
+  - cry 2
+  - wch 2
+Rng: 60 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Causes all non-magical objects of baked clay, ceramic,
+crystal, earthenware, glass, porcelain, or other like
+material to splinter into hundreds of shards. The spell
+is released in a 60-foot-long, 10-foot-wide path of destruction.
+Objects weighing more than 10 pounds are
+not subject to this spell.</p>"

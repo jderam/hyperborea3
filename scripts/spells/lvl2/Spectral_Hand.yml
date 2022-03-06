@@ -1,0 +1,19 @@
+id: 373
+name: Spectral Hand
+pp: 232
+Lvl: 
+  - nec 2
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>A translucent, sickly yellow hand surges forth, its
+shape like that of the caster’s. This spell is used in
+conjunction with a single subsequent touch spell, delivering
+the touch spell as a ranged attack at +2 “to hit.”
+This spell can be cast in advance of a combat situation;
+the hand will hover before the caster until it successfully
+delivers a touch spell, or the spell’s duration is
+met. The <i>spectral hand</i> is incorporeal and cannot be
+damaged unless the attacker utilizes a spell or magical
+weapon; if attacked thusly, it may be considered AC 7
+with 4 hp. It can also be broken by <i>dispel magic</i>.</p>"

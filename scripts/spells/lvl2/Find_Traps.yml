@@ -1,0 +1,15 @@
+id: 153
+name: Find Traps
+pp: 197
+Lvl: 
+  - wch 2
+  - clr 2
+  - drd 2
+Rng: 30 feet
+Dur: 1 turn per 2 CA levels
+Rev: 0
+Desc: "<p>The sorcerer detects the presence of any magical or
+mundane traps within range. The path of detection is
+30 feet long and 10 feet wide. The sorcerer must continue
+to concentrate, hands spread wide, though walking
+(no jogging or running) is allowed.</p>"

@@ -1,0 +1,25 @@
+id: 445
+name: Web
+pp: 245
+Lvl: 
+  - mag 2
+Rng: 5 feet per CA level
+Dur: 2 turns per CA level
+Rev: 0
+Desc: "<p>Thick, sticky strands of webbing stream from the
+caster’s fingertips, covering a target area no greater
+than 10 × 10 × 20 feet. Targets are allowed <i>avoidance</i>
+saving throws to evade contact with the <i>web</i>. Those
+who make the save can carefully make their way out,
+moving at half speed. Those who failed the save can
+attempt to break free one round later:
+<ul><li><b>ST 3–8</b> = trapped until spell expires</li>
+<li><b>ST 9–12</b> = 2d6 rounds to break free</li>
+<li><b>ST 13–18</b> = 1d6 rounds to break free</li></ul>
+A <b>flame tongue</b> sword wielder can slash through in
+but 1 round. If the webs are set ablaze with a torch
+or other fire source, they will catch quickly, the entire
+mass burning in 2 rounds. Those trapped within the
+conflagration suffer 1d6 hp damage per round (1d8 hp
+vs. undead), and any flammable clothing or gear is subject
+to burning and ruination.</p>"

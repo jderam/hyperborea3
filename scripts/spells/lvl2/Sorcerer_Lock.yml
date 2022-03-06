@@ -1,0 +1,18 @@
+id: 364
+name: Sorcerer Lock
+pp: 231
+Lvl: 
+  - mag 2
+Rng: 15 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Magically secures a door, a gate, a portal, or the like.
+A <i>dispel magic</i> spell negates it, a <i>knock</i> spell opens it, or
+a strong person or monster might break it down: 1-in-12
+chance for 17 ST, 1-in-6 chance for 18 ST. Too, a character
+with the <i>open locks</i> special ability can attempt to disrupt
+the <i>sorcerer lock</i> spell using thieves’ tools; however,
+the chance-in-twelve of success is reduced by 4. Lastly,
+<i>sorcerer lock</i> can be bypassed by any magician (or magician
+subclass) whose CA is at least 3 levels greater than
+the one who placed the dweomer.</p>"

@@ -1,0 +1,18 @@
+id: 95
+name: Danse Macabre
+pp: 188
+Lvl: 
+  - nec 2
+Rng: 180 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The corpse of a human or humanoid is animated to
+undeath and thenceforth controlled like a marionette
+by the sorcerer’s waving fingers. The corpse can be
+directed to move, pick up objects, or even attack. The
+creature functions as a <b>skeleton</b> or <b>zombie</b>, depending
+on the stats of the corpse, though the latter lacks
+the <i>zombiism</i> disease. This spell requires the constant
+chanting and gesticulating of the caster. Once the caster
+ceases to direct, or when the spell’s duration elapses,
+the corpse will crumple to the ground.</p>"

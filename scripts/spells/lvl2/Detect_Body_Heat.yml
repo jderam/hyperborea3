@@ -1,0 +1,21 @@
+id: 106
+name: Detect Body Heat
+pp: 191
+Lvl: 
+  - cry 2
+  - pyr 2
+Rng: 60 feet
+Dur: 1 turn per CA
+Rev: 0
+Desc: "<p>The sorcerer perceives the presence of warm-blooded
+creatures within 60 feet, including their sizes and number.
+The sorcerer must stand stationary and concentrate;
+movement disrupts the spell. <i>Detect body heat</i>
+is obstructed by metal of one-inch thickness, stone of
+six-inch thickness, or wood of one-foot thickness; lead
+completely foils the spell. Undead are not detected by
+this spell, and cold-blooded creatures are detected only
+if they have recently warmed themselves in the sun or
+otherwise. Detection of other monster types is at the
+discretion of the referee, who must decide whether
+they are warm-blooded.</p>"

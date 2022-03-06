@@ -1,0 +1,18 @@
+id: 181
+name: Frost Sphere
+pp: 201
+Lvl: 
+  - cry 2
+Rng: 10 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A swirling frost globe of six-foot diameter is evoked
+by the caster. This sphere begins rotating at a rate of
+10 MV in the direction the caster points, rolling over
+barriers and other obstructions up to five feet high. Water
+is frozen by the <i>frost sphere</i>, small fires are snuffed,
+and struck creatures suffer 2d4 hp damage unless <i>sorcery</i>
+saving throws are successful, which end the spell.
+As long as the caster concentrates and points, the <i>frost
+sphere</i> can be directed for 1 round per CA level; otherwise,
+it remains stationary until the duration elapses.</p>"

@@ -1,0 +1,25 @@
+id: 160
+name: Fire Trap
+pp: 198
+Lvl: 
+  - mag 4
+  - pyr 4
+  - drd 2
+Rng: touch
+Dur: permanent (until triggered)
+Rev: 0
+Desc: "<p>This dweomer is placed on any article that can be
+closed (e.g., book, bottle, box, chest, door, shutter). If
+the object is opened, a blast of fire explodes in a fivefoot
+radius per CA level, causing 1d4 hp damage per
+CA level to any creature within the blast radius. A <i>sorcery</i>
+saving throw can be made for half damage. The
+<i>fire trapped</i> item is never affected by the spell; neither
+is the original caster. A sorcerer may maintain as many
+undischarged <i>fire traps</i> as he or she has CA levels.</p>
+<p>Note that a <i>knock</i> spell can open a <i>fire trapped</i> portal,
+yet the spell is not triggered until a person manually
+opens it. <i>Fire trap</i> can be discovered and removed via
+a thief ’s <i>manipulate traps</i> ability, though failure to
+disarm the trap automatically detonates it. It can also
+be removed by a <i>dispel magic</i> spell.</p>"

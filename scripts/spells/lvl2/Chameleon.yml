@@ -1,0 +1,23 @@
+id: 50
+name: Chameleon
+pp: 182
+Lvl: 
+  - ill 2
+  - drd 3
+Rng: touch
+Dur: 2 turns
+Rev: 0
+Desc: "<p>Cloaks the recipient with semi-transparency that blends
+with the colour and texture of the recipient’s surroundings
+for the spell’s duration. <i>Chameleon</i> extends to the
+clothes/armour worn and gear carried by the spell’s
+recipient, but a rope or other lengthy item will become
+visible beyond five feet. If the subject removes an object,
+that object will no longer blend with its surroundings.</p>
+<p>An undetected <i>chameleon</i> subject gains a 2-in-6 bonus
+to surprize opponents and gains +2 “to hit” for all
+initial attack rolls (i.e., first attack for each encounter).
+Furthermore, if perfectly still and not in direct
+sunlight, the subject can successfully <i>hide</i> as a thief,
+with automatic success. <i>Chameleon</i> recipients can be
+revealed via <i>infrared vision</i> or <i>detect invisibility</i>.</p>"

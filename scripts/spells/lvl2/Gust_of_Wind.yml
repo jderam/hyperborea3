@@ -1,0 +1,20 @@
+id: 192
+name: Gust of Wind
+pp: 203
+Lvl: 
+  - mag 2
+  - cry 2
+  - pyr 2
+  - drd 2
+Rng: 0
+Dur: 1 round
+Rev: 0
+Desc: "<p>A breeze blows from the caster (in the direction the
+sorcerer faces) in a 10-foot-wide path that is 5 feet long
+per CA level; e.g., a CA 6 sorcerer can evoke a <i>gust of
+wind</i> that is 10 feet wide and 30 feet long. <i>Gust of wind</i>
+extinguishes small fires, though it fans and excites the
+flames of larger blazes; too, it disperses and thus dispels
+magical clouds, fogs, and smoke, such as <i>cloudkill</i>,
+<i>fog cloud</i>, and <i>stinking cloud</i>. At its greatest effectiveness,
+this spell can belly the sail of a small craft.</p>"

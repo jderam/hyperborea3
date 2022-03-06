@@ -1,0 +1,16 @@
+id: 112
+name: Detect Neutrality
+pp: 192
+Lvl: 
+  - drd 2
+Rng: 60 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Allows the sorcerer to sense whether an observed
+person, place, or thing is balanced with Neutrality of
+alignment, tainted neither with Good nor Evil, Law nor
+Chaos. If the subject of this observation is anything
+but Neutral, the caster will perceive the imbalance.
+The caster cannot discern the exact alignment of any
+non-Neutral person, place, or thing, but merely that
+the absence of Neutrality is present.</p>"

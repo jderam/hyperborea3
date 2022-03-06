@@ -1,0 +1,26 @@
+id: 336
+name: Scythe of the Reaper
+pp: 227
+Lvl: 
+  - nec 2
+Rng: 30 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Summons a scythe, surrounded by black motes of
+negative energy, to materialize in the air. The floating
+weapon can be directed to attack any opponent within
+the spell’s range. The <i>scythe of the reaper</i> strikes with a
+<i>fighting ability</i> (FA) equal to that of the caster, for a base
+1d8 hp damage. For necromancers only, the weapon is
++1 “to hit” and damage for every 3 CA levels:</p>
+<ul><li>CA 1–3 = +1</li>
+<li>CA 4–6 = +2</li>
+<li>CA 7–9 = +3</li>
+<li>CA 10–12 = +4</li></ul>
+<p>For other casters, the bonus damage for every three
+CA levels applies, but not the “to hit” bonus. Hence, a
+CA 5 necromancer can summon a <i>scythe of the reaper</i>
+that strikes at +2 “to hit” and inflicts 1d8+2 hp damage.
+The caster can cast spells and take other actions
+whilst continuing to direct the <i>scythe</i> at will. <i>Dispel
+magic</i> terminates this spell.</p>"

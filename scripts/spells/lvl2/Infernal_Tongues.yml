@@ -1,0 +1,22 @@
+id: 222
+name: Infernal Tongues
+pp: 208
+Lvl: 
+  - nec 2
+  - wch 2
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The sorcerer’s tongue becomes long, forked, and black.
+The sorcerer then speaks in the language of netherworldly
+dæmons. Such <i>infernal tongues</i> are known to
+raise the hackles of ordinary animals of 3 HD or fewer,
+causing them to flee the presence of the sorcerer if
+they fail <i>sorcery</i> saving throws. Any number of animals
+can be affected, but they must be within 30 feet
+of the sorcerer. Animals that make their saving throws
+have a 2-in-6 chance of becoming enraged and attacking
+the caster at a +2 bonus. Of course, humans may
+be quite frightened as well; hence, the referee might
+impose <i>morale</i> (ML) checks for common folk, and even
+classed individuals, in certain situations.</p>"

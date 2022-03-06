@@ -1,0 +1,31 @@
+id: 104
+name: Delay Poison
+pp: 190
+Lvl: 
+  - wch 3
+  - clr 2
+  - drd 2
+Rng: touch
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Suspends the deleterious effects of any toxin to which
+the subject has been exposed. This spell does not eliminate
+poison effects as <i>neutralize poison</i> does; as its title
+suggests, it but <i>delays poison</i>. Poisons that have an
+immediate impact cannot be <i>delayed</i>; however, poisons
+that have continuous or secondary effects are <i>delayed</i>.
+And if a poison has a delayed onset, it too is further
+<i>delayed</i>. Once the spell has ended, the poison’s effects
+resume as normal.</p>
+<p>Note that if the poison affliction is the result of a venomous
+bite or sting, this spell can be used in conjunction
+with <i>draw poison</i> ability of barbarians and shamans.
+With the poison magically suspended in the victim’s
+system, a barbarian or shaman can <i>draw poison</i> on a
+5-in-6 chance of success for the duration of the spell.</p>
+<p>Lastly, <i>delay poison</i> may also revive one who has expired
+from poison, so long as the spell is cast within
+12 rounds (2 minutes) of death and a successful <i>trauma
+survival</i> check is made (see <b>Chapter 3: Statistics</b>,
+<i>constitution</i>). The deceased poison victim is restored to
+0 hp, albeit at a permanent loss of 1 constitution point.</p>"

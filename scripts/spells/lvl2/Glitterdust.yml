@@ -1,0 +1,24 @@
+id: 185
+name: Glitterdust
+pp: 202
+Lvl: 
+  - mag 2
+  - cry 2
+  - ill 2
+  - pyr 2
+Rng: 90 feet
+Dur: 1d4+1 rounds
+Rev: 0
+Desc: "<p>The sorcerer must have 25 gp of gold dust to cast this
+spell, which may be in the form of gold ground with a
+file or stone. The sorcerer effects a 20-foot cube of <i>glitterdust</i>
+that explodes within the spell’s range, covering
+its victims from head to toe in sparkling gold dust. The
+cloud itself is no more than a flash, so this spell’s duration
+is not for the cloud, but rather its sorcerous effect.</p>
+<p>Those within the cloud must make <i>sorcery</i> saving
+throws or be blinded for the spell’s duration. Blind
+creatures always lose initiative and suffer −4 penalties
+on attack rolls, armour class, and saving throws. This
+spell also reveals invisible creatures, as the <i>glitterdust</i>
+clings to and sparkles on them for its duration.</p>"

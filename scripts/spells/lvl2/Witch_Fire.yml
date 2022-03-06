@@ -1,0 +1,20 @@
+id: 450
+name: Witch Fire
+pp: 246
+Lvl: 
+  - pyr 3
+  - wch 2
+Rng: 90 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Creates fist-sized balls of phosphorescent light, in
+numbers equal to the caster’s CA level. The colours
+of the balls may be chosen by the sorcerer. The lights
+follow the caster and illume a 5-foot diameter area.
+Each ball of <i>witch fire</i> can be sent to cover one Medium
+creature or two Small creatures within the spell’s
+range, engulfing the target in a phosphorescent glow,
+and causing each to suffer a −1 AC penalty. For Large
+creatures, the referee must determine a reasonable
+size equivalent; e.g., two, three, or four balls of <i>witch
+fire</i> may be necessary to affect a giant.</p>"

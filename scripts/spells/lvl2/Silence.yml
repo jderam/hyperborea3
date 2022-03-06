@@ -1,0 +1,17 @@
+id: 355
+name: Silence
+pp: 230
+Lvl: 
+  - clr 2
+Rng: 120 feet
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>Evokes a field of absolute soundlessness that radiates
+15 feet from a selected point. Creatures may move from
+the spell’s area of effect, but within the <i>silenced</i> field,
+all noise and speech are snuffed, and spells cannot be
+cast. If targeted directly at an opponent, the subject
+is allowed a <i>sorcery</i> saving throw to negate the spell;
+otherwise, the subject suffers utter <i>silence</i>. Spell casters
+gain +1 bonuses to their saving throws for every
+2 CA levels they possess.</p>"

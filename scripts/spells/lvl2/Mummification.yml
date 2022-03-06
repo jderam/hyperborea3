@@ -1,0 +1,20 @@
+id: 272
+name: Mummification
+pp: 216
+Lvl: 
+  - nec 2
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>This ritual requires 12 turns (2 hours) to complete. By
+handling a fresh corpse and speaking baleful incantations,
+the sorcerer infuses the corpse with enchanted
+preservative spices (requires 10 gp in herbs). Then
+the caster evokes violet-charged cloth wraps to take
+form. The enchanted wraps spin and weave about the
+corpse, covering and preserving it from decomposition.
+If the caster later attempts to animate the corpse to a
+<b>zombie</b>, <b>flesh automaton</b>, or similar form, it will gain
++2 hp per HD. This spell can also preserve a fallen comrade
+from decomposition, should allies seek to convey
+the fallen elsewhere for interment or sorcerous revival.</p>"

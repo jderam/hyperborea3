@@ -1,0 +1,19 @@
+id: 203
+name: Hypnotic Pattern
+pp: 205
+Lvl: 
+  - ill 2
+Rng: 90 feet
+Dur: special
+Rev: 0
+Desc: "<p>With precise gestures the sorcerer creates waves of
+polychromatic, zigzagging lines that fill the air in a
+30-foot-diameter circle. The spell affects no more than
+24 HD of creatures, each of which is entitled to a <i>sorcery</i>
+saving throw, modified by <i>willpower adjustment</i>,
+if applicable. <i>Hypnotic pattern</i> affects those of the
+lowest HD first, though not blind or unseeing creatures.
+The ensorcelled become mesmerized imbeciles,
+staring at the colours until the spell terminates. The
+spell persists as long as the caster continues to gesticulate,
+plus 1d4 rounds thereafter.</p>"

@@ -1,0 +1,22 @@
+id: 356
+name: Skeletal Hands
+pp: 230
+Lvl: 
+  - nec 2
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>A pair of bony members materialize, floating before
+the sorcerer and aglow with crimson lambency. The
+sorcerer manipulates the <i>skeletal hands</i> by gesticulating.
+Always the <i>hands</i> must be kept together, and if
+the caster ceases to concentrate and gesticulate, the
+<i>hands</i> will disappear. The <i>hands</i> can perform simple
+tasks such as lifting things, opening doors, and retrieving
+items. Each <i>hand</i> can hold five pounds of weight
+individually, or 15 pounds when working together.
+<i>Skeletal hands</i> can also be used to attack with the following
+statistics: <b>MV</b> 20; <b>DX</b> (as caster); <b>AC</b> 5; <b>HD</b> 1
+(<b>hp</b> 2); <b>#A</b> 2/1 (claw/claw); <b>D</b> 1d4/1d4; <b>SV</b> (as caster).
+The hands can also be terminated via <i>dispel magic</i> or
+<i>turn undead (Undead Type 0)</i>.</p>"

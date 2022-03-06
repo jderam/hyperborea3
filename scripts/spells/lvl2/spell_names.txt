@@ -1,0 +1,82 @@
+1 Acid Arrow
+6 Aid
+24 Augury
+25 Barkskin
+35 Blur
+43 Captivate
+45 Cause Blindness
+46 Cause Deafness
+50 Chameleon
+54 Charm Person or Beast
+72 Continuous Light
+78 Cool Metal
+83 Cudgel of Bone
+88 Cure Light Burns
+91 Cure Moderate Wounds
+95 Danse Macabre
+104 Delay Poison
+106 Detect Body Heat
+112 Detect Neutrality
+127 Distinguish Alignment
+135 Enthral
+142 Extra-dimensional Pocket
+143 Extrasensory Perception
+151 Find Plants
+153 Find Traps
+160 Fire Trap
+161 Fire Web
+164 Flame Blade
+167 Flaming Sphere
+172 Fog Cloud
+173 Fool’s Gold
+176 Forest of Bones
+181 Frost Sphere
+184 Ghoul Touch
+185 Glitterdust
+192 Gust of Wind
+196 Heat Metal
+200 Hold Person
+203 Hypnotic Pattern
+205 Ice Armour
+206 Ice Axe
+218 Improved Phantasm
+219 Incantation
+222 Infernal Tongues
+225 Infrared Vision
+230 Invisibility
+234 Knock
+236 Levitate
+242 Locate Object
+248 Magic Mouth
+260 Mind Blank
+266 Misdirection
+272 Mummification
+276 Obscure
+284 Perceive Heartbeat
+289 Phantasmal Armour
+294 Placate
+308 Produce Flame
+315 Pyrotechnics
+320 Ray of Enfeeblement
+331 Rope Trick
+336 Scythe of the Reaper
+347 Shatter
+355 Silence
+356 Skeletal Hands
+364 Sorcerer Lock
+371 Speak with Dead
+373 Spectral Hand
+379 Stinking Cloud
+385 Strengthen
+392 Summon Dæmon I
+426 Ultraviolet Vision
+427 Ungovernable Hideous Laughter
+432 Visualize Death
+437 Wall of Shadow
+442 Warp Wood
+445 Web
+446 Weird War Hammer
+447 Whispering Wind
+450 Witch Fire
+454 Wyvern Warden
+455 Zombie Visage

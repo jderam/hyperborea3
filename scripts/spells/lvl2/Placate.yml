@@ -1,0 +1,19 @@
+id: 294
+name: Placate
+pp: 219
+Lvl: 
+  - wch 2
+Rng: 60 feet
+Dur: 1 turn + 1 turn per CA level
+Rev: 0
+Desc: "<p>Causes 1d4 creatures of 5 HD or fewer to cease hostilities,
+pending a failed <i>sorcery</i> saving throw for each
+target, modified by <i>willpower adjustment</i>, if applicable.
+The spell affects hostile targets in a 20-foot-radius
+area of effect, save for the undead, constructs, and like
+mindless creatures. The affected will cease combat,
+their desire for bloodshed quelled, their anger pacified.
+<i>Placated</i> creatures will not harm the sorcerer or any
+allies for the duration of this spell and may present
+as somewhat confused or introspective. If a <i>placated</i>
+creature is attacked, the spell is broken.</p>"

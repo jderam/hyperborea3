@@ -1,0 +1,20 @@
+id: 167
+name: Flaming Sphere
+pp: 199
+Lvl: 
+  - mag 2
+  - pyr 2
+  - drd 2
+Rng: 10 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A burning globe of six-foot diameter is evoked by the
+caster. This <i>flaming sphere</i> begins rotating at a rate of
+10 MV in the direction the caster points, rolling over
+barriers and other obstructions up to five feet high.
+Combustibles are set ablaze by the <i>flaming sphere</i>,
+and struck creatures suffer 2d4 hp damage unless
+sorcery saving throws are successful. As long as the
+caster concentrates and points, the <i>flaming sphere</i> can
+be directed for 1 round per CA level; otherwise, it remains
+stationary until the duration elapses.</p>"

@@ -1,0 +1,16 @@
+id: 315
+name: Pyrotechnics
+pp: 223
+Lvl: 
+  - mag 2
+  - pyr 2
+  - drd 3
+Rng: 240 feet
+Dur: 2 rounds per CA level
+Rev: 0
+Desc: "<p>Uses an existing flame (e.g., brazier, campfire, torch)
+to create a great, fiery spectacle of flashing colours and
+luminous lights. Alternatively, a thick, rolling smoke can
+be produced, clouding a 20-foot-diameter area around
+the blaze. Once created, the <i>pyrotechnics</i> persist until
+the spell duration is met or the source is extinguished.</p>"

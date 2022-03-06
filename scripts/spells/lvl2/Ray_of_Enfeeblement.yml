@@ -1,0 +1,22 @@
+id: 320
+name: Ray of Enfeeblement
+pp: 224
+Lvl: 
+  - mag 2
+  - cry 2
+  - nec 2
+  - pyr 2
+  - wch 2
+Rng: 30 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>From the hand of the caster springs a silvery flash of
+light that automatically strikes its intended target,
+sapping the victim of 4 strength points. A <i>sorcery</i> saving
+throw negates this spell. If a monster is affected,
+the referee should reduce damage dice: d20 reduced to
+d12; d12 to d10; d10 to d8; d8 to d6; d6 to d4; d4 to d3;
+d3 to d2; d2 to 1. Bonuses to damage dice should also
+be proportionately reduced, so a creature that normally
+inflicts 1d8+2 hp damage should inflict 1d6+1 hp
+damage, and so on.</p>"

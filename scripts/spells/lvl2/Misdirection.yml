@@ -1,0 +1,18 @@
+id: 266
+name: Misdirection
+pp: 215
+Lvl: 
+  - ill 2
+Rng: 60 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Counteracts detection spells, including <i>detect magic</i>,
+<i>detect snares and pits</i>, <i>detect illusion</i>, <i>detect invisibility</i>,
+<i>distinguish alignment</i>, and other like sorceries
+in a 25-foot-diameter area. However, this spell cannot
+prevent the cleric’s version of <i>true seeing</i> from revealing
+the truth. This spell creates an opposite reading
+for detection sorcery users (spells, items, supernatural
+abilities). For example, a magic statue can appear
+mundane to a detect magic caster, but perhaps a nearby
+mundane rope appears to have a magical aura.</p>"

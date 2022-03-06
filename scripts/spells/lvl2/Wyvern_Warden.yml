@@ -1,0 +1,27 @@
+id: 454
+name: Wyvern Warden
+pp: 246
+Lvl: 
+  - ill 2
+  - nec 2
+  - clr 2
+Rng: 30 feet
+Dur: 8 hours
+Rev: 0
+Desc: "<p>Taps the unspeakable power of the Black Gulf, conjuring
+a billowing black haze that assumes the vague
+shape of a <b>wyvern</b>: a large, two-legged dragon with
+a long, barbed tail. The <i>wyvern warden</i> is assigned a
+task of guardianship over a person, place, or thing. An
+approaching creature will not see the <i>wyvern warden</i>
+in the dark unless <i>detect magic</i> is cast. In naturally
+lit conditions, however, a wary approaching creature
+might discern the hazy, monstrous form.</p>
+<p>If anyone or anything approaches within 20 feet of the
+curling mass (except designated allies who were present
+and identified as such when the spell was cast), the
+<i>wyvern warden</i> lashes with its tail, striking without
+error. The victim must make a <i>death</i> saving throw or
+remain rigid for 1 round per CA level of the sorcerer.
+The <i>wyvern warden</i> will then disappear in a puff of
+black smoke, able to attack but one victim.</p>"

@@ -1,0 +1,18 @@
+id: 276
+name: Obscure
+pp: 216
+Lvl: 
+  - cry 2
+  - wch 2
+  - drd 2
+Rng: 0
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Swirling, misty vapours surround the caster in a cubic
+area with sides up to 10 feet per CA level, as chosen
+by the caster; e.g., a CA 6 sorcerer <i>obscures</i> up to a
+60 × 60 × 60-foot area. Within the <i>obscured</i> area, visibility
+is reduced to five feet, and spells such as <i>infrared
+vision</i> are ineffective. A strong wind reduces the
+duration of <i>obscure</i> by 90%; i.e., the 10-minute (1-turn)
+duration will be reduced to 1 minute (6 rounds).</p>"
