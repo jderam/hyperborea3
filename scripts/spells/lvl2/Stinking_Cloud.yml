@@ -1,1 +1,19 @@
 id: 379
+name: Stinking Cloud
+pp: 233
+Lvl: 
+  - mag 2
+Rng: 30 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Evokes a swirl of nauseous vapours in a 20 × 20 × 20-
+foot area. Any breathing creatures caught in the <i>stinking
+cloud</i> must make <i>death</i> (poison) saving throws or
+suffer nauseating effects: coughing, gasping, and choking
+for 1d6 rounds, with their ears, eyes, and throat
+burning; effectively, they are <i>stunned</i>. Those who
+make their saving throws are temporarily resistant to
+the deleterious effects of the <i>stinking cloud</i> but must
+exit it within 1 round or save again. At minimum (i.e.,
+with a successful saving throw), the <i>stinking cloud</i> is
+an uncomfortable irritation.</p>"

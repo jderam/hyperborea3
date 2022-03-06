@@ -1,1 +1,16 @@
 id: 385
+name: Strengthen
+pp: 234
+Lvl: 
+  - mag 2
+  - pyr 3
+Rng: touch
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Enhances the brawn of a human. A fighter’s strength
+score is increased by 2d4 points, a cleric’s or thief ’s by
+1d6, and a magician’s by 1d4, all to a maximum of 18.
+(A classless “commoner” may gain 1d4 points.) If this
+spell is cast on one whose strength score is already 18,
+that one will gain an additional +1 “to hit,” and <i>extraordinary
+feats of strength</i> will be improved by +8%.</p>"

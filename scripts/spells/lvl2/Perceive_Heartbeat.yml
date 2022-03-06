@@ -1,1 +1,21 @@
 id: 284
+name: Perceive Heartbeat
+pp: 217
+Lvl: 
+  - nec 2
+  - wch 2
+Rng: 60 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Undisturbed the sorcerer must meditate for five minutes
+before casting this spell from a nigh-trancelike
+state. During this preparatory phase, the caster “tunes
+out” the sound of his or her own heartbeat (and those
+of any allies). Once the spell is cast, the sorcerer can
+hear the heartbeats of all other living creatures within
+60 feet. The strength or speed of each heartbeat may
+be determined; however, if many heartbeats (10+) are
+heard, they become difficult to discern from one another.
+This spell penetrates 10 feet of packed earth, two
+feet of wood, one foot of stone, or one inch of metal, but
+even the thinnest sheet of lead can mask a heartbeat.</p>"

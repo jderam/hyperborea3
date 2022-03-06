@@ -1,1 +1,21 @@
 id: 447
+name: Whispering Wind
+pp: 246
+Lvl: 
+  - ill 2
+Rng: 5 miles per CA level
+Dur: special
+Rev: 0
+Desc: "<p>Evokes a gentle breeze to whirl around the sorcerer
+and then depart, taking with it a spoken message
+no more than 12 words (not including articles <i>a</i>, <i>an</i>,
+and <i>the</i>). The message will be conveyed to a familiar
+recipient within the spell’s range, so long as no insurmountable
+obstacles prevent delivery. If the caster
+and the subject are both outdoors, the spell is almost
+always successful; however, if one or the other is in a
+dungeon or inside a building, obstructions (e.g., walls,
+closed doors) can preclude the spell from functioning
+as desired. When the <i>whispering wind</i> reaches its objective,
+it swirls about the recipient creature and softly
+murmurs its message.</p>"

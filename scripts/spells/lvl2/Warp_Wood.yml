@@ -1,1 +1,15 @@
 id: 442
+name: Warp Wood
+pp: 245
+Lvl: 
+  - drd 2
+Rng: 60 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Beams, shafts, or planks of wood no more than two
+inches thick are altered by this spell. The caster can
+bow a three-foot length of wood per CA level, so a
+CA 4 sorcerer may <i>warp</i> two six-foot spears or six twofoot
+arrows. The planks of a boat or a door can also be
+buckled. Magical wood can be affected by sorcerers of
+CA 6 or greater.</p>"

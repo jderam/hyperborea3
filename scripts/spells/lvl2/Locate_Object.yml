@@ -1,1 +1,17 @@
 id: 242
+name: Locate Object
+pp: 211
+Lvl: 
+  - mag 2
+  - wch 2
+  - clr 3
+Rng: 90 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The caster announces an object to be found; it might be
+a lost sword, a bronze door, or the like. The object must
+be well known by the caster: its colour, texture, size,
+and so forth. Someone describing the item to the caster
+is insufficient, though a detailed picture may suffice.
+If the object is within range, the caster will know which
+direction to seek, but not the precise distance.</p>"

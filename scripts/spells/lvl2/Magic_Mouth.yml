@@ -1,1 +1,23 @@
 id: 248
+name: Magic Mouth
+pp: 212
+Lvl: 
+  - mag 2
+  - ill 2
+  - wch 2
+Rng: 10 feet
+Dur: permanent (until triggered)
+Rev: 0
+Desc: "<p>Once activated, this enchantment causes a two-footwide
+illusory mouth to manifest. The <i>magic mouth</i>
+appears where the caster places the spell. It might be
+triggered by movement within 10 feet of it, or by other
+conditions as the caster prescribes, though the trigger
+range can be no greater than 10 feet. (For instance,
+placed upon a door, the <i>magic mouth</i> might only appear
+if the door is rapped on.)</p>
+<p>Once triggered, the <i>magic mouth</i> speaks a message
+that may not exceed 25 words. It might speak in a sibilant
+tongue, a commanding tone, a kind voice, or any
+like variation, though only in a language known by the
+caster. <i>Dispel magic</i> terminates this enchantment.</p>"

@@ -1,1 +1,23 @@
 id: 308
+name: Produce Flame
+pp: 222
+Lvl: 
+  - pyr 2
+  - drd 2
+Rng: 0
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>A small, torch-like flame ignites in the palm of the
+sorcerer, creating a 40-foot radius of light. The flame
+does not harm the caster. It remains in effect for the
+spell’s duration, so long as no other spells are cast. The
+sorcerer can terminate the spell by closing his or her
+hand to a fist.</p>
+<p>The sorcerer can opt to hurl the flame within 30 feet
+as a ranged attack using the <i>flask hurling</i> rules (see
+<b>Chapter 9: Combat</b>, <i>combat options</i>). The flame bursts
+in a five-foot diameter if it strikes, igniting combustibles
+and causing 1d4 hp damage, +1 hp per CA level
+(e.g., a CA 5 sorcerer can hurl a <i>produced flame</i> that
+inflicts 1d4+5 hp damage). A <i>sorcery</i> saving throw reduces
+damage by half.</p>"

@@ -1,1 +1,14 @@
 id: 426
+name: Ultraviolet Vision
+pp: 243
+Lvl: 
+  - ill 2
+Rng: 0
+Dur: 3 turns per CA level
+Rev: 0
+Desc: "<p>The caster’s eyes emit ultraviolet radiation in a 60-footlong
+cone that is 30 feet wide at its terminus. For the
+spell’s duration, the sorcerer can perceive the ultraviolet
+spectrum in varying shades of blue, violet, and white;
+effectively, the caster sees in the dark. This spell does
+not allow one to detect invisible objects or creatures.</p>"

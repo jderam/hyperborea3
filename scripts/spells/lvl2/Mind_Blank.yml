@@ -1,1 +1,20 @@
 id: 260
+name: Mind Blank
+pp: 214
+Lvl: 
+  - mag 2
+  - wch 2
+Rng: 120 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Causes victims to forget the last minute of their lives
+prior to and including the casting of this spell. The targets
+may make <i>sorcery</i> saving throws, modified by <i>willpower
+adjustment</i>, if applicable. One to four persons,
+chosen by the caster, can be affected, but the greater the
+number of targets, the less potent the spell: Two targets
+each receive a +1 bonus to their saving throws, three
+targets each receive a +2 bonus, and four targets each
+receive a +3 bonus. This spell will not negate the effects
+of other enchantments such as <i>charm person</i> or <i>geas</i>.
+Lost memories can be restored via a <i>heal</i> spell.</p>"

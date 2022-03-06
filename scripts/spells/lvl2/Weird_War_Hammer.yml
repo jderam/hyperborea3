@@ -1,1 +1,22 @@
 id: 446
+name: Weird War Hammer
+pp: 245
+Lvl: 
+  - clr 2
+Rng: 30 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Conjures a brilliant war hammer composed of positive
+energy. The floating weapon can be directed to attack
+any opponent within the spell’s range. The caster need
+not focus on it; other actions (e.g., fighting or casting
+other spells) can be taken whilst directing the <i>weird
+war hammer</i> at will. The <i>hammer</i> strikes with a <i>fighting
+ability</i> (FA) equal to the sorcerer. For every 4 CA
+levels, the weapon is +1 “to hit” and damage:
+<ul><li><b>CA 1–4</b> = +1</li>
+<li><b>CA 5–8</b> = +2</li>
+<li><b>CA 9–12</b> = +3</li></ul>
+Hence, a CA 5 sorcerer can conjure a <i>weird war hammer</i>
+that strikes at +2 “to hit” and inflicts 1d8+2 hp
+damage. <i>Dispel magic</i> terminates this spell.</p>"

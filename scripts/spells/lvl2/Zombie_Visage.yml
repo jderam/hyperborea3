@@ -1,1 +1,19 @@
 id: 455
+name: Zombie Visage
+pp: 247
+Lvl: 
+  - ill 3
+  - nec 2
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer’s face and hands become like those of a
+<b>zombie</b>, accompanied by a conspicuous foetor and an
+aura of undeath, allowing one to pass amongst unintelligent
+undead without notice. This mien is merely a
+necromantic illusion, however. Ordinary animals that
+glimpse the sorcerer must make morale checks at −2
+or flee in terror for 1d4 rounds. <i>Zombie visage</i> is broken
+by <i>dispel magic</i> or <i>dispel phantasm</i>; a <i>turn undead</i>
+attempt versus <i>Undead Type 2</i>, if successful, will cause
+the face to crumble and fall away from the sorcerer.</p>"

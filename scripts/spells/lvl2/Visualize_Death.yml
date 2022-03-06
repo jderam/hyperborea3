@@ -1,1 +1,16 @@
 id: 432
+name: Visualize Death
+pp: 244
+Lvl: 
+  - nec 2
+Rng: touch
+Dur: 1 turn
+Rev: 0
+Desc: "<p>By handling the corpse, carcass, or skeletal remains
+of an expired creature, the sorcerer enters a trance
+and visualizes the last 10 minutes (1 turn) of the deceased’s
+life, as seen through their eyes. Naturally, this
+revelation requires a full 10 minutes, for not a moment
+is missed. At the spell’s conclusion, the sorcerer will
+emerge from the trance exhausted and emotionally
+troubled/withdrawn for 1d6 turns.</p>"

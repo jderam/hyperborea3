@@ -1,1 +1,16 @@
 id: 289
+name: Phantasmal Armour
+pp: 218
+Lvl: 
+  - ill 2
+Rng: 0
+Dur: 2 turns
+Rev: 0
+Desc: "<p>A quasi-real suit of dull black plate mail clads the
+sorcerer. The armour is formed of shadow material
+conjured from the Black Gulf; it provides AC 3 and
+DR 2. <i>Phantasmal armour</i> is weightless; it does not
+affect movement as normal plate mail does. Except
+for shields, this spell does not combine or “stack” with
+other armour. <i>Phantasmal armour</i> can be terminated
+by <i>dispel phantasm</i>.</p>"
