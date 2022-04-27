@@ -1,0 +1,28 @@
+id: 274
+name: Neutralize Poison
+pp: 216
+Lvl: 
+  - wch 4
+  - clr 4
+  - drd 3
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Detoxifies a poisoned victim. If used within 6 rounds
+(1 minute) on a creature killed by poison, the victim will
+be revived to 0 hp, pending a <i>trauma survival</i> check
+(see <b>Chapter 3: Statistics</b>, <i>constitution</i>). This spell
+can also detoxify a venomous creature (snake, spider,
+etc.) with a successful touch attack. The creature is
+afforded a <i>sorcery</i> saving throw to negate the effect
+(and, given sufficient time, will eventually regenerate
+its venom sacs). <i>Neutralize poison</i> can likewise purify
+other poisonous or poisoned objects such as food,
+plants, and the like.</p>
+<p>The reverse of this spell, <i>poison</i>, is delivered via a
+touch attack. The victim is allowed a <i>death</i> (poison)
+saving throw. If the saving throw is successful, the victim
+sustains 2d6 hp damage; if the saving throw fails,
+the victim falls deathly ill, suffering fever and delirium
+within 1 turn, paralysis after 6 turns (1 hour), and
+death in 48 hours.</p>"

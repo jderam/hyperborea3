@@ -1,0 +1,15 @@
+id: 250
+name: Magic Vestment
+pp: 213
+Lvl: 
+  - clr 3
+Rng: touch
+Dur: 1 turn + 1 turn per CA level
+Rev: 0
+Desc: "<p>Conjures a translucent suit of chain mail (AC 5,
+DR 1) to bedeck the sorcerer or another willing recipient.
+The armour has no weight, though it rattles like
+ghostly chains whenever the recipient moves. <i>Magic
+vestment</i> cannot be “stacked” with other armour,
+though the wearer can bear a shield or enjoy other
+forms of magical protection.</p>"

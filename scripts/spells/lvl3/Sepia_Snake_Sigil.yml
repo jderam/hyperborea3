@@ -1,0 +1,35 @@
+id: 342
+name: Sepia Snake Sigil
+pp: 228
+Lvl: 
+  - mag 3
+  - nec 3
+  - wch 3
+Rng: 10 feet
+Dur: special
+Rev: 0
+Desc: "<p>The casting of this spell requires snake scales and
+powdered amber of 100-gp value. The spell may be
+executed via one of three methods:</p>
+<ol><li>Glowing sigil drawn in the air and directed at a
+target</li>
+<li>Grey-brown sigil inscribed upon an object that, if
+studied or touched, activates the dweomer</li>
+<li>Small character inscribed into a book or
+scroll that, if studied or touched, activates the
+dweomer</li></ol>
+<p>Whichever the method, a brown, serpentine force is
+evoked to strike its nearest victim. It attacks at a fighting
+ability (FA) equal to the sorcerer’s casting ability
+(CA). If the <i>sepia snake sigil</i> hits its target, the victim
+is imprisoned and paralyzed within a shimmering amber
+force field. This lasts until the caster releases the
+victim, the caster dies, or <i>dispel magic</i> is cast. No saving
+throw is allowed for creatures of 8 HD or less; however,
+a <i>sorcery</i> saving throw is allowed for creatures of
+9 HD or greater. Nothing can approach an entrapped
+victim; all attempts are rebuffed by the force field. The
+imprisoned will not age, sleep, nor grow hungry; neither
+will it be aware of what transpires without. If the
+<i>sepia snake sigil</i> misses its target, it disappears in a
+puff of brown smoke.</p>"

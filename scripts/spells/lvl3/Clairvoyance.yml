@@ -1,0 +1,21 @@
+id: 58
+name: Clairvoyance
+pp: 184
+Lvl: 
+  - mag 3
+  - wch 3
+Rng: special
+Dur: 6 rounds (1 minute) per CA level
+Rev: 0
+Desc: "<p>The caster envisions a known or familiar location and
+can “see” anything within 60 feet of the location’s
+epicentre, beyond which all sight becomes blurred; if
+the area is cloaked in darkness, visibility is limited to
+10 feet. Range is not a factor when casting this spell,
+so long as the caster is on the same planet, plane of
+existence, and dimension as the targeted location.
+If <i>clairvoyance</i> is used to view one who is 10 HD or
+greater, the target may make a <i>sorcery</i> save to cognize
+the effect; otherwise, they are ignorant. Lastly, if used
+in conjunction with <i>clairaudience</i>, the sorcerer both
+hears and sees the envisioned location.</p>"

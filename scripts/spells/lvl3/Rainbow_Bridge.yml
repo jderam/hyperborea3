@@ -1,0 +1,19 @@
+id: 317
+name: Rainbow Bridge
+pp: 223
+Lvl: 
+  - ill 3
+Rng: 120 feet
+Dur: 2 turns per CA level
+Rev: 0
+Desc: "<p>Evokes a misty, arching rainbow to take form. It can
+be used to bridge a chasm, pit, lava pool, or other hazard.
+The <i>rainbow bridge</i> is 10 feet wide and can span
+15 feet per CA level. The arch has an apex equal to
+one-half its length.</p>
+<p><i>Rainbow bridge</i> can be traversed as though it were
+solid ground at normal walking speed, but running
+will cause the crosser to fall through. This spell can be
+negated by <i>dispel phantasm</i>. The sorcerer cannot end
+the spell prematurely; i.e., once cast it persists until its
+duration expires.</p>"

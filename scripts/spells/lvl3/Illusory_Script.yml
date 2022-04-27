@@ -1,0 +1,19 @@
+id: 213
+name: Illusory Script
+pp: 206
+Lvl: 
+  - ill 3
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>A message, instructions, or a map is penned in a script
+that only the sorcerer and the desired recipient(s) can
+read and understand. Another illusionist (or associated
+subclass) will cognize the <i>illusory script</i> for what it
+is but will be unable to comprehend it. Any attempt to
+read the script requires a <i>sorcery</i> saving throw, or else
+the reader becomes <i>confused</i> (as the <i>confusion</i> spell
+[q.v.]) for 1d6 rounds. The saving throw is modified by
+<i>willpower adjustment</i>, if applicable. This spell breaks
+if the source material (e.g., book, parchment, scroll) is
+physically destroyed or if <i>dispel phantasm</i> is cast on it.</p>"

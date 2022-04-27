@@ -1,0 +1,24 @@
+id: 137
+name: Explosive Runes
+pp: 195
+Lvl: 
+  - mag 3
+  - nec 3
+  - pyr 3
+  - wch 3
+Rng: touch
+Dur: permanent (until triggered)
+Rev: 0
+Desc: "<p>Sorcerous symbols are inscribed on the surface of a
+book, manual, map, note, scroll, tome, or other written
+work. The <i>explosive runes</i> protect the volume’s content
+so that only the sorcerer who inscribed the <i>runes</i> may
+access the material safely. If the reader is not the caster,
+the <i>runes</i> will explode for 5d6 hp damage. The reader
+is permitted no saving throw, but those within 10 feet
+are allowed <i>sorcery</i> saving throws for half damage.
+Sorcerers who carefully inspect the volume (before
+simply reading it) have a 1-in-20 chance per CA level of
+discovering the <i>explosive runes</i>. <i>Explosive runes</i> can be
+removed at any time by the caster or the <i>dispel magic</i>
+spell. Detonation effectively destroys the material.</p>"

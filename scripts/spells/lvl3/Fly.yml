@@ -1,0 +1,14 @@
+id: 171
+name: Fly
+pp: 200
+Lvl: 
+  - mag 3
+Rng: touch
+Dur: 6 turns + 1 turn per CA level
+Rev: 0
+Desc: "<p>The caster or a touched ally gains the ability to <i>fly</i> at a
+maximum rate of 60 MV. Any direction of movement is
+allowed; likewise, the <i>flyer</i> may stop in mid-flight, hovering
+similar to the <i>levitate</i> spell. Combat whilst <i>flying</i>
+is without penalties, as is spell casting from a stationary,
+mid-air position. Maximum <i>fly</i> weight is 300 pounds.</p>"

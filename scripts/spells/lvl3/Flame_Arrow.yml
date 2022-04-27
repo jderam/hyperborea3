@@ -1,0 +1,17 @@
+id: 163
+name: Flame Arrow
+pp: 198
+Lvl: 
+  - mag 3
+  - pyr 3
+Rng: touch
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Enchants one arrow or crossbow bolt per round for as
+many rounds as the sorcerer has CA levels. The caster
+must touch each missile, which then must be fired
+(presumably by an ally) within 1 round of the sorcerer’s
+touch. Once a <i>flame arrow</i> is launched, it ignites,
+causing an extra 1d6 hp fire damage if it strikes its
+intended target. Each enchanted missile is considered
+a magical weapon, though it has no attack bonus.</p>"

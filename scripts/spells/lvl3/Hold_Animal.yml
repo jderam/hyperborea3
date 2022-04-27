@@ -1,0 +1,24 @@
+id: 198
+name: Hold Animal
+pp: 204
+Lvl: 
+  - drd 3
+Rng: 120 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Freezes still (i.e., motionless, paralyzed) up to six Medium
+animals (amphibians, birds, fish, mammals, and
+reptiles). The enchantment affects mundane animals
+only, not magical or supernatural beasts. It can be
+cast at a single animal or a group of animals, so long
+as they are within a 20-foot radius of the primary target,
+which must be selected by the caster. Large and
+Small animals may be <i>held</i>, too. Three Small animals
+may be considered equivalent to one Medium animal,
+and one Large animal may be considered equivalent
+to three Medium animals. When cast at a group, the
+spell affects those animals closest to the primary
+target selected by the caster. Each beast is allowed a
+<i>sorcery</i> saving throw to resist the spell, but if the spell
+is focused on a single animal, its saving throw is made
+at a −2 penalty.</p>"

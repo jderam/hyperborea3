@@ -1,0 +1,20 @@
+id: 297
+name: Plant Growth
+pp: 220
+Lvl: 
+  - mag 4
+  - wch 4
+  - drd 3
+Rng: 160 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Causes normal vegetation to flourish and expand
+to form a jungle-like thicket. The affected area is
+20 × 20 feet per CA level, and it must be vegetated
+already, containing bushes, creepers, shrubs, trees,
+vines, or the like. The exact dimensions may be chosen
+by the caster but should generally be rectangular.
+People attempting to pass through the affected area
+must hack it away with heavy knives or like blades,
+advancing at no greater than 10 MV whilst so doing
+(20 MV for Large creatures).</p>"

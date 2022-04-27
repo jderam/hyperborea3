@@ -1,0 +1,22 @@
+id: 136
+name: Exploding Skull
+pp: 195
+Lvl: 
+  - nec 3
+  - wch 3
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>On the clean skull of a human or humanoid, the sorcerer
+places a ward that persists for 1 turn or until
+touched by another living creature. If the skull is
+touched by someone other than the caster, or at the
+end of the spell’s duration in any case, it explodes
+with waves of negative energy from the Black Gulf.
+The blast affects a 25-foot radius. Any creature within
+range of the blast suffers 1d6 hp damage per CA level
+of the sorcerer unless a <i>sorcery</i> saving throw is made
+for half damage. The <i>exploding skull</i> can be hurled as
+a grenade to equal effect, the skull detonating upon impact.
+This is executed by use of the <i>flask hurling</i> rules
+(see <b>Chapter 9: Combat</b>, <i>combat options</i>).</p>"

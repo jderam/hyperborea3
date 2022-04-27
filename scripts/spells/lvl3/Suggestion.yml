@@ -1,0 +1,20 @@
+id: 386
+name: Suggestion
+pp: 234
+Lvl: 
+  - mag 3
+  - ill 3
+Rng: 60 feet
+Dur: 24 hours
+Rev: 0
+Desc: "<p>This enchantment affects one creature. The target
+must make a <i>sorcery</i> saving throw, modified by <i>willpower
+adjustment</i>, if applicable, or be compelled to
+carry out a <i>suggestion</i> spoken by the sorcerer. <i>Suggestions</i>
+should be neither overly complex nor longer than
+one or two sentences, though the victim may attempt
+to act upon such urgings for the duration of the spell,
+if physically possible. <i>Suggesting</i> an obviously self-destructive
+action breaks the spell on a 5-in-6 chance.
+Of course, this spell is useless if sorcerer and ensorcelled
+do not speak the same language.</p>"

@@ -1,0 +1,21 @@
+id: 452
+name: Wraithshape
+pp: 246
+Lvl: 
+  - ill 3
+  - nec 3
+  - wch 3
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The sorcerer and all gear assume a smoke-grey, incorporeal
+form. Whilst in <i>wraithshape</i>, the undead
+(except <b>vampires</b> and <b>liches</b>) will ignore the caster,
+believing him or her to be one of their own abysmal
+kind. The sorcerer can squeeze under doors or through
+small holes or cracks, and he can float in the air at
+15 MV. Only magical weapons or spells can harm such
+a sorcerer. The sorcerer cannot, however, make any
+attacks unless confronted by a creature in a like state.
+<i>Dispel magic</i> breaks the spell; otherwise, the sorcerer
+can terminate it at will.</p>"

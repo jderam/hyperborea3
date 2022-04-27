@@ -1,0 +1,20 @@
+id: 429
+name: Vampiric Touch
+pp: 243
+Lvl: 
+  - nec 3
+  - wch 3
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>With a touch the sorcerer drains a victim of 1d6 hp for
+every 2 CA levels, to a maximum of 6d6 hp at CA 12.
+The sapped hit points are transferred to the sorcerer.
+Temporary hit points are added to the caster’s present
+total and will remain for 6 turns (1 hour). During
+this period, any damage sustained by the caster is first
+subtracted from the temporary total. The temporary
+hit points can exceed the caster’s normal maximum
+hit point allotment. <i>N.B.:</i> Even if the victim is sapped
+beyond death, the same hp are transferred; however,
+withering and decay accelerate disturbingly.</p>"

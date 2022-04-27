@@ -1,0 +1,35 @@
+id: 34
+name: Blink
+pp: 180
+Lvl: 
+  - mag 3
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Randomly the sorcerer “blinks” in and out of existence,
+making short (2d4-foot) planar jumps through
+the Æther and back. The caster may attack whilst
+<i>blinking</i> (if within range), but at a −4 “to hit” penalty.
+If the caster wins initiative, all melee and missile attacks
+against him or her will automatically miss. If the
+caster loses initiative, he or she is subject to attack,
+though only once from each attacker. The caster can
+be targeted by area effect spells such as <i>fireball</i> or <i>web</i>,
+or by breath weapons, if the original position and the
+<i>blink</i> location are both within the area of effect. The
+direction of the <i>blink</i> is determined by a d8 roll:</p>
+<ol>
+<li>north</li>
+<li>northeast</li>
+<li>east</li>
+<li>southeast</li>
+<li>south</li>
+<li>southwest</li>
+<li>west</li>
+<li>northwest</li>
+</ol>
+<p>If a solid object blocks the <i>blink</i> location, the sorcerer
+will be displaced as far as 15 feet in the determined direction
+in order to reappear. If solid matter still blocks
+re-emergence, the sorcerer will be trapped in another
+dimension, perhaps the plane where dwells Kraken.</p>"

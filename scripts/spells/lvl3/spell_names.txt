@@ -1,0 +1,79 @@
+5 Agonizing Touch
+10 Allay Exhaustion
+14 Animate Carrion II
+16 Animate Dead
+33 Blinding Light
+34 Blink
+42 Call Lightning
+44 Cataleptic State
+57 Clairaudience
+58 Clairvoyance
+60 Cold Protection
+71 Continuous Darkness
+80 Create Food and Water
+82 Cryonic State
+84 Cure Blindness
+86 Cure Deafness
+87 Cure Disease
+99 Death Masque
+102 Deceive
+124 Dispel Magic
+125 Dispel Phantasm
+126 Dissipate Gas
+136 Exploding Skull
+137 Explosive Runes
+148 Fear
+155 Fire Protection
+159 Fire Staff
+162 Fireball
+163 Flame Arrow
+170 Floating Skull
+171 Fly
+177 Freeze Surface
+188 Glyph of Warding
+193 Hallucinatory Terrain
+194 Haste
+198 Hold Animal
+213 Illusory Script
+215 Illusory Wall of Fire
+220 Incinerate Normal Missiles
+226 Inner Eye
+231 Invisibility Hemisphere
+239 Lightning Bolt
+250 Magic Vestment
+255 Meld into Stone
+274 Neutralize Poison
+275 Non-Detection
+278 Paralyze
+281 Pass without Trace, 15΄ r.
+292 Phantasmal Wind
+293 Phantom Steed
+297 Plant Growth
+301 Prayer
+312 Protection from Evil, 15΄ r.
+313 Protection from Ordinary Missiles
+317 Rainbow Bridge
+324 Remove Curse
+326 Remove Paralysis
+338 Secret Page
+342 Sepia Snake Sigil
+345 Shadow Sending
+360 Slow
+374 Spectral Phantasm
+376 Spike Growth
+378 Starlight
+380 Stone Shape
+384 Strangle
+386 Suggestion
+399 Summon Insect Swarm
+401 Summon Monster I
+405 Summon Toad Swarm
+411 Tiny Hut
+412 Tongues
+422 Tree Shape
+425 Twofold Missile
+429 Vampiric Touch
+443 Water Breathing
+444 Water Walk
+449 Wind Wall
+452 Wraithshape

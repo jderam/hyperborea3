@@ -1,0 +1,18 @@
+id: 71
+name: Continuous Darkness
+pp: 186
+Lvl: 
+  - ill 3
+  - wch 3
+Rng: 120 feet
+Dur: special
+Rev: 0
+Desc: "<p>Creates a 60-foot-diameter sphere of gloom as black as
+pitch. It cannot be cast on a single target or object, but
+rather on an area. Torch and lantern light are rendered
+ineffective, and <i>infrared vision</i> is futile. The effect is
+permanent (unless <i>dispelled</i>), so long as the caster remains
+within 10 miles; otherwise, the dweomer begins
+to dissipate in subtle degrees, ending in a number of
+months equal to the sorcerer’s CA. <i>Continuous darkness</i>
+can counter <i>continuous light</i> and <i>light</i>.</p>"

@@ -1,0 +1,25 @@
+id: 239
+name: Lightning Bolt
+pp: 211
+Lvl: 
+  - mag 3
+  - cry 3
+  - nec 3
+Rng: 180 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>A bolt of lightning 5 feet wide and 60 feet long erupts
+from the outstretched hands of the sorcerer, striking
+all within its path until it reaches maximum range.
+Struck creatures suffer 1d6 hp damage per CA level,
+with <i>sorcery</i> saving throws allowed for half damage.</p>
+<p>The <i>lightning bolt</i> will travel its full range of 180 feet
+before ceasing; if it strikes a wall or another solid surface
+before reaching its 180-foot range, it will rebound,
+potentially striking again those within its path—and
+possibly the caster. For example, if a CA 9 sorcerer casts
+this spell whilst in the doorway of a 70 × 70-foot room,
+the <i>bolt</i> will strike its targets for 9d6 hp damage, strike
+the far wall, bounce back, hit the targets again (they get
+another saving throw for half damage), strike the caster,
+and then travel another 40 feet before dissipating.</p>"

@@ -1,0 +1,15 @@
+id: 125
+name: Dispel Phantasm
+pp: 193
+Lvl: 
+  - ill 3
+Rng: 120 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Automatically negates any illusions/phantasms. However,
+if used against the illusion/phantasm spell of a superior
+illusionist, the chance of failure is 1-in-20 per CA
+level difference. For instance, if a CA 6 bard attempts
+to <i>dispel phantasm</i> against the <i>spectral phantasm</i> of a
+CA 10 illusionist, then the bard stands a 4-in-20 chance
+of failure.</p>"

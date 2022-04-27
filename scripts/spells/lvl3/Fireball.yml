@@ -1,0 +1,19 @@
+id: 162
+name: Fireball
+pp: 198
+Lvl: 
+  - mag 3
+  - pyr 3
+Rng: 240 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>From the palm of the sorcerer’s hand shoots a fiery
+missile that explodes into a 40-foot-diameter sphere of
+flames when it strikes a target designated by the caster.
+Damage is 1d6 hp per CA level to all within the area
+of effect; e.g., a CA 5 sorcerer creates a 5d6 hp <i>fireball</i>.
+Targets may make <i>sorcery</i> saves for half damage.
+<i>N.B.:</i> The <i>fireball</i> must occupy its full volume (~33,500
+cubic feet); if cast in an enclosed area smaller than the
+40-foot diameter sphere, the flames expand as necessary
+into halls, tunnels, closets, through windows, etc.</p>"

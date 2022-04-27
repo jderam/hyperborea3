@@ -1,0 +1,33 @@
+id: 399
+name: Summon Insect Swarm
+pp: 237
+Lvl: 
+  - wch 3
+  - drd 3
+Rng: 50 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>An angry horde of insects are <i>summoned</i>, manifesting
+on the caster’s person, that one’s arms spread wide.
+They are flying insects 7-in-10 times; otherwise, they
+are crawling. Flying insects, per the referee’s determination,
+might be bees, biting flies, hornets, or wasps;
+crawling insects might include biting ants, beetles, or
+non-venomous centipedes. (If this spell is cast underground,
+crawling insects will instead be <b>1d4 giant ants</b>,
+which will attack normally at the sorcerer’s will.) The
+<i>insect swarm</i> will attack 1 round after being <i>summoned</i>.
+The standard <i>swarm</i> (not the giant ants) will surge
+forth as directed by the sorcerer. As long as the caster
+concentrates and points at the target, the victim suffers
+2 hp damage per round. Whilst engulfed, the victim
+cannot cast spells, missile attacks are impossible,
+and melee attacks are at a −4 “to hit” penalty. Other
+actions such as drinking a potion, activating a magic
+item, using a magic ability, etc. are subject to a 3-in-6
+chance of failure. Too, a standard <i>swarm</i> victim suffers
+a −4 AC penalty. Fleeing the <i>swarm</i> may be the victim’s
+only recourse, for it can harass only to the limit of
+the spell’s range. A <i>swarm</i> can be directed to move to
+another opponent within range, but 1 round will elapse
+for every 30 feet between the targets.</p>"

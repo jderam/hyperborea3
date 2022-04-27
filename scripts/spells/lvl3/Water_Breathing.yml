@@ -1,0 +1,14 @@
+id: 443
+name: Water Breathing
+pp: 245
+Lvl: 
+  - mag 3
+  - cry 3
+  - drd 3
+Rng: 30 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 1
+Desc: "<p>Allows the recipient to breathe fresh or salt water as
+easily as air. The reverse form of this spell, <i>air breathing</i>,
+allows a water-breathing creature to respire
+aerially.</p>"

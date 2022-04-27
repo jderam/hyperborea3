@@ -1,0 +1,28 @@
+id: 411
+name: Tiny Hut
+pp: 240
+Lvl: 
+  - mag 3
+  - cry 3
+Rng: 0
+Dur: 12 turns (2 hours) per CA level
+Rev: 0
+Desc: "<p>A hemispherical globe of force is evoked, surrounding
+the sorcerer and providing suitable shelter for as many
+as six companions. The <i>tiny hut</i> is 15 feet in base diameter,
+with walls that arch to an apex 7½ feet high. It has
+an opaque exterior, but from the inside the walls appear
+transparent, allowing its inhabitants to see the outdoors
+with perfect clarity, unless the caster wills it to opacity.</p>
+<p>The <i>tiny hut</i> interior temperature is mild and comfortable
+(about 70°F). This condition is maintained so long
+as the temperature without is no warmer than 110°F
+and no colder than −10°F; for every degree warmer or
+colder, the interior temperature of the <i>tiny hut</i> will rise
+or drop accordingly. A lambent light emanates from
+the interior ceiling upon the command of the caster.</p>
+<p>The <i>tiny hut</i> can survive strong winds, rain, sleet, hail,
+and snow, but it is vulnerable to attack: If struck, it can
+sustain only 6 hp damage before it is destroyed. Whereas
+the caster’s companions are free to enter and exit the
+<i>tiny hut</i>, once the caster leaves, the spell terminates.</p>"

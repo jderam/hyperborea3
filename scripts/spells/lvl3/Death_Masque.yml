@@ -1,0 +1,20 @@
+id: 99
+name: Death Masque
+pp: 190
+Lvl: 
+  - nec 3
+Rng: touch
+Dur: 1 day per CA level
+Rev: 0
+Desc: "<p>Using a small blade, the sorcerer begins chanting this
+spell whilst excising the face of a deceased human or
+humanoid, providing the subject has died within the
+hour (6 turns). Continuing these baleful incantations,
+the dead skin mask is applied to the face of the sorcerer
+or to a willing recipient. The necromantic graft
+duplicates the deceased creature’s face with macabre
+exactitude. <i>Death masque</i> thus requires 2 turns to
+cast. It can be discerned with <i>true seeing</i>, and it can be
+terminated via <i>dispel magic</i>. When the spell’s duration
+expires, the dead face will rot and peel painfully off the
+recipient’s face, causing 1d6 hp damage.</p>"

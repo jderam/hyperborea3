@@ -1,0 +1,24 @@
+id: 82
+name: Cryonic State
+pp: 187
+Lvl: 
+  - cry 3
+Rng: touch
+Dur: 1 day + 1 day per CA level
+Rev: 0
+Desc: "<p>The caster or other willing recipient is cooled to
+sub-zero temperatures, effectively frozen solid and
+preserved. The recipient of this spell enters a coma
+from which it cannot be revived until the spell’s duration
+is met. Furthermore, the recipient appears dead,
+frozen by natural or sorcerous means, with no discernible
+pulse. Thawing begins about four hours before the
+spell’s termination. When the spell ends, the recipient
+(if intelligent) requires 1d6 turns before it can begin
+walking and talking as normal.</p>
+<p><i>Cryonic state</i> can be used to preserve one who is about
+to die of poison, blood loss, etc. Too, this spell may be
+cast on an unwilling target that is sleeping. The target
+is allowed a <i>sorcery</i> saving throw to negate the effect
+and abruptly awaken; otherwise, it suffers the effects
+described above.</p>"

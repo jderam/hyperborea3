@@ -1,0 +1,17 @@
+id: 155
+name: Fire Protection
+pp: 197
+Lvl: 
+  - pyr 3
+  - drd 3
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>Shelters the caster or other recipient from any damage
+related to normal fire for one hour per CA level. Against
+magical fire (e.g., <i>fireball</i>, a <b>hell hound’s</b> breath, a <b>flame
+tongue</b> sword), the sorcerer gains immunity from a single
+attack before the spell is broken; a recipient of this
+spell other than the sorcerer simply gains a +4 saving
+throw bonus versus magical fire attacks.</p>"
+

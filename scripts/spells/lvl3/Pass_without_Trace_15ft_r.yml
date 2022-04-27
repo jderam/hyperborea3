@@ -1,0 +1,16 @@
+id: 281
+name: Pass without Trace, 15΄ r.
+pp: 217
+Lvl: 
+  - drd 3
+Rng: touch
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The recipient of this spell and all within 15 feet can
+move through wilderness terrain—be it forest, desert,
+or snowy mountainside—without leaving a footprint,
+a scent, or other trace, regardless of armour worn.
+A tracker has no chance to find a trail; however, should
+one cast <i>detect magic</i>, a faint trail of magical footprints
+will be discerned, enduring for 6 turns (1 hour) after
+the spell’s recipients have passed.</p>"

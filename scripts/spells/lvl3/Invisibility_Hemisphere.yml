@@ -1,0 +1,27 @@
+id: 231
+name: Invisibility Hemisphere
+pp: 209
+Lvl: 
+  - mag 3
+  - ill 3
+Rng: touch
+Dur: 12 turns (2 hours) per CA level
+Rev: 0
+Desc: "<p>Functions much as the <i>invisibility</i> spell (q.v.), except
+that it extends in a 10-foot-radius hemisphere from the
+primary recipient, potentially causing other creatures
+in the spell’s radius to become invisible. The <i>invisibility
+hemisphere</i> moves with the primary recipient.
+Those within 10 feet at the time of casting (including
+animal companions, undead minions, etc.) become
+invisible, but they can see one another as translucent
+figures. If a beneficiary of this spell steps out from its
+radius, that one will become visible, unable to resume
+<i>invisibility</i> unless the spell is recast. If the primary
+recipient causes damage (hp loss) to another creature,
+or causes another creature to roll a saving throw, the
+entire spell is negated; however, if one of the spell’s
+other recipients causes damage (or forces a saving
+throw) to an opponent, only that actor becomes visible.
+For more examples of what constitutes harm, see the
+<i>invisibility</i> spell.</p>"

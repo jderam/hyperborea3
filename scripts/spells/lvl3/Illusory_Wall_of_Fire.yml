@@ -1,0 +1,24 @@
+id: 215
+name: Illusory Wall of Fire
+pp: 207
+Lvl: 
+  - ill 3
+  - pyr 3
+Rng: 60 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Creates a phantasm of a flaming barricade. The <i>illusory
+wall of fire</i> can be as large as 1 × 10 × 10 feet and is
+realistic to the eyes and ears, but it does not emit actual
+heat; the thermal properties of this spell are purely deceptive.
+The <i>illusory wall of fire</i> can be passed through,
+but such transit will not terminate it. The spell persists
+for its duration unless <i>dispel phantasm</i> is cast. Creatures
+that pass through the <i>illusory wall of fire</i> must
+make <i>sorcery</i> saving throws (modified by <i>willpower
+adjustment</i>, if applicable) or suffer 2d6 hp damage
+(manifesting actual burn wounds). If a creature becomes
+aware of the deception and gives warning, allies
+can attempt to pass through with +4 bonuses to their
+saves. Creatures of an innately fiery nature (such as <b>fire
+elementals</b>) are never fooled by this spell.</p>"

@@ -1,0 +1,22 @@
+id: 255
+name: Meld into Stone
+pp: 213
+Lvl: 
+  - clr 3
+  - drd 3
+Rng: touch
+Dur: 1 turn
+Rev: 0
+Desc: "<p>The sorcerer or other willing recipient melds into a large
+stone. The subject can carry no more than 100 pounds of
+inanimate gear, and the stone must be of equal or greater
+size as the recipient, or the spell will fail. The subject
+may step out of the stone at any time. If the subject does
+not exit the stone before the spell terminates, he or she
+must make a <i>transformation</i> save or remain forever
+trapped, their face and upper torso vaguely distinguishable
+in the stone’s form. If the saving throw succeeds, it
+must be rolled once per additional turn spent within the
+stone. A trapped victim can be saved by a <i>stone to flesh</i>
+spell, their body tearing out from a sort of fleshy egg, or
+by a <i>dispel magic</i> spell.</p>"

@@ -1,0 +1,24 @@
+id: 124
+name: Dispel Magic
+pp: 193
+Lvl: 
+  - mag 3
+  - cry 3
+  - ill 4
+  - nec 3
+  - pyr 3
+  - wch 3
+  - clr 3
+  - drd 4
+Rng: 120 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Sorcery and its effects are negated and removed in an
+area of 20 × 20 × 20 feet. The spell does not negate
+magic items but can undo a sorcerous effect created by
+one. It does not, however, negate illusions/phantasms.
+If <i>dispel magic</i> is used against a spell cast by a sorcerer
+of higher CA, the chance of failure is 1-in-20 per
+level difference. For instance, if a CA 6 caster attempts
+to <i>dispel</i> the <i>levitate</i> spell of a CA 10 sorcerer, there is
+a 4-in-20 chance of failure.</p>"

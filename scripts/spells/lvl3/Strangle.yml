@@ -1,0 +1,25 @@
+id: 384
+name: Strangle
+pp: 233
+Lvl: 
+  - nec 3
+  - wch 4
+Rng: 50 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>From the outstretched hands of the caster emerge a
+pair of invisible members which reach for the throat of
+a human or humanoid target. The target must make a
+<i>sorcery</i> saving throw to negate the effects of this spell.
+If the save fails, the victim will choke and gag, suffering
+1d4 hp damage per round. The victim furthermore will
+fight at −2 “to hit” and damage rolls and may be unable
+to cast spells (3-in-6 chance of failure). Too, movement
+is halved for the victim. The <i>strangling</i> hands might
+be wrenched free via a <i>test of strength</i>. If the victim
+has not escaped after 3 rounds of strangulation, then a
+<i>test of constitution</i> is required or the victim passes out;
+damage continues throughout the duration of the spell.
+In addition to the <i>test of strength</i>, escaping <i>strangle</i>
+could be done by moving out of range of the caster;
+also, <i>dispel magic</i> can break this spell.</p>"

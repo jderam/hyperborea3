@@ -1,0 +1,16 @@
+id: 177
+name: Freeze Surface
+pp: 201
+Lvl: 
+  - cry 3
+  - wch 4
+Rng: 240 feet
+Dur: special
+Rev: 0
+Desc: "<p>Solidifies water to eight-inch thickness in a 420 × 420-foot
+area. The frozen surface can be safely traversed
+if anchored to land; otherwise, it will float. <i>Freeze surface</i>
+can be enchanted to be rough or mirror smooth,
+the latter of which can be quite slippery. The sorcerer
+can end this spell with a flick of his hand, or the ice will
+melt naturally, as determined by the climate.</p>"

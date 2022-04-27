@@ -1,0 +1,21 @@
+id: 33
+name: Blinding Light
+pp: 180
+Lvl: 
+  - ill 4
+  - pyr 3
+Rng: 90 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Evokes a flashing, 20-foot-diameter sphere of brilliant
+white radiance. Creatures within the area of effect are
+subject to blindness unless they make <i>sorcery</i> saving
+throws (or unless their eyes are closed). Creatures of
+3 HD or fewer are permanently blinded if they fail
+their saves; creatures of 4–6 HD are blinded for 2d4
+rounds; and creatures of 7 HD or greater are blinded
+for 1d4+1 rounds. Blinded creatures always lose initiative
+and suffer −4 penalties on attack rolls, armour
+class, and saving throws. Creatures not within the radius
+of the spell, and those that make their saves, will
+see spots for 1d6 turns.</p>"

@@ -1,0 +1,23 @@
+id: 16
+name: Animate Dead
+pp: 177
+Lvl: 
+  - mag 5
+  - nec 4
+  - wch 5
+  - clr 3
+Rng: 10 feet
+Dur: permanent
+Rev: 0
+Desc: "<p><b>Skeletons</b> or <b>zombies</b> are created from the bones and
+cadavers of dead humans or humanoids. The undead
+will obey the commands of the caster, following, attacking,
+or standing guard as directed. They will continue
+to serve until slain or <i>turned</i>; the <i>dispel magic</i> spell
+also nullifies the connexion betwixt the sorcerer and
+the undead. Through this necromancy the sorcerer
+can <i>animate</i> and maintain <b>1 skeleton</b> or <b>zombie</b> per
+CA level. If suitable remains are at hand, the sorcerer
+can opt to raise <b>1 large skeleton</b> per 3 CA levels, or
+<b>1 giant skeleton</b> per 6 CA levels, though zombies may
+only be created from the whole corpses of humans.</p>"

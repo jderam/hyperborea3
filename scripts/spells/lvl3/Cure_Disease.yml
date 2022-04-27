@@ -1,0 +1,24 @@
+id: 87
+name: Cure Disease
+pp: 188
+Lvl: 
+  - nec 3
+  - wch 3
+  - clr 3
+  - drd 3
+Rng: touch
+Dur: permanent
+Rev: 1
+Desc: "<p>Remedies nearly all forms of illness. The subject is
+alleviated of all debilitating effects within 1d6 rounds.
+The reverse of this spell, <i>inflict disease</i>, delivers a malady
+that drains the strength and vitality of its victim if
+a <i>sorcery</i> saving throw is not made. The disease manifests
+in 1d6 turns; once it does, the afflicted lose 1 hp
+per turn and 1 point of strength per hour until total hit
+points are reduced to one-tenth of normal and strength
+is reduced to one-third of normal. If the afflicted is not
+cured within three weeks, a loss of 1 constitution point
+per day is suffered until that attribute is reduced to
+one-third of normal. If untreated, the victim will likely
+die within a year.</p>"

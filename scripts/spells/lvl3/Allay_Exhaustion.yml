@@ -1,0 +1,20 @@
+id: 10
+name: Allay Exhaustion
+pp: 176
+Lvl: 
+  - ill 3
+Rng: touch
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Creates the illusion of healing, wellness, energy, and
+stamina. <i>Allay exhaustion</i> allows one to persevere
+without sleep when thoroughly exhausted, as though an
+<i>extraordinary feat of constitution</i> had been achieved.
+As well, any previous hit point loss is temporarily
+healed by 50%. The exact number should be recorded,
+for when the spell’s duration elapses, this illusory hit
+point boon is lost. Once the illusion ends, the recipient
+must rest for 12 turns (2 hours) or suffer −4 penalties
+to attack rolls, damage rolls, and saving throws. Unwilling
+recipients are allowed <i>sorcery</i> saving throws,
+modified by <i>willpower adjustment</i>, if applicable.</p>"

@@ -1,0 +1,20 @@
+id: 193
+name: Hallucinatory Terrain
+pp: 203
+Lvl: 
+  - mag 4
+  - ill 3
+  - wch 4
+  - drd 4
+Rng: 300 feet
+Dur: permanent (until contacted)
+Rev: 0
+Desc: "<p>Conjures an illusory landscape that conceals the actual
+topography. A meadow, for instance, might be made to
+appear as a forest, a hill, a river, a swamp, or the like.
+The maximum size of the illusion is a cube with sides
+five feet long per CA level; e.g., a CA 8 sorcerer can
+effect a 40 × 40 × 40-foot illusion. The <i>hallucinatory
+terrain</i> persists until some portion of it is forcibly
+shaken or struck by an intelligent creature, or unless
+<i>dispel phantasm</i> is cast.</p>"

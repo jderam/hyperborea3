@@ -1,0 +1,20 @@
+id: 170
+name: Floating Skull
+pp: 199
+Lvl: 
+  - nec 3
+Rng: 120 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Imbues the clean skull of a human or humanoid with
+sorcerous power. The <i>floating skull</i> emanates a soft,
+violet glow as it floats over the caster’s shoulder, where
+it continues to hover for the duration of the spell, following
+the sorcerer’s every move. If the caster stops,
+closes his or her eyes, and concentrates, the <i>floating
+skull</i> may be sent forth to serve as new set of “eyes,”
+so to speak. The <i>skull</i> floats at 30 MV to as far as 120
+feet away from the stationary sorcerer. The <i>floating
+skull</i> can see 30 feet away and does so with <i>infrared
+vision</i> (q.v.) if exploring in the dark. If attacked, the
+skull is AC 7 and is destroyed by a single hit.</p>"
