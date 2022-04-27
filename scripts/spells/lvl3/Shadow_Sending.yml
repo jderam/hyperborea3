@@ -1,1 +1,24 @@
 id: 345
+name: Shadow Sending
+pp: 229
+Lvl: 
+  - mag 3
+  - ill 3
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>By sacrificing a piece of obsidian (volcanic glass) whilst
+sitting cross-legged before a fire, the sorcerer’s own
+shadow is infused with the negative energy of the
+Black Gulf. Once the spell is cast, the sorcerer’s shadow
+elongates in any direction (up or down, left or right)
+to a length of 90 feet per round; so, a CA 5 sorcerer can
+send a shadow forth 450 feet (150 yards) in 5 rounds.
+The caster can hear and see through the shadow (even
+in natural darkness), but touch is impossible. The shadow
+is silent, and for the vigilant it is noticed on a 1-in-10
+chance unless under direct sunlight (5-in-10 chance).
+It is AC 9 (plus the caster’s <i>defence adjustment</i>, if applicable)
+and has 9 hp; however, it is harmed only by
+spells, or by silver or magical weapons. If the shadow
+is struck, the sorcerer also sustains like damage.</p>"

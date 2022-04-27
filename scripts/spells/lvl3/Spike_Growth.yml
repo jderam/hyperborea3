@@ -1,1 +1,19 @@
 id: 376
+name: Spike Growth
+pp: 232
+Lvl: 
+  - clr 4
+  - drd 3
+Rng: 60 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>This spell only functions amidst vegetation of at least
+moderate thickness. It creates within the foliage and
+roots a plethora of small, bristly growths in an area as
+large as 10 × 10 feet (100 square feet) per CA level.
+These spikes may be discerned via <i>detect snares and
+pits</i>, <i>detect traps</i>, or <i>true seeing</i>; otherwise, all seems
+perfectly natural until the enchanted area is traversed.
+For every 10 feet of affected area negotiated, the subject(
+s) must make an <i>avoidance</i> saving throw or suffer
+1d4 hp damage. The caster can dismiss this spell at will.</p>"

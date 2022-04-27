@@ -1,1 +1,16 @@
 id: 378
+name: Starlight
+pp: 233
+Lvl: 
+  - wch 3
+  - drd 3
+Rng: 120 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Illumes as large as a 60-foot-diameter area as though it
+were under the clearest, brightest <i>starlight</i>. In an area
+of utter darkness, visibility will become clear within the
+spell’s 60-foot diameter and dim for another 30 feet (so a
+120-foot diameter of effectiveness). Stars will appear to
+twinkle and shine above the area of effect, be it a 10-foothigh
+chamber ceiling or a 60-foot-high cavern roof.</p>"

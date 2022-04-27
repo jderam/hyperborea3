@@ -1,1 +1,42 @@
 id: 374
+name: Spectral Phantasm
+pp: 232
+Lvl: 
+  - ill 3
+Rng: 240 feet
+Dur: special
+Rev: 0
+Desc: "<p>A visual illusion is created, a projected image of nearly
+anything the caster can imagine, as large as 40 × 40 × 40
+feet in area. Victims must be living creatures of animal
+intelligence or greater; undead, constructs, oozes, and
+the like are unaffected. <i>Spectral phantasm</i> can be used
+to create an attacking monster or another damaging
+hazard. The illusion can be of sight, sound, smell, and/or
+temperature. The auditory component might include a
+shout, a roar, or a sentence of no more than nine words
+in length (not including articles <i>a</i>, <i>an</i>, and <i>the</i>).</p>
+<p>Once cast, this spell persists as long as the caster concentrates
+and for 5 rounds thereafter unless the illusion
+is struck for at least 1 hp of damage or is terminated
+via a <i>dispel phantasm</i> spell. A <i>spectral phantasmal</i>
+monster is AC 7 and will disappear if hit; otherwise,
+it can continue to attack as manipulated by the caster.
+The illusion can be directed to move anywhere within
+the spell’s range; such manoeuvres require the full attention
+of the caster, who can walk at half speed and
+maintain control.</p>
+<p><i>Spectral phantasm</i> targets are not allowed saving
+throws unless the referee feels the illusion is unbelievable
+to the viewers, in which case <i>sorcery</i> saving
+throws should be rolled, modified by <i>willpower
+adjustment</i>, if applicable. With sight, sound, smell,
+and/or temperature, credibility is rarely an issue
+with this spell; if such a case arises, and the save is
+made, the disbeliever will see the <i>spectral phantasm</i>
+as a flawed and flickering transparent image. An intelligent
+disbeliever may then alert allies, whose saves
+are made at a bonus of +4. Otherwise, this illusion can
+inflict real physical damage: 1d6 hp per CA level per
+round to each victim. Such damage remains even if the
+spell is subsequently broken.</p>"

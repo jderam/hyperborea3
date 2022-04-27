@@ -1,1 +1,26 @@
 id: 412
+name: Tongues
+pp: 240
+Lvl: 
+  - mag 3
+  - cry 3
+  - ill 3
+  - nec 3
+  - pyr 3
+  - wch 3
+  - clr 4
+Rng: 0
+Dur: 1 turn
+Rev: 1
+Desc: "<p>Enables the sorcerer to speak the language of any
+intelligent creature within 50 feet, including secret
+languages such as Druidic or Thieves’ Cant. Once the
+spell’s duration ends, the caster retains no knowledge
+or memory of otherwise unknown languages. The reverse
+of this spell, <i>gibberish</i>, confuses and jumbles the
+words of all speakers within 50 feet (except those of
+the caster), pending individual <i>sorcery</i> saving throws,
+modified by <i>willpower adjustment</i>, if applicable. Spells
+may also be jumbled to ineffectiveness, but this allows
+for a second <i>sorcery</i> saving throw, with +1 for every
+CA level of the opposing caster.</p>"

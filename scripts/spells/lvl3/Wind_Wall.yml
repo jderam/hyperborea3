@@ -1,1 +1,18 @@
 id: 449
+name: Wind Wall
+pp: 246
+Lvl: 
+  - mag 3
+  - cry 3
+  - pyr 3
+  - wch 3
+  - drd 4
+Rng: 120 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Evoked is a barrier of wind 10 feet thick, 20 feet long,
+and up to 50 feet high. The wind gushes upwards, sending
+any light materials skywards, including loose objects
+or unsecured creatures (birds, small animals, and
+the like) weighing no more than 25 pounds. <i>Wind wall</i>
+can disperse spells such as <i>cloudkill</i> and <i>stinking cloud</i>.</p>"

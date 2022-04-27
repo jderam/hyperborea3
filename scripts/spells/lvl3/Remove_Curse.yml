@@ -1,1 +1,29 @@
 id: 324
+name: Remove Curse
+pp: 225
+Lvl: 
+  - mag 4
+  - nec 4
+  - wch 3
+  - clr 3
+Rng: touch
+Dur: special
+Rev: 1
+Desc: "<p>Permanently wipes away a malediction suffered by
+a human or another creature, though not the cursed
+enchantments of swords, shields, armour, and the like.
+The reverse of this spell, <i>bestow curse</i>, is not of permanent
+duration; rather, its duration is 1 turn per CA
+level. The victim of <i>bestow curse</i> is allowed a <i>sorcery</i>
+saving throw to avoid affliction. Typical curses include:</p>
+<ul><li>50% chance per round to drop held items</li>
+<li>All attack rolls at −4 “to hit”</li>
+<li>All saving throws at –4 penalty</li>
+<li>Armour class penalized (increased) by 2</li>
+<li>One attribute reduced to a score of 3</li></ul>
+<p>Some other minor effect can be imagined by the player
+with referee approval. The effect must be reasonable.
+For example, the victim cannot be turned into a toad;
+that outcome must be accomplished via the <i>polymorph
+other</i> spell. They might, however, be cursed to grow
+the snout of a pig, or be covered head to toe with warts.</p>"

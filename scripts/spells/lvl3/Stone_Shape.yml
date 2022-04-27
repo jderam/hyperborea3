@@ -1,1 +1,19 @@
 id: 380
+name: Stone Shape
+pp: 233
+Lvl: 
+  - mag 5
+  - drd 3
+Rng: touch
+Dur: Instantaneous
+Rev: 0
+Desc: "<p>Stone is reshaped to fit sorcerer’s purposes. The sorcerer
+can manipulate a cubic area with sides of onefoot
+length per CA level; e.g., a CA 9 sorcerer can
+affect a 9 × 9 × 9-foot area. The <i>stone shape</i> is limited
+only by the caster’s imagination. Examples include a
+stone chair, club, coffer, door, or statue. The details of
+any <i>stone shape</i> lack refinement and are crude by all
+accounts. Note that any <i>stone shape</i> with moving parts
+stands a 3-in-10 chance of not functioning; e.g., the lid
+of a stone coffer might not open.</p>"

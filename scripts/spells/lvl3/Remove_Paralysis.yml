@@ -1,1 +1,16 @@
 id: 326
+name: Remove Paralysis
+pp: 225
+Lvl: 
+  - wch 3
+  - clr 3
+Rng: special
+Dur: special
+Rev: 1
+Desc: "<p>Via a touch, this spell can free an afflicted victim from the
+effects of <i>ghoul touch</i>, <i>hold person</i>, <i>paralyze</i>, or similar
+spells. The reverse of this spell, <i>cause paralysis</i>, is a
+30-foot ranged spell. The caster must point at the victim
+and speak a baleful incantation. If the target fails
+its <i>death</i> saving throw, it will fall limp, unable to move
+for 1 turn per CA level.</p>"

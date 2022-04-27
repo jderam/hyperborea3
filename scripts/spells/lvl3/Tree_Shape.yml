@@ -1,1 +1,14 @@
 id: 422
+name: Tree Shape
+pp: 242
+Lvl: 
+  - drd 3
+Rng: 0
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>The sorcerer and all gear assume the form of a small
+tree, a shrub, or even a log or stump. Whilst in this
+form, a caster can observe all that transpires in a 75-
+foot radius unless obstructions are present. This spell
+can be ended at will. Only <i>true seeing</i> reveals the <i>tree
+shape</i> for what it is.</p>"

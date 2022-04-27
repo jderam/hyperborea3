@@ -1,1 +1,30 @@
 id: 405
+name: Summon Toad Swarm
+pp: 238
+Lvl: 
+  - nec 3
+  - wch 3
+Rng: 90 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>A summoned horde of fat, warty toads manifest around
+the sorcerer. The <i>toad swarm</i> will attack 1 round after
+being summoned, surging forth as directed. The toads
+will pursue their target (at 30 MV) to the spell’s range
+limit. As long as the caster concentrates and points at
+the target, the victim will be assailed by the <i>swarm</i>,
+knocked down and overborne by hundreds of amphibians,
+unless an <i>avoidance</i> saving throw is made. An
+overborne victim is crushed by the unusual weight of
+the swarm, sustaining 1d4 hp damage, +1 for each CA
+level of the caster per round. For example, a 5th-level
+magician’s toad swarm inflicts 1d4+5 hp damage per
+round. One may attempt an <i>extraordinary feat of
+strength</i> to break free (the referee may need to dice for
+the strength score on the spot, using 3d6 or 4d6 drop
+low); otherwise, the victim remains <i>prone</i>, unable to
+take any other actions. Other methods of escape must
+be adjudicated by the referee on a case-by-case basis.
+A <i>toad swarm</i> can be directed to hop to another opponent
+within range, but 1 round will elapse for every 30
+feet between targets.</p>"

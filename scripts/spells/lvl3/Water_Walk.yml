@@ -1,1 +1,13 @@
 id: 444
+name: Water Walk
+pp: 245
+Lvl: 
+  - clr 3
+Rng: touch
+Dur: 1 turn + 1 turn per CA level
+Rev: 0
+Desc: "<p>Allows the sorcerer and one companion per CA level
+to ambulate across fluid surfaces. A horse or camel
+equates to three companions; such a beast can <i>water
+walk</i> whilst bearing a single rider and/or gear no
+heavier than 300 pounds.</p>"

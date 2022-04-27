@@ -1,1 +1,20 @@
 id: 425
+name: Twofold Missile
+pp: 243
+Lvl: 
+  - mag 3
+Rng: touch
+Dur: 3 rounds
+Rev: 0
+Desc: "<p>The sorcerer must touch a personal missile launcher
+to lay this dweomer (usually a bow, crossbow, or sling;
+siege weapons do not qualify). On the next round, the
+missile launcher will shoot <i>twofold missiles</i>; i.e., when
+a missile is fired, sorcery causes the missile to split into
+two identical missiles. Only one attack roll is made per
+<i>twofold missile</i>: A hit indicates both missiles strike; a
+miss indicates both missiles fail to connect. This spell
+will duplicate a magically enchanted missile (e.g., a <b>+1
+arrow</b> will become two <b>+1 arrows</b>), but in all cases,
+only one missile can possibly be recovered, the duplicate
+disappearing.</p>"
