@@ -1,1 +1,31 @@
 id: 194
+name: Haste
+pp: 203
+Lvl: 
+  - mag 3
+  - pyr 3
+Rng: 120 feet
+Dur: 18 rounds (3 minutes)
+Rev: 0
+Desc: "<p>Doubled are the attack and movement rates of this
+spell’s recipients; unwilling targets are allowed <i>sorcery</i>
+saving throws. The caster selects a target point
+and <i>hastens</i> a number of creatures equal to his or her
+CA level in a 15-foot radius. Those closest to the centre
+of the circle are affected first, potentially including the
+sorcerer’s enemies; however, the caster can limit the
+radius of the spell, shrinking it as desired. <i>Hastened</i>
+creatures can move at double their normal rates and
+make twice as many attacks per combat round:</p>
+<ul><li>1/1 attack rate becomes 2/1</li>
+<li>3/2 attack rate becomes 3/1</li>
+<li>2/1 attack rate becomes 4/1</li>
+<li>5/2 attack rate becomes 5/1</li>
+<li>3/1 attack rate becomes 6/1</li></ul>
+<p>Sorcery (spells and magical devices) is not <i>hastened</i>
+in any way. This spell cannot be “stacked” with other
+spells or magic items that increase speed. Once the duration
+is met, recipients of <i>haste</i> are aged by one year
+as a result of this spell, unless a <i>transformation</i> saving
+throw is made. <i>Haste</i> counteracts the <i>slow</i> spell, but
+this usage does not bring about the ageing side effect.</p>"

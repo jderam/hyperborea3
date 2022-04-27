@@ -1,1 +1,19 @@
 id: 148
+name: Fear
+pp: 196
+Lvl: 
+  - mag 4
+  - ill 3
+  - nec 4
+Rng: 60 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The eyes of the sorcerer assume kaleidoscopic aspect
+as they emit an invisible cone 5 feet wide at its base and
+30 feet wide at its terminus. Within this area of effect,
+creatures of 5 HD or fewer must make <i>sorcery</i> saving
+throws or flee in panic for the duration of the spell; if
+they have nowhere to flee, they will cower in a corner.
+Creatures of 6 HD or more save at +4. Saving throws
+are modified by <i>willpower adjustment</i>, if applicable.
+Fear victims drop anything they hold on a 3-in-6 chance.</p>"

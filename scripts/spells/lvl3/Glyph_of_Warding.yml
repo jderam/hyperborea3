@@ -1,1 +1,35 @@
 id: 188
+name: Glyph of Warding
+pp: 202
+Lvl: 
+  - wch 4
+  - clr 3
+Rng: touch
+Dur: permanent (until triggered)
+Rev: 0
+Desc: "<p>Protects a box, chest, door, gate, portcullis, or another
+portal from unauthorized entry. This spell requires the
+use of crushed gem of at least 100-gp value. The sorcerer
+needs 2 turns to trace the <i>glyph</i>, which becomes
+invisible upon completion. The <i>glyph</i> can be discovered
+by spells such as <i>detect invisibility</i> or <i>detect magic</i>, or
+possibly by a thief searching for traps. The dweomer
+is placed with a code word that prevents it from discharging.
+The caster may supply allies with this code
+word, which must be spoken before the warded portal
+is opened or passed through.</p>
+<p>If an unauthorized creature triggers the <i>glyph</i>, one of
+the following effects occurs, selected by the sorcerer at
+the time of casting:</p>
+<ul><li>1d4 hp damage per CA level of cold,
+fire, or electrical damage (a blast effect)</li>
+<li><i>inflict blindness</i> (reversed form of
+<i>cure blindness</i> [q.v.])</li>
+<li><i>inflict deafness</i> (reversed form of
+<i>cure deafness</i> [q.v.])</li>
+<li><i>cause paralysis</i> (reversed form of
+<i>remove paralysis</i> [q.v.])</li></ul>
+<p>Each effect detonates in a five-foot radius per CA
+level. A successful <i>sorcery</i> saving throw negates each
+<i>cause/inflict</i> effect and reduces the three blast effects
+(cold, fire, electricity) to half damage.</p>"

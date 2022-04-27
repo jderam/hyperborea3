@@ -1,1 +1,21 @@
 id: 159
+name: Fire Staff
+pp: 198
+Lvl: 
+  - pyr 3
+Rng: 0
+Dur: 1 turn per 2 CA levels
+Rev: 0
+Desc: "<p>A quarterstaff must be gripped in the outstretched
+hands of the sorcerer. Upon speaking the incantation,
+the ends of the staff emit bright orange flames, effecting
+light in a 60-foot radius. The quarterstaff becomes
+a temporary magical weapon (+1 “to hit”) and inflicting
+2d6 hp damage per hit (1d6 hp staff damage, 1d6
+hp fire damage); undead suffer an additional 1d6 hp
+fire damage (3d6 hp total). Too, bonus damage for high
+strength may be applied. By gripping it with two hands
+and speaking a command, the caster may also use the
+<i>fire staff</i> to fly at a rate of 60 MV. <i>N.B.:</i> If this spell is
+cast on a quarterstaff that is already enchanted, the
++1 “to hit” bonus is not cumulative.</p>"
