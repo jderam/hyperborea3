@@ -1,1 +1,18 @@
 id: 278
+name: Paralyze
+pp: 216
+Lvl: 
+  - ill 3
+Rng: 180 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The illusion of immobilization overcomes the minds
+of those victims who fail their <i>sorcery</i> saving throws,
+modified by <i>willpower adjustment</i>, if applicable. The
+caster can affect 2 HD of opponents for every CA level,
+targeting a single individual or a 20 × 20-foot area;
+when used in an area of effect, the lowest HD creatures
+are always affected first. Should the caster wish
+to target but one creature, its <i>sorcery</i> saving throw is
+at a −2 penalty. This spell can be negated by <i>dispel
+magic</i>, <i>dispel phantasm</i>, or <i>remove paralysis</i>.</p>"

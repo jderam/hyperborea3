@@ -1,1 +1,16 @@
 id: 275
+name: Non-Detection
+pp: 216
+Lvl: 
+  - ill 3
+Rng: 0
+Dur: 24 hours
+Rev: 0
+Desc: "<p>The sorcerer and anyone with whom he or she joins
+hands (at the time of casting) become invisible to spells
+that would scry their location for the duration of the
+spell, including <i>clairaudience</i>, <i>clairvoyance</i>, and <i>extrasensory
+perception</i>, and likewise any spells that
+<i>detect</i> or <i>discern</i>. Furthermore, any scrying devices
+such as <b>crystal balls</b>, <b>wands of magic detection</b>, and
+the like are ineffective.</p>"

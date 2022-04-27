@@ -1,1 +1,25 @@
 id: 293
+name: Phantom Steed
+pp: 219
+Lvl: 
+  - ill 3
+Rng: 10 feet
+Dur: 12 hours
+Rev: 0
+Desc: "<p>Formed from the shadow-stuff of the Black Gulf is a
+quasi-real, equine mount for the caster or other recipient.
+Requiring 1 turn to materialize, the beast is
+smoky grey to black in colour, with pale white eyes.
+The <i>phantom steed</i> makes no sound as it moves, and its
+shadowy hooves never touch the ground. If the caster
+has CA 8 or greater, the <i>phantom steed</i> can cross muddy,
+sandy, or swampy terrain uninhibited; at CA 10 or
+greater, it can pass over water as though it were solid
+ground; and at CA 12, the <i>phantom steed</i> can walk on
+air (though not fly, per se), able to cross a chasm or
+crevasse as though a solid bridge were present.</p>
+<p>Normal animals may shew uneasiness in the <i>phantom
+steed’s</i> presence. The <i>phantom steed</i> is incapable of
+combat, but it can be attacked. Its relevant statistics
+are: MV 60; AC 7; HD 2; #A 0; D —; SV 16. It cannot
+be healed if injured and will disappear at 0 hp.</p>"

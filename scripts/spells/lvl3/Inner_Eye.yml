@@ -1,1 +1,37 @@
 id: 226
+name: Inner Eye
+pp: 208
+Lvl: 
+  - mag 3
+  - nec 4
+  - wch 3
+Rng: 10 feet per CA level
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>This spell, usable only in combat, allows the player to
+ask the referee, once per round during <i>action declaration</i>,
+about the immediate intentions of a selected
+creature. The referee must answer honestly (possibly
+by passing a note to the player and leaving it to the
+player’s discretion to describe). In effect, the caster
+can see what the creature intends to do next.</p>
+<p>The caster must choose a target creature within the
+spell’s range. Then, with eyes closed tight, the caster
+becomes attuned to mystical strings that permeate the
+Black Gulf. As long as the caster’s eyes remain closed,
+what is seen with the <i>inner eye</i> can be verbalized. In
+effect, the caster grants party members a bonus to
+rolls specifically related to the creature’s action. This
+advantage can take the form of +2 “to hit,” +2 AC,
+or a +2 saving throw bonus, as selected by the sorcerer
+(e.g., a caster who uses this spell to see that a
+<b>mountain ape</b> will swing at the thief—and announces
+that vision aloud—could grant +2 to the thief ’s AC, or
+perhaps +2 to the thief ’s counterattack).</p>
+<p>Once a target is selected, the caster must keep his
+or her eyes closed, or the spell ends. If the selected
+creature is killed or otherwise subdued, the caster
+may switch focus to the next closest enemy, blinking
+their eyes open for a second for targeting purposes.
+Otherwise, the caster is effectively blind throughout
+the duration (−4 penalties to AC and saving throws).</p>"

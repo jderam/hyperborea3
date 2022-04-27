@@ -1,1 +1,12 @@
 id: 313
+name: Protection from Ordinary Missiles
+pp: 223
+Lvl: 
+  - mag 3
+Rng: touch
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Grants the recipient complete immunity to normal,
+non-magical missiles, including arrows, bolts (quarrels),
+and sling bullets/stones. Siege engine missiles or
+hurled boulders are unaffected.</p>"

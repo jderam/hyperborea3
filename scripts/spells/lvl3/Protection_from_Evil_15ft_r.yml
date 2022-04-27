@@ -1,0 +1,23 @@
+id: 312
+name: Protection from Evil, 15΄ r.
+pp: 223
+Lvl: 
+  - mag 3
+  - cry 3
+  - nec 3
+  - pyr 3
+  - wch 3
+  - clr 4
+Rng: 0
+Dur: 12 turns (2 hours)
+Rev: 1
+Desc: "<p>A pale, 15-foot-radius circle of light surrounds the
+caster, preventing summoned creatures (e.g., dæmons,
+elementals) from attacking the sorcerer or any allies
+who are within. Against other Evil creatures, the sorcerer
+and allies enjoy a +1 bonus to AC, DR, and saving
+throws versus their attacks. As the caster moves,
+so too does the <i>protection</i> circle. The reverse of this
+spell, <i>protection from good, 15΄ r.</i>, is cast by Evil or
+Neutral sorcerers; it functions the same way, except
+versus creatures of Good alignment.</p>"

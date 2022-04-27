@@ -1,1 +1,18 @@
 id: 220
+name: Incinerate Normal Missiles
+pp: 208
+Lvl: 
+  - pyr 3
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The sorcerer is protected from projectiles with shafts
+of wood. Arrows, bolts, javelins, and spears launched
+at the caster will <i>incinerate</i> within 10 feet of the sorcerer.
+Magical missiles are less likely to be affected:
++1 missiles will <i>incinerate</i> on a 3-in-6 chance, +2
+missiles on a 2-in-6 chance, and +3 missiles on a 1-in-6
+chance; missiles greater than +3 are unaffected. The
+same chance applies to mundane missiles fired from a
+magical launcher (e.g., if a <b>+2 short bow</b> fires a normal
+arrow, the arrow will <i>incinerate</i> on a 2-in-6 chance).</p>"

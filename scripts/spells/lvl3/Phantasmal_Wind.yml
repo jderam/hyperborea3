@@ -1,1 +1,16 @@
 id: 292
+name: Phantasmal Wind
+pp: 219
+Lvl: 
+  - ill 3
+Rng: 180 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Invokes from the Black Gulf a gust of phantom wind
+that is neither seen nor felt, yet can extinguish torches,
+fan flames, rustle flags, or disperse spells such as
+<i>cloudkill</i> and <i>fog cloud</i>. <i>Phantasmal wind</i> blows in the
+direction the caster points, wafting at 30 MV from the
+time it is cast and petering out at the spell’s maximum
+range. At its greatest effectiveness, this dweomer can
+belly the sail of a small craft.</p>"
