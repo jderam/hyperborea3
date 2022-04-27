@@ -1,1 +1,18 @@
 id: 44
+name: Cataleptic State
+pp: 181
+Lvl: 
+  - mag 3
+  - nec 3
+Rng: touch
+Dur: 6 turns (1 hour) + 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>This spell allows the caster to feign death in a way indistinguishable
+from actual mortification. The sorcerer’s
+invisible spirit can float up to six feet above their “dead”
+physical body. The caster can see, hear, smell, and perceive
+surrounding events; meanwhile, no pulse is discernible
+on the cataleptic body, no breath appears to be
+drawn, and flesh is cold to the touch. One can willingly
+emerge from the <i>cataleptic state</i> at any time but needs
+1 full turn before being able to walk and talk as normal.</p>"

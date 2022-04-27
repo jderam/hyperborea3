@@ -1,1 +1,16 @@
 id: 5
+name: Agonizing Touch
+pp: 176
+Lvl: 
+  - nec 3
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>When touched by the sorcerer, a searing pain runs
+through the victim’s nervous system; no saving throw
+applies. Damage inflicted is 1d4 hp, but the intense
+pain impairs the victim for 1d4+1 rounds: The victim’s
+attack rolls, armour class, and saving throws are each
+at a −2 penalty; movement is halved; and spells or innate
+sorcerous abilities stand a 3-in-6 chance of failure
+(the optional <i>concentration</i> rule does not apply).</p>"

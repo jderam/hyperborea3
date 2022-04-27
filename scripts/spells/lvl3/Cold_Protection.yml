@@ -1,1 +1,15 @@
 id: 60
+name: Cold Protection
+pp: 184
+Lvl: 
+  - cry 3
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>Shelters the caster or other recipient from any damage
+related to normal cold for one hour per CA level.
+Against magical cold (e.g., <i>cone of cold</i>, <i>freezing sphere</i>,
+a <b>winter wolf’s</b> breath), the sorcerer gains immunity
+from a single attack before the spell is broken; a recipient
+of this spell other than the sorcerer simply gains
+a +4 saving throw bonus versus magical cold attacks.</p>"

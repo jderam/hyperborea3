@@ -1,1 +1,22 @@
 id: 42
+name: Call Lightning
+pp: 181
+Lvl: 
+  - drd 3
+Rng: 360 feet
+Dur: 12 rounds (2 minutes) per CA level
+Rev: 0
+Desc: "<p>Requiring 1 turn to evoke, this spell is cast outdoors
+and is contingent on the presence of a thunderstorm,
+rainstorm, or significantly cloudy conditions. The sorcerer
+can then <i>call lightning</i> to strike a target within
+360 feet. The lightning inflicts 2d8 hp base damage
+plus 1d8 hp per CA level (e.g., a CA 5 caster calls a
+7d8 hp lightning bolt) to the target and any other
+creature within a 10-foot radius. A successful <i>sorcery</i>
+saving throw reduces damage by half. The sorcerer
+may continue to call down another lightning bolt every
+12 rounds (2 minutes) until the spell’s duration elapses
+(i.e., one bolt per CA level) without need of concentration;
+the sorcerer can cast other spells, move, engage
+in melee, and so forth.</p>"

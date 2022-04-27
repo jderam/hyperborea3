@@ -1,1 +1,13 @@
 id: 126
+name: Dissipate Gas
+pp: 193
+Lvl: 
+  - cry 3
+  - wch 3
+Rng: 90 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Disperses a cloud, gas, mist, smoke, or vapour effect.
+Creatures of gasiform nature, including <b>air elementals</b>
+and those that have assumed temporary gaseous
+forms, must make <i>death</i> saving throws or die.</p>"

@@ -1,1 +1,14 @@
 id: 84
+name: Cure Blindness
+pp: 188
+Lvl: 
+  - clr 3
+Rng: touch
+Dur: permanent
+Rev: 1
+Desc: "<p>Remedies nearly all forms of impaired vision unless the
+eyes themselves have been destroyed. The reverse of
+this spell, <i>inflict blindness</i>, renders its victim sightless
+unless a <i>sorcery</i> saving throw is made. Blind creatures
+always lose initiative and suffer −4 penalties on attack
+rolls, armour class, and saving throws.</p>"

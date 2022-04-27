@@ -1,1 +1,16 @@
 id: 86
+name: Cure Deafness
+pp: 188
+Lvl: 
+  - clr 3
+Rng: touch
+Dur: permanent
+Rev: 1
+Desc: "<p>Remedies nearly all forms of hearing loss unless the
+eardrums themselves have been destroyed. The reverse
+of this spell, <i>inflict deafness</i>, renders its victim unable
+to hear unless a <i>sorcery</i> saving throw is made. A deaf
+creature is surprized on a base 4-in-6 chance and suffers
+an individual initiative penalty of −2 (i.e., the deaf
+creature may lose initiative, despite its allies winning).
+Other penalties may apply at the referee’s discretion.</p>"

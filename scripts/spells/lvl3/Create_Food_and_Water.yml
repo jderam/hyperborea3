@@ -1,1 +1,14 @@
 id: 80
+name: Create Food and Water
+pp: 187
+Lvl: 
+  - clr 3
+Rng: 10 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Nourishing food and water are created by the sorcerer,
+enough to feed one person per CA level. (For the purpose
+of this spell, consider a horse or camel equivalent
+to three people.) The conjured food is always fresh
+(not dried or preserved) and thus subject to spoilage
+unless <i>purify food and drink</i> is also cast.</p>"

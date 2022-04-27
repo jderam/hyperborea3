@@ -1,1 +1,14 @@
 id: 102
+name: Deceive
+pp: 190
+Lvl: 
+  - ill 3
+Rng: 0
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Allows the sorcerer to copy the alignment aura of another
+creature within 30 feet. If the spell <i>distinguish
+alignment</i> is targeted at the <i>deceive caster</i>, the sorcerer
+will radiate the copied alignment for the duration of the
+<i>deceive</i> spell. However, this spell cannot prevent the
+cleric’s version of <i>true seeing</i> from revealing the truth.</p>"

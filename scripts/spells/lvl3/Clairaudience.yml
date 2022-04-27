@@ -1,1 +1,23 @@
 id: 57
+name: Clairaudience
+pp: 183
+Lvl: 
+  - mag 3
+  - wch 3
+Rng: special
+Dur: 6 rounds (1 minute) per CA level
+Rev: 0
+Desc: "<p>The caster envisions a known or familiar location and
+can “hear” any sounds within 60 feet of the location’s
+epicentre. Range is not a factor when casting this spell,
+so long as the caster is on the same planet, plane of
+existence, and dimension as the targeted location. As a
+few examples, a familiar location may be construed as
+behind a door before which the caster stands, within a
+cave entrance the caster views, or in a patch of brush
+the caster spies from a precipice above. If <i>clairaudience</i>1q    
+is used to listen in on one who is 10 HD or greater,
+the target may make a <i>sorcery</i> save to cognize the
+effect; otherwise, they are ignorant. Lastly, if used in
+conjunction with the <i>clairvoyance</i> spell, the sorcerer
+both hears and sees the envisioned location.</p>"
