@@ -1,0 +1,71 @@
+29 Black Tentacles
+36 Boil
+37 Brain Death
+40 Brink of Death
+51 Change Temperature
+52 Charm Monster
+67 Cone of Cold
+68 Confusion
+70 Contagion
+74 Control Water
+77 Controlled Blast Fireball
+92 Cure Serious Burns
+93 Cure Serious Wounds
+117 Dig Hole
+118 Dimension Door
+119 Discern Lie
+128 Divination
+129 Dweomered Weapon
+130 Ecstasy of Shadow
+131 Emotion
+132 Enervation
+138 Extend Spell I
+146 Faithful Hound
+147 False Vacancy
+158 Fire Shield
+187 Globe of Invulnerability, Lesser
+202 Hold Vegetation
+208 Ice Javelin
+209 Ice Storm
+212 Igloo
+214 Illusory Wall
+216 Imbue with Spell Ability
+217 Improved Invisibility
+223 Inflict Madness
+228 Insect Plague
+237 Lifeglobe
+240 Lightning Protection
+253 Mass Treemorph
+261 Minor Creation
+265 Mirror, Mirror
+268 Mnemonic Enhancer
+269 Moonlight
+285 Perform Exorcism
+291 Phantasmal Killer
+298 Plant Portal
+299 Polymorph Other
+300 Polymorph Self
+305 Prismatic Spray
+307 Produce Bonfire
+318 Rainbow Pattern
+329 Resilient Sphere
+335 Scrying Font
+339 Secure Shelter
+351 Shockwave
+352 Shout
+354 Shroud of Fear
+362 Solid Fog
+363 Sorcerer Eye
+369 Spawn Shadow Monsters
+372 Speak with Plants
+377 Squall
+383 Stoneskin
+388 Summon Animal I
+393 Summon Dæmon II
+402 Summon Monster II
+410 Them
+413 Transfer Wounds
+424 Turn Sticks to Serpents
+433 Wall of Fire
+435 Wall of Ice
+441 Ward Off Insects
