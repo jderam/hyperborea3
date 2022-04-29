@@ -15,7 +15,7 @@ target’s armour class. The colour of orb conjured is
 determined randomly by a d8; a result of <i>8</i> indicates
 a special orb that cycles rapidly between two colours,
 delivering the effects of both colours.</p>
-<table>
+<p><table>
 <caption><b>Table 107: Prismatic Orb Effects</b></caption>
 <tr><th>d8 Result</th> <th>Prismatic Orb Effect</th></tr>
 <tr><td>1</td> <td>Red orb that inflicts 1 hp of burning damage
@@ -48,7 +48,7 @@ throw modified by <i>willpower adjustment</i>
 pounds of force per CA level (cf. <i>shove</i>
 spell) unless a <i>sorcery</i> save is made.</td></tr>
 <tr><td>8</td> <td>Two colours: Roll twice, ignoring results of 8.</td></tr>
-</table>
+</table></p>
 <p>A <i>prismatic orb</i> may not be hurled through barriers
 and will return to the caster’s palm up to three times
 if it misses its intended target; however, each time it
