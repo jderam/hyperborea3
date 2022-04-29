@@ -1,1 +1,36 @@
 id: 128
+name: Divination
+pp: 193
+Lvl:
+  - clr 4
+Rng: 0
+Dur: special
+Rev: 0
+Desc: "<p>Upon 1 turn of prayer and cogitation, the sorcerer
+implores the wisdom of otherworldly powers. The
+focus of the divination is an area: a small woodland
+(not exceeding 1 square mile), a large building or
+tower, a section of a dungeon, the top of a mountain,
+or the like. Note that this spell cannot be used to ask
+direct questions of a yes or no nature; such enquiries
+are covered by the <i>commune</i> spell. Here follow some
+suggestions of what may be divined:</p>
+<ul><li>The relative weakness or
+strength of potential enemies</li>
+<li>The potential amount of treasure
+to be won within (scant, moderate, rich)</li>
+<li>The chance of being confronted by
+enemies if the area in question is intruded</li>
+<li>The presence of a dæmon or otherworldly being</li>
+<li>The presence of potent sorcery at work</li></ul>
+<p>After the player states what his or her character attempts
+to divine, the referee must make a secret d10
+roll. The sorcerer has a 7-in-10 chance of successfully
+divining the sought-after information (if the request
+is reasonable). If the reading is successful, the referee
+will inform the player of the result, providing
+valuable, albeit general, information. If the reading is
+unsuccessful, false or misleading information may be
+revealed. Casting this spell might entail consequences:
+The otherworldly power invoked might charge the sorcerer
+with a <i>quest</i> (q.v.).</p>"
