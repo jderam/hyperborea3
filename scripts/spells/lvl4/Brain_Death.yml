@@ -1,1 +1,25 @@
 id: 37
+name: Brain Death
+pp: 180
+Lvl:
+  - nec 4
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>Kills a small portion of the victim’s neural region related
+to memory. The target must be touched and is allowed a
+<i>death</i> saving throw, modified by <i>willpower adjustment</i>,
+if applicable. If the saving throw is successful, the target
+will be aware that foul sorcery had been attempted,
+though resisted. If the saving throw fails, the victim will
+have no inkling that a spell was cast.</p>
+<p>The sorcerer must then describe the memory to be
+terminated. The memory is limited to a specific event,
+person, place, thing, conversation, or the like. This spell
+cannot be used to eradicate an ability; e.g., a farmer cannot
+be made to forget how to raise crops, a cleric cannot
+be made to forget how to cast spells. If the target rolls
+a natural <i>1</i> on the saving throw, a full year of memories
+and 1 point of intelligence are lost; this blank is far more
+noticeable by the victim’s associates. In either case,
+a throbbing headache follows the failed saving throw.</p>"

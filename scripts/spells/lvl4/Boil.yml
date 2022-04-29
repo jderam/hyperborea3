@@ -1,1 +1,24 @@
 id: 36
+name: Boil
+pp: 180
+Lvl:
+  - pyr 4
+  - drd 4
+Rng: 60
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>Causes up to two gallons of any liquid to boil. Examples
+include water, oil, wine, ale, and blood. Up to 16
+flasks (8 oz. each) of liquid can be transformed into
+boiling flasks if they are abutting when the spell is
+cast. Such a vessel may be hurled as a grenade (<i>flask
+hurling</i> rules apply; see <b>Chapter 9: Combat</b>, <i>combat
+options</i>) for 1d4 damage per vessel for the duration of
+the spell. Note that if a flask of incendiary oil is exposed
+to <i>boil</i>, it will detonate straight away. Starting
+at CA 7, this spell may be cast at one Small or Medium
+living creature. The target must make a <i>death</i> (poison)
+saving throw or suffer 2d6 damage per round for the
+duration of the spell. Most victims suffer a horrible,
+blood-boiling death. A <i>dispel magic</i> spell or ice water
+immersion cancels the effects of <i>boil</i>.</p>"

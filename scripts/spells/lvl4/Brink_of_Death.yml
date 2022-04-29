@@ -1,1 +1,19 @@
 id: 40
+name: Brink of Death
+pp: 181
+Lvl:
+  - nec 5
+  - clr 4
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Revives a just-killed human or other creature, providing
+the spell is cast within 6 rounds (1 minute) of expiry.
+The subject must make a <i>trauma survival</i> check (see
+<b>Chapter 3: Statistics</b>, <i>constitution</i>) and furthermore
+suffers a permanent loss of 1 point of constitution.
+<i>Brink of death</i> also can be used to bring back a living
+but unconscious subject from a negative hit point total.
+The subject is immediately restored to consciousness
+(at 1 hp). Casting the spell in this manner entails neither
+a <i>trauma survival</i> check nor constitution loss.</p>"
