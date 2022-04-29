@@ -1,7 +1,7 @@
 id: 82
 name: Cryonic State
 pp: 187
-Lvl: 
+Lvl:
   - cry 3
 Rng: touch
 Dur: 1 day + 1 day per CA level

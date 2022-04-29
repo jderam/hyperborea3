@@ -1,7 +1,7 @@
 id: 326
 name: Remove Paralysis
 pp: 225
-Lvl: 
+Lvl:
   - wch 3
   - clr 3
 Rng: special

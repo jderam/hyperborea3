@@ -1,7 +1,7 @@
 id: 141
 name: Extermination
 pp: 195
-Lvl: 
+Lvl:
   - nec 1
 Rng: 10 feet
 Dur: instantaneous

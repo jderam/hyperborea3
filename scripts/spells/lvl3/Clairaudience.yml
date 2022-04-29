@@ -1,7 +1,7 @@
 id: 57
 name: Clairaudience
 pp: 183
-Lvl: 
+Lvl:
   - mag 3
   - wch 3
 Rng: special
@@ -15,7 +15,7 @@ existence, and dimension as the targeted location. As a
 few examples, a familiar location may be construed as
 behind a door before which the caster stands, within a
 cave entrance the caster views, or in a patch of brush
-the caster spies from a precipice above. If <i>clairaudience</i>1q    
+the caster spies from a precipice above. If <i>clairaudience</i>1q
 is used to listen in on one who is 10 HD or greater,
 the target may make a <i>sorcery</i> save to cognize the
 effect; otherwise, they are ignorant. Lastly, if used in

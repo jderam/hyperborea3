@@ -1,7 +1,7 @@
 id: 292
 name: Phantasmal Wind
 pp: 219
-Lvl: 
+Lvl:
   - ill 3
 Rng: 180 feet
 Dur: 1 turn per CA level

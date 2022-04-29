@@ -1,7 +1,7 @@
 id: 429
 name: Vampiric Touch
 pp: 243
-Lvl: 
+Lvl:
   - nec 3
   - wch 3
 Rng: touch

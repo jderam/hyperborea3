@@ -1,7 +1,7 @@
 id: 249
 name: Magic Stone
 pp: 212
-Lvl: 
+Lvl:
   - clr 1
   - drd 1
 Rng: touch

@@ -1,7 +1,7 @@
 id: 270
 name: Mount
 pp: 215
-Lvl: 
+Lvl:
   - mag 1
 Rng: 10 feet
 Dur: 6 turns (1 hour) per CA level

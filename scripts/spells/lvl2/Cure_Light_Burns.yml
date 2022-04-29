@@ -1,7 +1,7 @@
 id: 88
 name: Cure Light Burns
 pp: 188
-Lvl: 
+Lvl:
   - pyr 2
 Rng: touch
 Dur: instantaneous

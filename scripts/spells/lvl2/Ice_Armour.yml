@@ -1,7 +1,7 @@
 id: 205
 name: Ice Armour
 pp: 205
-Lvl: 
+Lvl:
   - cry 2
 Rng: 0
 Dur: 1 turn + 1 turn per CA level

@@ -1,7 +1,7 @@
 name: Alarm
 id: 9
 pp: 176
-Lvl: 
+Lvl:
   - mag 1
 Rng: "10 feet per CA level"
 Dur: "12 turns (2 hours) per CA level"

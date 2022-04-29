@@ -1,7 +1,7 @@
 id: 42
 name: Call Lightning
 pp: 181
-Lvl: 
+Lvl:
   - drd 3
 Rng: 360 feet
 Dur: 12 rounds (2 minutes) per CA level

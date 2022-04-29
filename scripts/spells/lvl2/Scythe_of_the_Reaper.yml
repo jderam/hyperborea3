@@ -1,7 +1,7 @@
 id: 336
 name: Scythe of the Reaper
 pp: 227
-Lvl: 
+Lvl:
   - nec 2
 Rng: 30 feet
 Dur: 1 round per CA level

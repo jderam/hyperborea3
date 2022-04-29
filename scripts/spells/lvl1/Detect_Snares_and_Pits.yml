@@ -1,7 +1,7 @@
 id: 114
 name: Detect Snares and Pits
 pp: 192
-Lvl: 
+Lvl:
   - drd 1
 Rng: 30 feet
 Dur: 1 turn per CA level

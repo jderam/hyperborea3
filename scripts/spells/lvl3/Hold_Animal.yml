@@ -1,7 +1,7 @@
 id: 198
 name: Hold Animal
 pp: 204
-Lvl: 
+Lvl:
   - drd 3
 Rng: 120 feet
 Dur: 6 turns (1 hour)

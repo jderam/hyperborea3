@@ -1,7 +1,7 @@
 id: 313
 name: Protection from Ordinary Missiles
 pp: 223
-Lvl: 
+Lvl:
   - mag 3
 Rng: touch
 Dur: 1 turn per CA level

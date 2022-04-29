@@ -1,7 +1,7 @@
 id: 440
 name: Wall of Vapours
 pp: 245
-Lvl: 
+Lvl:
   - cry 2
   - ill 1
 Rng: 60 feet

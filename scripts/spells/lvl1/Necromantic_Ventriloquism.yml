@@ -1,7 +1,7 @@
 id: 273
 name: Necromantic Ventriloquism
 pp: 216
-Lvl: 
+Lvl:
   - nec 1
 Rng: 120 feet
 Dur: 1 round per CA level

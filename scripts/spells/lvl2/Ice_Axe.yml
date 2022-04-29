@@ -1,7 +1,7 @@
 id: 206
 name: Ice Axe
 pp: 205
-Lvl: 
+Lvl:
   - cry 2
 Rng: 0
 Dur: 1 round per CA level

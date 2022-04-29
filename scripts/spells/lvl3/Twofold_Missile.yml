@@ -1,7 +1,7 @@
 id: 425
 name: Twofold Missile
 pp: 243
-Lvl: 
+Lvl:
   - mag 3
 Rng: touch
 Dur: 3 rounds

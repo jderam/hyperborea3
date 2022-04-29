@@ -1,7 +1,7 @@
 id: 247
 name: Magic Missile
 pp: 212
-Lvl: 
+Lvl:
   - mag 1
 Rng: 150 feet
 Dur: instantaneous

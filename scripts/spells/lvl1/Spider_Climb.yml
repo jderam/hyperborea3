@@ -1,7 +1,7 @@
 id: 375
 name: Spider Climb
 pp: 232
-Lvl: 
+Lvl:
   - mag 1
   - wch 1
 Rng: touch

@@ -1,7 +1,7 @@
 id: 272
 name: Mummification
 pp: 216
-Lvl: 
+Lvl:
   - nec 2
 Rng: touch
 Dur: permanent

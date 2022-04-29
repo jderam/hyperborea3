@@ -1,7 +1,7 @@
 id: 280
 name: Pass without Trace
 pp: 217
-Lvl: 
+Lvl:
   - drd 1
 Rng: touch
 Dur: 1 turn per CA level

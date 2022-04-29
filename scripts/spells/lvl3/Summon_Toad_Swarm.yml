@@ -1,7 +1,7 @@
 id: 405
 name: Summon Toad Swarm
 pp: 238
-Lvl: 
+Lvl:
   - nec 3
   - wch 3
 Rng: 90 feet

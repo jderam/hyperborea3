@@ -1,7 +1,7 @@
 id: 432
 name: Visualize Death
 pp: 244
-Lvl: 
+Lvl:
   - nec 2
 Rng: touch
 Dur: 1 turn

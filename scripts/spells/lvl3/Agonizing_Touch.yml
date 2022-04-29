@@ -1,7 +1,7 @@
 id: 5
 name: Agonizing Touch
 pp: 176
-Lvl: 
+Lvl:
   - nec 3
 Rng: touch
 Dur: instantaneous

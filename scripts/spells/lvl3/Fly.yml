@@ -1,7 +1,7 @@
 id: 171
 name: Fly
 pp: 200
-Lvl: 
+Lvl:
   - mag 3
 Rng: touch
 Dur: 6 turns + 1 turn per CA level

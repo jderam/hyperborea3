@@ -1,7 +1,7 @@
 id: 112
 name: Detect Neutrality
 pp: 192
-Lvl: 
+Lvl:
   - drd 2
 Rng: 60 feet
 Dur: 1 turn

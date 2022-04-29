@@ -1,7 +1,7 @@
 id: 99
 name: Death Masque
 pp: 190
-Lvl: 
+Lvl:
   - nec 3
 Rng: touch
 Dur: 1 day per CA level

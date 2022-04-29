@@ -1,7 +1,7 @@
 id: 444
 name: Water Walk
 pp: 245
-Lvl: 
+Lvl:
   - clr 3
 Rng: touch
 Dur: 1 turn + 1 turn per CA level

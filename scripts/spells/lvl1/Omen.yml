@@ -1,7 +1,7 @@
 id: 277
 name: Omen
 pp: 216
-Lvl: 
+Lvl:
   - clr 1
 Rng: touch
 Dur: 1 turn per CA level

@@ -1,7 +1,7 @@
 id: 244
 name: Locate the Dead
 pp: 211
-Lvl: 
+Lvl:
   - nec 1
   - wch 1
 Rng: 30 feet
