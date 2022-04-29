@@ -1,1 +1,26 @@
 id: 68
+name: Confusion
+pp: 185
+Lvl:
+  - mag 4
+  - ill 4
+Rng: 60 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Bewilders the spell’s victims, who thereafter behave
+unexpectedly as determined on the table below. The
+spell affects 2d6 creatures in a 50-foot-diameter area
+of effect, including allies. Creatures of 2 HD or fewer
+are automatically affected for the duration of the spell.
+Creatures of 3 HD or more are allowed <i>sorcery</i> saving
+throws to ignore the effects, modified by <i>willpower adjustment</i>,
+if applicable. The referee should determine
+the actions of each <i>confusion</i> victim:</p>
+<p><table><caption><b>Table 101: Confusion Spell</b></caption>
+<tr><th>d10 Result</th><th>Confused Action</th></tr>
+<tr><td>1</td><td>Wander away for 1 turn</td></tr>
+<tr><td>2–6</td><td>Stand idle, drooling and confused</td></tr>
+<tr><td>7–9</td><td>Physically attack closest creature</td></tr>
+<tr><td>0</td><td>Physically attack spell caster</td></tr></table></p>
+<p>Once affected, victims need not remain in the spell’s
+area of effect; the damage is done.</p>"

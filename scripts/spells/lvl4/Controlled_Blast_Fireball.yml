@@ -1,1 +1,26 @@
 id: 77
+name: Controlled Blast Fireball
+pp: 187
+Lvl:
+  - mag 6
+  - pyr 4
+Rng: 240 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>This specialized <i>fireball</i> spell allows the sorcerer to
+increase or decrease the blast diameter by 10-foot
+increments. From the palm of the sorcerer’s hand
+shoots a fiery missile which explodes into a sphere of
+flames at a target determined by the caster. Damage is
+1d6 hp per CA level to all within the area of effect unless
+<i>sorcery</i> saving throws are made for half damage.</p>
+<p>A standard blast is 40 feet in diameter, but the diameter
+of a <i>controlled blast fireball</i> can be reduced to 30
+feet, 20 feet, or as little as 10 feet without decreasing
+the potency of the blast. To increase blast size, one die
+of damage is sacrificed for every 10 feet of diameter
+added, to a maximum possible diameter of 80 feet. So,
+a CA 7 sorcerer can fire a standard 7d6 hp <i>fireball</i> that
+encompasses a 40-foot-diameter area, or elect to cast
+a 50-foot-diameter <i>fireball</i> for 6d6 hp damage, or a
+60-foot-diameter <i>fireball</i> for 5d6 hp damage, and so on.</p>"
