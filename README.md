@@ -134,7 +134,7 @@ I plan to implement the following features into this package, as time and motiva
   * Secondary Skills
   * Random name generation based on the tables in the rulebook
   * Height and Weight based on the tables in the rulebook
-  
+
 * Add detailed html-formatted spell descriptions to the spells database table in order to enable spell lookups and possibly some sort of tool to create character spellbook documents. Detailed spell information could be added to the character output as well.
 
 * A fully-detailed monster database table that would enable the lookup of full monster stat blocks.
@@ -143,9 +143,8 @@ I plan to implement the following features into this package, as time and motiva
 
 * Given completed spells, monsters, and treasure data, I'd like to create compendiums for use with [Foundry VTT](https://foundryvtt.com/).
 
-  
+
 
 ## Contributions
 
 Pull requests for small updates and bug fixes are always welcome. If you have a larger update you're interested in contributing, please create an Issue and we can have a conversation about it. If you are a talented front end developer and are interested in creating pretty web tools for this, I'd love to do whatever I can to help you!
-
