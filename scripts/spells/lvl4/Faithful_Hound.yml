@@ -1,1 +1,25 @@
 id: 146
+name: Faithful Hound
+pp: 196
+Lvl:
+  - mag 5
+  - ill 4
+  - nec 5
+Rng: 10 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>From the nether reaches of the Black Gulf is conjured
+a phantom watchdog seen only by the caster. The
+creature can be commanded to guard a door, gate, hall,
+room, or the like. The sorcerer cannot move more than
+30 feet from the location of the <i>faithful hound</i> or the
+spell will be broken.</p>
+<p>The <i>faithful hound</i> immediately begins to bark and
+howl when anything larger than a rat approaches.
+The <i>hound</i> can detect invisible, inaudible, and even
+extra-dimensional creatures, so it makes for an astonishingly
+perspicacious guardian. If an intruder turns
+its back on the <i>faithful hound</i>, the watchdog will make
+a single bite attack as an FA 10 creature, inflicting
+3d6 hp damage. The <i>hound</i> itself cannot be attacked,
+though it can be destroyed via the <i>dispel magic</i> spell.</p>"

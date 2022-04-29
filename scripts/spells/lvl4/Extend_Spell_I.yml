@@ -1,1 +1,15 @@
 id: 138
+name: Extend Spell I
+pp: 195
+Lvl:
+  - mag 4
+  - cry 4
+  - pyr 4
+Rng: special
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer must cast this spell 1 round after casting
+a level 1–3 spell. Doing so extends the duration of the
+previous spell by 50%; e.g., a <i>levitate</i> spell can be made
+to last 1½ turns (15 minutes) per CA level, instead of
+1 turn per CA level.</p>"

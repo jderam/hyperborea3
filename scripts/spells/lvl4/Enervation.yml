@@ -1,1 +1,18 @@
 id: 132
+name: Enervation
+pp: 194
+Lvl:
+  - nec 4
+  - wch 5
+Rng: 30 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>From outstretched hands, the sorcerer releases a black
+bolt of negative energy called forth from the impossible
+depths of the Black Gulf. The target must make a
+<i>sorcery</i> saving throw or suffer a temporary draining
+of energy and vitality. The victim loses 2d8 hp and suffers
+penalties of −2 “to hit,” −2 damage, and −2 AC.
+Lastly, the victim is beset by a stiffness of the limbs not
+unlike rigour mortis, preventing movement any faster
+than normal walking speed (no running or charging).</p>"

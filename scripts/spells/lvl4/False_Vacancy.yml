@@ -1,1 +1,33 @@
 id: 147
+name: False Vacancy
+pp: 196
+Lvl:
+  - ill 4
+Rng: 10 feet per CA level
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Creates a potent illusion that causes an area to appear
+empty, unoccupied, and/or neglected. The affected area
+can be 10 feet in diameter per CA level. <i>False vacancy</i> is
+a combination of <i>invisibility</i> and <i>phantasm</i>, but it cannot
+mask living creatures. The details of <i>false vacancy</i>
+are up to the sorcerer. Observers might, for example,
+see a treasure room as a dusty, cobweb-filled chamber
+containing a few broken pieces of furniture. If a group
+passes through the dweomered area, the illusion will
+adapt to their passage: Cobwebs will float, dusty footprints
+will be left in their wake, and so forth. Unless a
+masked object is touched by an investigating creature,
+the area will seem empty of what it actually contains.</p>
+<p>If the real contents of the masked area are forcibly
+shaken or handled roughly, the creature doing so may
+make a <i>sorcery</i> saving throw, modified by <i>willpower
+adjustment</i>, if applicable. If successful, the illusion will
+begin to shimmer, and the invisible object is revealed. If
+the saving throw fails, the subject believes that contact
+was made with an invisible object. Note that casual and
+careful touching of masked objects is not cause for a saving
+throw because the illusion cannot be disrupted unless
+handled with force. <i>Dispel phantasm</i> can break this
+spell, revealing that which is concealed by the illusion,
+but <i>dispel magic</i> and <i>detect invisibility</i> are ineffective.</p>"

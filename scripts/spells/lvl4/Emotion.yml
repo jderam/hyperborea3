@@ -1,1 +1,33 @@
 id: 131
+name: Emotion
+pp: 194
+Lvl:
+  - ill 4
+Rng: 180 feet
+Dur: 1 round per CA
+Rev: 0
+Desc: "<p>Elicits an irrational response from all human and quasi-
+man victims in a 30-foot-diameter area unless they
+make <i>sorcery</i> saving throws, modified by <i>willpower
+adjustment</i>, if applicable. (No save is necessary if the
+subjects are willing.) <i>Emotion</i> has three applications,
+one of which is selected by the sorcerer at the time of
+casting:</p>
+<ul><li><i>Despair:</i> A feeling of hopelessness and gloom.
+The affected will turn back, surrender, and
+submit to the demands of the sorcerer, so long
+as said demands are not completely contrary to
+their nature.</li>
+<li><i>Fear:</i> Complete fear, in which the affected panic
+and flee; however, if fleeing is not possible, they
+will cower and grovel. Saving throws for this
+variation are made at −2 penalties.</li>
+<li><i>Furious Hatred:</i> Targets become subject to
+battle lust. Attacks are made at +1 on attack
+rolls and +3 damage, but with a −4 AC penalty.
+Recipients of this effect refuse to surrender and
+continue to fight no matter the cost. (Does not
+stack with a berserker’s <i>berserk rage</i>.)</li></ul>
+<p>This spell persists for its maximum duration, but the
+sorcerer must concentrate throughout (standing still,
+no other actions taken), or the spell will terminate immediately.</p>"

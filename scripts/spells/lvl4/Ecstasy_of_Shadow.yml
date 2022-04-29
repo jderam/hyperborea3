@@ -1,1 +1,23 @@
 id: 130
+name: Ecstasy of Shadow
+pp: 194
+Lvl:
+  - mag 5
+  - nec 4
+Rng: 10 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A 20 × 20-foot rippling shadow emerges within 10 feet
+of the caster, floating at 20 MV in any direction chosen
+until concentration ceases or the duration is met. Any
+intelligent or quasi-intelligent creature of 2 HD or fewer
+in the shadowed area directly falls to the ground in
+spasms of necrophiliac ecstasy with lifeless shadow beings
+for 2d6 rounds. Victims are unable to take any other
+actions (effectively <i>prone</i>). Creatures of 3 HD or more
+must make <i>sorcery</i> saving throws (modified by <i>willpower
+adjustment</i>) or fall into a similar state for 1d6 rounds.
+The sorcerer can affect 3 HD of creatures per CA level.
+This spell can bring great shame and dishonour to paladins
+and cataphracts who comport themselves to a code
+of gentility; <i>atonement</i> may be required.</p>"
