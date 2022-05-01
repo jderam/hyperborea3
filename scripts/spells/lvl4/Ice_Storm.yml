@@ -1,1 +1,19 @@
 id: 209
+name: Ice Storm
+pp: 206
+Lvl:
+  - mag 4
+  - cry 4
+Rng: 120 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Fist-sized hailstones pound down with great force,
+causing 3d10 hp damage to all within the 30 × 30-foot
+area of effect, no saving throws allowed. The damage is
+the result of blunt force, not cold, so spells such as <i>cold
+resistance</i> offer no defence. Alternatively, the sorcerer
+can use this spell to create a 90 × 90-foot area of driving
+sleet that effectively snow-blinds its victims and
+halves their movement. Any attempt to run through
+such an area is subject to an <i>avoidance</i> saving throw,
+or the subject will slip and fall.</p>"

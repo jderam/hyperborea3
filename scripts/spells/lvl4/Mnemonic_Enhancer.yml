@@ -1,1 +1,22 @@
 id: 268
+name: Mnemonic Enhancer
+pp: 215
+Lvl:
+  - mag 4
+Rng: 0
+Dur: 24 hours
+Rev: 0
+Desc: "<p>Casting this ritual requires 1 turn and the sacrifice of a
+gem of 100-gp value or greater. Once cast, the sorcerer
+can memorize or rememorize additional spell levels,
+selecting one of the following four allotments:</p>
+<ul><li>Four level 1 spells</li>
+<li>Two level 1 spells, one level 2 spell</li>
+<li>Two level 2 spells</li>
+<li>One level 1 spell, one level 3 spell</li></ul>
+<p>If the memorize option is cast, the additional spells
+are at the sorcerer’s disposal for a 24-hour period, after
+which they fade from memory. If the rememorize
+option is cast, the sorcerer recalls spells already cast
+that day. The rememorized spells must be cast within
+24 hours or they will fade from memory.</p>"

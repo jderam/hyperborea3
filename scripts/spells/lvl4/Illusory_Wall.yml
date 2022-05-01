@@ -1,1 +1,20 @@
 id: 214
+name: Illusory Wall
+pp: 206
+Lvl:
+  - ill 4
+Rng: 90 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>This spell requires a sacrifice of gold or gems valued
+at 300 gp or more. The sorcerer creates an illusion of
+a wall, floor, ceiling, or another surface. The <i>illusory
+wall</i> can be as large as 1 × 10 × 10 feet and is convincingly
+realistic. The surface can be made to look as
+though it were of brick, stone, wood, or like material.
+An <i>illusory wall</i> might be used to create the appearance
+of a dead end, or perhaps to cover a pit, in which
+case only careful searching will reveal the deception.
+The surface can be passed through, but such transit
+will not terminate it. The spell is permanent unless
+<i>dispel phantasm</i> is cast.</p>"

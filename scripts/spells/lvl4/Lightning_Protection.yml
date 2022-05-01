@@ -1,1 +1,17 @@
 id: 240
+name: Lightning Protection
+pp: 211
+Lvl:
+  - drd 4
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>Shelters the caster or other recipient from any damage
+related to normal electricity for one hour per CA level.
+If cast on oneself, the sorcerer gains immunity from a
+single magical lightning/electricity attack (e.g., <i>lightning
+bolt</i>, <i>shocking grasp</i>, a <b>behir’s</b> breath) before the
+spell is broken. A recipient of this spell other than the
+sorcerer simply gains a +4 saving throw bonus versus
+a single magical lightning/electricity attack before the
+spell is broken.</p>"

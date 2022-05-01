@@ -1,1 +1,28 @@
 id: 208
+name: Ice Javelin
+pp: 205
+Lvl:
+  - mag 4
+  - cry 4
+Rng: 240 feet
+Dur: special
+Rev: 0
+Desc: "<p>Conjures a blue <i>ice javelin</i> from the frozen depths of
+Hyperborea’s glaciated interior. The weapon manifests
+in the hand of the caster, who at once hurls it at
+a target within 240 feet, whether or not the sorcerer is
+skilled with such a weapon; i.e., no unskilled weapon attack
+penalty applies. The <i>ice javelin</i> is +3 “to hit” and
+inflicts 6d6 hp damage (dexterity <i>attack modifier</i> and
+strength <i>damage adjustment</i> both apply). On contact,
+the <i>ice javelin</i> can also freeze its victim in an inch-thick
+sheen of ice unless a <i>sorcery</i> saving throw is made.
+The ice does not harm the victim and in fact slows all
+bodily processes. The ice is negated by <i>dispel magic</i>;
+also, heat or fire (magical or mundane) will thaw it. If
+the <i>ice javelin</i> misses its target, it is destroyed on a
+3-in-6 chance; otherwise, the caster may recall it to the
+hand, but this takes one round. If anyone else attempts
+to touch the <i>ice javelin</i>, in a flash it will melt. <i>N.B.:</i> If
+using the optional <i>critical hits and misses rules</i>, each
+ice javelin is subject to critical success or failure.</p>"
