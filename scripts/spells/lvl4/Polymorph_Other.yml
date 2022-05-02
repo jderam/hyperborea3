@@ -1,1 +1,27 @@
 id: 299
+name: Polymorph Other
+pp: 220
+Lvl:
+  - mag 4
+  - nec 4
+  - wch 4
+Rng: 60 feet
+Dur: special
+Rev: 0
+Desc: "<p>Transmogrifies one creature into another type of creature
+(though not a specific individual) unless a <i>transformation</i>
+saving throw is made. Unlike <i>polymorph self</i>,
+the affected creature becomes the new form in all ways,
+including all attacks and special abilities. The victim also
+assumes the behaviour and tendencies of the new form.
+For example, a person turned into an ass will think and
+behave as an ass; his personality will be buried. Note
+that the victim cannot be transformed into any creature
+more than 5 HD greater than the original form; also,
+the former hit point total remains the same, so a 22-hp
+fighter transformed into a toad becomes a 22-hp toad.
+This spell is broken only if the victim dies, or if <i>dispel
+magic</i> is cast; in the latter case, the victim must make
+a <i>trauma survival</i> check to survive the transformation
+(see <b>Chapter 3: Statistics</b>, <i>constitution</i>); otherwise,
+their innards are turned inside out.</p>"

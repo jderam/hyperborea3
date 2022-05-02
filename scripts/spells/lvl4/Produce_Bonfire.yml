@@ -1,1 +1,22 @@
 id: 307
+name: Produce Bonfire
+pp: 222
+Lvl:
+  - pyr 4
+  - wch 5
+  - drd 4
+Rng: 30 feet
+Dur: special
+Rev: 1
+Desc: "<p>Causes a fire to ignite magically, a full, roaring blaze
+as large as 12 feet in diameter. If cast upon an appropriate
+pile of wood, the bonfire can persist for one day
+per CA level; if made to spring from thin air, it lasts but
+1 turn per CA level. Creatures in the area of effect suffer
+1d4 hp damage unless they make an <i>avoidance</i> saving
+throw. Any combustibles worn by the victims (e.g.,
+cotton, linen, wool) might be damaged or destroyed by
+the <i>produce bonfire</i> spell; certainly, paper and parchment
+stand no chance of survival. The reverse of this
+spell, <i>quench bonfire</i>, extinguishes any normal fire
+within the spell’s range and area of effect.</p>"

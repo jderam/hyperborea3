@@ -1,1 +1,30 @@
 id: 285
+name: Perform Exorcism
+pp: 217
+Lvl:
+  - clr 4
+Rng: 10 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>By means of this potent ritual, which requires 6d10
+turns to complete, the sorcerer exorcizes a dæmon or
+another supernatural force from possession of a person
+or object. This spell can negate dæmonic possession, a
+<i>magic jar</i> spell, or any of the enchantments or charms
+that compel one to behave as they otherwise would not,
+such as <i>charm person</i> and <i>suggestion</i>. If a possessed
+person is the subject of this spell, the exorcized dæmon
+or force is banished to the netherworld whence it came.</p>
+<p>If a possessed object is the subject of this spell, the
+possessing dæmon or force is not necessarily banished;
+it will attempt to possess a nearby creature (possibly
+the caster of this spell). The referee must randomly
+determine whom the dæmon or force will seek. It may
+be one that the dæmon feels it can conquer easily, one
+of little willpower, such as a child, or a person weak of
+body and mind. The potential victim is granted a <i>sorcery</i>
+saving throw, modified by <i>willpower adjustment</i>,
+if applicable, or they suffer the effects of possession.
+The victim may be unaware of the possession until
+such subtle signs as uncharacteristic behaviour and
+memory loss present.</p>"

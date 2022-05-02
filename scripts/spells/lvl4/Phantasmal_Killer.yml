@@ -1,1 +1,31 @@
 id: 291
+name: Phantasmal Killer
+pp: 219
+Lvl:
+  - ill 4
+Rng: 60 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>This cerebral phantasm preys on the most horrific
+fears of its victims, who must be of animal intelligence
+or greater. A nightmarish beast is seen only by the
+sorcerer and the target. The beast attacks as an FA 4
+creature. If it hits, the victim is allowed a <i>death</i> saving
+throw, modified by <i>willpower adjustment</i>, if applicable.
+The target’s saving throw might also be modified
+by any of the following conditions:</p>
+<ul><li><i>Surprize:</i> If the target is surprized, a −2 penalty
+on the saving throw.</li>
+<li><i>Target Has Previous Experience:</i> If the target
+has been subject to the wiles of such an illusion
+before, +2 bonus to the saving throw.</li>
+<li><i>Target is an Illusionist:</i> If the target is an
+illusionist, +2 bonus to the saving throw, in
+addition to the <i>perceive illusion</i> ability unique to
+that class.</li></ul>
+<p>If the saving throw fails, the victim is slain by the <i>phantasmal
+killer</i>. If the saving throw is successful, the
+target has disbelieved the phantasm, and a backlash
+effect strikes the caster unconscious for 1d10 rounds,
+unless a <i>sorcery</i> saving throw is made, modified by
+<i>willpower adjustment</i>, if applicable.</p>"
