@@ -1,7 +1,7 @@
 id: 181
 name: Frost Sphere
 pp: 201
-Lvl: 
+Lvl:
   - cry 2
 Rng: 10 feet
 Dur: 1 round per CA level

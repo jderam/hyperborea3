@@ -1,7 +1,7 @@
 id: 366
 name: Sorcerous Armour
 pp: 231
-Lvl: 
+Lvl:
   - mag 1
   - pyr 1
 Rng: touch

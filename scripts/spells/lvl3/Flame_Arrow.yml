@@ -1,7 +1,7 @@
 id: 163
 name: Flame Arrow
 pp: 198
-Lvl: 
+Lvl:
   - mag 3
   - pyr 3
 Rng: touch

@@ -1,7 +1,7 @@
 name: Black Hand
 id: 28
 pp: 178
-Lvl: 
+Lvl:
   - nec 1
 Rng: 0
 Dur: 3 rounds + 1 round per CA level

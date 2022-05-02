@@ -1,0 +1,20 @@
+id: 383
+name: Stoneskin
+pp: 233
+Lvl:
+  - mag 4
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>By sacrificing a diamond of 500-gp value or greater, the
+sorcerer imbues oneself or another with flesh as hard
+as diamond. For every CA level of the sorcerer, the
+recipient gains immunity to one physical attack (melee
+or missile), even from a magical weapon. The recipient
+does not, however, gain immunity to spells or other sorcerous
+effects; e.g., a <i>magic missile</i> spell causes normal
+damage and does not count as a “hit” against the spell’s
+duration—only the <i>magic stone</i> spell is effective in this
+latter regard. The sorcerer cannot place this spell on
+more than one recipient at a time; any attempt to do so
+results in the sorcerer suffering petrifaction (no save).</p>"

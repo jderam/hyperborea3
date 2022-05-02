@@ -1,0 +1,20 @@
+id: 223
+name: Inflict Madness
+pp: 208
+Lvl:
+  - ill 5
+  - nec 4
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>When cast by a cleric or necromancer, this evil curse
+brings insanity to its victim (human or humanoid).
+When cast by an illusionist, the spell effects a phantasmal
+nightmare that produces madness. In either case,
+the target must make a <i>sorcery</i> saving throw or suffer
+a random form of <i>madness</i> (consult your referee for
+specific results). The saving throw is modified by <i>willpower
+adjustment</i>, if applicable. A <i>remove curse</i> spell
+ends the madness if the spell was cast by a cleric or
+necromancer; <i>dispel phantasm</i> can exorcize madness
+caused by illusionists (cf. <i>cure madness</i>).</p>"

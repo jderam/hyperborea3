@@ -1,7 +1,7 @@
 id: 380
 name: Stone Shape
 pp: 233
-Lvl: 
+Lvl:
   - mag 5
   - drd 3
 Rng: touch

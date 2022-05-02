@@ -1,0 +1,15 @@
+id: 51
+name: Change Temperature
+pp: 183
+Lvl:
+  - cry 4
+  - pyr 4
+  - drd 4
+Rng: 0
+Dur: 6 turns (1 hour) + 3 turns per CA level
+Rev: 0
+Desc: "<p>The sorcerer raises or lowers the temperature in a
+10-foot radius by as much as 50°F. The caster can then
+move as normal, surrounded by the effect. The druidic
+version of this spell requires a sprig of mistletoe as a
+component.</p>"

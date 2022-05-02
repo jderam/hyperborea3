@@ -1,0 +1,21 @@
+id: 318
+name: Rainbow Pattern
+pp: 223
+Lvl:
+  - ill 4
+Rng: 90 feet
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer’s weird gesticulations evoke a pattern of
+rainbow-hued, interweaving colours in a 30-foot-diameter
+area. The sorcerer can direct the <i>rainbow pattern</i>
+to travel at 30 MV to the limit of its range. The spell
+affects no more than 24 HD of seeing creatures; i.e., it
+does not affect blind or sightless creatures. Those who
+fail their <i>sorcery</i> saving throws, modified by <i>willpower
+adjustment</i>, if applicable, doltishly follow the interplaying
+colours. If the <i>rainbow pattern</i> leads its victims
+off a cliff or another hazard, each victim is allowed
+a second save to resist effecting their potential demise.
+The spell lasts for as long as the caster continues to
+gesticulate, plus 1d4 rounds thereafter.</p>"

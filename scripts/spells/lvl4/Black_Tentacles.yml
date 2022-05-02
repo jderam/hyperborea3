@@ -1,0 +1,28 @@
+id: 29
+name: Black Tentacles
+pp: 179
+Lvl:
+  - mag 4
+  - nec 4
+  - wch 4
+Rng: 30 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Black, squid-like tentacles erupt in a 30-foot-diameter
+area, one such tentacle per CA level of the sorcerer.
+Each thick and slimy tentacle is 10 feet long, AC 4, and
+equal in hit points to the sorcerer at full health. Any
+creature within range of a <i>black tentacle</i> is subject to
+attack; if a tentacle has more than one potential target,
+the referee should assign equal chances via random die
+roll.</p>
+<p>Each victim must make a <i>sorcery</i> saving throw. If the
+saving throw succeeds, the tentacle lashes the target
+for 1d6 hp damage before disappearing. If the saving
+throw fails, the tentacle lash delivers 1d6 hp damage,
+as well as constricting and rending the victim for a
+further 2d6 hp damage per round until the spell ends
+or the tentacle is destroyed. As the tentacles have no
+intelligence, they will continue to squeeze a dead body
+and might on occasion be fooled into constricting a barrel,
+statue, tree, or like object.</p>"

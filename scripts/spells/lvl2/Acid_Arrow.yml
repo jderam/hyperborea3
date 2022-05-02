@@ -1,7 +1,7 @@
 id: 1
 name: Acid Arrow
 pp: 175
-Lvl: 
+Lvl:
   - mag 2
 Rng: 30 feet
 Dur: special

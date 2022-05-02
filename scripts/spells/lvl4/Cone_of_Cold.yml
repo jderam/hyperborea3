@@ -1,0 +1,16 @@
+id: 67
+name: Cone of Cold
+pp: 185
+Lvl:
+  - mag 5
+  - cry 4
+  - nec 5
+Rng: 0
+Dur: instantaneous
+Rev: 0
+Desc: "<p>With hands extended, the sorcerer releases a heat-draining
+cone 30 feet long and 10 feet wide at its terminus. For
+those in its area of effect, the <i>cone of cold</i> drains 1d4+1
+hp per CA level, so a 10th-level magician unleashes a
+<i>cone of cold</i> that inflicts 10d4+10 hp damage. Victims
+are allowed <i>sorcery</i> saving throws for half damage.</p>"

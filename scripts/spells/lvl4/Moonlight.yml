@@ -1,0 +1,16 @@
+id: 269
+name: Moonlight
+pp: 215
+Lvl:
+  - wch 4
+  - drd 4
+Rng: 90 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Illumes a 25-foot-diameter area with a moonbeam, the
+luminosity of which rivals that of a full moon; the effect is
+not unlike a spotlight. Soft light extends in a 25-foot radius
+beyond the spell’s area, so the entire effect (75-foot
+diameter in total) appears quite natural (when outdoors,
+of course). This spell does not interfere with <i>infrared
+vision</i>, though it can enhance <i>ultraviolet vision</i>.</p>"

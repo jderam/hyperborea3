@@ -1,7 +1,7 @@
 id: 83
 name: Cudgel of Bone
 pp: 187
-Lvl: 
+Lvl:
   - nec 2
 Rng: touch
 Dur: 1 round per CA level

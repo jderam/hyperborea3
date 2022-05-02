@@ -1,7 +1,7 @@
 id: 409
 name: Terrify
 pp: 239
-Lvl: 
+Lvl:
   - ill 1
 Rng: 10 feet
 Dur: 2 rounds + 1 round per CA level

@@ -1,0 +1,19 @@
+id: 410
+name: Them
+pp: 239
+Lvl:
+  - clr 4
+  - drd 4
+Rng: 30 feet
+Dur: 2 rounds per CA level
+Rev: 0
+Desc: "<p>Transforms one or more ants into <b>giant radioactive
+ants</b> that at once begin to issue a loud, warbling whistle.
+The number depends on the sorcerer’s casting ability:
+2 ants at CA 7, 3 ants at CA 9, and 4 ants at CA 11.
+The giant ants can act 1 round after transformation.
+They will not harm the caster and will obey simple
+commands such as “Attack!”, “Defend!”, “Lift!”, and so
+forth. If the giant ants are not otherwise instructed,
+they will attack the nearest creature (not differentiating
+between and betwixt allies and enemies).</p>"

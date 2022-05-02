@@ -1,0 +1,21 @@
+id: 372
+name: Speak with Plants
+pp: 232
+Lvl:
+  - clr 4
+  - drd 4
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Establish rudimentary communication with vegetal
+life that surrounds the sorcerer in a 30-foot radius.
+Casting this spell requires 1 turn of meditation. Once
+complete, the caster can ask a simple question, such as
+whether a creature passed through the area of effect.
+The reply is via an empathic feeling conveyed by the
+plants. The caster may also assert a modicum of control
+over the area of effect, asking grasses or shrubs
+to part, even beseeching vines or hanging branches to
+hinder the progress of a pursuer. This effect should
+not be confused with the <i>entangle spell</i>, however; the
+plants are simply nudged to a limited course of action.</p>"

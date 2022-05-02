@@ -1,0 +1,21 @@
+id: 228
+name: Insect Plague
+pp: 209
+Lvl:
+  - nec 5
+  - clr 5
+  - drd 4
+Rng: 360 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The sorcerer summons a vast swarm of flying insects
+(usually a combination of bees, beetles, cicadas, locusts,
+and mosquitoes) 30 feet high and 60 feet in diameter. Vision
+is reduced to 10 feet for those victims caught within
+the swarm, and the shrill droning of the cicadas is maddening
+and disorienting. For every round spent within
+the swarm, victims sustain 1 hp damage from stings
+and bites. Animals or monsters of 2 HD or less almost
+always will be driven away in panic. Heavy smoke or a
+roaring fire drives away the <i>insect plague</i>; otherwise,
+it remains stationary until the spell’s duration elapses.</p>"

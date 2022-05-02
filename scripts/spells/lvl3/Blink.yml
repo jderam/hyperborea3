@@ -1,7 +1,7 @@
 id: 34
 name: Blink
 pp: 180
-Lvl: 
+Lvl:
   - mag 3
 Rng: 0
 Dur: 1 round per CA level

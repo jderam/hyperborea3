@@ -1,0 +1,19 @@
+id: 253
+name: Mass Treemorph
+pp: 213
+Lvl:
+  - mag 4
+  - ill 4
+  - drd 4
+Rng: 240 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>As many as 100 willing humans or humanoids can be concealed
+by this spell. The recipients appear as trees (i.e., a
+small orchard or grove) so long as they remain still. Creatures
+can move through and even touch the “trees” without
+being aware of their true form; however, if a “tree” is
+attacked, it will bleed. If any recipient of this spell moves,
+he or she will reappear as normal; if the caster moves, the
+spell is broken. <i>True seeing</i> reveals the “trees” for what
+they are, and <i>dispel magic</i> cancels the spell.</p>"

@@ -1,7 +1,7 @@
 id: 125
 name: Dispel Phantasm
 pp: 193
-Lvl: 
+Lvl:
   - ill 3
 Rng: 120 feet
 Dur: instantaneous

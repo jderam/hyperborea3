@@ -1,0 +1,32 @@
+id: 265
+name: Mirror, Mirror
+pp: 215
+Lvl:
+  - mag 4
+  - ill 5
+  - nec 4
+  - wch 4
+Rng: touch
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Enchants a polished silver mirror to become a temporary
+scrying device. The sorcerer may then view a
+known subject (human or monster) over any distance,
+so long as both are on the same plane of existence. The
+extent of familiarity dictates the probability of success:</p>
+<p><table><caption><b>Table 106: Mirror, Mirror Spell</b></caption>
+<tr><th>Familiarity</th><th>Chance of Locating</th></tr>
+<tr><td>Very familiar</td><td>5:6</td></tr>
+<tr><td>Somewhat familiar</td><td>4:6</td></tr>
+<tr><td>Seen in a picture or sketch</td><td>3:6</td></tr>
+<tr><td>Item or garment in possession</td><td>2:6</td></tr>
+<tr><td>Described by another person</td><td>1:6</td></tr></table></p>
+<p>The subject can be observed for the duration of the
+spell, which will also depict anyone or anything within
+30 feet; if the subject is in complete darkness, the caster
+will see only vague details. Creatures with intelligence
+of 13 or higher have a 1-in-6 chance of cognizing they
+are being watched by means sorcerous. Too, if <i>mirror,
+mirror</i> is used to view one who is 10 HD or greater, the
+subject may make a <i>sorcery</i> save to cognize the effect;
+otherwise, he or she remains ignorant.</p>"

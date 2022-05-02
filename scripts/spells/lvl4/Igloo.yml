@@ -1,0 +1,23 @@
+id: 212
+name: Igloo
+pp: 206
+Lvl:
+  - cry 4
+  - drd 5
+Rng: 0
+Dur: 12 turns (2 hours) per CA level
+Rev: 0
+Desc: "<p>An <i>igloo</i> is evoked, surrounding the caster and providing
+suitable shelter for as many as six companions.
+It is 15 feet in base diameter, with walls that arch to an
+apex 7½ feet high. It has a snowy white exterior, but
+from the inside the walls appear transparent, allowing
+its inhabitants to see the outdoors with perfect clarity.
+A lambent light emanates from the interior ceiling
+upon the will of the caster. The interior temperature is
+cool but comfortable. The <i>igloo</i> can withstand heavy
+winds, rain, sleet, hail, snow, and temperatures as high
+as 90℉ before slowly beginning to melt. If struck, the
+<i>igloo</i> can sustain 36 hp damage before it is destroyed.
+Whilst the caster’s companions are free to enter and
+exit, once the caster leaves, the <i>igloo</i> will crumble.</p>"

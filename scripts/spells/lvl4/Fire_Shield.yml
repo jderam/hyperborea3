@@ -1,0 +1,22 @@
+id: 158
+name: Fire Shield
+pp: 198
+Lvl:
+  - mag 4
+  - cry 4
+  - pyr 4
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Blue-green wisps of flame radiate from the caster’s
+body, emitting 15 feet of light. The sorcerer is thus
+protected against cold-based spells/effects and gains a
++2 saving throw bonus versus such attacks, sustaining
+no damage if the save is made and no more than
+half damage if the save fails. Alternatively, violet-blue
+flames radiate from the caster, protecting the sorcerer
+from fire-based attacks instead (+2 saves, no damage
+if save is made, half damage if save fails). No matter
+which variation is cast, melee attacks that strike the
+caster cause the assailant twice as many hit points of
+damage as inflicted in the form of a fiery backlash.</p>"

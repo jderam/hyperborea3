@@ -1,0 +1,21 @@
+id: 377
+name: Squall
+pp: 233
+Lvl:
+  - cry 4
+Rng: 0
+Dur: 1 round
+Rev: 0
+Desc: "<p>A snowy blast of arctic wind blows from the caster
+(in the direction faced) in a path that is always 10 feet
+wide but with variable length depending on the caster:
+5 feet of length may be added for each CA level the
+sorcerer possesses; e.g., a CA 7 sorcerer can evoke
+a <i>squall</i> that is 10 feet wide by 35 feet long. <i>Squall</i>
+temporarily blinds victims in its path for 1d4 rounds.
+Blinded creatures automatically lose initiative and
+suffer −4 penalties on attack rolls, armour class, and
+saving throws. <i>Squall</i> extinguishes natural bonfires
+and can even snuff a <i>wall of fire</i>; too, it disperses and
+thus negates magical clouds, fogs, and smoke, such as
+<i>cloudkill</i>, <i>fog cloud</i>, <i>solid fog</i>, and <i>stinking cloud</i>.</p>"

@@ -1,7 +1,7 @@
 name: Cure Light Wounds
 id: 89
 pp: 188
-Lvl: 
+Lvl:
   - clr 1
   - drd 2
 Rng: touch

@@ -1,0 +1,13 @@
+id: 92
+name: Cure Serious Burns
+pp: 188
+Lvl:
+  - pyr 4
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Heals a living creature for 3d8 hp of burn damage, as
+caused by acid, electricity, fire, or heat; it does not apply
+to other wounds. The reverse of this spell, <i>inflict
+serious burns</i>, is used to burn a living creature for 3d8
+hp damage upon a successful touch attack.</p>"

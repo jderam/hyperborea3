@@ -1,7 +1,7 @@
 id: 231
 name: Invisibility Hemisphere
 pp: 209
-Lvl: 
+Lvl:
   - mag 3
   - ill 3
 Rng: touch

@@ -1,0 +1,29 @@
+id: 237
+name: Lifeglobe
+pp: 210
+Lvl:
+  - wch 5
+  - drd 4
+Rng: 10 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The caster speaks an incantation whilst tossing a piece
+of freshly picked green vegetation into the air. The
+vegetation immediately transforms into a 10-inch-diameter,
+glowing green sphere that hovers no more
+than 10 feet away from the caster. Until the sphere dissipates,
+any living creature touching it—friend and foe
+alike—will gain one of the following benefits (chosen
+by the one touching the sphere):</p>
+<ul><li>Heal 1 hit die (roll HD type) modified by constitution
+<i>hit point adjustment</i> (if applicable)</li>
+<li>Recover from one physical ailment (e.g., blindness,
+deafness, disease), though not poison</li>
+<li>Gain 1d4 days of nourishment and hydration</li></ul>
+<p>Note that each recipient may derive
+the benefits of the <i>lifeglobe</i>
+but once from the same casting.
+The lifeglobe can be destroyed if
+struck. It may be considered AC 6
+and is allowed an item saving throw
+(as <i>wood, thin</i>).</p>"

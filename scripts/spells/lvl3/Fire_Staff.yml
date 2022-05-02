@@ -1,7 +1,7 @@
 id: 159
 name: Fire Staff
 pp: 198
-Lvl: 
+Lvl:
   - pyr 3
 Rng: 0
 Dur: 1 turn per 2 CA levels

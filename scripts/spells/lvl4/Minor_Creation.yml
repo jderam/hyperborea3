@@ -1,0 +1,18 @@
+id: 261
+name: Minor Creation
+pp: 214
+Lvl:
+  - ill 4
+Rng: touch
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Effects the creation of an object no denser than hardwood
+(ash, beech, oak, etc.); stone and metal objects
+are unachievable. The object can be no greater than
+one cubic foot in size per CA level. To create the item,
+the sorcerer must have some piece of the material to be
+produced: If generating a 50-foot hemp rope, a small
+thread of hemp must be held; if the sorcerer wishes to
+create a small raft of beech, a splinter of beech wood is
+required. The item disappears when the spell ends, as
+will the component.</p>"

@@ -1,7 +1,7 @@
 id: 10
 name: Allay Exhaustion
 pp: 176
-Lvl: 
+Lvl:
   - ill 3
 Rng: touch
 Dur: 6 turns (1 hour)

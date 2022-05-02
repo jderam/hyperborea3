@@ -1,0 +1,15 @@
+id: 129
+name: Dweomered Weapon
+pp: 194
+Lvl:
+  - mag 4
+Rng: touch
+Dur: 1 turn per CA
+Rev: 0
+Desc: "<p>Temporarily enchants any mundane weapon, granting
+a +1 “to hit” and +1 damage bonus to a single weapon
+or three missiles (arrows or quarrels) for CA 7–8
+casters, +2/+2 for CA 9–10 casters, and +3/+3 for CA
+11–12 casters. This spell does not function on magical
+weapons unless the bonus granted supersedes the
+weapon’s current enchantment.</p>"

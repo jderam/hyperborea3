@@ -1,7 +1,7 @@
 id: 379
 name: Stinking Cloud
 pp: 233
-Lvl: 
+Lvl:
   - mag 2
 Rng: 30 feet
 Dur: 1 round per CA level

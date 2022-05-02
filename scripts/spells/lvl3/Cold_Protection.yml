@@ -1,7 +1,7 @@
 id: 60
 name: Cold Protection
 pp: 184
-Lvl: 
+Lvl:
   - cry 3
 Rng: touch
 Dur: special

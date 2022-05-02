@@ -1,0 +1,24 @@
+id: 74
+name: Control Water
+pp: 186
+Lvl:
+  - mag 6
+  - clr 4
+Rng: 120 feet
+Dur: 1d6 turns
+Rev: 0
+Desc: "<p>This spell requires the sacrifice of an opal or pearl valued
+at 100 gp or more. It has three separate functions;
+the sorcerer may choose whichever version to be cast:</p>
+<p><ul><li><i>Lower Water:</i> The water of a river, pond, small
+lake, or similar body is lowered to 50% of its
+normal volume. Rivers will flow at half their
+normal capacity, lakes and pools will diminish,
+and so on.</li>
+<li><i>Part Water:</i> Divides a body of water to a length
+and depth of 100 feet, creating a 10-foot-wide
+corridor with walls of water.</li>
+<li><i>Raise Water:</i> The water of a river, pond, small
+lake, or similar body is increased by 50% of its
+normal volume, causing floods, rushing tides,
+and other like effects.</li></p>"

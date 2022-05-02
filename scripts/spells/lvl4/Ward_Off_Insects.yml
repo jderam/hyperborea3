@@ -1,0 +1,15 @@
+id: 441
+name: Ward Off Insects
+pp: 245
+Lvl:
+  - drd 4
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Evokes an invisible barrier to form around the caster
+in a 10-foot radius, repelling all normal insect life. Giant
+insects are allowed <i>sorcery</i> saving throws. Successful
+saves allow the creatures to behave as normal, though
+they suffer 1d6 hp damage for entering the field; failed
+saves cause the insects to flee in fear. This spell does
+not affect spiders and centipedes.</p>"

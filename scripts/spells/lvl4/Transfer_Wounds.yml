@@ -1,0 +1,19 @@
+id: 413
+name: Transfer Wounds
+pp: 240
+Lvl:
+  - nec 4
+  - wch 4
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>A spell that can <i>transfer wounds</i> from a willing subject
+to another willing recipient, which may be the spell
+caster. A maximum of 20 hp damage can be <i>transferred</i>.
+The process involves a 1-turn ritual in which
+the wounds, by way of hands firmly grasped, pass
+from the subject to the recipient. If a recipient other
+than the sorcerer is involved, both must be touched by
+the caster. The one who absorbs the damage may be
+drained to no lower than 0 hp; e.g., someone with 16 hp
+can absorb 1–16 hp of damage from the subject.</p>"

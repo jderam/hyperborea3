@@ -1,0 +1,20 @@
+id: 117
+name: Dig Hole
+pp: 192
+Lvl:
+  - mag 4
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Causes the caster’s hands to transform into enormous,
+outwards-turning paws with long nails; meantime,
+the head elongates and becomes pointed like that of a
+mole, whilst the legs become short and thick. At once
+the sorcerer may begin to excavate earth, sand, or
+mud, scooping 125 cubic feet (5 × 5 × 5 feet) of earth
+per round, using their oversized paws. Any creature
+that approaches the hole’s edge must make an <i>avoidance</i>
+saving throw or fall in. Tunnels that are dug
+just below the surface of the earth are noted by the
+raised mound/roof caused by the displacement of earth
+(not unlike the mound of an ant hole).</p>"

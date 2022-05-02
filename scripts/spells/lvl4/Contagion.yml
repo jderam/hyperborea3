@@ -1,0 +1,29 @@
+id: 70
+name: Contagion
+pp: 185
+Lvl:
+  - nec 4
+  - wch 4
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>By the sorcerer’s wicked touch, the target of this spell
+is weakened and diseased unless a <i>sorcery</i> saving
+throw is made. If the save fails, the victim is at once
+overcome by a wet cough, skin boils and lesions, loss of
+hair, and fatigue. The statistical repercussions include
+2 lost points of strength, dexterity, and constitution.
+(For ease of game play, an afflicted enemy creature—
+human, humanoid, animal, or monster—may suffer
+penalties of −1 on attack rolls, −1 damage, −1 AC,
+and −1 hp per HD.)</p>
+<p>The condition persists unless <i>cure disease</i> is administered,
+or until natural healing overcomes the affliction.
+Following 4 weeks of bed rest, another saving throw is
+permitted. If the victim succeeds, the path to wellness
+begins, which requires another 2 weeks before symptoms
+and attribute losses are healed. Natural healing,
+if the first attempt fails, may be attempted again after
+8 weeks and 12 weeks of bed rest. Beyond 12 weeks,
+the condition is terminal, and the victim will die of the
+<i>contagion</i> within 1d4 years.</p>"

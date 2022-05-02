@@ -1,0 +1,23 @@
+id: 119
+name: Discern Lie
+pp: 192
+Lvl:
+  - clr 4
+Rng: 50 feet
+Dur: 1 turn per CA
+Rev: 1
+Desc: "<p>The sorcerer casts this subtle spell by pinching 1 gp
+worth of gold dust betwixt the thumb and forefinger;
+this may be done behind the back or within the folds
+of his or her robes. (The casting likely goes unnoticed
+by those who are present.) Once the spell is cast, the
+sorcerer can detect whether those within range speak
+truthfully or not. The detection is perceived in degrees:
+Horrible lies produce magnified discernment, whilst
+simple exaggerations give off faint signals.</p>
+<p>The reverse of this spell, <i>indiscernible lie</i>, not only
+counters the effects of <i>discern lie</i>, but also allows the
+caster or other willing subject to stretch the truth or
+even tell bald-faced lies that sound reasonable to any
+within range who fail a <i>sorcery</i> saving throw, modified
+by <i>willpower adjustment</i>, if applicable.</p>"

@@ -1,7 +1,7 @@
 id: 113
 name: Detect Silence
 pp: 192
-Lvl: 
+Lvl:
   - mag 2
   - ill 1
   - wch 2

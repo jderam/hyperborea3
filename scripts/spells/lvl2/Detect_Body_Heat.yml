@@ -1,7 +1,7 @@
 id: 106
 name: Detect Body Heat
 pp: 191
-Lvl: 
+Lvl:
   - cry 2
   - pyr 2
 Rng: 60 feet

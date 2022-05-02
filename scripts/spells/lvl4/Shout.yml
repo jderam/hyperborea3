@@ -1,0 +1,26 @@
+id: 352
+name: Shout
+pp: 229
+Lvl:
+  - mag 4
+  - cry 4
+  - pyr 4
+Rng: 0
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Endows the sorcerer with astonishing vocal power that
+releases in an ear-splitting sonic cone. The cone is 30
+feet long and 10 feet wide at its terminus. Those who
+are within the area of effect must make <i>sorcery</i> saving
+throws or suffer 3d6 hp damage; victims are also
+deafened for a like number of rounds. A deaf creature
+is surprized on a base 4-in-6 chance and suffers an individual
+initiative penalty of −2 (i.e., the deaf creature
+may lose initiative, despite its allies winning). Targets
+that make their saves sustain half damage and do not
+suffer deafness. Brittle objects, including glass and
+clay, might be shattered by the sonic blast. Even a <i>wall
+of ice</i> spell can be exploded by this spell. <i>Shout</i> can be
+used no more than once per day, or the caster’s vocal
+cords are damaged (no voice beyond a grating whisper;
+no spells can be cast) for 2d4 weeks.</p>"

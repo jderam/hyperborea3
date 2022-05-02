@@ -1,7 +1,7 @@
 id: 80
 name: Create Food and Water
 pp: 187
-Lvl: 
+Lvl:
   - clr 3
 Rng: 10 feet
 Dur: permanent

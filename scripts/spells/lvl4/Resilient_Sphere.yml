@@ -1,0 +1,21 @@
+id: 329
+name: Resilient Sphere
+pp: 226
+Lvl:
+  - mag 4
+  - cry 4
+  - pyr 4
+Rng: 20 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A shimmering globe of force encapsulates the subject
+of this spell, which must be of Small or Medium size.
+The subject must make a <i>sorcery</i> saving throw or be
+trapped within the confines of the <i>resilient sphere</i> until
+the spell’s duration elapses. Inside the <i>sphere</i>, the air
+is breathable. If the subject struggles for freedom, the
+only result will be a slight movement of the <i>sphere</i>; in
+fact, those who are outside the <i>sphere</i> may roll it, should
+they so choose. The <i>sphere</i> is immune to physical harm,
+but can be negated by a <i>dispel magic</i> spell, a <i>disintegrate</i>
+spell, or magic items that produce similar results.</p>"

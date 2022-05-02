@@ -1,0 +1,25 @@
+id: 298
+name: Plant Portal
+pp: 220
+Lvl:
+  - drd 4
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>Opens a magical passageway in trees, vines, or thick
+underbrush, no matter how impenetrable they appear.
+Even enchanted <i>plant growth</i> is affected by this spell.
+The portal is as large as 3 feet wide, 7 feet high, and
+100 feet long, and it remains open for 1 turn. After this
+spell is cast, those companions who are touched by the
+sorcerer (one per CA level) can pass through as well,
+though they must stay behind the caster.</p>
+<p>Alternatively, the sorcerer alone can use this spell
+enter a tree and remain within it for no longer than
+9 turns, hiding within the trunk and observing what
+transpires without. If the sorcerer does not exit the
+tree before the spell’s termination, a successful <i>transformation</i>
+saving throw must be rolled or the sorcerer
+is forever trapped; if the save succeeds the sorcerer
+is ejected. <i>Detect magic</i> will not reveal the sorcerer’s
+presence in the tree, but the <i>true seeing</i> spell will.</p>"

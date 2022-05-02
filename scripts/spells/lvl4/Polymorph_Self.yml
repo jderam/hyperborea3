@@ -1,0 +1,32 @@
+id: 300
+name: Polymorph Self
+pp: 220
+Lvl:
+  - mag 4
+  - wch 4
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The sorcerer transforms into any living creature of
+equal or lesser HD (though not a specific individual),
+from as small as a mouse to as large as a mammoth, so
+long as the caster is familiar with the desired shape.
+Upon transforming, the caster retains armour class,
+hit points, fighting ability, and saving throws. All possessions
+are melded with the new form, and the caster
+no longer realizes the benefits of any magical items,
+except for magical rings.</p>
+<p>The sorcerer acquires the natural physical abilities of
+the new form (e.g., a bear’s claw/claw/bite attacks, a
+falcon’s flight, a shark’s undersea breathing), but not
+special attacks (e.g., a snake’s venom, an eel’s electric
+shock) or defences (e.g., a dæmon’s <i>sorcery resistance</i>,
+a lycanthrope’s immunity to normal weapons). Unlike
+<i>polymorph other</i> victims, the caster retains his or her
+mental capacity, though is unable to speak as normal
+or cast other spells if the form is not humanoid. The
+sorcerer can terminate the spell at will without need
+of a <i>trauma survival</i> check; when the spell ends, the
+caster heals 2d6 hp of damage sustained (if applicable).
+If killed whilst <i>polymorphed</i>, the sorcerer’s true form
+will be revealed.</p>"

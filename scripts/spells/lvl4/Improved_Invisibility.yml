@@ -1,0 +1,17 @@
+id: 217
+name: Improved Invisibility
+pp: 207
+Lvl:
+  - ill 4
+Rng: touch
+Dur: 4 rounds + 1 round per CA level
+Rev: 0
+Desc: "<p>Functions as the <i>invisibility</i> spell (q.v.), except that its
+recipient (human, humanoid, or giant) can attack or
+cast harmful spells at enemies without reappearing in
+exchange for a more limited spell duration. The invisible
+person’s attacks, however, cause a slight shimmer
+or vibration in the air around them, allowing enemies
+to distinguish their approximate whereabouts; hence
+enemies can counterattack, though the invisible person
+enjoys a +4 AC bonus.</p>"

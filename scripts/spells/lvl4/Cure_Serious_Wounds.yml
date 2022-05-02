@@ -1,0 +1,13 @@
+id: 93
+name: Cure Serious Wounds
+pp: 188
+Lvl:
+  - clr 4
+  - drd 4
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Heals a living creature for 3d8 hp of damage previously
+sustained. The reverse of this spell, <i>inflict serious
+wounds</i>, is used to harm a living creature for 3d8 hp
+damage upon a successful touch attack.</p>"

@@ -1,7 +1,7 @@
 id: 136
 name: Exploding Skull
 pp: 195
-Lvl: 
+Lvl:
   - nec 3
   - wch 3
 Rng: touch

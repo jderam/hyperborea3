@@ -1,0 +1,23 @@
+id: 216
+name: Imbue with Spell Ability
+pp: 207
+Lvl:
+  - clr 4
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer imprints into the mind of a willing subject
+as many as three memorized spells. The recipient must
+have a minimum wisdom score of 9, or the spell will fail.
+The recipient will then be able to cast these spells at a
+time of their choosing, just as the sorcerer would. Like
+the sorcerer’s memorization, the conferred spells remain
+burnt in the recipient’s mind until they are cast.</p>
+<p>No more than two level 1 spells and one level 2 spell
+can be conferred. Once a recipient is thus <i>imbued</i>, the
+sorcerer cannot rememorize a transferred spell level
+until the recipient casts the spell. So, if a sorcerer
+grants a <i>cure light wounds</i> spell to an ally, then the
+sorcerer can rememorize one fewer level 1 spell until
+the ally casts that spell. Of course, the sorcerer cannot
+confer more spells than he or she can memorize.</p>"

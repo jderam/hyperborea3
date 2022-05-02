@@ -1,0 +1,19 @@
+id: 118
+name: Dimension Door
+pp: 192
+Lvl:
+  - mag 4
+  - nec 4
+  - pyr 4
+Rng: 10 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The caster or one other creature is transported to a
+specified location within 360 feet. If the caster is unaware
+of the destination, a distance and direction (e.g.,
+“50 feet south”) may be designated; however, if the
+destination is not a safe place on which the transported
+creature would have firm footing, or if the destination
+is solid material (such as a wall or tree), then the spell
+will fail to function. An unwilling target is allowed a
+<i>sorcery</i> saving throw to negate the spell’s effects.</p>"

@@ -1,7 +1,7 @@
 id: 184
 name: Ghoul Touch
 pp: 202
-Lvl: 
+Lvl:
   - nec 2
   - wch 2
 Rng: touch

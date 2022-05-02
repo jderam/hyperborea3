@@ -1,0 +1,24 @@
+id: 433
+name: Wall of Fire
+pp: 244
+Lvl:
+  - mag 4
+  - pyr 4
+  - drd 5
+Rng: 60 feet
+Dur: special
+Rev: 0
+Desc: "<p>Evokes an opaque, shimmering barrier of violet-red
+flames to spring from the ground. The <i>wall of fire</i> can
+be as large as 60 feet long and 20 feet high, or a circle
+of flames 30 feet in diameter and 20 feet high; both
+variations are six inches thick. The sorcerer can adjust
+the size if so desired, but not the shape. The spell
+persists for as long as the sorcerer concentrates, plus
+1 round per CA level thereafter.</p>
+<p>Creatures 3 HD and fewer cannot pass through the
+<i>wall of fire</i>; they are repelled. Creatures of 4 HD or
+greater can pass through, but they sustain 3d6 hp
+damage, +1 hp per CA level (so a CA 9 sorcerer’s <i>wall
+of fire</i> inflicts 3d6+9 hp damage). Undead suffer two
+extra damage dice: 5d6 hp, +1 hp per CA level.</p>"
