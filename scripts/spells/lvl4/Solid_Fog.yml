@@ -1,1 +1,18 @@
 id: 362
+name: Solid Fog
+pp: 231
+Lvl:
+  - cry 4
+  - ill 4
+Rng: 30 feet
+Dur: 12 rounds (2 minutes)
+Rev: 0
+Desc: "<p>Creates a cloud as large as 10 feet thick, 30 feet long,
+and 30 feet high. Only a gale-force wind (35 mph or
+greater) disperses this spell; even a <i>gust of wind</i> spell
+is insufficient. Any creature within or attempting to
+traverse the <i>solid fog</i> is slowed by the fog’s density
+to a maximum rate of 10 MV. Normal sight cannot
+penetrate <i>solid fog</i>, and <i>infrared vision</i> is unavailing.
+Potent fire spells such as <i>fireball</i>, <i>flame strike</i>, or <i>wall
+of fire</i> burn away <i>solid fog</i> in 1 round.</p>"

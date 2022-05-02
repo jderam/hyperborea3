@@ -1,1 +1,28 @@
 id: 402
+name: Summon Monster II
+pp: 238
+Lvl:
+  - mag 4
+Rng: 10 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Sorcery transports 1d4 monsters of 2 HD as determined
+by rolling on the below table. The monsters will
+arrive 1 round after the spell is cast and will defend the
+caster for the duration of the spell, after which, dead
+or alive, they disappear. The monsters will attack the
+caster’s enemies as directed; if no enemies are present,
+they may perform other simple tasks as commanded,
+intuiting the sorcerer’s intent.</p>
+<p><table><caption><b>Table 117: Summon Monster II Spell</b></caption>
+<tr><th>d10 Result</th><th>Monster Summoned</th></tr>
+<tr><td>1</td><td>Bat, Giant</td></tr>
+<tr><td>2</td><td>Bandogg</td></tr>
+<tr><td>3</td><td>Dog, War</td></tr>
+<tr><td>4</td><td>Fish-Man</td></tr>
+<tr><td>5</td><td>Ghoul</td></tr>
+<tr><td>6</td><td>Hyæna-Man</td></tr>
+<tr><td>7</td><td>Lizard-Man</td></tr>
+<tr><td>8</td><td>Spider, Giant Crab</td></tr>
+<tr><td>9</td><td>Troglodyte</td></tr>
+<tr><td>10</td><td>Zombie</td></tr></table></p>"

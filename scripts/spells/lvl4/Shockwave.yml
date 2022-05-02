@@ -1,1 +1,12 @@
 id: 351
+name: Shockwave
+pp: 229
+Lvl:
+  - wch 4
+Rng: 0
+Dur: instantaneous
+Rev: 0
+Desc: "<p>A burning, concussive wave of electromagnetic force
+emanates from the sorcerer, radiating 30 feet and
+causing 4d8 hp damage to all within range. A <i>sorcery</i>
+saving throw is allowed for half damage.</p>"

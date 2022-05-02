@@ -1,1 +1,26 @@
 id: 339
+name: Secure Shelter
+pp: 227
+Lvl:
+  - mag 4
+Rng: 20 feet
+Dur: 12 turns (2 hours) per CA level
+Rev: 0
+Desc: "<p>The sorcerer conducts a 6-turn (1-hour) ritual that
+requires the sacrifice of 500 gp in gold or gems.
+A hut or lodge is then conjured from materials natural
+to the area where the spell is cast (e.g., sod, stones,
+timbers, wattle and daub). The material rises to form a
+single-storey shelter with floor space of 30 × 30 feet. It
+may be fashioned to have windows, a door, a chimney,
+and other simple features—even a table, chairs, and
+bunk beds, if so desired. The <i>secure shelter</i> enjoys other
+enchantments as well:</p>
+<ul><li>Impervious to normal fire and normal missiles
+(arrows and quarrels)</li>
+<li>Can withstand winds not exceeding 75 mph</li>
+<li>Door(s) has a <i>sorcerer lock</i> (q.v.)</li>
+<li>Each door and window is <i>alarmed</i> (q.v.)</li>
+<li>Contains an <i>unseen servant</i> (q.v.) that maintains
+cleanliness and assists with cooking, stoking the
+fire, etc.</li></ul>"

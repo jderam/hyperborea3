@@ -1,1 +1,69 @@
 id: 393
+name: Summon Dæmon II
+pp: 235
+Lvl:
+  - mag 4
+  - nec 4
+  - wch 4
+Rng: 10 feet
+Dur: 6 rounds (1 minute) or special
+Rev: 0
+Desc: "<p>Sorcery transports a <b>lesser dæmon</b> from Underborea
+as selected by the sorcerer, depending on need. The
+dæmon will arrive 1 round after the spell is cast and
+will perform its designated task, after which, dead or
+alive, it will either disappear or turn on the caster and/
+or any allies (see below). When casting this spell, the
+sorcerer must explicitly state the <i>summoned</i> type:
+“defender,” “illuminator,” or “seeker.”</p>
+<p><ul><li><b>Defender</b>: <i>Summons</i> a random dæmon to
+assault the sorcerer’s enemies as directed for
+no longer than 6 rounds. The target(s) must be
+pointed out straight away, or else the dæmon
+will attack the sorcerer and/or any allies. If the
+stated target(s) is defeated, the standard chance
+of betrayal applies.
+<p><table><caption><b>Table 114: Summon Dæmon II Spell</b></caption>
+<tr><th>d6 Result</th><th>Defender Summoned</th></tr>
+<tr><td>1–3</td><td>Dæmon, Lesser, Class vi (1)</td></tr>
+<tr><td>4–5</td><td>Dæmon, Lesser, Class vii (1)</td></tr>
+<tr><td>6*</td><td>Dæmon, Lesser, Class viii (1)</td></tr></table>
+* A witch may summon this dæmon for the purpose of an
+unspeakable union.</p></li>
+<li><b>Illuminator</b>: <i>Summons</i> a single <b>class ix lesser
+dæmon</b>. The beast will use its special <b>legend
+lore</b> ability to determine the whereabouts of
+a subterranean artefact, of which it will then
+inform the caster and spend no more than 1
+turn attempting to locate. If the artefact does
+not exist or is not underground, the beast will
+attack the sorcerer and/or any comrades. Even
+if the treasure location is revealed successfully,
+this dæmon will demand a blood sacrifice before
+returning to Underborea; if the sacrifice is
+deemed unsuitable (at the referee’s discretion),
+the dæmon will attack. Regardless, even after
+such a sacrifice is accepted, the standard chance
+of betrayal applies.</li>
+<li><b>Seeker</b>: <i>Summons</i> a single <b>class x lesser
+dæmon</b> to search and destroy. When the <i>seeker</i>
+type is designated, the sorcerer also must
+describe the prey (name, species, and so forth).
+The dæmon then will track its quarry until it
+is found and killed, after which the standard
+chance of betrayal applies. If no trail is found
+within 6 rounds, the dæmon will attack the
+sorcerer and/or any allies. If called upon to face
+an enemy that it cannot hunt, it likewise will
+turn on the sorcerer.</li></p>
+<p><i>Betrayal:</i> Dæmons are infamous for betrayal. Upon
+completing their prescribed task, they may turn on the
+sorcerer and/or any allies on a 1-in-6 chance. Dæmons
+are, however, subject to morale checks during the
+entire <i>summon dæmon</i> process. Those that fail will
+attempt to flee (if possible), now permanent inhabitants
+of Hyperborea that may one day seek revenge.
+Wise sorcerers are known to take sanctuary within the
+confines of a candlelit magic circle whilst casting and
+maintaining this spell; of course, the magic circle will
+only protect the sorcerer, not allies.</p>"

@@ -1,1 +1,29 @@
 id: 435
+name: Wall of Ice
+pp: 244
+Lvl:
+  - mag 4
+  - cry 4
+Rng: 120 feet
+Dur: 6 turns + 1 turn per CA level
+Rev: 0
+Desc: "<p>Evokes an opaque, blue-white, rimy barricade to spring
+from the ground. The <i>wall of ice</i> can be as large as 60
+feet long and 20 feet high, or a circle 30 feet in diameter
+and 20 feet high; both variations are six inches thick.
+The sorcerer can adjust the size if so desired, but not the
+shape. The <i>wall</i> negates most spells and powers related
+to fire, unless the magical fire wielder is of greater CA
+(or HD) than the sorcerer who conjured the <i>wall of ice</i>.</p>
+<p><i>Wall of ice</i> repels all creatures of 3 HD or fewer. Creatures
+of 4 HD or greater can attempt to break through
+with <i>extraordinary feats of strength</i>; this endeavour
+requires 1d6 turns and assumes the use of heavy hammers,
+axes, picks, or the like. (For many monsters, the
+referee will need to assign a reasonable strength score
+based on the creature’s HD, size, and mass.) Most
+unintelligent creatures will see the <i>wall</i> as an impenetrable
+barrier and will not consider breaking through
+it. Smashing through causes 2d6 hp damage for most
+creatures (due to collapsing ice); creatures of or related
+to heat or fire suffer 3d6 hp damage.</p>"

@@ -1,1 +1,17 @@
 id: 354
+name: Shroud of Fear
+pp: 230
+Lvl:
+  - nec 4
+  - clr 4
+Rng: 0
+Dur: 1 turn
+Rev: 0
+Desc: "<p>The sorcerer radiates a personal aura of <i>fear</i> in a
+three-foot radius upon uttering this spell, manifesting
+as a ghostly, nearly imperceptible death shroud. Any
+creature (friend or foe) that intrudes on this space
+must make a <i>sorcery</i> saving throw, modified by <i>willpower
+adjustment</i>, if applicable, or run away in terror
+for 6 rounds (1 minute). This spell has no effect against
+the undead or mindless constructs.</p>"

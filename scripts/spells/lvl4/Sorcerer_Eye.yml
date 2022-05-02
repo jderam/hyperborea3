@@ -1,1 +1,22 @@
 id: 363
+name: Sorcerer Eye
+pp: 231
+Lvl:
+  - mag 4
+  - cry 4
+  - ill 4
+  - nec 4
+  - pyr 4
+  - wch 4
+Rng: 240 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>An invisible oculus is conjured and sent forth to “see”
+for the sorcerer, providing visual sensory information.
+The <i>sorcerer eye</i> drifts at 30 MV and can see 60 feet
+ahead of itself if light is present; lacking illuminance,
+the <i>eye</i> sees with <i>infrared vision</i> to a range of 30 feet
+and can float in any direction as dictated by the sorcerer,
+who must sit cross-legged with eyes closed, concentrating.
+The spell ends when the sorcerer’s eyes open,
+or when the duration expires.</p>"

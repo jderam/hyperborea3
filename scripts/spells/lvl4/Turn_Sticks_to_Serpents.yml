@@ -1,1 +1,18 @@
 id: 424
+name: Turn Sticks to Serpents
+pp: 243
+Lvl:
+  - nec 4
+  - wch 4
+  - clr 4
+  - drd 5
+Rng: 30 feet
+Dur: 2 rounds per CA level
+Rev: 1
+Desc: "<p>Through incantations the sorcerer transforms sticks
+into snakes, in numbers not exceeding the caster’s CA
+level, if sufficient sticks are within range. Each stick becomes
+a three-foot <b>viper</b> that obeys the sorcerer’s will.
+The reverse of this spell, <i>turn serpents to sticks</i>, transforms
+a snake or snakes into sticks. As many HD worth
+of snakes can be affected as the sorcerer has CA levels.</p>"
