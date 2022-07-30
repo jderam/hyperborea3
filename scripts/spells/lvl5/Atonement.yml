@@ -1,0 +1,22 @@
+id: 22
+name: Atonement
+pp: 178
+Lvl:
+  - clr 5
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>Usually cast on those of similar religion and/or like
+alignment, this spell takes 1 hour to cast, following
+prayer, cogitation, and incense burning. It removes the
+onus of misdeeds that are unknowingly, unintentionally,
+or unwillingly committed; also, this spell can undo
+the effects of magical alignment change. If the recipient
+has exercised poor judgment and consequently
+violated the precepts of faith and/or alignment, this
+spell can remove the burden or penalties accorded if
+the character is truly repentant. Ultimately, the subject’s
+contrition must be judged by the referee. One
+cannot <i>atone</i> for deliberate misdeeds. The recipient
+of the <i>atonement</i> spell might be charged with a <i>quest</i>
+(q.v.) to complete his reparations.</p>"

@@ -1,0 +1,17 @@
+id: 12
+name: Animal Growth
+pp: 177
+Lvl:
+  - drd 5
+Rng: 120 feet
+Dur: 6 rounds (1 minute) per CA level
+Rev: 1
+Desc: "<p>Causes as many as six normal beasts (amphibians,
+birds, fish, mammals, or reptiles; not humans, humanoids,
+or monsters) to double in size. The effect results
+in doubled hit dice, doubled damage dice, and whatever
+else the referee deems appropriate. The reverse of this
+spell, <i>animal reduction</i>, shrinks as many as six animals
+to half their normal size, resulting in halved hit
+dice and halved damage on attacks. No saving throw is
+permitted for either form of this spell.</p>"

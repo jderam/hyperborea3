@@ -1,0 +1,19 @@
+id: 8
+name: Air-like Water
+pp: 176
+Lvl:
+  - mag 5
+Rng: 0
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Transforms a 30-foot-diameter sphere of fresh or
+salt water into a magical, bubbling solution that can
+be inhaled safely by air-breathing creatures; furthermore,
+underwater pressure is negated. The spell
+can be cast as the sorcerer enters the water or after
+submerging, the <i>air-like water</i> moving with the caster.
+Water-breathing creatures will instinctively avoid the
+sphere, as they cannot respire within its confines, but
+this general eschewal does not preclude certain predators
+of the deep from attempting to snatch prey from
+the <i>air-like water</i>.</p>"

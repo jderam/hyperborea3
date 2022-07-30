@@ -1,0 +1,16 @@
+id: 21
+name: Anti-Plant Shell
+pp: 178
+Lvl:
+  - drd 5
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Creates an invisible, 10-foot-radius, hemispherical field
+that encircles the sorcerer. The barrier prevents any
+plant from breaching the <i>anti-plant shell</i> or attacking
+him, including vegetal monsters such as <b>green slime</b>,
+<b>mustard mould</b>, <b>shambling mounds</b>, and <b>tree-men</b>.
+Those afforded the protection of this spell cannot attack
+or otherwise harm any plant creature outside the
+<i>shell</i>, or the spell will terminate.</p>"

@@ -1,0 +1,15 @@
+id: 20
+name: Anti-Magic Field
+pp: 178
+Lvl:
+  - mag 6
+  - wch 5
+Rng: 0
+Dur: 12 rounds (2 minutes)
+Rev: 0
+Desc: "<p>Evokes a magical energy shield to surround the sorcerer
+at a radius of one foot per CA level. The <i>anti-magic
+field</i> repels any spell or sorcerous effect (as from a
+ring, staff, wand, etc.); however, just as no spell or spell
+effect can enter the shell, no spell or spell effect can
+exit it, either.</p>"
