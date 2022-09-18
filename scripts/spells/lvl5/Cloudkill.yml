@@ -1,0 +1,19 @@
+id: 59
+name: Cloudkill
+Lvl:
+  - mag 5
+  - nec 5
+Rng: 10 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A 30-foot-diameter, 20-foot-high cloud of poisonous,
+green-yellow vapours is evoked by the sorcerer. The
+cloud is heavy and clings low to the ground, much like
+fog, rolling at 30 MV in a direction pointed by the caster.
+Once the sorcerer points, the cloud’s momentum
+cannot be altered unless significant wind, which always
+prevails over the will of the sorcerer, exists. Unusually
+strong winds may disperse the cloud entirely. The
+<i>cloudkill</i> spell slays any creature in its path with fewer
+than 5 HD; creatures of 5 HD or more must roll <i>death</i>
+(poison) saving throws or suffer 3d6 hp damage.</p>"

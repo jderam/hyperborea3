@@ -1,0 +1,12 @@
+id: 85
+name: Cure Critical Wounds
+Lvl:
+  - clr 5
+  - drd 6
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Heals a living creature for 4d8 hp of damage previously
+sustained. The reverse of this spell, <i>inflict critical
+wounds</i>, is used to harm a living creature for 4d8 hp
+damage upon a successful touch attack.</p>"

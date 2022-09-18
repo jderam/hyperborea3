@@ -1,0 +1,40 @@
+id: 69
+name: Contact Otherworldly Being
+Lvl:
+  - mag 5
+  - cry 5
+  - pyr 5
+Rng: 0
+Dur: special
+Rev: 0
+Desc: "<p>This ritualistic spell requires 1 turn to cast and necessitates
+the sacrifice of 500 gp, or gems of equal value.
+The sorcerer must sit before a fire and chant in tongues
+without being spoken to or interrupted. If these requisites
+are met, the sorcerer contacts and seeks guidance
+from an otherworldly being such as a spirit, dæmon,
+deity, or demigod.</p>
+<p>As many as three questions may be asked. The more
+questions asked, the more information can be gleaned;
+however, the more questions asked, the greater the
+chance of becoming insane for daring to engage such
+beings. Consult the following table after deciding how
+many questions to ask. Your referee will secretly determine
+and inform you of the results.</p>
+<p><table><caption><b>Table 102: Contact Otherworldly Being Spell</b></caption>
+<tr><th>Number of Questions</th><th>Veracity of Answer</th><th>Chance of Insanity</th></tr>
+<tr><td>1</td><td>3:6</td><td>—</td></tr>
+<tr><td>2</td><td>4:6</td><td>1:6</td></tr>
+<tr><td>3</td><td>5:6</td><td>2:6</td></tr></table></p>
+<p>Each question should be checked individually. Responses
+will be simple, one-word answers: “Yes,” or
+“No,” or “Maybe,” being the most common, though
+“Futile,” or “Inconceivable,” or “Irrelevant,” or “Foolish,”
+might also be the response. If two or three questions
+are asked, and the second d6 roll so indicates, the
+caster is driven mad within 1 turn. The insane sorcerer
+will rant and rave incoherently, is unable to properly
+care for himself or herself, and may prove combative
+and self-destructive. Insanity will persist for as many
+weeks as the number of questions asked. A cure madness
+or remove curse spell can alleviate the insanity.</p>"

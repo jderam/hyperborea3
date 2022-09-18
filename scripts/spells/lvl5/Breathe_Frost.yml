@@ -1,0 +1,21 @@
+id: 39
+name: Breathe Frost
+Lvl:
+  - cry 5
+Rng: 10 feet
+Dur: special
+Rev: 0
+Desc: "<p>The lips of the sorcerer must be pursed after speaking
+the final incantation of this spell, for the next time
+the sorcerer’s mouth is opened, a billowing jet of frost
+10 feet long and 5 feet wide at its terminus is released.
+Victims in this path sustain 3d8+3 hp damage, though
+they can attempt <i>avoidance</i> saving throws for half
+damage. The sorcerer’s mouth may be opened at will
+to release this spell, perhaps during combat or other
+like activities; however, other spells may not be cast.
+If <i>breathe frost</i> is not released within 1 turn (10 minutes),
+the sorcerer internally freezes, sustaining maximum
+damage (27 hp) with no saving throw applicable.
+(This spell can be dangerous if the caster is forgetful
+and speaks to an ally or another person.)</p>"

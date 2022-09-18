@@ -1,0 +1,10 @@
+id: 90
+name: Cure Madness
+Lvl:
+  - clr 5
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Remedies all forms of insanity, whether magically induced
+or naturally occurring. For the reverse version
+of this spell (an evil act if cast), see <i>inflict madness</i>.</p>"
