@@ -1,0 +1,23 @@
+id: 154
+name: Finger of Death
+Lvl:
+  - nec 6
+  - wch 6
+  - clr 5
+  - drd 6
+Rng: 30 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The sorcerer points at a target and utters a baleful
+incantation; from the sorcerer’s finger emits a death
+ray. The target must make a <i>death</i> saving throw or die.
+For every point of difference between the sorcerer’s
+CA and the target’s level/HD, the saving throw is
+modified by ±1. So, if a CA 11 sorcerer casts this spell
+against a 12th-level fighter, the fighter gains a +1 bonus
+to the saving throw; if the target is a 7th-level fighter,
+the saving throw is rolled at a −4 penalty. This sorcery
+is associated with dæmonism, so if not already Evil,
+the caster will likely gravitate to that ethos through its
+indiscriminate use; for clerics and druids, excommunication
+may result.</p>"

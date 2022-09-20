@@ -1,0 +1,13 @@
+id: 139
+name: Extend Spell II
+Lvl:
+  - mag 5
+  - cry 5
+  - pyr 5
+Rng: special
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer must cast this spell 1 round after casting
+a level 1–4 spell. Doing so doubles the duration of level
+1–4 spells; e.g., an <i>extrasensory perception</i> spell can
+be made to last 2 rounds per CA level instead of 1.</p>"

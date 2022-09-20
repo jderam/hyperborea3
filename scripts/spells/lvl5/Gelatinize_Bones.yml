@@ -1,0 +1,22 @@
+id: 183
+name: Gelatinize Bones
+Lvl:
+  - nec 5
+  - wch 6
+Rng: 90 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Causes the victim’s skeleton to become viscous. Unless
+a <i>transformation</i> saving throw is made, the victim
+collapses to a blubbery glob of flesh, still breathing
+but unable to move and hardly able to eat or drink
+unless assisted. The victim cannot manipulate objects,
+speech is limited to grunts and groans, and breathing
+is a terrible labour. Death is inevitable, usually transpiring
+within two to four weeks, though some victims
+have been known to survive for months or even years
+if provided constant care. Means do exist by which this
+curse can be undone: the spells <i>heal</i> or <i>regeneration</i>,
+but the process is painful, causing 3d6 hp damage and
+requiring a <i>trauma survival</i> check to survive the ordeal
+(see <b>Chapter 3: Statistics</b>, <i>constitution</i>).</p>"

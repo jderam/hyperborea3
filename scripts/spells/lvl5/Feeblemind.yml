@@ -1,0 +1,23 @@
+id: 150
+name: Feeblemind
+Lvl:
+  - mag 5
+  - nec 5
+  - clr 6
+  - drd 6
+Rng: 120 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>This enchantment affects humans or other creatures
+who cast spells. Creatures with innate spell-like abilities
+do not qualify unless they too are spell casters.
+The target must make a <i>sorcery</i> saving throw, modified
+by <i>willpower adjustment</i>, if applicable. If the target
+is of higher CA than the caster, the save is made at a
++1 bonus per level difference; conversely, if the target
+is of lesser CA than the caster, the save is made at a
+−1 penalty per level difference. If the save fails, the
+victim becomes a drooling idiot, an invalid incapable of
+coherent speech or thought and likewise incapable of
+controlling bodily functions. <i>Feeblemind</i> is negated by
+<i>dispel magic</i> or cured by a <i>heal</i> spell.</p>"

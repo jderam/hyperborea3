@@ -1,0 +1,24 @@
+id: 101
+name: Death Smoke Cloud
+Lvl:
+  - pyr 5
+Rng: 90 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer evokes a 60-foot-diameter, 20-foot-high
+cloud of hot black smoke; those within suffer intense
+burning. Any creature 4 HD or fewer sustains 6d6 hp
+damage, with no saving throw allowed. Creatures of
+5 HD or greater are allowed <i>sorcery</i> saving throws for
+half damage.</p>
+<p>The damaging effects of this cloud are instantaneous;
+i.e., they occur on the round the spell is cast. Afterwards,
+the cloud remains for as many rounds as the
+caster has CA levels. The remaining cloud induces
+mild coughing, irritates the eyes, and obstructs the vision
+of those within its confines. Missiles may be fired
+10 feet into the cloud at a −4 penalty, but longer ranges
+are impossible; melee within the cloud is likewise at
+−4 “to hit” penalty. <i>N.B.:</i> If this spell is cast in an area
+too small to confine its size, then the sorcerer too may
+be subject to its effects.</p>"

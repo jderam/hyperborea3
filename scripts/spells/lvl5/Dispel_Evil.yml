@@ -1,0 +1,21 @@
+id: 123
+name: Dispel Evil
+Lvl:
+  - clr 5
+Rng: 0
+Dur: 1 turn
+Rev: 1
+Desc: "<p>In a 30-foot radius, banishes Evil creatures summoned,
+conjured, or enchanted by another sorcerer. Even
+creatures of Neutrality can be banished if they were
+conjured by an Evil sorcerer. Possible candidates include
+<b>dæmons</b>, <b>elementals</b>, <b>invisible stalkers</b>, and the
+undead. Each is allowed a <i>sorcery</i> saving throw to resist
+the spell’s effect. Even if they make their saving throws,
+they will vacate the area of effect for as long as the sorcerer
+continues to chant. Alternatively, <i>dispel evil</i> can be
+used as a touch spell on a single opponent, in which case
+the saving throw is made at a −2 penalty. The reverse
+of this spell, <i>dispel good</i>, is used by wicked sorcerers to
+the same effect, albeit versus Good-aligned subjects and
+other creatures controlled by agents of Good.</p>"

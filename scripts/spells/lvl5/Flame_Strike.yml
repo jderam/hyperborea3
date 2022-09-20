@@ -1,0 +1,17 @@
+id: 165
+name: Flame Strike
+Lvl:
+  - pyr 5
+  - clr 5
+  - drd 5
+Rng: 60 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Evokes a column of roaring fire to descend from the
+air, perhaps immolating a sacrifice to whatever power
+or otherworldly being the sorcerer serves. The <i>flame
+strike</i> is 50 feet high and 10 feet in diameter. Any creature
+in the area of effect suffers 6d8 hp damage, with
+a <i>sorcery</i> saving throw allowed for half damage. This
+spell is popular with druids who sacrifice victims (often
+criminals) via wicker man effigy.</p>"

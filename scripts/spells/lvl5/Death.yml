@@ -1,0 +1,14 @@
+id: 98
+name: Death
+Lvl:
+  - mag 6
+  - nec 5
+Rng: 240 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>In a 60 × 60-foot area, slays 2d8 living creatures of
+6 HD or less, starting with the lowest-HD creatures
+first. Subjects are allowed <i>death</i> saving throws. If they
+fail, their internal organs rupture, spelling instant
+death. If they make their saving throws, they instead
+suffer 3d6 hp damage each.</p>"

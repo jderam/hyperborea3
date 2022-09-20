@@ -1,0 +1,33 @@
+id: 122
+name: Dismissal
+Lvl:
+  - mag 5
+  - cry 5
+  - nec 5
+  - pyr 5
+  - wch 5
+Rng: 10 feet
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Banishes a creature of otherworldly, netherworldly,
+or extra-dimensional origin. The common name of the
+creature type must be known by the sorcerer; if the
+creature has a proper name (such as a dæmon), then
+this too must be known by the sorcerer or the spell cannot
+be cast successfully. Some such creatures have <i>sorcery
+resistance</i>, so this must be checked first. Next, the
+target is allowed a <i>sorcery</i> saving throw (unless it does
+not seek to resist). If the spell is successful, the victim
+is swept away, usually to its realm of origin, though on
+a 2-in-10 chance it is sent to some other random place.</p>
+<p>The reverse of this spell, <i>beckon</i>, calls forth a creature
+from another world or dimension, if its type and proper
+name (if applicable) are known by the sorcerer. The same
+<i>sorcery resistance</i> and saving throw method as described
+above should be used. The <i>beckoned</i> creature materializes
+10 feet before the sorcerer and may not be pleased about
+being ripped so rudely from its home. Some sorcerers
+seek to protect themselves from the <i>beckoned</i> by staying
+within a candlelit magic circle. N.B.: Neither form of this
+spell functions on creatures native to the world or dimension
+in which the spell is cast.</p>"
