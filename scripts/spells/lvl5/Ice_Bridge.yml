@@ -1,0 +1,23 @@
+id: 207
+name: Ice Bridge
+Lvl:
+  - cry 5
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>A blast of crystalline blue frost explodes from the sorcerer’s
+down-stretched hands, creating a 2½-foot-wide,
+six-inch-thick plane of ice underfoot. With full concentration,
+the sorcerer continues to animate the ice, riding
+on it as it forms a constant slide or viaduct, propelling
+the caster forwards at a rate of 40 MV. The <i>ice bridge</i>
+can form in a straight line, up or down at a maximum 45°
+angle, and/or curved to a 45° angle. The <i>ice bridge</i> need
+not stay affixed to its point of origin—in fact, it oft crumbles
+away behind the sorcerer—but if the sorcerer does
+not connect to stable ground by the end of the spell, or
+if concentration is disrupted, falling is unavoidable. An
+ally can hold onto the sorcerer’s waist and catch a ride
+on the <i>ice bridge</i> if the sorcerer is of at least average
+(9–12) strength; two riders may be conveyed if the sorcerer
+is of above-average (13+) strength.</p>"

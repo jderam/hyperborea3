@@ -1,0 +1,25 @@
+id: 254
+name: Maze
+Lvl:
+  - ill 5
+Rng: 60 feet
+Dur: special
+Rev: 0
+Desc: "<p>Creates an extra-dimensional space where the victim is
+forced to wander a shifting labyrinth of energy planes.
+No saving throw is allowed. The victim is entrapped
+thus for a period dependent on its intelligence:</p>
+<p><table><caption><b>Table 105: Maze Spell</b></caption>
+<tr><th>Intelligence Score</th><th>Duration</th></tr>
+<tr><td>3–5</td><td>1d4 turns</td></tr>
+<tr><td>6–8</td><td>1 turn</td></tr>
+<tr><td>9–12</td><td>1d8 minutes</td></tr>
+<tr><td>13–16</td><td>1d6 minutes</td></tr>
+<tr><td>17–18</td><td>1d4 minutes</td></tr></table></p>
+<p>The referee may assign or roll (3d6) the intelligence of
+monsters and NPCs. Scores of 3–5 should be assigned
+to animals and semi-intelligent creatures; scores of 6–8
+should be assigned to creatures of less than average intelligence;
+scores of 9–12 should be considered average;
+scores of 13–16 should be considered above average; and
+scores of 17–18 should be considered high intelligence.</p>"
