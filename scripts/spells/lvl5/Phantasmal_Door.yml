@@ -1,0 +1,19 @@
+id: 290
+name: Phantasmal Door
+Lvl:
+  - ill 5
+Rng: 10 feet
+Dur: 6 rounds (1 minute) per CA level
+Rev: 0
+Desc: "<p>The sorcerer creates an illusion of an unremarkable
+portal. At a time of the caster’s choosing (within the
+spell’s duration), the sorcerer will appear to enter the
+door and close it behind him or her. The sorcerer has
+in fact stepped away in a state of <i>invisibility</i>, which
+persists as long as this spell lasts.</p>
+<p>If the <i>phantasmal door</i> is opened, it reveals a 10 × 10-foot
+room that appears vacant and presents no egress.
+The room has quasi-actuality; if entered, it is truly
+there, but once the spell ends it will eject its occupants.
+No saving throw can resist the effects of this spell;
+however, <i>dispel phantasm</i> can disrupt it.</p>"

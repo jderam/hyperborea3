@@ -1,0 +1,25 @@
+id: 295
+name: Plague Rats
+Lvl:
+  - nec 5
+Rng: 60 feet
+Dur: special
+Rev: 0
+Desc: "<p>Conjures forth 1d6 plague-infested black <b>rats</b>. The
+rats must be directed by the caster to attack a victim.
+The rats attack on the next round and continue to do
+so until slain or until their victim is dead. The caster is
+free to perform other actions whilst this occurs.</p>
+<p><i>Plague rats</i> carry a contagious and deadly disease.
+Bite victims must make a <i>death</i> (poison) saving throw
+or suffer <i>plague</i> (as <i>inflict disease</i>, the reverse form
+of <i>cure disease</i> [q.v.]). This variation of the disease,
+however, is contagious; anyone who comes in contact
+with the victim must also make a <i>death</i> (poison) saving
+throw or suffer the same malady. The <i>plague</i> is aggressive
+and airborne; within one week of affliction, the victim
+will develop a cough that might, per the referee’s
+discretion, affect others through proximity or physical
+contact with infected objects (e.g., door handles, food,
+tools). The disease is likely to kill its victims within four
+months, not one year as <i>inflict disease</i> suggests.</p>"

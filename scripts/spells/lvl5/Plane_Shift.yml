@@ -1,0 +1,20 @@
+id: 296
+name: Plane Shift
+Lvl:
+  - clr 5
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The sorcerer and as many as six allies (all holding
+hands) shift to another plane of existence: a realm
+unseen, a place of shadows, smoke, death, and destruction,
+where all is ruin and where dwell forlorn spirits,
+shadowy beasts, and other nameless horrors endure.
+Those transported by <i>plane shift</i> are cursed to forever
+remain in this realm of despair unless brought back by
+the sorcerer or some other agent. Encounters in this
+shadowy realm are entirely possible, as the referee will
+determine, and frequent visitors are more likely to garner
+attention. If this spell is used offensively to banish
+an opponent, the target must be of 6 HD or fewer and is
+allowed a <i>sorcery</i> saving throw to resist its effects.</p>"
