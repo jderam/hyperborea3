@@ -1,0 +1,30 @@
+id: 391
+name: Summon Bat Swarm
+Lvl:
+  - nec 5
+  - wch 5
+  - drd 5
+Rng: 90 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A rabid cloud of tiny bats is <i>summoned</i>, manifesting all
+about the sorcerer, whose arms are spread wide. The
+<i>bat swarm</i> will attack 1 round after being <i>summoned</i>,
+surging forth as directed by the sorcerer. As long as
+the caster concentrates and points at the target, the
+victim suffers 5 hp damage per round.</p>
+<p>Whilst engulfed, the victim cannot cast spells, missile
+attacks are impossible, and melee attacks are at a
+−4 “to hit” penalty. Other actions such as drinking a
+potion, activating a magic item, using a magic ability,
+etc. are subject to a 3-in-6 chance of failure. Too,
+a <i>swarm</i> victim suffers a −4 AC penalty. Fleeing the
+<i>swarm</i> may be the victim’s only recourse, for it can harass
+only to the limit of the spell’s range. A <i>swarm</i> can
+be directed to move to another opponent within range,
+but 1 round will elapse for every 30 feet between the
+targets. After being attacked, victims must make
+<i>death</i> (poison) saves or suffer pain and burning from
+the multitudinous sites of infection, followed by headaches,
+muscle spasms, and difficulty swallowing. Death
+will ensue in 2d6 days unless <i>cure disease</i> is cast.</p>"

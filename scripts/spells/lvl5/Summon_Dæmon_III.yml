@@ -1,0 +1,73 @@
+id: 394
+name: Summon Dæmon III
+Lvl:
+  - mag 6
+  - nec 6
+  - wch 5
+Rng: 10 feet
+Dur: 6 rounds (1 minute) or special
+Rev: 0
+Desc: "<p>Sorcery transports a <b>lesser dæmon</b> from Underborea
+as selected by the sorcerer, depending on need. The
+dæmon will arrive 1 round after the spell is cast and
+will perform its designated task, after which, dead
+or alive, it will either disappear or turn on the caster
+and/or any allies (see below). When casting this spell,
+the sorcerer must explicitly state the <i>summoned</i> type:
+“defender,” “illuminator,” or “seeker.”</p>
+<ul><li><b>Defender</b>: <i>Summons</i> a random dæmon to
+assault the sorcerer’s enemies as directed for
+no longer than 6 rounds. The target(s) must be
+pointed out straight away, or else the dæmon
+will attack the sorcerer and/or any allies. If the
+stated target(s) is defeated, the standard chance
+of betrayal applies.
+<p><table><caption><b>Table 115: Summon Dæmon III Spell</b></caption>
+<tr><th>d6 Result</th><th>Defender Summoned</th></tr>
+<tr><td>1–3</td><td>Dæmon, Lesser, Class xi (1)</td></tr>
+<tr><td>4–5</td><td>Dæmon, Lesser, Class xii (1)</td></tr>
+<tr><td>6</td><td>Dæmon, Lesser, Class xiii (1)</td></tr></table></p></li>
+<li><b>Illuminator</b>: <i>Summons</i> a single <b>class xiv lesser
+dæmon</b>. The beast can use its special <i>legend lore</i>
+ability to determine the whereabouts of an artefact,
+of which it will then inform the caster. If
+the artefact does not exist, the beast will attack
+the sorcerer and/or any comrades. Alternatively,
+it can be called upon to use its <i>tongues</i> ability to
+converse with any intelligent creature present.
+Lastly, it instead can grant wisdom by use of its
+<i>contact otherworldly being</i> ability, with no risk
+of insanity. No matter the case, once the dæmon
+has completed its service, the standard chance
+of betrayal applies; however, in the latter case
+(<i>contact otherworldly being</i>), each question
+beyond the first increases the dæmon’s chance of
+betrayal by 1-in-6.</li>
+<li><b>Seeker</b>: <i>Summons</i> a single <b>class xv lesser
+dæmon</b> to search and destroy. When the <i>seeker</i>
+type is designated, the sorcerer also must
+describe the prey (name, species, and so forth).
+The dæmon then will <i>teleport</i> itself and the
+sorcerer before said prey and attempt to slay
+it, after which the standard chance of betrayal
+applies. If no prey exists, the dæmon will attack
+the sorcerer and/or any comrades. Alternatively,
+this dæmon can be asked to <i>plane shift</i> the
+sorcerer and as many as five allies. This act
+of utter desperation cannot be undone by the
+same or another lesser dæmon; it is permanent,
+barring some other means of translocation. The
+dæmon then either will disappear (laughing all
+the while) or will turn on the sorcerer and any
+allies (q.v.).</li></ul>
+<p><i>Betrayal:</i> Dæmons are infamous for betrayal. Upon
+completing their prescribed task, they may turn on the
+sorcerer and/or any allies on a 1-in-6 chance. Dæmons
+are, however, subject to morale checks during the
+entire <i>summon dæmon</i> process. Those that fail will
+attempt to flee (if possible), now permanent inhabitants
+of Hyperborea that may one day seek revenge.
+Wise sorcerers are known to take sanctuary within the
+confines of a candlelit magic circle whilst casting and
+maintaining this spell; of course, the magic circle will
+only protect the sorcerer, not allies.</p>"

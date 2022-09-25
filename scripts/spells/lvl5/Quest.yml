@@ -1,0 +1,25 @@
+id: 316
+name: Quest
+Lvl:
+  - clr 5
+Rng: 30 feet
+Dur: special
+Rev: 1
+Desc: "<p>Compels the victim (human, humanoid, or giant) to
+carry out some service or task until it is completed. To
+resist the spell, the target may make a <i>sorcery</i> saving
+throw, modified by <i>willpower adjustment</i>, if applicable.
+The task must be reasonably achievable and not
+a blatant death sentence, or the spell breaks after one
+or two weeks. (One cannot be directed to jump off a
+cliff, but one may be charged with a quest to climb a
+dangerous cliff.)</p>
+<p>Failure results in a curse as charged by the sorcerer who
+laid the <i>quest</i> spell. When cast by a player character, the
+resulting curse is up to the imagination of the player
+(with referee approval). When cast by a non-player
+character, the PC is at the mercy of the referee’s device.
+The reverse of this spell, <i>remove quest</i>, can cancel
+its effects or those of a <i>geas</i> spell, but <i>dispel magic</i> is
+ineffective. If cursed by failure to complete the <i>quest</i>, a
+<i>remove curse</i> spell also can negate the curse.</p>"

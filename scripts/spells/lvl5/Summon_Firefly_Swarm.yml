@@ -1,0 +1,26 @@
+id: 397
+name: Summon Firefly Swarm
+Lvl:
+  - pyr 5
+  - drd 5
+Rng: 90 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer <i>summons</i> 5d4 fist-sized <i>fireflies</i>, infernal
+insects sheathed in green flames, which attack on
+command. Each <i>firefly</i> has the following statistics: <b>MV</b>
+0 (fly 50); <b>AC</b> 7; <b>HD</b> ½ (<b>hp</b> 1). The <i>firefly swarm</i> will attack
+1 round after being <i>summoned</i>. The victim suffers
+2 hp damage (3 hp for undead) per <i>firefly</i> per round, as
+long as the caster concentrates and points at the target.</p>
+<p>Whilst engulfed, the victim cannot cast spells, missile
+attacks are impossible, and melee attacks are at a
+−4 “to hit” penalty. Other actions such as drinking a
+potion, activating a magic item, using a magic ability,
+etc. are subject to a 3-in-6 chance of failure. Too,
+a <i>swarm</i> victim suffers a −4 AC penalty. Fleeing the
+<i>swarm</i> may be the victim’s only recourse, for it can harass
+only to the limit of the spell’s range. A <i>swarm</i> can
+be directed to move to another opponent within range,
+but 1 round will elapse for every 30 feet between the
+targets.</p>"
