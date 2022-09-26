@@ -1,0 +1,16 @@
+id: 436
+name: Wall of Iron
+Lvl:
+  - mag 5
+Rng: 60 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Evokes a vertical metal partition to rise from the
+ground, typically to seal off a passage or wall breach.
+The <i>wall of iron</i> must have appropriate anchor points
+and cannot be made to stand in open space. The <i>wall</i>
+is three inches thick and covers an area as large as 600
+square feet (e.g., 20 feet high and 30 feet long, 10 feet
+high and 60 feet long). A <i>wall of iron</i> can be destroyed
+by a <i>dispel magic</i> spell; it is otherwise permanent unless
+battered down.</p>"

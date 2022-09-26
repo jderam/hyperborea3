@@ -1,0 +1,15 @@
+id: 438
+name: Wall of Stone
+Lvl:
+  - mag 5
+Rng: 60 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Evokes a granite barricade to spring from the ground.
+The <i>wall of stone</i> can be made to stand vertically or lie
+horizontally, per the will of the sorcerer. The <i>wall</i> is two
+feet thick and covers an area as large as 1,000 square
+feet (e.g., 20 feet high and 50 feet long; 10 feet high and
+100 feet long). A <i>wall of stone</i> can be destroyed by a
+<i>dispel magic</i> spell. It is otherwise permanent unless
+broken down or chipped away.</p>"
