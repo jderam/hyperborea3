@@ -1,5 +1,6 @@
 id: 101
 name: Death Smoke Cloud
+pp: 190
 Lvl:
   - pyr 5
 Rng: 90 feet

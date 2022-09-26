@@ -1,5 +1,6 @@
 id: 90
 name: Cure Madness
+pp: 188
 Lvl:
   - clr 5
 Rng: touch

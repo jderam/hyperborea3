@@ -1,5 +1,6 @@
 id: 403
 name: Summon Monster III
+pp: 238
 Lvl:
   - mag 5
 Rng: 10 feet
