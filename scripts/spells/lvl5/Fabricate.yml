@@ -1,0 +1,16 @@
+id: 144
+name: Fabricate
+pp: 196
+Lvl:
+  - mag 5
+Rng: 10 feet per CA level
+Dur: permanent
+Rev: 0
+Desc: "<p>Converts local materials into a desired shape or function.
+A bridge may be built from stones, a house from
+sticks and mud, or a raft from logs. Imagination is the
+limit, though each such construction must be crude and
+uncomplicated. The sorcerer can convert 10 cubic feet
+of material per CA level; e.g., a CA 10 magician could
+erect a bridge 1 foot thick, 5 feet wide, and 20 feet long.
+Completing this spell requires 1 round per 10 cubic feet.</p>"

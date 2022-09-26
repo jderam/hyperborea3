@@ -1,4 +1,4 @@
-subdir = "lvl4"
+subdir = "lvl5"
 
 with open(f"{subdir}/spell_names.txt", "r") as f:
     lines = f.readlines()

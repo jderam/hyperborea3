@@ -1,0 +1,20 @@
+id: 64
+name: Commune
+pp: 184
+Lvl:
+  - clr 5
+Rng: 0
+Dur: special
+Rev: 0
+Desc: "<p>The faithful servant of a deity, otherworldly being, or
+alien power must pray and meditate for 3 turns to cast
+this spell. The ritual must coincide with the burning of incense
+and the handling of a holy symbol and prayer beads.
+Other ritualistic sacrifices are open to interpretation.</p>
+<p>Once the ritual is complete, the caster may ask the deific
+patron as many as three questions. The patron will
+answer correctly with a straightforward “yes “or “no.”
+Ambiguous or convoluted questions will be ignored,
+but still count against the three-question limit. This
+spell can be cast but once per adventure or once per
+month, as the referee deems appropriate.</p>"

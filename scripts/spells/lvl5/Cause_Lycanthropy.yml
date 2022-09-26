@@ -1,0 +1,22 @@
+id: 47
+name: Cause Lycanthropy
+pp: 182
+Lvl:
+  - wch 5
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>This 24-hour ritual must be timed to coincide with a full
+moon’s zenith (Phobos or Selene). The victim must be
+bound to a tree or stone slab, suffering diabolical rites
+that culminate with the sorcerer tracing a six-pointed
+star on the victim’s breast with an ember-ended stick.
+The change manifests in 3d8 days, and until that time
+the victim will feel ill, suffering terrifying nightmares
+that are impossible to recall; even the ritual endured is
+but a vague memory. Ultimately, the victim is cursed
+with <i>lycanthropy</i> and becomes a <b>werewolf</b>. The creature
+cannot be controlled; however, it will not bring
+harm to the caster. A <i>cure disease</i> spell cast by a
+9th-level or greater cleric, priest, shaman, or witch can
+end this affliction.</p>"

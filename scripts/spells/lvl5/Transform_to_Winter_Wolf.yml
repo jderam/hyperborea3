@@ -1,0 +1,27 @@
+id: 417
+name: Transform to Winter Wolf
+pp: 242
+Lvl:
+  - cry 5
+Rng: 0
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>The sorcerer <i>transforms</i> into a <b>winter wolf</b>. Upon
+metamorphosis, the sorcerer is subject to the following
+benefits and restrictions:</p>
+<ul><li>Physical (AC, FA) and special abilities of the
+winter wolf are gained, including <i>frost blast</i>, <i>immunity
+to cold damage</i>, and <i>fire vulnerability</i>.</li>
+<li>The previous hit point total and saving throws of
+the caster are retained.</li>
+<li>Possessions are melded with the new form; the
+caster no longer realizes their benefits, except
+for magic rings.</li>
+<li>Mental capacity is retained, though the sorcerer
+is unable to cast other spells; speech changes to
+the uncanny language spoken by winter wolves.</li></ul>
+<p>The sorcerer can terminate the spell at will or await its
+expiration. When the spell ends, the caster reverts to
+normal form and is healed of 2d6 hp damage (if applicable).
+If killed whilst in winter wolf form, the sorcerer’s
+true appearance is revealed.</p>"

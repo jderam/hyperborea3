@@ -1,0 +1,17 @@
+id: 434
+name: Wall of Force
+pp: 244
+Lvl:
+  - mag 5
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Evokes an invisible, immoveable barrier that is impervious
+to most spells, including <i>dispel magic</i>; however,
+a <i>disintegrate</i> spell will destroy it. Weapons, missiles,
+breath weapons, cold, fire, and acid attacks cannot
+penetrate the <i>wall of force</i>. The <i>wall of force</i> can be
+created to be as large as 20 feet high and 50 feet long;
+or it can be a 20-foot-diameter hemisphere with a 10-
+foot apex, the latter form serving as protection for the
+sorcerer, if so desired.</p>"

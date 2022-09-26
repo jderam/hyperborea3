@@ -1,0 +1,21 @@
+id: 7
+name: Air Walk
+pp: 176
+Lvl:
+  - clr 5
+Rng: touch
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>The sorcerer can walk on air as though it were solid
+ground and lead up to one recipient per CA level to
+do the same. Each recipient must be touched and be
+willing. In a straight, single-file line (such as over a
+chasm, ravine, or trench), the sorcerer can lead recipients
+to walk (but not run) at normal movement rate.
+<i>Air walkers</i> also can walk up or down at a 45° angle, as
+though ascending or descending stairs, at one-half normal
+walking speed. Too, they can ascend or descend
+vertically, as though climbing a sheer cliff with ample
+handholds and toeholds, at one-fourth normal walking
+speed. Any recipients that stray from the caster’s path
+will fall and take damage.</p>"

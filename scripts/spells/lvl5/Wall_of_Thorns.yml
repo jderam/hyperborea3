@@ -1,0 +1,28 @@
+id: 439
+name: Wall of Thorns
+pp: 245
+Lvl:
+  - drd 5
+Rng: 90 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Evokes a giant mass of gnarly, resilient, pliable brush
+to take form. These thick, tangled vines bristle with
+dagger-like thorns of three- to five-inch length. The
+sorcerer may shape the barrier as desired, as large as
+1,000 cubic feet per CA level; for instance, a CA 10 sorcerer
+may create a <i>wall of thorns</i> 50 feet long, 20 feet
+deep, and 10 feet high. Creatures caught in the spell’s
+designated area of effect suffer 1d10+10 hp damage.
+If one attempts to push through the <i>wall of thorns</i> or
+otherwise comes into abrupt contact with it, similar
+damage is sustained and repeated for every 10 feet of
+movement within the mass.</p>
+<p>To avoid additional damage, one can chop through with
+a stout blade, such as a sword, axe, or heavy knife.
+Cutting through 10 feet of this enchanted barrier requires
+1 turn. Mundane fire will not harm the <i>wall of
+thorns</i>, as the vines are coated with an oily enzyme;
+magical fire will burn the <i>wall of thorns</i> within 1 turn
+of contact, effecting a <i>wall of fire</i> spell that blazes for
+a single turn.</p>"

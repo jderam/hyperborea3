@@ -1,0 +1,13 @@
+id: 227
+name: Inoculate
+pp: 209
+Lvl:
+  - wch 5
+  - clr 5
+Rng: touch
+Dur: 24 hours
+Rev: 0
+Desc: "<p>The recipient is immune to disease and poison for the
+duration of the spell if within one mile of the caster.
+Too, the recipient recovers double hit points from natural
+healing if proper rest is taken.</p>"

@@ -1,0 +1,18 @@
+id: 251
+name: Major Creation
+pp: 213
+Lvl:
+  - ill 5
+Rng: touch
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>Effects the creation of an object composed of metal,
+stone, or wood. The object can be no greater than one
+cubic foot in size per CA level. To create the item, the
+sorcerer must have some piece of the material to be produced;
+i.e., if the sorcerer wishes to generate a block of
+granite, then a small piece of granite must be possessed;
+if the sorcerer wishes to fashion an iron anchor, then a
+fragment of iron must be possessed. Note that objects
+fashioned of wood enjoy double duration. The item will
+disappear when the spell ends, as will the component.</p>"

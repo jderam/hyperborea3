@@ -1,0 +1,26 @@
+id: 420
+name: Transmute Rock to Mud
+pp: 242
+Lvl:
+  - mag 5
+  - drd 5
+Rng: 120 feet
+Dur: 3d6 days
+Rev: 1
+Desc: "<p>This dweomer takes effect 1 turn after casting, changing
+earth, gravel, rock, or sand into mud. The sorcerer
+is able to affect a cubic area with sides one foot
+long per CA level; e.g., a CA 10 sorcerer can affect a
+10 × 10 × 10-foot area. When the spell’s duration elapses,
+the mud dries to dirt. If this spell takes effect under
+the feet of an enemy, this foe may make an <i>avoidance</i>
+saving throw to escape the muddy ground. Creatures
+that enter the <i>transmuted</i> area move but five feet per
+turn, so long as they are able to keep their heads above
+the mud. If the depth of the mud is greater than their
+height, they must make <i>transformation</i> saving throws
+or be sucked in and die, as with quicksand. The reverse
+of this spell, <i>transmute mud to rock</i>, hardens muddy
+ground into solid stone. Creatures mired in the muddy
+area must make <i>transformation</i> saving throws or
+become trapped in solid stone (likely a fatal outcome).</p>"

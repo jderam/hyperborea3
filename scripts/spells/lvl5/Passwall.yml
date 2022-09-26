@@ -1,0 +1,13 @@
+id: 282
+name: Passwall
+pp: 217
+Lvl:
+  - mag 5
+  - cry 5
+  - pyr 5
+Rng: 30 feet
+Dur: 3 turns per CA level
+Rev: 0
+Desc: "<p>Opens a temporary 6-foot-diameter, 10-foot-deep
+passage in any wall, be it of wood, stone, or any other
+material. The spell can be ended by its caster at will.</p>"

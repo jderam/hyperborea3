@@ -1,0 +1,22 @@
+id: 199
+name: Hold Monster
+pp: 204
+Lvl:
+  - mag 5
+  - cry 5
+  - nec 5
+Rng: 120 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Freezes still (i.e., motionless, paralyzed) any living
+creature, save the undead and mindless constructs. It
+can be cast at a single opponent or a group of individuals,
+so long as they are within a 10-foot radius of the
+spell’s primary target.</p>
+<p>When cast at a group, as many as four individuals
+may be affected, beginning with those closest to the
+primary target. Each target is allowed a <i>sorcery</i> saving
+throw to resist the spell; if but a single target is
+selected, its saving throw is made at a −2 penalty. The
+saving throws are modified by <i>willpower adjustment</i>,
+if applicable.</p>"

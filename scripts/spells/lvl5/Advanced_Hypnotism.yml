@@ -1,0 +1,21 @@
+id: 3
+name: Advanced Hypnotism
+pp: 175
+Lvl:
+  - ill 5
+Rng: 30 feet
+Dur: special
+Rev: 0
+Desc: "<p>To <i>hypnotize</i> a single target. To resist, the target is
+granted a <i>sorcery</i> saving throw, modified by <i>willpower
+adjustment</i>, if applicable. Hostile or aggressive creatures
+gain +1 to +3 bonuses on their saves, as judged by
+the referee. A failed save indicates the victim is unaware
+of being ensorcelled and is subject to a posthypnotic
+suggestion. The trigger is determined by the sorcerer;
+it may be something seen or a spoken word. The player
+must inform the referee what the specific trigger is, and
+the referee must judge if it is appropriate. Once triggered,
+a <i>suggestion</i> (q.v.) is effected. The spell is broken
+after this <i>suggestion</i> is triggered and acted on, which
+might be hours, days, months, or even years later.</p>"

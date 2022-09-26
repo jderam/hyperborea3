@@ -1,0 +1,17 @@
+id: 406
+name: Telekinesis
+pp: 239
+Lvl:
+  - mag 5
+  - cry 5
+  - pyr 5
+Rng: 120 feet
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>Standing stationary and using sorcery to empower the
+mind, the caster lifts an object and moves it vertically
+and/or horizontally at 10 MV; also, minor manipulation
+(e.g., twists, turns) is possible. The weight of the object
+is limited to 25 pounds per CA level. If a living creature
+is targeted (presuming it is within the weight limit), a
+<i>sorcery</i> saving throw can be made to resist the effect.</p>"

@@ -1,0 +1,18 @@
+id: 310
+name: Project Image
+pp: 222
+Lvl:
+  - mag 6
+  - ill 5
+  - pyr 6
+Rng: 240 feet
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>A duplicate likeness of the sorcerer is created within 240
+feet. The image remains without need of concentration.
+The sorcerer can then cast subsequent spells through
+the <i>projected image</i>. The sorcerer can see through the
+eyes of the projected image, but only if the eyes of the
+actual body remain shut. The image is unaffected by
+spells, save <i>dispel phantasm</i>; however, it disappears if
+struck for damage by a melee or missile weapon.</p>"

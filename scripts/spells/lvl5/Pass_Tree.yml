@@ -1,0 +1,21 @@
+id: 279
+name: Pass Tree
+pp: 216
+Lvl:
+  - drd 5
+Rng: 300 feet
+Dur: special
+Rev: 0
+Desc: "<p>Creates a mystical portal in the trunk of a tree with
+a diameter of at least 2½ feet. The sorcerer and comrades
+(one per CA level) may then <i>pass</i> through the
+tree, exiting from another tree of similar size within
+300 feet, as chosen by the caster. The portal is 2 × 5
+feet and remains open for as long as the caster desires,
+to a maximum of 1 turn per CA level. If <i>passing</i>
+through alone, the sorcerer may choose to delay exiting,
+remaining within the initial or destination tree, but
+if the duration elapses, painfully will the sorcerer be
+ejected for 3d6 hp damage. Whilst dwelling within the
+confines of a tree, the sorcerer may observe what transpires
+without, undetectable unless <i>true seeing</i> is cast.</p>"

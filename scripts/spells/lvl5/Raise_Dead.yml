@@ -1,0 +1,27 @@
+id: 319
+name: Raise Dead
+pp: 223
+Lvl:
+  - nec 6
+  - wch 6
+  - clr 5
+Rng: 30 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Enables the sorcerer to restore a recently deceased
+human or quasi-man to life. This powerful necromantic
+spell entails ritual chanting, burning incense, and
+flourishing a holy symbol over a period of 6 turns (1
+hour). The cadaver must be whole and intact; any missing
+parts will remain missing, but wounds, burns, and
+other injuries will be healed (though leaving notable
+scars). The time limit betwixt death and resurrection
+is seven days, plus one day per CA level.</p>
+<p>Once the spell is complete, the deceased subject must
+roll a <i>trauma survival</i> check (see <b>Chapter 3: Statistics</b>,
+<i>constitution</i>). If this roll succeeds, the victim is
+<i>raised</i>, but is aged three years and permanently loses
+1 point of constitution; furthermore, the subject requires
+one week of complete bed rest before engaging
+in rigorous activity. If the <i>trauma survival</i> check fails,
+the person is truly dead and cannot be <i>raised</i>.</p>"

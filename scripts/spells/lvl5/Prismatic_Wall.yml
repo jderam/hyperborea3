@@ -1,0 +1,45 @@
+id: 306
+name: Prismatic Wall
+pp: 222
+Lvl:
+  - ill 5
+Rng: 10 feet
+Dur: 6 rounds (1 minute) per CA level
+Rev: 0
+Desc: "<p>The illusionist creates a semi-opaque wall in which all
+seven colours of the visible spectrum move and scintillate
+in rotating bands. The wall may be as large as
+60 feet long and 20 feet high or may form a circle 30
+feet in diameter and 15 feet high. <i>Prismatic wall</i> is
+immobile; only the caster may pass through it without
+suffering harm; any other creature that attempts to
+pass through is affected by two or more colours. Roll a
+d8 twice to determine which colours affect the victim—
+possibly three rolls if an <i>8</i> is one of the results.</p>
+<p><table><caption><b>Table 109: Prismatic Wall Results</b></caption>
+<tr><th>d8 Result</th><th>Prismatic Wall Effect</th></tr>
+<tr><td>1</td><td>Red band inflicts 2 hp of burning damage
+per CA level.</td></tr>
+<tr><td>2</td><td>Orange band that inflicts 3 hp of burning
+damage per CA level.</td></tr>
+<tr><td>3</td><td>Yellow band that permanently blinds the
+target unless a <i>sorcery</i> save is made; blind
+creatures always lose initiative and suffer
+−4 “to hit,” −4 AC, and −4 saving throws.</td></tr>
+<tr><td>4</td><td>Green band that poisons the victim; <i>death</i>
+(poison) saving throw or immediate death.</td></tr>
+<tr><td>5</td><td>Blue band that paralyzes the victim for 3d4
+turns unless a <i>death</i> saving throw is made.</td></tr>
+<tr><td>6</td><td>Indigo band causes the target to suffer intense
+hallucinations for 1d6 turns per the
+<i>madness</i> rules (see <b>Table 148</b>) unless a <i>sorcery</i>
+save is made.</td></tr>
+<tr><td>7</td><td>Violet band that throws target backward
+2d6 feet and <i>stuns</i> the creature for 3d4
+rounds; <i>sorcery</i> saving throw negates.</td></tr>
+<tr><td>8</td><td>Struck by three colours; roll three times,
+ignoring results of 8.</td></tr></table></p>
+<p>A <i>prismatic wall</i> may be destroyed by a <i>dispel phantasm</i>
+spell or by use of <i>dispel magic</i>; for the latter,
+however, one such spell is required for each colour in
+succession: red, orange, etc.</p>"

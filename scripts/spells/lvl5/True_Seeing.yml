@@ -1,0 +1,25 @@
+id: 423
+name: True Seeing
+pp: 243
+Lvl:
+  - ill 6
+  - clr 5
+  - drd 6
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer perceives things for what they really are.
+A diamond of 500-gp value or greater must be sacrificed
+to cast this spell. Upon speaking the incantation,
+invisible creatures or objects are revealed; <i>phantasms</i>
+and like illusions are exposed; mundane and magical
+disguises are penetrated; secret doors are made obvious.
+Even the subjects of spells such as <i>polymorph</i>
+(<i>other</i> or <i>self</i>), <i>stone shape</i>, or <i>tree shape</i> are shewn by
+<i>true seeing</i>. For those sorcerers casting the clerical/
+druidic version of this spell, alignment is also cognized
+by means of a projected aura, so Good, Evil, and Neutrality
+are distinguished, as well as Law and Chaos.
+The sorcerer can move (but not run) after casting this
+spell, fully concentrating. Any other actions (combat,
+other spells, item use, etc.) will break the spell.</p>"

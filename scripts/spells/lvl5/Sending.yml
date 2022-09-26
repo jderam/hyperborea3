@@ -1,0 +1,21 @@
+id: 341
+name: Sending
+pp: 228
+Lvl:
+  - mag 5
+  - cry 5
+  - pyr 5
+Rng: special
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The sorcerer conveys a message to familiar person
+(i.e., one whose name and appearance the sorcerer
+knows). Range is not a factor, so long as the subject
+inhabits the same world/dimension as the caster. The
+sorcerer can send one word per CA level (not including
+articles <i>a</i>, <i>an</i>, and <i>the</i>). The message is heard and understood
+by any intelligent recipient but does not compel
+obeisance. A message can be sent once with no save
+allowed. If an unwilling recipient is subjected to more
+than one <i>sending</i> within the same week, a <i>sorcery</i> saving
+throw is permitted to reject subsequent sendings.</p>"

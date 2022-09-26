@@ -1,0 +1,43 @@
+id: 246
+name: Magic Jar
+pp: 211
+Lvl:
+  - mag 5
+  - nec 5
+  - wch 5
+Rng: 120 feet
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer’s life force is placed in a small, inanimate
+object. If it remains within 30 feet of the sorcerer’s
+physical body, an attempt to possess another living
+creature within 120 feet may be made. If the target fails
+its <i>sorcery</i> saving throw (modified by <i>willpower adjustment</i>,
+if applicable), it will be possessed by the sorcerer.</p>
+<p>A possessed body can be controlled like a puppet,
+performing normal actions and using all its special
+abilities (including spells), though not the possessor’s
+original abilities or spells. Fragmentary memories of
+the possessed might be accessed by the possessor; the
+details should be nebulous, provided by the referee.
+Note the potential consequences of this spell:</p>
+<ul><li>If the body of the possessed is destroyed, the
+spirit of the sorcerer returns to the <i>magic
+jar</i>. The sorcerer’s spirit may then attempt to
+possess another or return to its own body.</li>
+<li>If the sorcerer’s body is destroyed whilst its
+spirit is without, then the spirit must forever
+remain in the body it presently possesses; or,
+if the spirit is in the <i>magic jar</i>, it may possess
+another, but permanently.</li>
+<li>If the <i>magic jar</i> is destroyed whilst the sorcerer’s
+spirit is inside it, the sorcerer’s physical
+body will die, and his or her spirit is forever lost.</li>
+<li>If the <i>magic jar</i> is destroyed whilst the sorcerer’s
+spirit possesses another, the spirit must
+forever remain in the body of the possessed.</li></ul>
+<p>Possession is prevented by a <i>protection from evil</i> spell.
+It can be terminated by a <i>remove curse</i> spell, sending
+the sorcerer’s spirit back to the <i>magic jar</i>. Casting a
+<i>magic jar</i> spell may be considered an act of Evil, depending
+on the circumstances.</p>"

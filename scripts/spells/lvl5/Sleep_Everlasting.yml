@@ -1,0 +1,14 @@
+id: 359
+name: Sleep Everlasting
+pp: 230
+Lvl:
+  - wch 5
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>The sorcerer touches a single victim, causing sleep.
+A <i>sorcery</i> saving throw is allowed only if the victim
+is of greater HD/level than the sorcerer. The effect is
+permanent unless <i>dispel magic</i> or <i>remove curse</i> is cast.
+The enchanted victim’s bodily processes slow such that
+the victim will not starve, dehydrate, or age.</p>"

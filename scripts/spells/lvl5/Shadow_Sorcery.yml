@@ -1,0 +1,23 @@
+id: 346
+name: Shadow Sorcery
+pp: 229
+Lvl:
+  - ill 5
+Rng: special
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The sorcerer gathers negative energy from the Black
+Gulf to mimic one of three different battle-magic spells
+commonly used by magicians. Each variation manifests
+uniquely; their effects, however, are slightly reduced
+due to their quasi-reality. The caster may choose
+the variation at the time of casting:</p>
+<ul><li><i>Fireball:</i> As the spell, except inflicts 1d6−1 hp
+damage (min. 1) per CA level; explodes with
+violet-blue flames</li>
+<li><i>Lightning Bolt:</i> As the spell, except inflicts
+1d6−1 hp damage (min. 1) per CA level; erupts
+as a dead black bolt of energy limned in blue</li>
+<li><i>Magic Missile:</i> As the spell, except each inflicts
+1d4 hp damage per CA level; unleash as black
+bolts that leave a wake of purple fire</li></ul>"

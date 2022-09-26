@@ -1,0 +1,15 @@
+id: 344
+name: Shadow Conjuration
+pp: 228
+Lvl:
+  - ill 5
+  - nec 5
+  - wch 5
+Rng: 60 feet
+Dur: 1 round + 1 round per CA level
+Rev: 0
+Desc: "<p>Conjures 1d4 incorporeal creatures composed of negative
+energy. Each <b>shadow</b> is under the caster’s control.
+These hateful monsters hunger for life energy; they
+will attack or defend as commanded and will continue
+to do so until destroyed or until the spell expires.</p>"

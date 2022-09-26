@@ -1,0 +1,17 @@
+id: 229
+name: Interposing Hand
+pp: 209
+Lvl:
+  - mag 5
+Rng: 10 feet per CA level
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A giant disembodied hand appears between the sorcerer
+and a selected enemy, floating and providing cover.
+The <i>interposing hand</i> presents a constant obstruction,
+remaining betwixt the two, whilst the sorcerer can go
+on to cast other spells or perform other actions. The
+<i>interposing hand</i> pushes against an approaching enemy,
+effectively limiting movement to a maximum rate
+of 10 MV. The <i>interposing hand</i> is AC 0 and has as
+many hit points as the sorcerer at full health.</p>"

@@ -1,0 +1,26 @@
+id: 395
+name: Summon Elemental
+pp: 236
+Lvl:
+  - mag 5
+  - wch 5
+Rng: 240 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>This conjuration requires 1 turn to cast and may be
+performed but once per day. The sorcerer <i>summons</i>
+a <b>class I air</b>, <b>earth</b>, <b>fire</b>, or <b>water elemental</b>. The
+conjured elemental will obey the bidding of the caster,
+performing all actions, including labour or combat, to
+the best of its ability.</p>
+<p>The sorcerer must maintain constant concentration
+on the elemental. If the sorcerer casts another spell,
+enters combat, or does anything else that is sufficient
+to interrupt concentration, the elemental will break
+free and attempt to kill the sorcerer and/or any allies.
+Wise sorcerers are known to take sanctuary within the
+confines of a candlelit magic circle whilst casting and
+maintaining this spell; of course, the magic circle will
+only protect the sorcerer, not allies. The sorcerer can
+dismiss the elemental at will, but not after concentration
+has been disrupted.</p>"

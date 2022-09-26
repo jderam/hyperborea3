@@ -1,0 +1,69 @@
+3 Advanced Hypnotism
+4 Advanced Spectral Phantasm
+7 Air Walk
+8 Air-like Water
+12 Animal Growth
+15 Animate Carrion III
+20 Anti-Magic Field
+21 Anti-Plant Shell
+22 Atonement
+38 Breathe Fire
+39 Breathe Frost
+47 Cause Lycanthropy
+59 Cloudkill
+64 Commune
+65 Commune with Nature
+69 Contact Otherworldly Being
+76 Control Winds
+85 Cure Critical Wounds
+90 Cure Madness
+98 Death
+101 Death Smoke Cloud
+122 Dismissal
+123 Dispel Evil
+139 Extend Spell II
+144 Fabricate
+150 Feeblemind
+154 Finger of Death
+165 Flame Strike
+183 Gelatinize Bones
+199 Hold Monster
+207 Ice Bridge
+221 Incite Chaos
+227 Inoculate
+229 Interposing Hand
+246 Magic Jar
+251 Major Creation
+254 Maze
+279 Pass Tree
+282 Passwall
+290 Phantasmal Door
+295 Plague Rats
+296 Plane Shift
+306 Prismatic Wall
+310 Project Image
+316 Quest
+319 Raise Dead
+337 Secret Chest
+341 Sending
+344 Shadow Conjuration
+346 Shadow Sorcery
+359 Sleep Everlasting
+367 Spawn Demi-Shadow Monsters
+389 Summon Animal II
+391 Summon Bat Swarm
+394 Summon Dæmon III
+395 Summon Elemental
+397 Summon Firefly Swarm
+403 Summon Monster III
+406 Telekinesis
+407 Teleport
+408 Temporal Acceleration
+416 Transform to Hell Hound
+417 Transform to Winter Wolf
+420 Transmute Rock to Mud
+423 True Seeing
+434 Wall of Force
+436 Wall of Iron
+438 Wall of Stone
+439 Wall of Thorns

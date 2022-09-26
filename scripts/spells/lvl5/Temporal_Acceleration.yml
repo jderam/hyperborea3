@@ -1,0 +1,25 @@
+id: 408
+name: Temporal Acceleration
+pp: 239
+Lvl:
+  - ill 5
+Rng: 0
+Dur: 24 turns (4 hours)
+Rev: 0
+Desc: "<p>This illusion affects the minds of all within a 10-foot
+radius, including the caster. Unwilling subjects are
+allowed <i>sorcery</i> saving throws, modified by <i>willpower
+adjustment</i>, if applicable. The affected believe the passage
+of time is accelerated, the illusion being so powerful
+that it becomes reality for all involved. For every
+1 turn spent within the <i>temporal acceleration</i> area of
+effect, time passes as though it were 6 turns; i.e., every
+10 minutes effects a one-hour passage of time. One
+hour is as six, four hours as twenty-four, and so on. As a
+result, all bodily functions of the affected are hastened;
+indeed, they must eat, drink, sleep, and so forth at the
+accelerated rate. The durations of spells and innate
+abilities are likewise quickened. <i>Temporal acceleration</i>
+allows for rest, sleep, recovery of hit points, and
+renewal of spells. <i>Dispel phantasm</i> disrupts this spell;
+the sorcerer may also terminate it at any time.</p>"

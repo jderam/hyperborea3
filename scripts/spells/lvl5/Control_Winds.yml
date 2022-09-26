@@ -1,0 +1,27 @@
+id: 76
+name: Control Winds
+pp: 186
+Lvl:
+  - cry 5
+  - wch 5
+  - drd 5
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>This spell is cast outdoors, taking effect 1 turn after
+being incanted. A minute or so before the effect manifests,
+winds begin to swirl around the caster, rotating
+in a clockwise or counterclockwise direction. The
+sorcerer stands at the 15-foot-radius epicentre of the
+effect, where the air remains calm.</p>
+<p>Once the spell takes full effect, the winds develop into
+a <i>strong gale</i>, or a 60-mph average; the caster may designate
+a less potent wind force if desired. These winds
+extend in a 240-foot hemispherical radius around the
+caster, damaging buildings, bending or even uprooting
+trees, driving away flying creatures, and affecting
+sailed movement. The sorcerer can walk after casting
+the spell and need not concentrate on it; the epicentre
+of the winds moves with him or her. The caster can use
+this spell to control otherwise prevailing winds (natural
+or not) and can end the effect at will.</p>"
