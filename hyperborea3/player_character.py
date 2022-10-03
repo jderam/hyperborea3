@@ -24,6 +24,7 @@ from hyperborea3.chargen import (
     get_race_id,
     get_random_familiar,
     get_save_bonuses,
+    get_secondary_skill,
     get_spells,
     get_starting_armour,
     get_starting_gear,
@@ -93,6 +94,7 @@ class PlayerCharacter:
         self.race_id = get_race_id()
         self.race = get_race(self.race_id)
         self.gender = get_gender()
+        self.secondary_skill = get_secondary_skill()
 
         self.hd = get_hd(self.class_id, self.level)
         self.hp = roll_hit_points(
