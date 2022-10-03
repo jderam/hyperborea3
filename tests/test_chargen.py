@@ -22,6 +22,7 @@ from hyperborea3.chargen import (
     get_random_familiar,
     get_random_spell,
     get_save_bonuses,
+    get_secondary_skill,
     get_spells,
     get_starting_armour,
     get_starting_gear,
@@ -59,6 +60,7 @@ from hyperborea3.valid_data import (
     VALID_LEVELS,
     VALID_RACE_IDS,
     VALID_SAVES,
+    VALID_SECONDARY_SKILLS,
     VALID_SCHOOLS,
     VALID_SCHOOLS_BY_CLASS_ID,
     VALID_SPELL_LEVELS,
@@ -764,3 +766,8 @@ def test_get_random_familiar():
     for i in range(1000):
         animal = get_random_familiar()
         assert animal in VALID_FAMILIARS, f"{animal=} not in {VALID_FAMILIARS}"
+
+
+def test_get_secondary_skill():
+    secondary_skill = get_secondary_skill()
+    assert secondary_skill in VALID_SECONDARY_SKILLS

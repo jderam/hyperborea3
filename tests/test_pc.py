@@ -13,6 +13,7 @@ from hyperborea3.valid_data import (
     VALID_LEVELS,
     VALID_RACE_IDS,
     VALID_SAVES,
+    VALID_SECONDARY_SKILLS,
     VALID_TA,
 )
 
@@ -30,6 +31,7 @@ def test_pc():
     assert pc.level in VALID_LEVELS
     assert pc.race_id in VALID_RACE_IDS
     assert pc.gender in VALID_GENDERS
+    assert pc.secondary_skill in VALID_SECONDARY_SKILLS
     assert pc.alignment["short_name"] in VALID_ALIGMENTS_SHORT
     assert pc.method in VALID_DICE_METHODS
     assert pc.fa in VALID_FA
