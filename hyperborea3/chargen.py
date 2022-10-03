@@ -1001,3 +1001,17 @@ def get_priest_abilities(deity_id: int, level: int) -> List[Dict[str, Any]]:
     )
     priest_abilities = [dict(x) for x in cur.fetchall()]
     return priest_abilities
+
+
+def get_secondary_skill() -> str:
+    roll = roll_dice(1, 60)
+    cur.execute(
+        """
+        SELECT *
+          FROM t072_secondary_skills
+         WHERE id = ?;
+        """,
+        (roll,),
+    )
+    secondary_skill: str = cur.fetchone()["skill_name"]
+    return secondary_skill
