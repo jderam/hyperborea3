@@ -12,6 +12,10 @@ build==0.8.0
     # via pip-tools
 certifi==2022.9.24
     # via requests
+cffi==1.15.1
+    # via cryptography
+cfgv==3.3.1
+    # via pre-commit
 charset-normalizer==2.1.1
     # via requests
 click==8.1.3
@@ -20,12 +24,20 @@ click==8.1.3
     #   uvicorn
 commonmark==0.9.1
     # via rich
+cryptography==38.0.1
+    # via secretstorage
+distlib==0.3.6
+    # via virtualenv
 docutils==0.19
     # via readme-renderer
 fastapi==0.85.0
     # via hyperborea3 (pyproject.toml)
+filelock==3.8.0
+    # via virtualenv
 h11==0.14.0
     # via uvicorn
+identify==2.5.6
+    # via pre-commit
 idna==3.4
     # via
     #   anyio
@@ -34,10 +46,16 @@ importlib-metadata==5.0.0
     # via twine
 jaraco-classes==3.2.3
     # via keyring
+jeepney==0.8.0
+    # via
+    #   keyring
+    #   secretstorage
 keyring==23.9.3
     # via twine
 more-itertools==8.14.0
     # via jaraco-classes
+nodeenv==1.7.0
+    # via pre-commit
 packaging==21.3
     # via build
 pep517==0.13.0
@@ -46,6 +64,12 @@ pip-tools==6.9.0
     # via hyperborea3 (pyproject.toml)
 pkginfo==1.8.3
     # via twine
+platformdirs==2.5.2
+    # via virtualenv
+pre-commit==2.20.0
+    # via hyperborea3 (pyproject.toml)
+pycparser==2.21
+    # via cffi
 pydantic==1.10.2
     # via fastapi
 pygments==2.13.0
@@ -54,6 +78,8 @@ pygments==2.13.0
     #   rich
 pyparsing==3.0.9
     # via packaging
+pyyaml==6.0
+    # via pre-commit
 readme-renderer==37.2
     # via twine
 requests==2.28.1
@@ -66,12 +92,16 @@ rfc3986==2.0.0
     # via twine
 rich==12.6.0
     # via twine
+secretstorage==3.3.3
+    # via keyring
 six==1.16.0
     # via bleach
 sniffio==1.3.0
     # via anyio
 starlette==0.20.4
     # via fastapi
+toml==0.10.2
+    # via pre-commit
 tomli==2.0.1
     # via
     #   build
@@ -86,11 +116,13 @@ urllib3==1.26.12
     #   twine
 uvicorn==0.18.3
     # via hyperborea3 (pyproject.toml)
+virtualenv==20.16.5
+    # via pre-commit
 webencodings==0.5.1
     # via bleach
 wheel==0.37.1
     # via pip-tools
-zipp==3.8.1
+zipp==3.9.0
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
