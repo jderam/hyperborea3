@@ -1,10 +1,62 @@
+[build-system]
+requires = ["setuptools>=65.4.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperborea3"
+description = "Character Generator plus other tools for the Hyperborea RPG, 3rd Edition"
+readme = "README.md"
+authors = [{name = "Jeremy Deram"}]
+urls = {homepage = "https://github.com/jderam/hyperborea3"}
+license = {file = "LICENSE"}
+keywords = [
+    "Dungeons",
+    "Dragons",
+    "Hyperborea",
+    "Hyperborea3",
+    "RPG",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = [
+    "version",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "black",
+    "flake8",
+    "tox",
+    "pytest",
+    "pytest-cov",
+    "pytest-repeat",
+    "mypy",
+]
+dev = [
+    "fastapi",
+    "pip-tools",
+    "uvicorn",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "hyperborea3.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["hyperborea3"]
+exclude = ["tests"]
+
 [tool.black]
 line-length = 88
 target-version = ["py38", "py39", "py310"]
-
-[build-system]
-requires = ["setuptools>=45.0", "wheel"]
-build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
 addopts = "--cov=hyperborea3"
