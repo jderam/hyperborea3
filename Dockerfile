@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 
 RUN pip install -U pip
-RUN pip install -r requirements.txt
+RUN pip install -r requirements_dev.txt
 RUN python -m build
 RUN pip install dist/hyperborea3-*-py3-none-any.whl
 
