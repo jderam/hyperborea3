@@ -1,0 +1,58 @@
+2 Acid Fog
+17 Animate Dead II
+18 Animate Objects
+19 Anti-Beast Shell
+30 Blade Barrier
+49 Chain Lightning
+55 Chill of Death
+66 Communicate with Monsters
+73 Control Lycanthrope
+75 Control Weather
+100 Death Ray of Immolation
+105 Demi-Shadow Sorcery
+121 Disintegrate
+140 Extend Spell III
+152 Find the Path
+157 Fire Seeds
+174 Forbiddance
+175 Forceful Hand
+179 Freezing Sphere
+182 Geas
+186 Globe of Invulnerability, Greater
+191 Guards and Wards
+195 Heal
+197 Heroes’ Feast
+210 Iceberg
+235 Legend Lore
+241 Liveoak
+252 Mass Suggestion
+262 Mirage Arcana
+267 Mislead
+271 Move Earth
+286 Permanent Phantasm
+288 Phantasmagorical Precipitousness
+304 Prismatic Sphere
+309 Programmed Phantasm
+322 Regeneration
+323 Reincarnation
+327 Repel Wood
+328 Repulsion
+330 Restoration
+340 See
+368 Spawn Shades
+381 Stone Tell
+382 Stone to Flesh
+387 Summon Aerial Minion
+390 Summon Animal III
+396 Summon Fire Elemental
+398 Summon Ice Dæmon
+400 Summon Invisible Stalker
+404 Summon Monster IV
+414 Transfer Youthfulness
+415 Transform to Asp
+418 Transformation
+419 Transmute Rock to Lava
+421 Transport via Plants
+430 Veil
+448 White Hand of Death
+451 Word of Recall
