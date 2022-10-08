@@ -4,20 +4,20 @@ OS := $(shell uname)
 
 .PHONY: help build run deploy stop test format gen-requirements
 
-build_and_test: build_wheel pip_install test ## Build wheel, install, and execute tests
+build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
 
 build_wheel: ## build the wheel for this package
-	python setup.py sdist bdist_wheel
+	python -m build
 
 clean: ## clean out dist/ directory
-	rm dist/*
+	rm -r dist/*
 
 deploy_test: ## run all checks, build dist files, upload to test pypi
 	black . --check
 	flake8
 	mypy hyperborea3 tests
 	rm -f dist/*
-	python setup.py sdist bdist_wheel
+	python -m build
 	twine check dist/*
 	twine upload --repository hyperborea3test dist/*
 
@@ -26,7 +26,7 @@ deploy_prod: ## run all checks, build dist files, upload to prod pypi
 	flake8
 	mypy hyperborea3 tests
 	rm -f dist/*
-	python setup.py sdist bdist_wheel
+	python -m build
 	twine check dist/*
 	twine upload --repository hyperborea3prod dist/*
 
@@ -47,11 +47,14 @@ check: ## Run all linting/formatting checks
 mypy_check: ## Run mypy type checker
 	mypy hyperborea3 tests
 
-gen_requirements_txt: ## Generate a new requirements.txt file
-	pip-compile requirements.in > requirements.txt
+gen_requirements: ## Generate new requirements files
+	pip-compile --upgrade -o requirements.txt pyproject.toml
+	pip-compile --upgrade --extra dev -o requirements_dev.txt pyproject.toml
+	pip-compile --upgrade --extra test -o requirements_test.txt pyproject.toml
 
-gen_requirements_dev: ## Generate a new requirements.txt file
-	pip-compile requirements_dev.in > requirements_dev.txt
+resync_requirements: ## reinstall all packages in the environment
+	pip-sync requirements.txt requirements_dev.txt requirements_test.txt
+	python -m pip install -e . --force-reinstall
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uvicorn main:app --reload
