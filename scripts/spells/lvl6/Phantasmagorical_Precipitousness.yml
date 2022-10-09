@@ -1,0 +1,27 @@
+id: 288
+name: Phantasmagorical Precipitousness
+pp: 218
+Lvl:
+  - ill 6
+Rng: 60 feet
+Dur: 6 rounds (1 minute) per CA level
+Rev: 0
+Desc: "<p>This potent phantasm relates to the effects of falling,
+sliding, or rushing water. <i>Phantasmagorical precipitousness</i>
+is a programmed illusion triggered by some
+predetermined event such as opening a door, falling in
+a pit, descending stairs, and so forth. The sorcerer can
+effect an illusion that is as large as 90 × 90 feet in area.</p>
+<p>Those exposed to the spell are allowed <i>sorcery</i> saving
+throws, modified by <i>willpower adjustment</i>, if applicable.
+If they fail, they believe what they see; hence, the
+spell’s effects are real for its victims. For example, if
+an <b>orc</b> that falls down a 10-foot pit believes it is falling
+70 feet, then it will indeed sustain damage as though
+it had fallen 70 feet; if another orc believes the stairs
+it was descending have turned into a slide, then it will
+indeed slide to some unknown fate; and if an orc opening
+a heavy iron door believes it is being swept away
+by water, then it will indeed be swept away. This spell
+is open to the caster’s imagination, but must always be
+associated with falling, sliding, or rushing water.</p>"

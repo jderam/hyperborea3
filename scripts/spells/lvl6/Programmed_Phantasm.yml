@@ -1,0 +1,17 @@
+id: 309
+name: Programmed Phantasm
+pp: 222
+Lvl:
+  - ill 6
+Rng: 240 feet
+Dur: special
+Rev: 0
+Desc: "<p>Creates a <i>spectral phantasm</i> spell (q.v.) that activates
+when a precondition is met, or by a command word
+from the caster. The trigger might be when a particular
+door is opened, when a passage is entered, when
+a gate is approached, or the like. Once activated, its
+duration and other effects are exactly as the <i>spectral
+phantasm</i> spell. Until it is activated, the caster can
+cast one fewer level six spell unless <i>programmed
+phantasm</i> is cancelled.</p>"

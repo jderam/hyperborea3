@@ -1,0 +1,39 @@
+id: 304
+name: Prismatic Sphere
+pp: 221
+Lvl:
+  - ill 6
+Rng: 0
+Dur: 6 rounds (1 minute) per CA level
+Rev: 0
+Desc: "<p>The illusionist creates a semi-opaque globe through
+which all seven colours of the visible spectrum shimmer
+rapidly. The caster stands at the center of the sphere,
+which is 20 feet in diameter; the lower half of the sphere
+will be obscured by the floor or ground the caster stands
+upon (unless flying or levitating). Movement of 10 feet
+per round is possible, the sphere staying centered
+around the caster, but if the caster moves too quickly
+the spell is terminated. An ally may leave the sphere
+without affecting the spell but cannot reenter as per the
+violet colour of the sphere (see below). <i>Prismatic sphere</i>
+provides several protective effects. They are as follows:</p>
+<ul><li>Red stops all non-magical missiles</li>
+<li>Orange stops all magical missiles; e.g., <i>flaming
+missile</i>, <i>magic ice dart</i>, <i>magic missile</i>, <i>acid arrow</i></li>
+<li>Yellow stops all poisons and gases from entering
+the sphere</li>
+<li>Green repels all breath weapons and petrifaction
+effects</li>
+<li>Blue prevents all detection or location magic
+from penetrating the sphere</li>
+<li>Indigo negates the effects of all rods, staves, and
+wands</li>
+<li>Violet repels any creature from entering the
+sphere from outside, friend or foe alike; targets
+hurled backward 2d6 feet and <i>stunned</i> for 3d4
+rounds; <i>sorcery</i> saving throw negates</ul>
+<p>A <i>prismatic sphere</i> may be destroyed by a <i>dispel
+phantasm</i> spell or by use of <i>dispel magic</i>; for the latter,
+however, one such spell is required for each colour
+in succession: red, orange, etc.</p>"
