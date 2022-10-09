@@ -1,0 +1,18 @@
+id: 30
+name: Blade Barrier
+pp: 179
+Lvl:
+  - clr 6
+Rng: 30 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>The sorcerer conjures a 12-foot wall of whirling, keen-edged
+blades that spin and flash around a selected
+point, fencing in an area as small as 5 × 5 feet to as
+large as 50 × 50 feet. Any creature that attempts to
+pass through the <i>blade barrier</i> will be assailed by the
+whirling blades, sustaining 8d8 hp damage. When
+this spell is cast, targeted creatures are entitled to
+an <i>avoidance</i> saving throw to escape harm; however,
+there is a 3-in-6 chance that they escape within the
+<i>blade barrier</i>, not without.</p>"
