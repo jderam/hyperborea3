@@ -1,0 +1,47 @@
+id: 75
+name: Control Weather
+pp: 186
+Lvl:
+  - mag 6
+  - cry 6
+  - wch 6
+  - clr 6
+  - drd 6
+Rng: 900 feet
+Dur: special
+Rev: 0
+Desc: "<p>This spell is cast outdoors, requiring 2 turns (20 minutes)
+to take effect in a 2d6-square-mile area. The
+sorcerer can stand within the epicentre of the effect,
+or 300 yards outside its verge, and can <i>control weather</i>
+for as long as he or she concentrates. Possibilities
+include:</p>
+<ul><li><i>Rain:</i> Visibility compromised; missile attacks at
+−2 “to hit,” movement reduced to half.</li>
+<li><i>Snow:</i> Visibility reduced to 20 feet, with snow
+collecting at 2 inches per hour: −10 MV at
+6 inches; −20 MV at 12 inches.</li>
+<li><i>Fog:</i> Visibility reduced to 20 feet.</li>
+<li><i>Clear/Partly Cloudy Skies:</i> Cancels the effects
+of stormy weather.</li>
+<li><i>Blistering Heat:</i> Temperature rises to 100°F.</li>
+<li><i>Frigid Cold:</i> Temperature drops to 0°F.</li>
+<li><i>High Winds:</i> Gale winds (40–50 mph) prevent
+missile fire and can drive flying creatures to the
+ground; this bluster can benefit sailing ships (at
+the lower range of gale power), increasing vessel
+speed by 50% or more.</li>
+<li><i>Hail:</i> Hail batters all in the area, reducing
+movement by half and damaging roofs and other
+structures.</li>
+<li><i>Tornado:</i> A thunderhead manifests under which
+a powerful whirlwind forms. The tornado is 500
+feet in diameter and moves as directed by the
+sorcerer. Creatures of 1–2 HD in its path must
+make <i>avoidance</i> saves or be swept away, suffering
+3d8 hp damage, being hurled 1d10×10 feet
+in the air, and falling for another 1d6 hp damage
+per 10 feet. Creatures of 3 HD or more must
+make <i>avoidance</i> saves or sustain 3d8 hp damage,
+but are not hurled in the air. This form of <i>control
+weather</i> persists only 1 round per CA level.</li></ul>"
