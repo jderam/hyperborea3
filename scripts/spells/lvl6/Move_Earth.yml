@@ -1,0 +1,15 @@
+id: 271
+name: Move Earth
+pp: 216
+Lvl:
+  - mag 6
+Rng: 240 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Requires 1 turn to cast. The sorcerer causes dirt (but
+never solid rock) to move. A hill can be formed or a
+trench excavated. The dirt is moved at 60 feet per turn.
+The sorcerer is able to manipulate a volume of earth
+equal to a cube with sides 10 feet long per CA level;
+e.g., a CA 12 sorcerer can affect a 120 × 120 × 120-foot
+area. Once the spell ends, the effect is permanent.</p>"

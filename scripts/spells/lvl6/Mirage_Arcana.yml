@@ -1,0 +1,36 @@
+id: 262
+name: Mirage Arcana
+pp: 214
+Lvl:
+  - ill 6
+Rng: 120 feet
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>The sorcerer creates a phantasm that duplicates a familiar
+area; this familiarity allows the caster to conjure
+the details with great precision. The area of effect is a
+10-foot radius per CA level; e.g., a CA 12 sorcerer effects
+an illusion of no more than 120-foot radius. A vacant chamber
+might be made to appear as elaborately furnished,
+a muddy pond might appear as a swath of grass, a desert
+might appear to have a small oasis, and so forth. The
+actual contents within the illusion are masked. The illusion
+has all the properties of quasi-reality: It has sight,
+sound, smell, and touch—even taste, should one pick
+an apple from an illusory tree. However, the caster and
+any allies cannot make use of <i>mirage arcana</i> to have a
+comfortable place to sleep, for instance, because they do
+not truly believe in it.</p>
+<p>If the real contents of the illusion are forcibly shaken
+or handled roughly, the creature doing so may make
+a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>,
+if applicable. If successful, the illusion begins
+to shimmer, and the invisible object is revealed. If the
+saving throw fails, the subject merely believes that
+contact was made with an invisible object. Note that
+casual and careful touching of masked objects is not
+cause for a saving throw, because the illusion cannot be
+disrupted unless handled with force. <i>Dispel phantasm</i>
+can break this spell, revealing that which is concealed
+by the illusion, but <i>dispel magic</i> and <i>detect invisibility</i>
+are ineffective.</p>"
