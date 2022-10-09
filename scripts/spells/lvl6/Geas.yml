@@ -1,0 +1,28 @@
+id: 182
+name: Geas
+pp: 201
+Lvl:
+  - mag 6
+  - cry 6
+  - ill 6
+  - nec 6
+  - pyr 6
+  - wch 6
+Rng: 30 feet
+Dur: special
+Rev: 1
+Desc: "<p>Compels the victim (human, humanoid, or giant) to
+complete a service or task. To resist the spell, the
+target may make a <i>sorcery</i> saving throw, modified by
+<i>willpower adjustment</i>, if applicable. The task must
+be reasonably achievable and not a blatant death sentence,
+or the spell breaks after one or two weeks. (One
+cannot be directed to fall on his sword, but if <i>geased</i> by
+a sorcerer high atop Mount Vhuurmithadon, a fighting
+man might be commanded to find and offer himself to
+Xathoqqua.) If the <i>geased</i> individual fails or refuses
+to carry out the appointed task, the individual suffers
+weakness and will die after one or two weeks. <i>Geas</i>
+cannot be broken by <i>dispel magic</i> or <i>remove curse</i>.
+Only the reverse of this spell, <i>remove geas</i>, can break
+the effects of a <i>geas</i>; too, it can negate a <i>quest</i> spell.</p>"

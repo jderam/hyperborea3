@@ -1,0 +1,32 @@
+id: 191
+name: Guards and Wards
+pp: 203
+Lvl:
+  - mag 6
+  - ill 6
+Rng: 0
+Dur: 6 turns (1 hour) per CA level
+Rev: 0
+Desc: "<p>The sorcerer uses this dweomer to protect a tower or
+other stronghold. The warded area can be a cube with
+sides as large as 10 feet per CA level; e.g., a CA 12
+sorcerer can affect an area as large as 120 × 120 × 120
+feet. The effects are as follows:</p>
+<ul><li>Pale green mist fills corridors, limiting visibility
+to 10 feet.</li>
+<li>All doors/gates are <i>sorcerer locked</i> (q.v.).</li>
+<li>One door per CA level is covered by a
+<i>phantasm</i> (q.v.) to appear as a wall.</li>
+<li>Stairs are filled with <i>webs</i> (q.v.).</li>
+<li>Intersections and forks invoke a minor form of
+the <i>confusion</i> spell in which the intruder turns
+in a direction he did not intend.</li></ul>
+<p>The sorcerer can also select one of the following optional
+effects:</p>
+<ul><li><i>Dancing lights</i> (q.v.) in as many as four corridors</li>
+<li><i>Magic mouths</i> (q.v.) placed in two locations</li>
+<li><i>Stinking clouds</i> (q.v.) placed in two locations</li>
+<li><i>Suggestion</i> (q.v.) placed in one location</li></ul>
+<p>If <i>detect magic</i> is cast, the entire area of effect radiates
+potent magic. Each effect of this spell should be considered
+a separate dweomer for <i>dispel magic</i> attempts.</p>"
