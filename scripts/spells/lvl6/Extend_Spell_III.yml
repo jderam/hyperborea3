@@ -1,0 +1,14 @@
+id: 140
+name: Extend Spell III
+pp: 195
+Lvl:
+  - mag 6
+  - cry 6
+  - pyr 6
+Rng: special
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer must cast this spell 1 round after casting
+a level 1–5 spell. Doing so triples the duration of
+the spell; e.g., a <i>fire shield</i> spell can be made to last
+3 rounds per CA level instead of 1 round per CA level.</p>"
