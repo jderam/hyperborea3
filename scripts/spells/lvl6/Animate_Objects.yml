@@ -13,13 +13,13 @@ weight not exceeding 400 pounds. The referee should
 determine movement rate, hit points, attacks, and
 damage delivered by the <i>animated objects</i>. Consider
 the following guidelines:</p>
-<ul><li><i>Boulder, Round (250 lbs.)</i>: <b>MV</b> 20; <b>DX</b> 5;
+<ul><li><i>Boulder, Round (250 lbs.):</i> <b>MV</b> 20; <b>DX</b> 5;
 <b>AC</b> 4; <b>HD</b> 5; <b>#A</b> 1/1 (rolling smash); <b>D</b> 1d10</li>
-<li><i>Chest, Iron</i>: <b>MV</b> 10; <b>DX</b> 4; <b>AC</b> 5; <b>HD</b> 3;
+<li><i>Chest, Iron:</i> <b>MV</b> 10; <b>DX</b> 4; <b>AC</b> 5; <b>HD</b> 3;
 <b>#A</b> 1/1 (bite); <b>D</b> 1d8</li>
-<li><i>Statue, Stone</i>: <b>MV</b> 20; <b>DX</b> 6; <b>AC</b> 1; <b>HD</b> 6;
+<li><i>Statue, Stone:</i> <b>MV</b> 20; <b>DX</b> 6; <b>AC</b> 1; <b>HD</b> 6;
 <b>#A</b> 1/1 (strike); <b>D</b> 2d8</li>
-<li><i>Table, Wooden</i>: <b>MV</b> 30; <b>DX</b> 4; <b>AC</b> 7; <b>HD</b> 2;
+<li><i>Table, Wooden:</i> <b>MV</b> 30; <b>DX</b> 4; <b>AC</b> 7; <b>HD</b> 2;
 <b>#A</b> 2/1 (legs); <b>D</b> 1d6/1d6</li></ul>
 <p><i>Animated objects</i> use the fighting ability (FA) of the
 caster and make saving throws according to their item
