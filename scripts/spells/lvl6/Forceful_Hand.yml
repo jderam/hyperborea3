@@ -1,0 +1,28 @@
+id: 175
+name: Forceful Hand
+pp: 200
+Lvl:
+  - mag 6
+Rng: 10 feet per CA level
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>A giant disembodied hand appears between the sorcerer
+and a selected opponent. The <i>forceful hand</i>
+presents a constant obstruction, remaining betwixt the
+two, whilst the sorcerer can go on to cast subsequent
+spells or perform other actions. The <i>forceful hand</i> is
+aggressive, pushing back the target at a rate of 10 MV
+to the maximum range of the spell, unless the target
+weighs more than 500 pounds; if such is the case, the
+hand effectively functions as an <i>interposing hand</i> spell
+(q.v.), slowing the approach of the enemy to 10 MV.</p>
+<p>If the hand pushes an enemy to a wall or other obstruction,
+it will hold the victim there until the spell ends
+or the sorcerous hand is destroyed. The <i>forceful hand</i>
+is AC 0 and has as many hit points as the sorcerer at
+full health. Otherwise, only an <i>extraordinary feat of
+strength</i> allows one to escape. This may require the
+referee to dice for a monster’s strength on the spot,
+using 3d6 for an average creature, 4d6 drop low for a
+more robust creature, 4d6 drop high for a Small creature—
+or simply assign a reasonable strength score.</p>"

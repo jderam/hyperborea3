@@ -1,0 +1,30 @@
+id: 152
+name: Find the Path
+pp: 197
+Lvl:
+  - clr 6
+Rng: 0
+Dur: 6 turns + 1 turn per CA level
+Rev: 1
+Desc: "<p>The sorcerer names a specific place upon uttering
+this spell; the direction of that place, whether visited
+before, is known throughout the duration of the spell.
+Furthermore, the sorcerer will, through otherworldly
+guidance, apprehend the most efficient way to achieve
+the location, retaining this information even after the
+spell’s duration has elapsed. For example, if a crevasse
+presents an obstacle, the sorcerer will understand the
+best way around it, even comprehending the existence
+of a secret door that must be accessed in order to
+reach the chosen place. Even traps may be avoided.
+If, for example, Saturn is sought, the location of a
+rocket ship or teleportation device might be gleaned.
+Once the spell’s duration has elapsed, the sorcerer
+retains a general idea of what must be done; however,
+any attempt to map, record, or otherwise disclose
+this data to others will cause the <i>path</i> to be forgotten.</p>
+<p>The reverse of this spell, <i>forget the path</i>, is a touch
+spell that causes its victim to become lost and wander
+aimlessly for the duration of the spell unless they make
+a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>,
+if applicable.</p>"
