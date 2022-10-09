@@ -1,0 +1,17 @@
+id: 121
+name: Disintegrate
+pp: 193
+Lvl:
+  - mag 6
+  - cry 6
+  - nec 6
+  - pyr 6
+  - wch 6
+Rng: 60 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Causes one creature or non-magical object to be reduced
+to dust. As much as a 10 × 10 × 10-foot cube of material
+is subject to <i>disintegration</i>. Creatures can make <i>death</i>
+saving throws to resist this spell; items are allowed
+<i>Class 5</i> item saving throws, per referee discretion.</p>"
