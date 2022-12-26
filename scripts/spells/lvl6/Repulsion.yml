@@ -1,0 +1,23 @@
+id: 328
+name: Repulsion
+pp: 225
+Lvl:
+  - mag 6
+  - nec 6
+  - pyr 6
+Rng: 120 feet
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>The sorcerer creates a path that is 10 feet wide and
+extends 30 feet. All creatures in this path suffer <i>repulsion</i>
+and are compelled to flee from the sorcerer at
+30 MV until they are beyond the 120-foot spell range.
+Victims gain no saving throws if they are of 6 HD or
+fewer; creatures of 7 HD or more are allowed <i>sorcery</i>
+saving throws, modified by <i>willpower adjustment</i>, if
+applicable, to resist <i>repulsion</i>. The caster can walk at
+half speed, concentrating to maintain this dweomer
+until the duration is met. Those affected can do nothing
+but flee for the duration of the spell. If a <i>repulsed</i>
+creature is attacked whilst fleeing, the effect is broken
+for that creature.</p>"

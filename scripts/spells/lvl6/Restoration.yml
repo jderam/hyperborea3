@@ -1,0 +1,14 @@
+id: 330
+name: Restoration
+pp: 226
+Lvl:
+  - clr 6
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Restores drained energy or physical/mental life force
+(attributes, abilities, etc.); also reverses the effects of
+supernatural ageing. The spell must be cast within one
+month per CA level since the time of the drain in order
+for the <i>restoration</i> to be effective; e.g., a CA 11 sorcerer
+has 11 months to <i>restore</i> a CN-drained character.</p>"
