@@ -1,0 +1,19 @@
+id: 390
+name: Summon Animal III
+pp: 234
+Lvl:
+  - drd 6
+Rng: 240 feet
+Dur: special
+Rev: 0
+Desc: "<p>Allows the sorcerer to call upon the aid of one or more
+powerful beasts. The <i>summoned</i> animal type must be
+specified. In Hyperborea, these animals may include
+<b>1 cave bear</b>, <b>1 sabre-tooth</b>, or <b>2 winter wolves</b>.
+Rudely the animals are conjured to a location within
+the spell’s range. At once the caster must charge the
+animals with a simple, one-sentence task. The animals
+will hear, understand, and be compelled to obey. The
+task might be to fight, guard, work, or the like. Once
+the task is complete the spell is ended, and the animals
+will disappear whence they came.</p>"

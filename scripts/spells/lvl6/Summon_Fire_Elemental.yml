@@ -1,0 +1,23 @@
+id: 396
+name: Summon Fire Elemental
+pp: 236
+Lvl:
+  - pyr 6
+  - drd 6
+Rng: 240 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>This conjuration requires 1 turn to cast and may be
+performed but once per day. The sorcerer <i>summons</i>
+a <b>class II fire elemental</b> to serve. On a 1-in-6 chance,
+this spell instead conjures <b>2 fire salamanders</b>.</p>
+<p>A conjured creature will obey the bidding of the caster,
+performing all actions, including labour or combat, to
+the best of its ability,. The sorcerer need not maintain
+concentration on the creature’s activity; other
+tasks (e.g., fighting or casting other spells) may be
+performed whilst the creature continues to heed the
+caster’s will. The sorcerer requires not the protection
+of a magic circle, for the <i>summoned</i> creature will not
+turn against him or her. The caster may not be aware
+of this fact, however.</p>"

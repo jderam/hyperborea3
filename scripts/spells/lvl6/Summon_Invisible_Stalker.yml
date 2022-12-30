@@ -1,0 +1,21 @@
+id: 400
+name: Summon Invisible Stalker
+pp: 237
+Lvl:
+  - mag 6
+  - nec 6
+  - wch 6
+Rng: 60 feet
+Dur: special
+Rev: 0
+Desc: "<p>Conjures an indiscernible, eight-foot-tall, extra-dimensional
+being to perform a task or service, which might be
+guardianship, combat, or the like. The <b>invisible stalker</b>
+is a flawless tracker, able to follow any trail not more
+than two weeks old. It is intelligent and oft possessed
+of hatred and loathing. It resents lengthy missions or
+assignments (i.e., those that last a week or more), and it
+will seek to follow the letter of the command whilst perverting
+the spirit or intent. An invisible stalker serves
+until its mission is completed, or until it is destroyed
+physically or by a <i>dispel magic</i> spell.</p>"

@@ -1,0 +1,19 @@
+id: 382
+name: Stone to Flesh
+pp: 233
+Lvl:
+  - mag 6
+  - nec 6
+Rng: 120 feet
+Dur: Instantaneous
+Rev: 1
+Desc: "<p>Transmutes rock to soft tissue. If cast on a person who
+was petrified by a monster, they will be restored, along
+with all carried possessions; however, the recipient
+first must make a <i>trauma survival</i> check to determine
+whether the transformation is survived (see <b>Chapter 3:
+Statistics</b>, <i>constitution</i>). If cast on raw stone, such as
+the wall of a dungeon, this spell transforms as much as
+a 10 × 10 × 10-foot cube of rock into flesh. The reverse
+of this spell, <i>flesh to stone</i>, causes a single creature to
+petrify if a <i>transformation</i> saving throw fails.</p>"
