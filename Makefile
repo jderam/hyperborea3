@@ -55,6 +55,7 @@ gen_requirements: ## Generate new requirements files
 resync_requirements: ## reinstall all packages in the environment
 	pip-sync requirements.txt requirements_dev.txt requirements_test.txt
 	python -m pip install -e . --force-reinstall
+	pre-commit install
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uvicorn main:app --reload
