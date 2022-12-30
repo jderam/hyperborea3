@@ -1,0 +1,15 @@
+id: 451
+name: Word of Recall
+pp: 246
+Lvl:
+  - clr 6
+Rng: 0
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The chanting sorcerer transports to a place that they
+hallowed with the <i>ceremony of consecration</i> spell,
+with no chance of error; no distance or subterranean
+depth is too great. The sorcerer may bring 25 pounds
+of material per CA level; this excess may comprise
+gear, treasure, or even a living creature, so long as the
+weight restriction is observed.</p>"

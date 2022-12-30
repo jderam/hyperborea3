@@ -1,0 +1,26 @@
+id: 414
+name: Transfer Youthfulness
+pp: 240
+Lvl:
+  - wch 6
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>This Evil spell must be cast under a full moon (Phobos
+or Selene), the victim lashed to a stone table and
+bathed in moonlight. The victim must be of the same
+gender as the sorcerer and aged 25 or younger. Upon
+the culmination of a 6-turn (1-hour) ritual of nameless
+rites and incantations, which also requires the sacrifice
+of 1,000 gp worth of gems, the sorcerer lays hands on
+the victim, draining him or her of youthfulness. The
+sorcerer becomes young, whilst the victim must make
+a <i>death</i> saving throw.</p>
+<p>If the saving throw fails, the victim withers and dies; if
+the save succeeds, the victim becomes elderly and senile.
+Only a <i>restoration</i> spell can restore the victim to
+their true age, pending a <i>trauma survival</i> check (see
+<b>Chapter 3: Statistics</b>, <i>constitution</i>); otherwise, they
+die. A sorcerer who has used this spell is sometimes
+revealed by their shadow, which never reflects a young
+person, but an elderly wizard or hag.</p>"

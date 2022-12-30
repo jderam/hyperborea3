@@ -1,0 +1,21 @@
+id: 419
+name: Transmute Rock to Lava
+pp: 242
+Lvl:
+  - pyr 6
+Rng: 60 feet
+Dur: 1 turn per CA level
+Rev: 1
+Desc: "<p>Changes earth, gravel, rock, or sand into hot lava. The
+sorcerer affects an area as large as 40 × 40 feet and
+1 foot deep. If this spell takes effect under the feet of
+an enemy, this foe will die a horrible, liquifying death
+unless an <i>avoidance</i> save is made, in which case 5d6 hp
+damage is suffered. Movement through the lava is at 10
+MV, with a save required for each round of exposure.
+When the spell’s duration elapses, the lava dries to light,
+porous rock, potentially trapping victims (<i>avoidance</i>
+save to escape); those so trapped require <i>extraordinary
+feats of strength</i> to break free. The reverse of this spell,
+<i>transmute lava to rock</i>, hardens lava into solid stone,
+affecting a 10 × 10 × 10-foot area per CA level.</p>"

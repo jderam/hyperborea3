@@ -1,0 +1,24 @@
+id: 421
+name: Transport via Plants
+pp: 242
+Lvl:
+  - drd 6
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>The sorcerer or other recipient can step within any
+large plant and pass almost any distance to another
+plant of like size and species. This transference is effected
+in but 1 round, regardless of distance. The traveler
+need not be familiar with the precise destination
+plant; indeed, only direction and distance are required.
+The dweomer will then transport the spell’s subject
+to the closest available specimen. (Of course, it can be
+many miles away from the desired location, depending
+on circumstances.) Upon arrival, the subject need not
+step out from the destination plant immediately; one
+may remain within, observing with all normal senses
+and those of the plant itself. Egress can be delayed for
+up to 24 hours, but if the plant is not stepped out from
+within that time, the subject will be ejected violently
+for 6d6 hp damage.</p>"

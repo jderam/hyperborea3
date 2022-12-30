@@ -1,0 +1,18 @@
+id: 448
+name: White Hand of Death
+pp: 246
+Lvl:
+  - nec 6
+Rng: touch
+Dur: special
+Rev: 0
+Desc: "<p>By the sorcerer’s touch, a death spell is delivered. The
+target must make a <i>death</i> saving throw or receive the
+spell’s mark and die. The victim of this spell is left with
+a pale handprint on their chest (the mark concealed
+unless the chest is bare). The <i>white hand of death</i>
+imprint remains burnt on the victim’s chest for nine
+days. Unless the body is incinerated, any creature who
+touches the body must also make a <i>death</i> save or die,
+branded with their own pale white handprint—and so
+spreads the contagion known as the <i>white death</i>.</p>"
