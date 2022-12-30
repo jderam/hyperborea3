@@ -1,0 +1,26 @@
+id: 174
+name: Forbiddance
+pp: 200
+Lvl:
+  - clr 6
+Rng: 30 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Enforces a <i>ceremony of consecration</i> spell. Laying
+this dweomer requires a 12-turn (2-hour) ritual. Holy
+oil/water must be sprinkled about the perimeter of
+the <i>consecrated</i> area whilst casting this spell. Creatures
+of like alignment and/or faith as the caster
+might be instructed in a special prayer or password
+to enter the <i>forbidden</i> area. Without knowledge of the
+prayer/password, entry is impossible unless <i>sorcery</i>
+saving throws are made, modified by <i>willpower adjustment</i>,
+if applicable. Creatures whose alignment and/or
+faith are in opposition to the caster’s cannot enter—
+even if they know the prayer/password—unless they
+make <i>sorcery</i> saving throws. If the saves fail, interlopers
+each suffer 4d6 hp damage, as well as a painful
+wracking of the body for every turn that they remain in
+the <i>forbidden</i> area. Otherwise, trespassers who make
+their saves feel sickened and nauseous whilst within
+the <i>forbidden</i> area.</p>"

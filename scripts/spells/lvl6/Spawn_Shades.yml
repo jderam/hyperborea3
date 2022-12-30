@@ -1,0 +1,26 @@
+id: 368
+name: Spawn Shades
+pp: 231
+Lvl:
+  - ill 6
+Rng: 30 feet
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>From the impossible depths of the Black Gulf, the sorcerer
+extracts negative energy to generate quasi-real
+<i>shades</i>. The sorcerer can create a single
+monster or multiple monsters, so long as their HD
+total does not exceed the sorcerer’s CA level. If multiple
+monsters are created, they must all be of the same
+creature type.</p>
+<p>The shades all are AC 5 and use d8 for hit
+dice, regardless of their type. <i>Shades</i> cannot
+use special abilities; they strictly make physical attacks.
+A <i>shade</i> <b>cave bear</b>, for example, can make its normal
+claw/claw/bite attack, but a <i>shadow</i> <b>giant scorpion</b> has
+no venom in its sting. A <i>shade</i> can be struck
+only by silver or magical weapons, the former of which
+inflict double damage; too, any creature of 6 HD or
+greater can strike a <i>shade</i>. Spells that deliver
+physical damage also can affect them. A <i>shade</i>
+can be dispersed by <i>dispel phantasm</i>.</p>"

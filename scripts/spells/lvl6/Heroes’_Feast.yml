@@ -1,0 +1,26 @@
+id: 197
+name: Heroes’ Feast
+pp: 204
+Lvl:
+  - clr 6
+Rng: 10 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>Conjures a grand banquet that feeds a number of
+people equal to the sorcerer’s CA. Casting this spell
+requires the use of a holy symbol, prayer beads,
+and/or incense. The <i>heroes’ feast</i> appears on a great
+table surrounded by as many chairs as needed. The
+<i>feast’s</i> main course might be roasted pig, stuffed
+pheasant, butter and dill fried cod, boiled lobster, or
+the like; it also includes appetizers, side dishes, greens,
+legumes, beer, wine, and more. The courses are served
+by a half-dozen <i>unseen servants</i> (q.v.), though they
+perform in no other capacity than to serve the <i>feast</i>.
+Consuming the meal requires one hour. Thereafter, the
+<i>feasters</i> experience a mild ambrosial effect by which
+they are immune to poison, disease, and sorcerous fear
+for 12 hours; too, they are healed of 1d8+4 hp damage,
+and they enjoy the effects of a <i>bless</i> spell (q.v.) for 1d8
+hours. If the <i>feast</i> is interrupted, however, no benefits
+will be realized.</p>"

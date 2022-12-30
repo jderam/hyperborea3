@@ -1,0 +1,33 @@
+id: 340
+name: See
+pp: 228
+Lvl:
+  - wch 6
+Rng: 5 feet
+Dur: 6 turns (1 hour)
+Rev: 0
+Desc: "<p>This spell requires 1 turn to cast. The sorcerer uses
+a reflective surface to <i>see</i> any single creature—at
+any distance—including a five-foot radius around the
+subject. At first the surface clouds, and then slowly resolves
+to reveal the subject (unless the attempt fails),
+much like a <b>crystal ball</b>. The attempt to <i>see</i> the subject
+is not without chance of failure. The following table
+lists the chance-in-twelve of success:</p>
+<p><table><caption><b>Table 112: See Spell</b></caption>
+<tr style=text-align:center><th>Acquaintance with Subject</th><th>Chance of Success</th></tr>
+<tr style=text-align:center><td>Subject is well known by caster</td><td>11:12</td></tr>
+<tr style=text-align:center>Subject is somewhat known by caster</td><td>9:12</td></tr>
+<tr style=text-align:center>Well-drawn picture of subject available</td><td>7:12</td></tr>
+<tr style=text-align:center>Crudely drawn picture of subject available</td><td>5:12</td></tr></table></p>
+<p>The chance-in-twelve of success might be modified by
+the following factors:</p>
+<ul><li>Belonging of subject in possession of caster: +1</li>
+<li>Well-informed description of subject: +1</li>
+<li>Subject on different world/dimension: −3</li>
+<li>Subject is dead: −5</li></ul>
+<p>For every turn of <i>seeing</i>, the subject has a cumulative
+1-in-6 chance to intuit being watched; i.e., 1-in-6 on
+turn 1, 2-in-6 on turn 2, and so on. Barbarians’ and shamans’
+chances are doubled. By turn 6 any subject will
+suspect they are being watched by means sorcerous.</p>"

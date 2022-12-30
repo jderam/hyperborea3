@@ -1,0 +1,27 @@
+id: 105
+name: Demi-Shadow Sorcery
+pp: 191
+Lvl:
+  - ill 6
+Rng: special
+Dur: special
+Rev: 0
+Desc: "<p>Gathers negative energy from the Black Gulf to mimic
+three spells typically associated with magicians. Each
+variation manifests uniquely; the effects, however, are
+somewhat reduced due to their quasi-reality. The caster
+may choose the variation at the time of casting:</p>
+<ul><li><i>Cone of Cold:</i> as the spell, except that it drains
+1d4 hp damage per CA level, so a CA 12 caster
+unleashes a cone that delivers 12d4 hp damage.
+The cone is jet black.</li>
+<li><i>Fire Shield:</i> as the spell, except that successful
+melee attacks against the sorcerer cause the
+attacker to sustain ×1.5 the amount of damage
+inflicted. The cold-resistant form is midnight
+blue, and the fire-resistant form is blood red.</li>
+<li><i>Wall of Fire:</i> as the spell, except that the wall
+inflicts 3d4 hp damage, +1 hp per CA level,
+versus creatures of 4 HD or greater. Undead
+sustain 5d4 hp damage, +1 hp per CA level.
+The flames are violet-black.</li></ul>"

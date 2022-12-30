@@ -1,14 +1,15 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 15,
     "class_name": "Pyromancer",
     "attr": {
         "st": {
-            "score": 5,
-            "atk_mod": -1,
-            "dmg_adj": -1,
-            "test": 1,
-            "feat": 1
+            "score": 11,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
             "score": 15,
@@ -18,29 +19,29 @@
             "feat": 16
         },
         "cn": {
-            "score": 15,
+            "score": 14,
             "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
+            "poison_adj": 0,
+            "trauma_surv": 80,
             "test": 3,
-            "feat": 16
+            "feat": 8
         },
         "in": {
-            "score": 14,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
-        },
-        "ws": {
-            "score": 11,
-            "will_adj": 0,
+            "score": 10,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
+        "ws": {
+            "score": 18,
+            "will_adj": 2,
+            "bonus_spells": 4,
+            "learn_spell": 95
+        },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 80000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 18,
-        "deity_name": "Xathoqqua",
-        "primary_alignment": "Chaotic"
+        "deity_id": 22,
+        "deity_name": "Yoon'Deh",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 11,
-    "race": "Pict (Half-Blood)",
-    "gender": "Male",
+    "race_id": 10,
+    "race": "Pict",
+    "gender": "Female",
+    "secondary_skill": "fisherman/whaler",
     "hd": "6d4",
-    "hp": 20,
+    "hp": 17,
     "fa": 2,
     "ca": 6,
     "ta": 0,
@@ -124,9 +126,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +144,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -162,7 +164,7 @@
             "qty": 4,
             "ammunition": null,
             "missile_atk": 1,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -192,12 +194,103 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "pyr": {
             "spells_per_day": {
-                "lvl1": 5,
+                "lvl1": 4,
                 "lvl2": 3,
                 "lvl3": 2,
                 "lvl4": 0,
@@ -208,90 +301,90 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
                     "spell_id": 361,
                     "spell_name": "Smoke Cloud",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "1d6+4 rounds",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>A dense cloud of smoke forms, occupying an area of 8,000 cubic feet (e.g., a 20 \u00d7 20 \u00d7 20-foot room, a 10 \u00d7 10 \u00d7 80-foot passage). The sorcerer can stand in the centre of the <i>smoke cloud</i>, casting the spell in such a way that it extends in all directions, but any movement will place the sorcerer in the smoke. The cloud induces mild coughing and irritates the eyes of those within its confines. <i>Smoke cloud</i> also obstructs vision: Missiles may be fired 10 feet into it at a \u22124 penalty, but longer ranges are impossible; melee within the smoke cloud is likewise at \u22124 \u201cto hit.\u201d</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 145,
-                    "spell_name": "F\u00e6rie Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 366,
+                    "spell_name": "Sorcerous Armour",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>A sorcerous force field equivalent to leather armour (AC 7) surrounds the beneficiary of this enchantment. The spell has no effect on an armoured recipient, but a creature with natural AC 7 or better gains a +1 AC bonus. This spell persists until <i>dispelled</i>, or until the recipient sustains cumulative damage totalling 10 hp, +1 hp per CA level.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 167,
-                    "spell_name": "Flaming Sphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 196,
+                    "spell_name": "Heat Metal",
+                    "range": "30 feet",
+                    "duration": "9 rounds",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p>Heats metallic objects to searing temperatures. For every CA level of the sorcerer, five square feet of metal can be affected, equivalent to one Small creature per CA level, or one Medium creature per 2 CA levels; e.g., a CA 6 sorcerer can affect three adjacent armoured people. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). <i>Heat metal</i> is quick to warm, burn, and then sear; likewise, it is quick to cool. The dweomer persists for 9 rounds, with metal treated thusly if in contact with skin:</p> <ul><li><b>Round 1:</b> Metal becomes <i>hot</i>, uncomfortable to the touch</li> <li><b>Rounds 2\u20134:</b> Metal becomes <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 5:</b> Metal <i>sears</i> for 2d4 hp damage</li> <li><b>Rounds 6\u20138:</b> Metal cools to <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 9:</b> Metal cools to <i>hot</i></li></ul> <p>Materials such as cloth, leather, or wood in touch with <i>searing</i> metal are subject to smouldering or even combusting, as per the referee\u2019s judgment. <i>Fire protection</i> and <i>fire resistance</i> negate the harmful effects of this spell.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 308,
+                    "spell_name": "Produce Flame",
+                    "range": "0",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 222,
+                    "spell_desc": "<p>A small, torch-like flame ignites in the palm of the sorcerer, creating a 40-foot radius of light. The flame does not harm the caster. It remains in effect for the spell\u2019s duration, so long as no other spells are cast. The sorcerer can terminate the spell by closing his or her hand to a fist.</p> <p>The sorcerer can opt to hurl the flame within 30 feet as a ranged attack using the <i>flask hurling</i> rules (see <b>Chapter 9: Combat</b>, <i>combat options</i>). The flame bursts in a five-foot diameter if it strikes, igniting combustibles and causing 1d4 hp damage, +1 hp per CA level (e.g., a CA 5 sorcerer can hurl a <i>produced flame</i> that inflicts 1d4+5 hp damage). A <i>sorcery</i> saving throw reduces damage by half.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 449,
-                    "spell_name": "Wind Wall",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 137,
+                    "spell_name": "Explosive Runes",
+                    "range": "touch",
+                    "duration": "permanent (until triggered)",
+                    "reversible": false,
+                    "pp": 195,
+                    "spell_desc": "<p>Sorcerous symbols are inscribed on the surface of a book, manual, map, note, scroll, tome, or other written work. The <i>explosive runes</i> protect the volume\u2019s content so that only the sorcerer who inscribed the <i>runes</i> may access the material safely. If the reader is not the caster, the <i>runes</i> will explode for 5d6 hp damage. The reader is permitted no saving throw, but those within 10 feet are allowed <i>sorcery</i> saving throws for half damage. Sorcerers who carefully inspect the volume (before simply reading it) have a 1-in-20 chance per CA level of discovering the <i>explosive runes</i>. <i>Explosive runes</i> can be removed at any time by the caster or the <i>dispel magic</i> spell. Detonation effectively destroys the material.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
                     "spell_id": 194,
                     "spell_name": "Haste",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "18 rounds (3 minutes)",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>Doubled are the attack and movement rates of this spell\u2019s recipients; unwilling targets are allowed <i>sorcery</i> saving throws. The caster selects a target point and <i>hastens</i> a number of creatures equal to his or her CA level in a 15-foot radius. Those closest to the centre of the circle are affected first, potentially including the sorcerer\u2019s enemies; however, the caster can limit the radius of the spell, shrinking it as desired. <i>Hastened</i> creatures can move at double their normal rates and make twice as many attacks per combat round:</p> <ul><li>1/1 attack rate becomes 2/1</li> <li>3/2 attack rate becomes 3/1</li> <li>2/1 attack rate becomes 4/1</li> <li>5/2 attack rate becomes 5/1</li> <li>3/1 attack rate becomes 6/1</li></ul> <p>Sorcery (spells and magical devices) is not <i>hastened</i> in any way. This spell cannot be \u201cstacked\u201d with other spells or magic items that increase speed. Once the duration is met, recipients of <i>haste</i> are aged by one year as a result of this spell, unless a <i>transformation</i> saving throw is made. <i>Haste</i> counteracts the <i>slow</i> spell, but this usage does not bring about the ageing side effect.</p>"
                 }
             ]
         }

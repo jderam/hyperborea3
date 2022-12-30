@@ -1,0 +1,18 @@
+id: 430
+name: Veil
+pp: 243
+Lvl:
+  - ill 6
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Makes the caster and allies appear as something they
+are not. The sorcerer can affect allies in a 40-foot radius,
+but they must be willing participants. <i>Veil</i> can make
+them look as though they were inanimate objects such
+as boxes or kegs, small trees or shrubs; or perhaps dogs,
+<b>orcs</b>, or anything else imagined by the caster, so long as
+it is something with which the caster is familiar. Exact
+features cannot be duplicated. For example, whilst a
+band of guards who wear black chain mail and red capes
+may be imitated, the face of their captain cannot.</p>"

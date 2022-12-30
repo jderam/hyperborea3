@@ -1,38 +1,39 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 31,
     "class_name": "Mountebank",
     "attr": {
         "st": {
-            "score": 6,
+            "score": 5,
             "atk_mod": -1,
             "dmg_adj": -1,
             "test": 1,
             "feat": 1
         },
         "dx": {
-            "score": 14,
-            "atk_mod": 0,
-            "def_adj": 1,
+            "score": 17,
+            "atk_mod": 1,
+            "def_adj": 2,
+            "test": 4,
+            "feat": 32
+        },
+        "cn": {
+            "score": 15,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
             "test": 3,
             "feat": 16
         },
-        "cn": {
-            "score": 10,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
-        },
         "in": {
-            "score": 15,
+            "score": 13,
             "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 9,
+            "score": 11,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
@@ -49,20 +50,21 @@
     "xp_to_next": 352000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 4,
-        "deity_name": "Azathoth",
+        "deity_id": 17,
+        "deity_name": "Ullr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Female",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Non-Binary",
+    "secondary_skill": "engineer",
     "hd": "8d6",
-    "hp": 28,
+    "hp": 41,
     "fa": 5,
     "ca": 8,
     "ta": 0,
@@ -114,7 +116,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 4,
+    "ac": 3,
     "mv": 40,
     "weapons_melee": [
         {
@@ -131,7 +133,7 @@
             "qty": 2,
             "atk_rate": "1/1",
             "melee_atk": -1,
-            "hurled_atk": 0,
+            "hurled_atk": 1,
             "dmg_adj": -1,
             "mastery": false
         },
@@ -167,7 +169,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -190,16 +192,224 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
             "thief_skill": "climb",
             "skill_name": "Climb",
-            "skill_roll": 9,
+            "skill_roll": 10,
             "stat": "dx"
         },
         {
@@ -217,31 +427,31 @@
         {
             "thief_skill": "hide",
             "skill_name": "Hide",
-            "skill_roll": 8,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
             "thief_skill": "manipulate_traps",
             "skill_name": "Manipulate Traps",
-            "skill_roll": 6,
+            "skill_roll": 7,
             "stat": "dx"
         },
         {
             "thief_skill": "move_silently",
             "skill_name": "Move Silently",
-            "skill_roll": 8,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
             "thief_skill": "open_locks",
             "skill_name": "Open Locks",
-            "skill_roll": 6,
+            "skill_roll": 7,
             "stat": "dx"
         },
         {
             "thief_skill": "pick_pockets",
             "skill_name": "Pick Pockets",
-            "skill_roll": 7,
+            "skill_roll": 8,
             "stat": "dx"
         }
     ],
@@ -250,7 +460,7 @@
         "ill": {
             "spells_per_day": {
                 "lvl1": 3,
-                "lvl2": 3,
+                "lvl2": 2,
                 "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -260,90 +470,90 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 440,
-                    "spell_name": "Wall of Vapours",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 62,
+                    "spell_name": "Colour Spray",
+                    "range": "20 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>From the sorcerer\u2019s hands emerges a rainbow of colours, forming a wedge 5 feet wide at its base, 20 feet long, and 20 feet wide at its terminus. <i>Colour spray</i> affects 1d6 creatures within this area of effect, beginning with those closest to the caster. Targets are allowed <i>sorcery</i> saving throws. Victims of 5 HD or fewer that fail their save are stricken unconscious for 2d4 rounds. Victims of 6 HD or more that fail their saving throws are blinded for 1d4 rounds. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws. <i>N.B.:</i> Undead, constructs, and blind or sightless creatures are unaffected by this spell.</p>"
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 43,
+                    "spell_name": "Captivate",
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 181,
+                    "spell_desc": "<p>The sorcerer fascinates the subject of this spell if it fails its <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. The <i>captivated</i> creature sees the caster as pleasing, desirable, or ideal. The sorcerer can direct the <i>captivated</i> one, who will trust, follow, and obey the caster. However, every time a new request is made, no matter how small or large, the victim of the spell rolls 3d6. If the total exceeds the caster\u2019s charisma score, the spell is broken. Furthermore, if the request is unreasonable or potentially harmful to the victim, the roll may be made with a bonus of +1 to +3, as judged by the referee. If the spell is broken, the subject will be filled with unbridled rage, attacking the caster at +2 \u201cto hit\u201d and damage rolls.</p> <p>Normal animals also are subject to the <i>captivate</i> spell and will follow the caster for 1d4 days. If the animal is of a sort that might be tamed, and if it has been fed and treated well, it becomes a loyal ally if a 3d6 roll does not exceed the caster\u2019s charisma score. It will, however, resent other animal companions.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
                     "spell_id": 35,
                     "spell_name": "Blur",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1d4+4 rounds",
+                    "reversible": false,
+                    "pp": 180,
+                    "spell_desc": "<p>The sorcerer becomes vague, hazy, and nebulous. For the duration of the spell, the caster gains a +2 bonus to armour class and <i>device</i> saving throws (e.g., rods, staves, wands, some rings).</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 331,
-                    "spell_name": "Rope Trick",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "ill",
-                    "spell_level": 2,
-                    "spell_id": 426,
-                    "spell_name": "Ultraviolet Vision",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 173,
+                    "spell_name": "Fool\u2019s Gold",
+                    "range": "10 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 200,
+                    "spell_desc": "<p>Temporarily transforms baser coins to gold, affecting 100 coins per CA level. Laying this dweomer requires one gold coin per 100 coins to be altered. The component coin must be ground to dust and sprinkled over the coins to be transmuted. To the unwary, the coins have the look, feel, and weight of gold; to the canny, they may be identified as counterfeits. <i>Sorcery</i> saving throws may be made by those who handle the <i>fool\u2019s gold</i>. The saving throws are modified by <i>willpower adjustment</i>, if applicable; magicians, thieves, and some professionals (e.g., jewellers, shrewd merchants or barkeeps) gain +3 save bonuses.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 386,
-                    "spell_name": "Suggestion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 292,
+                    "spell_name": "Phantasmal Wind",
+                    "range": "180 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 219,
+                    "spell_desc": "<p>Invokes from the Black Gulf a gust of phantom wind that is neither seen nor felt, yet can extinguish torches, fan flames, rustle flags, or disperse spells such as <i>cloudkill</i> and <i>fog cloud</i>. <i>Phantasmal wind</i> blows in the direction the caster points, wafting at 30 MV from the time it is cast and petering out at the spell\u2019s maximum range. At its greatest effectiveness, this dweomer can belly the sail of a small craft.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 215,
-                    "spell_name": "Illusory Wall of Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 293,
+                    "spell_name": "Phantom Steed",
+                    "range": "10 feet",
+                    "duration": "12 hours",
+                    "reversible": false,
+                    "pp": 219,
+                    "spell_desc": "<p>Formed from the shadow-stuff of the Black Gulf is a quasi-real, equine mount for the caster or other recipient. Requiring 1 turn to materialize, the beast is smoky grey to black in colour, with pale white eyes. The <i>phantom steed</i> makes no sound as it moves, and its shadowy hooves never touch the ground. If the caster has CA 8 or greater, the <i>phantom steed</i> can cross muddy, sandy, or swampy terrain uninhibited; at CA 10 or greater, it can pass over water as though it were solid ground; and at CA 12, the <i>phantom steed</i> can walk on air (though not fly, per se), able to cross a chasm or crevasse as though a solid bridge were present.</p> <p>Normal animals may shew uneasiness in the <i>phantom steed\u2019s</i> presence. The <i>phantom steed</i> is incapable of combat, but it can be attacked. Its relevant statistics are: MV 60; AC 7; HD 2; #A 0; D \u2014; SV 16. It cannot be healed if injured and will disappear at 0 hp.</p>"
                 }
             ]
         }

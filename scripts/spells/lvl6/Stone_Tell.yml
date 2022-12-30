@@ -1,0 +1,15 @@
+id: 381
+name: Stone Tell
+pp: 233
+Lvl:
+  - clr 6
+  - drd 6
+Rng: touch
+Dur: 1 turn
+Rev: 0
+Desc: "<p>Imbues a rock or rocky surface with the ability to
+communicate the name and/or type of any creature
+that has touched it. The stone can also divulge what is
+behind it or what it conceals, and provide a full visual
+description as required by the sorcerer. However, the
+entire effect is empathic; no words are spoken.</p>"

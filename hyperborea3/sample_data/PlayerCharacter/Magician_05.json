@@ -1,4 +1,5 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 2,
     "class_name": "Magician",
@@ -11,36 +12,36 @@
             "feat": 2
         },
         "dx": {
-            "score": 11,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 6,
+            "atk_mod": -1,
+            "def_adj": -1,
+            "test": 1,
+            "feat": 1
         },
         "cn": {
-            "score": 9,
+            "score": 8,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 75,
+            "trauma_surv": 65,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 4,
-            "will_adj": -1,
+            "score": 9,
+            "will_adj": 0,
             "bonus_spells": 0,
-            "learn_spell": 0
+            "learn_spell": 50
         },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 9,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -49,18 +50,19 @@
     "xp_to_next": 40000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 4,
-        "short_name": "LG",
-        "long_name": "Lawful Good"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
         "deity_id": 1,
         "deity_name": "Apollo",
         "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Non-Binary",
+    "secondary_skill": "potter",
     "hd": "5d4",
     "hp": 15,
     "fa": 2,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 10,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,7 +127,7 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
+            "hurled_atk": -1,
             "dmg_adj": -1,
             "mastery": false
         },
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": -1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -186,17 +188,71 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "mag": {
             "spells_per_day": {
-                "lvl1": 5,
+                "lvl1": 4,
                 "lvl2": 3,
                 "lvl3": 2,
                 "lvl4": 0,
@@ -207,79 +263,79 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 41,
+                    "spell_name": "Burning Hands",
+                    "range": "5 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 181,
+                    "spell_desc": "<p>Jets of thin, multihued flames spring from the fingertips of the caster\u2019s enveloped-in-flames hands, fanning out in a 120\u00b0 horizontal arc and causing 2 hp damage per CA level, with no saving throw allowed. Combustible materials (e.g., cloth, paper, dry wood) are likely ignited if exposed to <i>burning hands</i>.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
                     "spell_id": 350,
                     "spell_name": "Shocking Grasp",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>The sorcerer touches a target, unleashing a jolt of electricity that delivers 1d8 hp damage, +1 hp per CA level (so a CA 3 sorcerer delivers 1d8+3 hp damage). The sorcerer must be able to touch the victim or a reasonable conductor in contact with the victim. If the sorcerer\u2019s attack is a miss, subsequent attempts may be made in the following rounds of combat, but any action other than half movement breaks the spell. <i>N.B.:</i> Metal armour is ignored when calculating the victim\u2019s armour class, if applicable.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Enlargement",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 190,
+                    "spell_name": "Grease",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A fatty, unctuous film coats an area of effect equal to 2 \u00d7 2 feet per CA level (e.g., a CA 10 sorcerer affects an area not exceeding 20 \u00d7 20 feet). Any creature that steps on the <i>greased</i> area will slip and fall unless it makes an <i>avoidance</i> saving throw. A fallen victim is momentarily <i>prone</i>. <i>Grease</i> is not limited to flooring; it can be used to lubricate a rope, a chair, or other objects. If the spell is cast on something an enemy holds or wears, a <i>sorcery</i> saving throw negates the effects.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 375,
-                    "spell_name": "Spider Climb",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 260,
+                    "spell_name": "Mind Blank",
+                    "range": "120 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 214,
+                    "spell_desc": "<p>Causes victims to forget the last minute of their lives prior to and including the casting of this spell. The targets may make <i>sorcery</i> saving throws, modified by <i>willpower adjustment</i>, if applicable. One to four persons, chosen by the caster, can be affected, but the greater the number of targets, the less potent the spell: Two targets each receive a +1 bonus to their saving throws, three targets each receive a +2 bonus, and four targets each receive a +3 bonus. This spell will not negate the effects of other enchantments such as <i>charm person</i> or <i>geas</i>. Lost memories can be restored via a <i>heal</i> spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 437,
-                    "spell_name": "Wall of Shadow",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 1,
+                    "spell_name": "Acid Arrow",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 175,
+                    "spell_desc": "<p>A magic arrow darts from the finger of the caster. On a successful attack roll (<i>dexterity</i> modifier applies), the <i>acid arrow</i> strikes for 1d4+1 hp physical damage, plus an additional 2d4 hp acid damage in the same round. Magicians (but not other sorcerers) enjoy a +1 bonus to the attack roll for every 2 CA levels (CA 3\u20134 = +2, CA 5\u20136 = +3, and so forth). Acid damage will persist for higher level sorcerers:</p> <ul><li>1 extra round for CA 4\u20136</li> <li>2 extra rounds for CA 7\u20139</li> <li>3 extra rounds for CA 10 or greater.</li></ul> <p>For example, an <i>acid arrow</i> fired by a CA 12 sorcerer on round 1 would inflict 1d4+1 hp base damage plus 2d4 hp acid damage on round 1, 2d4 hp acid damage on round 2, 2d4 hp acid damage on round 3, and a final 2d4 hp acid damage on round 4. The acid may ruin armour or clothing per referee discretion. <i>N.B.:</i> If using the optional <i>critical hits and misses</i> rules, <i>acid arrow</i> is subject to critical success or failure; however, magicians should use the \u201cfighter\u201d column in each such instance. Also, any multiplied damage that results from a critical hit or critical miss applies strictly to the arrow\u2019s physical damage, not the acid.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 44,
-                    "spell_name": "Cataleptic State",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 239,
+                    "spell_name": "Lightning Bolt",
+                    "range": "180 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>A bolt of lightning 5 feet wide and 60 feet long erupts from the outstretched hands of the sorcerer, striking all within its path until it reaches maximum range. Struck creatures suffer 1d6 hp damage per CA level, with <i>sorcery</i> saving throws allowed for half damage.</p> <p>The <i>lightning bolt</i> will travel its full range of 180 feet before ceasing; if it strikes a wall or another solid surface before reaching its 180-foot range, it will rebound, potentially striking again those within its path\u2014and possibly the caster. For example, if a CA 9 sorcerer casts this spell whilst in the doorway of a 70 \u00d7 70-foot room, the <i>bolt</i> will strike its targets for 9d6 hp damage, strike the far wall, bounce back, hit the targets again (they get another saving throw for half damage), strike the caster, and then travel another 40 feet before dissipating.</p>"
                 }
             ]
         }
@@ -296,7 +352,7 @@
             "class_id": 2,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Viper, 2 hp]",
+            "brief_desc": "magical animal companion. [Rat, 3 hp]",
             "ability_desc": null
         },
         {

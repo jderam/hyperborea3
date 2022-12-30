@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 19,
     "class_name": "Priest",
     "attr": {
         "st": {
-            "score": 12,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 6,
+            "atk_mod": -1,
+            "dmg_adj": -1,
+            "test": 1,
+            "feat": 1
         },
         "dx": {
-            "score": 16,
-            "atk_mod": 1,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
-        },
-        "cn": {
             "score": 14,
-            "hp_adj": 1,
-            "poison_adj": 0,
-            "trauma_surv": 80,
+            "atk_mod": 0,
+            "def_adj": 1,
             "test": 3,
             "feat": 8
         },
+        "cn": {
+            "score": 9,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
+        },
         "in": {
-            "score": 10,
+            "score": 12,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 12,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 64000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 21,
-        "deity_name": "Ymir",
-        "primary_alignment": "Chaotic"
+        "deity_id": 22,
+        "deity_name": "Yoon'Deh",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "secondary_skill": "mortician",
     "hd": "6d4",
-    "hp": 24,
+    "hp": 18,
     "fa": 2,
     "ca": 6,
     "ta": 6,
@@ -124,9 +126,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
-            "hurled_atk": 1,
-            "dmg_adj": 0,
+            "melee_atk": -1,
+            "hurled_atk": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -142,9 +144,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": -1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -160,9 +162,9 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": -1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -190,6 +192,72 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": {
         "undead_type_00": "D",
@@ -211,7 +279,7 @@
         "clr": {
             "spells_per_day": {
                 "lvl1": 5,
-                "lvl2": 4,
+                "lvl2": 5,
                 "lvl3": 3,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -221,90 +289,167 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 332,
-                    "spell_name": "Sanctuary",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 314,
-                    "spell_name": "Purify Food and Drink",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 61,
-                    "spell_name": "Cold Resistance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 116,
-                    "spell_name": "Detect Venom",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 89,
-                    "spell_name": "Cure Light Wounds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 111,
+                    "spell_name": "Detect Malady",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>By laying hands on the afflicted, the sorcerer detects the presence of a curse, disease, or poison. The type of malady and its exact nature are revealed (e.g., the caster will discern poison and differentiate between a spider\u2019s venom and an alchemical concoction).</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
                     "spell_id": 81,
                     "spell_name": "Create Water",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 187,
+                    "spell_desc": "<p>The sorcerer conjures as much as three gallons of water per CA level. The water is fresh, clean, and potable. It can be placed within one or more appropriate containers so long as they are touching, or it can be evoked to appear in the air within the spell\u2019s range. The reverse of this spell, <i>destroy water</i>, vaporizes a like amount of water. If used offensively (e.g., several gallons of water dropped on the head of an enemy), the target is allowed an <i>avoidance</i> saving throw.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 314,
+                    "spell_name": "Purify Food and Drink",
+                    "range": "10 feet",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>Decontaminates one cubic foot of spoilt or rotten foodstuffs per CA level. Even poisonous food is made pure by this spell. The reverse of this spell, <i>putrefy food and drink</i>, spoils and rots an equal amount of food and drink; it cannot make food \u201cpoisonous,\u201d but putrefied food may well sicken a consumer.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 116,
+                    "spell_name": "Detect Venom",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>This spell has two functions: First, it reveals if an ailing person suffers the effects of poison, whether from a trap, snakebite, spider venom, or the like. The second function determines if a creature is venomous, or if an object is laced or trapped with poison. The creature or object in question must be viewed by the caster; obstructions will preclude the spell from functioning. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 107,
+                    "spell_name": "Detect Evil",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": true,
+                    "pp": 191,
+                    "spell_desc": "<p>The sorcerer detects potent emanations of Evil in a 60-foot-long, 10-foot-wide path. Sources of Evil emanations might include Evil artefacts, d\u00e6mons, or the undead. <i>Detect evil</i> will not discern the alignment of other characters, even if they are Evil, unless the subject is of a pure and intense Evil (empowered by d\u00e6mons, for example) or is about to commit a most vile act. Clerics must brandish their holy symbols to cast this spell. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect evil</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell. Evil sorcerers cast the reverse version of this spell, <i>detect good</i>, which functions the same way with regard to emanations of Good.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 212,
+                    "spell_desc": "<p>Enchants a stone that functions at +1 \u201cto hit\u201d and damage (i.e., 2 hp if thrown, or 1d4+1 hp if fired from a sling). Each stone issues a sharp report upon impact. For every 3 CA levels one stone is enchanted:</p> <p><table><caption><b>Table 103: Magic Stone Spell</b></caption> <tr><th>CA Level</th> <th>No. of Stones</th></tr> <tr><td>1\u20133</td> <td>1</td></tr> <tr><td>4\u20136</td> <td>2</td></tr> <tr><td>7\u20139</td> <td>3</td></tr> <tr><td>10\u201312</td> <td>4</td></tr></table></p> <p><i>Magic stones</i> can be launched with a sling or hurled as normal stones by the caster or an ally. Only one stone can be hurled at a time unless the target is no more than 10 feet away, in which case multiple stones may be hurled. Once a <i>magic stone</i> is tossed, its enchantment is lost, whether it strikes its intended target or not. If a sorcerer is struck by a <i>magic stone</i> whilst casting a spell, the spell is disrupted, even if the optional <i>concentration check</i> is in play, and spell loss is automatic.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": "0",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>A pale circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking. Against other Evil creatures, the sorcerer enjoys a +1 bonus to AC, DR, and saving throws versus their attacks. The reverse of this spell, <i>protection from good</i>, can be cast only by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": "20 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the sorcerer to communicate with any normal sort of animal (not magical beasts, monsters, or other supernatural creatures). The animals will reply in kind; such responses are usually limited to brief one- or twoword statements predicated on the intelligence of the animal, at the referee\u2019s discretion. Friendly animals might be convinced to perform some minor service.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 219,
+                    "spell_name": "Incantation",
+                    "range": "0",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 207,
+                    "spell_desc": "<p>The sorcerer chants eldritch invocations that effect a potent benison to allies\u2014and a malison to enemies\u2014within a 25-foot radius. Allies gain +1 \u201cto hit\u201d and +1 to saving throws; enemies are penalized \u22121 \u201cto hit\u201d and \u22121 saving throws. The bonuses/penalties persist as long as the caster continues to chant and remains perfectly stationary (no dexterity bonuses applicable). <i>Dispel magic</i> or <i>silence</i> can break this spell.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 355,
+                    "spell_name": "Silence",
+                    "range": "120 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Evokes a field of absolute soundlessness that radiates 15 feet from a selected point. Creatures may move from the spell\u2019s area of effect, but within the <i>silenced</i> field, all noise and speech are snuffed, and spells cannot be cast. If targeted directly at an opponent, the subject is allowed a <i>sorcery</i> saving throw to negate the spell; otherwise, the subject suffers utter <i>silence</i>. Spell casters gain +1 bonuses to their saving throws for every 2 CA levels they possess.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 135,
+                    "spell_name": "Enthral",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 195,
+                    "spell_desc": "<p>The sorcerer orates, preaches, or sermonizes; hence, the listeners must comprehend the language of the speaker and listen for at least two minutes. Then, with clever imperceptibility, the spell is laid. The caster may <i>enthral</i> an audience whose members have 4 HD or fewer unless they make <i>sorcery</i> saving throws, modified by <i>willpower adjustment</i>, if applicable. If the audience is not of the caster\u2019s species (humanoids or giants, for example), or if they are otherwise unfriendly towards the caster\u2019s particular background, the saving throw is made at a +1 to +4 bonus (as judged by the referee). For a large audience, similar HD listeners may be grouped together. <i>Enthralled</i> creatures will continue to listen to the expounding sorcerer, viewing the orator as having 18 charisma. Those who make the save may have an unfavorable reaction, seeing the orator as boring, offensive, foolish, and/or disgusting. Once the sorcerer ceases evangelizing, the spell will terminate, but effects remain for 1 turn.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 454,
+                    "spell_name": "Wyvern Warden",
+                    "range": "30 feet",
+                    "duration": "8 hours",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Taps the unspeakable power of the Black Gulf, conjuring a billowing black haze that assumes the vague shape of a <b>wyvern</b>: a large, two-legged dragon with a long, barbed tail. The <i>wyvern warden</i> is assigned a task of guardianship over a person, place, or thing. An approaching creature will not see the <i>wyvern warden</i> in the dark unless <i>detect magic</i> is cast. In naturally lit conditions, however, a wary approaching creature might discern the hazy, monstrous form.</p> <p>If anyone or anything approaches within 20 feet of the curling mass (except designated allies who were present and identified as such when the spell was cast), the <i>wyvern warden</i> lashes with its tail, striking without error. The victim must make a <i>death</i> saving throw or remain rigid for 1 round per CA level of the sorcerer. The <i>wyvern warden</i> will then disappear in a puff of black smoke, able to attack but one victim.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed. This enchantment affects humans, humanoids, and giants. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. Any targets of 9 HD or greater gain a +4 saving throw bonus. Saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
                 },
                 {
                     "school": "clr",
@@ -313,174 +458,97 @@
                     "spell_name": "Aid",
                     "range": "touch",
                     "duration": "1 turn",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 104,
-                    "spell_name": "Delay Poison",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 355,
-                    "spell_name": "Silence",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 156,
-                    "spell_name": "Fire Resistance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 24,
-                    "spell_name": "Augury",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 454,
-                    "spell_name": "Wyvern Warden",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 86,
-                    "spell_name": "Cure Deafness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 324,
-                    "spell_name": "Remove Curse",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 124,
-                    "spell_name": "Dispel Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 80,
-                    "spell_name": "Create Food and Water",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 3,
-                    "spell_id": 16,
-                    "spell_name": "Animate Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "reversible": false,
+                    "pp": 176,
+                    "spell_desc": "<p>A single recipient gains a +1 bonus on any saving throw versus fear effects (whether <i>sorcery</i> or <i>device</i>), a +1 bonus on all attack rolls, and a temporary 1d8 hit point boost. These hit points may exceed the recipient\u2019s normal hp maximum. Any subsequent damage is drawn from the temporary hp first, the remainder disappearing when the spell ends. Lastly, if cast upon an NPC ally (henchman, hireling, etc.), the recipient gains a +1 bonus on any <i>morale</i> (ML) check.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
                     "spell_id": 301,
                     "spell_name": "Prayer",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 220,
+                    "spell_desc": "<p>The sorcerer chants eldritch invocations that effect a potent benison to allies\u2014and a malison to enemies\u2014 within a 25-foot radius. Allies gain +1 \u201cto hit,\u201d +1 damage, and +1 to saving throws; enemies are penalized \u22121 \u201cto hit,\u201d \u22121 damage, and \u22121 saving throws. The bonuses/penalties persist as long as the caster continues to chant and 3 rounds after ceasing to chant. <i>Dispel magic</i> or <i>silence</i> can break this spell.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>Creates a 60-foot-diameter sphere of lambent light, the subtle hue of which may be selected by the caster. It cannot be cast on a single target or object, but rather on an area. The effect is permanent (unless <i>dispelled</i>), so long as the caster remains within 10 miles; otherwise, the dweomer begins to dissipate in subtle degrees, ending in a number of months equal to the sorcerer\u2019s CA. <i>Continuous light</i> can counter <i>continuous darkness</i> and <i>darkness</i>.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 444,
+                    "spell_name": "Water Walk",
+                    "range": "touch",
+                    "duration": "1 turn + 1 turn per CA level",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Allows the sorcerer and one companion per CA level to ambulate across fluid surfaces. A horse or camel equates to three companions; such a beast can <i>water walk</i> whilst bearing a single rider and/or gear no heavier than 300 pounds.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
                     "spell_id": 84,
                     "spell_name": "Cure Blindness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Remedies nearly all forms of impaired vision unless the eyes themselves have been destroyed. The reverse of this spell, <i>inflict blindness</i>, renders its victim sightless unless a <i>sorcery</i> saving throw is made. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 250,
-                    "spell_name": "Magic Vestment",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
+                    "range": "120 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Sorcery and its effects are negated and removed in an area of 20 \u00d7 20 \u00d7 20 feet. The spell does not negate magic items but can undo a sorcerous effect created by one. It does not, however, negate illusions/phantasms. If <i>dispel magic</i> is used against a spell cast by a sorcerer of higher CA, the chance of failure is 1-in-20 per level difference. For instance, if a CA 6 caster attempts to <i>dispel</i> the <i>levitate</i> spell of a CA 10 sorcerer, there is a 4-in-20 chance of failure.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 188,
+                    "spell_name": "Glyph of Warding",
+                    "range": "touch",
+                    "duration": "permanent (until triggered)",
+                    "reversible": false,
+                    "pp": 202,
+                    "spell_desc": "<p>Protects a box, chest, door, gate, portcullis, or another portal from unauthorized entry. This spell requires the use of crushed gem of at least 100-gp value. The sorcerer needs 2 turns to trace the <i>glyph</i>, which becomes invisible upon completion. The <i>glyph</i> can be discovered by spells such as <i>detect invisibility</i> or <i>detect magic</i>, or possibly by a thief searching for traps. The dweomer is placed with a code word that prevents it from discharging. The caster may supply allies with this code word, which must be spoken before the warded portal is opened or passed through.</p> <p>If an unauthorized creature triggers the <i>glyph</i>, one of the following effects occurs, selected by the sorcerer at the time of casting:</p> <ul><li>1d4 hp damage per CA level of cold, fire, or electrical damage (a blast effect)</li> <li><i>inflict blindness</i> (reversed form of <i>cure blindness</i> [q.v.])</li> <li><i>inflict deafness</i> (reversed form of <i>cure deafness</i> [q.v.])</li> <li><i>cause paralysis</i> (reversed form of <i>remove paralysis</i> [q.v.])</li></ul> <p>Each effect detonates in a five-foot radius per CA level. A successful <i>sorcery</i> saving throw negates each <i>cause/inflict</i> effect and reduces the three blast effects (cold, fire, electricity) to half damage.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 326,
+                    "spell_name": "Remove Paralysis",
+                    "range": "special",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 225,
+                    "spell_desc": "<p>Via a touch, this spell can free an afflicted victim from the effects of <i>ghoul touch</i>, <i>hold person</i>, <i>paralyze</i>, or similar spells. The reverse of this spell, <i>cause paralysis</i>, is a 30-foot ranged spell. The caster must point at the victim and speak a baleful incantation. If the target fails its <i>death</i> saving throw, it will fall limp, unable to move for 1 turn per CA level.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 3,
+                    "spell_id": 16,
+                    "spell_name": "Animate Dead",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 177,
+                    "spell_desc": "<p><b>Skeletons</b> or <b>zombies</b> are created from the bones and cadavers of dead humans or humanoids. The undead will obey the commands of the caster, following, attacking, or standing guard as directed. They will continue to serve until slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion betwixt the sorcerer and the undead. Through this necromancy the sorcerer can <i>animate</i> and maintain <b>1 skeleton</b> or <b>zombie</b> per CA level. If suitable remains are at hand, the sorcerer can opt to raise <b>1 large skeleton</b> per 3 CA levels, or <b>1 giant skeleton</b> per 6 CA levels, though zombies may only be created from the whole corpses of humans.</p>"
                 }
             ]
         }
@@ -510,8 +578,8 @@
         {
             "class_id": 19,
             "level": 1,
-            "ability_title": "Specialized Faith (Ymir)",
-            "brief_desc": "proficient with hand axes and battle axes",
+            "ability_title": "Specialized Faith (Yoon'Deh)",
+            "brief_desc": "1/day cast pass without trace (self only)",
             "ability_desc": null
         },
         {

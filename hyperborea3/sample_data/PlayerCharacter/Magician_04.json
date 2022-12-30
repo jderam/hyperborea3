@@ -1,41 +1,42 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 2,
     "class_name": "Magician",
     "attr": {
         "st": {
-            "score": 8,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 7,
-            "atk_mod": 0,
-            "def_adj": -1,
-            "test": 2,
-            "feat": 2
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 7,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 65,
-            "test": 2,
-            "feat": 2
+            "score": 18,
+            "hp_adj": 3,
+            "poison_adj": 2,
+            "trauma_surv": 95,
+            "test": 5,
+            "feat": 32
         },
         "in": {
-            "score": 16,
-            "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 16,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
             "score": 9,
@@ -47,22 +48,23 @@
     "xp": 10000,
     "level": 4,
     "xp_to_next": 20000,
-    "xp_bonus": true,
+    "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 8,
-        "deity_name": "Kraken",
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 6,
-    "race": "Ixian",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "secondary_skill": "brewer/vintner",
     "hd": "4d4",
-    "hp": 10,
+    "hp": 27,
     "fa": 1,
     "ca": 4,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 10,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,8 +127,8 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
-            "dmg_adj": -1,
+            "hurled_atk": 1,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -191,13 +193,67 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "mag": {
             "spells_per_day": {
-                "lvl1": 5,
-                "lvl2": 4,
+                "lvl1": 4,
+                "lvl2": 3,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -207,68 +263,68 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 358,
-                    "spell_name": "Sleep",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 243,
+                    "spell_desc": "<p>This spell requires 1 turn to cast and necessitates the sacrifice of a 50-gp gem. It summons an invisible entity of limited means. The <i>unseen servant</i> can clean, fetch and carry a 10-pound item (or drag a 20-pound item), tie a simple knot, mend a torn cloth or sack, open an unlocked door, or perform other menial tasks throughout the duration of the spell.</p> <p>The entity cannot fight, though it is not easy to kill: Magical weapons or spells must be used. The <i>unseen servant</i> has the following statistics: <b>MV</b> 30 (but it cannot run); <b>AC</b> 5; <b>HD</b> 1 (<b>hp</b> 6); <b>#A</b> 0; <b>D</b> \u2014; <b>SV</b> 17. If the caster moves farther than 120 feet away from the <i>unseen servant</i>, it will disappear.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Enlargement",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 257,
-                    "spell_name": "Mending",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 350,
+                    "spell_name": "Shocking Grasp",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>The sorcerer touches a target, unleashing a jolt of electricity that delivers 1d8 hp damage, +1 hp per CA level (so a CA 3 sorcerer delivers 1d8+3 hp damage). The sorcerer must be able to touch the victim or a reasonable conductor in contact with the victim. If the sorcerer\u2019s attack is a miss, subsequent attempts may be made in the following rounds of combat, but any action other than half movement breaks the spell. <i>N.B.:</i> Metal armour is ignored when calculating the victim\u2019s armour class, if applicable.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 431,
+                    "spell_name": "Ventriloquism",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 244,
+                    "spell_desc": "<p>The sound of the sorcerer\u2019s voice and very words are made to issue from something, someplace, or someone else. Examples may include a painting or statue, or simply from behind a door. If cast on an unwilling subject, the effect can be negated by a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 347,
-                    "spell_name": "Shatter",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 78,
+                    "spell_name": "Cool Metal",
+                    "range": "30 feet",
+                    "duration": "9 rounds",
+                    "reversible": false,
+                    "pp": 187,
+                    "spell_desc": "<p>Freezes metallic objects to blistering temperatures. For every CA level of the sorcerer, as much as five square feet of metal can be affected, equivalent to one Small creature per CA level, or one Medium creature per 2 CA levels; e.g., a CA 6 sorcerer can affect three adjacent armoured humans. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a mailclad giant may be considered the equivalent of four fighters). <i>Cool metal</i> is quick to cool, freeze, and then blister; likewise, it is quick to warm. The dweomer persists for 9 rounds, with metal treated thusly if in contact with skin:</p> <ul><li><b>Round 1:</b> Metal becomes <i>cold</i>, uncomfortable to the touch</li> <li><b>Rounds 2\u20134:</b> Metal <i>freezes</i>, biting for 1d4 hp damage per round</li> <li><b>Round 5:</b> Metal <i>blisters</i> for 2d4 hp damage</li> <li><b>Rounds 6\u20138:</b> Metal warms to <i>freezing</i>, biting for 1d4 hp damage per round</li> <li><b>Round 9:</b> Metal warms to <i>cold</i></li></ul> <p>Metal affected by <i>blistering cold</i> (round 5 of the spell) is subject to brittleness. If affected normal (nonmagical) armour is struck, it may shatter. The same applies to a normal sword, axe blade, etc. <i>Cold protection</i> and <i>cold resistance</i> negate the harmful effects of this spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 143,
+                    "spell_name": "Extrasensory Perception",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Allows the caster, who must pinch a copper coin betwixt thumb and forefinger, to detect the vague surface thoughts (not precise words) of any creature within the spell\u2019s range, so long as the creature has thoughts. (Most undead and constructs, for example, do not.) <i>Extrasensory perception</i> targets a single creature; once selected, another cannot be targeted. No saving throw is allowed unless the target is of 6 HD or greater. If so, a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable, must be made. When reading the surface thoughts of a lower-order creature, only its most basic instincts will be revealed. The spell also can be used to determine if a monster lurks behind a door or down a dark tunnel (so long as the monster is within range). The spell can penetrate one inch of metal, six inches of stone, or one foot of wood; however, the thinnest sheet of lead will obstruct it.</p>"
                 }
             ]
         }
@@ -285,7 +341,7 @@
             "class_id": 2,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Falcon/Hawk, 3 hp]",
+            "brief_desc": "magical animal companion. [Hare, 4 hp]",
             "ability_desc": null
         },
         {

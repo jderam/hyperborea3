@@ -1,29 +1,30 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 21,
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 9,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 11,
+            "score": 12,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 3,
-            "hp_adj": -1,
-            "poison_adj": -2,
-            "trauma_surv": 45,
-            "test": 1,
-            "feat": 0
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
             "score": 11,
@@ -38,10 +39,10 @@
             "learn_spell": 50
         },
         "ch": {
-            "score": 14,
-            "react_adj": 1,
-            "max_henchmen": 6,
-            "turn_adj": 0
+            "score": 6,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
         }
     },
     "xp": 800000,
@@ -49,20 +50,21 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
-        "primary_alignment": "Chaotic"
+        "deity_id": 23,
+        "deity_name": "Ythaqqa",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Male",
+    "secondary_skill": "logger/woodcutter",
     "hd": "9d6+6",
-    "hp": 20,
+    "hp": 42,
     "fa": 7,
     "ca": 12,
     "ta": 10,
@@ -169,10 +171,216 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 105,
+                "weapon_type": "Chain Whip",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 201,
+                "weapon_type": "Bola",
+                "rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d2",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 202,
+                "weapon_type": "Boomerang",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 204,
+                "weapon_type": "Hooked Throwing Knife",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1d6",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": {
@@ -185,10 +393,10 @@
         "undead_type_06": "D",
         "undead_type_07": "T",
         "undead_type_08": "T",
-        "undead_type_09": "10:12",
-        "undead_type_10": "7:12",
-        "undead_type_11": "4:12",
-        "undead_type_12": "1:12",
+        "undead_type_09": "9:12",
+        "undead_type_10": "6:12",
+        "undead_type_11": "3:12",
+        "undead_type_12": "NT",
         "undead_type_13": "NT"
     },
     "spells": {
@@ -205,101 +413,101 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 333,
+                    "spell_name": "Sanctuary from Animals",
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 226,
+                    "spell_desc": "<p>Persuades animals to ignore the caster completely if they fail their <i>sorcery</i> saving throws. The caster can move about freely, taking other inoffensive actions until the spell\u2019s duration terminates. However, <i>sanctuary from animals</i> provides no special protection if the caster happens to be in the area of effect of an animal\u2019s special attack (e.g., a <b>giant ferret\u2019s</b> musk), such as when a nearby ally is targeted. Any offensive actions taken by the caster (physical attacks, harmful spells, or the like) break the spell.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 249,
-                    "spell_name": "Magic Stone",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 189,
+                    "spell_name": "Goodberry",
+                    "range": "touch",
+                    "duration": "1 day + 1 day per CA level",
+                    "reversible": true,
+                    "pp": 202,
+                    "spell_desc": "<p>This dweomer is placed upon a handful of fresh berries, 2d4 of which are enchanted to <i>goodberries</i>. The berries must be no more than 5 days removed from the branch, and they must be stored in a cool, dry place. Only the caster knows which berries are enchanted, though <i>detect magic</i> can also reveal them. A single <i>goodberry</i> can nourish a person for a day or cure 1 hp of damage; the choice a sort of mini-wish made by the consumer. However, only eight healing berries can be consumed by one person in a 24-hour period.</p> <p>The reverse of this spell, <i>badberry</i>, must be cast on spoilt or rotten berries. It makes them appear fresh. These berries deliver mild poison to the consumer for 1 hp damage each, negated by a <i>death</i> (poison) saving throw. If multiple <i>badberries</i> are consumed at the same time, only one saving throw is allowed, though the same maximum of eight <i>badberries</i> are effective (thus 8 hp damage).</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 1d8 hp of damage previously sustained. The reverse of this spell, <i>inflict light wounds</i>, is used to harm a living creature for 1d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
                     "spell_id": 160,
                     "spell_name": "Fire Trap",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent (until triggered)",
+                    "reversible": false,
+                    "pp": 198,
+                    "spell_desc": "<p>This dweomer is placed on any article that can be closed (e.g., book, bottle, box, chest, door, shutter). If the object is opened, a blast of fire explodes in a fivefoot radius per CA level, causing 1d4 hp damage per CA level to any creature within the blast radius. A <i>sorcery</i> saving throw can be made for half damage. The <i>fire trapped</i> item is never affected by the spell; neither is the original caster. A sorcerer may maintain as many undischarged <i>fire traps</i> as he or she has CA levels.</p> <p>Note that a <i>knock</i> spell can open a <i>fire trapped</i> portal, yet the spell is not triggered until a person manually opens it. <i>Fire trap</i> can be discovered and removed via a thief \u2019s <i>manipulate traps</i> ability, though failure to disarm the trap automatically detonates it. It can also be removed by a <i>dispel magic</i> spell.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 443,
-                    "spell_name": "Water Breathing",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 378,
+                    "spell_name": "Starlight",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 233,
+                    "spell_desc": "<p>Illumes as large as a 60-foot-diameter area as though it were under the clearest, brightest <i>starlight</i>. In an area of utter darkness, visibility will become clear within the spell\u2019s 60-foot diameter and dim for another 30 feet (so a 120-foot diameter of effectiveness). Stars will appear to twinkle and shine above the area of effect, be it a 10-foothigh chamber ceiling or a 60-foot-high cavern roof.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 27,
-                    "spell_name": "Black Cloud",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 376,
+                    "spell_name": "Spike Growth",
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>This spell only functions amidst vegetation of at least moderate thickness. It creates within the foliage and roots a plethora of small, bristly growths in an area as large as 10 \u00d7 10 feet (100 square feet) per CA level. These spikes may be discerned via <i>detect snares and pits</i>, <i>detect traps</i>, or <i>true seeing</i>; otherwise, all seems perfectly natural until the enchanted area is traversed. For every 10 feet of affected area negotiated, the subject( s) must make an <i>avoidance</i> saving throw or suffer 1d4 hp damage. The caster can dismiss this spell at will.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 202,
-                    "spell_name": "Hold Vegetation",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 36,
+                    "spell_name": "Boil",
+                    "range": "60",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 180,
+                    "spell_desc": "<p>Causes up to two gallons of any liquid to boil. Examples include water, oil, wine, ale, and blood. Up to 16 flasks (8 oz. each) of liquid can be transformed into boiling flasks if they are abutting when the spell is cast. Such a vessel may be hurled as a grenade (<i>flask hurling</i> rules apply; see <b>Chapter 9: Combat</b>, <i>combat options</i>) for 1d4 damage per vessel for the duration of the spell. Note that if a flask of incendiary oil is exposed to <i>boil</i>, it will detonate straight away. Starting at CA 7, this spell may be cast at one Small or Medium living creature. The target must make a <i>death</i> (poison) saving throw or suffer 2d6 damage per round for the duration of the spell. Most victims suffer a horrible, blood-boiling death. A <i>dispel magic</i> spell or ice water immersion cancels the effects of <i>boil</i>.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 5,
-                    "spell_id": 389,
-                    "spell_name": "Summon Animal II",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 65,
+                    "spell_name": "Commune with Nature",
+                    "range": "0",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>The sorcerer communicates with an elemental, animistic, or ancestral spirit. The sorcerer must pray and meditate for 3 turns to cast this spell. The ritual must coincide with the burning of incense and the handling of a carved wooden effigy. Other ritualistic sacrifices are open to interpretation.</p> <p>Once the ritual is complete, the caster may ask the patron spirit as many as three questions. The spirit will answer correctly with a straightforward \u201cyes \u201cor \u201cno.\u201d Ambiguous or convoluted questions will be ignored, but still count against the three-question limit. This spell can be cast but once per adventure or once per month, as the referee deems appropriate.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 6,
-                    "spell_id": 150,
-                    "spell_name": "Feeblemind",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 75,
+                    "spell_name": "Control Weather",
+                    "range": "900 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>This spell is cast outdoors, requiring 2 turns (20 minutes) to take effect in a 2d6-square-mile area. The sorcerer can stand within the epicentre of the effect, or 300 yards outside its verge, and can <i>control weather</i> for as long as he or she concentrates. Possibilities include:</p> <ul><li><i>Rain:</i> Visibility compromised; missile attacks at \u22122 \u201cto hit,\u201d movement reduced to half.</li> <li><i>Snow:</i> Visibility reduced to 20 feet, with snow collecting at 2 inches per hour: \u221210 MV at 6 inches; \u221220 MV at 12 inches.</li> <li><i>Fog:</i> Visibility reduced to 20 feet.</li> <li><i>Clear/Partly Cloudy Skies:</i> Cancels the effects of stormy weather.</li> <li><i>Blistering Heat:</i> Temperature rises to 100\u00b0F.</li> <li><i>Frigid Cold:</i> Temperature drops to 0\u00b0F.</li> <li><i>High Winds:</i> Gale winds (40\u201350 mph) prevent missile fire and can drive flying creatures to the ground; this bluster can benefit sailing ships (at the lower range of gale power), increasing vessel speed by 50% or more.</li> <li><i>Hail:</i> Hail batters all in the area, reducing movement by half and damaging roofs and other structures.</li> <li><i>Tornado:</i> A thunderhead manifests under which a powerful whirlwind forms. The tornado is 500 feet in diameter and moves as directed by the sorcerer. Creatures of 1\u20132 HD in its path must make <i>avoidance</i> saves or be swept away, suffering 3d8 hp damage, being hurled 1d10\u00d710 feet in the air, and falling for another 1d6 hp damage per 10 feet. Creatures of 3 HD or more must make <i>avoidance</i> saves or sustain 3d8 hp damage, but are not hurled in the air. This form of <i>control weather</i> persists only 1 round per CA level.</li></ul>"
                 }
             ]
         },
@@ -316,101 +524,101 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 257,
+                    "spell_name": "Mending",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 213,
+                    "spell_desc": "<p>Repairs small breaks or tears in objects. The spell can weld a broken metallic article, such as a chain link, dagger, or knife; stitch a torn cloth, a frayed or severed rope, or perforated leather; fuse the shards of a broken bottle; and so forth. At CA 7, larger breaks or tears can be repaired, subject to referee approval. <i>Mending</i> cannot be used to repair magical devices.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 169,
+                    "spell_name": "Floating Disc",
+                    "range": "10 feet",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>Causes a flat, shield-sized disc to materialize behind the caster. The <i>floating disc</i> glides horizontally and follows the caster at about waist level, remaining 6\u201310 feet behind and moving at the caster\u2019s MV rate. The <i>disc</i> can bear 500 pounds; anything greater will ground it. When the spell ends, the <i>floating disc</i> disappears, and anything it bore falls to the ground.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 23,
-                    "spell_name": "Auditory Glamour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 385,
+                    "spell_name": "Strengthen",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 234,
+                    "spell_desc": "<p>Enhances the brawn of a human. A fighter\u2019s strength score is increased by 2d4 points, a cleric\u2019s or thief \u2019s by 1d6, and a magician\u2019s by 1d4, all to a maximum of 18. (A classless \u201ccommoner\u201d may gain 1d4 points.) If this spell is cast on one whose strength score is already 18, that one will gain an additional +1 \u201cto hit,\u201d and <i>extraordinary feats of strength</i> will be improved by +8%.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 113,
-                    "spell_name": "Detect Silence",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
+                    "range": "0",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A breeze blows from the caster (in the direction the sorcerer faces) in a 10-foot-wide path that is 5 feet long per CA level; e.g., a CA 6 sorcerer can evoke a <i>gust of wind</i> that is 10 feet wide and 30 feet long. <i>Gust of wind</i> extinguishes small fires, though it fans and excites the flames of larger blazes; too, it disperses and thus dispels magical clouds, fogs, and smoke, such as <i>cloudkill</i>, <i>fog cloud</i>, and <i>stinking cloud</i>. At its greatest effectiveness, this spell can belly the sail of a small craft.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 58,
-                    "spell_name": "Clairvoyance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 342,
+                    "spell_name": "Sepia Snake Sigil",
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 228,
+                    "spell_desc": "<p>The casting of this spell requires snake scales and powdered amber of 100-gp value. The spell may be executed via one of three methods:</p> <ol><li>Glowing sigil drawn in the air and directed at a target</li> <li>Grey-brown sigil inscribed upon an object that, if studied or touched, activates the dweomer</li> <li>Small character inscribed into a book or scroll that, if studied or touched, activates the dweomer</li></ol> <p>Whichever the method, a brown, serpentine force is evoked to strike its nearest victim. It attacks at a fighting ability (FA) equal to the sorcerer\u2019s casting ability (CA). If the <i>sepia snake sigil</i> hits its target, the victim is imprisoned and paralyzed within a shimmering amber force field. This lasts until the caster releases the victim, the caster dies, or <i>dispel magic</i> is cast. No saving throw is allowed for creatures of 8 HD or less; however, a <i>sorcery</i> saving throw is allowed for creatures of 9 HD or greater. Nothing can approach an entrapped victim; all attempts are rebuffed by the force field. The imprisoned will not age, sleep, nor grow hungry; neither will it be aware of what transpires without. If the <i>sepia snake sigil</i> misses its target, it disappears in a puff of brown smoke.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 44,
-                    "spell_name": "Cataleptic State",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 225,
+                    "spell_name": "Infrared Vision",
+                    "range": "touch",
+                    "duration": "2 hours + 1 hour per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The caster or other recipient can perceive light in the infrared spectrum, effectively seeing in the dark to a range of 60 feet. All subtle differences of heat radiation are defined before the eyes of the recipient so that a warm-blooded creature stands out against the cool walls of a dungeon chamber. Fire or other notable heat in the proximity of the viewer can be a hindrance (e.g., lantern, torch) or a complete obstruction (e.g., bonfire, lava). This spell does not reveal invisible objects or creatures.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 4,
-                    "spell_id": 158,
-                    "spell_name": "Fire Shield",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 68,
+                    "spell_name": "Confusion",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 185,
+                    "spell_desc": "<p>Bewilders the spell\u2019s victims, who thereafter behave unexpectedly as determined on the table below. The spell affects 2d6 creatures in a 50-foot-diameter area of effect, including allies. Creatures of 2 HD or fewer are automatically affected for the duration of the spell. Creatures of 3 HD or more are allowed <i>sorcery</i> saving throws to ignore the effects, modified by <i>willpower adjustment</i>, if applicable. The referee should determine the actions of each <i>confusion</i> victim:</p> <p><table><caption><b>Table 101: Confusion Spell</b></caption> <tr><th>d10 Result</th><th>Confused Action</th></tr> <tr><td>1</td><td>Wander away for 1 turn</td></tr> <tr><td>2\u20136</td><td>Stand idle, drooling and confused</td></tr> <tr><td>7\u20139</td><td>Physically attack closest creature</td></tr> <tr><td>0</td><td>Physically attack spell caster</td></tr></table></p> <p>Once affected, victims need not remain in the spell\u2019s area of effect; the damage is done.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 5,
-                    "spell_id": 407,
-                    "spell_name": "Teleport",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 337,
+                    "spell_name": "Secret Chest",
+                    "range": "touch",
+                    "duration": "120 days",
+                    "reversible": false,
+                    "pp": 227,
+                    "spell_desc": "<p>A popular dweomer used to sequester spell books and magic items. The sorcerer must first have a 2 \u00d7 2 \u00d7 3-foot chest built by a master craftsman. Furthermore, a tiny replica of that same chest must be crafted, about the size of a ring box. The total cost can be no less than 2,000 gp, as the materials used might include the rarest wood, mammoth ivory, gold hinges, and the like. The sorcerer then enchants the chest and its tiny replica by way of a 1-turn ritual.</p> <p>The larger chest can contain one cubic foot of material per CA level, regardless of its actual size, but living creatures ruin the spell if placed within. Upon completion of the spell, the larger chest disappears to some nether realm within the Black Gulf. So long as the miniature replica chest is kept safe, the larger one may be recalled by the sorcerer at any time. If the <i>secret chest</i> is not recalled before the duration elapses, it is permanently lost to the illimitable depths of the Black Gulf. Once the spell expires, a new set of chests must be crafted before casting this spell again. A sorcerer cannot maintain more than one <i>secret chest</i>.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 6,
-                    "spell_id": 74,
-                    "spell_name": "Control Water",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 271,
+                    "spell_name": "Move Earth",
+                    "range": "240 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 216,
+                    "spell_desc": "<p>Requires 1 turn to cast. The sorcerer causes dirt (but never solid rock) to move. A hill can be formed or a trench excavated. The dirt is moved at 60 feet per turn. The sorcerer is able to manipulate a volume of earth equal to a cube with sides 10 feet long per CA level; e.g., a CA 12 sorcerer can affect a 120 \u00d7 120 \u00d7 120-foot area. Once the spell ends, the effect is permanent.</p>"
                 }
             ]
         }

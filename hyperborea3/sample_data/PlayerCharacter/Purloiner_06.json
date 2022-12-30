@@ -1,47 +1,48 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 25,
     "class_name": "Purloiner",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "dx": {
-            "score": 14,
-            "atk_mod": 0,
+            "score": 15,
+            "atk_mod": 1,
             "def_adj": 1,
+            "test": 3,
+            "feat": 24
+        },
+        "cn": {
+            "score": 16,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
             "test": 3,
             "feat": 16
         },
-        "cn": {
-            "score": 13,
-            "hp_adj": 1,
-            "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
-        },
         "in": {
+            "score": 3,
+            "lang": -1,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ws": {
             "score": 12,
-            "lang": 0,
+            "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
-        "ws": {
-            "score": 14,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
-        },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 17,
+            "react_adj": 2,
+            "max_henchmen": 10,
+            "turn_adj": 1
         }
     },
     "xp": 40000,
@@ -49,20 +50,21 @@
     "xp_to_next": 80000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 9,
-        "deity_name": "Kthulhu",
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 12,
-    "race": "Viking",
-    "gender": "Female",
+    "race_id": 10,
+    "race": "Pict",
+    "gender": "Male",
+    "secondary_skill": "charcoaler/peatman",
     "hd": "6d6",
-    "hp": 25,
+    "hp": 35,
     "fa": 4,
     "ca": 6,
     "ta": 4,
@@ -125,8 +127,8 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
-            "dmg_adj": 0,
+            "hurled_atk": 1,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -184,10 +186,229 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -243,10 +464,10 @@
         "undead_type_00": "D",
         "undead_type_01": "T",
         "undead_type_02": "T",
-        "undead_type_03": "10:12",
-        "undead_type_04": "7:12",
-        "undead_type_05": "4:12",
-        "undead_type_06": "1:12",
+        "undead_type_03": "11:12",
+        "undead_type_04": "8:12",
+        "undead_type_05": "5:12",
+        "undead_type_06": "2:12",
         "undead_type_07": "NT",
         "undead_type_08": "NT",
         "undead_type_09": "NT",
@@ -258,7 +479,7 @@
     "spells": {
         "clr": {
             "spells_per_day": {
-                "lvl1": 2,
+                "lvl1": 1,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 0,
@@ -269,134 +490,134 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 61,
-                    "spell_name": "Cold Resistance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 187,
+                    "spell_desc": "<p>The sorcerer conjures as much as three gallons of water per CA level. The water is fresh, clean, and potable. It can be placed within one or more appropriate containers so long as they are touching, or it can be evoked to appear in the air within the spell\u2019s range. The reverse of this spell, <i>destroy water</i>, vaporizes a like amount of water. If used offensively (e.g., several gallons of water dropped on the head of an enemy), the target is allowed an <i>avoidance</i> saving throw.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 48,
-                    "spell_name": "Ceremony of Consecration",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 277,
+                    "spell_name": "Omen",
+                    "range": "touch",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 216,
+                    "spell_desc": "<p>The sorcerer or other recipient receives an <i>omen</i> regarding the near future. The next time the recipient rolls to attack or for a saving throw, three rolls may be made and the best result selected. This supersedure can be done but once, and if the <i>omen</i> is not utilized before the spell\u2019s duration has passed, the dweomer is lost.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
                     "spell_id": 31,
                     "spell_name": "Bless",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "3 turns",
+                    "reversible": true,
+                    "pp": 179,
+                    "spell_desc": "<p>All allies within 25 feet of the caster are sanctified by this spell, gaining a +1 to any saving throw versus fear effects (whether <i>sorcery</i> or <i>device</i>), and a +1 bonus on all attack rolls. Furthermore, NPCs (henchmen, hirelings, etc.) each gain a +1 bonus on any <i>morale</i> (ML) check.</p> <p>The reverse form of this spell, <i>blight</i>, curses all hostile creatures within 25 feet of the caster, effecting \u22121 morale, \u22121 on saving throws versus fear effects, and a \u22121 penalty on all attack rolls. <i>N.B.:</i> Either form of this spell affects only those within range at the moment the spell is cast; i.e., subsequently moving into or out of range has no bearing on the spell\u2019s effects.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 107,
-                    "spell_name": "Detect Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 127,
-                    "spell_name": "Distinguish Alignment",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 355,
+                    "spell_name": "Silence",
+                    "range": "120 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Evokes a field of absolute soundlessness that radiates 15 feet from a selected point. Creatures may move from the spell\u2019s area of effect, but within the <i>silenced</i> field, all noise and speech are snuffed, and spells cannot be cast. If targeted directly at an opponent, the subject is allowed a <i>sorcery</i> saving throw to negate the spell; otherwise, the subject suffers utter <i>silence</i>. Spell casters gain +1 bonuses to their saving throws for every 2 CA levels they possess.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 446,
-                    "spell_name": "Weird War Hammer",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed. This enchantment affects humans, humanoids, and giants. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. Any targets of 9 HD or greater gain a +4 saving throw bonus. Saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 232,
-                    "spell_name": "Invisibility to Undead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>Inures the subject\u2019s body to the effects of intense heat. Even clad in full armour, the recipient can withstand temperatures as high as 120\u00b0F without suffering any ill effects. Fire and magical fire attacks are saved against with a +2 bonus.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 370,
-                    "spell_name": "Speak with Animals",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Allows the caster to hear that which is magically <i>silenced</i> or <i>moving silently</i> (thieves, barbarians, assassins, et al.) in a 120-foot radius. The spell attunes the caster to subtleties of sound otherwise imperceptible, such as a whisper behind a closed door. If the caster enters a deep trance, <i>detect silence</i> can also be used to perceive noises made in parallel dimensions.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 371,
-                    "spell_name": "Speak with Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 80,
+                    "spell_name": "Create Food and Water",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 187,
+                    "spell_desc": "<p>Nourishing food and water are created by the sorcerer, enough to feed one person per CA level. (For the purpose of this spell, consider a horse or camel equivalent to three people.) The conjured food is always fresh (not dried or preserved) and thus subject to spoilage unless <i>purify food and drink</i> is also cast.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 444,
-                    "spell_name": "Water Walk",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 84,
+                    "spell_name": "Cure Blindness",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Remedies nearly all forms of impaired vision unless the eyes themselves have been destroyed. The reverse of this spell, <i>inflict blindness</i>, renders its victim sightless unless a <i>sorcery</i> saving throw is made. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
                     "spell_id": 242,
                     "spell_name": "Locate Object",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "90 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>The caster announces an object to be found; it might be a lost sword, a bronze door, or the like. The object must be well known by the caster: its colour, texture, size, and so forth. Someone describing the item to the caster is insufficient, though a detailed picture may suffice. If the object is within range, the caster will know which direction to seek, but not the precise distance.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 250,
-                    "spell_name": "Magic Vestment",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 16,
+                    "spell_name": "Animate Dead",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 177,
+                    "spell_desc": "<p><b>Skeletons</b> or <b>zombies</b> are created from the bones and cadavers of dead humans or humanoids. The undead will obey the commands of the caster, following, attacking, or standing guard as directed. They will continue to serve until slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion betwixt the sorcerer and the undead. Through this necromancy the sorcerer can <i>animate</i> and maintain <b>1 skeleton</b> or <b>zombie</b> per CA level. If suitable remains are at hand, the sorcerer can opt to raise <b>1 large skeleton</b> per 3 CA levels, or <b>1 giant skeleton</b> per 6 CA levels, though zombies may only be created from the whole corpses of humans.</p>"
                 }
             ]
         }

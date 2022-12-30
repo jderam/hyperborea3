@@ -1,0 +1,20 @@
+id: 387
+name: Summon Aerial Minion
+pp: 234
+Lvl:
+  - cry 6
+  - clr 6
+Rng: 10 feet
+Dur: 1 day per CA level
+Rev: 0
+Desc: "<p>The sorcerer calls an extra-dimensional <b>aerial minion</b>
+to serve him. The creature is naturally invisible and arrives
+1 round after being <i>summoned</i>. Before casting,
+the sorcerer must etch with chalk a magic circle and
+then sit cross-legged within its candlelit confines; otherwise,
+the creature will attack. An aerial minion is not
+<i>summoned</i> to fight; rather, its function is to find and
+retrieve an object or creature as described and located
+by the caster. If the aerial minion cannot complete its
+task by the time the spell’s duration expires, it will return
+to slay the sorcerer.</p>"

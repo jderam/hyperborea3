@@ -1,47 +1,48 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 14,
     "class_name": "Necromancer",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "dx": {
+            "score": 6,
+            "atk_mod": -1,
+            "def_adj": -1,
+            "test": 1,
+            "feat": 1
+        },
+        "cn": {
             "score": 14,
-            "atk_mod": 0,
-            "def_adj": 1,
+            "hp_adj": 1,
+            "poison_adj": 0,
+            "trauma_surv": 80,
             "test": 3,
             "feat": 8
         },
-        "cn": {
-            "score": 11,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
-        },
         "in": {
-            "score": 12,
-            "lang": 0,
+            "score": 18,
+            "lang": 3,
+            "bonus_spells": 4,
+            "learn_spell": 95
+        },
+        "ws": {
+            "score": 11,
+            "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
-        "ws": {
-            "score": 14,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
-        },
         "ch": {
-            "score": 15,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 480000,
@@ -49,18 +50,19 @@
     "xp_to_next": 640000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 4,
-        "deity_name": "Azathoth",
-        "primary_alignment": "Chaotic"
+        "deity_id": 2,
+        "deity_name": "Artemis",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Female",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Male",
+    "secondary_skill": "logger/woodcutter",
     "hd": "9d4+1",
     "hp": 28,
     "fa": 4,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 10,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": -1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -194,6 +196,84 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": {
         "undead_type_00": "UD",
@@ -203,10 +283,10 @@
         "undead_type_04": "D",
         "undead_type_05": "T",
         "undead_type_06": "T",
-        "undead_type_07": "11:12",
-        "undead_type_08": "8:12",
-        "undead_type_09": "5:12",
-        "undead_type_10": "2:12",
+        "undead_type_07": "10:12",
+        "undead_type_08": "7:12",
+        "undead_type_09": "4:12",
+        "undead_type_10": "1:12",
         "undead_type_11": "NT",
         "undead_type_12": "NT",
         "undead_type_13": "NT"
@@ -214,10 +294,10 @@
     "spells": {
         "nec": {
             "spells_per_day": {
-                "lvl1": 5,
-                "lvl2": 4,
-                "lvl3": 4,
-                "lvl4": 3,
+                "lvl1": 6,
+                "lvl2": 5,
+                "lvl3": 5,
+                "lvl4": 4,
                 "lvl5": 2,
                 "lvl6": 0
             },
@@ -225,134 +305,134 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 357,
-                    "spell_name": "Skeletal Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 13,
+                    "spell_name": "Animate Carrion",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 177,
+                    "spell_desc": "<p>Raised are the bones or carrion of Small animals: amphibians, birds, mammals, and reptiles of natural sort. The <b>small undead animals</b> will obey the simple instructions of the caster (essentially one-word commands) and follow the sorcerer unless slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion between the sorcerer and the undead animal. The caster can <i>animate</i> and maintain no more than 1 HD of undead animals per CA level. <i>Animated carrion</i> loses any special abilities possessed in life (e.g., flight, musk, venom).</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 63,
-                    "spell_name": "Command",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": "0",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>A pale circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking. Against other Evil creatures, the sorcerer enjoys a +1 bonus to AC, DR, and saving throws versus their attacks. The reverse of this spell, <i>protection from good</i>, can be cast only by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 115,
-                    "spell_name": "Detect Undead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 244,
+                    "spell_name": "Locate the Dead",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Detects the presence of deceased creatures in a 30-foot radius. The caster walks at half speed, chanting, gesticulating, and attuning to the presence of death. Although <i>locate the dead</i> can detect the presence of undead creatures, it does not distinguish between death and undeath. This spell penetrates 10 feet of packed earth, five feet of wood, three feet of stone, or one inch of metal (except lead). <i>Locate the dead</i> also can be used to seek a specific dead person or creature; however, the caster must possess a personal item or memento of the sought-after corpse.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 334,
-                    "spell_name": "Scare",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 83,
-                    "spell_name": "Cudgel of Bone",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 356,
+                    "spell_name": "Skeletal Hands",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>A pair of bony members materialize, floating before the sorcerer and aglow with crimson lambency. The sorcerer manipulates the <i>skeletal hands</i> by gesticulating. Always the <i>hands</i> must be kept together, and if the caster ceases to concentrate and gesticulate, the <i>hands</i> will disappear. The <i>hands</i> can perform simple tasks such as lifting things, opening doors, and retrieving items. Each <i>hand</i> can hold five pounds of weight individually, or 15 pounds when working together. <i>Skeletal hands</i> can also be used to attack with the following statistics: <b>MV</b> 20; <b>DX</b> (as caster); <b>AC</b> 5; <b>HD</b> 1 (<b>hp</b> 2); <b>#A</b> 2/1 (claw/claw); <b>D</b> 1d4/1d4; <b>SV</b> (as caster). The hands can also be terminated via <i>dispel magic</i> or <i>turn undead (Undead Type 0)</i>.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 371,
-                    "spell_name": "Speak with Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 45,
+                    "spell_name": "Cause Blindness",
+                    "range": "30 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 182,
+                    "spell_desc": "<p>The subject is blinded unless a <i>sorcery</i> saving throw is successful. The afflicted sees grey and nothing more, the tone of which depends on how much light is present. This spell is permanent unless dismissed by the caster. It can be negated by the spells <i>cure blindness</i> or <i>dispel magic</i>. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 225,
-                    "spell_name": "Infrared Vision",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 405,
+                    "spell_name": "Summon Toad Swarm",
+                    "range": "90 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 238,
+                    "spell_desc": "<p>A summoned horde of fat, warty toads manifest around the sorcerer. The <i>toad swarm</i> will attack 1 round after being summoned, surging forth as directed. The toads will pursue their target (at 30 MV) to the spell\u2019s range limit. As long as the caster concentrates and points at the target, the victim will be assailed by the <i>swarm</i>, knocked down and overborne by hundreds of amphibians, unless an <i>avoidance</i> saving throw is made. An overborne victim is crushed by the unusual weight of the swarm, sustaining 1d4 hp damage, +1 for each CA level of the caster per round. For example, a 5th-level magician\u2019s toad swarm inflicts 1d4+5 hp damage per round. One may attempt an <i>extraordinary feat of strength</i> to break free (the referee may need to dice for the strength score on the spot, using 3d6 or 4d6 drop low); otherwise, the victim remains <i>prone</i>, unable to take any other actions. Other methods of escape must be adjudicated by the referee on a case-by-case basis. A <i>toad swarm</i> can be directed to hop to another opponent within range, but 1 round will elapse for every 30 feet between targets.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 412,
-                    "spell_name": "Tongues",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 384,
+                    "spell_name": "Strangle",
+                    "range": "50 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 233,
+                    "spell_desc": "<p>From the outstretched hands of the caster emerge a pair of invisible members which reach for the throat of a human or humanoid target. The target must make a <i>sorcery</i> saving throw to negate the effects of this spell. If the save fails, the victim will choke and gag, suffering 1d4 hp damage per round. The victim furthermore will fight at \u22122 \u201cto hit\u201d and damage rolls and may be unable to cast spells (3-in-6 chance of failure). Too, movement is halved for the victim. The <i>strangling</i> hands might be wrenched free via a <i>test of strength</i>. If the victim has not escaped after 3 rounds of strangulation, then a <i>test of constitution</i> is required or the victim passes out; damage continues throughout the duration of the spell. In addition to the <i>test of strength</i>, escaping <i>strangle</i> could be done by moving out of range of the caster; also, <i>dispel magic</i> can break this spell.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 4,
-                    "spell_id": 132,
-                    "spell_name": "Enervation",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 363,
+                    "spell_name": "Sorcerer Eye",
+                    "range": "240 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>An invisible oculus is conjured and sent forth to \u201csee\u201d for the sorcerer, providing visual sensory information. The <i>sorcerer eye</i> drifts at 30 MV and can see 60 feet ahead of itself if light is present; lacking illuminance, the <i>eye</i> sees with <i>infrared vision</i> to a range of 30 feet and can float in any direction as dictated by the sorcerer, who must sit cross-legged with eyes closed, concentrating. The spell ends when the sorcerer\u2019s eyes open, or when the duration expires.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 4,
                     "spell_id": 70,
                     "spell_name": "Contagion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 185,
+                    "spell_desc": "<p>By the sorcerer\u2019s wicked touch, the target of this spell is weakened and diseased unless a <i>sorcery</i> saving throw is made. If the save fails, the victim is at once overcome by a wet cough, skin boils and lesions, loss of hair, and fatigue. The statistical repercussions include 2 lost points of strength, dexterity, and constitution. (For ease of game play, an afflicted enemy creature\u2014 human, humanoid, animal, or monster\u2014may suffer penalties of \u22121 on attack rolls, \u22121 damage, \u22121 AC, and \u22121 hp per HD.)</p> <p>The condition persists unless <i>cure disease</i> is administered, or until natural healing overcomes the affliction. Following 4 weeks of bed rest, another saving throw is permitted. If the victim succeeds, the path to wellness begins, which requires another 2 weeks before symptoms and attribute losses are healed. Natural healing, if the first attempt fails, may be attempted again after 8 weeks and 12 weeks of bed rest. Beyond 12 weeks, the condition is terminal, and the victim will die of the <i>contagion</i> within 1d4 years.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 40,
-                    "spell_name": "Brink of Death",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 246,
+                    "spell_name": "Magic Jar",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>The sorcerer\u2019s life force is placed in a small, inanimate object. If it remains within 30 feet of the sorcerer\u2019s physical body, an attempt to possess another living creature within 120 feet may be made. If the target fails its <i>sorcery</i> saving throw (modified by <i>willpower adjustment</i>, if applicable), it will be possessed by the sorcerer.</p> <p>A possessed body can be controlled like a puppet, performing normal actions and using all its special abilities (including spells), though not the possessor\u2019s original abilities or spells. Fragmentary memories of the possessed might be accessed by the possessor; the details should be nebulous, provided by the referee. Note the potential consequences of this spell:</p> <ul><li>If the body of the possessed is destroyed, the spirit of the sorcerer returns to the <i>magic jar</i>. The sorcerer\u2019s spirit may then attempt to possess another or return to its own body.</li> <li>If the sorcerer\u2019s body is destroyed whilst its spirit is without, then the spirit must forever remain in the body it presently possesses; or, if the spirit is in the <i>magic jar</i>, it may possess another, but permanently.</li> <li>If the <i>magic jar</i> is destroyed whilst the sorcerer\u2019s spirit is inside it, the sorcerer\u2019s physical body will die, and his or her spirit is forever lost.</li> <li>If the <i>magic jar</i> is destroyed whilst the sorcerer\u2019s spirit possesses another, the spirit must forever remain in the body of the possessed.</li></ul> <p>Possession is prevented by a <i>protection from evil</i> spell. It can be terminated by a <i>remove curse</i> spell, sending the sorcerer\u2019s spirit back to the <i>magic jar</i>. Casting a <i>magic jar</i> spell may be considered an act of Evil, depending on the circumstances.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 295,
-                    "spell_name": "Plague Rats",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 59,
+                    "spell_name": "Cloudkill",
+                    "range": "10 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>A 30-foot-diameter, 20-foot-high cloud of poisonous, green-yellow vapours is evoked by the sorcerer. The cloud is heavy and clings low to the ground, much like fog, rolling at 30 MV in a direction pointed by the caster. Once the sorcerer points, the cloud\u2019s momentum cannot be altered unless significant wind, which always prevails over the will of the sorcerer, exists. Unusually strong winds may disperse the cloud entirely. The <i>cloudkill</i> spell slays any creature in its path with fewer than 5 HD; creatures of 5 HD or more must roll <i>death</i> (poison) saving throws or suffer 3d6 hp damage.</p>"
                 }
             ]
         }

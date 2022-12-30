@@ -1,0 +1,42 @@
+id: 49
+name: Chain Lightning
+pp: 182
+Lvl:
+  - mag 6
+  - cry 6
+  - nec 6
+Rng: 240 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Discharging from the fingertips of the sorcerer is an
+arcing bolt of lightning. It strikes a designated target
+for 1d6 hp damage per CA level (e.g., a CA 12 caster
+discharges a 12d6 hp bolt). The target is afforded a
+<i>sorcery</i> saving throw for half damage.</p>
+<p><i>Chain lightning</i> will go on to strike the next closest object
+(within the range of the spell), gravitating to metal
+if present (e.g., an iron gate or a mail-clad warrior).
+The spell does not distinguish betwixt the caster’s enemies
+and inanimate objects; i.e., it will strike a keg of
+ale before it strikes a monster if the keg is closer to the
+primary target. Each time the lightning strikes another
+target, it delivers one fewer die of damage. So, if a CA
+12 sorcerer discharges a 12d6 hp bolt, the second target
+(human, monster, or object) sustains 11d6 hp damage.
+Each subsequent target also gets a saving throw.</p>
+<p><i>Chain lightning</i> will continue to strike as many objects
+as the caster has CA levels. It can strike each target
+only once, and it always stays within the range of the
+spell. If it strikes a large tree, iron rod, or other like
+attractor, the lightning will be diffused. This spell is
+potentially dangerous to the caster: It can arc back and
+strike the caster if no other targets are in range, or if
+the caster is perilously close to the primary target.</p>
+<p><i>Example:</i> A CA 12 sorcerer discharges <i>chain lightning</i>
+at a group of <b>7 orcs</b> standing by an oak tree 100 feet
+away. The first orc is struck for 12d6 hp, the second for
+11d6 hp, and the third for 10d6 hp, but the next closest
+target is the tree, which diffuses the bolt. If the tree were
+not present, the bolt would strike all 7 orcs and then arc
+back to the caster for 5d6 hp damage. Of course, a save
+can reduce each strike to half damage.</p>"

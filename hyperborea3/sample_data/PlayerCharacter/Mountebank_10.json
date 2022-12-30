@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 31,
     "class_name": "Mountebank",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 11,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 12,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 24
         },
         "cn": {
-            "score": 11,
+            "score": 10,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,13 +27,13 @@
             "feat": 4
         },
         "in": {
-            "score": 14,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 10,
+            "score": 9,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 18,
-        "deity_name": "Xathoqqua",
+        "deity_id": 10,
+        "deity_name": "Krimmr",
         "primary_alignment": "Chaotic"
     },
     "race_id": 12,
     "race": "Viking",
-    "gender": "Female",
+    "gender": "Male",
+    "secondary_skill": "hunter/trapper",
     "hd": "9d6+2",
-    "hp": 30,
+    "hp": 33,
     "fa": 7,
     "ca": 10,
     "ta": 0,
@@ -114,7 +116,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 5,
+    "ac": 4,
     "mv": 40,
     "weapons_melee": [
         {
@@ -131,7 +133,7 @@
             "qty": 2,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
+            "hurled_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         },
@@ -167,7 +169,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -190,10 +192,218 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -249,7 +459,7 @@
     "spells": {
         "ill": {
             "spells_per_day": {
-                "lvl1": 4,
+                "lvl1": 3,
                 "lvl2": 2,
                 "lvl3": 2,
                 "lvl4": 0,
@@ -260,112 +470,112 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 321,
-                    "spell_name": "Reflexion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
                     "spell_id": 287,
                     "spell_name": "Phantasm",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 218,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 20 \u00d7 20 \u00d7 20 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight, not of sound, smell, or temperature.</p> <p>Once cast, this spell persists as long as the caster concentrates, unless the illusion is touched or terminated via a <i>dispel phantasm</i> spell. A <i>phantasmal</i> monster is AC 9 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require complete concentration, and no movement is allowed.</p> <p><i>Phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the soundlessness of the illusion (e.g., a charging mammoth); in other instances, such as a <i>phantasm</i> of fire, a lack of thermal properties can create suspicion. To the eyes of the disbeliever, the <i>phantasm</i> becomes a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp base damage, +1 hp damage per CA level, per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 23,
-                    "spell_name": "Auditory Glamour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "ill",
-                    "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "ill",
-                    "spell_level": 2,
-                    "spell_id": 173,
-                    "spell_name": "Fool\u2019s Gold",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "ill",
-                    "spell_level": 2,
-                    "spell_id": 331,
-                    "spell_name": "Rope Trick",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "ill",
-                    "spell_level": 2,
-                    "spell_id": 11,
-                    "spell_name": "Alter Self",
+                    "spell_id": 264,
+                    "spell_name": "Mirror Image",
                     "range": "0",
-                    "duration": "1d6 turns",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 214,
+                    "spell_desc": "<p>Evokes 1d4+1 illusory duplicates of the sorcerer. Each <i>mirror image</i> is indistinguishable from the caster. Each is AC 9, modified by the <i>defence adjustment</i> of the caster, if applicable; each dissipates if struck. When the caster is attacked, the referee must assign a probability by which the <i>mirror images</i> have an equal chance to be targeted. For example, if two <i>images</i> appear, a d6 may be used: <i>1\u20132</i> = the caster; <i>3\u20134</i> = <i>image</i> one; <i>5\u20136</i> = <i>image</i> two. The <i>images</i> duplicate the movements of the caster and appear to switch places with one another, so even in melee the caster is indistinguishable from the duplicates.</p>"
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 1,
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 185,
+                    "spell_name": "Glitterdust",
+                    "range": "90 feet",
+                    "duration": "1d4+1 rounds",
+                    "reversible": false,
+                    "pp": 202,
+                    "spell_desc": "<p>The sorcerer must have 25 gp of gold dust to cast this spell, which may be in the form of gold ground with a file or stone. The sorcerer effects a 20-foot cube of <i>glitterdust</i> that explodes within the spell\u2019s range, covering its victims from head to toe in sparkling gold dust. The cloud itself is no more than a flash, so this spell\u2019s duration is not for the cloud, but rather its sorcerous effect.</p> <p>Those within the cloud must make <i>sorcery</i> saving throws or be blinded for the spell\u2019s duration. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws. This spell also reveals invisible creatures, as the <i>glitterdust</i> clings to and sparkles on them for its duration.</p>"
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 218,
+                    "spell_name": "Improved Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 207,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 30 \u00d7 30 \u00d7 30 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Improved phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight and sound, not of smell or temperature. The auditory component of an <i>improved phantasm</i> cannot consist of precisely spoken words, but the semblance of garbled speech, mumbling, shouting, and so forth are possible. These sounds can create the opportunity for more believable illusions than those generated by the <i>phantasm</i> spell.</p> <p>Once cast, this spell persists as long as the caster concentrates and for 2 rounds thereafter, unless the illusion is struck for 1 hp of damage or more, or unless it is terminated via a <i>dispel phantasm</i> spell. An <i>improved phantasmal</i> monster is AC 8 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require his full attention, though he can walk at half speed and maintain control.</p> <p><i>Improved phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to its viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the illusion\u2019s lack of scent or thermal properties. To the eyes of the disbeliever, the <i>improved phantasm</i> will become a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp per CA level per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 289,
+                    "spell_name": "Phantasmal Armour",
+                    "range": "0",
+                    "duration": "2 turns",
+                    "reversible": false,
+                    "pp": 218,
+                    "spell_desc": "<p>A quasi-real suit of dull black plate mail clads the sorcerer. The armour is formed of shadow material conjured from the Black Gulf; it provides AC 3 and DR 2. <i>Phantasmal armour</i> is weightless; it does not affect movement as normal plate mail does. Except for shields, this spell does not combine or \u201cstack\u201d with other armour. <i>Phantasmal armour</i> can be terminated by <i>dispel phantasm</i>.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 193,
-                    "spell_name": "Hallucinatory Terrain",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 102,
+                    "spell_name": "Deceive",
+                    "range": "0",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the sorcerer to copy the alignment aura of another creature within 30 feet. If the spell <i>distinguish alignment</i> is targeted at the <i>deceive caster</i>, the sorcerer will radiate the copied alignment for the duration of the <i>deceive</i> spell. However, this spell cannot prevent the cleric\u2019s version of <i>true seeing</i> from revealing the truth.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 452,
-                    "spell_name": "Wraithshape",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 231,
+                    "spell_name": "Invisibility Hemisphere",
+                    "range": "touch",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 209,
+                    "spell_desc": "<p>Functions much as the <i>invisibility</i> spell (q.v.), except that it extends in a 10-foot-radius hemisphere from the primary recipient, potentially causing other creatures in the spell\u2019s radius to become invisible. The <i>invisibility hemisphere</i> moves with the primary recipient. Those within 10 feet at the time of casting (including animal companions, undead minions, etc.) become invisible, but they can see one another as translucent figures. If a beneficiary of this spell steps out from its radius, that one will become visible, unable to resume <i>invisibility</i> unless the spell is recast. If the primary recipient causes damage (hp loss) to another creature, or causes another creature to roll a saving throw, the entire spell is negated; however, if one of the spell\u2019s other recipients causes damage (or forces a saving throw) to an opponent, only that actor becomes visible. For more examples of what constitutes harm, see the <i>invisibility</i> spell.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 374,
-                    "spell_name": "Spectral Phantasm",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 293,
+                    "spell_name": "Phantom Steed",
+                    "range": "10 feet",
+                    "duration": "12 hours",
+                    "reversible": false,
+                    "pp": 219,
+                    "spell_desc": "<p>Formed from the shadow-stuff of the Black Gulf is a quasi-real, equine mount for the caster or other recipient. Requiring 1 turn to materialize, the beast is smoky grey to black in colour, with pale white eyes. The <i>phantom steed</i> makes no sound as it moves, and its shadowy hooves never touch the ground. If the caster has CA 8 or greater, the <i>phantom steed</i> can cross muddy, sandy, or swampy terrain uninhibited; at CA 10 or greater, it can pass over water as though it were solid ground; and at CA 12, the <i>phantom steed</i> can walk on air (though not fly, per se), able to cross a chasm or crevasse as though a solid bridge were present.</p> <p>Normal animals may shew uneasiness in the <i>phantom steed\u2019s</i> presence. The <i>phantom steed</i> is incapable of combat, but it can be attacked. Its relevant statistics are: MV 60; AC 7; HD 2; #A 0; D \u2014; SV 16. It cannot be healed if injured and will disappear at 0 hp.</p>"
                 }
             ]
         }

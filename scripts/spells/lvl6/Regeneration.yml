@@ -1,0 +1,21 @@
+id: 322
+name: Regeneration
+pp: 224
+Lvl:
+  - drd 6
+Rng: touch
+Dur: permanent
+Rev: 0
+Desc: "<p>Causes dismembered limbs (arms, legs, tails), or parts
+of limbs (fingers, toes, hands, feet), to grow back. The
+<i>regeneration</i> spell can also apply to shattered bones or
+subtracted organs. Casting this spell takes 6 rounds
+(1 minute) if the severed parts are present and touching
+the subject at the site of dismemberment; otherwise,
+it takes 6 turns for this process to complete. Note
+that in cases of decapitation, the original head must
+be present; otherwise, it is not enough to save the
+hopelessly beheaded, for it but causes the creation of a
+mindless, drooling imbecile. <i>Regeneration</i> also repairs
+up to 1d10+10 hp of damage. The material component
+of this spell is the tail of a lizard or the arm of a starfish.</p>"

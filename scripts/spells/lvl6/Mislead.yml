@@ -1,0 +1,24 @@
+id: 267
+name: Mislead
+pp: 215
+Lvl:
+  - ill 6
+Rng: 0
+Dur: 6 rounds per CA level
+Rev: 0
+Desc: "<p>This spell is cast whilst moving. An illusory duplicate
+of the sorcerer is created at the same instant that the
+caster becomes invisible (see <i>invisibility</i> spell, albeit
+for only as long as the <i>mislead</i> spell lasts). The caster
+is then at liberty to move elsewhere as the illusory double
+continues forth.</p>
+<p>Through a continuous mental connexion, the sorcerer
+can command the image to speak; likewise, it will
+mimic the caster’s manner of walking, body language,
+facial expressions, and so forth. The phantasm will
+leave footprints and other physical signs of passage.
+If attacked it will appear to dodge, block, or shimmer
+as though some protective sorcery were in effect. It
+can be disrupted by <i>dispel phantasm</i>; otherwise, it will
+persist until the duration expires. No saving throw is
+permitted to disbelieve this illusion.</p>"

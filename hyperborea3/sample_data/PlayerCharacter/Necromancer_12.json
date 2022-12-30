@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 14,
     "class_name": "Necromancer",
     "attr": {
         "st": {
-            "score": 17,
-            "atk_mod": 1,
-            "dmg_adj": 2,
-            "test": 4,
-            "feat": 24
+            "score": 5,
+            "atk_mod": -1,
+            "dmg_adj": -1,
+            "test": 1,
+            "feat": 1
         },
         "dx": {
-            "score": 12,
+            "score": 11,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 11,
+            "score": 12,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,21 +27,21 @@
             "feat": 4
         },
         "in": {
-            "score": 9,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
-        },
-        "ws": {
-            "score": 15,
-            "will_adj": 1,
+            "score": 16,
+            "lang": 1,
             "bonus_spells": 2,
             "learn_spell": 75
         },
+        "ws": {
+            "score": 13,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
         "ch": {
-            "score": 7,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 5,
-        "deity_name": "Boetzu",
-        "primary_alignment": "Lawful"
+        "deity_id": 11,
+        "deity_name": "Lunaqqua",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 6,
-    "race": "Ixian",
+    "race_id": 7,
+    "race": "Kelt",
     "gender": "Male",
+    "secondary_skill": "cart-/wainwright",
     "hd": "9d4+3",
-    "hp": 34,
+    "hp": 25,
     "fa": 5,
     "ca": 12,
     "ta": 10,
@@ -124,9 +126,9 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": -1,
             "hurled_atk": null,
-            "dmg_adj": 2,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -142,9 +144,9 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": -1,
             "hurled_atk": null,
-            "dmg_adj": 2,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -194,6 +196,84 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": {
         "undead_type_00": "UD",
@@ -214,8 +294,8 @@
     "spells": {
         "nec": {
             "spells_per_day": {
-                "lvl1": 5,
-                "lvl2": 5,
+                "lvl1": 6,
+                "lvl2": 6,
                 "lvl3": 4,
                 "lvl4": 4,
                 "lvl5": 3,
@@ -225,156 +305,156 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 1,
-                    "spell_id": 453,
-                    "spell_name": "Write Spell",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 1,
                     "spell_id": 28,
                     "spell_name": "Black Hand",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "3 rounds + 1 round per CA level",
+                    "reversible": false,
+                    "pp": 178,
+                    "spell_desc": "<p>The sorcerer\u2019s right hand turns dark as pitch and emits tiny motes of black and violet. The <i>black hand</i> enhances touch spells of harmful intent, such as <i>inflict disease</i>, <i>ghoul touch</i>, and <i>shocking grasp</i>. These subsequent touch attacks are made at +1 \u201cto hit\u201d for every 4 CA levels:</p><ul><li>CA 1\u20134 = +1</li><li>CA 5\u20138 = +2</li><li>CA 9\u201312 = +3</li></ul><p>The <i>black hand</i> spell does not expire after a touch spell is successfully delivered; it persists for the full duration noted above.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 111,
-                    "spell_name": "Detect Malady",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 13,
+                    "spell_name": "Animate Carrion",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 177,
+                    "spell_desc": "<p>Raised are the bones or carrion of Small animals: amphibians, birds, mammals, and reptiles of natural sort. The <b>small undead animals</b> will obey the simple instructions of the caster (essentially one-word commands) and follow the sorcerer unless slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion between the sorcerer and the undead animal. The caster can <i>animate</i> and maintain no more than 1 HD of undead animals per CA level. <i>Animated carrion</i> loses any special abilities possessed in life (e.g., flight, musk, venom).</p>"
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 56,
+                    "spell_name": "Chill Touch",
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>A violet glow emanates from the hands of the sorcerer. The next foe struck (bare hand or a melee weapon) sustains an additional 1d4 hp of energy-sapping damage, followed by a <i>sorcery</i> saving throw. If the saving throw fails, the victim is weakened, suffering penalties of \u22121 on attack and damage rolls for the spell\u2019s duration. The dweomer fades if the caster does not strike a foe before the spell expires.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 176,
-                    "spell_name": "Forest of Bones",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 284,
-                    "spell_name": "Perceive Heartbeat",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 95,
+                    "spell_name": "Danse Macabre",
+                    "range": "180 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 188,
+                    "spell_desc": "<p>The corpse of a human or humanoid is animated to undeath and thenceforth controlled like a marionette by the sorcerer\u2019s waving fingers. The corpse can be directed to move, pick up objects, or even attack. The creature functions as a <b>skeleton</b> or <b>zombie</b>, depending on the stats of the corpse, though the latter lacks the <i>zombiism</i> disease. This spell requires the constant chanting and gesticulating of the caster. Once the caster ceases to direct, or when the spell\u2019s duration elapses, the corpse will crumple to the ground.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 5,
-                    "spell_name": "Agonizing Touch",
+                    "spell_id": 14,
+                    "spell_name": "Animate Carrion II",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 177,
+                    "spell_desc": "<p>Raised are the bones or carrion of Medium animals: amphibians, birds, mammals, and reptiles of natural sort. The <b>medium undead animals</b> will obey the simple instructions of the caster (essentially one-word commands) and follow the sorcerer unless slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion betwixt the sorcerer and the undead animal. The caster can <i>animate</i> and maintain no more than 2 HD of undead animals per CA level. <i>Animated carrion</i> loses any special abilities possessed in life (e.g., flight, musk, venom).</p>"
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 3,
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
+                    "range": "120 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Sorcery and its effects are negated and removed in an area of 20 \u00d7 20 \u00d7 20 feet. The spell does not negate magic items but can undo a sorcerous effect created by one. It does not, however, negate illusions/phantasms. If <i>dispel magic</i> is used against a spell cast by a sorcerer of higher CA, the chance of failure is 1-in-20 per level difference. For instance, if a CA 6 caster attempts to <i>dispel</i> the <i>levitate</i> spell of a CA 10 sorcerer, there is a 4-in-20 chance of failure.</p>"
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 4,
+                    "spell_id": 413,
+                    "spell_name": "Transfer Wounds",
                     "range": "touch",
                     "duration": "instantaneous",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 3,
-                    "spell_id": 384,
-                    "spell_name": "Strangle",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "reversible": false,
+                    "pp": 240,
+                    "spell_desc": "<p>A spell that can <i>transfer wounds</i> from a willing subject to another willing recipient, which may be the spell caster. A maximum of 20 hp damage can be <i>transferred</i>. The process involves a 1-turn ritual in which the wounds, by way of hands firmly grasped, pass from the subject to the recipient. If a recipient other than the sorcerer is involved, both must be touched by the caster. The one who absorbs the damage may be drained to no lower than 0 hp; e.g., someone with 16 hp can absorb 1\u201316 hp of damage from the subject.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 4,
-                    "spell_id": 324,
-                    "spell_name": "Remove Curse",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 4,
-                    "spell_id": 37,
-                    "spell_name": "Brain Death",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 16,
+                    "spell_name": "Animate Dead",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 177,
+                    "spell_desc": "<p><b>Skeletons</b> or <b>zombies</b> are created from the bones and cadavers of dead humans or humanoids. The undead will obey the commands of the caster, following, attacking, or standing guard as directed. They will continue to serve until slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion betwixt the sorcerer and the undead. Through this necromancy the sorcerer can <i>animate</i> and maintain <b>1 skeleton</b> or <b>zombie</b> per CA level. If suitable remains are at hand, the sorcerer can opt to raise <b>1 large skeleton</b> per 3 CA levels, or <b>1 giant skeleton</b> per 6 CA levels, though zombies may only be created from the whole corpses of humans.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 98,
-                    "spell_name": "Death",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 183,
+                    "spell_name": "Gelatinize Bones",
+                    "range": "90 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 201,
+                    "spell_desc": "<p>Causes the victim\u2019s skeleton to become viscous. Unless a <i>transformation</i> saving throw is made, the victim collapses to a blubbery glob of flesh, still breathing but unable to move and hardly able to eat or drink unless assisted. The victim cannot manipulate objects, speech is limited to grunts and groans, and breathing is a terrible labour. Death is inevitable, usually transpiring within two to four weeks, though some victims have been known to survive for months or even years if provided constant care. Means do exist by which this curse can be undone: the spells <i>heal</i> or <i>regeneration</i>, but the process is painful, causing 3d6 hp damage and requiring a <i>trauma survival</i> check to survive the ordeal (see <b>Chapter 3: Statistics</b>, <i>constitution</i>).</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 295,
-                    "spell_name": "Plague Rats",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 150,
+                    "spell_name": "Feeblemind",
+                    "range": "120 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>This enchantment affects humans or other creatures who cast spells. Creatures with innate spell-like abilities do not qualify unless they too are spell casters. The target must make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the target is of higher CA than the caster, the save is made at a +1 bonus per level difference; conversely, if the target is of lesser CA than the caster, the save is made at a \u22121 penalty per level difference. If the save fails, the victim becomes a drooling idiot, an invalid incapable of coherent speech or thought and likewise incapable of controlling bodily functions. <i>Feeblemind</i> is negated by <i>dispel magic</i> or cured by a <i>heal</i> spell.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 6,
-                    "spell_id": 382,
-                    "spell_name": "Stone to Flesh",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 154,
+                    "spell_name": "Finger of Death",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>The sorcerer points at a target and utters a baleful incantation; from the sorcerer\u2019s finger emits a death ray. The target must make a <i>death</i> saving throw or die. For every point of difference between the sorcerer\u2019s CA and the target\u2019s level/HD, the saving throw is modified by \u00b11. So, if a CA 11 sorcerer casts this spell against a 12th-level fighter, the fighter gains a +1 bonus to the saving throw; if the target is a 7th-level fighter, the saving throw is rolled at a \u22124 penalty. This sorcery is associated with d\u00e6monism, so if not already Evil, the caster will likely gravitate to that ethos through its indiscriminate use; for clerics and druids, excommunication may result.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 6,
-                    "spell_id": 319,
-                    "spell_name": "Raise Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 182,
+                    "spell_name": "Geas",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 201,
+                    "spell_desc": "<p>Compels the victim (human, humanoid, or giant) to complete a service or task. To resist the spell, the target may make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. The task must be reasonably achievable and not a blatant death sentence, or the spell breaks after one or two weeks. (One cannot be directed to fall on his sword, but if <i>geased</i> by a sorcerer high atop Mount Vhuurmithadon, a fighting man might be commanded to find and offer himself to Xathoqqua.) If the <i>geased</i> individual fails or refuses to carry out the appointed task, the individual suffers weakness and will die after one or two weeks. <i>Geas</i> cannot be broken by <i>dispel magic</i> or <i>remove curse</i>. Only the reverse of this spell, <i>remove geas</i>, can break the effects of a <i>geas</i>; too, it can negate a <i>quest</i> spell.</p>"
                 }
             ]
         }

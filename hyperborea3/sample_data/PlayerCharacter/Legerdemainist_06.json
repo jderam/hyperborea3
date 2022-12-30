@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 24,
     "class_name": "Legerdemainist",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 12,
+            "score": 14,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 9,
+            "score": 11,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,19 +27,19 @@
             "feat": 4
         },
         "in": {
-            "score": 13,
+            "score": 16,
             "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 9,
+            "score": 10,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 11,
+            "score": 10,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +50,21 @@
     "xp_to_next": 88000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 4,
-        "deity_name": "Azathoth",
+        "deity_id": 24,
+        "deity_name": "Yug",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 11,
-    "race": "Pict (Half-Blood)",
-    "gender": "Male",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Female",
+    "secondary_skill": "teamster",
     "hd": "6d6",
-    "hp": 14,
+    "hp": 24,
     "fa": 4,
     "ca": 6,
     "ta": 0,
@@ -114,7 +116,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 5,
+    "ac": 4,
     "mv": 40,
     "weapons_melee": [
         {
@@ -132,7 +134,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -150,7 +152,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -195,6 +197,214 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
+    },
     "thief_skills": [
         {
             "thief_skill": "climb",
@@ -205,7 +415,7 @@
         {
             "thief_skill": "decipher_script",
             "skill_name": "Decipher Script",
-            "skill_roll": 2,
+            "skill_roll": 3,
             "stat": "in"
         },
         {
@@ -250,7 +460,7 @@
         "mag": {
             "spells_per_day": {
                 "lvl1": 2,
-                "lvl2": 1,
+                "lvl2": 2,
                 "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -260,68 +470,68 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 353,
-                    "spell_name": "Shove",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 233,
+                    "spell_name": "Jump",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 210,
+                    "spell_desc": "<p>Allows the recipient to leap 40 feet forwards (with a 10-foot apex), 10 feet backwards, or 20 feet straight up. For every additional 3 CA levels of the sorcerer, the affected can make another <i>jump</i>; thus, a CA 4 sorcerer can empower two such <i>jumps</i>, a CA 7 sorcerer can empower three, and a CA 10 sorcerer four, so long as all <i>jumps</i> occur before the spell\u2019s expiration.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 431,
-                    "spell_name": "Ventriloquism",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 358,
+                    "spell_name": "Sleep",
+                    "range": "120 feet",
+                    "duration": "2d8 turns",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Induces victims of 4 HD or fewer to slumber, with no saving throws possible. This enchantment encompasses a 30-foot-diameter area and affects 2d8 HD of creatures, starting with the lowest HD creatures first. Note that any \u201c+\u201d to hit dice should be ignored when determining the HD value of affected targets (e.g., a 3+1 HD creature counts as 3 HD, though a 3 HD creature will be ensorcelled before a 3+1 HD creature). Alternatively, this spell can be targeted at a single creature of 5 HD or fewer. <i>Sleeping</i> victims will not awaken from normal noise, though they will rouse if shaken or slapped. Undead and constructs are unaffected by this spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 445,
-                    "spell_name": "Web",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 385,
+                    "spell_name": "Strengthen",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 234,
+                    "spell_desc": "<p>Enhances the brawn of a human. A fighter\u2019s strength score is increased by 2d4 points, a cleric\u2019s or thief \u2019s by 1d6, and a magician\u2019s by 1d4, all to a maximum of 18. (A classless \u201ccommoner\u201d may gain 1d4 points.) If this spell is cast on one whose strength score is already 18, that one will gain an additional +1 \u201cto hit,\u201d and <i>extraordinary feats of strength</i> will be improved by +8%.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 192,
-                    "spell_name": "Gust of Wind",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 108,
+                    "spell_name": "Detect Illusion",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to perceive phantasms for what they are. Illusions and phantasms within a 30-foot radius of the caster appear translucent. This spell requires minimal concentration; the caster can move and continue to <i>detect illusion</i>, but cannot run, fight, or perform other like actions.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 360,
-                    "spell_name": "Slow",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 449,
+                    "spell_name": "Wind Wall",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Evoked is a barrier of wind 10 feet thick, 20 feet long, and up to 50 feet high. The wind gushes upwards, sending any light materials skywards, including loose objects or unsecured creatures (birds, small animals, and the like) weighing no more than 25 pounds. <i>Wind wall</i> can disperse spells such as <i>cloudkill</i> and <i>stinking cloud</i>.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 345,
-                    "spell_name": "Shadow Sending",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 137,
+                    "spell_name": "Explosive Runes",
+                    "range": "touch",
+                    "duration": "permanent (until triggered)",
+                    "reversible": false,
+                    "pp": 195,
+                    "spell_desc": "<p>Sorcerous symbols are inscribed on the surface of a book, manual, map, note, scroll, tome, or other written work. The <i>explosive runes</i> protect the volume\u2019s content so that only the sorcerer who inscribed the <i>runes</i> may access the material safely. If the reader is not the caster, the <i>runes</i> will explode for 5d6 hp damage. The reader is permitted no saving throw, but those within 10 feet are allowed <i>sorcery</i> saving throws for half damage. Sorcerers who carefully inspect the volume (before simply reading it) have a 1-in-20 chance per CA level of discovering the <i>explosive runes</i>. <i>Explosive runes</i> can be removed at any time by the caster or the <i>dispel magic</i> spell. Detonation effectively destroys the material.</p>"
                 }
             ]
         }

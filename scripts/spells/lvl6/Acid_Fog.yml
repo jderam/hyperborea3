@@ -1,0 +1,25 @@
+id: 2
+name: Acid Fog
+pp: 175
+Lvl:
+  - ill 6
+Rng: 30 feet
+Dur: 6 rounds (1 minute)
+Rev: 0
+Desc: "<p>Creates a caustic miasma as large as 10 feet thick,
+30 feet long, and 30 feet high. Only 35 mph or greater
+wind will disperse <i>acid fog</i>; even a <i>gust of wind</i> spell is
+ineffective. <i>Acid fog</i> burns all within its confines and is
+particularly deadly to vegetation, killing small plants
+and grass at once. Humans, monsters, and other fauna
+are harmed as well, the acid blistering their skin, eyes,
+throat, and lungs. Such creatures sustain 1 hp damage
+on the 1st round, 2 hp on the 2nd, 4 hp on the 3rd, 8 hp
+on the 4th, 10 hp on the 5th, and 12 hp on the 6th; vegetal
+creatures suffer 150% of these damage figures.</p>
+<p>Any creature caught within or attempting to traverse
+<i>acid fog</i> is slowed by the fog’s opacity to a maximum
+rate of 10 MV. Normal sight cannot penetrate <i>acid fog</i>,
+and <i>infrared vision</i> is unavailing. Potent fire spells
+such as <i>fireball</i>, <i>flame strike</i>, or <i>wall of fire</i> will burn
+off <i>acid fog</i> in 1 round.</p>"

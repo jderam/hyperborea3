@@ -1,44 +1,45 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 2,
     "class_name": "Magician",
     "attr": {
         "st": {
-            "score": 11,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 8,
+            "score": 14,
             "atk_mod": 0,
-            "def_adj": -1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
+        "cn": {
+            "score": 8,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
             "test": 2,
             "feat": 2
         },
-        "cn": {
-            "score": 6,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
-        },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 11,
+            "score": 9,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 10,
+            "score": 11,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -58,11 +59,12 @@
         "deity_name": "Boetzu",
         "primary_alignment": "Lawful"
     },
-    "race_id": 7,
-    "race": "Kelt",
-    "gender": "Female",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Male",
+    "secondary_skill": "mortician",
     "hd": "9d4+3",
-    "hp": 20,
+    "hp": 31,
     "fa": 5,
     "ca": 12,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 10,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +126,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -142,9 +144,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -186,17 +188,71 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "mag": {
             "spells_per_day": {
-                "lvl1": 7,
+                "lvl1": 6,
                 "lvl2": 6,
                 "lvl3": 5,
                 "lvl4": 5,
@@ -207,156 +263,156 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 375,
-                    "spell_name": "Spider Climb",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 97,
+                    "spell_name": "Dash",
+                    "range": "touch",
+                    "duration": "1d4+2 hours",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>The movement rate of this spell\u2019s recipient is increased by +20 (maximum 70 MV) for the duration of the spell; e.g., a character with 40 MV can move at 60 MV (120 feet per round running). The secondary effect of this spell is marathon-like endurance: The runner can <i>dash</i> for 1d4+2 hours before the spell ends, unless terminated earlier by the caster or a <i>dispel magic</i> spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 247,
-                    "spell_name": "Magic Missile",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 358,
+                    "spell_name": "Sleep",
+                    "range": "120 feet",
+                    "duration": "2d8 turns",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Induces victims of 4 HD or fewer to slumber, with no saving throws possible. This enchantment encompasses a 30-foot-diameter area and affects 2d8 HD of creatures, starting with the lowest HD creatures first. Note that any \u201c+\u201d to hit dice should be ignored when determining the HD value of affected targets (e.g., a 3+1 HD creature counts as 3 HD, though a 3 HD creature will be ensorcelled before a 3+1 HD creature). Alternatively, this spell can be targeted at a single creature of 5 HD or fewer. <i>Sleeping</i> victims will not awaken from normal noise, though they will rouse if shaken or slapped. Undead and constructs are unaffected by this spell.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 9,
+                    "spell_name": "Alarm",
+                    "range": "10 feet per CA level",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 176,
+                    "spell_desc": "<p>Cast upon as many doors, gates, portals, or other point of ingress/egress that are within the caster\u2019s range. This spell is triggered by the passage of any living creature larger than a rat (3+ lbs.), evoking a sound not unlike bells pealing. Undead, constructs, and other non-living entities will not activate the <i>alarm</i> spell; neither will incorporeal beings, though invisible creatures will set off the spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
                     "spell_id": 428,
                     "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 243,
+                    "spell_desc": "<p>This spell requires 1 turn to cast and necessitates the sacrifice of a 50-gp gem. It summons an invisible entity of limited means. The <i>unseen servant</i> can clean, fetch and carry a 10-pound item (or drag a 20-pound item), tie a simple knot, mend a torn cloth or sack, open an unlocked door, or perform other menial tasks throughout the duration of the spell.</p> <p>The entity cannot fight, though it is not easy to kill: Magical weapons or spells must be used. The <i>unseen servant</i> has the following statistics: <b>MV</b> 30 (but it cannot run); <b>AC</b> 5; <b>HD</b> 1 (<b>hp</b> 6); <b>#A</b> 0; <b>D</b> \u2014; <b>SV</b> 17. If the caster moves farther than 120 feet away from the <i>unseen servant</i>, it will disappear.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 315,
-                    "spell_name": "Pyrotechnics",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 1,
+                    "spell_name": "Acid Arrow",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 175,
+                    "spell_desc": "<p>A magic arrow darts from the finger of the caster. On a successful attack roll (<i>dexterity</i> modifier applies), the <i>acid arrow</i> strikes for 1d4+1 hp physical damage, plus an additional 2d4 hp acid damage in the same round. Magicians (but not other sorcerers) enjoy a +1 bonus to the attack roll for every 2 CA levels (CA 3\u20134 = +2, CA 5\u20136 = +3, and so forth). Acid damage will persist for higher level sorcerers:</p> <ul><li>1 extra round for CA 4\u20136</li> <li>2 extra rounds for CA 7\u20139</li> <li>3 extra rounds for CA 10 or greater.</li></ul> <p>For example, an <i>acid arrow</i> fired by a CA 12 sorcerer on round 1 would inflict 1d4+1 hp base damage plus 2d4 hp acid damage on round 1, 2d4 hp acid damage on round 2, 2d4 hp acid damage on round 3, and a final 2d4 hp acid damage on round 4. The acid may ruin armour or clothing per referee discretion. <i>N.B.:</i> If using the optional <i>critical hits and misses</i> rules, <i>acid arrow</i> is subject to critical success or failure; however, magicians should use the \u201cfighter\u201d column in each such instance. Also, any multiplied damage that results from a critical hit or critical miss applies strictly to the arrow\u2019s physical damage, not the acid.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 142,
-                    "spell_name": "Extra-dimensional Pocket",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 445,
+                    "spell_name": "Web",
+                    "range": "5 feet per CA level",
+                    "duration": "2 turns per CA level",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Thick, sticky strands of webbing stream from the caster\u2019s fingertips, covering a target area no greater than 10 \u00d7 10 \u00d7 20 feet. Targets are allowed <i>avoidance</i> saving throws to evade contact with the <i>web</i>. Those who make the save can carefully make their way out, moving at half speed. Those who failed the save can attempt to break free one round later: <ul><li><b>ST 3\u20138</b> = trapped until spell expires</li> <li><b>ST 9\u201312</b> = 2d6 rounds to break free</li> <li><b>ST 13\u201318</b> = 1d6 rounds to break free</li></ul> A <b>flame tongue</b> sword wielder can slash through in but 1 round. If the webs are set ablaze with a torch or other fire source, they will catch quickly, the entire mass burning in 2 rounds. Those trapped within the conflagration suffer 1d6 hp damage per round (1d8 hp vs. undead), and any flammable clothing or gear is subject to burning and ruination.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 58,
-                    "spell_name": "Clairvoyance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 386,
+                    "spell_name": "Suggestion",
+                    "range": "60 feet",
+                    "duration": "24 hours",
+                    "reversible": false,
+                    "pp": 234,
+                    "spell_desc": "<p>This enchantment affects one creature. The target must make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable, or be compelled to carry out a <i>suggestion</i> spoken by the sorcerer. <i>Suggestions</i> should be neither overly complex nor longer than one or two sentences, though the victim may attempt to act upon such urgings for the duration of the spell, if physically possible. <i>Suggesting</i> an obviously self-destructive action breaks the spell on a 5-in-6 chance. Of course, this spell is useless if sorcerer and ensorcelled do not speak the same language.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 345,
-                    "spell_name": "Shadow Sending",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 342,
+                    "spell_name": "Sepia Snake Sigil",
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 228,
+                    "spell_desc": "<p>The casting of this spell requires snake scales and powdered amber of 100-gp value. The spell may be executed via one of three methods:</p> <ol><li>Glowing sigil drawn in the air and directed at a target</li> <li>Grey-brown sigil inscribed upon an object that, if studied or touched, activates the dweomer</li> <li>Small character inscribed into a book or scroll that, if studied or touched, activates the dweomer</li></ol> <p>Whichever the method, a brown, serpentine force is evoked to strike its nearest victim. It attacks at a fighting ability (FA) equal to the sorcerer\u2019s casting ability (CA). If the <i>sepia snake sigil</i> hits its target, the victim is imprisoned and paralyzed within a shimmering amber force field. This lasts until the caster releases the victim, the caster dies, or <i>dispel magic</i> is cast. No saving throw is allowed for creatures of 8 HD or less; however, a <i>sorcery</i> saving throw is allowed for creatures of 9 HD or greater. Nothing can approach an entrapped victim; all attempts are rebuffed by the force field. The imprisoned will not age, sleep, nor grow hungry; neither will it be aware of what transpires without. If the <i>sepia snake sigil</i> misses its target, it disappears in a puff of brown smoke.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 4,
-                    "spell_id": 324,
-                    "spell_name": "Remove Curse",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 265,
+                    "spell_name": "Mirror, Mirror",
+                    "range": "touch",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 215,
+                    "spell_desc": "<p>Enchants a polished silver mirror to become a temporary scrying device. The sorcerer may then view a known subject (human or monster) over any distance, so long as both are on the same plane of existence. The extent of familiarity dictates the probability of success:</p> <p><table><caption><b>Table 106: Mirror, Mirror Spell</b></caption> <tr><th>Familiarity</th><th>Chance of Locating</th></tr> <tr><td>Very familiar</td><td>5:6</td></tr> <tr><td>Somewhat familiar</td><td>4:6</td></tr> <tr><td>Seen in a picture or sketch</td><td>3:6</td></tr> <tr><td>Item or garment in possession</td><td>2:6</td></tr> <tr><td>Described by another person</td><td>1:6</td></tr></table></p> <p>The subject can be observed for the duration of the spell, which will also depict anyone or anything within 30 feet; if the subject is in complete darkness, the caster will see only vague details. Creatures with intelligence of 13 or higher have a 1-in-6 chance of cognizing they are being watched by means sorcerous. Too, if <i>mirror, mirror</i> is used to view one who is 10 HD or greater, the subject may make a <i>sorcery</i> save to cognize the effect; otherwise, he or she remains ignorant.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 4,
-                    "spell_id": 158,
-                    "spell_name": "Fire Shield",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 129,
+                    "spell_name": "Dweomered Weapon",
+                    "range": "touch",
+                    "duration": "1 turn per CA",
+                    "reversible": false,
+                    "pp": 194,
+                    "spell_desc": "<p>Temporarily enchants any mundane weapon, granting a +1 \u201cto hit\u201d and +1 damage bonus to a single weapon or three missiles (arrows or quarrels) for CA 7\u20138 casters, +2/+2 for CA 9\u201310 casters, and +3/+3 for CA 11\u201312 casters. This spell does not function on magical weapons unless the bonus granted supersedes the weapon\u2019s current enchantment.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 5,
-                    "spell_id": 69,
-                    "spell_name": "Contact Otherworldly Being",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 380,
+                    "spell_name": "Stone Shape",
+                    "range": "touch",
+                    "duration": "Instantaneous",
+                    "reversible": false,
+                    "pp": 233,
+                    "spell_desc": "<p>Stone is reshaped to fit sorcerer\u2019s purposes. The sorcerer can manipulate a cubic area with sides of onefoot length per CA level; e.g., a CA 9 sorcerer can affect a 9 \u00d7 9 \u00d7 9-foot area. The <i>stone shape</i> is limited only by the caster\u2019s imagination. Examples include a stone chair, club, coffer, door, or statue. The details of any <i>stone shape</i> lack refinement and are crude by all accounts. Note that any <i>stone shape</i> with moving parts stands a 3-in-10 chance of not functioning; e.g., the lid of a stone coffer might not open.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 5,
-                    "spell_id": 146,
-                    "spell_name": "Faithful Hound",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 436,
+                    "spell_name": "Wall of Iron",
+                    "range": "60 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 244,
+                    "spell_desc": "<p>Evokes a vertical metal partition to rise from the ground, typically to seal off a passage or wall breach. The <i>wall of iron</i> must have appropriate anchor points and cannot be made to stand in open space. The <i>wall</i> is three inches thick and covers an area as large as 600 square feet (e.g., 20 feet high and 30 feet long, 10 feet high and 60 feet long). A <i>wall of iron</i> can be destroyed by a <i>dispel magic</i> spell; it is otherwise permanent unless battered down.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 6,
-                    "spell_id": 310,
-                    "spell_name": "Project Image",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 394,
+                    "spell_name": "Summon D\u00e6mon III",
+                    "range": "10 feet",
+                    "duration": "6 rounds (1 minute) or special",
+                    "reversible": false,
+                    "pp": 235,
+                    "spell_desc": "<p>Sorcery transports a <b>lesser d\u00e6mon</b> from Underborea as selected by the sorcerer, depending on need. The d\u00e6mon will arrive 1 round after the spell is cast and will perform its designated task, after which, dead or alive, it will either disappear or turn on the caster and/or any allies (see below). When casting this spell, the sorcerer must explicitly state the <i>summoned</i> type: \u201cdefender,\u201d \u201cilluminator,\u201d or \u201cseeker.\u201d</p> <ul><li><b>Defender</b>: <i>Summons</i> a random d\u00e6mon to assault the sorcerer\u2019s enemies as directed for no longer than 6 rounds. The target(s) must be pointed out straight away, or else the d\u00e6mon will attack the sorcerer and/or any allies. If the stated target(s) is defeated, the standard chance of betrayal applies. <p><table><caption><b>Table 115: Summon D\u00e6mon III Spell</b></caption> <tr><th>d6 Result</th><th>Defender Summoned</th></tr> <tr><td>1\u20133</td><td>D\u00e6mon, Lesser, Class xi (1)</td></tr> <tr><td>4\u20135</td><td>D\u00e6mon, Lesser, Class xii (1)</td></tr> <tr><td>6</td><td>D\u00e6mon, Lesser, Class xiii (1)</td></tr></table></p></li> <li><b>Illuminator</b>: <i>Summons</i> a single <b>class xiv lesser d\u00e6mon</b>. The beast can use its special <i>legend lore</i> ability to determine the whereabouts of an artefact, of which it will then inform the caster. If the artefact does not exist, the beast will attack the sorcerer and/or any comrades. Alternatively, it can be called upon to use its <i>tongues</i> ability to converse with any intelligent creature present. Lastly, it instead can grant wisdom by use of its <i>contact otherworldly being</i> ability, with no risk of insanity. No matter the case, once the d\u00e6mon has completed its service, the standard chance of betrayal applies; however, in the latter case (<i>contact otherworldly being</i>), each question beyond the first increases the d\u00e6mon\u2019s chance of betrayal by 1-in-6.</li> <li><b>Seeker</b>: <i>Summons</i> a single <b>class xv lesser d\u00e6mon</b> to search and destroy. When the <i>seeker</i> type is designated, the sorcerer also must describe the prey (name, species, and so forth). The d\u00e6mon then will <i>teleport</i> itself and the sorcerer before said prey and attempt to slay it, after which the standard chance of betrayal applies. If no prey exists, the d\u00e6mon will attack the sorcerer and/or any comrades. Alternatively, this d\u00e6mon can be asked to <i>plane shift</i> the sorcerer and as many as five allies. This act of utter desperation cannot be undone by the same or another lesser d\u00e6mon; it is permanent, barring some other means of translocation. The d\u00e6mon then either will disappear (laughing all the while) or will turn on the sorcerer and any allies (q.v.).</li></ul> <p><i>Betrayal:</i> D\u00e6mons are infamous for betrayal. Upon completing their prescribed task, they may turn on the sorcerer and/or any allies on a 1-in-6 chance. D\u00e6mons are, however, subject to morale checks during the entire <i>summon d\u00e6mon</i> process. Those that fail will attempt to flee (if possible), now permanent inhabitants of Hyperborea that may one day seek revenge. Wise sorcerers are known to take sanctuary within the confines of a candlelit magic circle whilst casting and maintaining this spell; of course, the magic circle will only protect the sorcerer, not allies.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 6,
-                    "spell_id": 140,
-                    "spell_name": "Extend Spell III",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 175,
+                    "spell_name": "Forceful Hand",
+                    "range": "10 feet per CA level",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 200,
+                    "spell_desc": "<p>A giant disembodied hand appears between the sorcerer and a selected opponent. The <i>forceful hand</i> presents a constant obstruction, remaining betwixt the two, whilst the sorcerer can go on to cast subsequent spells or perform other actions. The <i>forceful hand</i> is aggressive, pushing back the target at a rate of 10 MV to the maximum range of the spell, unless the target weighs more than 500 pounds; if such is the case, the hand effectively functions as an <i>interposing hand</i> spell (q.v.), slowing the approach of the enemy to 10 MV.</p> <p>If the hand pushes an enemy to a wall or other obstruction, it will hold the victim there until the spell ends or the sorcerous hand is destroyed. The <i>forceful hand</i> is AC 0 and has as many hit points as the sorcerer at full health. Otherwise, only an <i>extraordinary feat of strength</i> allows one to escape. This may require the referee to dice for a monster\u2019s strength on the spot, using 3d6 for an average creature, 4d6 drop low for a more robust creature, 4d6 drop high for a Small creature\u2014 or simply assign a reasonable strength score.</p>"
                 }
             ]
         }
@@ -373,7 +429,7 @@
             "class_id": 2,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Squirrel, 4 hp]",
+            "brief_desc": "magical animal companion. [Gull, 3 hp]",
             "ability_desc": null
         },
         {

@@ -1,0 +1,16 @@
+id: 195
+name: Heal
+pp: 203
+Lvl:
+  - clr 6
+Rng: touch
+Dur: instantaneous
+Rev: 1
+Desc: "<p>Cures diseases and mends the injuries of a living recipient.
+The sorcerer’s touch alleviates ailments such
+as blindness, deafness, disease, madness (including
+<i>feeblemind</i>), and all hit point loss, save 1d4 hp. The reverse
+form of this spell, <i>harm</i>, afflicts the victim with a
+horrific, ulcerative skin disease that causes a loss of all
+hit points, save 1d4. The victim must be touched, but
+no saving throw is allowed.</p>"

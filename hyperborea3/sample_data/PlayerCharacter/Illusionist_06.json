@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 13,
     "class_name": "Illusionist",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 11,
+            "score": 10,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 12
         },
         "cn": {
-            "score": 10,
+            "score": 9,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,19 +27,19 @@
             "feat": 4
         },
         "in": {
-            "score": 15,
+            "score": 16,
             "lang": 1,
             "bonus_spells": 2,
             "learn_spell": 75
         },
         "ws": {
-            "score": 14,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 16,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 12,
+            "score": 10,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +50,21 @@
     "xp_to_next": 80000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 4,
+        "short_name": "LG",
+        "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 14,
-        "deity_name": "Rel",
-        "primary_alignment": "Neutral"
+        "deity_id": 19,
+        "deity_name": "Yig",
+        "primary_alignment": "Lawful"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
-    "gender": "Female",
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Non-Binary",
+    "secondary_skill": "roper",
     "hd": "6d4",
-    "hp": 18,
+    "hp": 17,
     "fa": 2,
     "ca": 6,
     "ta": 0,
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -192,6 +194,60 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
@@ -208,90 +264,90 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 321,
+                    "spell_name": "Reflexion",
+                    "range": "10 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 224,
+                    "spell_desc": "<p>Evokes an image to appear on any mirrored surface. The <i>reflexion</i> is still as a picture but can be as vague or detailed as the sorcerer wishes.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 321,
-                    "spell_name": "Reflexion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 204,
+                    "spell_name": "Hypnotism",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 205,
+                    "spell_desc": "<p>The sorcerer\u2019s eyes become kaleidoscopic as he or she makes weird, mesmerizing gestures and speaks in low, reverberating tones. The sorcerer can <i>hypnotize</i> 1d6 selected creatures. Targets are allowed <i>sorcery</i> saving throws to resist; the saves are modified by <i>willpower adjustment</i>, if applicable. Hostile (i.e., already on the attack) creatures gain a +2 bonus on their saving throws. <i>Hypnotized</i> creatures might be convinced to take some simple course of action (uttered by the sorcerer in a brief sentence), but it cannot be a self-destructive action or the connexion will be broken. The caster may utter this proposition at any time after the <i>hypnosis</i> takes effect, though before the spell\u2019s duration elapses; once the spell ends, all effects terminate.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
                     "spell_id": 440,
                     "spell_name": "Wall of Vapours",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Evokes a hedge of \u00c6thereal mists as large as 10 \u00d7 30 \u00d7 30 feet in volume. These <i>vapours</i> are opaque and normal sight cannot penetrate them; likewise, <i>infrared vision</i> is blocked. The <i>wall of vapours</i>, however, is easily dispersed. A <i>gust of wind</i> spell, or any natural wind of 10 mph or greater, will diffuse the effect. The cryomancer version of this spell generates a mist of ice crystals.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 113,
-                    "spell_name": "Detect Silence",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 218,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 20 \u00d7 20 \u00d7 20 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight, not of sound, smell, or temperature.</p> <p>Once cast, this spell persists as long as the caster concentrates, unless the illusion is touched or terminated via a <i>dispel phantasm</i> spell. A <i>phantasmal</i> monster is AC 9 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require complete concentration, and no movement is allowed.</p> <p><i>Phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the soundlessness of the illusion (e.g., a charging mammoth); in other instances, such as a <i>phantasm</i> of fire, a lack of thermal properties can create suspicion. To the eyes of the disbeliever, the <i>phantasm</i> becomes a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp base damage, +1 hp damage per CA level, per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 43,
-                    "spell_name": "Captivate",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 447,
+                    "spell_name": "Whispering Wind",
+                    "range": "5 miles per CA level",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Evokes a gentle breeze to whirl around the sorcerer and then depart, taking with it a spoken message no more than 12 words (not including articles <i>a</i>, <i>an</i>, and <i>the</i>). The message will be conveyed to a familiar recipient within the spell\u2019s range, so long as no insurmountable obstacles prevent delivery. If the caster and the subject are both outdoors, the spell is almost always successful; however, if one or the other is in a dungeon or inside a building, obstructions (e.g., walls, closed doors) can preclude the spell from functioning as desired. When the <i>whispering wind</i> reaches its objective, it swirls about the recipient creature and softly murmurs its message.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 266,
-                    "spell_name": "Misdirection",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 437,
+                    "spell_name": "Wall of Shadow",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 244,
+                    "spell_desc": "<p>The sorcerer conjures from the Black Gulf a barrier of darkness. The <i>wall of shadow</i> must be 10 feet thick and 10 feet high; only the length is malleable, allow for 10 feet per CA level (e.g., a CA 7 sorcerer may create a 10 \u00d7 10-foot wall that is 70 feet long). The <i>wall</i> can be straight or form a semicircle.</p> <p>The <i>wall of shadow</i> is not impenetrable; persons and objects can be seen through it, but they are vague, hazy, and nebulous. Missile fire directed at a person beyond the wall is at a \u22122 penalty. Other benefits might be derived from this spell; e.g., a thief attempting to <i>hide</i> might gain a bonus to his chance-in-twelve, or perhaps even automatic success, at the referee\u2019s discretion.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 292,
-                    "spell_name": "Phantasmal Wind",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 125,
+                    "spell_name": "Dispel Phantasm",
+                    "range": "120 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Automatically negates any illusions/phantasms. However, if used against the illusion/phantasm spell of a superior illusionist, the chance of failure is 1-in-20 per CA level difference. For instance, if a CA 6 bard attempts to <i>dispel phantasm</i> against the <i>spectral phantasm</i> of a CA 10 illusionist, then the bard stands a 4-in-20 chance of failure.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 452,
-                    "spell_name": "Wraithshape",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 374,
+                    "spell_name": "Spectral Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 40 \u00d7 40 \u00d7 40 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Spectral phantasm</i> can be used to create an attacking monster or another damaging hazard. The illusion can be of sight, sound, smell, and/or temperature. The auditory component might include a shout, a roar, or a sentence of no more than nine words in length (not including articles <i>a</i>, <i>an</i>, and <i>the</i>).</p> <p>Once cast, this spell persists as long as the caster concentrates and for 5 rounds thereafter unless the illusion is struck for at least 1 hp of damage or is terminated via a <i>dispel phantasm</i> spell. A <i>spectral phantasmal</i> monster is AC 7 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The illusion can be directed to move anywhere within the spell\u2019s range; such manoeuvres require the full attention of the caster, who can walk at half speed and maintain control.</p> <p><i>Spectral phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. With sight, sound, smell, and/or temperature, credibility is rarely an issue with this spell; if such a case arises, and the save is made, the disbeliever will see the <i>spectral phantasm</i> as a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d6 hp per CA level per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 }
             ]
         }

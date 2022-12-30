@@ -1,0 +1,19 @@
+id: 241
+name: Liveoak
+pp: 211
+Lvl:
+  - drd 6
+Rng: touch
+Dur: 1 day per CA level
+Rev: 0
+Desc: "<p>Usually cast on an oak tree, though any hardwood can be
+used, so long as it is at least 18 feet in height. The tree animates,
+transforming to a <b>16-HD tree-man</b>, whose function
+is to protect a person, place, or thing as prescribed
+by the sorcerer. This animation triggers when a specific
+condition, set by the caster, is met; e.g., “If any creature
+comes within 30 feet of this camp, animate!” The <i>liveoak</i>
+attacks as a normal tree-man, except it can go no farther
+than 120 feet from its original location and cannot summon
+other tree-men. This spell can be negated by a <i>dispel
+magic</i> spell, or the caster may end it at will.</p>"

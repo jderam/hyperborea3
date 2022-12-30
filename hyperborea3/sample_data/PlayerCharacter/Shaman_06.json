@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 21,
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 8,
+            "score": 9,
             "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
-        },
-        "dx": {
-            "score": 10,
-            "atk_mod": 0,
-            "def_adj": 0,
+            "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "dx": {
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
         "cn": {
-            "score": 11,
+            "score": 12,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,19 +27,19 @@
             "feat": 4
         },
         "in": {
-            "score": 17,
-            "lang": 2,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "score": 10,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 16,
+            "score": 15,
             "will_adj": 1,
             "bonus_spells": 2,
             "learn_spell": 75
         },
         "ch": {
-            "score": 9,
+            "score": 10,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -47,22 +48,23 @@
     "xp": 40000,
     "level": 6,
     "xp_to_next": 80000,
-    "xp_bonus": true,
+    "xp_bonus": false,
     "alignment": {
         "align_id": 5,
         "short_name": "N",
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 16,
-        "deity_name": "Tlakk-Nakka",
+        "deity_id": 20,
+        "deity_name": "Yikkorth",
         "primary_alignment": "Neutral"
     },
-    "race_id": 6,
-    "race": "Ixian",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "secondary_skill": "roper",
     "hd": "6d6",
-    "hp": 15,
+    "hp": 20,
     "fa": 3,
     "ca": 6,
     "ta": 4,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 5,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -169,10 +171,216 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 105,
+                "weapon_type": "Chain Whip",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 201,
+                "weapon_type": "Bola",
+                "rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d2",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 202,
+                "weapon_type": "Boomerang",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 204,
+                "weapon_type": "Hooked Throwing Knife",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1d6",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": {
@@ -192,7 +400,7 @@
         "undead_type_13": "NT"
     },
     "spells": {
-        "drd": {
+        "clr": {
             "spells_per_day": {
                 "lvl1": 2,
                 "lvl2": 2,
@@ -203,45 +411,45 @@
             },
             "spells_known": [
                 {
-                    "school": "drd",
+                    "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 314,
-                    "spell_name": "Purify Food and Drink",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 1d8 hp of damage previously sustained. The reverse of this spell, <i>inflict light wounds</i>, is used to harm a living creature for 1d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
-                    "school": "drd",
+                    "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 127,
+                    "spell_name": "Distinguish Alignment",
+                    "range": "10 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Allows the sorcerer to determine the exact alignment of the selected individual(s). One round is required for each person scanned, so six creatures can be scrutinized if all are within range. The caster must remain stationary, staring at each subject. No saving throw is allowed for this spell, and if the sorcerer exercises discretion, the spell\u2019s casting might go unnoticed.</p>"
                 },
                 {
-                    "school": "drd",
+                    "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 42,
-                    "spell_name": "Call Lightning",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>Creates a 60-foot-diameter sphere of lambent light, the subtle hue of which may be selected by the caster. It cannot be cast on a single target or object, but rather on an area. The effect is permanent (unless <i>dispelled</i>), so long as the caster remains within 10 miles; otherwise, the dweomer begins to dissipate in subtle degrees, ending in a number of months equal to the sorcerer\u2019s CA. <i>Continuous light</i> can counter <i>continuous darkness</i> and <i>darkness</i>.</p>"
                 }
             ]
         },
         "nec": {
             "spells_per_day": {
-                "lvl1": 2,
-                "lvl2": 2,
-                "lvl3": 2,
+                "lvl1": 1,
+                "lvl2": 1,
+                "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
                 "lvl6": 0
@@ -250,35 +458,35 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 357,
+                    "spell_name": "Skeletal Servant",
+                    "range": "240 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>This ritual requires 1 turn to cast, using the complete skeleton of a human or humanoid. The skeleton is animated to an undead creature of limited means. This <i>skeletal servant</i> will attend the caster; it can clean, fetch/carry a 10-pound item (or drag a 20-pound item), tie a simple knot, mend a torn cloth or sack, open an unlocked door, or perform other menial tasks throughout the duration of the spell, so long as it remains within 240 feet of the sorcerer. The creature cannot fight. Its relevant statistics are: <b>AL</b> CE; <b>SZ</b> M; <b>MV</b> 30; <b>AC</b> 7; <b>HD</b> \u00bd; <b>#A</b> 0; <b>D</b> \u2014; <b>SV</b> 17. <i>Special:</i> Immune to <i>sleep</i>, <i>charm</i>, and cold magic. Edged and piercing weapons inflict \u00bd damage. <i>Turned as Undead Type 0</i>.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 272,
-                    "spell_name": "Mummification",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 454,
+                    "spell_name": "Wyvern Warden",
+                    "range": "30 feet",
+                    "duration": "8 hours",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Taps the unspeakable power of the Black Gulf, conjuring a billowing black haze that assumes the vague shape of a <b>wyvern</b>: a large, two-legged dragon with a long, barbed tail. The <i>wyvern warden</i> is assigned a task of guardianship over a person, place, or thing. An approaching creature will not see the <i>wyvern warden</i> in the dark unless <i>detect magic</i> is cast. In naturally lit conditions, however, a wary approaching creature might discern the hazy, monstrous form.</p> <p>If anyone or anything approaches within 20 feet of the curling mass (except designated allies who were present and identified as such when the spell was cast), the <i>wyvern warden</i> lashes with its tail, striking without error. The victim must make a <i>death</i> saving throw or remain rigid for 1 round per CA level of the sorcerer. The <i>wyvern warden</i> will then disappear in a puff of black smoke, able to attack but one victim.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 384,
-                    "spell_name": "Strangle",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 5,
+                    "spell_name": "Agonizing Touch",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 176,
+                    "spell_desc": "<p>When touched by the sorcerer, a searing pain runs through the victim\u2019s nervous system; no saving throw applies. Damage inflicted is 1d4 hp, but the intense pain impairs the victim for 1d4+1 rounds: The victim\u2019s attack rolls, armour class, and saving throws are each at a \u22122 penalty; movement is halved; and spells or innate sorcerous abilities stand a 3-in-6 chance of failure (the optional <i>concentration</i> rule does not apply).</p>"
                 }
             ]
         }

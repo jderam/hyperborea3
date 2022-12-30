@@ -1,0 +1,38 @@
+id: 157
+name: Fire Seeds
+pp: 197
+Lvl:
+  - pyr 6
+  - drd 6
+Rng: 40 feet
+Dur: special
+Rev: 0
+Desc: "<p>This dweomer is laid on six small nuts (acorn, walnut,
+etc.) or six small berries (blueberry, holly, etc.), each
+type effecting a different result. A nut becomes a <i>fire
+seed</i> missile, and a berry becomes a <i>fire seed</i> bomb.</p>
+<ul><li><i>Fire Seed Nut:</i> A nut (fire seed missile) can be
+thrown as a grenade at a target within 40 feet.
+This is executed by use of the <i>flask hurling</i> rules
+(see <b>Chapter 9: Combat</b>, <i>combat options</i>). A
+miss indicates the missile was ineffective, the
+nut lost. If a hit is scored, the <i>fire seed</i> explodes
+in a burst of flame, delivering 2d8+4 hp damage
+to all within 10 feet of the target. The stricken
+target is not allowed a saving throw, but those
+within 10 feet are permitted <i>sorcery</i> saving
+throws for half damage.</li>
+<li><i>Fire Seed Berry:</i> Berries (<i>fire seed</i> bombs) must
+be placed within the spell’s range (though not
+necessarily by the caster). The caster designates
+a spoken word that detonates the berries, each
+one bursting into a 10-foot-diameter gout of
+flame that causes 1d8+4 hp damage. The berries
+can be piled together for a cumulative effect
+or spread out as the sorcerer desires (perhaps
+creating a wall of flames). Victims are allowed
+<i>sorcery</i> saving throws for half damage.</li></ul>
+<p>Regardless of the type created, <i>fire seeds</i> are of limited
+duration if not discharged: They remain enchanted for
+6 turns (1 hour) per CA level, and their dweomer vanishes
+if they go unused.</p>"

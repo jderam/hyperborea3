@@ -1,47 +1,48 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 16,
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 8,
+            "score": 13,
             "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 10,
+            "score": 13,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
-            "score": 10,
-            "hp_adj": 0,
+            "score": 14,
+            "hp_adj": 1,
             "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
         },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 17,
+            "lang": 2,
+            "bonus_spells": 3,
+            "learn_spell": 85
         },
         "ws": {
-            "score": 9,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 17,
-            "react_adj": 2,
-            "max_henchmen": 10,
-            "turn_adj": 1
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 48000,
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 3,
-        "deity_name": "Aurorus",
+        "deity_id": 4,
+        "deity_name": "Azathoth",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 8,
+    "race": "Kimmerian",
+    "gender": "Male",
+    "secondary_skill": "boat-/shipwright",
     "hd": "6d4",
-    "hp": 18,
+    "hp": 23,
     "fa": 2,
     "ca": 6,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -173,19 +175,96 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "wch": {
             "spells_per_day": {
-                "lvl1": 5,
-                "lvl2": 4,
-                "lvl3": 3,
+                "lvl1": 6,
+                "lvl2": 5,
+                "lvl3": 4,
                 "lvl4": 0,
                 "lvl5": 0,
                 "lvl6": 0
@@ -194,90 +273,90 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 11,
+                    "spell_name": "Alter Self",
+                    "range": "0",
+                    "duration": "1d6 turns",
+                    "reversible": false,
+                    "pp": 176,
+                    "spell_desc": "<p>The sorcerer\u2019s form is mutated to something or someone no more than 50% smaller or larger, lighter or heavier. The new form has quasi-actuality. For example, if the new form has wings, the caster is allowed minimal flight, moving at no greater than 50% of the actual creature\u2019s speed; if the creature has gills, the caster can breathe underwater; and so on. The altered form is limited to humans, humanoids, or other bipedal species with which the caster is familiar. This spell does not grant any special abilities beyond locomotion and respiration\u2014no innate magical abilities, no enhanced acuity. The duration of the spell should be rolled in secret by the referee.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 145,
-                    "spell_name": "F\u00e6rie Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 107,
+                    "spell_name": "Detect Evil",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": true,
+                    "pp": 191,
+                    "spell_desc": "<p>The sorcerer detects potent emanations of Evil in a 60-foot-long, 10-foot-wide path. Sources of Evil emanations might include Evil artefacts, d\u00e6mons, or the undead. <i>Detect evil</i> will not discern the alignment of other characters, even if they are Evil, unless the subject is of a pure and intense Evil (empowered by d\u00e6mons, for example) or is about to commit a most vile act. Clerics must brandish their holy symbols to cast this spell. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect evil</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell. Evil sorcerers cast the reverse version of this spell, <i>detect good</i>, which functions the same way with regard to emanations of Good.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 321,
-                    "spell_name": "Reflexion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
                     "spell_id": 244,
                     "spell_name": "Locate the Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Detects the presence of deceased creatures in a 30-foot radius. The caster walks at half speed, chanting, gesticulating, and attuning to the presence of death. Although <i>locate the dead</i> can detect the presence of undead creatures, it does not distinguish between death and undeath. This spell penetrates 10 feet of packed earth, five feet of wood, three feet of stone, or one inch of metal (except lead). <i>Locate the dead</i> also can be used to seek a specific dead person or creature; however, the caster must possess a personal item or memento of the sought-after corpse.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 242,
-                    "spell_name": "Locate Object",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 45,
+                    "spell_name": "Cause Blindness",
+                    "range": "30 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 182,
+                    "spell_desc": "<p>The subject is blinded unless a <i>sorcery</i> saving throw is successful. The afflicted sees grey and nothing more, the tone of which depends on how much light is present. This spell is permanent unless dismissed by the caster. It can be negated by the spells <i>cure blindness</i> or <i>dispel magic</i>. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 276,
-                    "spell_name": "Obscure",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 31,
+                    "spell_name": "Bless",
+                    "range": "0",
+                    "duration": "3 turns",
+                    "reversible": true,
+                    "pp": 179,
+                    "spell_desc": "<p>All allies within 25 feet of the caster are sanctified by this spell, gaining a +1 to any saving throw versus fear effects (whether <i>sorcery</i> or <i>device</i>), and a +1 bonus on all attack rolls. Furthermore, NPCs (henchmen, hirelings, etc.) each gain a +1 bonus on any <i>morale</i> (ML) check.</p> <p>The reverse form of this spell, <i>blight</i>, curses all hostile creatures within 25 feet of the caster, effecting \u22121 morale, \u22121 on saving throws versus fear effects, and a \u22121 penalty on all attack rolls. <i>N.B.:</i> Either form of this spell affects only those within range at the moment the spell is cast; i.e., subsequently moving into or out of range has no bearing on the spell\u2019s effects.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 324,
-                    "spell_name": "Remove Curse",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 399,
+                    "spell_name": "Summon Insect Swarm",
+                    "range": "50 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 237,
+                    "spell_desc": "<p>An angry horde of insects are <i>summoned</i>, manifesting on the caster\u2019s person, that one\u2019s arms spread wide. They are flying insects 7-in-10 times; otherwise, they are crawling. Flying insects, per the referee\u2019s determination, might be bees, biting flies, hornets, or wasps; crawling insects might include biting ants, beetles, or non-venomous centipedes. (If this spell is cast underground, crawling insects will instead be <b>1d4 giant ants</b>, which will attack normally at the sorcerer\u2019s will.) The <i>insect swarm</i> will attack 1 round after being <i>summoned</i>. The standard <i>swarm</i> (not the giant ants) will surge forth as directed by the sorcerer. As long as the caster concentrates and points at the target, the victim suffers 2 hp damage per round. Whilst engulfed, the victim cannot cast spells, missile attacks are impossible, and melee attacks are at a \u22124 \u201cto hit\u201d penalty. Other actions such as drinking a potion, activating a magic item, using a magic ability, etc. are subject to a 3-in-6 chance of failure. Too, a standard <i>swarm</i> victim suffers a \u22124 AC penalty. Fleeing the <i>swarm</i> may be the victim\u2019s only recourse, for it can harass only to the limit of the spell\u2019s range. A <i>swarm</i> can be directed to move to another opponent within range, but 1 round will elapse for every 30 feet between the targets.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 392,
-                    "spell_name": "Summon D\u00e6mon I",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 58,
+                    "spell_name": "Clairvoyance",
+                    "range": "special",
+                    "duration": "6 rounds (1 minute) per CA level",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>The caster envisions a known or familiar location and can \u201csee\u201d anything within 60 feet of the location\u2019s epicentre, beyond which all sight becomes blurred; if the area is cloaked in darkness, visibility is limited to 10 feet. Range is not a factor when casting this spell, so long as the caster is on the same planet, plane of existence, and dimension as the targeted location. If <i>clairvoyance</i> is used to view one who is 10 HD or greater, the target may make a <i>sorcery</i> save to cognize the effect; otherwise, they are ignorant. Lastly, if used in conjunction with <i>clairaudience</i>, the sorcerer both hears and sees the envisioned location.</p>"
                 }
             ]
         }
@@ -301,7 +380,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Gull, 2 hp]",
+            "brief_desc": "magical animal companion. [Weasel, 3 hp]",
             "ability_desc": null
         },
         {

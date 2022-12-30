@@ -1,0 +1,18 @@
+id: 73
+name: Control Lycanthrope
+pp: 186
+Lvl:
+  - wch 6
+Rng: 120 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>The sorcerer controls the actions of a single <b>lycanthrope</b>,
+commanding the cursed beast. No saving
+throw is allowed. The lycanthrope views the caster as a
+trusted master to be protected and defended throughout
+the duration of the spell. If caster and lycanthrope
+speak the same language, the caster can direct the
+beast to perform various tasks, so long as they are not
+diametrically opposite to the creature’s nature; if such
+becomes the case, the beast is allowed a <i>sorcery</i> saving
+throw to break the control.</p>"

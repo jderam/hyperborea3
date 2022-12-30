@@ -1,0 +1,19 @@
+id: 55
+name: Chill of Death
+pp: 183
+Lvl:
+  - cry 6
+Rng: 60 feet
+Dur: instantaneous
+Rev: 0
+Desc: "<p>The sorcerer points at a target and utters an incantation
+of death frost. The target must make a <i>death</i>
+saving throw or suffer a frozen heart (or another vital
+organ). For every point of difference between the sorcerer’s
+CA and the target’s level/HD, the saving throw
+is modified by ±1. So, if a CA 12 sorcerer casts this
+spell against a 13-HD monster, the monster gains a +1
+bonus to its saving throw; if the target is an 8-HD monster,
+the saving throw is rolled at a −4 penalty. If the
+target lacks vital organs (e.g., <b>automaton</b>, <b>skeleton</b>,
+<b>zombie</b>), this spell is ineffective.</p>"

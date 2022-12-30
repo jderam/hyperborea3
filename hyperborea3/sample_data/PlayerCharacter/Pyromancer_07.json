@@ -1,4 +1,5 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 15,
     "class_name": "Pyromancer",
@@ -11,37 +12,37 @@
             "feat": 4
         },
         "dx": {
-            "score": 15,
-            "atk_mod": 1,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 10,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
-            "score": 8,
-            "hp_adj": 0,
+            "score": 14,
+            "hp_adj": 1,
             "poison_adj": 0,
-            "trauma_surv": 65,
-            "test": 2,
-            "feat": 2
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
         },
         "in": {
-            "score": 11,
-            "lang": 0,
+            "score": 18,
+            "lang": 3,
+            "bonus_spells": 4,
+            "learn_spell": 95
+        },
+        "ws": {
+            "score": 10,
+            "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
-        "ws": {
-            "score": 17,
-            "will_adj": 1,
-            "bonus_spells": 3,
-            "learn_spell": 85
-        },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
-            "turn_adj": 0
+            "score": 17,
+            "react_adj": 2,
+            "max_henchmen": 10,
+            "turn_adj": 1
         }
     },
     "xp": 80000,
@@ -49,20 +50,21 @@
     "xp_to_next": 160000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 9,
-        "deity_name": "Kthulhu",
-        "primary_alignment": "Chaotic"
+        "deity_id": 20,
+        "deity_name": "Yikkorth",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 9,
-    "race": "Kimmeri-Kelt",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
+    "secondary_skill": "leatherworker/saddler/tanner",
     "hd": "7d4",
-    "hp": 21,
+    "hp": 26,
     "fa": 3,
     "ca": 7,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 4,
             "ammunition": null,
-            "missile_atk": 1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -187,20 +189,111 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "pyr": {
             "spells_per_day": {
-                "lvl1": 4,
-                "lvl2": 3,
-                "lvl3": 2,
-                "lvl4": 1,
+                "lvl1": 5,
+                "lvl2": 4,
+                "lvl3": 3,
+                "lvl4": 2,
                 "lvl5": 0,
                 "lvl6": 0
             },
@@ -208,101 +301,101 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 94,
-                    "spell_name": "Dancing Lights",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 168,
-                    "spell_name": "Flash",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 41,
+                    "spell_name": "Burning Hands",
+                    "range": "5 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 181,
+                    "spell_desc": "<p>Jets of thin, multihued flames spring from the fingertips of the caster\u2019s enveloped-in-flames hands, fanning out in a 120\u00b0 horizontal arc and causing 2 hp damage per CA level, with no saving throw allowed. Combustible materials (e.g., cloth, paper, dry wood) are likely ignited if exposed to <i>burning hands</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Suffuses the area of effect in a lambent glow, the colour of which may be chosen by the caster. Ten square feet per CA level can be affected thus; or, one Medium creature or two Small creatures per CA level, no saving throw allowed. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). Illumed creatures suffer \u22121 AC penalties.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 230,
-                    "spell_name": "Invisibility",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 225,
+                    "spell_name": "Infrared Vision",
+                    "range": "touch",
+                    "duration": "2 hours + 1 hour per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The caster or other recipient can perceive light in the infrared spectrum, effectively seeing in the dark to a range of 60 feet. All subtle differences of heat radiation are defined before the eyes of the recipient so that a warm-blooded creature stands out against the cool walls of a dungeon chamber. Fire or other notable heat in the proximity of the viewer can be a hindrance (e.g., lantern, torch) or a complete obstruction (e.g., bonfire, lava). This spell does not reveal invisible objects or creatures.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
+                    "range": "0",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A breeze blows from the caster (in the direction the sorcerer faces) in a 10-foot-wide path that is 5 feet long per CA level; e.g., a CA 6 sorcerer can evoke a <i>gust of wind</i> that is 10 feet wide and 30 feet long. <i>Gust of wind</i> extinguishes small fires, though it fans and excites the flames of larger blazes; too, it disperses and thus dispels magical clouds, fogs, and smoke, such as <i>cloudkill</i>, <i>fog cloud</i>, and <i>stinking cloud</i>. At its greatest effectiveness, this spell can belly the sail of a small craft.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 163,
-                    "spell_name": "Flame Arrow",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 385,
+                    "spell_name": "Strengthen",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 234,
+                    "spell_desc": "<p>Enhances the brawn of a human. A fighter\u2019s strength score is increased by 2d4 points, a cleric\u2019s or thief \u2019s by 1d6, and a magician\u2019s by 1d4, all to a maximum of 18. (A classless \u201ccommoner\u201d may gain 1d4 points.) If this spell is cast on one whose strength score is already 18, that one will gain an additional +1 \u201cto hit,\u201d and <i>extraordinary feats of strength</i> will be improved by +8%.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 450,
-                    "spell_name": "Witch Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 412,
+                    "spell_name": "Tongues",
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": true,
+                    "pp": 240,
+                    "spell_desc": "<p>Enables the sorcerer to speak the language of any intelligent creature within 50 feet, including secret languages such as Druidic or Thieves\u2019 Cant. Once the spell\u2019s duration ends, the caster retains no knowledge or memory of otherwise unknown languages. The reverse of this spell, <i>gibberish</i>, confuses and jumbles the words of all speakers within 50 feet (except those of the caster), pending individual <i>sorcery</i> saving throws, modified by <i>willpower adjustment</i>, if applicable. Spells may also be jumbled to ineffectiveness, but this allows for a second <i>sorcery</i> saving throw, with +1 for every CA level of the opposing caster.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 329,
-                    "spell_name": "Resilient Sphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 138,
+                    "spell_name": "Extend Spell I",
+                    "range": "special",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 195,
+                    "spell_desc": "<p>The sorcerer must cast this spell 1 round after casting a level 1\u20133 spell. Doing so extends the duration of the previous spell by 50%; e.g., a <i>levitate</i> spell can be made to last 1\u00bd turns (15 minutes) per CA level, instead of 1 turn per CA level.</p>"
                 }
             ]
         }

@@ -1,41 +1,42 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 16,
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 8,
+            "score": 12,
             "atk_mod": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "dx": {
-            "score": 11,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 13,
-            "hp_adj": 1,
+            "score": 8,
+            "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
         },
         "in": {
-            "score": 9,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 11,
+            "score": 13,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
             "score": 13,
@@ -49,20 +50,21 @@
     "xp_to_next": 192000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 3,
-        "deity_name": "Aurorus",
+        "deity_id": 21,
+        "deity_name": "Ymir",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 9,
-    "race": "Kimmeri-Kelt",
-    "gender": "Female",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Male",
+    "secondary_skill": "labourer/yardman",
     "hd": "7d4",
-    "hp": 23,
+    "hp": 20,
     "fa": 3,
     "ca": 7,
     "ta": 0,
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -178,12 +180,89 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "wch": {
             "spells_per_day": {
-                "lvl1": 5,
+                "lvl1": 6,
                 "lvl2": 4,
                 "lvl3": 3,
                 "lvl4": 2,
@@ -194,101 +273,101 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Enlargement",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 358,
+                    "spell_name": "Sleep",
+                    "range": "120 feet",
+                    "duration": "2d8 turns",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Induces victims of 4 HD or fewer to slumber, with no saving throws possible. This enchantment encompasses a 30-foot-diameter area and affects 2d8 HD of creatures, starting with the lowest HD creatures first. Note that any \u201c+\u201d to hit dice should be ignored when determining the HD value of affected targets (e.g., a 3+1 HD creature counts as 3 HD, though a 3 HD creature will be ensorcelled before a 3+1 HD creature). Alternatively, this spell can be targeted at a single creature of 5 HD or fewer. <i>Sleeping</i> victims will not awaken from normal noise, though they will rouse if shaken or slapped. Undead and constructs are unaffected by this spell.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 11,
-                    "spell_name": "Alter Self",
-                    "range": "0",
-                    "duration": "1d6 turns",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 375,
+                    "spell_name": "Spider Climb",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the spell\u2019s recipient to scale sheer or vertical surfaces, including those that are smooth and polished, like marble. The fingertips and toes of the climber become sticky, like those of a spider, with magical cilia providing adhesion. A <i>spider climb</i> recipient can climb up walls and move along ceilings at one-half their normal movement rate. Whilst climbing, the recipient cannot manipulate objects that weigh less than one pound because such objects will cling to the hands. Spell casters cannot cast other spells, but they can trigger magical devices. <i>N.B.:</i> Gauntlets and heavy footwear must be removed to benefit from this spell.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 149,
-                    "spell_name": "Feather Fall",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 257,
+                    "spell_name": "Mending",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 213,
+                    "spell_desc": "<p>Repairs small breaks or tears in objects. The spell can weld a broken metallic article, such as a chain link, dagger, or knife; stitch a torn cloth, a frayed or severed rope, or perforated leather; fuse the shards of a broken bottle; and so forth. At CA 7, larger breaks or tears can be repaired, subject to referee approval. <i>Mending</i> cannot be used to repair magical devices.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 258,
+                    "spell_name": "Message",
+                    "range": "1 mile",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 214,
+                    "spell_desc": "<p>The sorcerer points at the recipient and whispers a <i>message</i> that is heard as though the two stood side by side. The recipient can then reply if the spell\u2019s duration has not elapsed. The caster and the recipient must be able to see each other. If the spell is cast at an unwilling target, a <i>sorcery</i> saving throw can be made to block the audibility of the spell.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 260,
-                    "spell_name": "Mind Blank",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": "20 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the sorcerer to communicate with any normal sort of animal (not magical beasts, monsters, or other supernatural creatures). The animals will reply in kind; such responses are usually limited to brief one- or twoword statements predicated on the intelligence of the animal, at the referee\u2019s discretion. Friendly animals might be convinced to perform some minor service.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
                     "spell_id": 113,
                     "spell_name": "Detect Silence",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Allows the caster to hear that which is magically <i>silenced</i> or <i>moving silently</i> (thieves, barbarians, assassins, et al.) in a 120-foot radius. The spell attunes the caster to subtleties of sound otherwise imperceptible, such as a whisper behind a closed door. If the caster enters a deep trance, <i>detect silence</i> can also be used to perceive noises made in parallel dimensions.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 87,
-                    "spell_name": "Cure Disease",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "range": "0",
+                    "duration": "12 turns (2 hours)",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>A pale, 15-foot-radius circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking the sorcerer or any allies who are within. Against other Evil creatures, the sorcerer and allies enjoy a +1 bonus to AC, DR, and saving throws versus their attacks. As the caster moves, so too does the <i>protection</i> circle. The reverse of this spell, <i>protection from good, 15\u0384 r.</i>, is cast by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 58,
-                    "spell_name": "Clairvoyance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Suspends the deleterious effects of any toxin to which the subject has been exposed. This spell does not eliminate poison effects as <i>neutralize poison</i> does; as its title suggests, it but <i>delays poison</i>. Poisons that have an immediate impact cannot be <i>delayed</i>; however, poisons that have continuous or secondary effects are <i>delayed</i>. And if a poison has a delayed onset, it too is further <i>delayed</i>. Once the spell has ended, the poison\u2019s effects resume as normal.</p> <p>Note that if the poison affliction is the result of a venomous bite or sting, this spell can be used in conjunction with <i>draw poison</i> ability of barbarians and shamans. With the poison magically suspended in the victim\u2019s system, a barbarian or shaman can <i>draw poison</i> on a 5-in-6 chance of success for the duration of the spell.</p> <p>Lastly, <i>delay poison</i> may also revive one who has expired from poison, so long as the spell is cast within 12 rounds (2 minutes) of death and a successful <i>trauma survival</i> check is made (see <b>Chapter 3: Statistics</b>, <i>constitution</i>). The deceased poison victim is restored to 0 hp, albeit at a permanent loss of 1 constitution point.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 4,
-                    "spell_id": 188,
-                    "spell_name": "Glyph of Warding",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 363,
+                    "spell_name": "Sorcerer Eye",
+                    "range": "240 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>An invisible oculus is conjured and sent forth to \u201csee\u201d for the sorcerer, providing visual sensory information. The <i>sorcerer eye</i> drifts at 30 MV and can see 60 feet ahead of itself if light is present; lacking illuminance, the <i>eye</i> sees with <i>infrared vision</i> to a range of 30 feet and can float in any direction as dictated by the sorcerer, who must sit cross-legged with eyes closed, concentrating. The spell ends when the sorcerer\u2019s eyes open, or when the duration expires.</p>"
                 }
             ]
         }
@@ -312,7 +391,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Rat, 3 hp]",
+            "brief_desc": "magical animal companion. [Rat, 2 hp]",
             "ability_desc": null
         },
         {

@@ -1,0 +1,41 @@
+id: 286
+name: Permanent Phantasm
+pp: 217
+Lvl:
+  - ill 6
+Rng: 240 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>A visual illusion is created, a projected image of
+nearly anything the caster can imagine, as large as
+60 × 60 × 60 feet in area. Victims must be living creatures
+of animal intelligence or greater; undead, constructs,
+oozes, and the like are unaffected. <i>Permanent
+phantasm</i> can be used to create an attacking monster or
+another damaging hazard. The illusion can be of sight,
+sound, smell, and/or temperature. The auditory component
+might include a shout, a roar, or a sentence of no
+more than nine words in length (not including articles
+<i>a</i>, <i>an</i>, and <i>the</i>).</p>
+<p>Once cast, this spell persists infinitely, with no need of
+concentration unless the caster wishes to manipulate
+the movements of the illusion; such manoeuvres require
+full attention, though the sorcerer can walk at half speed
+and maintain control. The illusion is broken if struck
+for 1 hp of damage or greater, or it can be terminated
+via a <i>dispel phantasm</i> spell. A <i>permanent phantasmal</i>
+monster is AC 3 and disappears if hit; otherwise, it can
+continue to attack without caster direction.</p>
+<p><i>Permanent phantasm</i> targets are not allowed saving
+throws unless the referee feels the illusion is unbelievable,
+in which case <i>sorcery</i> saving throws may be rolled,
+modified by <i>willpower adjustment</i>, if applicable. With
+sight, sound, smell, and/or temperature, credibility is
+rarely an issue with this spell; if such a case arises, and
+the save is made, the disbeliever will see the <i>permanent
+phantasm</i> as a flawed and flickering transparent
+image. An intelligent disbeliever may then alert allies,
+whose saves are made at a bonus of +4. Otherwise,
+this illusion can inflict real physical damage: 1d8 hp per
+CA level per round to each victim. Such damage will
+remain even if the spell is subsequently broken.</p>"

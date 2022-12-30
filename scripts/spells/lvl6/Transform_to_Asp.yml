@@ -1,0 +1,22 @@
+id: 415
+name: Transform to Asp
+pp: 240
+Lvl:
+  - nec 6
+Rng: 0
+Dur: special
+Rev: 0
+Desc: "<p>A popular spell amongst the most accomplished Ixian
+necromancers, this 1-turn ritual culminates in the
+shedding of the sorcerer’s human skin (and any other
+effects) to assume the form of a <b>giant asp</b>, a dark,
+narrow-hooded cobra of about 12-foot length. This
+transmogrification includes all physical and special
+abilities, and it heals all damage previously suffered.
+<i>True seeing</i> reveals the asp for its actual shape.</p>
+<p><i>Transform to asp</i> persists for as long as the caster
+wishes, unless the transformed individual is reduced to
+0 hp or fewer, in which case the true form is revealed,
+naked and unconscious. Those who remain in asp form
+for more than one week risk losing their humanity.
+This spell can be broken by <i>dispel magic</i>.</p>"

@@ -1,0 +1,19 @@
+id: 327
+name: Repel Wood
+pp: 225
+Lvl:
+  - drd 6
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>Causes successive waves of force to roll forth in the
+direction the sorcerer faces. Any wooden objects of no
+more than six-inch thickness in this path (e.g., tables,
+chairs, spear shafts, weapon hafts, arrows, wooden
+shields) are forced away from the caster; if something
+holds onto such an object, it either will be dragged back
+with the object, or the object bursts into splinters and
+will move as this sorcery dictates (i.e., a person might
+be pulled by their axe, whereas a door might burst
+from its hinges). The wave of force is 60 feet wide and
+travels at 40 MV to a distance of 20 feet per CA level.</p>"

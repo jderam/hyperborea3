@@ -1,0 +1,18 @@
+id: 235
+name: Legend Lore
+pp: 210
+Lvl:
+  - mag 6
+  - cry 6
+  - pyr 6
+Rng: 0
+Dur: special
+Rev: 0
+Desc: "<p>Provides knowledge of some fabled artefact or locale.
+The referee must judge whether the thing or place is
+sufficiently legendary to qualify; if not, the spell fails. If
+the subject is indeed legendary, the information will be
+gleaned via a dream or vision some 1d10 days later, as
+secretly determined by the referee. The <i>lore</i> revealed
+by this spell is oft cryptic in nature and may be learnt
+in the form of a picture, poem, riddle, sign, or symbol.</p>"

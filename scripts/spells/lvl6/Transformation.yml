@@ -1,0 +1,29 @@
+id: 418
+name: Transformation
+pp: 242
+Lvl:
+  - mag 6
+  - cry 6
+  - pyr 6
+Rng: 0
+Dur: 1 round per CA level
+Rev: 0
+Desc: "<p>The sorcerer must quaff a <b>potion of heroic action</b> or
+<b>potion of super-heroic action</b> to cast this spell. After
+imbibing and speaking the incantation, the sorcerer increases
+in size and strength to herculean proportions.
+Indeed, the sorcerer takes the aspect of a berserk killing
+machine! Note the following changes:</p>
+<ul><li>Hit points doubled; subsequent damage is
+subtracted from the “false total” first</li>
+<li>+4 AC</li>
+<li>Fighting ability of a fighter of equal level
+(i.e., FA equal to CA)</li>
+<li>3/2 melee attack rate</li>
+<li>Attacks at 18 strength; i.e., +2 “to hit” and
++3 damage</li>
+<li>Intense battle lust; will not stop attacking
+enemies until they are dead, the sorcerer is
+dead, or the spell ends</li></ul>
+<p><i>N.B.:</i> Other spells cannot be cast whilst the <i>transformation</i>
+spell is in effect.</p>"

@@ -1,0 +1,18 @@
+id: 19
+name: Anti-Beast Shell
+pp: 177
+Lvl:
+  - drd 6
+Rng: 0
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>Creates an invisible, 10-foot-radius, hemispherical field
+around the sorcerer. The barrier prevents any animal
+from breaching the <i>anti-beast shell</i> or attacking those
+within. This spell does not affect magical beasts or
+“monsters”; only natural beasts of the animal kingdom
+are hedged out: amphibians, arachnids, birds, fish,
+insects, mammals, and reptiles, including giant-sized
+species. Those afforded the protection of this spell cannot
+attack or otherwise harm any animal outside the
+<i>shell</i>, or the spell will terminate.</p>"

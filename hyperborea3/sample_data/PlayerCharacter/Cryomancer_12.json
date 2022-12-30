@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 12,
     "class_name": "Cryomancer",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 14,
             "atk_mod": 0,
             "dmg_adj": 1,
             "test": 3,
             "feat": 8
         },
         "dx": {
-            "score": 8,
+            "score": 13,
             "atk_mod": 0,
-            "def_adj": -1,
-            "test": 2,
-            "feat": 2
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
-            "score": 10,
+            "score": 11,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,22 +27,22 @@
             "feat": 4
         },
         "in": {
-            "score": 14,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
-        },
-        "ws": {
-            "score": 10,
-            "will_adj": 0,
+            "score": 11,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
         "ch": {
-            "score": 9,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
         }
     },
     "xp": 800000,
@@ -49,20 +50,21 @@
     "xp_to_next": null,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 4,
-        "short_name": "LG",
-        "long_name": "Lawful Good"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
-        "primary_alignment": "Lawful"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
     "race_id": 10,
     "race": "Pict",
     "gender": "Male",
+    "secondary_skill": "mortician",
     "hd": "9d4+3",
-    "hp": 24,
+    "hp": 25,
     "fa": 5,
     "ca": 12,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 10,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -192,17 +194,96 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "cry": {
             "spells_per_day": {
-                "lvl1": 6,
+                "lvl1": 5,
                 "lvl2": 5,
                 "lvl3": 4,
                 "lvl4": 4,
@@ -213,156 +294,156 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 302,
-                    "spell_name": "Precipitate",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 353,
-                    "spell_name": "Shove",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "cry",
-                    "spell_level": 1,
-                    "spell_id": 178,
-                    "spell_name": "Freezing Hands",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 1,
                     "spell_id": 238,
                     "spell_name": "Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 1,
+                    "spell_id": 353,
+                    "spell_name": "Shove",
+                    "range": "50 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>Evokes an invisible force to push a creature or object. The caster discharges 10 pounds of force per CA level. Inanimate objects do not gain saving throws but might not be affected depending on their weight and mass, as judged by the referee. A targeted creature is allowed a <i>sorcery</i> saving throw to negate the effects of this spell. An affected target is pushed five feet, plus one foot per CA level. Generally, 20\u201330 pounds of force will push a Small creature, 40\u201360 pounds of force will push a Medium creature, and 70+ pounds of force will push a Large creature. Of course, common sense must prevail; e.g., an <b>albino ape</b> may be pushed back by 90 pounds of force, but <b>woolly mammoths</b> and other huge creatures are unlikely to be moved.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 78,
-                    "spell_name": "Cool Metal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
+                    "range": "0",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A breeze blows from the caster (in the direction the sorcerer faces) in a 10-foot-wide path that is 5 feet long per CA level; e.g., a CA 6 sorcerer can evoke a <i>gust of wind</i> that is 10 feet wide and 30 feet long. <i>Gust of wind</i> extinguishes small fires, though it fans and excites the flames of larger blazes; too, it disperses and thus dispels magical clouds, fogs, and smoke, such as <i>cloudkill</i>, <i>fog cloud</i>, and <i>stinking cloud</i>. At its greatest effectiveness, this spell can belly the sail of a small craft.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 181,
-                    "spell_name": "Frost Sphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 320,
+                    "spell_name": "Ray of Enfeeblement",
+                    "range": "30 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 224,
+                    "spell_desc": "<p>From the hand of the caster springs a silvery flash of light that automatically strikes its intended target, sapping the victim of 4 strength points. A <i>sorcery</i> saving throw negates this spell. If a monster is affected, the referee should reduce damage dice: d20 reduced to d12; d12 to d10; d10 to d8; d8 to d6; d6 to d4; d4 to d3; d3 to d2; d2 to 1. Bonuses to damage dice should also be proportionately reduced, so a creature that normally inflicts 1d8+2 hp damage should inflict 1d6+1 hp damage, and so on.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 443,
-                    "spell_name": "Water Breathing",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 360,
+                    "spell_name": "Slow",
+                    "range": "120 feet",
+                    "duration": "3 rounds + 1 round per CA level",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Halved are the attack and movement rates of this spell\u2019s victims who fail their <i>sorcery</i> saving throws. The caster selects a target point and <i>slows</i> a number of creatures equal to his or her CA level in a 15-foot radius. Those closest to the centre of the circle are affected first, potentially including the sorcerer\u2019s allies; however, the caster can limit the radius of the spell, shrinking it as desired. <i>Slowed</i> creatures move at half their normal rates, lose any dexterity <i>defence adjustment</i> to armour class, and make half as many attacks per combat round:</p> <ul><li>1/1 attack rate becomes 1/2</li> <li>3/2 attack rate becomes 3/4 <i>(1 attack, 1 attack, no attack, 1 attack)</i></li> <li>2/1 attack rate becomes 1/1</li> <li>5/2 attack rate becomes 5/4 <i>(1 attack, 1 attack, 1 attack, 2 attacks)</i></li> <li>3/1 attack rate becomes 3/2 <i>(1 attack, 2 attacks)</i></li> <li>4/1 attack rate becomes 2/1</li></ul> <p><i>Slow</i> eliminates the use of the (optional) combat action <i>two-weapon fighting</i>. Sorcery (spells and magical devices) is not <i>slowed</i> in any way. <i>Slow</i> counteracts the <i>haste</i> spell.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 226,
-                    "spell_name": "Inner Eye",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed. This enchantment affects humans, humanoids, and giants. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. Any targets of 9 HD or greater gain a +4 saving throw bonus. Saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 4,
-                    "spell_id": 352,
-                    "spell_name": "Shout",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 435,
+                    "spell_name": "Wall of Ice",
+                    "range": "120 feet",
+                    "duration": "6 turns + 1 turn per CA level",
+                    "reversible": false,
+                    "pp": 244,
+                    "spell_desc": "<p>Evokes an opaque, blue-white, rimy barricade to spring from the ground. The <i>wall of ice</i> can be as large as 60 feet long and 20 feet high, or a circle 30 feet in diameter and 20 feet high; both variations are six inches thick. The sorcerer can adjust the size if so desired, but not the shape. The <i>wall</i> negates most spells and powers related to fire, unless the magical fire wielder is of greater CA (or HD) than the sorcerer who conjured the <i>wall of ice</i>.</p> <p><i>Wall of ice</i> repels all creatures of 3 HD or fewer. Creatures of 4 HD or greater can attempt to break through with <i>extraordinary feats of strength</i>; this endeavour requires 1d6 turns and assumes the use of heavy hammers, axes, picks, or the like. (For many monsters, the referee will need to assign a reasonable strength score based on the creature\u2019s HD, size, and mass.) Most unintelligent creatures will see the <i>wall</i> as an impenetrable barrier and will not consider breaking through it. Smashing through causes 2d6 hp damage for most creatures (due to collapsing ice); creatures of or related to heat or fire suffer 3d6 hp damage.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 4,
-                    "spell_id": 158,
-                    "spell_name": "Fire Shield",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 362,
+                    "spell_name": "Solid Fog",
+                    "range": "30 feet",
+                    "duration": "12 rounds (2 minutes)",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>Creates a cloud as large as 10 feet thick, 30 feet long, and 30 feet high. Only a gale-force wind (35 mph or greater) disperses this spell; even a <i>gust of wind</i> spell is insufficient. Any creature within or attempting to traverse the <i>solid fog</i> is slowed by the fog\u2019s density to a maximum rate of 10 MV. Normal sight cannot penetrate <i>solid fog</i>, and <i>infrared vision</i> is unavailing. Potent fire spells such as <i>fireball</i>, <i>flame strike</i>, or <i>wall of fire</i> burn away <i>solid fog</i> in 1 round.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 5,
                     "spell_id": 199,
                     "spell_name": "Hold Monster",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p>Freezes still (i.e., motionless, paralyzed) any living creature, save the undead and mindless constructs. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. The saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 5,
                     "spell_id": 69,
                     "spell_name": "Contact Otherworldly Being",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 185,
+                    "spell_desc": "<p>This ritualistic spell requires 1 turn to cast and necessitates the sacrifice of 500 gp, or gems of equal value. The sorcerer must sit before a fire and chant in tongues without being spoken to or interrupted. If these requisites are met, the sorcerer contacts and seeks guidance from an otherworldly being such as a spirit, d\u00e6mon, deity, or demigod.</p> <p>As many as three questions may be asked. The more questions asked, the more information can be gleaned; however, the more questions asked, the greater the chance of becoming insane for daring to engage such beings. Consult the following table after deciding how many questions to ask. Your referee will secretly determine and inform you of the results.</p> <p><table><caption><b>Table 102: Contact Otherworldly Being Spell</b></caption> <tr><th>Number of Questions</th><th>Veracity of Answer</th><th>Chance of Insanity</th></tr> <tr><td>1</td><td>3:6</td><td>\u2014</td></tr> <tr><td>2</td><td>4:6</td><td>1:6</td></tr> <tr><td>3</td><td>5:6</td><td>2:6</td></tr></table></p> <p>Each question should be checked individually. Responses will be simple, one-word answers: \u201cYes,\u201d or \u201cNo,\u201d or \u201cMaybe,\u201d being the most common, though \u201cFutile,\u201d or \u201cInconceivable,\u201d or \u201cIrrelevant,\u201d or \u201cFoolish,\u201d might also be the response. If two or three questions are asked, and the second d6 roll so indicates, the caster is driven mad within 1 turn. The insane sorcerer will rant and rave incoherently, is unable to properly care for himself or herself, and may prove combative and self-destructive. Insanity will persist for as many weeks as the number of questions asked. A cure madness or remove curse spell can alleviate the insanity.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 6,
-                    "spell_id": 182,
-                    "spell_name": "Geas",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 75,
+                    "spell_name": "Control Weather",
+                    "range": "900 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>This spell is cast outdoors, requiring 2 turns (20 minutes) to take effect in a 2d6-square-mile area. The sorcerer can stand within the epicentre of the effect, or 300 yards outside its verge, and can <i>control weather</i> for as long as he or she concentrates. Possibilities include:</p> <ul><li><i>Rain:</i> Visibility compromised; missile attacks at \u22122 \u201cto hit,\u201d movement reduced to half.</li> <li><i>Snow:</i> Visibility reduced to 20 feet, with snow collecting at 2 inches per hour: \u221210 MV at 6 inches; \u221220 MV at 12 inches.</li> <li><i>Fog:</i> Visibility reduced to 20 feet.</li> <li><i>Clear/Partly Cloudy Skies:</i> Cancels the effects of stormy weather.</li> <li><i>Blistering Heat:</i> Temperature rises to 100\u00b0F.</li> <li><i>Frigid Cold:</i> Temperature drops to 0\u00b0F.</li> <li><i>High Winds:</i> Gale winds (40\u201350 mph) prevent missile fire and can drive flying creatures to the ground; this bluster can benefit sailing ships (at the lower range of gale power), increasing vessel speed by 50% or more.</li> <li><i>Hail:</i> Hail batters all in the area, reducing movement by half and damaging roofs and other structures.</li> <li><i>Tornado:</i> A thunderhead manifests under which a powerful whirlwind forms. The tornado is 500 feet in diameter and moves as directed by the sorcerer. Creatures of 1\u20132 HD in its path must make <i>avoidance</i> saves or be swept away, suffering 3d8 hp damage, being hurled 1d10\u00d710 feet in the air, and falling for another 1d6 hp damage per 10 feet. Creatures of 3 HD or more must make <i>avoidance</i> saves or sustain 3d8 hp damage, but are not hurled in the air. This form of <i>control weather</i> persists only 1 round per CA level.</li></ul>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 6,
-                    "spell_id": 387,
-                    "spell_name": "Summon Aerial Minion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 55,
+                    "spell_name": "Chill of Death",
+                    "range": "60 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>The sorcerer points at a target and utters an incantation of death frost. The target must make a <i>death</i> saving throw or suffer a frozen heart (or another vital organ). For every point of difference between the sorcerer\u2019s CA and the target\u2019s level/HD, the saving throw is modified by \u00b11. So, if a CA 12 sorcerer casts this spell against a 13-HD monster, the monster gains a +1 bonus to its saving throw; if the target is an 8-HD monster, the saving throw is rolled at a \u22124 penalty. If the target lacks vital organs (e.g., <b>automaton</b>, <b>skeleton</b>, <b>zombie</b>), this spell is ineffective.</p>"
                 }
             ]
         }

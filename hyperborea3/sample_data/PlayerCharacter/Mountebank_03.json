@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 31,
     "class_name": "Mountebank",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 12,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "dx": {
-            "score": 13,
-            "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
-        },
-        "cn": {
-            "score": 10,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "dx": {
+            "score": 17,
+            "atk_mod": 1,
+            "def_adj": 2,
+            "test": 4,
+            "feat": 32
+        },
+        "cn": {
+            "score": 15,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
+        },
         "in": {
-            "score": 13,
+            "score": 15,
             "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 14,
+            "score": 9,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 9,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 21,
-        "deity_name": "Ymir",
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Male",
+    "secondary_skill": "potter",
     "hd": "3d6",
-    "hp": 16,
+    "hp": 13,
     "fa": 2,
     "ca": 3,
     "ta": 0,
@@ -114,7 +116,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 4,
+    "ac": 3,
     "mv": 40,
     "weapons_melee": [
         {
@@ -131,8 +133,8 @@
             "qty": 2,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
-            "dmg_adj": 1,
+            "hurled_atk": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -150,7 +152,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -167,7 +169,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -190,16 +192,224 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
             "thief_skill": "climb",
             "skill_name": "Climb",
-            "skill_roll": 8,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
@@ -217,31 +427,31 @@
         {
             "thief_skill": "hide",
             "skill_name": "Hide",
-            "skill_roll": 6,
+            "skill_roll": 7,
             "stat": "dx"
         },
         {
             "thief_skill": "manipulate_traps",
             "skill_name": "Manipulate Traps",
-            "skill_roll": 4,
+            "skill_roll": 5,
             "stat": "dx"
         },
         {
             "thief_skill": "move_silently",
             "skill_name": "Move Silently",
-            "skill_roll": 6,
+            "skill_roll": 7,
             "stat": "dx"
         },
         {
             "thief_skill": "open_locks",
             "skill_name": "Open Locks",
-            "skill_roll": 4,
+            "skill_roll": 5,
             "stat": "dx"
         },
         {
             "thief_skill": "pick_pockets",
             "skill_name": "Pick Pockets",
-            "skill_roll": 5,
+            "skill_roll": 6,
             "stat": "dx"
         }
     ],
@@ -250,7 +460,7 @@
         "ill": {
             "spells_per_day": {
                 "lvl1": 2,
-                "lvl2": 1,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -260,35 +470,35 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 113,
-                    "spell_name": "Detect Silence",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 62,
+                    "spell_name": "Colour Spray",
+                    "range": "20 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>From the sorcerer\u2019s hands emerges a rainbow of colours, forming a wedge 5 feet wide at its base, 20 feet long, and 20 feet wide at its terminus. <i>Colour spray</i> affects 1d6 creatures within this area of effect, beginning with those closest to the caster. Targets are allowed <i>sorcery</i> saving throws. Victims of 5 HD or fewer that fail their save are stricken unconscious for 2d4 rounds. Victims of 6 HD or more that fail their saving throws are blinded for 1d4 rounds. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws. <i>N.B.:</i> Undead, constructs, and blind or sightless creatures are unaffected by this spell.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 321,
+                    "spell_name": "Reflexion",
+                    "range": "10 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 224,
+                    "spell_desc": "<p>Evokes an image to appear on any mirrored surface. The <i>reflexion</i> is still as a picture but can be as vague or detailed as the sorcerer wishes.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 43,
-                    "spell_name": "Captivate",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 45,
+                    "spell_name": "Cause Blindness",
+                    "range": "30 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 182,
+                    "spell_desc": "<p>The subject is blinded unless a <i>sorcery</i> saving throw is successful. The afflicted sees grey and nothing more, the tone of which depends on how much light is present. This spell is permanent unless dismissed by the caster. It can be negated by the spells <i>cure blindness</i> or <i>dispel magic</i>. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 }
             ]
         }

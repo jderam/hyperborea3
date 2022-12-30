@@ -1,0 +1,16 @@
+id: 66
+name: Communicate with Monsters
+pp: 185
+Lvl:
+  - clr 6
+Rng: 30 feet
+Dur: 6 rounds (1 minute) per CA level
+Rev: 0
+Desc: "<p>Allows the sorcerer to speak with any creature that
+possesses even the most rudimentary communicational
+ability. The monster will understand the intent of the
+sorcerer’s words if not the precise language. Monsters
+of the same species as the initial target will likewise understand
+the message. Of course, such communication is
+also contingent on the creature wishing to converse with
+the caster; instead, it may prefer to eat the sorcerer.</p>"

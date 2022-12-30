@@ -1,0 +1,38 @@
+id: 179
+name: Freezing Sphere
+pp: 201
+Lvl:
+  - mag 6
+  - cry 6
+  - nec 6
+  - wch 6
+Rng: special
+Dur: special
+Rev: 0
+Desc: "<p>This dweomer requires the sacrifice of a 500-gp sapphire.
+It evokes a two-inch-diameter sphere of bluewhite
+ice that appears in the palm of the caster and can
+be implemented in three different manners:</p>
+<ul><li><i>Ice Bullet:</i> The sphere can be hurled using the
+<i>flask hurling</i> rules (see <b>Chapter 9: Combat</b>,
+<i>combat options</i>) or launched from a sling as an
+<i>ice bullet</i>. Wherever it strikes, the <i>ice bullet</i>
+bursts, delivering 6d6 hp cold damage to all
+within a 20-foot radius of the blast. A <i>sorcery</i>
+saving throw is permitted for half damage.</li>
+<li><i>Ice Sheet:</i> The sphere can be tossed into a body
+of water such as a lake, pond, or river, effecting
+an <i>ice sheet</i> on the surface six inches in depth
+and covering 100 square feet per CA level. The
+<i>ice sheet</i> persists for as long as logic dictates,
+based on prevailing weather.</li>
+<li><i>Ray of Cold:</i> The sorcerer can pinch the sphere,
+releasing a thin <i>ray of cold</i> that extends 10 feet
+per CA level. The aimed <i>ray of cold</i> moves in a
+straight line and passes through all in its path,
+inflicting 4 hp damage per CA level. All damage
+is negated if <i>sorcery</i> saving throws are made.</li>
+<p>The <i>freezing sphere</i> can be held by the caster for
+1 turn per CA level. If the caster does not use the
+sphere before then, it explodes as an <i>ice bullet</i> with no
+saving throw allowed.</p>"

@@ -1,0 +1,20 @@
+id: 398
+name: Summon Ice Dæmon
+pp: 237
+Lvl:
+  - cry 6
+Rng: 240 feet
+Dur: 1 turn per CA level
+Rev: 0
+Desc: "<p>This conjuration requires 1 turn to cast and may be
+performed but once per day. The sorcerer <i>summons</i> a
+<b>gnoph-yikk</b>, a dæmon of the ice. The conjured dæmon
+will obey the bidding of the caster, performing all
+actions, including labour or combat, to the best of its
+ability. Concentration on the dæmon’s activity need
+not be maintained; the sorcerer can go about performing
+other tasks (e.g., fighting or casting other spells)
+whilst the ice dæmon continues to heed the summoner’s
+will. Nonetheless, on a 1-in-6 chance per turn, the
+ice dæmon will attack its master and/or any comrades;
+however, it cannot breach a candlelit magic circle.</p>"

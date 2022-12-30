@@ -1,0 +1,20 @@
+id: 17
+name: Animate Dead II
+pp: 177
+Lvl:
+  - nec 6
+Rng: 10 feet
+Dur: permanent
+Rev: 0
+Desc: "<p>Unspeakable rites and forbidden incantations raise
+<b>ghouls</b> from the fresh graves of humans. The selected
+graves must be no older than one week and dug properly.
+The <b>ghouls</b> will claw out from the earth to obey
+the commands of the sorcerer, following, attacking, or
+standing guard as directed. They will continue to serve
+until either slain or <i>turned</i>; the <i>dispel magic</i> spell also
+nullifies the connexion betwixt the sorcerer and the
+undead. Through this necromancy the sorcerer can
+<i>animate</i> and maintain <b>1 ghoul</b> for every 2 CA levels. If
+a 12th-level sorcerer casts this spell, the sixth ghoul will
+emerge as a <b>ghast</b>.</p>"

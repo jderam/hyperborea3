@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 16,
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 10,
+            "score": 7,
             "atk_mod": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "dx": {
-            "score": 10,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 16,
-            "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
-            "test": 3,
-            "feat": 16
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
-            "score": 11,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 10,
+            "score": 14,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 12,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 6000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
+        "deity_id": 10,
+        "deity_name": "Krimmr",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 4,
-    "race": "Esquimaux",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "secondary_skill": "bookbinder",
     "hd": "2d4",
-    "hp": 7,
+    "hp": 9,
     "fa": 0,
     "ca": 2,
     "ta": 0,
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -173,17 +175,94 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "wch": {
             "spells_per_day": {
-                "lvl1": 3,
+                "lvl1": 4,
                 "lvl2": 0,
                 "lvl3": 0,
                 "lvl4": 0,
@@ -194,46 +273,46 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 431,
-                    "spell_name": "Ventriloquism",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 334,
+                    "spell_name": "Scare",
+                    "range": "10 feet",
+                    "duration": "2d6 rounds",
+                    "reversible": false,
+                    "pp": 226,
+                    "spell_desc": "<p>A spell to frighten an opponent. The caster can direct the spell at but one creature, which is allowed a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the save fails, the victim enters a state of utter fear, at once cowering and trembling uncontrollably. If attacked or cornered, however, the frightened creature will fight back, though at a \u22121 \u201cto hit\u201d until the spell ends. Undead and other creatures devoid of emotion are unaffected by this spell.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 149,
+                    "spell_name": "Feather Fall",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Causes the caster or other willing recipient to assume the mass and weight of a feather so that a precipitous fall causes no damage (at least for the duration of the spell). This spell does not work on unwilling recipients.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 258,
+                    "spell_name": "Message",
+                    "range": "1 mile",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 214,
+                    "spell_desc": "<p>The sorcerer points at the recipient and whispers a <i>message</i> that is heard as though the two stood side by side. The recipient can then reply if the spell\u2019s duration has not elapsed. The caster and the recipient must be able to see each other. If the spell is cast at an unwilling target, a <i>sorcery</i> saving throw can be made to block the audibility of the spell.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Suffuses the area of effect in a lambent glow, the colour of which may be chosen by the caster. Ten square feet per CA level can be affected thus; or, one Medium creature or two Small creatures per CA level, no saving throw allowed. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). Illumed creatures suffer \u22121 AC penalties.</p>"
                 }
             ]
         }
@@ -257,7 +336,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Hare, 2 hp]",
+            "brief_desc": "magical animal companion. [Squirrel, 3 hp]",
             "ability_desc": null
         },
         {

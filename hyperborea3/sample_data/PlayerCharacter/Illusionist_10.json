@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 13,
     "class_name": "Illusionist",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 9,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 15,
-            "atk_mod": 1,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 24
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 12
         },
         "cn": {
-            "score": 8,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 65,
-            "test": 2,
-            "feat": 2
+            "score": 15,
+            "hp_adj": 1,
+            "poison_adj": 1,
+            "trauma_surv": 85,
+            "test": 3,
+            "feat": 16
         },
         "in": {
-            "score": 10,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 13,
+            "lang": 1,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 8,
+            "score": 13,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 0
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 9,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -58,11 +59,12 @@
         "deity_name": "Apollo",
         "primary_alignment": "Lawful"
     },
-    "race_id": 2,
-    "race": "Amazon",
-    "gender": "Male",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Female",
+    "secondary_skill": "engineer",
     "hd": "9d4+1",
-    "hp": 23,
+    "hp": 33,
     "fa": 4,
     "ca": 10,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 9,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,7 +127,7 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 1,
+            "hurled_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         },
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -192,12 +194,66 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "ill": {
             "spells_per_day": {
-                "lvl1": 5,
+                "lvl1": 6,
                 "lvl2": 4,
                 "lvl3": 4,
                 "lvl4": 3,
@@ -208,134 +264,134 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 263,
-                    "spell_name": "Mirror Gaze",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
+                    "range": "240 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 178,
+                    "spell_desc": "<p>A hallucination of sound is created, that of voices, calls, or cries (human, humanoid, animal, or monster); footfalls; or other like noises. The sounds of 1d4 creatures can be invented thus for each CA level of the sorcerer. However, if a sound is of significant volume, the referee must decide on the number of voices and their collective volume (e.g., the roar of one lion may be equal to the shouts of five people).</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Allows the caster to hear that which is magically <i>silenced</i> or <i>moving silently</i> (thieves, barbarians, assassins, et al.) in a 120-foot radius. The spell attunes the caster to subtleties of sound otherwise imperceptible, such as a whisper behind a closed door. If the caster enters a deep trance, <i>detect silence</i> can also be used to perceive noises made in parallel dimensions.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 257,
+                    "spell_name": "Mending",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 213,
+                    "spell_desc": "<p>Repairs small breaks or tears in objects. The spell can weld a broken metallic article, such as a chain link, dagger, or knife; stitch a torn cloth, a frayed or severed rope, or perforated leather; fuse the shards of a broken bottle; and so forth. At CA 7, larger breaks or tears can be repaired, subject to referee approval. <i>Mending</i> cannot be used to repair magical devices.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 62,
-                    "spell_name": "Colour Spray",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "ill",
-                    "spell_level": 2,
-                    "spell_id": 185,
-                    "spell_name": "Glitterdust",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 218,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 20 \u00d7 20 \u00d7 20 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight, not of sound, smell, or temperature.</p> <p>Once cast, this spell persists as long as the caster concentrates, unless the illusion is touched or terminated via a <i>dispel phantasm</i> spell. A <i>phantasmal</i> monster is AC 9 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require complete concentration, and no movement is allowed.</p> <p><i>Phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the soundlessness of the illusion (e.g., a charging mammoth); in other instances, such as a <i>phantasm</i> of fire, a lack of thermal properties can create suspicion. To the eyes of the disbeliever, the <i>phantasm</i> becomes a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp base damage, +1 hp damage per CA level, per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
                     "spell_id": 203,
                     "spell_name": "Hypnotic Pattern",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "90 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 205,
+                    "spell_desc": "<p>With precise gestures the sorcerer creates waves of polychromatic, zigzagging lines that fill the air in a 30-foot-diameter circle. The spell affects no more than 24 HD of creatures, each of which is entitled to a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. <i>Hypnotic pattern</i> affects those of the lowest HD first, though not blind or unseeing creatures. The ensorcelled become mesmerized imbeciles, staring at the colours until the spell terminates. The spell persists as long as the caster continues to gesticulate, plus 1d4 rounds thereafter.</p>"
+                },
+                {
+                    "school": "ill",
+                    "spell_level": 2,
+                    "spell_id": 454,
+                    "spell_name": "Wyvern Warden",
+                    "range": "30 feet",
+                    "duration": "8 hours",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Taps the unspeakable power of the Black Gulf, conjuring a billowing black haze that assumes the vague shape of a <b>wyvern</b>: a large, two-legged dragon with a long, barbed tail. The <i>wyvern warden</i> is assigned a task of guardianship over a person, place, or thing. An approaching creature will not see the <i>wyvern warden</i> in the dark unless <i>detect magic</i> is cast. In naturally lit conditions, however, a wary approaching creature might discern the hazy, monstrous form.</p> <p>If anyone or anything approaches within 20 feet of the curling mass (except designated allies who were present and identified as such when the spell was cast), the <i>wyvern warden</i> lashes with its tail, striking without error. The victim must make a <i>death</i> saving throw or remain rigid for 1 round per CA level of the sorcerer. The <i>wyvern warden</i> will then disappear in a puff of black smoke, able to attack but one victim.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 231,
-                    "spell_name": "Invisibility Hemisphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 338,
+                    "spell_name": "Secret Page",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 227,
+                    "spell_desc": "<p>Alters the contents of a sheet of paper to appear as something else: A map might be changed to a poem, an arcane formula to a recipe for soup, and so forth. With a command word the caster can view the contents at any time and then allow the dweomer to resume as before. A <i>secret page</i> cannot be revealed through a <i>decipher language</i> spell, but <i>detect magic</i> reveals its magic, and <i>dispel magic</i> or <i>dispel phantasm</i> can nullify the dweomer; however, if the <i>dispel</i> attempt fails, the <i>secret page</i> will be destroyed. Note that <i>explosive runes</i> or a <i>sepia snake sigil</i> may also be inscribed on a <i>secret page</i>. A sorcerer can maintain as many secret pages as he or she has CA levels.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 71,
-                    "spell_name": "Continuous Darkness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 275,
+                    "spell_name": "Non-Detection",
+                    "range": "0",
+                    "duration": "24 hours",
+                    "reversible": false,
+                    "pp": 216,
+                    "spell_desc": "<p>The sorcerer and anyone with whom he or she joins hands (at the time of casting) become invisible to spells that would scry their location for the duration of the spell, including <i>clairaudience</i>, <i>clairvoyance</i>, and <i>extrasensory perception</i>, and likewise any spells that <i>detect</i> or <i>discern</i>. Furthermore, any scrying devices such as <b>crystal balls</b>, <b>wands of magic detection</b>, and the like are ineffective.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 4,
-                    "spell_id": 261,
-                    "spell_name": "Minor Creation",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 33,
+                    "spell_name": "Blinding Light",
+                    "range": "90 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 180,
+                    "spell_desc": "<p>Evokes a flashing, 20-foot-diameter sphere of brilliant white radiance. Creatures within the area of effect are subject to blindness unless they make <i>sorcery</i> saving throws (or unless their eyes are closed). Creatures of 3 HD or fewer are permanently blinded if they fail their saves; creatures of 4\u20136 HD are blinded for 2d4 rounds; and creatures of 7 HD or greater are blinded for 1d4+1 rounds. Blinded creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws. Creatures not within the radius of the spell, and those that make their saves, will see spots for 1d6 turns.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 4,
-                    "spell_id": 363,
-                    "spell_name": "Sorcerer Eye",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 305,
+                    "spell_name": "Prismatic Spray",
+                    "range": "50 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 221,
+                    "spell_desc": "<p>From the illusionist\u2019s outstretched fingertips springs a twisting, fan-shaped array of all seven colours of the visible spectrum, forming a wedge 5 feet wide at its base, 50 feet long, and 20 feet wide at its terminus. Any creature within the area of effect will be struck by one or more of these rays; roll a d8 to determine which:</p> <p><table><caption><b>Table 108: Prismatic Spray Effects</b></caption> <tr><th>d8 Result</th><th>Prismatic Spray Effect</th></tr> <tr><td>1</td><td>Red ray inflicts 2 hp of burning damage per CA level.</td></tr> <tr><td>2</td><td>Orange ray that inflicts 3 hp of burning damage per CA level.</td></tr> <tr><td>3</td><td>Yellow ray that permanently blinds the target unless a <i>sorcery</i> save is made; blind creatures always lose initiative and suffer \u22124 \u201cto hit,\u201d \u22124 AC, and \u22124 saving throws.</td></tr> <tr><td>4</td><td>Green ray that poisons the victim; <i>death</i> (poison) saving throw or immediate death.</td></tr> <tr><td>5</td><td>Blue ray that paralyzes the victim for 3d4 turns unless a <i>death</i> saving throw is made.</td></tr> <tr><td>6</td><td>Indigo ray causes the target to suffer intense hallucinations for 1d6 turns per the <i>madness</i> rules (see <b>Table 148</b>) unless a <i>sorcery</i> save is made, modified by <i>willpower adjustment</i>, if applicable.</td></tr> <tr><td>7</td><td>Violet ray <i>stuns</i> the target for 3d4 rounds; <i>sorcery</i> saving throw negates.</td></tr> <tr><td>8</td><td>Struck by two rays; roll twice, ignoring results of 8.</td></tr></table></p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 5,
-                    "spell_id": 408,
-                    "spell_name": "Temporal Acceleration",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 306,
+                    "spell_name": "Prismatic Wall",
+                    "range": "10 feet",
+                    "duration": "6 rounds (1 minute) per CA level",
+                    "reversible": false,
+                    "pp": 222,
+                    "spell_desc": "<p>The illusionist creates a semi-opaque wall in which all seven colours of the visible spectrum move and scintillate in rotating bands. The wall may be as large as 60 feet long and 20 feet high or may form a circle 30 feet in diameter and 15 feet high. <i>Prismatic wall</i> is immobile; only the caster may pass through it without suffering harm; any other creature that attempts to pass through is affected by two or more colours. Roll a d8 twice to determine which colours affect the victim\u2014 possibly three rolls if an <i>8</i> is one of the results.</p> <p><table><caption><b>Table 109: Prismatic Wall Results</b></caption> <tr><th>d8 Result</th><th>Prismatic Wall Effect</th></tr> <tr><td>1</td><td>Red band inflicts 2 hp of burning damage per CA level.</td></tr> <tr><td>2</td><td>Orange band that inflicts 3 hp of burning damage per CA level.</td></tr> <tr><td>3</td><td>Yellow band that permanently blinds the target unless a <i>sorcery</i> save is made; blind creatures always lose initiative and suffer \u22124 \u201cto hit,\u201d \u22124 AC, and \u22124 saving throws.</td></tr> <tr><td>4</td><td>Green band that poisons the victim; <i>death</i> (poison) saving throw or immediate death.</td></tr> <tr><td>5</td><td>Blue band that paralyzes the victim for 3d4 turns unless a <i>death</i> saving throw is made.</td></tr> <tr><td>6</td><td>Indigo band causes the target to suffer intense hallucinations for 1d6 turns per the <i>madness</i> rules (see <b>Table 148</b>) unless a <i>sorcery</i> save is made.</td></tr> <tr><td>7</td><td>Violet band that throws target backward 2d6 feet and <i>stuns</i> the creature for 3d4 rounds; <i>sorcery</i> saving throw negates.</td></tr> <tr><td>8</td><td>Struck by three colours; roll three times, ignoring results of 8.</td></tr></table></p> <p>A <i>prismatic wall</i> may be destroyed by a <i>dispel phantasm</i> spell or by use of <i>dispel magic</i>; for the latter, however, one such spell is required for each colour in succession: red, orange, etc.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 5,
-                    "spell_id": 265,
-                    "spell_name": "Mirror, Mirror",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 3,
+                    "spell_name": "Advanced Hypnotism",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 175,
+                    "spell_desc": "<p>To <i>hypnotize</i> a single target. To resist, the target is granted a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. Hostile or aggressive creatures gain +1 to +3 bonuses on their saves, as judged by the referee. A failed save indicates the victim is unaware of being ensorcelled and is subject to a posthypnotic suggestion. The trigger is determined by the sorcerer; it may be something seen or a spoken word. The player must inform the referee what the specific trigger is, and the referee must judge if it is appropriate. Once triggered, a <i>suggestion</i> (q.v.) is effected. The spell is broken after this <i>suggestion</i> is triggered and acted on, which might be hours, days, months, or even years later.</p>"
                 }
             ]
         }

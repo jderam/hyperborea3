@@ -1,14 +1,15 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 3,
     "class_name": "Cleric",
     "attr": {
         "st": {
-            "score": 8,
+            "score": 11,
             "atk_mod": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "dx": {
             "score": 10,
@@ -26,19 +27,19 @@
             "feat": 8
         },
         "in": {
-            "score": 10,
+            "score": 8,
             "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 0
+        },
+        "ws": {
+            "score": 11,
+            "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
-        "ws": {
-            "score": 15,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
-        },
         "ch": {
-            "score": 9,
+            "score": 12,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +50,21 @@
     "xp_to_next": 512000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 4,
-        "short_name": "LG",
-        "long_name": "Lawful Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
-        "primary_alignment": "Lawful"
+        "deity_id": 16,
+        "deity_name": "Tlakk-Nakka",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
-    "gender": "Non-Binary",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Male",
+    "secondary_skill": "wire drawer",
     "hd": "9d8+2",
-    "hp": 60,
+    "hp": 61,
     "fa": 7,
     "ca": 10,
     "ta": 10,
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -170,6 +172,265 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 112,
+                "weapon_type": "Footman's Flail",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 10
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 115,
+                "weapon_type": "War Hammer",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 120,
+                "weapon_type": "Footman's Mace",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 134,
+                "weapon_type": "Spiked Staff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 7
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 138,
+                "weapon_type": "Bastard Sword",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "2d6",
+                "cost": 30,
+                "weight": 5
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            }
+        ],
+        "unskilled_penalty": -2
+    },
     "thief_skills": null,
     "turn_undead_matrix": {
         "undead_type_00": "UD",
@@ -190,8 +451,8 @@
     "spells": {
         "clr": {
             "spells_per_day": {
-                "lvl1": 5,
-                "lvl2": 4,
+                "lvl1": 4,
+                "lvl2": 3,
                 "lvl3": 3,
                 "lvl4": 2,
                 "lvl5": 2,
@@ -201,332 +462,332 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 89,
-                    "spell_name": "Cure Light Wounds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 277,
-                    "spell_name": "Omen",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
                     "spell_id": 332,
                     "spell_name": "Sanctuary",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 226,
+                    "spell_desc": "<p>Persuades opponents to ignore the caster if they fail their <i>sorcery</i> saving throws, modified by <i>willpower adjustment</i>, if applicable. The caster can move about freely, taking other inoffensive actions until the spell\u2019s duration terminates. However, <i>sanctuary</i> provides no special protection if the caster happens to be in the area of effect of an enemy sorcerer\u2019s spell (e.g., <i>entangle</i>, <i>fireball</i>), such as when a nearby ally is targeted. Any offensive actions taken by the caster (physical attacks, harmful spells, or the like) break the spell.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 31,
-                    "spell_name": "Bless",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 116,
+                    "spell_name": "Detect Venom",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>This spell has two functions: First, it reveals if an ailing person suffers the effects of poison, whether from a trap, snakebite, spider venom, or the like. The second function determines if a creature is venomous, or if an object is laced or trapped with poison. The creature or object in question must be viewed by the caster; obstructions will preclude the spell from functioning. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 283,
+                    "spell_name": "Perceive Disguise",
+                    "range": "30 feet",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>Allows the caster to determine if one creature per CA level within range pretends to be something it is not, whether via sorcery or artifice. The spell will not reveal the exact nature of the creature; neither will it detect alignment or allow the caster to glean any additional information, but merely that the target is not what it feigns to be. Targets of this subtle spell are almost always unaware that sorcery is at work. Each, however, is allowed a <i>sorcery</i> saving throw to resist the spell.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 63,
+                    "spell_name": "Command",
+                    "range": "30 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>The caster ensorcells the target of this spell with a single word of <i>command</i>, a word the victim is compelled to obey. The caster and victim must understand the same language, and the <i>command</i> must be clear. Typical <i>commands</i> include \u201cDie!\u201d, \u201cFall!\u201d, \u201cFlee!\u201d, \u201cJump!\u201d, \u201cSit!\u201d, \u201cSleep!\u201d, and \u201cStop!\u201d The victim will not actually die if commanded to do so but may fall and enter a state of unconsciousness, unless disturbed.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 1d8 hp of damage previously sustained. The reverse of this spell, <i>inflict light wounds</i>, is used to harm a living creature for 1d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
                     "spell_id": 32,
                     "spell_name": "Bless Oil or Water",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 180,
+                    "spell_desc": "<p>This 6-turn (1-hour) ritual is performed exclusively by sorcerers of Good alignment. A holy benediction is placed on an eight-ounce vessel of vegetable oil or fresh water, thus creating a dose of holy oil or holy water. Sorcerers of CA 1\u20134 can cast this spell but once per month; those of CA 5\u20138 can cast this spell twice per month; and those of CA 9\u201312 can cast this spell thrice per month. <i>Bless oil or water</i> must be cast on hallowed ground, or on that which has been sanctified by a <i>ceremony of consecration</i> spell. A glass vessel of holy oil/water thrown as a missile at an undead target delivers 1d8 hp damage per round for 2 rounds if a hit is scored. Hurling a vessel of holy oil/water is executed by use of the <i>flask hurling</i> rules (see <b>Chapter 9: Combat</b>, <i>combat options</i>).</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 24,
-                    "spell_name": "Augury",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": "20 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the sorcerer to communicate with any normal sort of animal (not magical beasts, monsters, or other supernatural creatures). The animals will reply in kind; such responses are usually limited to brief one- or twoword statements predicated on the intelligence of the animal, at the referee\u2019s discretion. Friendly animals might be convinced to perform some minor service.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 127,
-                    "spell_name": "Distinguish Alignment",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 200,
+                    "spell_name": "Hold Person",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed. This enchantment affects humans, humanoids, and giants. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. Any targets of 9 HD or greater gain a +4 saving throw bonus. Saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Suspends the deleterious effects of any toxin to which the subject has been exposed. This spell does not eliminate poison effects as <i>neutralize poison</i> does; as its title suggests, it but <i>delays poison</i>. Poisons that have an immediate impact cannot be <i>delayed</i>; however, poisons that have continuous or secondary effects are <i>delayed</i>. And if a poison has a delayed onset, it too is further <i>delayed</i>. Once the spell has ended, the poison\u2019s effects resume as normal.</p> <p>Note that if the poison affliction is the result of a venomous bite or sting, this spell can be used in conjunction with <i>draw poison</i> ability of barbarians and shamans. With the poison magically suspended in the victim\u2019s system, a barbarian or shaman can <i>draw poison</i> on a 5-in-6 chance of success for the duration of the spell.</p> <p>Lastly, <i>delay poison</i> may also revive one who has expired from poison, so long as the spell is cast within 12 rounds (2 minutes) of death and a successful <i>trauma survival</i> check is made (see <b>Chapter 3: Statistics</b>, <i>constitution</i>). The deceased poison victim is restored to 0 hp, albeit at a permanent loss of 1 constitution point.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 232,
+                    "spell_name": "Invisibility to Undead",
+                    "range": "touch",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 210,
+                    "spell_desc": "<p>Causes undead to completely ignore the subject; living creatures are unaffected. The recipient remains invisible to undead until the spell is cancelled or <i>dispelled</i>, or if the subject harms another creature\u2014be it undead or not. (In this instance, \u201charm\u201d is defined as any action that would directly cause damage to another creature.) The recipient of this spell cannot <i>turn undead</i>. Intelligent undead creatures of 10 or more HD can make <i>sorcery</i> saving throws if the spell\u2019s recipient approaches within 30 feet; if successful, they will discern the spell\u2019s recipient as an apparition of sorts.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Allows the caster to hear that which is magically <i>silenced</i> or <i>moving silently</i> (thieves, barbarians, assassins, et al.) in a 120-foot radius. The spell attunes the caster to subtleties of sound otherwise imperceptible, such as a whisper behind a closed door. If the caster enters a deep trance, <i>detect silence</i> can also be used to perceive noises made in parallel dimensions.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
                     "spell_id": 96,
                     "spell_name": "Darkness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 446,
-                    "spell_name": "Weird War Hammer",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 156,
-                    "spell_name": "Fire Resistance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 135,
-                    "spell_name": "Enthral",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 255,
-                    "spell_name": "Meld into Stone",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 444,
+                    "spell_name": "Water Walk",
+                    "range": "touch",
+                    "duration": "1 turn + 1 turn per CA level",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Allows the sorcerer and one companion per CA level to ambulate across fluid surfaces. A horse or camel equates to three companions; such a beast can <i>water walk</i> whilst bearing a single rider and/or gear no heavier than 300 pounds.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
                     "spell_id": 84,
                     "spell_name": "Cure Blindness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Remedies nearly all forms of impaired vision unless the eyes themselves have been destroyed. The reverse of this spell, <i>inflict blindness</i>, renders its victim sightless unless a <i>sorcery</i> saving throw is made. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 301,
-                    "spell_name": "Prayer",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 324,
+                    "spell_name": "Remove Curse",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 225,
+                    "spell_desc": "<p>Permanently wipes away a malediction suffered by a human or another creature, though not the cursed enchantments of swords, shields, armour, and the like. The reverse of this spell, <i>bestow curse</i>, is not of permanent duration; rather, its duration is 1 turn per CA level. The victim of <i>bestow curse</i> is allowed a <i>sorcery</i> saving throw to avoid affliction. Typical curses include:</p> <ul><li>50% chance per round to drop held items</li> <li>All attack rolls at \u22124 \u201cto hit\u201d</li> <li>All saving throws at \u20134 penalty</li> <li>Armour class penalized (increased) by 2</li> <li>One attribute reduced to a score of 3</li></ul> <p>Some other minor effect can be imagined by the player with referee approval. The effect must be reasonable. For example, the victim cannot be turned into a toad; that outcome must be accomplished via the <i>polymorph other</i> spell. They might, however, be cursed to grow the snout of a pig, or be covered head to toe with warts.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
                     "spell_id": 326,
                     "spell_name": "Remove Paralysis",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "special",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 225,
+                    "spell_desc": "<p>Via a touch, this spell can free an afflicted victim from the effects of <i>ghoul touch</i>, <i>hold person</i>, <i>paralyze</i>, or similar spells. The reverse of this spell, <i>cause paralysis</i>, is a 30-foot ranged spell. The caster must point at the victim and speak a baleful incantation. If the target fails its <i>death</i> saving throw, it will fall limp, unable to move for 1 turn per CA level.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 188,
-                    "spell_name": "Glyph of Warding",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 87,
+                    "spell_name": "Cure Disease",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Remedies nearly all forms of illness. The subject is alleviated of all debilitating effects within 1d6 rounds. The reverse of this spell, <i>inflict disease</i>, delivers a malady that drains the strength and vitality of its victim if a <i>sorcery</i> saving throw is not made. The disease manifests in 1d6 turns; once it does, the afflicted lose 1 hp per turn and 1 point of strength per hour until total hit points are reduced to one-tenth of normal and strength is reduced to one-third of normal. If the afflicted is not cured within three weeks, a loss of 1 constitution point per day is suffered until that attribute is reduced to one-third of normal. If untreated, the victim will likely die within a year.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 371,
-                    "spell_name": "Speak with Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 4,
-                    "spell_id": 274,
-                    "spell_name": "Neutralize Poison",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 4,
-                    "spell_id": 74,
-                    "spell_name": "Control Water",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 4,
-                    "spell_id": 412,
-                    "spell_name": "Tongues",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 4,
-                    "spell_id": 372,
-                    "spell_name": "Speak with Plants",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 4,
-                    "spell_id": 354,
-                    "spell_name": "Shroud of Fear",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 16,
+                    "spell_name": "Animate Dead",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 177,
+                    "spell_desc": "<p><b>Skeletons</b> or <b>zombies</b> are created from the bones and cadavers of dead humans or humanoids. The undead will obey the commands of the caster, following, attacking, or standing guard as directed. They will continue to serve until slain or <i>turned</i>; the <i>dispel magic</i> spell also nullifies the connexion betwixt the sorcerer and the undead. Through this necromancy the sorcerer can <i>animate</i> and maintain <b>1 skeleton</b> or <b>zombie</b> per CA level. If suitable remains are at hand, the sorcerer can opt to raise <b>1 large skeleton</b> per 3 CA levels, or <b>1 giant skeleton</b> per 6 CA levels, though zombies may only be created from the whole corpses of humans.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 4,
                     "spell_id": 376,
                     "spell_name": "Spike Growth",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>This spell only functions amidst vegetation of at least moderate thickness. It creates within the foliage and roots a plethora of small, bristly growths in an area as large as 10 \u00d7 10 feet (100 square feet) per CA level. These spikes may be discerned via <i>detect snares and pits</i>, <i>detect traps</i>, or <i>true seeing</i>; otherwise, all seems perfectly natural until the enchanted area is traversed. For every 10 feet of affected area negotiated, the subject( s) must make an <i>avoidance</i> saving throw or suffer 1d4 hp damage. The caster can dismiss this spell at will.</p>"
                 },
                 {
                     "school": "clr",
-                    "spell_level": 5,
-                    "spell_id": 316,
-                    "spell_name": "Quest",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_level": 4,
+                    "spell_id": 410,
+                    "spell_name": "Them",
+                    "range": "30 feet",
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 239,
+                    "spell_desc": "<p>Transforms one or more ants into <b>giant radioactive ants</b> that at once begin to issue a loud, warbling whistle. The number depends on the sorcerer\u2019s casting ability: 2 ants at CA 7, 3 ants at CA 9, and 4 ants at CA 11. The giant ants can act 1 round after transformation. They will not harm the caster and will obey simple commands such as \u201cAttack!\u201d, \u201cDefend!\u201d, \u201cLift!\u201d, and so forth. If the giant ants are not otherwise instructed, they will attack the nearest creature (not differentiating between and betwixt allies and enemies).</p>"
                 },
                 {
                     "school": "clr",
-                    "spell_level": 5,
-                    "spell_id": 90,
-                    "spell_name": "Cure Madness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_level": 4,
+                    "spell_id": 274,
+                    "spell_name": "Neutralize Poison",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 216,
+                    "spell_desc": "<p>Detoxifies a poisoned victim. If used within 6 rounds (1 minute) on a creature killed by poison, the victim will be revived to 0 hp, pending a <i>trauma survival</i> check (see <b>Chapter 3: Statistics</b>, <i>constitution</i>). This spell can also detoxify a venomous creature (snake, spider, etc.) with a successful touch attack. The creature is afforded a <i>sorcery</i> saving throw to negate the effect (and, given sufficient time, will eventually regenerate its venom sacs). <i>Neutralize poison</i> can likewise purify other poisonous or poisoned objects such as food, plants, and the like.</p> <p>The reverse of this spell, <i>poison</i>, is delivered via a touch attack. The victim is allowed a <i>death</i> (poison) saving throw. If the saving throw is successful, the victim sustains 2d6 hp damage; if the saving throw fails, the victim falls deathly ill, suffering fever and delirium within 1 turn, paralysis after 6 turns (1 hour), and death in 48 hours.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 93,
+                    "spell_name": "Cure Serious Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 3d8 hp of damage previously sustained. The reverse of this spell, <i>inflict serious wounds</i>, is used to harm a living creature for 3d8 hp damage upon a successful touch attack.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "range": "0",
+                    "duration": "12 turns (2 hours)",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>A pale, 15-foot-radius circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking the sorcerer or any allies who are within. Against other Evil creatures, the sorcerer and allies enjoy a +1 bonus to AC, DR, and saving throws versus their attacks. As the caster moves, so too does the <i>protection</i> circle. The reverse of this spell, <i>protection from good, 15\u0384 r.</i>, is cast by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 4,
+                    "spell_id": 128,
+                    "spell_name": "Divination",
+                    "range": "0",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Upon 1 turn of prayer and cogitation, the sorcerer implores the wisdom of otherworldly powers. The focus of the divination is an area: a small woodland (not exceeding 1 square mile), a large building or tower, a section of a dungeon, the top of a mountain, or the like. Note that this spell cannot be used to ask direct questions of a yes or no nature; such enquiries are covered by the <i>commune</i> spell. Here follow some suggestions of what may be divined:</p> <ul><li>The relative weakness or strength of potential enemies</li> <li>The potential amount of treasure to be won within (scant, moderate, rich)</li> <li>The chance of being confronted by enemies if the area in question is intruded</li> <li>The presence of a d\u00e6mon or otherworldly being</li> <li>The presence of potent sorcery at work</li></ul> <p>After the player states what his or her character attempts to divine, the referee must make a secret d10 roll. The sorcerer has a 7-in-10 chance of successfully divining the sought-after information (if the request is reasonable). If the reading is successful, the referee will inform the player of the result, providing valuable, albeit general, information. If the reading is unsuccessful, false or misleading information may be revealed. Casting this spell might entail consequences: The otherworldly power invoked might charge the sorcerer with a <i>quest</i> (q.v.).</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 5,
                     "spell_id": 123,
                     "spell_name": "Dispel Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 5,
-                    "spell_id": 228,
-                    "spell_name": "Insect Plague",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 5,
-                    "spell_id": 154,
-                    "spell_name": "Finger of Death",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": true,
+                    "pp": 193,
+                    "spell_desc": "<p>In a 30-foot radius, banishes Evil creatures summoned, conjured, or enchanted by another sorcerer. Even creatures of Neutrality can be banished if they were conjured by an Evil sorcerer. Possible candidates include <b>d\u00e6mons</b>, <b>elementals</b>, <b>invisible stalkers</b>, and the undead. Each is allowed a <i>sorcery</i> saving throw to resist the spell\u2019s effect. Even if they make their saving throws, they will vacate the area of effect for as long as the sorcerer continues to chant. Alternatively, <i>dispel evil</i> can be used as a touch spell on a single opponent, in which case the saving throw is made at a \u22122 penalty. The reverse of this spell, <i>dispel good</i>, is used by wicked sorcerers to the same effect, albeit versus Good-aligned subjects and other creatures controlled by agents of Good.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 5,
                     "spell_id": 165,
                     "spell_name": "Flame Strike",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>Evokes a column of roaring fire to descend from the air, perhaps immolating a sacrifice to whatever power or otherworldly being the sorcerer serves. The <i>flame strike</i> is 50 feet high and 10 feet in diameter. Any creature in the area of effect suffers 6d8 hp damage, with a <i>sorcery</i> saving throw allowed for half damage. This spell is popular with druids who sacrifice victims (often criminals) via wicker man effigy.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 316,
+                    "spell_name": "Quest",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>Compels the victim (human, humanoid, or giant) to carry out some service or task until it is completed. To resist the spell, the target may make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. The task must be reasonably achievable and not a blatant death sentence, or the spell breaks after one or two weeks. (One cannot be directed to jump off a cliff, but one may be charged with a quest to climb a dangerous cliff.)</p> <p>Failure results in a curse as charged by the sorcerer who laid the <i>quest</i> spell. When cast by a player character, the resulting curse is up to the imagination of the player (with referee approval). When cast by a non-player character, the PC is at the mercy of the referee\u2019s device. The reverse of this spell, <i>remove quest</i>, can cancel its effects or those of a <i>geas</i> spell, but <i>dispel magic</i> is ineffective. If cursed by failure to complete the <i>quest</i>, a <i>remove curse</i> spell also can negate the curse.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 154,
+                    "spell_name": "Finger of Death",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>The sorcerer points at a target and utters a baleful incantation; from the sorcerer\u2019s finger emits a death ray. The target must make a <i>death</i> saving throw or die. For every point of difference between the sorcerer\u2019s CA and the target\u2019s level/HD, the saving throw is modified by \u00b11. So, if a CA 11 sorcerer casts this spell against a 12th-level fighter, the fighter gains a +1 bonus to the saving throw; if the target is a 7th-level fighter, the saving throw is rolled at a \u22124 penalty. This sorcery is associated with d\u00e6monism, so if not already Evil, the caster will likely gravitate to that ethos through its indiscriminate use; for clerics and druids, excommunication may result.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 319,
+                    "spell_name": "Raise Dead",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 223,
+                    "spell_desc": "<p>Enables the sorcerer to restore a recently deceased human or quasi-man to life. This powerful necromantic spell entails ritual chanting, burning incense, and flourishing a holy symbol over a period of 6 turns (1 hour). The cadaver must be whole and intact; any missing parts will remain missing, but wounds, burns, and other injuries will be healed (though leaving notable scars). The time limit betwixt death and resurrection is seven days, plus one day per CA level.</p> <p>Once the spell is complete, the deceased subject must roll a <i>trauma survival</i> check (see <b>Chapter 3: Statistics</b>, <i>constitution</i>). If this roll succeeds, the victim is <i>raised</i>, but is aged three years and permanently loses 1 point of constitution; furthermore, the subject requires one week of complete bed rest before engaging in rigorous activity. If the <i>trauma survival</i> check fails, the person is truly dead and cannot be <i>raised</i>.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 5,
+                    "spell_id": 423,
+                    "spell_name": "True Seeing",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 243,
+                    "spell_desc": "<p>The sorcerer perceives things for what they really are. A diamond of 500-gp value or greater must be sacrificed to cast this spell. Upon speaking the incantation, invisible creatures or objects are revealed; <i>phantasms</i> and like illusions are exposed; mundane and magical disguises are penetrated; secret doors are made obvious. Even the subjects of spells such as <i>polymorph</i> (<i>other</i> or <i>self</i>), <i>stone shape</i>, or <i>tree shape</i> are shewn by <i>true seeing</i>. For those sorcerers casting the clerical/ druidic version of this spell, alignment is also cognized by means of a projected aura, so Good, Evil, and Neutrality are distinguished, as well as Law and Chaos. The sorcerer can move (but not run) after casting this spell, fully concentrating. Any other actions (combat, other spells, item use, etc.) will break the spell.</p>"
                 }
             ]
         }

@@ -1,47 +1,48 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 24,
     "class_name": "Legerdemainist",
     "attr": {
         "st": {
-            "score": 17,
-            "atk_mod": 1,
-            "dmg_adj": 2,
-            "test": 4,
-            "feat": 24
+            "score": 14,
+            "atk_mod": 0,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 18,
-            "atk_mod": 2,
-            "def_adj": 3,
-            "test": 5,
-            "feat": 40
+            "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 5,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 7,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
         },
         "in": {
-            "score": 15,
+            "score": 16,
             "lang": 1,
             "bonus_spells": 2,
             "learn_spell": 75
         },
         "ws": {
-            "score": 14,
+            "score": 10,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 15,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
+            "turn_adj": 0
         }
     },
     "xp": 352000,
@@ -49,20 +50,21 @@
     "xp_to_next": 528000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 18,
-        "deity_name": "Xathoqqua",
-        "primary_alignment": "Chaotic"
+        "deity_id": 12,
+        "deity_name": "Mordezzan",
+        "primary_alignment": "Neutral"
     },
     "race_id": 10,
     "race": "Pict",
     "gender": "Female",
+    "secondary_skill": "stabler",
     "hd": "9d6",
-    "hp": 21,
+    "hp": 27,
     "fa": 6,
     "ca": 9,
     "ta": 0,
@@ -114,7 +116,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 2,
+    "ac": 4,
     "mv": 40,
     "weapons_melee": [
         {
@@ -130,9 +132,9 @@
             "weight": 1,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": 1,
-            "hurled_atk": 2,
-            "dmg_adj": 2,
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -148,9 +150,9 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 2,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -167,7 +169,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 2,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -190,22 +192,230 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
             "thief_skill": "climb",
             "skill_name": "Climb",
-            "skill_roll": 11,
+            "skill_roll": 10,
             "stat": "dx"
         },
         {
             "thief_skill": "decipher_script",
             "skill_name": "Decipher Script",
-            "skill_roll": 4,
+            "skill_roll": 5,
             "stat": "in"
         },
         {
@@ -217,31 +427,31 @@
         {
             "thief_skill": "hide",
             "skill_name": "Hide",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
             "thief_skill": "manipulate_traps",
             "skill_name": "Manipulate Traps",
-            "skill_roll": 8,
+            "skill_roll": 7,
             "stat": "dx"
         },
         {
             "thief_skill": "move_silently",
             "skill_name": "Move Silently",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         },
         {
             "thief_skill": "open_locks",
             "skill_name": "Open Locks",
-            "skill_roll": 8,
+            "skill_roll": 7,
             "stat": "dx"
         },
         {
             "thief_skill": "pick_pockets",
             "skill_name": "Pick Pockets",
-            "skill_roll": 9,
+            "skill_roll": 8,
             "stat": "dx"
         }
     ],
@@ -260,101 +470,101 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
+                    "spell_id": 190,
+                    "spell_name": "Grease",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A fatty, unctuous film coats an area of effect equal to 2 \u00d7 2 feet per CA level (e.g., a CA 10 sorcerer affects an area not exceeding 20 \u00d7 20 feet). Any creature that steps on the <i>greased</i> area will slip and fall unless it makes an <i>avoidance</i> saving throw. A fallen victim is momentarily <i>prone</i>. <i>Grease</i> is not limited to flooring; it can be used to lubricate a rope, a chair, or other objects. If the spell is cast on something an enemy holds or wears, a <i>sorcery</i> saving throw negates the effects.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
                     "spell_id": 375,
                     "spell_name": "Spider Climb",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the spell\u2019s recipient to scale sheer or vertical surfaces, including those that are smooth and polished, like marble. The fingertips and toes of the climber become sticky, like those of a spider, with magical cilia providing adhesion. A <i>spider climb</i> recipient can climb up walls and move along ceilings at one-half their normal movement rate. Whilst climbing, the recipient cannot manipulate objects that weigh less than one pound because such objects will cling to the hands. Spell casters cannot cast other spells, but they can trigger magical devices. <i>N.B.:</i> Gauntlets and heavy footwear must be removed to benefit from this spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 1,
-                    "spell_id": 358,
-                    "spell_name": "Sleep",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 169,
+                    "spell_name": "Floating Disc",
+                    "range": "10 feet",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>Causes a flat, shield-sized disc to materialize behind the caster. The <i>floating disc</i> glides horizontally and follows the caster at about waist level, remaining 6\u201310 feet behind and moving at the caster\u2019s MV rate. The <i>disc</i> can bear 500 pounds; anything greater will ground it. When the spell ends, the <i>floating disc</i> disappears, and anything it bore falls to the ground.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 108,
-                    "spell_name": "Detect Illusion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 364,
+                    "spell_name": "Sorcerer Lock",
+                    "range": "15 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>Magically secures a door, a gate, a portal, or the like. A <i>dispel magic</i> spell negates it, a <i>knock</i> spell opens it, or a strong person or monster might break it down: 1-in-12 chance for 17 ST, 1-in-6 chance for 18 ST. Too, a character with the <i>open locks</i> special ability can attempt to disrupt the <i>sorcerer lock</i> spell using thieves\u2019 tools; however, the chance-in-twelve of success is reduced by 4. Lastly, <i>sorcerer lock</i> can be bypassed by any magician (or magician subclass) whose CA is at least 3 levels greater than the one who placed the dweomer.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 264,
-                    "spell_name": "Mirror Image",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
+                    "range": "240 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 178,
+                    "spell_desc": "<p>A hallucination of sound is created, that of voices, calls, or cries (human, humanoid, animal, or monster); footfalls; or other like noises. The sounds of 1d4 creatures can be invented thus for each CA level of the sorcerer. However, if a sound is of significant volume, the referee must decide on the number of voices and their collective volume (e.g., the roar of one lion may be equal to the shouts of five people).</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 379,
-                    "spell_name": "Stinking Cloud",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 320,
+                    "spell_name": "Ray of Enfeeblement",
+                    "range": "30 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 224,
+                    "spell_desc": "<p>From the hand of the caster springs a silvery flash of light that automatically strikes its intended target, sapping the victim of 4 strength points. A <i>sorcery</i> saving throw negates this spell. If a monster is affected, the referee should reduce damage dice: d20 reduced to d12; d12 to d10; d10 to d8; d8 to d6; d6 to d4; d4 to d3; d3 to d2; d2 to 1. Bonuses to damage dice should also be proportionately reduced, so a creature that normally inflicts 1d8+2 hp damage should inflict 1d6+1 hp damage, and so on.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 231,
-                    "spell_name": "Invisibility Hemisphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "range": "0",
+                    "duration": "12 turns (2 hours)",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>A pale, 15-foot-radius circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking the sorcerer or any allies who are within. Against other Evil creatures, the sorcerer and allies enjoy a +1 bonus to AC, DR, and saving throws versus their attacks. As the caster moves, so too does the <i>protection</i> circle. The reverse of this spell, <i>protection from good, 15\u0384 r.</i>, is cast by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 44,
-                    "spell_name": "Cataleptic State",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 401,
+                    "spell_name": "Summon Monster I",
+                    "range": "10 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 237,
+                    "spell_desc": "<p>Sorcery transports 1d4 monsters of 1 HD as determined by rolling on the below table. The monsters will arrive 1 round after the spell is cast and will defend the duration of the spell, after which, dead or alive, they disappear. The monsters will attack the caster\u2019s enemies as directed; if no enemies are present, they may perform other simple tasks as commanded, intuiting the sorcerer\u2019s intent.</p> <p><table><caption><b>Table 116: Summon Monster I Spell</b></caption> <tr><th>d8 Result</th><th>Monster Summoned</th></tr> <tr><td>1</td><td>Ape-Man</td></tr> <tr><td>2</td><td>Beetle, Giant Fire</td></tr> <tr><td>3</td><td>Cave-Man</td></tr> <tr><td>4</td><td>Human, Wild Berserker</td></tr> <tr><td>5</td><td>Orc</td></tr> <tr><td>6</td><td>Skeleton</td></tr> <tr><td>7</td><td>Stirge</td></tr> <tr><td>8</td><td>Worm of Ymir</td></tr></table></p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 342,
-                    "spell_name": "Sepia Snake Sigil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
+                    "range": "120 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Sorcery and its effects are negated and removed in an area of 20 \u00d7 20 \u00d7 20 feet. The spell does not negate magic items but can undo a sorcerous effect created by one. It does not, however, negate illusions/phantasms. If <i>dispel magic</i> is used against a spell cast by a sorcerer of higher CA, the chance of failure is 1-in-20 per level difference. For instance, if a CA 6 caster attempts to <i>dispel</i> the <i>levitate</i> spell of a CA 10 sorcerer, there is a 4-in-20 chance of failure.</p>"
                 }
             ]
         }

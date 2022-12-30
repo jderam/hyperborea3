@@ -1,17 +1,18 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 24,
     "class_name": "Legerdemainist",
     "attr": {
         "st": {
-            "score": 9,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 13,
+            "score": 14,
             "atk_mod": 0,
             "def_adj": 1,
             "test": 3,
@@ -26,10 +27,10 @@
             "feat": 4
         },
         "in": {
-            "score": 13,
+            "score": 15,
             "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
             "score": 6,
@@ -38,7 +39,7 @@
             "learn_spell": 0
         },
         "ch": {
-            "score": 12,
+            "score": 11,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +50,21 @@
     "xp_to_next": 22000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 5,
-        "deity_name": "Boetzu",
-        "primary_alignment": "Lawful"
+        "deity_id": 13,
+        "deity_name": "Raven",
+        "primary_alignment": "Neutral"
     },
     "race_id": 6,
     "race": "Ixian",
-    "gender": "Female",
+    "gender": "Male",
+    "secondary_skill": "limner/painter/sculptor",
     "hd": "4d6",
-    "hp": 17,
+    "hp": 15,
     "fa": 3,
     "ca": 4,
     "ta": 0,
@@ -130,9 +132,9 @@
             "weight": 1,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -148,9 +150,9 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -190,10 +192,218 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -250,7 +460,7 @@
         "mag": {
             "spells_per_day": {
                 "lvl1": 2,
-                "lvl2": 1,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -260,46 +470,46 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 431,
-                    "spell_name": "Ventriloquism",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 233,
+                    "spell_name": "Jump",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 210,
+                    "spell_desc": "<p>Allows the recipient to leap 40 feet forwards (with a 10-foot apex), 10 feet backwards, or 20 feet straight up. For every additional 3 CA levels of the sorcerer, the affected can make another <i>jump</i>; thus, a CA 4 sorcerer can empower two such <i>jumps</i>, a CA 7 sorcerer can empower three, and a CA 10 sorcerer four, so long as all <i>jumps</i> occur before the spell\u2019s expiration.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 366,
+                    "spell_name": "Sorcerous Armour",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>A sorcerous force field equivalent to leather armour (AC 7) surrounds the beneficiary of this enchantment. The spell has no effect on an armoured recipient, but a creature with natural AC 7 or better gains a +1 AC bonus. This spell persists until <i>dispelled</i>, or until the recipient sustains cumulative damage totalling 10 hp, +1 hp per CA level.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 347,
-                    "spell_name": "Shatter",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 437,
+                    "spell_name": "Wall of Shadow",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 244,
+                    "spell_desc": "<p>The sorcerer conjures from the Black Gulf a barrier of darkness. The <i>wall of shadow</i> must be 10 feet thick and 10 feet high; only the length is malleable, allow for 10 feet per CA level (e.g., a CA 7 sorcerer may create a 10 \u00d7 10-foot wall that is 70 feet long). The <i>wall</i> can be straight or form a semicircle.</p> <p>The <i>wall of shadow</i> is not impenetrable; persons and objects can be seen through it, but they are vague, hazy, and nebulous. Missile fire directed at a person beyond the wall is at a \u22122 penalty. Other benefits might be derived from this spell; e.g., a thief attempting to <i>hide</i> might gain a bonus to his chance-in-twelve, or perhaps even automatic success, at the referee\u2019s discretion.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 260,
-                    "spell_name": "Mind Blank",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 315,
+                    "spell_name": "Pyrotechnics",
+                    "range": "240 feet",
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 223,
+                    "spell_desc": "<p>Uses an existing flame (e.g., brazier, campfire, torch) to create a great, fiery spectacle of flashing colours and luminous lights. Alternatively, a thick, rolling smoke can be produced, clouding a 20-foot-diameter area around the blaze. Once created, the <i>pyrotechnics</i> persist until the spell duration is met or the source is extinguished.</p>"
                 }
             ]
         }

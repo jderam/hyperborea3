@@ -1,29 +1,30 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 28,
     "class_name": "Ice Lord",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 14,
             "atk_mod": 0,
             "dmg_adj": 1,
             "test": 3,
             "feat": 16
         },
         "dx": {
-            "score": 16,
-            "atk_mod": 1,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
-            "score": 14,
-            "hp_adj": 1,
+            "score": 9,
+            "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
             "score": 13,
@@ -32,15 +33,15 @@
             "learn_spell": 65
         },
         "ws": {
-            "score": 13,
+            "score": 14,
             "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ch": {
-            "score": 12,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 8,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 96000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 4,
-        "short_name": "LG",
-        "long_name": "Lawful Good"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 19,
-        "deity_name": "Yig",
-        "primary_alignment": "Lawful"
+        "deity_id": 13,
+        "deity_name": "Raven",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 11,
-    "race": "Pict (Half-Blood)",
-    "gender": "Male",
+    "race_id": 7,
+    "race": "Kelt",
+    "gender": "Female",
+    "secondary_skill": "chandler",
     "hd": "6d8",
-    "hp": 34,
+    "hp": 16,
     "fa": 6,
     "ca": 6,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 30,
     "weapons_melee": [
         {
@@ -123,11 +125,11 @@
             "cost": 10,
             "weight": 5,
             "qty": 1,
-            "atk_rate": "3/2",
-            "melee_atk": 1,
+            "atk_rate": "1/1",
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 2,
-            "mastery": true
+            "dmg_adj": 1,
+            "mastery": false
         }
     ],
     "weapons_missile": [
@@ -144,8 +146,8 @@
             "qty": 1,
             "ammunition": "light bolts \u00d720",
             "missile_atk": 1,
-            "dmg_adj": 0,
-            "mastery": false
+            "dmg_adj": 1,
+            "mastery": true
         }
     ],
     "equipment": [
@@ -168,6 +170,706 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": true,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 102,
+                "weapon_type": "Battle Axe",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 103,
+                "weapon_type": "Great Axe",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "2d6",
+                "damage_2h": null,
+                "cost": 20,
+                "weight": 10
+            },
+            {
+                "weapon_id": 104,
+                "weapon_type": "C\u00e6stuses",
+                "wc": 0,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "+1",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 105,
+                "weapon_type": "Chain Whip",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 109,
+                "weapon_type": "Silver Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 25,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 112,
+                "weapon_type": "Footman's Flail",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 10
+            },
+            {
+                "weapon_id": 113,
+                "weapon_type": "Halberd",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 8
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 115,
+                "weapon_type": "War Hammer",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 116,
+                "weapon_type": "Great Hammer",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "2d6",
+                "damage_2h": null,
+                "cost": 20,
+                "weight": 10
+            },
+            {
+                "weapon_id": 117,
+                "weapon_type": "Javelin",
+                "wc": 2,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "20/40/80",
+                "damage": "1d4",
+                "damage_2h": "1d6",
+                "cost": 3,
+                "weight": 3
+            },
+            {
+                "weapon_id": 118,
+                "weapon_type": "Lance",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 8
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 120,
+                "weapon_type": "Footman's Mace",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 121,
+                "weapon_type": "Great Mace",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "2d6",
+                "damage_2h": null,
+                "cost": 20,
+                "weight": 10
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 124,
+                "weapon_type": "War Pick",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 125,
+                "weapon_type": "Pike",
+                "wc": 6,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 12
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 129,
+                "weapon_type": "Two-Handed Scimitar",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "3d4",
+                "damage_2h": null,
+                "cost": 40,
+                "weight": 6
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 133,
+                "weapon_type": "Great Spear",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 9
+            },
+            {
+                "weapon_id": 134,
+                "weapon_type": "Spiked Staff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 7
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 138,
+                "weapon_type": "Bastard Sword",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "2d6",
+                "cost": 30,
+                "weight": 5
+            },
+            {
+                "weapon_id": 139,
+                "weapon_type": "Two-Handed Sword",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "3d4",
+                "damage_2h": null,
+                "cost": 40,
+                "weight": 6
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 201,
+                "weapon_type": "Bola",
+                "rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d2",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 202,
+                "weapon_type": "Boomerang",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 204,
+                "weapon_type": "Hooked Throwing Knife",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1d6",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            },
+            {
+                "weapon_id": 206,
+                "weapon_type": "Fighting Net",
+                "rof": "1/2",
+                "range_sml": "10 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 207,
+                "weapon_type": "Stone",
+                "rof": "2/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 1,
+                "launched": 0,
+                "cost": null,
+                "weight": 1
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 209,
+                "weapon_type": "Long Bow",
+                "rof": "3/2",
+                "range_sml": "70/140/210",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 60,
+                "weight": 3
+            },
+            {
+                "weapon_id": 210,
+                "weapon_type": "Composite Long Bow",
+                "rof": "3/2",
+                "range_sml": "80/160/240",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 100,
+                "weight": 3
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 212,
+                "weapon_type": "Composite Short Bow",
+                "rof": "3/2",
+                "range_sml": "60/120/180",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 50,
+                "weight": 2
+            },
+            {
+                "weapon_id": 213,
+                "weapon_type": "Heavy Crossbow",
+                "rof": "1/2",
+                "range_sml": "80/160/240",
+                "damage": "1d6+2",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 25,
+                "weight": 10
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 215,
+                "weapon_type": "Repeating Crossbow",
+                "rof": "3/1",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 100,
+                "weight": 6
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": 0
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
@@ -184,68 +886,68 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 56,
+                    "spell_name": "Chill Touch",
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>A violet glow emanates from the hands of the sorcerer. The next foe struck (bare hand or a melee weapon) sustains an additional 1d4 hp of energy-sapping damage, followed by a <i>sorcery</i> saving throw. If the saving throw fails, the victim is weakened, suffering penalties of \u22121 on attack and damage rolls for the spell\u2019s duration. The dweomer fades if the caster does not strike a foe before the spell expires.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 276,
-                    "spell_name": "Obscure",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>Creates a 60-foot-diameter sphere of lambent light, the subtle hue of which may be selected by the caster. It cannot be cast on a single target or object, but rather on an area. The effect is permanent (unless <i>dispelled</i>), so long as the caster remains within 10 miles; otherwise, the dweomer begins to dissipate in subtle degrees, ending in a number of months equal to the sorcerer\u2019s CA. <i>Continuous light</i> can counter <i>continuous darkness</i> and <i>darkness</i>.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 205,
-                    "spell_name": "Ice Armour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 185,
+                    "spell_name": "Glitterdust",
+                    "range": "90 feet",
+                    "duration": "1d4+1 rounds",
+                    "reversible": false,
+                    "pp": 202,
+                    "spell_desc": "<p>The sorcerer must have 25 gp of gold dust to cast this spell, which may be in the form of gold ground with a file or stone. The sorcerer effects a 20-foot cube of <i>glitterdust</i> that explodes within the spell\u2019s range, covering its victims from head to toe in sparkling gold dust. The cloud itself is no more than a flash, so this spell\u2019s duration is not for the cloud, but rather its sorcerous effect.</p> <p>Those within the cloud must make <i>sorcery</i> saving throws or be blinded for the spell\u2019s duration. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws. This spell also reveals invisible creatures, as the <i>glitterdust</i> clings to and sparkles on them for its duration.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 3,
-                    "spell_id": 27,
-                    "spell_name": "Black Cloud",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 338,
+                    "spell_name": "Secret Page",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 227,
+                    "spell_desc": "<p>Alters the contents of a sheet of paper to appear as something else: A map might be changed to a poem, an arcane formula to a recipe for soup, and so forth. With a command word the caster can view the contents at any time and then allow the dweomer to resume as before. A <i>secret page</i> cannot be revealed through a <i>decipher language</i> spell, but <i>detect magic</i> reveals its magic, and <i>dispel magic</i> or <i>dispel phantasm</i> can nullify the dweomer; however, if the <i>dispel</i> attempt fails, the <i>secret page</i> will be destroyed. Note that <i>explosive runes</i> or a <i>sepia snake sigil</i> may also be inscribed on a <i>secret page</i>. A sorcerer can maintain as many secret pages as he or she has CA levels.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 3,
                     "spell_id": 200,
                     "spell_name": "Hold Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed. This enchantment affects humans, humanoids, and giants. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. Any targets of 9 HD or greater gain a +4 saving throw bonus. Saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
                 }
             ]
         }

@@ -1,0 +1,99 @@
+id: 323
+name: Reincarnation
+pp: 224
+Lvl:
+  - mag 6
+  - pyr 6
+  - drd 6
+  - wch 6
+Rng: touch
+Dur: instantaneous
+Rev: 0
+Desc: "<p>Provides a new body for a human who has been dead
+as long one week, plus one week per CA level. Casting
+this spell requires 6 turns (1 hour), culminating in the
+formation of a new, mature body; unlike <i>raise dead</i>, no
+<i>trauma survival</i> check is required. A portion of the
+dead person’s corpse must be touched by the sorcerer,
+even if all that remains are ashes. Within 1d6 rounds
+after the ritual is completed, the dead will be <i>reincarnated</i>
+as a different race or as a quasi-man. Roll a d10:
+<ul><li>If the result is 1–3, refer to Table 110-A</li>
+<li>If the result is 4–6, refer to Table 110-B</li>
+<li>If the result is 7–8, refer to Table 110-C</li>
+<li>If the result is 9–10, refer to Table 110-D</li></ul></p>
+<p>Next, roll a d12 or d8 (depending on table determination
+result) to confirm the new incarnation. The
+reincarnated typically return as the same gender; if
+<i>reincarnation</i> of a female results in an <b>abominable
+snow-man</b>, a reroll is required as no females of that
+species exist.</p>
+<p>The reincarnated will retain the faculties of their erstwhile
+mind; i.e., class and experience are preserved,
+as well as most memories. If <i>reincarnation</i> results
+in anything other than a human, however, a PC must
+abide a −25% XP penalty for the remainder of his or
+her new life.</p>
+<p><table><caption><b>Table 110-A: Reincarnation Spell</b> <i>(d10, 1–3)</i></caption>
+<tr><th style=text-align:center>d12 Result</th><th>New Incarnation</th>
+<tr><td style=text-align:center>1</td><td>Human, Common*</td></tr>
+<tr><td style=text-align:center>2</td><td>Human, Amazon</td></tr>
+<tr><td style=text-align:center>3</td><td>Human, Anglo-Saxon</td></tr>
+<tr><td style=text-align:center>4</td><td>Human, Atlantean</td></tr>
+<tr><td style=text-align:center>5</td><td>Human, Carolingian Frank</td></tr>
+<tr><td style=text-align:center>6</td><td>Human, Esquimaux</td></tr>
+<tr><td style=text-align:center>7</td><td>Human, Esquimaux-Ixian</td></tr>
+<tr><td style=text-align:center>8</td><td>Human, Greek</td></tr>
+<tr><td style=text-align:center>9</td><td>Human, Hyperborean</td></tr>
+<tr><td style=text-align:center>10</td><td>Human, Ixian</td></tr>
+<tr><td style=text-align:center>11</td><td>Human, Kelt</td></tr>
+<tr><td style=text-align:center>12</td><td>Human, Kimmeri-Kelt</td></tr></table></p>
+
+<p><table><caption><b>Table 110-B: Reincarnation Spell</b> <i>(d10, 4–6)</i></caption>
+<tr><th style=text-align:center>d12 Result</th><th>New Incarnation</th></tr>
+<tr><td style=text-align:center>1</td><td>Human, Kimmerian</td></tr>
+<tr><td style=text-align:center>2</td><td>Human, Lapp</td></tr>
+<tr><td style=text-align:center>3</td><td>Human, Lemurian</td></tr>
+<tr><td style=text-align:center>4</td><td>Human, Moor</td></tr>
+<tr><td style=text-align:center>5</td><td>Human, Mu</td></tr>
+<tr><td style=text-align:center>6</td><td>Human, Oon</td></tr>
+<tr><td style=text-align:center>7</td><td>Human, Pict</td></tr>
+<tr><td style=text-align:center>8</td><td>Human, Pict (Half-Blood)</td></tr>
+<tr><td style=text-align:center>9</td><td>Human, Roman</td></tr>
+<tr><td style=text-align:center>10</td><td>Human, Tlingit</td></tr>
+<tr><td style=text-align:center>11</td><td>Human, Viking</td></tr>
+<tr><td style=text-align:center>12</td><td>Human, Yakut</td></tr></table>
+* For “common” people, the player may roll once or twice
+more on this table to determine racial traits or heredity;
+e.g., a common person who shews traces of Pict and Esquimaux.
+However, because Atlanteans and Hyperboreans have
+evolved to sexual incompatibility with the other races, common
+people shew no such traits; reroll, if desired.</p>
+
+<p><table><caption><b>Table 110-C: Reincarnation Spell</b> <i>(d10: 7–8)</i></caption>
+<tr><th rowspan=2 style=text-align:center>d8 Result</th><th rowspan=2 style=text-align:left>New Incarnation</th><th colspan=3 style=text-align:center>Attribute Scores**</th></tr>
+<tr><th style=text-align:center>ST</th><th style=text-align:center>DX</th><th style=text-align:center>CN</th></tr>
+<tr><td style=text-align:center>1</td><td>Abominable Snow-Man (Yeti)</td><td style=text-align:center>13–18</td><td style=text-align:center>—</td><td style=text-align:center>18</td></tr>
+<tr><td style=text-align:center>2</td><td>Ape, Albino (White Ape)</td><td style=text-align:center>13–18</td><td style=text-align:center>—</td><td style=text-align:center>17–18</td></tr>
+<tr><td style=text-align:center>3</td><td>Ape, Mountain (Ogre)</td><td style=text-align:center>17–18</td><td style=text-align:center>3–14</td><td style=text-align:center>18</td></tr>
+<tr><td style=text-align:center>4</td><td>Ape-Man</td><td style=text-align:center>13–18</td><td style=text-align:center>9–18</td><td style=text-align:center>17–18</td></tr>
+<tr><td style=text-align:center>5</td><td>Bandogg (Dog-Man)</td><td style=text-align:center>—</td><td style=text-align:center>10–18</td><td style=text-align:center>13–18</td></tr>
+<tr><td style=text-align:center>6</td><td>Bird-Man</td><td style=text-align:center>13–18</td><td style=text-align:center>15–18</td><td style=text-align:center>—</td></tr>
+<tr><td style=text-align:center>7</td><td>Cave-Man (Neanderthal)</td><td style=text-align:center>13–18</td><td style=text-align:center>—</td><td style=text-align:center>13–18</td></tr>
+<tr><td style=text-align:center>8</td><td>Dwarf</td><td style=text-align:center>17–18</td><td style=text-align:center>13–18</td><td style=text-align:center>17–18</td></tr></table></p>
+
+<p><table><caption><b>Table 110-D: Reincarnation Spell</b> <i>(d10, 9–10)</i></caption>
+<tr><th rowspan=2 style=text-align:center>d8 Result</th><th rowspan=2 style=text-align:left>New Incarnation</th><th colspan=3 style=text-align:center>Attribute Scores**</th></tr>
+<tr><th style=text-align:center>ST</th><th style=text-align:center>DX</th><th style=text-align:center>CN</th></tr>
+<tr><td style=text-align:center>1</td><td>Hyæna-Man (Gnoll)</td><td style=text-align:center>13–18</td><td style=text-align:center>—</td><td style=text-align:center>17–18</td></tr>
+<tr><td style=text-align:center>2</td><td>Lizard-Man</td><td style=text-align:center>13–18</td><td style=text-align:center>—</td><td style=text-align:center>13–18</td></tr>
+<tr><td style=text-align:center>3</td><td>Minotaur</td><td style=text-align:center>17–18</td><td style=text-align:center>—</td><td style=text-align:center>18</td></tr>
+<tr><td style=text-align:center>4</td><td>Orc (Dæmon-Pict)</td><td style=text-align:center>—</td><td style=text-align:center>—</td><td style=text-align:center>—</td></tr>
+<tr><td style=text-align:center>5</td><td>Snake-Man</td><td style=text-align:center>—</td><td style=text-align:center>—</td><td style=text-align:center>17–18</td></tr>
+<tr><td style=text-align:center>6</td><td>Troglodyte (Trog)</td><td style=text-align:center>13–18</td><td style=text-align:center>13–18</td><td style=text-align:center>16–18</td></tr>
+<tr><td style=text-align:center>7</td><td>Vhuurmis (Beast-Man)</td><td style=text-align:center>13–18</td><td style=text-align:center>9–18</td><td style=text-align:center>17–18</td></tr>
+<tr><td style=text-align:center>8</td><td>Worm of Ymir (Worm of the Dirt)</td><td style=text-align:center>—</td><td style=text-align:center>10–18</td><td style=text-align:center>13–18</td></tr></table>
+** Some quasi-men possess exceptional physical attributes.
+If the <i>reincarnated</i> subject’s score for each attribute was
+outside of the listed range, then accordingly it is increased
+(or decreased) to the stated minimum or maximum.</p>"
