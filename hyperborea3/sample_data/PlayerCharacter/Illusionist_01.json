@@ -1,4 +1,5 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 13,
     "class_name": "Illusionist",
@@ -11,14 +12,14 @@
             "feat": 2
         },
         "dx": {
-            "score": 11,
+            "score": 13,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 12,
+            "score": 9,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,22 +27,22 @@
             "feat": 4
         },
         "in": {
-            "score": 14,
+            "score": 15,
             "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 17,
-            "will_adj": 1,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "score": 9,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 16,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 0,
@@ -54,13 +55,14 @@
         "long_name": "Lawful Good"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
+        "deity_id": 19,
+        "deity_name": "Yig",
         "primary_alignment": "Lawful"
     },
-    "race_id": 12,
-    "race": "Viking",
-    "gender": "Female",
+    "race_id": 6,
+    "race": "Ixian",
+    "gender": "Male",
+    "secondary_skill": "sword-/weaponsmith",
     "hd": "1d4",
     "hp": 2,
     "fa": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -187,10 +189,64 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -208,35 +264,35 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 218,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 20 \u00d7 20 \u00d7 20 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight, not of sound, smell, or temperature.</p> <p>Once cast, this spell persists as long as the caster concentrates, unless the illusion is touched or terminated via a <i>dispel phantasm</i> spell. A <i>phantasmal</i> monster is AC 9 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require complete concentration, and no movement is allowed.</p> <p><i>Phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the soundlessness of the illusion (e.g., a charging mammoth); in other instances, such as a <i>phantasm</i> of fire, a lack of thermal properties can create suspicion. To the eyes of the disbeliever, the <i>phantasm</i> becomes a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp base damage, +1 hp damage per CA level, per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 23,
-                    "spell_name": "Auditory Glamour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 303,
+                    "spell_name": "Prismatic Orb",
+                    "range": "0",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 220,
+                    "spell_desc": "<p>The illusionist creates a glowing, palm-sized sphere of energy based on one of the seven colours of the visible spectrum. The <i>prismatic orb</i> may be hurled up to 30 feet at a single foe. This functions as a missile attack roll with a bonus +2 \u201cto hit\u201d against the target\u2019s armour class. The colour of orb conjured is determined randomly by a d8; a result of <i>8</i> indicates a special orb that cycles rapidly between two colours, delivering the effects of both colours.</p> <p><table> <caption><b>Table 107: Prismatic Orb Effects</b></caption> <tr><th>d8 Result</th> <th>Prismatic Orb Effect</th></tr> <tr><td>1</td> <td>Red orb that inflicts 1 hp of burning damage per CA level.</td></tr> <tr><td>2</td> <td>Orange orb that inflicts 2 hp burning damage per CA level.</td></tr> <tr><td>3</td> <td>Yellow orb that partially blinds the visual organs of the target as per a <i>light</i> spell (\u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws; <i>sorcery</i> saving throw negates); duration is 1d2 + CA level in rounds.</td></tr> <tr><td>4</td> <td>Green orb that sickens target for 2d4 rounds unless a <i>death</i> (poison) save is made; \u20132 \u201cto hit\u201d and saving throws.</td></tr> <tr><td>5</td> <td>Blue orb that inflicts effects similar to a <i>chill touch</i> spell; <i>sorcery</i> saving throw or victim suffers 1d4 hp of energy-sapping damage and is penalized \u20131 \u201cto hit\u201d and damage rolls for 1d2 + CA level in rounds.</td></tr> <tr><td>6</td> <td>Indigo orb that causes the target to wander about confused for 1d6 rounds; <i>sorcery</i> saving throw modified by <i>willpower adjustment</i> (if applicable) negates the spell.</td></tr> <tr><td>7</td> <td>Violet orb that shoves the target with 10 pounds of force per CA level (cf. <i>shove</i> spell) unless a <i>sorcery</i> save is made.</td></tr> <tr><td>8</td> <td>Two colours: Roll twice, ignoring results of 8.</td></tr> </table></p> <p>A <i>prismatic orb</i> may not be hurled through barriers and will return to the caster\u2019s palm up to three times if it misses its intended target; however, each time it returns to the caster\u2019s palm, a (possibly) new colour(s) takes form; i.e., a d8 must be rolled again. A returned orb must be hurled on the next round or it disappears.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 204,
-                    "spell_name": "Hypnotism",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
                 }
             ]
         }

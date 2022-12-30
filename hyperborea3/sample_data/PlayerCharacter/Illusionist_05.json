@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 13,
     "class_name": "Illusionist",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 11,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "score": 16,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 24
         },
         "cn": {
-            "score": 10,
-            "hp_adj": 0,
+            "score": 13,
+            "hp_adj": 1,
             "poison_adj": 0,
-            "trauma_surv": 75,
-            "test": 2,
-            "feat": 4
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 11,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 6,
-            "will_adj": -1,
+            "score": 7,
+            "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 0
         },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 4,
-        "deity_name": "Azathoth",
+        "deity_id": 8,
+        "deity_name": "Kraken",
         "primary_alignment": "Chaotic"
     },
     "race_id": 7,
     "race": "Kelt",
-    "gender": "Male",
+    "gender": "Female",
+    "secondary_skill": "armourer",
     "hd": "5d4",
-    "hp": 11,
+    "hp": 12,
     "fa": 2,
     "ca": 5,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,7 +127,7 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
+            "hurled_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         },
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -187,17 +189,71 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "ill": {
             "spells_per_day": {
-                "lvl1": 4,
+                "lvl1": 3,
                 "lvl2": 2,
                 "lvl3": 1,
                 "lvl4": 0,
@@ -208,79 +264,79 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 109,
-                    "spell_name": "Detect Invisibility",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>The sorcerer etches a magical rune on a surface such as leather, paper, wood, stone, or even metal. The rune can be the personal symbol of the caster, or the sorcerer can effect a magical inscription of no more than seven words, plus one word per CA level; this lettering may be read by one who can <i>read magic</i>. Alternatively, the sorcerer can scribe an invisible <i>sorcerer mark</i> or inscription, but such is revealed by <i>detect magic</i> or <i>detect invisibility</i>.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 108,
-                    "spell_name": "Detect Illusion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 263,
-                    "spell_name": "Mirror Gaze",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 94,
-                    "spell_name": "Dancing Lights",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 409,
+                    "spell_name": "Terrify",
+                    "range": "10 feet",
+                    "duration": "2 rounds + 1 round per CA level",
+                    "reversible": false,
+                    "pp": 239,
+                    "spell_desc": "<p>The fears of the subject (human, humanoid, or giant only) are exploited by this enchantment. Eye contact must be established, and a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable, allows one to resist the spell\u2019s effects.</p> <p>A subject who fails the saving throw imagines the caster as something that is poignantly malefic in a personal way. This menace could be the monster of childhood nightmares, or some other horror from the subject\u2019s past\u2014something that compels a phobic reaction. The caster must pretend to approach the victim in a deliberate and threatening manner despite not knowing what the victim imagines. The <i>terrified</i> will flee for the duration of the spell, and if cornered, will simply cringe in fear; if a cowering subject is attacked, the spell is broken.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 35,
-                    "spell_name": "Blur",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 43,
+                    "spell_name": "Captivate",
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 181,
+                    "spell_desc": "<p>The sorcerer fascinates the subject of this spell if it fails its <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. The <i>captivated</i> creature sees the caster as pleasing, desirable, or ideal. The sorcerer can direct the <i>captivated</i> one, who will trust, follow, and obey the caster. However, every time a new request is made, no matter how small or large, the victim of the spell rolls 3d6. If the total exceeds the caster\u2019s charisma score, the spell is broken. Furthermore, if the request is unreasonable or potentially harmful to the victim, the roll may be made with a bonus of +1 to +3, as judged by the referee. If the spell is broken, the subject will be filled with unbridled rage, attacking the caster at +2 \u201cto hit\u201d and damage rolls.</p> <p>Normal animals also are subject to the <i>captivate</i> spell and will follow the caster for 1d4 days. If the animal is of a sort that might be tamed, and if it has been fed and treated well, it becomes a loyal ally if a 3d6 roll does not exceed the caster\u2019s charisma score. It will, however, resent other animal companions.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 426,
-                    "spell_name": "Ultraviolet Vision",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 218,
+                    "spell_name": "Improved Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 207,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 30 \u00d7 30 \u00d7 30 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Improved phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight and sound, not of smell or temperature. The auditory component of an <i>improved phantasm</i> cannot consist of precisely spoken words, but the semblance of garbled speech, mumbling, shouting, and so forth are possible. These sounds can create the opportunity for more believable illusions than those generated by the <i>phantasm</i> spell.</p> <p>Once cast, this spell persists as long as the caster concentrates and for 2 rounds thereafter, unless the illusion is struck for 1 hp of damage or more, or unless it is terminated via a <i>dispel phantasm</i> spell. An <i>improved phantasmal</i> monster is AC 8 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require his full attention, though he can walk at half speed and maintain control.</p> <p><i>Improved phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to its viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the illusion\u2019s lack of scent or thermal properties. To the eyes of the disbeliever, the <i>improved phantasm</i> will become a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp per CA level per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
                     "spell_id": 374,
                     "spell_name": "Spectral Phantasm",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 40 \u00d7 40 \u00d7 40 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Spectral phantasm</i> can be used to create an attacking monster or another damaging hazard. The illusion can be of sight, sound, smell, and/or temperature. The auditory component might include a shout, a roar, or a sentence of no more than nine words in length (not including articles <i>a</i>, <i>an</i>, and <i>the</i>).</p> <p>Once cast, this spell persists as long as the caster concentrates and for 5 rounds thereafter unless the illusion is struck for at least 1 hp of damage or is terminated via a <i>dispel phantasm</i> spell. A <i>spectral phantasmal</i> monster is AC 7 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The illusion can be directed to move anywhere within the spell\u2019s range; such manoeuvres require the full attention of the caster, who can walk at half speed and maintain control.</p> <p><i>Spectral phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. With sight, sound, smell, and/or temperature, credibility is rarely an issue with this spell; if such a case arises, and the save is made, the disbeliever will see the <i>spectral phantasm</i> as a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d6 hp per CA level per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 }
             ]
         }

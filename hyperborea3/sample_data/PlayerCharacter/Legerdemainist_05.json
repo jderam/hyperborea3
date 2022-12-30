@@ -1,29 +1,30 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 24,
     "class_name": "Legerdemainist",
     "attr": {
         "st": {
-            "score": 8,
-            "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 14,
+            "score": 13,
             "atk_mod": 0,
             "def_adj": 1,
             "test": 3,
             "feat": 16
         },
         "cn": {
-            "score": 7,
+            "score": 12,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 65,
+            "trauma_surv": 75,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "in": {
             "score": 13,
@@ -32,15 +33,15 @@
             "learn_spell": 65
         },
         "ws": {
-            "score": 11,
+            "score": 9,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 11,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 8,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 15,
-        "deity_name": "Thaumagorga",
-        "primary_alignment": "Evil"
+        "deity_id": 24,
+        "deity_name": "Yug",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 9,
-    "race": "Kimmeri-Kelt",
+    "race_id": 7,
+    "race": "Kelt",
     "gender": "Female",
+    "secondary_skill": "gem cutter/jeweller",
     "hd": "5d6",
-    "hp": 24,
+    "hp": 13,
     "fa": 3,
     "ca": 5,
     "ta": 0,
@@ -130,9 +132,9 @@
             "weight": 1,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -148,9 +150,9 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -190,10 +192,218 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -260,57 +470,57 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 353,
-                    "spell_name": "Shove",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 190,
-                    "spell_name": "Grease",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 23,
-                    "spell_name": "Auditory Glamour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 234,
+                    "spell_name": "Knock",
+                    "range": "60 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 210,
+                    "spell_desc": "<p>Automatically opens any stuck or locked door, gate, or other portal, including a locked box, chest, coffin, set of manacles, or even a secret door within the range of the spell. Even a <i>sorcerer locked</i> door can be opened by this spell, though but temporarily (resumes after 1 turn). Of course, this spell does not disarm trapped portals.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 347,
-                    "spell_name": "Shatter",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 364,
+                    "spell_name": "Sorcerer Lock",
+                    "range": "15 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>Magically secures a door, a gate, a portal, or the like. A <i>dispel magic</i> spell negates it, a <i>knock</i> spell opens it, or a strong person or monster might break it down: 1-in-12 chance for 17 ST, 1-in-6 chance for 18 ST. Too, a character with the <i>open locks</i> special ability can attempt to disrupt the <i>sorcerer lock</i> spell using thieves\u2019 tools; however, the chance-in-twelve of success is reduced by 4. Lastly, <i>sorcerer lock</i> can be bypassed by any magician (or magician subclass) whose CA is at least 3 levels greater than the one who placed the dweomer.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 287,
-                    "spell_name": "Phantasm",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 34,
+                    "spell_name": "Blink",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 180,
+                    "spell_desc": "<p>Randomly the sorcerer \u201cblinks\u201d in and out of existence, making short (2d4-foot) planar jumps through the \u00c6ther and back. The caster may attack whilst <i>blinking</i> (if within range), but at a \u22124 \u201cto hit\u201d penalty. If the caster wins initiative, all melee and missile attacks against him or her will automatically miss. If the caster loses initiative, he or she is subject to attack, though only once from each attacker. The caster can be targeted by area effect spells such as <i>fireball</i> or <i>web</i>, or by breath weapons, if the original position and the <i>blink</i> location are both within the area of effect. The direction of the <i>blink</i> is determined by a d8 roll:</p> <ol> <li>north</li> <li>northeast</li> <li>east</li> <li>southeast</li> <li>south</li> <li>southwest</li> <li>west</li> <li>northwest</li> </ol> <p>If a solid object blocks the <i>blink</i> location, the sorcerer will be displaced as far as 15 feet in the determined direction in order to reappear. If solid matter still blocks re-emergence, the sorcerer will be trapped in another dimension, perhaps the plane where dwells Kraken.</p>"
                 }
             ]
         }

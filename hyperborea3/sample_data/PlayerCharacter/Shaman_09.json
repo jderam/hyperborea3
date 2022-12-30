@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 21,
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 14,
+            "score": 12,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "dx": {
-            "score": 13,
-            "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
-        },
-        "cn": {
-            "score": 9,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "dx": {
+            "score": 11,
+            "atk_mod": 0,
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "cn": {
+            "score": 4,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
+            "test": 1,
+            "feat": 1
+        },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 17,
+            "will_adj": 1,
+            "bonus_spells": 3,
+            "learn_spell": 85
         },
         "ch": {
-            "score": 11,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 480000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 15,
-        "deity_name": "Thaumagorga",
-        "primary_alignment": "Evil"
+        "deity_id": 9,
+        "deity_name": "Kthulhu",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 7,
+    "race": "Kelt",
     "gender": "Male",
+    "secondary_skill": "mortician",
     "hd": "9d6",
-    "hp": 24,
+    "hp": 22,
     "fa": 5,
     "ca": 9,
     "ta": 7,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -174,6 +176,212 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 105,
+                "weapon_type": "Chain Whip",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 201,
+                "weapon_type": "Bola",
+                "rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d2",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 202,
+                "weapon_type": "Boomerang",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 204,
+                "weapon_type": "Hooked Throwing Knife",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1d6",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": {
         "undead_type_00": "UD",
@@ -195,8 +403,8 @@
         "drd": {
             "spells_per_day": {
                 "lvl1": 3,
-                "lvl2": 2,
-                "lvl3": 1,
+                "lvl2": 3,
+                "lvl3": 2,
                 "lvl4": 1,
                 "lvl5": 1,
                 "lvl6": 0
@@ -205,74 +413,74 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 280,
-                    "spell_name": "Pass without Trace",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 349,
-                    "spell_name": "Shillelagh",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 249,
+                    "spell_name": "Magic Stone",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 212,
+                    "spell_desc": "<p>Enchants a stone that functions at +1 \u201cto hit\u201d and damage (i.e., 2 hp if thrown, or 1d4+1 hp if fired from a sling). Each stone issues a sharp report upon impact. For every 3 CA levels one stone is enchanted:</p> <p><table><caption><b>Table 103: Magic Stone Spell</b></caption> <tr><th>CA Level</th> <th>No. of Stones</th></tr> <tr><td>1\u20133</td> <td>1</td></tr> <tr><td>4\u20136</td> <td>2</td></tr> <tr><td>7\u20139</td> <td>3</td></tr> <tr><td>10\u201312</td> <td>4</td></tr></table></p> <p><i>Magic stones</i> can be launched with a sling or hurled as normal stones by the caster or an ally. Only one stone can be hurled at a time unless the target is no more than 10 feet away, in which case multiple stones may be hurled. Once a <i>magic stone</i> is tossed, its enchantment is lost, whether it strikes its intended target or not. If a sorcerer is struck by a <i>magic stone</i> whilst casting a spell, the spell is disrupted, even if the optional <i>concentration check</i> is in play, and spell loss is automatic.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 112,
-                    "spell_name": "Detect Neutrality",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 1d8 hp of damage previously sustained. The reverse of this spell, <i>inflict light wounds</i>, is used to harm a living creature for 1d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 281,
-                    "spell_name": "Pass without Trace, 15\u0384 r.",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 378,
+                    "spell_name": "Starlight",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 233,
+                    "spell_desc": "<p>Illumes as large as a 60-foot-diameter area as though it were under the clearest, brightest <i>starlight</i>. In an area of utter darkness, visibility will become clear within the spell\u2019s 60-foot diameter and dim for another 30 feet (so a 120-foot diameter of effectiveness). Stars will appear to twinkle and shine above the area of effect, be it a 10-foothigh chamber ceiling or a 60-foot-high cavern roof.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 228,
-                    "spell_name": "Insect Plague",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 240,
+                    "spell_name": "Lightning Protection",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Shelters the caster or other recipient from any damage related to normal electricity for one hour per CA level. If cast on oneself, the sorcerer gains immunity from a single magical lightning/electricity attack (e.g., <i>lightning bolt</i>, <i>shocking grasp</i>, a <b>behir\u2019s</b> breath) before the spell is broken. A recipient of this spell other than the sorcerer simply gains a +4 saving throw bonus versus a single magical lightning/electricity attack before the spell is broken.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 5,
-                    "spell_id": 212,
-                    "spell_name": "Igloo",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 391,
+                    "spell_name": "Summon Bat Swarm",
+                    "range": "90 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 234,
+                    "spell_desc": "<p>A rabid cloud of tiny bats is <i>summoned</i>, manifesting all about the sorcerer, whose arms are spread wide. The <i>bat swarm</i> will attack 1 round after being <i>summoned</i>, surging forth as directed by the sorcerer. As long as the caster concentrates and points at the target, the victim suffers 5 hp damage per round.</p> <p>Whilst engulfed, the victim cannot cast spells, missile attacks are impossible, and melee attacks are at a \u22124 \u201cto hit\u201d penalty. Other actions such as drinking a potion, activating a magic item, using a magic ability, etc. are subject to a 3-in-6 chance of failure. Too, a <i>swarm</i> victim suffers a \u22124 AC penalty. Fleeing the <i>swarm</i> may be the victim\u2019s only recourse, for it can harass only to the limit of the spell\u2019s range. A <i>swarm</i> can be directed to move to another opponent within range, but 1 round will elapse for every 30 feet between the targets. After being attacked, victims must make <i>death</i> (poison) saves or suffer pain and burning from the multitudinous sites of infection, followed by headaches, muscle spasms, and difficulty swallowing. Death will ensue in 2d6 days unless <i>cure disease</i> is cast.</p>"
                 }
             ]
         },
-        "nec": {
+        "mag": {
             "spells_per_day": {
-                "lvl1": 3,
+                "lvl1": 2,
                 "lvl2": 1,
                 "lvl3": 1,
                 "lvl4": 1,
@@ -281,70 +489,70 @@
             },
             "spells_known": [
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 273,
-                    "spell_name": "Necromantic Ventriloquism",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 366,
+                    "spell_name": "Sorcerous Armour",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>A sorcerous force field equivalent to leather armour (AC 7) surrounds the beneficiary of this enchantment. The spell has no effect on an armoured recipient, but a creature with natural AC 7 or better gains a +1 AC bonus. This spell persists until <i>dispelled</i>, or until the recipient sustains cumulative damage totalling 10 hp, +1 hp per CA level.</p>"
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 1,
                     "spell_id": 103,
                     "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 176,
-                    "spell_name": "Forest of Bones",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 78,
+                    "spell_name": "Cool Metal",
+                    "range": "30 feet",
+                    "duration": "9 rounds",
+                    "reversible": false,
+                    "pp": 187,
+                    "spell_desc": "<p>Freezes metallic objects to blistering temperatures. For every CA level of the sorcerer, as much as five square feet of metal can be affected, equivalent to one Small creature per CA level, or one Medium creature per 2 CA levels; e.g., a CA 6 sorcerer can affect three adjacent armoured humans. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a mailclad giant may be considered the equivalent of four fighters). <i>Cool metal</i> is quick to cool, freeze, and then blister; likewise, it is quick to warm. The dweomer persists for 9 rounds, with metal treated thusly if in contact with skin:</p> <ul><li><b>Round 1:</b> Metal becomes <i>cold</i>, uncomfortable to the touch</li> <li><b>Rounds 2\u20134:</b> Metal <i>freezes</i>, biting for 1d4 hp damage per round</li> <li><b>Round 5:</b> Metal <i>blisters</i> for 2d4 hp damage</li> <li><b>Rounds 6\u20138:</b> Metal warms to <i>freezing</i>, biting for 1d4 hp damage per round</li> <li><b>Round 9:</b> Metal warms to <i>cold</i></li></ul> <p>Metal affected by <i>blistering cold</i> (round 5 of the spell) is subject to brittleness. If affected normal (nonmagical) armour is struck, it may shatter. The same applies to a normal sword, axe blade, etc. <i>Cold protection</i> and <i>cold resistance</i> negate the harmful effects of this spell.</p>"
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 83,
-                    "spell_name": "Cudgel of Bone",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Allows the caster to hear that which is magically <i>silenced</i> or <i>moving silently</i> (thieves, barbarians, assassins, et al.) in a 120-foot radius. The spell attunes the caster to subtleties of sound otherwise imperceptible, such as a whisper behind a closed door. If the caster enters a deep trance, <i>detect silence</i> can also be used to perceive noises made in parallel dimensions.</p>"
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 14,
-                    "spell_name": "Animate Carrion II",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 162,
+                    "spell_name": "Fireball",
+                    "range": "240 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 198,
+                    "spell_desc": "<p>From the palm of the sorcerer\u2019s hand shoots a fiery missile that explodes into a 40-foot-diameter sphere of flames when it strikes a target designated by the caster. Damage is 1d6 hp per CA level to all within the area of effect; e.g., a CA 5 sorcerer creates a 5d6 hp <i>fireball</i>. Targets may make <i>sorcery</i> saves for half damage. <i>N.B.:</i> The <i>fireball</i> must occupy its full volume (~33,500 cubic feet); if cast in an enclosed area smaller than the 40-foot diameter sphere, the flames expand as necessary into halls, tunnels, closets, through windows, etc.</p>"
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 4,
-                    "spell_id": 16,
-                    "spell_name": "Animate Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 339,
+                    "spell_name": "Secure Shelter",
+                    "range": "20 feet",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 227,
+                    "spell_desc": "<p>The sorcerer conducts a 6-turn (1-hour) ritual that requires the sacrifice of 500 gp in gold or gems. A hut or lodge is then conjured from materials natural to the area where the spell is cast (e.g., sod, stones, timbers, wattle and daub). The material rises to form a single-storey shelter with floor space of 30 \u00d7 30 feet. It may be fashioned to have windows, a door, a chimney, and other simple features\u2014even a table, chairs, and bunk beds, if so desired. The <i>secure shelter</i> enjoys other enchantments as well:</p> <p><ul><li>Impervious to normal fire and normal missiles (arrows and quarrels)</li> <li>Can withstand winds not exceeding 75 mph</li> <li>Door(s) has a <i>sorcerer lock</i> (q.v.)</li> <li>Each door and window is <i>alarmed</i> (q.v.)</li> <li>Contains an <i>unseen servant</i> (q.v.) that maintains cleanliness and assists with cooking, stoking the fire, etc.</li></ul></p>"
                 }
             ]
         }

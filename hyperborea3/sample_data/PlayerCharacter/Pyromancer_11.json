@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 15,
     "class_name": "Pyromancer",
     "attr": {
         "st": {
-            "score": 11,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 9,
+            "score": 13,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
-            "score": 7,
+            "score": 8,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 65,
@@ -26,21 +27,21 @@
             "feat": 2
         },
         "in": {
-            "score": 15,
+            "score": 16,
             "lang": 1,
             "bonus_spells": 2,
             "learn_spell": 75
         },
         "ws": {
-            "score": 13,
+            "score": 14,
             "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ch": {
-            "score": 14,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 800000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 17,
-        "deity_name": "Ullr",
-        "primary_alignment": "Chaotic"
+        "deity_id": 20,
+        "deity_name": "Yikkorth",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 2,
-    "race": "Amazon",
-    "gender": "Female",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Male",
+    "secondary_skill": "potter",
     "hd": "9d4+2",
-    "hp": 24,
+    "hp": 17,
     "fa": 5,
     "ca": 11,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -187,10 +189,101 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -208,145 +301,145 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
                     "spell_id": 311,
                     "spell_name": "Protection from Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>A pale circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking. Against other Evil creatures, the sorcerer enjoys a +1 bonus to AC, DR, and saving throws versus their attacks. The reverse of this spell, <i>protection from good</i>, can be cast only by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 366,
-                    "spell_name": "Sorcerous Armour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 243,
+                    "spell_desc": "<p>This spell requires 1 turn to cast and necessitates the sacrifice of a 50-gp gem. It summons an invisible entity of limited means. The <i>unseen servant</i> can clean, fetch and carry a 10-pound item (or drag a 20-pound item), tie a simple knot, mend a torn cloth or sack, open an unlocked door, or perform other menial tasks throughout the duration of the spell.</p> <p>The entity cannot fight, though it is not easy to kill: Magical weapons or spells must be used. The <i>unseen servant</i> has the following statistics: <b>MV</b> 30 (but it cannot run); <b>AC</b> 5; <b>HD</b> 1 (<b>hp</b> 6); <b>#A</b> 0; <b>D</b> \u2014; <b>SV</b> 17. If the caster moves farther than 120 feet away from the <i>unseen servant</i>, it will disappear.</p>"
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Suffuses the area of effect in a lambent glow, the colour of which may be chosen by the caster. Ten square feet per CA level can be affected thus; or, one Medium creature or two Small creatures per CA level, no saving throw allowed. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). Illumed creatures suffer \u22121 AC penalties.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 308,
-                    "spell_name": "Produce Flame",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 106,
+                    "spell_name": "Detect Body Heat",
+                    "range": "60 feet",
+                    "duration": "1 turn per CA",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>The sorcerer perceives the presence of warm-blooded creatures within 60 feet, including their sizes and number. The sorcerer must stand stationary and concentrate; movement disrupts the spell. <i>Detect body heat</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell. Undead are not detected by this spell, and cold-blooded creatures are detected only if they have recently warmed themselves in the sun or otherwise. Detection of other monster types is at the discretion of the referee, who must decide whether they are warm-blooded.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 315,
-                    "spell_name": "Pyrotechnics",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 230,
+                    "spell_name": "Invisibility",
+                    "range": "touch",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 209,
+                    "spell_desc": "<p>Renders the spell\u2019s recipient (human, humanoid, or giant) invisible until the spell is cancelled or <i>dispelled</i>, or if the subject directly causes harm (i.e., damages or forces a saving throw roll) to another creature, or if the duration has elapsed. <i>Invisibility</i> recipients cannot be seen by <i>detect magic</i> or <i>infrared vision</i>, but <i>detect invisibility</i> will reveal them. The following guidelines apply:</p> <ul><li><i>Invisibility</i> extends to the clothes/armour worn and gear carried by the subject.</li> <li>A rope or other lengthy item becomes visible beyond five feet of the subject.</li> <li>If an item is picked up after the spell was cast, that item will not become invisible.</li> <li>If an item is removed from the persons of an <i>invisibility</i> recipient, that object becomes visible.</li> <li>If the invisible person bears a light source (e.g., lantern, torch) before the spell is cast, the light source becomes invisible, but light still radiates.</li> <li>In bright sunlight, an invisible form casts a faint shadow.</li> <li><i>Invisibility</i> recipients see themselves and the objects they carry as faint outlines.</li> <li><i>Invisibility</i> recipients attack at +4 \u201cto hit.\u201d</li> <li>If an <i>invisible</i> creature\u2019s attack attempt is a miss, <i>invisibility</i> is not broken.</li> <li>+4 AC whilst invisible, and any attacker must have an idea of the invisible target\u2019s whereabouts; otherwise, the attack is futile.</li> <li>10 HD or greater creatures may make a <i>sorcery</i> saving throw when an invisible creature approaches within 30 feet of them. If successful, they clearly discern the invisible creature as a translucent figure.</li></ul> <p><i>What constitutes harm:</i> \u201cHarm\u201d is defined as any action (melee, missile, spell, item use, etc.) that would directly damage another creature; i.e., cause <i>hit point</i> (hp) loss or cause the target to roll a saving throw. Damaging objects does not break the spell. Causing harm indirectly to another creature does not break the spell. Casting a spell that does not allow for a saving throw and does not physically harm the target will not break the spell (a convenient loophole, if you would).</p> <p>Thus, without breaking the spell, an invisible person can force open a door, lift a portcullis, steal a coin purse, pick a lock, cast a <i>cure light wounds</i> spell, cast a <i>protection from evil</i> spell, and even cast a <i>summon monster</i> spell (harm caused by summoned monster is indirect). One can set aflame the wooden tower of a <b>vampire</b> and not break the spell, even if the undead beast burns, but if one throws a <i>fireball</i> at the same vampire, that is direct harm. Set a deadfall trap with a boulder to crush the skull of a <b>giant weasel</b>? <i>Invisibility</i> does not break. Shoot the same beast with a heavy crossbow? <i>Invisibility</i> breaks. <i>Sleep</i> spell causes no harm and typically involves no saving throw, so it will not break <i>invisibility</i>. Of course, the referee should be the final arbiter of all such cases.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 385,
-                    "spell_name": "Strengthen",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
+                    "range": "120 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Sorcery and its effects are negated and removed in an area of 20 \u00d7 20 \u00d7 20 feet. The spell does not negate magic items but can undo a sorcerous effect created by one. It does not, however, negate illusions/phantasms. If <i>dispel magic</i> is used against a spell cast by a sorcerer of higher CA, the chance of failure is 1-in-20 per level difference. For instance, if a CA 6 caster attempts to <i>dispel</i> the <i>levitate</i> spell of a CA 10 sorcerer, there is a 4-in-20 chance of failure.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 412,
-                    "spell_name": "Tongues",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 162,
+                    "spell_name": "Fireball",
+                    "range": "240 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 198,
+                    "spell_desc": "<p>From the palm of the sorcerer\u2019s hand shoots a fiery missile that explodes into a 40-foot-diameter sphere of flames when it strikes a target designated by the caster. Damage is 1d6 hp per CA level to all within the area of effect; e.g., a CA 5 sorcerer creates a 5d6 hp <i>fireball</i>. Targets may make <i>sorcery</i> saves for half damage. <i>N.B.:</i> The <i>fireball</i> must occupy its full volume (~33,500 cubic feet); if cast in an enclosed area smaller than the 40-foot diameter sphere, the flames expand as necessary into halls, tunnels, closets, through windows, etc.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 158,
-                    "spell_name": "Fire Shield",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 51,
+                    "spell_name": "Change Temperature",
+                    "range": "0",
+                    "duration": "6 turns (1 hour) + 3 turns per CA level",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>The sorcerer raises or lowers the temperature in a 10-foot radius by as much as 50\u00b0F. The caster can then move as normal, surrounded by the effect. The druidic version of this spell requires a sprig of mistletoe as a component.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 160,
-                    "spell_name": "Fire Trap",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 363,
+                    "spell_name": "Sorcerer Eye",
+                    "range": "240 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>An invisible oculus is conjured and sent forth to \u201csee\u201d for the sorcerer, providing visual sensory information. The <i>sorcerer eye</i> drifts at 30 MV and can see 60 feet ahead of itself if light is present; lacking illuminance, the <i>eye</i> sees with <i>infrared vision</i> to a range of 30 feet and can float in any direction as dictated by the sorcerer, who must sit cross-legged with eyes closed, concentrating. The spell ends when the sorcerer\u2019s eyes open, or when the duration expires.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 5,
-                    "spell_id": 165,
-                    "spell_name": "Flame Strike",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 341,
+                    "spell_name": "Sending",
+                    "range": "special",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 228,
+                    "spell_desc": "<p>The sorcerer conveys a message to familiar person (i.e., one whose name and appearance the sorcerer knows). Range is not a factor, so long as the subject inhabits the same world/dimension as the caster. The sorcerer can send one word per CA level (not including articles <i>a</i>, <i>an</i>, and <i>the</i>). The message is heard and understood by any intelligent recipient but does not compel obeisance. A message can be sent once with no save allowed. If an unwilling recipient is subjected to more than one <i>sending</i> within the same week, a <i>sorcery</i> saving throw is permitted to reject subsequent sendings.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 5,
-                    "spell_id": 407,
-                    "spell_name": "Teleport",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 282,
+                    "spell_name": "Passwall",
+                    "range": "30 feet",
+                    "duration": "3 turns per CA level",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>Opens a temporary 6-foot-diameter, 10-foot-deep passage in any wall, be it of wood, stone, or any other material. The spell can be ended by its caster at will.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 6,
-                    "spell_id": 157,
-                    "spell_name": "Fire Seeds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 182,
+                    "spell_name": "Geas",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 201,
+                    "spell_desc": "<p>Compels the victim (human, humanoid, or giant) to complete a service or task. To resist the spell, the target may make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. The task must be reasonably achievable and not a blatant death sentence, or the spell breaks after one or two weeks. (One cannot be directed to fall on his sword, but if <i>geased</i> by a sorcerer high atop Mount Vhuurmithadon, a fighting man might be commanded to find and offer himself to Xathoqqua.) If the <i>geased</i> individual fails or refuses to carry out the appointed task, the individual suffers weakness and will die after one or two weeks. <i>Geas</i> cannot be broken by <i>dispel magic</i> or <i>remove curse</i>. Only the reverse of this spell, <i>remove geas</i>, can break the effects of a <i>geas</i>; too, it can negate a <i>quest</i> spell.</p>"
                 }
             ]
         }

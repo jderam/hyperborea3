@@ -1,47 +1,48 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 16,
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 8,
+            "score": 12,
             "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
-        },
-        "dx": {
-            "score": 9,
-            "atk_mod": 0,
-            "def_adj": 0,
+            "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
-        "cn": {
-            "score": 16,
-            "hp_adj": 1,
-            "poison_adj": 1,
-            "trauma_surv": 85,
+        "dx": {
+            "score": 14,
+            "atk_mod": 0,
+            "def_adj": 1,
             "test": 3,
-            "feat": 16
+            "feat": 8
+        },
+        "cn": {
+            "score": 12,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
-            "score": 15,
+            "score": 14,
             "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 16,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 10,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 15,
+            "score": 14,
             "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "max_henchmen": 6,
+            "turn_adj": 0
         }
     },
     "xp": 192000,
@@ -49,20 +50,21 @@
     "xp_to_next": 384000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
+        "deity_id": 3,
+        "deity_name": "Aurorus",
         "primary_alignment": "Chaotic"
     },
     "race_id": 8,
     "race": "Kimmerian",
-    "gender": "Male",
+    "gender": "Female",
+    "secondary_skill": "farmer",
     "hd": "8d4",
-    "hp": 31,
+    "hp": 19,
     "fa": 3,
     "ca": 8,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -173,10 +175,87 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -184,7 +263,7 @@
         "wch": {
             "spells_per_day": {
                 "lvl1": 6,
-                "lvl2": 6,
+                "lvl2": 5,
                 "lvl3": 4,
                 "lvl4": 3,
                 "lvl5": 0,
@@ -194,112 +273,112 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 358,
-                    "spell_name": "Sleep",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 257,
+                    "spell_name": "Mending",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 213,
+                    "spell_desc": "<p>Repairs small breaks or tears in objects. The spell can weld a broken metallic article, such as a chain link, dagger, or knife; stitch a torn cloth, a frayed or severed rope, or perforated leather; fuse the shards of a broken bottle; and so forth. At CA 7, larger breaks or tears can be repaired, subject to referee approval. <i>Mending</i> cannot be used to repair magical devices.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 334,
-                    "spell_name": "Scare",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 53,
-                    "spell_name": "Charm Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 145,
-                    "spell_name": "F\u00e6rie Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 115,
+                    "spell_name": "Detect Undead",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>In a 60-foot-long, 10-foot-wide path, the caster discerns the presence of lesser undead creatures (<i>Undead Types 0\u20135</i>). Casters of CA 7 or greater will detect any undead creature. The detected abominations will glow a putrid green before the eyes of the caster. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect undead</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 189,
-                    "spell_name": "Goodberry",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 284,
+                    "spell_name": "Perceive Heartbeat",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>Undisturbed the sorcerer must meditate for five minutes before casting this spell from a nigh-trancelike state. During this preparatory phase, the caster \u201ctunes out\u201d the sound of his or her own heartbeat (and those of any allies). Once the spell is cast, the sorcerer can hear the heartbeats of all other living creatures within 60 feet. The strength or speed of each heartbeat may be determined; however, if many heartbeats (10+) are heard, they become difficult to discern from one another. This spell penetrates 10 feet of packed earth, two feet of wood, one foot of stone, or one inch of metal, but even the thinnest sheet of lead can mask a heartbeat.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 143,
-                    "spell_name": "Extrasensory Perception",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 236,
+                    "spell_name": "Levitate",
+                    "range": "20 feet per CA level",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 210,
+                    "spell_desc": "<p>The caster or other recipient floats up or down in the air at a rate of 10 MV. Maximum <i>levitation</i> weight is 300 pounds. Horizontal movement is impossible unless some surface such as a ceiling is reached, in which case the <i>levitated</i> person can use his hands and feet to travel at 10 MV. One can cast spells whilst floating, but combat (melee and missiles) is more difficult, the <i>levitate</i> recipient suffering \u22122 \u201cto hit\u201d on attack rolls and losing any DX bonus to AC.</p> <p>If this spell is cast on another person, the sorcerer must concentrate on directing the target, <i>levitating</i> him a maximum distance of 20 feet per CA level. If <i>levitate</i> is cast on an unwilling subject, it is allowed a <i>sorcery</i> saving throw to resist the effect, and if its HD is greater than the sorcerer\u2019s, the saving throw is rolled with a +4 bonus. The spell can be cancelled at a time of the caster\u2019s choosing.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 137,
-                    "spell_name": "Explosive Runes",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 360,
+                    "spell_name": "Slow",
+                    "range": "120 feet",
+                    "duration": "3 rounds + 1 round per CA level",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Halved are the attack and movement rates of this spell\u2019s victims who fail their <i>sorcery</i> saving throws. The caster selects a target point and <i>slows</i> a number of creatures equal to his or her CA level in a 15-foot radius. Those closest to the centre of the circle are affected first, potentially including the sorcerer\u2019s allies; however, the caster can limit the radius of the spell, shrinking it as desired. <i>Slowed</i> creatures move at half their normal rates, lose any dexterity <i>defence adjustment</i> to armour class, and make half as many attacks per combat round:</p> <ul><li>1/1 attack rate becomes 1/2</li> <li>3/2 attack rate becomes 3/4 <i>(1 attack, 1 attack, no attack, 1 attack)</i></li> <li>2/1 attack rate becomes 1/1</li> <li>5/2 attack rate becomes 5/4 <i>(1 attack, 1 attack, 1 attack, 2 attacks)</i></li> <li>3/1 attack rate becomes 3/2 <i>(1 attack, 2 attacks)</i></li> <li>4/1 attack rate becomes 2/1</li></ul> <p><i>Slow</i> eliminates the use of the (optional) combat action <i>two-weapon fighting</i>. Sorcery (spells and magical devices) is not <i>slowed</i> in any way. <i>Slow</i> counteracts the <i>haste</i> spell.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 57,
-                    "spell_name": "Clairaudience",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 371,
+                    "spell_name": "Speak with Dead",
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the sorcerer to converse with a dead human, quasi-man, humanoid, or giant, providing they speak (or spoke, as it were) the same language. The spell can be cast on an incomplete corpse or skeleton, so long as at least the skull remains. The sorcerer may ask as many as three direct questions (i.e., neither ambiguous nor multipart questions). The deceased will then answer, rasping its reply in a fashion and degree of truthfulness as best determined by the referee. This spell cannot be cast on the same subject more than once; neither does it function on the undead.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 4,
-                    "spell_id": 299,
-                    "spell_name": "Polymorph Other",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 29,
+                    "spell_name": "Black Tentacles",
+                    "range": "30 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 179,
+                    "spell_desc": "<p>Black, squid-like tentacles erupt in a 30-foot-diameter area, one such tentacle per CA level of the sorcerer. Each thick and slimy tentacle is 10 feet long, AC 4, and equal in hit points to the sorcerer at full health. Any creature within range of a <i>black tentacle</i> is subject to attack; if a tentacle has more than one potential target, the referee should assign equal chances via random die roll.</p> <p>Each victim must make a <i>sorcery</i> saving throw. If the saving throw succeeds, the tentacle lashes the target for 1d6 hp damage before disappearing. If the saving throw fails, the tentacle lash delivers 1d6 hp damage, as well as constricting and rending the victim for a further 2d6 hp damage per round until the spell ends or the tentacle is destroyed. As the tentacles have no intelligence, they will continue to squeeze a dead body and might on occasion be fooled into constricting a barrel, statue, tree, or like object.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 4,
-                    "spell_id": 363,
-                    "spell_name": "Sorcerer Eye",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 193,
+                    "spell_name": "Hallucinatory Terrain",
+                    "range": "300 feet",
+                    "duration": "permanent (until contacted)",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>Conjures an illusory landscape that conceals the actual topography. A meadow, for instance, might be made to appear as a forest, a hill, a river, a swamp, or the like. The maximum size of the illusion is a cube with sides five feet long per CA level; e.g., a CA 8 sorcerer can effect a 40 \u00d7 40 \u00d7 40-foot illusion. The <i>hallucinatory terrain</i> persists until some portion of it is forcibly shaken or struck by an intelligent creature, or unless <i>dispel phantasm</i> is cast.</p>"
                 }
             ]
         }
@@ -323,7 +402,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Cat, 4 hp]",
+            "brief_desc": "magical animal companion. [Cat, 3 hp]",
             "ability_desc": null
         },
         {

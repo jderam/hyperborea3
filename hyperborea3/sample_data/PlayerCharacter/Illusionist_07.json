@@ -1,47 +1,48 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 13,
     "class_name": "Illusionist",
     "attr": {
         "st": {
-            "score": 14,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": -1,
+            "test": 2,
+            "feat": 2
         },
         "dx": {
-            "score": 11,
+            "score": 13,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 13,
-            "hp_adj": 1,
+            "score": 12,
+            "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
-            "score": 10,
+            "score": 11,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 11,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 7,
-            "react_adj": -1,
-            "max_henchmen": 3,
-            "turn_adj": 0
+            "score": 15,
+            "react_adj": 1,
+            "max_henchmen": 8,
+            "turn_adj": 1
         }
     },
     "xp": 80000,
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 18,
-        "deity_name": "Xathoqqua",
+        "deity_id": 4,
+        "deity_name": "Azathoth",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 11,
-    "race": "Pict (Half-Blood)",
+    "race_id": 2,
+    "race": "Amazon",
     "gender": "Male",
+    "secondary_skill": "sailor/seaman",
     "hd": "7d4",
-    "hp": 21,
+    "hp": 17,
     "fa": 3,
     "ca": 7,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -192,6 +194,60 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
@@ -208,101 +264,101 @@
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 108,
-                    "spell_name": "Detect Illusion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 120,
+                    "spell_name": "Disguise Self",
+                    "range": "0",
+                    "duration": "1d6 turns",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Illusion is used to transform the sorcerer\u2019s appearance (including garb and gear) to something or someone else of similar size and shape. One can appear up to one foot taller or shorter and/or 25% heavier or lighter. The sorcerer can also assume the general look and shape of any familiar human or humanoid, though not of a specific being. The variable duration of the spell should be rolled secretly by the referee, the glamour ending abruptly upon the spell\u2019s termination.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 321,
+                    "spell_name": "Reflexion",
+                    "range": "10 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 224,
+                    "spell_desc": "<p>Evokes an image to appear on any mirrored surface. The <i>reflexion</i> is still as a picture but can be as vague or detailed as the sorcerer wishes.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 1,
-                    "spell_id": 62,
-                    "spell_name": "Colour Spray",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 23,
+                    "spell_name": "Auditory Glamour",
+                    "range": "240 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 178,
+                    "spell_desc": "<p>A hallucination of sound is created, that of voices, calls, or cries (human, humanoid, animal, or monster); footfalls; or other like noises. The sounds of 1d4 creatures can be invented thus for each CA level of the sorcerer. However, if a sound is of significant volume, the referee must decide on the number of voices and their collective volume (e.g., the roar of one lion may be equal to the shouts of five people).</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 35,
-                    "spell_name": "Blur",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 185,
+                    "spell_name": "Glitterdust",
+                    "range": "90 feet",
+                    "duration": "1d4+1 rounds",
+                    "reversible": false,
+                    "pp": 202,
+                    "spell_desc": "<p>The sorcerer must have 25 gp of gold dust to cast this spell, which may be in the form of gold ground with a file or stone. The sorcerer effects a 20-foot cube of <i>glitterdust</i> that explodes within the spell\u2019s range, covering its victims from head to toe in sparkling gold dust. The cloud itself is no more than a flash, so this spell\u2019s duration is not for the cloud, but rather its sorcerous effect.</p> <p>Those within the cloud must make <i>sorcery</i> saving throws or be blinded for the spell\u2019s duration. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws. This spell also reveals invisible creatures, as the <i>glitterdust</i> clings to and sparkles on them for its duration.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 2,
-                    "spell_id": 230,
-                    "spell_name": "Invisibility",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 50,
+                    "spell_name": "Chameleon",
+                    "range": "touch",
+                    "duration": "2 turns",
+                    "reversible": false,
+                    "pp": 182,
+                    "spell_desc": "<p>Cloaks the recipient with semi-transparency that blends with the colour and texture of the recipient\u2019s surroundings for the spell\u2019s duration. <i>Chameleon</i> extends to the clothes/armour worn and gear carried by the spell\u2019s recipient, but a rope or other lengthy item will become visible beyond five feet. If the subject removes an object, that object will no longer blend with its surroundings.</p> <p>An undetected <i>chameleon</i> subject gains a 2-in-6 bonus to surprize opponents and gains +2 \u201cto hit\u201d for all initial attack rolls (i.e., first attack for each encounter). Furthermore, if perfectly still and not in direct sunlight, the subject can successfully <i>hide</i> as a thief, with automatic success. <i>Chameleon</i> recipients can be revealed via <i>infrared vision</i> or <i>detect invisibility</i>.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 338,
-                    "spell_name": "Secret Page",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 231,
+                    "spell_name": "Invisibility Hemisphere",
+                    "range": "touch",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 209,
+                    "spell_desc": "<p>Functions much as the <i>invisibility</i> spell (q.v.), except that it extends in a 10-foot-radius hemisphere from the primary recipient, potentially causing other creatures in the spell\u2019s radius to become invisible. The <i>invisibility hemisphere</i> moves with the primary recipient. Those within 10 feet at the time of casting (including animal companions, undead minions, etc.) become invisible, but they can see one another as translucent figures. If a beneficiary of this spell steps out from its radius, that one will become visible, unable to resume <i>invisibility</i> unless the spell is recast. If the primary recipient causes damage (hp loss) to another creature, or causes another creature to roll a saving throw, the entire spell is negated; however, if one of the spell\u2019s other recipients causes damage (or forces a saving throw) to an opponent, only that actor becomes visible. For more examples of what constitutes harm, see the <i>invisibility</i> spell.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 3,
-                    "spell_id": 215,
-                    "spell_name": "Illusory Wall of Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 317,
+                    "spell_name": "Rainbow Bridge",
+                    "range": "120 feet",
+                    "duration": "2 turns per CA level",
+                    "reversible": false,
+                    "pp": 223,
+                    "spell_desc": "<p>Evokes a misty, arching rainbow to take form. It can be used to bridge a chasm, pit, lava pool, or other hazard. The <i>rainbow bridge</i> is 10 feet wide and can span 15 feet per CA level. The arch has an apex equal to one-half its length.</p> <p><i>Rainbow bridge</i> can be traversed as though it were solid ground at normal walking speed, but running will cause the crosser to fall through. This spell can be negated by <i>dispel phantasm</i>. The sorcerer cannot end the spell prematurely; i.e., once cast it persists until its duration expires.</p>"
                 },
                 {
                     "school": "ill",
                     "spell_level": 4,
-                    "spell_id": 369,
-                    "spell_name": "Spawn Shadow Monsters",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 305,
+                    "spell_name": "Prismatic Spray",
+                    "range": "50 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 221,
+                    "spell_desc": "<p>From the illusionist\u2019s outstretched fingertips springs a twisting, fan-shaped array of all seven colours of the visible spectrum, forming a wedge 5 feet wide at its base, 50 feet long, and 20 feet wide at its terminus. Any creature within the area of effect will be struck by one or more of these rays; roll a d8 to determine which:</p> <p><table><caption><b>Table 108: Prismatic Spray Effects</b></caption> <tr><th>d8 Result</th><th>Prismatic Spray Effect</th></tr> <tr><td>1</td><td>Red ray inflicts 2 hp of burning damage per CA level.</td></tr> <tr><td>2</td><td>Orange ray that inflicts 3 hp of burning damage per CA level.</td></tr> <tr><td>3</td><td>Yellow ray that permanently blinds the target unless a <i>sorcery</i> save is made; blind creatures always lose initiative and suffer \u22124 \u201cto hit,\u201d \u22124 AC, and \u22124 saving throws.</td></tr> <tr><td>4</td><td>Green ray that poisons the victim; <i>death</i> (poison) saving throw or immediate death.</td></tr> <tr><td>5</td><td>Blue ray that paralyzes the victim for 3d4 turns unless a <i>death</i> saving throw is made.</td></tr> <tr><td>6</td><td>Indigo ray causes the target to suffer intense hallucinations for 1d6 turns per the <i>madness</i> rules (see <b>Table 148</b>) unless a <i>sorcery</i> save is made, modified by <i>willpower adjustment</i>, if applicable.</td></tr> <tr><td>7</td><td>Violet ray <i>stuns</i> the target for 3d4 rounds; <i>sorcery</i> saving throw negates.</td></tr> <tr><td>8</td><td>Struck by two rays; roll twice, ignoring results of 8.</td></tr></table></p>"
                 }
             ]
         }

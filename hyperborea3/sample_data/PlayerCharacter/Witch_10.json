@@ -1,21 +1,22 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 16,
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 11,
+            "score": 14,
             "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "dx": {
-            "score": 11,
+            "score": 13,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
             "score": 8,
@@ -26,21 +27,21 @@
             "feat": 2
         },
         "in": {
-            "score": 13,
-            "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
-        },
-        "ws": {
-            "score": 11,
-            "will_adj": 0,
+            "score": 10,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
+        "ws": {
+            "score": 16,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
         "ch": {
-            "score": 14,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 768000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
-        "primary_alignment": "Chaotic"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Male",
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
+    "gender": "Female",
+    "secondary_skill": "navigator",
     "hd": "9d4+1",
-    "hp": 28,
+    "hp": 30,
     "fa": 4,
     "ca": 10,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -173,17 +175,94 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "wch": {
             "spells_per_day": {
-                "lvl1": 7,
+                "lvl1": 6,
                 "lvl2": 5,
                 "lvl3": 5,
                 "lvl4": 4,
@@ -194,134 +273,134 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "wch",
-                    "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "wch",
-                    "spell_level": 1,
-                    "spell_id": 11,
-                    "spell_name": "Alter Self",
+                    "spell_id": 453,
+                    "spell_name": "Write Spell",
                     "range": "0",
-                    "duration": "1d6 turns",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Allows the sorcerer to transfer a spell from one spell book to another. The caster need not comprehend the spell being transferred, but it must be a spell from the sorcerer\u2019s respective spell list. Once a spell is transferred, it disappears from its original volume. Completing this spell requires 6 turns (1 hour) per spell level and necessitates sorcerer\u2019s ink (such as sepia), a fine quill, and a crushed gem of 100-gp value or greater. Upon completing the transfer, the sorcerer must make a <i>sorcery</i> saving throw or suffer 1d4 hp damage and be knocked unconscious for 1d4 turns. If the sorcerer is disrupted whilst performing this ritual, the transferred spell will be lost, ruined.</p>"
+                },
+                {
+                    "school": "wch",
+                    "spell_level": 1,
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Suffuses the area of effect in a lambent glow, the colour of which may be chosen by the caster. Ten square feet per CA level can be affected thus; or, one Medium creature or two Small creatures per CA level, no saving throw allowed. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). Illumed creatures suffer \u22121 AC penalties.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
                     "spell_id": 257,
                     "spell_name": "Mending",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 213,
+                    "spell_desc": "<p>Repairs small breaks or tears in objects. The spell can weld a broken metallic article, such as a chain link, dagger, or knife; stitch a torn cloth, a frayed or severed rope, or perforated leather; fuse the shards of a broken bottle; and so forth. At CA 7, larger breaks or tears can be repaired, subject to referee approval. <i>Mending</i> cannot be used to repair magical devices.</p>"
+                },
+                {
+                    "school": "wch",
+                    "spell_level": 1,
+                    "spell_id": 108,
+                    "spell_name": "Detect Illusion",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to perceive phantasms for what they are. Illusions and phantasms within a 30-foot radius of the caster appear translucent. This spell requires minimal concentration; the caster can move and continue to <i>detect illusion</i>, but cannot run, fight, or perform other like actions.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 26,
-                    "spell_name": "Befriend Animals",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 450,
+                    "spell_name": "Witch Fire",
+                    "range": "90 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Creates fist-sized balls of phosphorescent light, in numbers equal to the caster\u2019s CA level. The colours of the balls may be chosen by the sorcerer. The lights follow the caster and illume a 5-foot diameter area. Each ball of <i>witch fire</i> can be sent to cover one Medium creature or two Small creatures within the spell\u2019s range, engulfing the target in a phosphorescent glow, and causing each to suffer a \u22121 AC penalty. For Large creatures, the referee must determine a reasonable size equivalent; e.g., two, three, or four balls of <i>witch fire</i> may be necessary to affect a giant.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 294,
-                    "spell_name": "Placate",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 248,
+                    "spell_name": "Magic Mouth",
+                    "range": "10 feet",
+                    "duration": "permanent (until triggered)",
+                    "reversible": false,
+                    "pp": 212,
+                    "spell_desc": "<p>Once activated, this enchantment causes a two-footwide illusory mouth to manifest. The <i>magic mouth</i> appears where the caster places the spell. It might be triggered by movement within 10 feet of it, or by other conditions as the caster prescribes, though the trigger range can be no greater than 10 feet. (For instance, placed upon a door, the <i>magic mouth</i> might only appear if the door is rapped on.)</p> <p>Once triggered, the <i>magic mouth</i> speaks a message that may not exceed 25 words. It might speak in a sibilant tongue, a commanding tone, a kind voice, or any like variation, though only in a language known by the caster. <i>Dispel magic</i> terminates this enchantment.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 452,
+                    "spell_name": "Wraithshape",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>The sorcerer and all gear assume a smoke-grey, incorporeal form. Whilst in <i>wraithshape</i>, the undead (except <b>vampires</b> and <b>liches</b>) will ignore the caster, believing him or her to be one of their own abysmal kind. The sorcerer can squeeze under doors or through small holes or cracks, and he can float in the air at 15 MV. Only magical weapons or spells can harm such a sorcerer. The sorcerer cannot, however, make any attacks unless confronted by a creature in a like state. <i>Dispel magic</i> breaks the spell; otherwise, the sorcerer can terminate it at will.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 3,
-                    "spell_id": 126,
-                    "spell_name": "Dissipate Gas",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 360,
+                    "spell_name": "Slow",
+                    "range": "120 feet",
+                    "duration": "3 rounds + 1 round per CA level",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Halved are the attack and movement rates of this spell\u2019s victims who fail their <i>sorcery</i> saving throws. The caster selects a target point and <i>slows</i> a number of creatures equal to his or her CA level in a 15-foot radius. Those closest to the centre of the circle are affected first, potentially including the sorcerer\u2019s allies; however, the caster can limit the radius of the spell, shrinking it as desired. <i>Slowed</i> creatures move at half their normal rates, lose any dexterity <i>defence adjustment</i> to armour class, and make half as many attacks per combat round:</p> <ul><li>1/1 attack rate becomes 1/2</li> <li>3/2 attack rate becomes 3/4 <i>(1 attack, 1 attack, no attack, 1 attack)</i></li> <li>2/1 attack rate becomes 1/1</li> <li>5/2 attack rate becomes 5/4 <i>(1 attack, 1 attack, 1 attack, 2 attacks)</i></li> <li>3/1 attack rate becomes 3/2 <i>(1 attack, 2 attacks)</i></li> <li>4/1 attack rate becomes 2/1</li></ul> <p><i>Slow</i> eliminates the use of the (optional) combat action <i>two-weapon fighting</i>. Sorcery (spells and magical devices) is not <i>slowed</i> in any way. <i>Slow</i> counteracts the <i>haste</i> spell.</p>"
+                },
+                {
+                    "school": "wch",
+                    "spell_level": 4,
+                    "spell_id": 393,
+                    "spell_name": "Summon D\u00e6mon II",
+                    "range": "10 feet",
+                    "duration": "6 rounds (1 minute) or special",
+                    "reversible": false,
+                    "pp": 235,
+                    "spell_desc": "<p>Sorcery transports a <b>lesser d\u00e6mon</b> from Underborea as selected by the sorcerer, depending on need. The d\u00e6mon will arrive 1 round after the spell is cast and will perform its designated task, after which, dead or alive, it will either disappear or turn on the caster and/ or any allies (see below). When casting this spell, the sorcerer must explicitly state the <i>summoned</i> type: \u201cdefender,\u201d \u201cilluminator,\u201d or \u201cseeker.\u201d</p> <p><ul><li><b>Defender</b>: <i>Summons</i> a random d\u00e6mon to assault the sorcerer\u2019s enemies as directed for no longer than 6 rounds. The target(s) must be pointed out straight away, or else the d\u00e6mon will attack the sorcerer and/or any allies. If the stated target(s) is defeated, the standard chance of betrayal applies. <p><table><caption><b>Table 114: Summon D\u00e6mon II Spell</b></caption> <tr><th>d6 Result</th><th>Defender Summoned</th></tr> <tr><td>1\u20133</td><td>D\u00e6mon, Lesser, Class vi (1)</td></tr> <tr><td>4\u20135</td><td>D\u00e6mon, Lesser, Class vii (1)</td></tr> <tr><td>6*</td><td>D\u00e6mon, Lesser, Class viii (1)</td></tr></table> * A witch may summon this d\u00e6mon for the purpose of an unspeakable union.</p></li> <li><b>Illuminator</b>: <i>Summons</i> a single <b>class ix lesser d\u00e6mon</b>. The beast will use its special <b>legend lore</b> ability to determine the whereabouts of a subterranean artefact, of which it will then inform the caster and spend no more than 1 turn attempting to locate. If the artefact does not exist or is not underground, the beast will attack the sorcerer and/or any comrades. Even if the treasure location is revealed successfully, this d\u00e6mon will demand a blood sacrifice before returning to Underborea; if the sacrifice is deemed unsuitable (at the referee\u2019s discretion), the d\u00e6mon will attack. Regardless, even after such a sacrifice is accepted, the standard chance of betrayal applies.</li> <li><b>Seeker</b>: <i>Summons</i> a single <b>class x lesser d\u00e6mon</b> to search and destroy. When the <i>seeker</i> type is designated, the sorcerer also must describe the prey (name, species, and so forth). The d\u00e6mon then will track its quarry until it is found and killed, after which the standard chance of betrayal applies. If no trail is found within 6 rounds, the d\u00e6mon will attack the sorcerer and/or any allies. If called upon to face an enemy that it cannot hunt, it likewise will turn on the sorcerer.</li></ul></p> <p><i>Betrayal:</i> D\u00e6mons are infamous for betrayal. Upon completing their prescribed task, they may turn on the sorcerer and/or any allies on a 1-in-6 chance. D\u00e6mons are, however, subject to morale checks during the entire <i>summon d\u00e6mon</i> process. Those that fail will attempt to flee (if possible), now permanent inhabitants of Hyperborea that may one day seek revenge. Wise sorcerers are known to take sanctuary within the confines of a candlelit magic circle whilst casting and maintaining this spell; of course, the magic circle will only protect the sorcerer, not allies.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 4,
                     "spell_id": 413,
                     "spell_name": "Transfer Wounds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 240,
+                    "spell_desc": "<p>A spell that can <i>transfer wounds</i> from a willing subject to another willing recipient, which may be the spell caster. A maximum of 20 hp damage can be <i>transferred</i>. The process involves a 1-turn ritual in which the wounds, by way of hands firmly grasped, pass from the subject to the recipient. If a recipient other than the sorcerer is involved, both must be touched by the caster. The one who absorbs the damage may be drained to no lower than 0 hp; e.g., someone with 16 hp can absorb 1\u201316 hp of damage from the subject.</p>"
                 },
                 {
                     "school": "wch",
-                    "spell_level": 4,
-                    "spell_id": 363,
-                    "spell_name": "Sorcerer Eye",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_level": 5,
+                    "spell_id": 227,
+                    "spell_name": "Inoculate",
+                    "range": "touch",
+                    "duration": "24 hours",
+                    "reversible": false,
+                    "pp": 209,
+                    "spell_desc": "<p>The recipient is immune to disease and poison for the duration of the spell if within one mile of the caster. Too, the recipient recovers double hit points from natural healing if proper rest is taken.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 5,
                     "spell_id": 307,
                     "spell_name": "Produce Bonfire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "wch",
-                    "spell_level": 5,
-                    "spell_id": 16,
-                    "spell_name": "Animate Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>Causes a fire to ignite magically, a full, roaring blaze as large as 12 feet in diameter. If cast upon an appropriate pile of wood, the bonfire can persist for one day per CA level; if made to spring from thin air, it lasts but 1 turn per CA level. Creatures in the area of effect suffer 1d4 hp damage unless they make an <i>avoidance</i> saving throw. Any combustibles worn by the victims (e.g., cotton, linen, wool) might be damaged or destroyed by the <i>produce bonfire</i> spell; certainly, paper and parchment stand no chance of survival. The reverse of this spell, <i>quench bonfire</i>, extinguishes any normal fire within the spell\u2019s range and area of effect.</p>"
                 }
             ]
         }
@@ -345,7 +424,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Gull, 2 hp]",
+            "brief_desc": "magical animal companion. [Arch\u00e6opteryx, 4 hp]",
             "ability_desc": null
         },
         {

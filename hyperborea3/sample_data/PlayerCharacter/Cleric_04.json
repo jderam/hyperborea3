@@ -1,21 +1,22 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 3,
     "class_name": "Cleric",
     "attr": {
         "st": {
-            "score": 10,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 15,
-            "atk_mod": 1,
+            "score": 13,
+            "atk_mod": 0,
             "def_adj": 1,
             "test": 3,
-            "feat": 16
+            "feat": 8
         },
         "cn": {
             "score": 14,
@@ -26,21 +27,21 @@
             "feat": 8
         },
         "in": {
-            "score": 12,
-            "lang": 0,
+            "score": 6,
+            "lang": -1,
             "bonus_spells": 0,
-            "learn_spell": 50
+            "learn_spell": 0
         },
         "ws": {
-            "score": 10,
+            "score": 14,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 7,
+            "react_adj": -1,
+            "max_henchmen": 3,
             "turn_adj": 0
         }
     },
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 10,
-        "deity_name": "Krimmr",
-        "primary_alignment": "Chaotic"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
-    "race_id": 10,
-    "race": "Pict",
-    "gender": "Male",
+    "race_id": 12,
+    "race": "Viking",
+    "gender": "Female",
+    "secondary_skill": "tailor/weaver",
     "hd": "4d8",
-    "hp": 17,
+    "hp": 23,
     "fa": 3,
     "ca": 4,
     "ta": 4,
@@ -125,7 +127,7 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 1,
+            "hurled_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         },
@@ -165,10 +167,269 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 112,
+                "weapon_type": "Footman's Flail",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 10
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 115,
+                "weapon_type": "War Hammer",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 120,
+                "weapon_type": "Footman's Mace",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 134,
+                "weapon_type": "Spiked Staff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 7
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 138,
+                "weapon_type": "Bastard Sword",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "2d6",
+                "cost": 30,
+                "weight": 5
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": null,
     "turn_undead_matrix": {
@@ -190,7 +451,7 @@
     "spells": {
         "clr": {
             "spells_per_day": {
-                "lvl1": 2,
+                "lvl1": 3,
                 "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
@@ -201,134 +462,134 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 332,
-                    "spell_name": "Sanctuary",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": "0",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>A pale circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking. Against other Evil creatures, the sorcerer enjoys a +1 bonus to AC, DR, and saving throws versus their attacks. The reverse of this spell, <i>protection from good</i>, can be cast only by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 63,
+                    "spell_name": "Command",
+                    "range": "30 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>The caster ensorcells the target of this spell with a single word of <i>command</i>, a word the victim is compelled to obey. The caster and victim must understand the same language, and the <i>command</i> must be clear. Typical <i>commands</i> include \u201cDie!\u201d, \u201cFall!\u201d, \u201cFlee!\u201d, \u201cJump!\u201d, \u201cSit!\u201d, \u201cSleep!\u201d, and \u201cStop!\u201d The victim will not actually die if commanded to do so but may fall and enter a state of unconsciousness, unless disturbed.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 48,
-                    "spell_name": "Ceremony of Consecration",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 61,
-                    "spell_name": "Cold Resistance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 314,
-                    "spell_name": "Purify Food and Drink",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 187,
+                    "spell_desc": "<p>The sorcerer conjures as much as three gallons of water per CA level. The water is fresh, clean, and potable. It can be placed within one or more appropriate containers so long as they are touching, or it can be evoked to appear in the air within the spell\u2019s range. The reverse of this spell, <i>destroy water</i>, vaporizes a like amount of water. If used offensively (e.g., several gallons of water dropped on the head of an enemy), the target is allowed an <i>avoidance</i> saving throw.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
                     "spell_id": 283,
                     "spell_name": "Perceive Disguise",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "30 feet",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>Allows the caster to determine if one creature per CA level within range pretends to be something it is not, whether via sorcery or artifice. The spell will not reveal the exact nature of the creature; neither will it detect alignment or allow the caster to glean any additional information, but merely that the target is not what it feigns to be. Targets of this subtle spell are almost always unaware that sorcery is at work. Each, however, is allowed a <i>sorcery</i> saving throw to resist the spell.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>Inures the subject\u2019s body to the effects of cold. Even unclothed the subject can withstand temperatures as low as \u221215\u00b0F without suffering ill effects. Against magical cold attacks (e.g., <i>cone of cold</i>, a <b>winter wolf\u2019s</b> breath), the recipient enjoys a +2 saving throw bonus.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 111,
+                    "spell_name": "Detect Malady",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>By laying hands on the afflicted, the sorcerer detects the presence of a curse, disease, or poison. The type of malady and its exact nature are revealed (e.g., the caster will discern poison and differentiate between a spider\u2019s venom and an alchemical concoction).</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 91,
-                    "spell_name": "Cure Moderate Wounds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 343,
+                    "spell_name": "Serpent Charm",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 228,
+                    "spell_desc": "<p>By piping a flute, hypnotize as many as 2 HD of snakes as the sorcerer has CA levels. The snakes stare at the caster, some (usually cobras) posturing themselves erect and swaying side to side. Slowly, the caster and any allies can move away whilst the snakes remain thus, though any violent or sudden movement will jar them from the charm. The effectiveness of this spell is predicated on the circumstances: An approaching snake\u2014even one with intent to attack\u2014or a torpid or otherwise unsuspecting snake is not allowed a saving throw; the effects are automatic. Snakes that are already engaged in combat are allowed <i>sorcery</i> saving throws to resist.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 355,
+                    "spell_name": "Silence",
+                    "range": "120 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 230,
+                    "spell_desc": "<p>Evokes a field of absolute soundlessness that radiates 15 feet from a selected point. Creatures may move from the spell\u2019s area of effect, but within the <i>silenced</i> field, all noise and speech are snuffed, and spells cannot be cast. If targeted directly at an opponent, the subject is allowed a <i>sorcery</i> saving throw to negate the spell; otherwise, the subject suffers utter <i>silence</i>. Spell casters gain +1 bonuses to their saving throws for every 2 CA levels they possess.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 370,
+                    "spell_name": "Speak with Animals",
+                    "range": "20 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the sorcerer to communicate with any normal sort of animal (not magical beasts, monsters, or other supernatural creatures). The animals will reply in kind; such responses are usually limited to brief one- or twoword statements predicated on the intelligence of the animal, at the referee\u2019s discretion. Friendly animals might be convinced to perform some minor service.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
                     "spell_id": 200,
                     "spell_name": "Hold Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed. This enchantment affects humans, humanoids, and giants. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. Any targets of 9 HD or greater gain a +4 saving throw bonus. Saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 127,
-                    "spell_name": "Distinguish Alignment",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 135,
-                    "spell_name": "Enthral",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 6,
-                    "spell_name": "Aid",
-                    "range": "touch",
-                    "duration": "1 turn",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 24,
-                    "spell_name": "Augury",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 446,
+                    "spell_name": "Weird War Hammer",
+                    "range": "30 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Conjures a brilliant war hammer composed of positive energy. The floating weapon can be directed to attack any opponent within the spell\u2019s range. The caster need not focus on it; other actions (e.g., fighting or casting other spells) can be taken whilst directing the <i>weird war hammer</i> at will. The <i>hammer</i> strikes with a <i>fighting ability</i> (FA) equal to the sorcerer. For every 4 CA levels, the weapon is +1 \u201cto hit\u201d and damage: <ul><li><b>CA 1\u20134</b> = +1</li> <li><b>CA 5\u20138</b> = +2</li> <li><b>CA 9\u201312</b> = +3</li></ul> Hence, a CA 5 sorcerer can conjure a <i>weird war hammer</i> that strikes at +2 \u201cto hit\u201d and inflicts 1d8+2 hp damage. <i>Dispel magic</i> terminates this spell.</p>"
                 }
             ]
         }

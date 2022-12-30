@@ -1,10 +1,11 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 32,
     "class_name": "Fire Thief",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
@@ -18,29 +19,29 @@
             "feat": 16
         },
         "cn": {
-            "score": 13,
+            "score": 16,
             "hp_adj": 1,
-            "poison_adj": 0,
-            "trauma_surv": 80,
+            "poison_adj": 1,
+            "trauma_surv": 85,
             "test": 3,
-            "feat": 8
+            "feat": 16
         },
         "in": {
-            "score": 17,
-            "lang": 2,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 14,
+            "score": 12,
             "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ch": {
-            "score": 7,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 11,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 88000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 13,
-        "deity_name": "Raven",
-        "primary_alignment": "Neutral"
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 6,
-    "race": "Ixian",
+    "race_id": 10,
+    "race": "Pict",
     "gender": "Male",
+    "secondary_skill": "navigator",
     "hd": "6d6",
-    "hp": 24,
+    "hp": 28,
     "fa": 4,
     "ca": 6,
     "ta": 0,
@@ -195,6 +197,214 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
+    },
     "thief_skills": [
         {
             "thief_skill": "climb",
@@ -205,7 +415,7 @@
         {
             "thief_skill": "decipher_script",
             "skill_name": "Decipher Script",
-            "skill_roll": 3,
+            "skill_roll": 2,
             "stat": "in"
         },
         {
@@ -251,7 +461,7 @@
             "spells_per_day": {
                 "lvl1": 2,
                 "lvl2": 2,
-                "lvl3": 2,
+                "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
                 "lvl6": 0
@@ -260,68 +470,68 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 168,
+                    "spell_name": "Flash",
+                    "range": "0",
+                    "duration": "24 hours",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>Requires one hour to cast, using the bladder of an ungulate such as a cow, goat, or sheep. The spell creates five small capsules of densely packed powder, each of which can be hurled at a single creature. This is executed by use of the <i>flask hurling</i> rules (see <b>Chapter 9: Combat</b>, <i>combat options</i>). If a hit is scored, the capsule explodes in a blinding <i>flash</i>, and the victim is blinded for 1d4 rounds; a miss indicates failure, a small, ineffective puff of smoke. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 168,
-                    "spell_name": "Flash",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>The sorcerer etches a magical rune on a surface such as leather, paper, wood, stone, or even metal. The rune can be the personal symbol of the caster, or the sorcerer can effect a magical inscription of no more than seven words, plus one word per CA level; this lettering may be read by one who can <i>read magic</i>. Alternatively, the sorcerer can scribe an invisible <i>sorcerer mark</i> or inscription, but such is revealed by <i>detect magic</i> or <i>detect invisibility</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 106,
+                    "spell_name": "Detect Body Heat",
+                    "range": "60 feet",
+                    "duration": "1 turn per CA",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>The sorcerer perceives the presence of warm-blooded creatures within 60 feet, including their sizes and number. The sorcerer must stand stationary and concentrate; movement disrupts the spell. <i>Detect body heat</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell. Undead are not detected by this spell, and cold-blooded creatures are detected only if they have recently warmed themselves in the sun or otherwise. Detection of other monster types is at the discretion of the referee, who must decide whether they are warm-blooded.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 315,
-                    "spell_name": "Pyrotechnics",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 225,
+                    "spell_name": "Infrared Vision",
+                    "range": "touch",
+                    "duration": "2 hours + 1 hour per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The caster or other recipient can perceive light in the infrared spectrum, effectively seeing in the dark to a range of 60 feet. All subtle differences of heat radiation are defined before the eyes of the recipient so that a warm-blooded creature stands out against the cool walls of a dungeon chamber. Fire or other notable heat in the proximity of the viewer can be a hindrance (e.g., lantern, torch) or a complete obstruction (e.g., bonfire, lava). This spell does not reveal invisible objects or creatures.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 137,
-                    "spell_name": "Explosive Runes",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 163,
+                    "spell_name": "Flame Arrow",
+                    "range": "touch",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 198,
+                    "spell_desc": "<p>Enchants one arrow or crossbow bolt per round for as many rounds as the sorcerer has CA levels. The caster must touch each missile, which then must be fired (presumably by an ally) within 1 round of the sorcerer\u2019s touch. Once a <i>flame arrow</i> is launched, it ignites, causing an extra 1d6 hp fire damage if it strikes its intended target. Each enchanted missile is considered a magical weapon, though it has no attack bonus.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 338,
-                    "spell_name": "Secret Page",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 194,
+                    "spell_name": "Haste",
+                    "range": "120 feet",
+                    "duration": "18 rounds (3 minutes)",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>Doubled are the attack and movement rates of this spell\u2019s recipients; unwilling targets are allowed <i>sorcery</i> saving throws. The caster selects a target point and <i>hastens</i> a number of creatures equal to his or her CA level in a 15-foot radius. Those closest to the centre of the circle are affected first, potentially including the sorcerer\u2019s enemies; however, the caster can limit the radius of the spell, shrinking it as desired. <i>Hastened</i> creatures can move at double their normal rates and make twice as many attacks per combat round:</p> <ul><li>1/1 attack rate becomes 2/1</li> <li>3/2 attack rate becomes 3/1</li> <li>2/1 attack rate becomes 4/1</li> <li>5/2 attack rate becomes 5/1</li> <li>3/1 attack rate becomes 6/1</li></ul> <p>Sorcery (spells and magical devices) is not <i>hastened</i> in any way. This spell cannot be \u201cstacked\u201d with other spells or magic items that increase speed. Once the duration is met, recipients of <i>haste</i> are aged by one year as a result of this spell, unless a <i>transformation</i> saving throw is made. <i>Haste</i> counteracts the <i>slow</i> spell, but this usage does not bring about the ageing side effect.</p>"
                 }
             ]
         }

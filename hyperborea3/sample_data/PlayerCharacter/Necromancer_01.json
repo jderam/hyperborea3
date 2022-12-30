@@ -1,32 +1,33 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 14,
     "class_name": "Necromancer",
     "attr": {
         "st": {
-            "score": 12,
+            "score": 11,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 10,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 11,
+            "score": 8,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 75,
+            "trauma_surv": 65,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "in": {
-            "score": 12,
+            "score": 11,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
@@ -38,10 +39,10 @@
             "learn_spell": 75
         },
         "ch": {
-            "score": 9,
-            "react_adj": 0,
-            "max_henchmen": 4,
-            "turn_adj": 0
+            "score": 5,
+            "react_adj": -2,
+            "max_henchmen": 2,
+            "turn_adj": -1
         }
     },
     "xp": 0,
@@ -49,20 +50,21 @@
     "xp_to_next": 2500,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
-        "primary_alignment": "Lawful"
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 4,
-    "race": "Esquimaux",
-    "gender": "Female",
+    "race_id": 10,
+    "race": "Pict",
+    "gender": "Male",
+    "secondary_skill": "tailor/weaver",
     "hd": "1d4",
-    "hp": 3,
+    "hp": 4,
     "fa": 0,
     "ca": 1,
     "ta": 0,
@@ -189,10 +191,88 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -210,35 +290,35 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 56,
-                    "spell_name": "Chill Touch",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
                     "spell_id": 334,
                     "spell_name": "Scare",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "2d6 rounds",
+                    "reversible": false,
+                    "pp": 226,
+                    "spell_desc": "<p>A spell to frighten an opponent. The caster can direct the spell at but one creature, which is allowed a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the save fails, the victim enters a state of utter fear, at once cowering and trembling uncontrollably. If attacked or cornered, however, the frightened creature will fight back, though at a \u22121 \u201cto hit\u201d until the spell ends. Undead and other creatures devoid of emotion are unaffected by this spell.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 244,
+                    "spell_name": "Locate the Dead",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Detects the presence of deceased creatures in a 30-foot radius. The caster walks at half speed, chanting, gesticulating, and attuning to the presence of death. Although <i>locate the dead</i> can detect the presence of undead creatures, it does not distinguish between death and undeath. This spell penetrates 10 feet of packed earth, five feet of wood, three feet of stone, or one inch of metal (except lead). <i>Locate the dead</i> also can be used to seek a specific dead person or creature; however, the caster must possess a personal item or memento of the sought-after corpse.</p>"
                 }
             ]
         }

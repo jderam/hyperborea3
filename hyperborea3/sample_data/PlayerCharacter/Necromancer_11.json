@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 14,
     "class_name": "Necromancer",
     "attr": {
         "st": {
-            "score": 4,
-            "atk_mod": -1,
-            "dmg_adj": -1,
-            "test": 1,
-            "feat": 1
+            "score": 12,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 11,
+            "score": 12,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
             "feat": 4
         },
         "cn": {
-            "score": 13,
+            "score": 14,
             "hp_adj": 1,
             "poison_adj": 0,
             "trauma_surv": 80,
@@ -26,22 +27,22 @@
             "feat": 8
         },
         "in": {
-            "score": 15,
+            "score": 13,
             "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ws": {
-            "score": 15,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 14,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
-            "score": 15,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 640000,
@@ -49,20 +50,21 @@
     "xp_to_next": 800000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 1,
-        "deity_name": "Apollo",
-        "primary_alignment": "Lawful"
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 19,
-    "race": "Moor",
-    "gender": "Male",
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Female",
+    "secondary_skill": "leatherworker/saddler/tanner",
     "hd": "9d4+2",
-    "hp": 43,
+    "hp": 36,
     "fa": 5,
     "ca": 11,
     "ta": 9,
@@ -124,9 +126,9 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -142,9 +144,9 @@
             "weight": 2,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -194,6 +196,84 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": {
         "undead_type_00": "UD",
@@ -204,10 +284,10 @@
         "undead_type_05": "D",
         "undead_type_06": "T",
         "undead_type_07": "T",
-        "undead_type_08": "11:12",
-        "undead_type_09": "8:12",
-        "undead_type_10": "5:12",
-        "undead_type_11": "2:12",
+        "undead_type_08": "10:12",
+        "undead_type_09": "7:12",
+        "undead_type_10": "4:12",
+        "undead_type_11": "1:12",
         "undead_type_12": "NT",
         "undead_type_13": "NT"
     },
@@ -215,7 +295,7 @@
         "nec": {
             "spells_per_day": {
                 "lvl1": 6,
-                "lvl2": 6,
+                "lvl2": 5,
                 "lvl3": 4,
                 "lvl4": 3,
                 "lvl5": 2,
@@ -225,145 +305,145 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 63,
-                    "spell_name": "Command",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 115,
+                    "spell_name": "Detect Undead",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>In a 60-foot-long, 10-foot-wide path, the caster discerns the presence of lesser undead creatures (<i>Undead Types 0\u20135</i>). Casters of CA 7 or greater will detect any undead creature. The detected abominations will glow a putrid green before the eyes of the caster. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect undead</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
                     "spell_id": 365,
                     "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>The sorcerer etches a magical rune on a surface such as leather, paper, wood, stone, or even metal. The rune can be the personal symbol of the caster, or the sorcerer can effect a magical inscription of no more than seven words, plus one word per CA level; this lettering may be read by one who can <i>read magic</i>. Alternatively, the sorcerer can scribe an invisible <i>sorcerer mark</i> or inscription, but such is revealed by <i>detect magic</i> or <i>detect invisibility</i>.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 111,
+                    "spell_name": "Detect Malady",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>By laying hands on the afflicted, the sorcerer detects the presence of a curse, disease, or poison. The type of malady and its exact nature are revealed (e.g., the caster will discern poison and differentiate between a spider\u2019s venom and an alchemical concoction).</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 141,
-                    "spell_name": "Extermination",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 273,
+                    "spell_name": "Necromantic Ventriloquism",
+                    "range": "120 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 216,
+                    "spell_desc": "<p>The voice of the sorcerer is thrown from the corpse of a dead human, <b>skeleton</b>, or <b>zombie</b> that is within range. The thrown voice is not that of the caster, but simulates that which a dead or undead creature might issue; i.e., a cold, raspy skeletal timbre, or a gurgling, maggot-infested resonance.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
                     "spell_id": 272,
                     "spell_name": "Mummification",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 216,
+                    "spell_desc": "<p>This ritual requires 12 turns (2 hours) to complete. By handling a fresh corpse and speaking baleful incantations, the sorcerer infuses the corpse with enchanted preservative spices (requires 10 gp in herbs). Then the caster evokes violet-charged cloth wraps to take form. The enchanted wraps spin and weave about the corpse, covering and preserving it from decomposition. If the caster later attempts to animate the corpse to a <b>zombie</b>, <b>flesh automaton</b>, or similar form, it will gain +2 hp per HD. This spell can also preserve a fallen comrade from decomposition, should allies seek to convey the fallen elsewhere for interment or sorcerous revival.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 371,
-                    "spell_name": "Speak with Dead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 95,
+                    "spell_name": "Danse Macabre",
+                    "range": "180 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 188,
+                    "spell_desc": "<p>The corpse of a human or humanoid is animated to undeath and thenceforth controlled like a marionette by the sorcerer\u2019s waving fingers. The corpse can be directed to move, pick up objects, or even attack. The creature functions as a <b>skeleton</b> or <b>zombie</b>, depending on the stats of the corpse, though the latter lacks the <i>zombiism</i> disease. This spell requires the constant chanting and gesticulating of the caster. Once the caster ceases to direct, or when the spell\u2019s duration elapses, the corpse will crumple to the ground.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 384,
-                    "spell_name": "Strangle",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 3,
-                    "spell_id": 5,
-                    "spell_name": "Agonizing Touch",
+                    "spell_id": 429,
+                    "spell_name": "Vampiric Touch",
                     "range": "touch",
-                    "duration": "instantaneous",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 243,
+                    "spell_desc": "<p>With a touch the sorcerer drains a victim of 1d6 hp for every 2 CA levels, to a maximum of 6d6 hp at CA 12. The sapped hit points are transferred to the sorcerer. Temporary hit points are added to the caster\u2019s present total and will remain for 6 turns (1 hour). During this period, any damage sustained by the caster is first subtracted from the temporary total. The temporary hit points can exceed the caster\u2019s normal maximum hit point allotment. <i>N.B.:</i> Even if the victim is sapped beyond death, the same hp are transferred; however, withering and decay accelerate disturbingly.</p>"
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 3,
+                    "spell_id": 412,
+                    "spell_name": "Tongues",
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": true,
+                    "pp": 240,
+                    "spell_desc": "<p>Enables the sorcerer to speak the language of any intelligent creature within 50 feet, including secret languages such as Druidic or Thieves\u2019 Cant. Once the spell\u2019s duration ends, the caster retains no knowledge or memory of otherwise unknown languages. The reverse of this spell, <i>gibberish</i>, confuses and jumbles the words of all speakers within 50 feet (except those of the caster), pending individual <i>sorcery</i> saving throws, modified by <i>willpower adjustment</i>, if applicable. Spells may also be jumbled to ineffectiveness, but this allows for a second <i>sorcery</i> saving throw, with +1 for every CA level of the opposing caster.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 4,
-                    "spell_id": 265,
-                    "spell_name": "Mirror, Mirror",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 148,
+                    "spell_name": "Fear",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>The eyes of the sorcerer assume kaleidoscopic aspect as they emit an invisible cone 5 feet wide at its base and 30 feet wide at its terminus. Within this area of effect, creatures of 5 HD or fewer must make <i>sorcery</i> saving throws or flee in panic for the duration of the spell; if they have nowhere to flee, they will cower in a corner. Creatures of 6 HD or more save at +4. Saving throws are modified by <i>willpower adjustment</i>, if applicable. Fear victims drop anything they hold on a 3-in-6 chance.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 4,
                     "spell_id": 223,
                     "spell_name": "Inflict Madness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>When cast by a cleric or necromancer, this evil curse brings insanity to its victim (human or humanoid). When cast by an illusionist, the spell effects a phantasmal nightmare that produces madness. In either case, the target must make a <i>sorcery</i> saving throw or suffer a random form of <i>madness</i> (consult your referee for specific results). The saving throw is modified by <i>willpower adjustment</i>, if applicable. A <i>remove curse</i> spell ends the madness if the spell was cast by a cleric or necromancer; <i>dispel phantasm</i> can exorcize madness caused by illusionists (cf. <i>cure madness</i>).</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 228,
-                    "spell_name": "Insect Plague",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 344,
+                    "spell_name": "Shadow Conjuration",
+                    "range": "60 feet",
+                    "duration": "1 round + 1 round per CA level",
+                    "reversible": false,
+                    "pp": 228,
+                    "spell_desc": "<p>Conjures 1d4 incorporeal creatures composed of negative energy. Each <b>shadow</b> is under the caster\u2019s control. These hateful monsters hunger for life energy; they will attack or defend as commanded and will continue to do so until destroyed or until the spell expires.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 5,
-                    "spell_id": 183,
-                    "spell_name": "Gelatinize Bones",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 98,
+                    "spell_name": "Death",
+                    "range": "240 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>In a 60 \u00d7 60-foot area, slays 2d8 living creatures of 6 HD or less, starting with the lowest-HD creatures first. Subjects are allowed <i>death</i> saving throws. If they fail, their internal organs rupture, spelling instant death. If they make their saving throws, they instead suffer 3d6 hp damage each.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 6,
-                    "spell_id": 17,
-                    "spell_name": "Animate Dead II",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 154,
+                    "spell_name": "Finger of Death",
+                    "range": "30 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>The sorcerer points at a target and utters a baleful incantation; from the sorcerer\u2019s finger emits a death ray. The target must make a <i>death</i> saving throw or die. For every point of difference between the sorcerer\u2019s CA and the target\u2019s level/HD, the saving throw is modified by \u00b11. So, if a CA 11 sorcerer casts this spell against a 12th-level fighter, the fighter gains a +1 bonus to the saving throw; if the target is a 7th-level fighter, the saving throw is rolled at a \u22124 penalty. This sorcery is associated with d\u00e6monism, so if not already Evil, the caster will likely gravitate to that ethos through its indiscriminate use; for clerics and druids, excommunication may result.</p>"
                 }
             ]
         }

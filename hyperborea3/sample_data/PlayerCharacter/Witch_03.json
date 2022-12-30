@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 16,
     "class_name": "Witch",
     "attr": {
         "st": {
-            "score": 12,
-            "atk_mod": 0,
-            "dmg_adj": 0,
-            "test": 2,
-            "feat": 4
+            "score": 6,
+            "atk_mod": -1,
+            "dmg_adj": -1,
+            "test": 1,
+            "feat": 1
         },
         "dx": {
-            "score": 8,
+            "score": 7,
             "atk_mod": 0,
             "def_adj": -1,
             "test": 2,
             "feat": 2
         },
         "cn": {
-            "score": 8,
+            "score": 10,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 65,
+            "trauma_surv": 75,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "in": {
-            "score": 14,
+            "score": 15,
             "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 14,
+            "score": 13,
             "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ch": {
-            "score": 16,
-            "react_adj": 1,
-            "max_henchmen": 8,
+            "score": 17,
+            "react_adj": 2,
+            "max_henchmen": 10,
             "turn_adj": 1
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 12000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 16,
-        "deity_name": "Tlakk-Nakka",
-        "primary_alignment": "Neutral"
+        "deity_id": 21,
+        "deity_name": "Ymir",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 10,
-    "race": "Pict",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Female",
+    "secondary_skill": "bowyer/fletcher",
     "hd": "3d4",
-    "hp": 12,
+    "hp": 10,
     "fa": 1,
     "ca": 3,
     "ta": 0,
@@ -124,9 +126,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": -1,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -178,13 +180,90 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "wch": {
             "spells_per_day": {
                 "lvl1": 4,
-                "lvl2": 2,
+                "lvl2": 3,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -194,57 +273,57 @@
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "wch",
-                    "spell_level": 1,
-                    "spell_id": 11,
-                    "spell_name": "Alter Self",
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
                     "range": "0",
-                    "duration": "1d6 turns",
-                    "reversible": 0,
-                    "pp": null,
-                    "spell_desc": null
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 145,
-                    "spell_name": "F\u00e6rie Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 108,
+                    "spell_name": "Detect Illusion",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to perceive phantasms for what they are. Illusions and phantasms within a 30-foot radius of the caster appear translucent. This spell requires minimal concentration; the caster can move and continue to <i>detect illusion</i>, but cannot run, fight, or perform other like actions.</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 1,
-                    "spell_id": 321,
-                    "spell_name": "Reflexion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 180,
+                    "spell_name": "Friends",
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 201,
+                    "spell_desc": "<p>The caster\u2019s charisma score is improved by 2d4 points (to 18 maximum). Creatures who speak with the caster must make immediate <i>reaction rolls</i>, modified by the <i>reaction/loyalty adjustment</i> of the sorcerer\u2019s improved charisma score. If the result is favourable (score of 9+), the caster is at once viewed as a charming and impressive person worthy of help, consideration, and support. The caster is convincing to those who are affected, so long as he or she is not overly abrasive. Once the spell\u2019s duration has expired, those who were influenced by the caster will realize they were ensorcelled.</p>"
+                },
+                {
+                    "school": "wch",
+                    "spell_level": 1,
+                    "spell_id": 111,
+                    "spell_name": "Detect Malady",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>By laying hands on the afflicted, the sorcerer detects the presence of a curse, disease, or poison. The type of malady and its exact nature are revealed (e.g., the caster will discern poison and differentiate between a spider\u2019s venom and an alchemical concoction).</p>"
                 },
                 {
                     "school": "wch",
                     "spell_level": 2,
-                    "spell_id": 427,
-                    "spell_name": "Ungovernable Hideous Laughter",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 45,
+                    "spell_name": "Cause Blindness",
+                    "range": "30 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 182,
+                    "spell_desc": "<p>The subject is blinded unless a <i>sorcery</i> saving throw is successful. The afflicted sees grey and nothing more, the tone of which depends on how much light is present. This spell is permanent unless dismissed by the caster. It can be negated by the spells <i>cure blindness</i> or <i>dispel magic</i>. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 }
             ]
         }
@@ -268,7 +347,7 @@
             "class_id": 16,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Rat, 3 hp]",
+            "brief_desc": "magical animal companion. [Rat, 2 hp]",
             "ability_desc": null
         },
         {

@@ -1,44 +1,45 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 32,
     "class_name": "Fire Thief",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 7,
             "atk_mod": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "dx": {
-            "score": 12,
+            "score": 14,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "cn": {
-            "score": 10,
+            "score": 8,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 75,
+            "trauma_surv": 65,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 14,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 12,
+            "score": 10,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -49,20 +50,21 @@
     "xp_to_next": 880000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 6,
-        "deity_name": "Boreas",
+        "deity_id": 8,
+        "deity_name": "Kraken",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 7,
-    "race": "Kelt",
+    "race_id": 1,
+    "race": "Common",
     "gender": "Male",
+    "secondary_skill": "armourer",
     "hd": "9d6+4",
-    "hp": 29,
+    "hp": 41,
     "fa": 7,
     "ca": 11,
     "ta": 0,
@@ -114,7 +116,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 5,
+    "ac": 4,
     "mv": 40,
     "weapons_melee": [
         {
@@ -132,7 +134,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -150,7 +152,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -190,10 +192,218 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 4,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -249,8 +459,8 @@
     "spells": {
         "pyr": {
             "spells_per_day": {
-                "lvl1": 3,
-                "lvl2": 3,
+                "lvl1": 4,
+                "lvl2": 4,
                 "lvl3": 2,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -260,123 +470,123 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>The sorcerer etches a magical rune on a surface such as leather, paper, wood, stone, or even metal. The rune can be the personal symbol of the caster, or the sorcerer can effect a magical inscription of no more than seven words, plus one word per CA level; this lettering may be read by one who can <i>read magic</i>. Alternatively, the sorcerer can scribe an invisible <i>sorcerer mark</i> or inscription, but such is revealed by <i>detect magic</i> or <i>detect invisibility</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 94,
+                    "spell_name": "Dancing Lights",
+                    "range": "120 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 188,
+                    "spell_desc": "<p>Effects 1d4+2 bouncing flames that simulate a marching group of torch-bearing patrollers. With a word, the caster can direct the <i>dancing lights</i> to move, even around corners, though only within the range of the spell; if guided otherwise, they will disappear. Directing a <i>dancing lights</i> spell does not require continued concentration, but simply a flick of the hand or finger.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 145,
-                    "spell_name": "F\u00e6rie Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 366,
-                    "spell_name": "Sorcerous Armour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": "0",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>A pale circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking. Against other Evil creatures, the sorcerer enjoys a +1 bonus to AC, DR, and saving throws versus their attacks. The reverse of this spell, <i>protection from good</i>, can be cast only by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 196,
-                    "spell_name": "Heat Metal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 225,
+                    "spell_name": "Infrared Vision",
+                    "range": "touch",
+                    "duration": "2 hours + 1 hour per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The caster or other recipient can perceive light in the infrared spectrum, effectively seeing in the dark to a range of 60 feet. All subtle differences of heat radiation are defined before the eyes of the recipient so that a warm-blooded creature stands out against the cool walls of a dungeon chamber. Fire or other notable heat in the proximity of the viewer can be a hindrance (e.g., lantern, torch) or a complete obstruction (e.g., bonfire, lava). This spell does not reveal invisible objects or creatures.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 167,
-                    "spell_name": "Flaming Sphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 315,
+                    "spell_name": "Pyrotechnics",
+                    "range": "240 feet",
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 223,
+                    "spell_desc": "<p>Uses an existing flame (e.g., brazier, campfire, torch) to create a great, fiery spectacle of flashing colours and luminous lights. Alternatively, a thick, rolling smoke can be produced, clouding a 20-foot-diameter area around the blaze. Once created, the <i>pyrotechnics</i> persist until the spell duration is met or the source is extinguished.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 185,
-                    "spell_name": "Glitterdust",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 106,
+                    "spell_name": "Detect Body Heat",
+                    "range": "60 feet",
+                    "duration": "1 turn per CA",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>The sorcerer perceives the presence of warm-blooded creatures within 60 feet, including their sizes and number. The sorcerer must stand stationary and concentrate; movement disrupts the spell. <i>Detect body heat</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell. Undead are not detected by this spell, and cold-blooded creatures are detected only if they have recently warmed themselves in the sun or otherwise. Detection of other monster types is at the discretion of the referee, who must decide whether they are warm-blooded.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 155,
-                    "spell_name": "Fire Protection",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 385,
+                    "spell_name": "Strengthen",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 234,
+                    "spell_desc": "<p>Enhances the brawn of a human. A fighter\u2019s strength score is increased by 2d4 points, a cleric\u2019s or thief \u2019s by 1d6, and a magician\u2019s by 1d4, all to a maximum of 18. (A classless \u201ccommoner\u201d may gain 1d4 points.) If this spell is cast on one whose strength score is already 18, that one will gain an additional +1 \u201cto hit,\u201d and <i>extraordinary feats of strength</i> will be improved by +8%.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 194,
-                    "spell_name": "Haste",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 449,
+                    "spell_name": "Wind Wall",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Evoked is a barrier of wind 10 feet thick, 20 feet long, and up to 50 feet high. The wind gushes upwards, sending any light materials skywards, including loose objects or unsecured creatures (birds, small animals, and the like) weighing no more than 25 pounds. <i>Wind wall</i> can disperse spells such as <i>cloudkill</i> and <i>stinking cloud</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 215,
-                    "spell_name": "Illusory Wall of Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 220,
+                    "spell_name": "Incinerate Normal Missiles",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The sorcerer is protected from projectiles with shafts of wood. Arrows, bolts, javelins, and spears launched at the caster will <i>incinerate</i> within 10 feet of the sorcerer. Magical missiles are less likely to be affected: +1 missiles will <i>incinerate</i> on a 3-in-6 chance, +2 missiles on a 2-in-6 chance, and +3 missiles on a 1-in-6 chance; missiles greater than +3 are unaffected. The same chance applies to mundane missiles fired from a magical launcher (e.g., if a <b>+2 short bow</b> fires a normal arrow, the arrow will <i>incinerate</i> on a 2-in-6 chance).</p>"
                 }
             ]
         }

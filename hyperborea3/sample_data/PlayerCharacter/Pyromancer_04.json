@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 15,
     "class_name": "Pyromancer",
     "attr": {
         "st": {
-            "score": 13,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": -1,
+            "test": 2,
+            "feat": 2
         },
         "dx": {
-            "score": 14,
-            "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "score": 17,
+            "atk_mod": 1,
+            "def_adj": 2,
+            "test": 4,
+            "feat": 24
         },
         "cn": {
-            "score": 11,
+            "score": 10,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,21 +27,21 @@
             "feat": 4
         },
         "in": {
-            "score": 16,
-            "lang": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 12,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
-            "score": 15,
-            "will_adj": 1,
-            "bonus_spells": 2,
-            "learn_spell": 75
+            "score": 18,
+            "will_adj": 2,
+            "bonus_spells": 4,
+            "learn_spell": 95
         },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 20000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 17,
-        "deity_name": "Ullr",
+        "deity_id": 18,
+        "deity_name": "Xathoqqua",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 3,
-    "race": "Atlantean",
-    "gender": "Male",
+    "race_id": 17,
+    "race": "Lapp",
+    "gender": "Female",
+    "secondary_skill": "miller",
     "hd": "4d4",
-    "hp": 11,
+    "hp": 6,
     "fa": 1,
     "ca": 4,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 8,
+    "ac": 7,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -161,8 +163,8 @@
             "weight": 1,
             "qty": 4,
             "ammunition": null,
-            "missile_atk": 0,
-            "dmg_adj": 1,
+            "missile_atk": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -192,13 +194,104 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "pyr": {
             "spells_per_day": {
-                "lvl1": 4,
-                "lvl2": 3,
+                "lvl1": 3,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -208,68 +301,68 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 211,
-                    "spell_name": "Identify",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Suffuses the area of effect in a lambent glow, the colour of which may be chosen by the caster. Ten square feet per CA level can be affected thus; or, one Medium creature or two Small creatures per CA level, no saving throw allowed. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). Illumed creatures suffer \u22121 AC penalties.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 103,
+                    "spell_name": "Decipher Language",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 168,
+                    "spell_name": "Flash",
+                    "range": "0",
+                    "duration": "24 hours",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>Requires one hour to cast, using the bladder of an ungulate such as a cow, goat, or sheep. The spell creates five small capsules of densely packed powder, each of which can be hurled at a single creature. This is executed by use of the <i>flask hurling</i> rules (see <b>Chapter 9: Combat</b>, <i>combat options</i>). If a hit is scored, the capsule explodes in a blinding <i>flash</i>, and the victim is blinded for 1d4 rounds; a miss indicates failure, a small, ineffective puff of smoke. Blind creatures always lose initiative and suffer \u22124 penalties on attack rolls, armour class, and saving throws.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 453,
+                    "spell_name": "Write Spell",
+                    "range": "0",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Allows the sorcerer to transfer a spell from one spell book to another. The caster need not comprehend the spell being transferred, but it must be a spell from the sorcerer\u2019s respective spell list. Once a spell is transferred, it disappears from its original volume. Completing this spell requires 6 turns (1 hour) per spell level and necessitates sorcerer\u2019s ink (such as sepia), a fine quill, and a crushed gem of 100-gp value or greater. Upon completing the transfer, the sorcerer must make a <i>sorcery</i> saving throw or suffer 1d4 hp damage and be knocked unconscious for 1d4 turns. If the sorcerer is disrupted whilst performing this ritual, the transferred spell will be lost, ruined.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 106,
-                    "spell_name": "Detect Body Heat",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 164,
+                    "spell_name": "Flame Blade",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>The sorcerer must grip a bladeless hilt (of any sword or dagger) to cast this spell. Upon reciting a sibilant incantation, a <i>flame blade</i> in the shape of a long scimitar springs from the bladeless hilt. The <i>flame blade</i> may be wielded as though it were a magical scimitar, whether or not the sorcerer is skilled with such a weapon; i.e., no unskilled weapon attack penalty applies.</p> <p>The <i>flame blade</i> functions at +2 \u201cto hit\u201d and inflicts 1d8+2 hp damage (1d10+2 hp if held in two hands), with an additional +2 damage bonus versus undead (1d8+4 or 1d10+4 hp total). Fire-resistant creatures, however, are afforded their standard resistance (usually half damage). <i>Flame blade</i> also can be used to ignite oil and other combustibles (e.g., cloth, paper, parchment, wood).</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 225,
-                    "spell_name": "Infrared Vision",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 196,
+                    "spell_name": "Heat Metal",
+                    "range": "30 feet",
+                    "duration": "9 rounds",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p>Heats metallic objects to searing temperatures. For every CA level of the sorcerer, five square feet of metal can be affected, equivalent to one Small creature per CA level, or one Medium creature per 2 CA levels; e.g., a CA 6 sorcerer can affect three adjacent armoured people. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). <i>Heat metal</i> is quick to warm, burn, and then sear; likewise, it is quick to cool. The dweomer persists for 9 rounds, with metal treated thusly if in contact with skin:</p> <ul><li><b>Round 1:</b> Metal becomes <i>hot</i>, uncomfortable to the touch</li> <li><b>Rounds 2\u20134:</b> Metal becomes <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 5:</b> Metal <i>sears</i> for 2d4 hp damage</li> <li><b>Rounds 6\u20138:</b> Metal cools to <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 9:</b> Metal cools to <i>hot</i></li></ul> <p>Materials such as cloth, leather, or wood in touch with <i>searing</i> metal are subject to smouldering or even combusting, as per the referee\u2019s judgment. <i>Fire protection</i> and <i>fire resistance</i> negate the harmful effects of this spell.</p>"
                 }
             ]
         }

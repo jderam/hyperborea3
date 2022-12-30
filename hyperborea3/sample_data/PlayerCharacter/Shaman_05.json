@@ -1,21 +1,22 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 21,
     "class_name": "Shaman",
     "attr": {
         "st": {
-            "score": 7,
-            "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
+            "score": 15,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 13,
+            "score": 9,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
             "score": 10,
@@ -26,10 +27,10 @@
             "feat": 4
         },
         "in": {
-            "score": 17,
-            "lang": 2,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "score": 9,
+            "lang": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
         },
         "ws": {
             "score": 13,
@@ -38,9 +39,9 @@
             "learn_spell": 65
         },
         "ch": {
-            "score": 13,
-            "react_adj": 1,
-            "max_henchmen": 6,
+            "score": 10,
+            "react_adj": 0,
+            "max_henchmen": 4,
             "turn_adj": 0
         }
     },
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
+        "deity_id": 3,
+        "deity_name": "Aurorus",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 12,
+    "race": "Viking",
+    "gender": "Male",
+    "secondary_skill": "atilliator",
     "hd": "5d6",
-    "hp": 15,
+    "hp": 23,
     "fa": 2,
     "ca": 5,
     "ta": 3,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +126,9 @@
             "weight": 4,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -142,9 +144,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -169,10 +171,216 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 105,
+                "weapon_type": "Chain Whip",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 201,
+                "weapon_type": "Bola",
+                "rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d2",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 202,
+                "weapon_type": "Boomerang",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 204,
+                "weapon_type": "Hooked Throwing Knife",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1d6",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 208,
+                "weapon_type": "Blowgun",
+                "rof": "1/1",
+                "range_sml": "30/60/90",
+                "damage": "1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 5,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": {
@@ -205,42 +413,42 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 249,
-                    "spell_name": "Magic Stone",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 280,
+                    "spell_name": "Pass without Trace",
+                    "range": "touch",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>The recipient of this spell can move through wilderness terrain\u2014be it forest, desert, or snowy mountainside\u2014 without leaving a footprint, a scent, or other trace, regardless of armour worn. A tracker has no chance to find a trail; however, should one cast <i>detect magic</i>, a faint trail of magical footprints will be discerned, enduring for 6 turns (1 hour) after the spell\u2019s recipient has passed.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 192,
-                    "spell_name": "Gust of Wind",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>Creates a 60-foot-diameter sphere of lambent light, the subtle hue of which may be selected by the caster. It cannot be cast on a single target or object, but rather on an area. The effect is permanent (unless <i>dispelled</i>), so long as the caster remains within 10 miles; otherwise, the dweomer begins to dissipate in subtle degrees, ending in a number of months equal to the sorcerer\u2019s CA. <i>Continuous light</i> can counter <i>continuous darkness</i> and <i>darkness</i>.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 297,
-                    "spell_name": "Plant Growth",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 315,
+                    "spell_name": "Pyrotechnics",
+                    "range": "240 feet",
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 223,
+                    "spell_desc": "<p>Uses an existing flame (e.g., brazier, campfire, torch) to create a great, fiery spectacle of flashing colours and luminous lights. Alternatively, a thick, rolling smoke can be produced, clouding a 20-foot-diameter area around the blaze. Once created, the <i>pyrotechnics</i> persist until the spell duration is met or the source is extinguished.</p>"
                 }
             ]
         },
-        "nec": {
+        "mag": {
             "spells_per_day": {
-                "lvl1": 2,
-                "lvl2": 2,
+                "lvl1": 1,
+                "lvl2": 1,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -248,26 +456,26 @@
             },
             "spells_known": [
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 56,
-                    "spell_name": "Chill Touch",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 365,
+                    "spell_name": "Sorcerer Mark",
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>The sorcerer etches a magical rune on a surface such as leather, paper, wood, stone, or even metal. The rune can be the personal symbol of the caster, or the sorcerer can effect a magical inscription of no more than seven words, plus one word per CA level; this lettering may be read by one who can <i>read magic</i>. Alternatively, the sorcerer can scribe an invisible <i>sorcerer mark</i> or inscription, but such is revealed by <i>detect magic</i> or <i>detect invisibility</i>.</p>"
                 },
                 {
-                    "school": "nec",
+                    "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 95,
-                    "spell_name": "Danse Macabre",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>Creates a 60-foot-diameter sphere of lambent light, the subtle hue of which may be selected by the caster. It cannot be cast on a single target or object, but rather on an area. The effect is permanent (unless <i>dispelled</i>), so long as the caster remains within 10 miles; otherwise, the dweomer begins to dissipate in subtle degrees, ending in a number of months equal to the sorcerer\u2019s CA. <i>Continuous light</i> can counter <i>continuous darkness</i> and <i>darkness</i>.</p>"
                 }
             ]
         }

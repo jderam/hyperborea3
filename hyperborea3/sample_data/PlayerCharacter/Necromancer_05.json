@@ -1,4 +1,5 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 14,
     "class_name": "Necromancer",
@@ -11,7 +12,7 @@
             "feat": 16
         },
         "dx": {
-            "score": 10,
+            "score": 9,
             "atk_mod": 0,
             "def_adj": 0,
             "test": 2,
@@ -26,16 +27,16 @@
             "feat": 4
         },
         "in": {
-            "score": 13,
+            "score": 14,
             "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
         "ws": {
-            "score": 11,
+            "score": 13,
             "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "bonus_spells": 1,
+            "learn_spell": 65
         },
         "ch": {
             "score": 9,
@@ -54,15 +55,16 @@
         "long_name": "Lawful Evil"
     },
     "deity": {
-        "deity_id": 2,
-        "deity_name": "Artemis",
+        "deity_id": 5,
+        "deity_name": "Boetzu",
         "primary_alignment": "Lawful"
     },
-    "race_id": 7,
-    "race": "Kelt",
-    "gender": "Female",
+    "race_id": 12,
+    "race": "Viking",
+    "gender": "Male",
+    "secondary_skill": "black-/coin-/metalsmith",
     "hd": "5d4",
-    "hp": 10,
+    "hp": 15,
     "fa": 2,
     "ca": 5,
     "ta": 3,
@@ -189,10 +191,88 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": {
@@ -225,79 +305,79 @@
                 {
                     "school": "nec",
                     "spell_level": 1,
-                    "spell_id": 56,
-                    "spell_name": "Chill Touch",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 273,
+                    "spell_name": "Necromantic Ventriloquism",
+                    "range": "120 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 216,
+                    "spell_desc": "<p>The voice of the sorcerer is thrown from the corpse of a dead human, <b>skeleton</b>, or <b>zombie</b> that is within range. The thrown voice is not that of the caster, but simulates that which a dead or undead creature might issue; i.e., a cold, raspy skeletal timbre, or a gurgling, maggot-infested resonance.</p>"
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 111,
+                    "spell_name": "Detect Malady",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>By laying hands on the afflicted, the sorcerer detects the presence of a curse, disease, or poison. The type of malady and its exact nature are revealed (e.g., the caster will discern poison and differentiate between a spider\u2019s venom and an alchemical concoction).</p>"
+                },
+                {
+                    "school": "nec",
+                    "spell_level": 1,
+                    "spell_id": 334,
+                    "spell_name": "Scare",
+                    "range": "10 feet",
+                    "duration": "2d6 rounds",
+                    "reversible": false,
+                    "pp": 226,
+                    "spell_desc": "<p>A spell to frighten an opponent. The caster can direct the spell at but one creature, which is allowed a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the save fails, the victim enters a state of utter fear, at once cowering and trembling uncontrollably. If attacked or cornered, however, the frightened creature will fight back, though at a \u22121 \u201cto hit\u201d until the spell ends. Undead and other creatures devoid of emotion are unaffected by this spell.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 1,
                     "spell_id": 350,
                     "spell_name": "Shocking Grasp",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 1,
-                    "spell_id": 232,
-                    "spell_name": "Invisibility to Undead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "nec",
-                    "spell_level": 1,
-                    "spell_id": 115,
-                    "spell_name": "Detect Undead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>The sorcerer touches a target, unleashing a jolt of electricity that delivers 1d8 hp damage, +1 hp per CA level (so a CA 3 sorcerer delivers 1d8+3 hp damage). The sorcerer must be able to touch the victim or a reasonable conductor in contact with the victim. If the sorcerer\u2019s attack is a miss, subsequent attempts may be made in the following rounds of combat, but any action other than half movement breaks the spell. <i>N.B.:</i> Metal armour is ignored when calculating the victim\u2019s armour class, if applicable.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 373,
-                    "spell_name": "Spectral Hand",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 455,
+                    "spell_name": "Zombie Visage",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 247,
+                    "spell_desc": "<p>The sorcerer\u2019s face and hands become like those of a <b>zombie</b>, accompanied by a conspicuous foetor and an aura of undeath, allowing one to pass amongst unintelligent undead without notice. This mien is merely a necromantic illusion, however. Ordinary animals that glimpse the sorcerer must make morale checks at \u22122 or flee in terror for 1d4 rounds. <i>Zombie visage</i> is broken by <i>dispel magic</i> or <i>dispel phantasm</i>; a <i>turn undead</i> attempt versus <i>Undead Type 2</i>, if successful, will cause the face to crumble and fall away from the sorcerer.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 2,
-                    "spell_id": 184,
-                    "spell_name": "Ghoul Touch",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 454,
+                    "spell_name": "Wyvern Warden",
+                    "range": "30 feet",
+                    "duration": "8 hours",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Taps the unspeakable power of the Black Gulf, conjuring a billowing black haze that assumes the vague shape of a <b>wyvern</b>: a large, two-legged dragon with a long, barbed tail. The <i>wyvern warden</i> is assigned a task of guardianship over a person, place, or thing. An approaching creature will not see the <i>wyvern warden</i> in the dark unless <i>detect magic</i> is cast. In naturally lit conditions, however, a wary approaching creature might discern the hazy, monstrous form.</p> <p>If anyone or anything approaches within 20 feet of the curling mass (except designated allies who were present and identified as such when the spell was cast), the <i>wyvern warden</i> lashes with its tail, striking without error. The victim must make a <i>death</i> saving throw or remain rigid for 1 round per CA level of the sorcerer. The <i>wyvern warden</i> will then disappear in a puff of black smoke, able to attack but one victim.</p>"
                 },
                 {
                     "school": "nec",
                     "spell_level": 3,
-                    "spell_id": 200,
-                    "spell_name": "Hold Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 225,
+                    "spell_name": "Infrared Vision",
+                    "range": "touch",
+                    "duration": "2 hours + 1 hour per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The caster or other recipient can perceive light in the infrared spectrum, effectively seeing in the dark to a range of 60 feet. All subtle differences of heat radiation are defined before the eyes of the recipient so that a warm-blooded creature stands out against the cool walls of a dungeon chamber. Fire or other notable heat in the proximity of the viewer can be a hindrance (e.g., lantern, torch) or a complete obstruction (e.g., bonfire, lava). This spell does not reveal invisible objects or creatures.</p>"
                 }
             ]
         }

@@ -1,47 +1,48 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 3,
     "class_name": "Cleric",
     "attr": {
         "st": {
-            "score": 8,
-            "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
-        },
-        "dx": {
             "score": 10,
             "atk_mod": 0,
-            "def_adj": 0,
+            "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "dx": {
+            "score": 7,
+            "atk_mod": 0,
+            "def_adj": -1,
+            "test": 2,
+            "feat": 2
+        },
         "cn": {
-            "score": 5,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 11,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 75,
+            "test": 2,
+            "feat": 4
         },
         "in": {
-            "score": 8,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 0
-        },
-        "ws": {
             "score": 10,
-            "will_adj": 0,
+            "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
-        "ch": {
+        "ws": {
             "score": 15,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ch": {
+            "score": 9,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 16000,
@@ -49,20 +50,21 @@
     "xp_to_next": 32000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 5,
+        "short_name": "N",
+        "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 8,
-        "deity_name": "Kraken",
-        "primary_alignment": "Chaotic"
+        "deity_id": 12,
+        "deity_name": "Mordezzan",
+        "primary_alignment": "Neutral"
     },
-    "race_id": 1,
-    "race": "Common",
-    "gender": "Female",
+    "race_id": 10,
+    "race": "Pict",
+    "gender": "Male",
+    "secondary_skill": "navigator",
     "hd": "5d8",
-    "hp": 18,
+    "hp": 11,
     "fa": 3,
     "ca": 5,
     "ta": 5,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 6,
+    "ac": 7,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -165,10 +167,269 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 112,
+                "weapon_type": "Footman's Flail",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 10
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 115,
+                "weapon_type": "War Hammer",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 120,
+                "weapon_type": "Footman's Mace",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 10,
+                "weight": 5
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 134,
+                "weapon_type": "Spiked Staff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 7
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 138,
+                "weapon_type": "Bastard Sword",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "2d6",
+                "cost": 30,
+                "weight": 5
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": null,
     "turn_undead_matrix": {
@@ -176,10 +437,10 @@
         "undead_type_01": "D",
         "undead_type_02": "T",
         "undead_type_03": "T",
-        "undead_type_04": "11:12",
-        "undead_type_05": "8:12",
-        "undead_type_06": "5:12",
-        "undead_type_07": "2:12",
+        "undead_type_04": "10:12",
+        "undead_type_05": "7:12",
+        "undead_type_06": "4:12",
+        "undead_type_07": "1:12",
         "undead_type_08": "NT",
         "undead_type_09": "NT",
         "undead_type_10": "NT",
@@ -190,8 +451,8 @@
     "spells": {
         "clr": {
             "spells_per_day": {
-                "lvl1": 3,
-                "lvl2": 2,
+                "lvl1": 4,
+                "lvl2": 3,
                 "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -201,167 +462,167 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 249,
-                    "spell_name": "Magic Stone",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 61,
+                    "spell_name": "Cold Resistance",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>Inures the subject\u2019s body to the effects of cold. Even unclothed the subject can withstand temperatures as low as \u221215\u00b0F without suffering ill effects. Against magical cold attacks (e.g., <i>cone of cold</i>, a <b>winter wolf\u2019s</b> breath), the recipient enjoys a +2 saving throw bonus.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 283,
+                    "spell_name": "Perceive Disguise",
+                    "range": "30 feet",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>Allows the caster to determine if one creature per CA level within range pretends to be something it is not, whether via sorcery or artifice. The spell will not reveal the exact nature of the creature; neither will it detect alignment or allow the caster to glean any additional information, but merely that the target is not what it feigns to be. Targets of this subtle spell are almost always unaware that sorcery is at work. Each, however, is allowed a <i>sorcery</i> saving throw to resist the spell.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
                     "spell_id": 116,
                     "spell_name": "Detect Venom",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>This spell has two functions: First, it reveals if an ailing person suffers the effects of poison, whether from a trap, snakebite, spider venom, or the like. The second function determines if a creature is venomous, or if an object is laced or trapped with poison. The creature or object in question must be viewed by the caster; obstructions will preclude the spell from functioning. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 325,
-                    "spell_name": "Remove Fear",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 63,
+                    "spell_name": "Command",
+                    "range": "30 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>The caster ensorcells the target of this spell with a single word of <i>command</i>, a word the victim is compelled to obey. The caster and victim must understand the same language, and the <i>command</i> must be clear. Typical <i>commands</i> include \u201cDie!\u201d, \u201cFall!\u201d, \u201cFlee!\u201d, \u201cJump!\u201d, \u201cSit!\u201d, \u201cSleep!\u201d, and \u201cStop!\u201d The victim will not actually die if commanded to do so but may fall and enter a state of unconsciousness, unless disturbed.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
                     "spell_id": 107,
                     "spell_name": "Detect Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": true,
+                    "pp": 191,
+                    "spell_desc": "<p>The sorcerer detects potent emanations of Evil in a 60-foot-long, 10-foot-wide path. Sources of Evil emanations might include Evil artefacts, d\u00e6mons, or the undead. <i>Detect evil</i> will not discern the alignment of other characters, even if they are Evil, unless the subject is of a pure and intense Evil (empowered by d\u00e6mons, for example) or is about to commit a most vile act. Clerics must brandish their holy symbols to cast this spell. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect evil</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead completely foils the spell. Evil sorcerers cast the reverse version of this spell, <i>detect good</i>, which functions the same way with regard to emanations of Good.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 1,
-                    "spell_id": 89,
-                    "spell_name": "Cure Light Wounds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 48,
-                    "spell_name": "Ceremony of Consecration",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 200,
-                    "spell_name": "Hold Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 325,
+                    "spell_name": "Remove Fear",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 225,
+                    "spell_desc": "<p>Grants the recipient steely resolve against the effects of sorcerous fright. Cast as a preparatory spell, any fearbased saving throws are made at +4 for 1 turn + 1 turn per CA level. Cast on one who already suffers the effects of fear, a new saving throw is allowed at a +2 bonus. The reverse of this spell, <i>cause fear</i>, requires a touch attack. If the target is struck and fails its <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable, it must flee from the caster at maximum MV for 1 round per CA level (or simply cower if cornered). <i>Cause fear</i> is broken if the victim is attacked.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
                     "spell_id": 454,
                     "spell_name": "Wyvern Warden",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "30 feet",
+                    "duration": "8 hours",
+                    "reversible": false,
+                    "pp": 246,
+                    "spell_desc": "<p>Taps the unspeakable power of the Black Gulf, conjuring a billowing black haze that assumes the vague shape of a <b>wyvern</b>: a large, two-legged dragon with a long, barbed tail. The <i>wyvern warden</i> is assigned a task of guardianship over a person, place, or thing. An approaching creature will not see the <i>wyvern warden</i> in the dark unless <i>detect magic</i> is cast. In naturally lit conditions, however, a wary approaching creature might discern the hazy, monstrous form.</p> <p>If anyone or anything approaches within 20 feet of the curling mass (except designated allies who were present and identified as such when the spell was cast), the <i>wyvern warden</i> lashes with its tail, striking without error. The victim must make a <i>death</i> saving throw or remain rigid for 1 round per CA level of the sorcerer. The <i>wyvern warden</i> will then disappear in a puff of black smoke, able to attack but one victim.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Suspends the deleterious effects of any toxin to which the subject has been exposed. This spell does not eliminate poison effects as <i>neutralize poison</i> does; as its title suggests, it but <i>delays poison</i>. Poisons that have an immediate impact cannot be <i>delayed</i>; however, poisons that have continuous or secondary effects are <i>delayed</i>. And if a poison has a delayed onset, it too is further <i>delayed</i>. Once the spell has ended, the poison\u2019s effects resume as normal.</p> <p>Note that if the poison affliction is the result of a venomous bite or sting, this spell can be used in conjunction with <i>draw poison</i> ability of barbarians and shamans. With the poison magically suspended in the victim\u2019s system, a barbarian or shaman can <i>draw poison</i> on a 5-in-6 chance of success for the duration of the spell.</p> <p>Lastly, <i>delay poison</i> may also revive one who has expired from poison, so long as the spell is cast within 12 rounds (2 minutes) of death and a successful <i>trauma survival</i> check is made (see <b>Chapter 3: Statistics</b>, <i>constitution</i>). The deceased poison victim is restored to 0 hp, albeit at a permanent loss of 1 constitution point.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 232,
-                    "spell_name": "Invisibility to Undead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 91,
+                    "spell_name": "Cure Moderate Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 2d8 hp of damage previously sustained. The reverse of this spell, <i>inflict moderate wounds</i>, is used to harm a living creature for 2d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
                     "spell_id": 127,
                     "spell_name": "Distinguish Alignment",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Allows the sorcerer to determine the exact alignment of the selected individual(s). One round is required for each person scanned, so six creatures can be scrutinized if all are within range. The caster must remain stationary, staring at each subject. No saving throw is allowed for this spell, and if the sorcerer exercises discretion, the spell\u2019s casting might go unnoticed.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
-                    "spell_id": 24,
-                    "spell_name": "Augury",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 6,
+                    "spell_name": "Aid",
+                    "range": "touch",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 176,
+                    "spell_desc": "<p>A single recipient gains a +1 bonus on any saving throw versus fear effects (whether <i>sorcery</i> or <i>device</i>), a +1 bonus on all attack rolls, and a temporary 1d8 hit point boost. These hit points may exceed the recipient\u2019s normal hp maximum. Any subsequent damage is drawn from the temporary hp first, the remainder disappearing when the spell ends. Lastly, if cast upon an NPC ally (henchman, hireling, etc.), the recipient gains a +1 bonus on any <i>morale</i> (ML) check.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 326,
-                    "spell_name": "Remove Paralysis",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 301,
+                    "spell_name": "Prayer",
+                    "range": "0",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 220,
+                    "spell_desc": "<p>The sorcerer chants eldritch invocations that effect a potent benison to allies\u2014and a malison to enemies\u2014 within a 25-foot radius. Allies gain +1 \u201cto hit,\u201d +1 damage, and +1 to saving throws; enemies are penalized \u22121 \u201cto hit,\u201d \u22121 damage, and \u22121 saving throws. The bonuses/penalties persist as long as the caster continues to chant and 3 rounds after ceasing to chant. <i>Dispel magic</i> or <i>silence</i> can break this spell.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 124,
+                    "spell_name": "Dispel Magic",
+                    "range": "120 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 193,
+                    "spell_desc": "<p>Sorcery and its effects are negated and removed in an area of 20 \u00d7 20 \u00d7 20 feet. The spell does not negate magic items but can undo a sorcerous effect created by one. It does not, however, negate illusions/phantasms. If <i>dispel magic</i> is used against a spell cast by a sorcerer of higher CA, the chance of failure is 1-in-20 per level difference. For instance, if a CA 6 caster attempts to <i>dispel</i> the <i>levitate</i> spell of a CA 10 sorcerer, there is a 4-in-20 chance of failure.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 3,
                     "spell_id": 80,
                     "spell_name": "Create Food and Water",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 187,
+                    "spell_desc": "<p>Nourishing food and water are created by the sorcerer, enough to feed one person per CA level. (For the purpose of this spell, consider a horse or camel equivalent to three people.) The conjured food is always fresh (not dried or preserved) and thus subject to spoilage unless <i>purify food and drink</i> is also cast.</p>"
                 }
             ]
         }

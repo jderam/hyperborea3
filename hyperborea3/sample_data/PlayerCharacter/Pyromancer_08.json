@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 15,
     "class_name": "Pyromancer",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "dx": {
-            "score": 10,
+            "score": 14,
             "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 4
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
         },
         "cn": {
-            "score": 11,
+            "score": 7,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 75,
+            "trauma_surv": 65,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 9,
+            "score": 12,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 9,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 14,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 320000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 5,
-        "short_name": "N",
-        "long_name": "Neutral"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 12,
-        "deity_name": "Mordezzan",
-        "primary_alignment": "Neutral"
+        "deity_id": 3,
+        "deity_name": "Aurorus",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 7,
-    "race": "Kelt",
+    "race_id": 2,
+    "race": "Amazon",
     "gender": "Female",
+    "secondary_skill": "cart-/wainwright",
     "hd": "8d4",
-    "hp": 19,
+    "hp": 27,
     "fa": 3,
     "ca": 8,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -162,7 +164,7 @@
             "qty": 4,
             "ammunition": null,
             "missile_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -187,18 +189,109 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 3,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "pyr": {
             "spells_per_day": {
-                "lvl1": 4,
-                "lvl2": 4,
+                "lvl1": 5,
+                "lvl2": 5,
                 "lvl3": 3,
                 "lvl4": 2,
                 "lvl5": 0,
@@ -208,112 +301,112 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>Inures the subject\u2019s body to the effects of intense heat. Even clad in full armour, the recipient can withstand temperatures as high as 120\u00b0F without suffering any ill effects. Fire and magical fire attacks are saved against with a +2 bonus.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
                     "spell_id": 103,
                     "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Allows the caster to construe script that is otherwise unintelligible (except magical writing). Treasure maps and secret symbols may also be decoded.</p>"
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 166,
+                    "spell_name": "Flaming Missile",
+                    "range": "90 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>A fiery dart shoots from the caster\u2019s pointed forefinger, automatically striking any visible target for 1d4+1 hp damage (1d6+1 hp versus undead). At CA 3, two darts can be fired; three darts at CA 5; four darts at CA 7; and so on. <i>Flaming missiles</i> can be divided amongst multiple targets, so long as they are all within range.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 185,
-                    "spell_name": "Glitterdust",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 72,
+                    "spell_name": "Continuous Light",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 186,
+                    "spell_desc": "<p>Creates a 60-foot-diameter sphere of lambent light, the subtle hue of which may be selected by the caster. It cannot be cast on a single target or object, but rather on an area. The effect is permanent (unless <i>dispelled</i>), so long as the caster remains within 10 miles; otherwise, the dweomer begins to dissipate in subtle degrees, ending in a number of months equal to the sorcerer\u2019s CA. <i>Continuous light</i> can counter <i>continuous darkness</i> and <i>darkness</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 230,
-                    "spell_name": "Invisibility",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
+                    "range": "0",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A breeze blows from the caster (in the direction the sorcerer faces) in a 10-foot-wide path that is 5 feet long per CA level; e.g., a CA 6 sorcerer can evoke a <i>gust of wind</i> that is 10 feet wide and 30 feet long. <i>Gust of wind</i> extinguishes small fires, though it fans and excites the flames of larger blazes; too, it disperses and thus dispels magical clouds, fogs, and smoke, such as <i>cloudkill</i>, <i>fog cloud</i>, and <i>stinking cloud</i>. At its greatest effectiveness, this spell can belly the sail of a small craft.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 450,
-                    "spell_name": "Witch Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 155,
+                    "spell_name": "Fire Protection",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>Shelters the caster or other recipient from any damage related to normal fire for one hour per CA level. Against magical fire (e.g., <i>fireball</i>, a <b>hell hound\u2019s</b> breath, a <b>flame tongue</b> sword), the sorcerer gains immunity from a single attack before the spell is broken; a recipient of this spell other than the sorcerer simply gains a +4 saving throw bonus versus magical fire attacks.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 163,
-                    "spell_name": "Flame Arrow",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 312,
+                    "spell_name": "Protection from Evil, 15\u0384 r.",
+                    "range": "0",
+                    "duration": "12 turns (2 hours)",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>A pale, 15-foot-radius circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking the sorcerer or any allies who are within. Against other Evil creatures, the sorcerer and allies enjoy a +1 bonus to AC, DR, and saving throws versus their attacks. As the caster moves, so too does the <i>protection</i> circle. The reverse of this spell, <i>protection from good, 15\u0384 r.</i>, is cast by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 160,
-                    "spell_name": "Fire Trap",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 307,
+                    "spell_name": "Produce Bonfire",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>Causes a fire to ignite magically, a full, roaring blaze as large as 12 feet in diameter. If cast upon an appropriate pile of wood, the bonfire can persist for one day per CA level; if made to spring from thin air, it lasts but 1 turn per CA level. Creatures in the area of effect suffer 1d4 hp damage unless they make an <i>avoidance</i> saving throw. Any combustibles worn by the victims (e.g., cotton, linen, wool) might be damaged or destroyed by the <i>produce bonfire</i> spell; certainly, paper and parchment stand no chance of survival. The reverse of this spell, <i>quench bonfire</i>, extinguishes any normal fire within the spell\u2019s range and area of effect.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 4,
                     "spell_id": 158,
                     "spell_name": "Fire Shield",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 198,
+                    "spell_desc": "<p>Blue-green wisps of flame radiate from the caster\u2019s body, emitting 15 feet of light. The sorcerer is thus protected against cold-based spells/effects and gains a +2 saving throw bonus versus such attacks, sustaining no damage if the save is made and no more than half damage if the save fails. Alternatively, violet-blue flames radiate from the caster, protecting the sorcerer from fire-based attacks instead (+2 saves, no damage if save is made, half damage if save fails). No matter which variation is cast, melee attacks that strike the caster cause the assailant twice as many hit points of damage as inflicted in the form of a fiery backlash.</p>"
                 }
             ]
         }

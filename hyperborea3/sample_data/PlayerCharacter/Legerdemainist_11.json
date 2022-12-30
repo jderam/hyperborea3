@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 24,
     "class_name": "Legerdemainist",
     "attr": {
         "st": {
+            "score": 11,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
+        },
+        "dx": {
+            "score": 14,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 16
+        },
+        "cn": {
             "score": 6,
-            "atk_mod": -1,
-            "dmg_adj": -1,
+            "hp_adj": -1,
+            "poison_adj": -1,
+            "trauma_surv": 55,
             "test": 1,
             "feat": 1
         },
-        "dx": {
-            "score": 17,
-            "atk_mod": 1,
-            "def_adj": 2,
-            "test": 4,
-            "feat": 32
-        },
-        "cn": {
-            "score": 13,
-            "hp_adj": 1,
-            "poison_adj": 0,
-            "trauma_surv": 80,
-            "test": 3,
-            "feat": 8
-        },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
-        },
-        "ws": {
             "score": 13,
-            "will_adj": 0,
+            "lang": 1,
             "bonus_spells": 1,
             "learn_spell": 65
         },
+        "ws": {
+            "score": 11,
+            "will_adj": 0,
+            "bonus_spells": 0,
+            "learn_spell": 50
+        },
         "ch": {
-            "score": 8,
-            "react_adj": -1,
-            "max_henchmen": 3,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 880000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 3,
-        "short_name": "LE",
-        "long_name": "Lawful Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 19,
-        "deity_name": "Yig",
-        "primary_alignment": "Lawful"
+        "deity_id": 21,
+        "deity_name": "Ymir",
+        "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 10,
+    "race": "Pict",
     "gender": "Female",
+    "secondary_skill": "navigator",
     "hd": "9d6+4",
-    "hp": 45,
+    "hp": 25,
     "fa": 7,
     "ca": 11,
     "ta": 0,
@@ -114,7 +116,7 @@
         "cost": 5,
         "weight": 5
     },
-    "ac": 3,
+    "ac": 4,
     "mv": 40,
     "weapons_melee": [
         {
@@ -130,9 +132,9 @@
             "weight": 1,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": -1,
-            "hurled_atk": 1,
-            "dmg_adj": -1,
+            "melee_atk": 0,
+            "hurled_atk": 0,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -148,9 +150,9 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": -1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -167,7 +169,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 1,
+            "missile_atk": 0,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -190,16 +192,224 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
             "thief_skill": "climb",
             "skill_name": "Climb",
-            "skill_roll": 11,
+            "skill_roll": 10,
             "stat": "dx"
         },
         {
@@ -217,31 +427,31 @@
         {
             "thief_skill": "hide",
             "skill_name": "Hide",
-            "skill_roll": 11,
+            "skill_roll": 10,
             "stat": "dx"
         },
         {
             "thief_skill": "manipulate_traps",
             "skill_name": "Manipulate Traps",
-            "skill_roll": 9,
+            "skill_roll": 8,
             "stat": "dx"
         },
         {
             "thief_skill": "move_silently",
             "skill_name": "Move Silently",
-            "skill_roll": 11,
+            "skill_roll": 10,
             "stat": "dx"
         },
         {
             "thief_skill": "open_locks",
             "skill_name": "Open Locks",
-            "skill_roll": 9,
+            "skill_roll": 8,
             "stat": "dx"
         },
         {
             "thief_skill": "pick_pockets",
             "skill_name": "Pick Pockets",
-            "skill_roll": 10,
+            "skill_roll": 9,
             "stat": "dx"
         }
     ],
@@ -249,7 +459,7 @@
     "spells": {
         "mag": {
             "spells_per_day": {
-                "lvl1": 3,
+                "lvl1": 4,
                 "lvl2": 3,
                 "lvl3": 2,
                 "lvl4": 0,
@@ -260,123 +470,123 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Enlargement",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 1,
-                    "spell_id": 366,
-                    "spell_name": "Sorcerous Armour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 53,
+                    "spell_name": "Charm Person",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>The target of this spell (human, humanoid, or giant) must make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the save fails, the victim views the caster as a close and trusted comrade to be protected and defended for the duration of the spell. If the ensorcelled victim understands the caster\u2019s language, the caster can \u201csuggest\u201d the victim perform various tasks, so long as they are not diametrically opposite to the victim\u2019s nature.</p> <p>The spell <i>dispel magic</i> can cancel this spell. Otherwise, additional <i>sorcery</i> saving throws (<i>willpower adjustment</i> applies) are allowed to break the spell at a time predicated on the targets intelligence (IN) score.:</p> <ul><li>13\u201318 IN = new save every 6 turns</li> <li>9\u201312 IN = new save every 24 hours</li> <li>3\u20138 IN = new save once per week</li></ul>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
                     "spell_id": 201,
                     "spell_name": "Hold Portal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "25 feet",
+                    "duration": "2d6 turns",
+                    "reversible": false,
+                    "pp": 205,
+                    "spell_desc": "<p>Magically secures a door, gate, or the like. A <i>dispel magic</i> spell negates it, a <i>knock</i> spell opens it, or a strong person or monster might break it down: 1-in-12 chance for 17 ST, 1-in-6 chance for 18 ST. Too, a character with the <i>open locks</i> special ability can attempt to disrupt the <i>hold portal</i> spell using thieves\u2019 tools; however, the chance-in-twelve of success is reduced by 2. Lastly, <i>hold portal</i> can be bypassed by any magician (or magician subclass) whose CA is at least 3 levels greater than the one who placed the dweomer. The duration of the spell should be rolled in secret by the referee.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 366,
+                    "spell_name": "Sorcerous Armour",
+                    "range": "touch",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 231,
+                    "spell_desc": "<p>A sorcerous force field equivalent to leather armour (AC 7) surrounds the beneficiary of this enchantment. The spell has no effect on an armoured recipient, but a creature with natural AC 7 or better gains a +1 AC bonus. This spell persists until <i>dispelled</i>, or until the recipient sustains cumulative damage totalling 10 hp, +1 hp per CA level.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 445,
-                    "spell_name": "Web",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 96,
+                    "spell_name": "Darkness",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Evokes magical blackness to consume a 15-foot radius from its selected target point. Torch and lantern light are rendered ineffective, and <i>infrared vision</i> is futile. If <i>darkness</i> is cast on an unwilling creature, a <i>sorcery</i> saving throw is allowed to negate the spell. Creatures affected by <i>darkness</i> suffer effects similar to blindness: automatic loss of initiative and \u22124 penalties on attack rolls, armour class, and saving throws. <i>Darkness</i> can counter <i>continuous light</i> and <i>light</i>.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 260,
-                    "spell_name": "Mind Blank",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 143,
+                    "spell_name": "Extrasensory Perception",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Allows the caster, who must pinch a copper coin betwixt thumb and forefinger, to detect the vague surface thoughts (not precise words) of any creature within the spell\u2019s range, so long as the creature has thoughts. (Most undead and constructs, for example, do not.) <i>Extrasensory perception</i> targets a single creature; once selected, another cannot be targeted. No saving throw is allowed unless the target is of 6 HD or greater. If so, a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable, must be made. When reading the surface thoughts of a lower-order creature, only its most basic instincts will be revealed. The spell also can be used to determine if a monster lurks behind a door or down a dark tunnel (so long as the monster is within range). The spell can penetrate one inch of metal, six inches of stone, or one foot of wood; however, the thinnest sheet of lead will obstruct it.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 347,
-                    "spell_name": "Shatter",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 192,
+                    "spell_name": "Gust of Wind",
+                    "range": "0",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A breeze blows from the caster (in the direction the sorcerer faces) in a 10-foot-wide path that is 5 feet long per CA level; e.g., a CA 6 sorcerer can evoke a <i>gust of wind</i> that is 10 feet wide and 30 feet long. <i>Gust of wind</i> extinguishes small fires, though it fans and excites the flames of larger blazes; too, it disperses and thus dispels magical clouds, fogs, and smoke, such as <i>cloudkill</i>, <i>fog cloud</i>, and <i>stinking cloud</i>. At its greatest effectiveness, this spell can belly the sail of a small craft.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 392,
-                    "spell_name": "Summon D\u00e6mon I",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 113,
+                    "spell_name": "Detect Silence",
+                    "range": "120 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Allows the caster to hear that which is magically <i>silenced</i> or <i>moving silently</i> (thieves, barbarians, assassins, et al.) in a 120-foot radius. The spell attunes the caster to subtleties of sound otherwise imperceptible, such as a whisper behind a closed door. If the caster enters a deep trance, <i>detect silence</i> can also be used to perceive noises made in parallel dimensions.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 225,
-                    "spell_name": "Infrared Vision",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 342,
+                    "spell_name": "Sepia Snake Sigil",
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 228,
+                    "spell_desc": "<p>The casting of this spell requires snake scales and powdered amber of 100-gp value. The spell may be executed via one of three methods:</p> <ol><li>Glowing sigil drawn in the air and directed at a target</li> <li>Grey-brown sigil inscribed upon an object that, if studied or touched, activates the dweomer</li> <li>Small character inscribed into a book or scroll that, if studied or touched, activates the dweomer</li></ol> <p>Whichever the method, a brown, serpentine force is evoked to strike its nearest victim. It attacks at a fighting ability (FA) equal to the sorcerer\u2019s casting ability (CA). If the <i>sepia snake sigil</i> hits its target, the victim is imprisoned and paralyzed within a shimmering amber force field. This lasts until the caster releases the victim, the caster dies, or <i>dispel magic</i> is cast. No saving throw is allowed for creatures of 8 HD or less; however, a <i>sorcery</i> saving throw is allowed for creatures of 9 HD or greater. Nothing can approach an entrapped victim; all attempts are rebuffed by the force field. The imprisoned will not age, sleep, nor grow hungry; neither will it be aware of what transpires without. If the <i>sepia snake sigil</i> misses its target, it disappears in a puff of brown smoke.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 331,
-                    "spell_name": "Rope Trick",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 239,
+                    "spell_name": "Lightning Bolt",
+                    "range": "180 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>A bolt of lightning 5 feet wide and 60 feet long erupts from the outstretched hands of the sorcerer, striking all within its path until it reaches maximum range. Struck creatures suffer 1d6 hp damage per CA level, with <i>sorcery</i> saving throws allowed for half damage.</p> <p>The <i>lightning bolt</i> will travel its full range of 180 feet before ceasing; if it strikes a wall or another solid surface before reaching its 180-foot range, it will rebound, potentially striking again those within its path\u2014and possibly the caster. For example, if a CA 9 sorcerer casts this spell whilst in the doorway of a 70 \u00d7 70-foot room, the <i>bolt</i> will strike its targets for 9d6 hp damage, strike the far wall, bounce back, hit the targets again (they get another saving throw for half damage), strike the caster, and then travel another 40 feet before dissipating.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 163,
-                    "spell_name": "Flame Arrow",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 411,
+                    "spell_name": "Tiny Hut",
+                    "range": "0",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 240,
+                    "spell_desc": "<p>A hemispherical globe of force is evoked, surrounding the sorcerer and providing suitable shelter for as many as six companions. The <i>tiny hut</i> is 15 feet in base diameter, with walls that arch to an apex 7\u00bd feet high. It has an opaque exterior, but from the inside the walls appear transparent, allowing its inhabitants to see the outdoors with perfect clarity, unless the caster wills it to opacity.</p> <p>The <i>tiny hut</i> interior temperature is mild and comfortable (about 70\u00b0F). This condition is maintained so long as the temperature without is no warmer than 110\u00b0F and no colder than \u221210\u00b0F; for every degree warmer or colder, the interior temperature of the <i>tiny hut</i> will rise or drop accordingly. A lambent light emanates from the interior ceiling upon the command of the caster.</p> <p>The <i>tiny hut</i> can survive strong winds, rain, sleet, hail, and snow, but it is vulnerable to attack: If struck, it can sustain only 6 hp damage before it is destroyed. Whereas the caster\u2019s companions are free to enter and exit the <i>tiny hut</i>, once the caster leaves, the spell terminates.</p>"
                 }
             ]
         }

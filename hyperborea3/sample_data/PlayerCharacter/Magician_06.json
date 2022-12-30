@@ -1,68 +1,70 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 2,
     "class_name": "Magician",
     "attr": {
         "st": {
-            "score": 8,
+            "score": 11,
             "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
-        },
-        "dx": {
-            "score": 7,
-            "atk_mod": 0,
-            "def_adj": -1,
-            "test": 2,
-            "feat": 2
-        },
-        "cn": {
-            "score": 10,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
-        "in": {
+        "dx": {
             "score": 13,
+            "atk_mod": 0,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 8
+        },
+        "cn": {
+            "score": 8,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
+        },
+        "in": {
+            "score": 16,
             "lang": 1,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 7,
+            "score": 10,
             "will_adj": 0,
             "bonus_spells": 0,
-            "learn_spell": 0
+            "learn_spell": 50
         },
         "ch": {
-            "score": 10,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
     "xp": 40000,
     "level": 6,
     "xp_to_next": 80000,
-    "xp_bonus": false,
+    "xp_bonus": true,
     "alignment": {
-        "align_id": 2,
-        "short_name": "CG",
-        "long_name": "Chaotic Good"
+        "align_id": 1,
+        "short_name": "CE",
+        "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 24,
-        "deity_name": "Yug",
-        "primary_alignment": "Chaotic"
+        "deity_id": 15,
+        "deity_name": "Thaumagorga",
+        "primary_alignment": "Evil"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 6,
+    "race": "Ixian",
     "gender": "Female",
+    "secondary_skill": "carpenter",
     "hd": "6d4",
-    "hp": 18,
+    "hp": 19,
     "fa": 2,
     "ca": 6,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 10,
+    "ac": 8,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": -1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -191,13 +193,67 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "mag": {
             "spells_per_day": {
                 "lvl1": 6,
-                "lvl2": 4,
+                "lvl2": 5,
                 "lvl3": 3,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -207,90 +263,90 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 350,
-                    "spell_name": "Shocking Grasp",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 53,
-                    "spell_name": "Charm Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 1,
-                    "spell_id": 133,
-                    "spell_name": "Enlargement",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 9,
+                    "spell_name": "Alarm",
+                    "range": "10 feet per CA level",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 176,
+                    "spell_desc": "<p>Cast upon as many doors, gates, portals, or other point of ingress/egress that are within the caster\u2019s range. This spell is triggered by the passage of any living creature larger than a rat (3+ lbs.), evoking a sound not unlike bells pealing. Undead, constructs, and other non-living entities will not activate the <i>alarm</i> spell; neither will incorporeal beings, though invisible creatures will set off the spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
                     "spell_id": 224,
                     "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 1,
+                    "spell_id": 190,
+                    "spell_name": "Grease",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A fatty, unctuous film coats an area of effect equal to 2 \u00d7 2 feet per CA level (e.g., a CA 10 sorcerer affects an area not exceeding 20 \u00d7 20 feet). Any creature that steps on the <i>greased</i> area will slip and fall unless it makes an <i>avoidance</i> saving throw. A fallen victim is momentarily <i>prone</i>. <i>Grease</i> is not limited to flooring; it can be used to lubricate a rope, a chair, or other objects. If the spell is cast on something an enemy holds or wears, a <i>sorcery</i> saving throw negates the effects.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 96,
-                    "spell_name": "Darkness",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 248,
+                    "spell_name": "Magic Mouth",
+                    "range": "10 feet",
+                    "duration": "permanent (until triggered)",
+                    "reversible": false,
+                    "pp": 212,
+                    "spell_desc": "<p>Once activated, this enchantment causes a two-footwide illusory mouth to manifest. The <i>magic mouth</i> appears where the caster places the spell. It might be triggered by movement within 10 feet of it, or by other conditions as the caster prescribes, though the trigger range can be no greater than 10 feet. (For instance, placed upon a door, the <i>magic mouth</i> might only appear if the door is rapped on.)</p> <p>Once triggered, the <i>magic mouth</i> speaks a message that may not exceed 25 words. It might speak in a sibilant tongue, a commanding tone, a kind voice, or any like variation, though only in a language known by the caster. <i>Dispel magic</i> terminates this enchantment.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 113,
-                    "spell_name": "Detect Silence",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 320,
+                    "spell_name": "Ray of Enfeeblement",
+                    "range": "30 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 224,
+                    "spell_desc": "<p>From the hand of the caster springs a silvery flash of light that automatically strikes its intended target, sapping the victim of 4 strength points. A <i>sorcery</i> saving throw negates this spell. If a monster is affected, the referee should reduce damage dice: d20 reduced to d12; d12 to d10; d10 to d8; d8 to d6; d6 to d4; d4 to d3; d3 to d2; d2 to 1. Bonuses to damage dice should also be proportionately reduced, so a creature that normally inflicts 1d8+2 hp damage should inflict 1d6+1 hp damage, and so on.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 401,
-                    "spell_name": "Summon Monster I",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 34,
+                    "spell_name": "Blink",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 180,
+                    "spell_desc": "<p>Randomly the sorcerer \u201cblinks\u201d in and out of existence, making short (2d4-foot) planar jumps through the \u00c6ther and back. The caster may attack whilst <i>blinking</i> (if within range), but at a \u22124 \u201cto hit\u201d penalty. If the caster wins initiative, all melee and missile attacks against him or her will automatically miss. If the caster loses initiative, he or she is subject to attack, though only once from each attacker. The caster can be targeted by area effect spells such as <i>fireball</i> or <i>web</i>, or by breath weapons, if the original position and the <i>blink</i> location are both within the area of effect. The direction of the <i>blink</i> is determined by a d8 roll:</p> <ol> <li>north</li> <li>northeast</li> <li>east</li> <li>southeast</li> <li>south</li> <li>southwest</li> <li>west</li> <li>northwest</li> </ol> <p>If a solid object blocks the <i>blink</i> location, the sorcerer will be displaced as far as 15 feet in the determined direction in order to reappear. If solid matter still blocks re-emergence, the sorcerer will be trapped in another dimension, perhaps the plane where dwells Kraken.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 44,
-                    "spell_name": "Cataleptic State",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 218,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 20 \u00d7 20 \u00d7 20 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight, not of sound, smell, or temperature.</p> <p>Once cast, this spell persists as long as the caster concentrates, unless the illusion is touched or terminated via a <i>dispel phantasm</i> spell. A <i>phantasmal</i> monster is AC 9 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require complete concentration, and no movement is allowed.</p> <p><i>Phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the soundlessness of the illusion (e.g., a charging mammoth); in other instances, such as a <i>phantasm</i> of fire, a lack of thermal properties can create suspicion. To the eyes of the disbeliever, the <i>phantasm</i> becomes a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp base damage, +1 hp damage per CA level, per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 }
             ]
         }
@@ -307,7 +363,7 @@
             "class_id": 2,
             "level": 1,
             "ability_title": "Familiar",
-            "brief_desc": "magical animal companion. [Owl, 3 hp]",
+            "brief_desc": "magical animal companion. [Cat, 2 hp]",
             "ability_desc": null
         },
         {

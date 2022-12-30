@@ -1,14 +1,15 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 24,
     "class_name": "Legerdemainist",
     "attr": {
         "st": {
-            "score": 15,
-            "atk_mod": 1,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 16
+            "score": 11,
+            "atk_mod": 0,
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
             "score": 12,
@@ -18,7 +19,7 @@
             "feat": 12
         },
         "cn": {
-            "score": 12,
+            "score": 11,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,21 +27,21 @@
             "feat": 4
         },
         "in": {
-            "score": 14,
+            "score": 16,
             "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
+        },
+        "ws": {
+            "score": 14,
+            "will_adj": 0,
             "bonus_spells": 1,
             "learn_spell": 65
         },
-        "ws": {
-            "score": 11,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
-        },
         "ch": {
-            "score": 11,
-            "react_adj": 0,
-            "max_henchmen": 4,
+            "score": 13,
+            "react_adj": 1,
+            "max_henchmen": 6,
             "turn_adj": 0
         }
     },
@@ -49,20 +50,21 @@
     "xp_to_next": 704000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 1,
-        "short_name": "CE",
-        "long_name": "Chaotic Evil"
+        "align_id": 2,
+        "short_name": "CG",
+        "long_name": "Chaotic Good"
     },
     "deity": {
-        "deity_id": 9,
-        "deity_name": "Kthulhu",
+        "deity_id": 24,
+        "deity_name": "Yug",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
-    "gender": "Female",
+    "race_id": 11,
+    "race": "Pict (Half-Blood)",
+    "gender": "Male",
+    "secondary_skill": "fisherman/whaler",
     "hd": "9d6+2",
-    "hp": 31,
+    "hp": 39,
     "fa": 7,
     "ca": 10,
     "ta": 0,
@@ -130,9 +132,9 @@
             "weight": 1,
             "qty": 2,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -148,9 +150,9 @@
             "weight": 3,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 1,
+            "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -190,10 +192,218 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -205,7 +415,7 @@
         {
             "thief_skill": "decipher_script",
             "skill_name": "Decipher Script",
-            "skill_roll": 4,
+            "skill_roll": 5,
             "stat": "in"
         },
         {
@@ -250,7 +460,7 @@
         "mag": {
             "spells_per_day": {
                 "lvl1": 4,
-                "lvl2": 2,
+                "lvl2": 3,
                 "lvl3": 2,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -260,112 +470,112 @@
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 233,
-                    "spell_name": "Jump",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 201,
+                    "spell_name": "Hold Portal",
+                    "range": "25 feet",
+                    "duration": "2d6 turns",
+                    "reversible": false,
+                    "pp": 205,
+                    "spell_desc": "<p>Magically secures a door, gate, or the like. A <i>dispel magic</i> spell negates it, a <i>knock</i> spell opens it, or a strong person or monster might break it down: 1-in-12 chance for 17 ST, 1-in-6 chance for 18 ST. Too, a character with the <i>open locks</i> special ability can attempt to disrupt the <i>hold portal</i> spell using thieves\u2019 tools; however, the chance-in-twelve of success is reduced by 2. Lastly, <i>hold portal</i> can be bypassed by any magician (or magician subclass) whose CA is at least 3 levels greater than the one who placed the dweomer. The duration of the spell should be rolled in secret by the referee.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 365,
-                    "spell_name": "Sorcerer Mark",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 353,
+                    "spell_name": "Shove",
+                    "range": "50 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>Evokes an invisible force to push a creature or object. The caster discharges 10 pounds of force per CA level. Inanimate objects do not gain saving throws but might not be affected depending on their weight and mass, as judged by the referee. A targeted creature is allowed a <i>sorcery</i> saving throw to negate the effects of this spell. An affected target is pushed five feet, plus one foot per CA level. Generally, 20\u201330 pounds of force will push a Small creature, 40\u201360 pounds of force will push a Medium creature, and 70+ pounds of force will push a Large creature. Of course, common sense must prevail; e.g., an <b>albino ape</b> may be pushed back by 90 pounds of force, but <b>woolly mammoths</b> and other huge creatures are unlikely to be moved.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
-                    "spell_id": 258,
-                    "spell_name": "Message",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 350,
+                    "spell_name": "Shocking Grasp",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>The sorcerer touches a target, unleashing a jolt of electricity that delivers 1d8 hp damage, +1 hp per CA level (so a CA 3 sorcerer delivers 1d8+3 hp damage). The sorcerer must be able to touch the victim or a reasonable conductor in contact with the victim. If the sorcerer\u2019s attack is a miss, subsequent attempts may be made in the following rounds of combat, but any action other than half movement breaks the spell. <i>N.B.:</i> Metal armour is ignored when calculating the victim\u2019s armour class, if applicable.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 1,
                     "spell_id": 169,
                     "spell_name": "Floating Disc",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "12 turns (2 hours) per CA level",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>Causes a flat, shield-sized disc to materialize behind the caster. The <i>floating disc</i> glides horizontally and follows the caster at about waist level, remaining 6\u201310 feet behind and moving at the caster\u2019s MV rate. The <i>disc</i> can bear 500 pounds; anything greater will ground it. When the spell ends, the <i>floating disc</i> disappears, and anything it bore falls to the ground.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 347,
+                    "spell_name": "Shatter",
+                    "range": "60 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>Causes all non-magical objects of baked clay, ceramic, crystal, earthenware, glass, porcelain, or other like material to splinter into hundreds of shards. The spell is released in a 60-foot-long, 10-foot-wide path of destruction. Objects weighing more than 10 pounds are not subject to this spell.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 78,
-                    "spell_name": "Cool Metal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 173,
+                    "spell_name": "Fool\u2019s Gold",
+                    "range": "10 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 200,
+                    "spell_desc": "<p>Temporarily transforms baser coins to gold, affecting 100 coins per CA level. Laying this dweomer requires one gold coin per 100 coins to be altered. The component coin must be ground to dust and sprinkled over the coins to be transmuted. To the unwary, the coins have the look, feel, and weight of gold; to the canny, they may be identified as counterfeits. <i>Sorcery</i> saving throws may be made by those who handle the <i>fool\u2019s gold</i>. The saving throws are modified by <i>willpower adjustment</i>, if applicable; magicians, thieves, and some professionals (e.g., jewellers, shrewd merchants or barkeeps) gain +3 save bonuses.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 2,
-                    "spell_id": 334,
-                    "spell_name": "Scare",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "mag",
-                    "spell_level": 3,
-                    "spell_id": 386,
-                    "spell_name": "Suggestion",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 264,
+                    "spell_name": "Mirror Image",
+                    "range": "0",
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 214,
+                    "spell_desc": "<p>Evokes 1d4+1 illusory duplicates of the sorcerer. Each <i>mirror image</i> is indistinguishable from the caster. Each is AC 9, modified by the <i>defence adjustment</i> of the caster, if applicable; each dissipates if struck. When the caster is attacked, the referee must assign a probability by which the <i>mirror images</i> have an equal chance to be targeted. For example, if two <i>images</i> appear, a d6 may be used: <i>1\u20132</i> = the caster; <i>3\u20134</i> = <i>image</i> one; <i>5\u20136</i> = <i>image</i> two. The <i>images</i> duplicate the movements of the caster and appear to switch places with one another, so even in melee the caster is indistinguishable from the duplicates.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
                     "spell_id": 412,
                     "spell_name": "Tongues",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 turn",
+                    "reversible": true,
+                    "pp": 240,
+                    "spell_desc": "<p>Enables the sorcerer to speak the language of any intelligent creature within 50 feet, including secret languages such as Druidic or Thieves\u2019 Cant. Once the spell\u2019s duration ends, the caster retains no knowledge or memory of otherwise unknown languages. The reverse of this spell, <i>gibberish</i>, confuses and jumbles the words of all speakers within 50 feet (except those of the caster), pending individual <i>sorcery</i> saving throws, modified by <i>willpower adjustment</i>, if applicable. Spells may also be jumbled to ineffectiveness, but this allows for a second <i>sorcery</i> saving throw, with +1 for every CA level of the opposing caster.</p>"
                 },
                 {
                     "school": "mag",
                     "spell_level": 3,
-                    "spell_id": 124,
-                    "spell_name": "Dispel Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 331,
+                    "spell_name": "Rope Trick",
+                    "range": "0",
+                    "duration": "2 turns per CA level",
+                    "reversible": false,
+                    "pp": 226,
+                    "spell_desc": "<p>The sorcerer casts skyward a rope of 5- to 25-foot length. The rope stands rigid and upright; it then may be climbed. At the apex, the caster and as many as five allies can enter and hide in a small extra-dimensional space. This pocket dimension is a grey, opaque, featureless cube of 20 \u00d7 20 \u00d7 20 feet, illumed dimly within, the air breathable. The rope remains hanging; if pulled, the hiders will fall out, spilling to the ground. Similarly, if the spell expires, those within the extra-dimensional space precipitate to the ground.</p>"
+                },
+                {
+                    "school": "mag",
+                    "spell_level": 3,
+                    "spell_id": 287,
+                    "spell_name": "Phantasm",
+                    "range": "240 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 218,
+                    "spell_desc": "<p>A visual illusion is created, a projected image of nearly anything the caster can imagine, as large as 20 \u00d7 20 \u00d7 20 feet in area. Victims must be living creatures of animal intelligence or greater; undead, constructs, oozes, and the like are unaffected. <i>Phantasm</i> can be used to create an attacking monster or another damaging hazard, but the illusion is strictly of sight, not of sound, smell, or temperature.</p> <p>Once cast, this spell persists as long as the caster concentrates, unless the illusion is touched or terminated via a <i>dispel phantasm</i> spell. A <i>phantasmal</i> monster is AC 9 and will disappear if hit; otherwise, it can continue to attack as manipulated by the caster. The caster can direct the illusion to move anywhere within the spell\u2019s range; such manoeuvres require complete concentration, and no movement is allowed.</p> <p><i>Phantasm</i> targets are not allowed saving throws unless the referee feels the illusion is unbelievable to the viewers, in which case <i>sorcery</i> saving throws should be rolled, modified by <i>willpower adjustment</i>, if applicable. Credibility may come into question because of the soundlessness of the illusion (e.g., a charging mammoth); in other instances, such as a <i>phantasm</i> of fire, a lack of thermal properties can create suspicion. To the eyes of the disbeliever, the <i>phantasm</i> becomes a flawed and flickering transparent image. An intelligent disbeliever may then alert allies, whose saves are made at a bonus of +4. Otherwise, this illusion can inflict real physical damage: 1d4 hp base damage, +1 hp damage per CA level, per round to each victim. Such damage remains even if the spell is subsequently broken.</p>"
                 }
             ]
         }

@@ -1,44 +1,45 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 15,
     "class_name": "Pyromancer",
     "attr": {
         "st": {
-            "score": 14,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": -1,
+            "test": 2,
+            "feat": 2
         },
         "dx": {
-            "score": 12,
+            "score": 7,
             "atk_mod": 0,
-            "def_adj": 0,
+            "def_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "cn": {
-            "score": 9,
+            "score": 7,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 75,
+            "trauma_surv": 65,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "in": {
-            "score": 17,
-            "lang": 2,
-            "bonus_spells": 3,
-            "learn_spell": 85
+            "score": 16,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
-            "score": 11,
-            "will_adj": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 14,
+            "score": 13,
             "react_adj": 1,
             "max_henchmen": 6,
             "turn_adj": 0
@@ -54,15 +55,16 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 12,
-        "deity_name": "Mordezzan",
+        "deity_id": 11,
+        "deity_name": "Lunaqqua",
         "primary_alignment": "Neutral"
     },
     "race_id": 1,
     "race": "Common",
     "gender": "Female",
+    "secondary_skill": "bowyer/fletcher",
     "hd": "9d4+3",
-    "hp": 22,
+    "hp": 27,
     "fa": 5,
     "ca": 12,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 9,
+    "ac": 10,
     "mv": 40,
     "weapons_melee": [
         {
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": null,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -162,7 +164,7 @@
             "qty": 4,
             "ammunition": null,
             "missile_atk": 0,
-            "dmg_adj": 1,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -187,10 +189,101 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -199,7 +292,7 @@
             "spells_per_day": {
                 "lvl1": 6,
                 "lvl2": 6,
-                "lvl3": 5,
+                "lvl3": 4,
                 "lvl4": 4,
                 "lvl5": 3,
                 "lvl6": 2
@@ -208,156 +301,156 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
+                    "spell_id": 41,
+                    "spell_name": "Burning Hands",
+                    "range": "5 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 181,
+                    "spell_desc": "<p>Jets of thin, multihued flames spring from the fingertips of the caster\u2019s enveloped-in-flames hands, fanning out in a 120\u00b0 horizontal arc and causing 2 hp damage per CA level, with no saving throw allowed. Combustible materials (e.g., cloth, paper, dry wood) are likely ignited if exposed to <i>burning hands</i>.</p>"
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": "0",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>A pale circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking. Against other Evil creatures, the sorcerer enjoys a +1 bonus to AC, DR, and saving throws versus their attacks. The reverse of this spell, <i>protection from good</i>, can be cast only by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 1,
                     "spell_id": 224,
                     "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 103,
-                    "spell_name": "Decipher Language",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
-                    "spell_id": 166,
-                    "spell_name": "Flaming Missile",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 1,
-                    "spell_id": 366,
-                    "spell_name": "Sorcerous Armour",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 225,
-                    "spell_name": "Infrared Vision",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 164,
+                    "spell_name": "Flame Blade",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>The sorcerer must grip a bladeless hilt (of any sword or dagger) to cast this spell. Upon reciting a sibilant incantation, a <i>flame blade</i> in the shape of a long scimitar springs from the bladeless hilt. The <i>flame blade</i> may be wielded as though it were a magical scimitar, whether or not the sorcerer is skilled with such a weapon; i.e., no unskilled weapon attack penalty applies.</p> <p>The <i>flame blade</i> functions at +2 \u201cto hit\u201d and inflicts 1d8+2 hp damage (1d10+2 hp if held in two hands), with an additional +2 damage bonus versus undead (1d8+4 or 1d10+4 hp total). Fire-resistant creatures, however, are afforded their standard resistance (usually half damage). <i>Flame blade</i> also can be used to ignite oil and other combustibles (e.g., cloth, paper, parchment, wood).</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 320,
-                    "spell_name": "Ray of Enfeeblement",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 196,
+                    "spell_name": "Heat Metal",
+                    "range": "30 feet",
+                    "duration": "9 rounds",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p>Heats metallic objects to searing temperatures. For every CA level of the sorcerer, five square feet of metal can be affected, equivalent to one Small creature per CA level, or one Medium creature per 2 CA levels; e.g., a CA 6 sorcerer can affect three adjacent armoured people. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). <i>Heat metal</i> is quick to warm, burn, and then sear; likewise, it is quick to cool. The dweomer persists for 9 rounds, with metal treated thusly if in contact with skin:</p> <ul><li><b>Round 1:</b> Metal becomes <i>hot</i>, uncomfortable to the touch</li> <li><b>Rounds 2\u20134:</b> Metal becomes <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 5:</b> Metal <i>sears</i> for 2d4 hp damage</li> <li><b>Rounds 6\u20138:</b> Metal cools to <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 9:</b> Metal cools to <i>hot</i></li></ul> <p>Materials such as cloth, leather, or wood in touch with <i>searing</i> metal are subject to smouldering or even combusting, as per the referee\u2019s judgment. <i>Fire protection</i> and <i>fire resistance</i> negate the harmful effects of this spell.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 385,
-                    "spell_name": "Strengthen",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 162,
+                    "spell_name": "Fireball",
+                    "range": "240 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 198,
+                    "spell_desc": "<p>From the palm of the sorcerer\u2019s hand shoots a fiery missile that explodes into a 40-foot-diameter sphere of flames when it strikes a target designated by the caster. Damage is 1d6 hp per CA level to all within the area of effect; e.g., a CA 5 sorcerer creates a 5d6 hp <i>fireball</i>. Targets may make <i>sorcery</i> saves for half damage. <i>N.B.:</i> The <i>fireball</i> must occupy its full volume (~33,500 cubic feet); if cast in an enclosed area smaller than the 40-foot diameter sphere, the flames expand as necessary into halls, tunnels, closets, through windows, etc.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 220,
-                    "spell_name": "Incinerate Normal Missiles",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 194,
+                    "spell_name": "Haste",
+                    "range": "120 feet",
+                    "duration": "18 rounds (3 minutes)",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>Doubled are the attack and movement rates of this spell\u2019s recipients; unwilling targets are allowed <i>sorcery</i> saving throws. The caster selects a target point and <i>hastens</i> a number of creatures equal to his or her CA level in a 15-foot radius. Those closest to the centre of the circle are affected first, potentially including the sorcerer\u2019s enemies; however, the caster can limit the radius of the spell, shrinking it as desired. <i>Hastened</i> creatures can move at double their normal rates and make twice as many attacks per combat round:</p> <ul><li>1/1 attack rate becomes 2/1</li> <li>3/2 attack rate becomes 3/1</li> <li>2/1 attack rate becomes 4/1</li> <li>5/2 attack rate becomes 5/1</li> <li>3/1 attack rate becomes 6/1</li></ul> <p>Sorcery (spells and magical devices) is not <i>hastened</i> in any way. This spell cannot be \u201cstacked\u201d with other spells or magic items that increase speed. Once the duration is met, recipients of <i>haste</i> are aged by one year as a result of this spell, unless a <i>transformation</i> saving throw is made. <i>Haste</i> counteracts the <i>slow</i> spell, but this usage does not bring about the ageing side effect.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 36,
-                    "spell_name": "Boil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 92,
+                    "spell_name": "Cure Serious Burns",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 3d8 hp of burn damage, as caused by acid, electricity, fire, or heat; it does not apply to other wounds. The reverse of this spell, <i>inflict serious burns</i>, is used to burn a living creature for 3d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 4,
-                    "spell_id": 138,
-                    "spell_name": "Extend Spell I",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "pyr",
-                    "spell_level": 5,
-                    "spell_id": 122,
-                    "spell_name": "Dismissal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 307,
+                    "spell_name": "Produce Bonfire",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>Causes a fire to ignite magically, a full, roaring blaze as large as 12 feet in diameter. If cast upon an appropriate pile of wood, the bonfire can persist for one day per CA level; if made to spring from thin air, it lasts but 1 turn per CA level. Creatures in the area of effect suffer 1d4 hp damage unless they make an <i>avoidance</i> saving throw. Any combustibles worn by the victims (e.g., cotton, linen, wool) might be damaged or destroyed by the <i>produce bonfire</i> spell; certainly, paper and parchment stand no chance of survival. The reverse of this spell, <i>quench bonfire</i>, extinguishes any normal fire within the spell\u2019s range and area of effect.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 5,
                     "spell_id": 139,
                     "spell_name": "Extend Spell II",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "special",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 195,
+                    "spell_desc": "<p>The sorcerer must cast this spell 1 round after casting a level 1\u20134 spell. Doing so doubles the duration of level 1\u20134 spells; e.g., an <i>extrasensory perception</i> spell can be made to last 2 rounds per CA level instead of 1.</p>"
+                },
+                {
+                    "school": "pyr",
+                    "spell_level": 5,
+                    "spell_id": 406,
+                    "spell_name": "Telekinesis",
+                    "range": "120 feet",
+                    "duration": "6 rounds (1 minute)",
+                    "reversible": false,
+                    "pp": 239,
+                    "spell_desc": "<p>Standing stationary and using sorcery to empower the mind, the caster lifts an object and moves it vertically and/or horizontally at 10 MV; also, minor manipulation (e.g., twists, turns) is possible. The weight of the object is limited to 25 pounds per CA level. If a living creature is targeted (presuming it is within the weight limit), a <i>sorcery</i> saving throw can be made to resist the effect.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 6,
-                    "spell_id": 310,
-                    "spell_name": "Project Image",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 396,
+                    "spell_name": "Summon Fire Elemental",
+                    "range": "240 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 236,
+                    "spell_desc": "<p>This conjuration requires 1 turn to cast and may be performed but once per day. The sorcerer <i>summons</i> a <b>class II fire elemental</b> to serve. On a 1-in-6 chance, this spell instead conjures <b>2 fire salamanders</b>.</p> <p>A conjured creature will obey the bidding of the caster, performing all actions, including labour or combat, to the best of its ability,. The sorcerer need not maintain concentration on the creature\u2019s activity; other tasks (e.g., fighting or casting other spells) may be performed whilst the creature continues to heed the caster\u2019s will. The sorcerer requires not the protection of a magic circle, for the <i>summoned</i> creature will not turn against him or her. The caster may not be aware of this fact, however.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 6,
-                    "spell_id": 182,
-                    "spell_name": "Geas",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 235,
+                    "spell_name": "Legend Lore",
+                    "range": "0",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 210,
+                    "spell_desc": "<p>Provides knowledge of some fabled artefact or locale. The referee must judge whether the thing or place is sufficiently legendary to qualify; if not, the spell fails. If the subject is indeed legendary, the information will be gleaned via a dream or vision some 1d10 days later, as secretly determined by the referee. The <i>lore</i> revealed by this spell is oft cryptic in nature and may be learnt in the form of a picture, poem, riddle, sign, or symbol.</p>"
                 }
             ]
         }

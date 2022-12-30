@@ -1,4 +1,5 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 17,
     "class_name": "Druid",
@@ -11,14 +12,14 @@
             "feat": 4
         },
         "dx": {
-            "score": 14,
+            "score": 11,
             "atk_mod": 0,
-            "def_adj": 1,
-            "test": 3,
-            "feat": 8
+            "def_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "cn": {
-            "score": 12,
+            "score": 9,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,19 +27,19 @@
             "feat": 4
         },
         "in": {
-            "score": 12,
+            "score": 11,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
-            "score": 14,
+            "score": 13,
             "react_adj": 1,
             "max_henchmen": 6,
             "turn_adj": 0
@@ -54,15 +55,16 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 12,
-        "deity_name": "Mordezzan",
+        "deity_id": 20,
+        "deity_name": "Yikkorth",
         "primary_alignment": "Neutral"
     },
     "race_id": 8,
     "race": "Kimmerian",
-    "gender": "Female",
+    "gender": "Male",
+    "secondary_skill": "carpenter",
     "hd": "3d8",
-    "hp": 13,
+    "hp": 15,
     "fa": 2,
     "ca": 3,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 5,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -189,13 +191,256 @@
         "sp": 0,
         "cp": 0
     },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 134,
+                "weapon_type": "Spiked Staff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 7
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            },
+            {
+                "weapon_id": 209,
+                "weapon_type": "Long Bow",
+                "rof": "3/2",
+                "range_sml": "70/140/210",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 60,
+                "weight": 3
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
+    },
     "thief_skills": null,
     "turn_undead_matrix": null,
     "spells": {
         "drd": {
             "spells_per_day": {
                 "lvl1": 3,
-                "lvl2": 1,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -205,101 +450,101 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 114,
+                    "spell_name": "Detect Snares and Pits",
+                    "range": "30 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>The caster notices outdoor traps, including deadfalls, pits, snares, and spring traps; even natural hazards may be discerned. The path of detection is 30 feet long and 10 feet wide. The sorcerer must continue to concentrate, with hands spread wide. Walking is permitted, but no jogging, running, or the like. Except for pits, snares, and other simple traps as noted above, this spell will not detect the sort of complex mechanical or magical traps typically found in dungeons.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 370,
-                    "spell_name": "Speak with Animals",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 145,
+                    "spell_name": "F\u00e6rie Fire",
+                    "range": "60 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 196,
+                    "spell_desc": "<p>Suffuses the area of effect in a lambent glow, the colour of which may be chosen by the caster. Ten square feet per CA level can be affected thus; or, one Medium creature or two Small creatures per CA level, no saving throw allowed. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). Illumed creatures suffer \u22121 AC penalties.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
                     "spell_id": 280,
                     "spell_name": "Pass without Trace",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>The recipient of this spell can move through wilderness terrain\u2014be it forest, desert, or snowy mountainside\u2014 without leaving a footprint, a scent, or other trace, regardless of armour worn. A tracker has no chance to find a trail; however, should one cast <i>detect magic</i>, a faint trail of magical footprints will be discerned, enduring for 6 turns (1 hour) after the spell\u2019s recipient has passed.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 259,
-                    "spell_name": "Messenger Bird",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 114,
-                    "spell_name": "Detect Snares and Pits",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 116,
+                    "spell_name": "Detect Venom",
+                    "range": "30 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>This spell has two functions: First, it reveals if an ailing person suffers the effects of poison, whether from a trap, snakebite, spider venom, or the like. The second function determines if a creature is venomous, or if an object is laced or trapped with poison. The creature or object in question must be viewed by the caster; obstructions will preclude the spell from functioning. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 349,
-                    "spell_name": "Shillelagh",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 243,
+                    "spell_name": "Locate Ordinary Animal",
+                    "range": "300 feet",
+                    "duration": "2 turns",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>The sorcerer selects a known animal type to be found (e.g., bear, eagle, wolf). The type must be well known by the caster; another person describing the animal type is insufficient (though a detailed picture may suffice), and magical or supernatural creatures do not qualify. If an animal of the stated type is indeed within range of the spell, the caster will know which direction to seek, but not the precise distance.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 167,
-                    "spell_name": "Flaming Sphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 2,
-                    "spell_id": 151,
-                    "spell_name": "Find Plants",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 89,
+                    "spell_name": "Cure Light Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 1d8 hp of damage previously sustained. The reverse of this spell, <i>inflict light wounds</i>, is used to harm a living creature for 1d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
                     "spell_id": 25,
                     "spell_name": "Barkskin",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "1 turn + 1 turn per CA level",
+                    "reversible": false,
+                    "pp": 178,
+                    "spell_desc": "<p>Toughens the recipient\u2019s flesh to the strength of oak bark, providing an armour class equivalent to chain mail (AC 5, DR 1), or +1 AC if other armour is worn. <i>Barkskin</i> does not encumber the recipient in any way.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 164,
+                    "spell_name": "Flame Blade",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 199,
+                    "spell_desc": "<p>The sorcerer must grip a bladeless hilt (of any sword or dagger) to cast this spell. Upon reciting a sibilant incantation, a <i>flame blade</i> in the shape of a long scimitar springs from the bladeless hilt. The <i>flame blade</i> may be wielded as though it were a magical scimitar, whether or not the sorcerer is skilled with such a weapon; i.e., no unskilled weapon attack penalty applies.</p> <p>The <i>flame blade</i> functions at +2 \u201cto hit\u201d and inflicts 1d8+2 hp damage (1d10+2 hp if held in two hands), with an additional +2 damage bonus versus undead (1d8+4 or 1d10+4 hp total). Fire-resistant creatures, however, are afforded their standard resistance (usually half damage). <i>Flame blade</i> also can be used to ignite oil and other combustibles (e.g., cloth, paper, parchment, wood).</p>"
                 }
             ]
         }

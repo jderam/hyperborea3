@@ -1,46 +1,47 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 17,
     "class_name": "Druid",
     "attr": {
         "st": {
-            "score": 10,
+            "score": 8,
             "atk_mod": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "test": 2,
-            "feat": 4
+            "feat": 2
         },
         "dx": {
-            "score": 7,
+            "score": 8,
             "atk_mod": 0,
             "def_adj": -1,
             "test": 2,
             "feat": 2
         },
         "cn": {
-            "score": 6,
-            "hp_adj": -1,
-            "poison_adj": -1,
-            "trauma_surv": 55,
-            "test": 1,
-            "feat": 1
+            "score": 8,
+            "hp_adj": 0,
+            "poison_adj": 0,
+            "trauma_surv": 65,
+            "test": 2,
+            "feat": 2
         },
         "in": {
-            "score": 9,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
-        },
-        "ws": {
-            "score": 15,
-            "will_adj": 1,
+            "score": 16,
+            "lang": 1,
             "bonus_spells": 2,
             "learn_spell": 75
         },
+        "ws": {
+            "score": 13,
+            "will_adj": 0,
+            "bonus_spells": 1,
+            "learn_spell": 65
+        },
         "ch": {
-            "score": 16,
-            "react_adj": 1,
-            "max_henchmen": 8,
+            "score": 18,
+            "react_adj": 3,
+            "max_henchmen": 12,
             "turn_adj": 1
         }
     },
@@ -58,11 +59,12 @@
         "deity_name": "Tlakk-Nakka",
         "primary_alignment": "Neutral"
     },
-    "race_id": 3,
-    "race": "Atlantean",
-    "gender": "Female",
+    "race_id": 4,
+    "race": "Esquimaux",
+    "gender": "Non-Binary",
+    "secondary_skill": "bookbinder",
     "hd": "4d8",
-    "hp": 8,
+    "hp": 19,
     "fa": 3,
     "ca": 4,
     "ta": 0,
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 0,
-            "dmg_adj": 0,
+            "dmg_adj": -1,
             "mastery": false
         }
     ],
@@ -184,10 +186,253 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 5,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 134,
+                "weapon_type": "Spiked Staff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 7
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            },
+            {
+                "weapon_id": 209,
+                "weapon_type": "Long Bow",
+                "rof": "3/2",
+                "range_sml": "70/140/210",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 60,
+                "weight": 3
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -195,7 +440,7 @@
         "drd": {
             "spells_per_day": {
                 "lvl1": 4,
-                "lvl2": 3,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -205,134 +450,134 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 114,
-                    "spell_name": "Detect Snares and Pits",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 1,
-                    "spell_id": 116,
-                    "spell_name": "Detect Venom",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 1,
                     "spell_id": 370,
                     "spell_name": "Speak with Animals",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "20 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Allows the sorcerer to communicate with any normal sort of animal (not magical beasts, monsters, or other supernatural creatures). The animals will reply in kind; such responses are usually limited to brief one- or twoword statements predicated on the intelligence of the animal, at the referee\u2019s discretion. Friendly animals might be convinced to perform some minor service.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 280,
+                    "spell_name": "Pass without Trace",
+                    "range": "touch",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>The recipient of this spell can move through wilderness terrain\u2014be it forest, desert, or snowy mountainside\u2014 without leaving a footprint, a scent, or other trace, regardless of armour worn. A tracker has no chance to find a trail; however, should one cast <i>detect magic</i>, a faint trail of magical footprints will be discerned, enduring for 6 turns (1 hour) after the spell\u2019s recipient has passed.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 314,
+                    "spell_name": "Purify Food and Drink",
+                    "range": "10 feet",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>Decontaminates one cubic foot of spoilt or rotten foodstuffs per CA level. Even poisonous food is made pure by this spell. The reverse of this spell, <i>putrefy food and drink</i>, spoils and rots an equal amount of food and drink; it cannot make food \u201cpoisonous,\u201d but putrefied food may well sicken a consumer.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
                     "spell_id": 26,
                     "spell_name": "Befriend Animals",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 178,
+                    "spell_desc": "<p>The sorcerer enchants normal animals. The subjects must be Neutral, non-magical creatures of ordinary sort: amphibians, birds, fish, mammals, or reptiles. The sorcerer can control 1 HD of animals per CA level. Each such animal is granted a <i>sorcery</i> saving throw. Torpid or non-hostile animals make normal saving throws, but attacking animals save at +2. Animals that fail their saves are mesmerized and will follow the sorcerer to the best of their ability; those that make their saving throws will wander away or attack the caster, depending on the animal\u2019s nature. An enchanted animal can be taught three tricks on par with what a trained dog or cat might learn, depending on its intelligence and capability. Each trick requires about a week of uninterrupted training; i.e., not during the course of adventure.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
+                    "spell_id": 238,
+                    "spell_name": "Light",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 211,
+                    "spell_desc": "<p>Effects a 30-foot-diameter sphere of soft, lambent illuminance, somewhat dimmer than full daylight. The spell can be centred on an object, on a person, or in the air. If <i>light</i> is centred on the visual organs of a creature, and it fails a <i>sorcery</i> saving throw, the victim is partially blinded for the duration of the spell, suffering \u22122 \u201cto hit,\u201d \u22122 AC, and \u22122 saving throws. This spell can be ended at will by the caster. A <i>light</i> spell can counter a <i>darkness</i> spell, and vice versa, but not <i>continuous darkness</i>.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
                     "spell_id": 79,
                     "spell_name": "Create Firewood",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 187,
+                    "spell_desc": "<p>Dry, seasoned, split firewood is conjured, a stack measuring 2 \u00d7 2 \u00d7 4 feet. At CA 5, this amount increases to 2 \u00d7 2 \u00d7 8 feet of stacked, split wood. The wood appears on solid ground 10 feet in front of the caster\u2019s outstretched hands. If the firewood is not utilized within 48 hours, it disappears from whence it came.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 308,
-                    "spell_name": "Produce Flame",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 187,
+                    "spell_desc": "<p>The sorcerer conjures as much as three gallons of water per CA level. The water is fresh, clean, and potable. It can be placed within one or more appropriate containers so long as they are touching, or it can be evoked to appear in the air within the spell\u2019s range. The reverse of this spell, <i>destroy water</i>, vaporizes a like amount of water. If used offensively (e.g., several gallons of water dropped on the head of an enemy), the target is allowed an <i>avoidance</i> saving throw.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
                     "spell_id": 54,
                     "spell_name": "Charm Person or Beast",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>The target of this spell (human, humanoid, giant, or normal animal [mammals only]) must make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the save fails, the victim views the caster as a close and trusted comrade to be protected and defended for the duration of the spell. If the ensorcelled victim understands the caster\u2019s language, the caster can \u201csuggest\u201d the victim perform various tasks, so long as they are not diametrically opposite to the victim\u2019s nature.</p> <p>The spell <i>dispel magic</i> can cancel this spell. Otherwise, additional <i>sorcery</i> saving throws (<i>willpower adjustment</i> applies) are allowed to break the spell at a time predicated on the targets intelligence (IN) score.:</p> <ul><li>13\u201318 IN = new save every hour (6 turns)</li> <li>9\u201312 IN = new save every 24 hours</li> <li>3\u20138 IN = new save once per week</li></ul> <p>The spell does not impart linguistic ability, so communication is limited if cast on an animal.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Suspends the deleterious effects of any toxin to which the subject has been exposed. This spell does not eliminate poison effects as <i>neutralize poison</i> does; as its title suggests, it but <i>delays poison</i>. Poisons that have an immediate impact cannot be <i>delayed</i>; however, poisons that have continuous or secondary effects are <i>delayed</i>. And if a poison has a delayed onset, it too is further <i>delayed</i>. Once the spell has ended, the poison\u2019s effects resume as normal.</p> <p>Note that if the poison affliction is the result of a venomous bite or sting, this spell can be used in conjunction with <i>draw poison</i> ability of barbarians and shamans. With the poison magically suspended in the victim\u2019s system, a barbarian or shaman can <i>draw poison</i> on a 5-in-6 chance of success for the duration of the spell.</p> <p>Lastly, <i>delay poison</i> may also revive one who has expired from poison, so long as the spell is cast within 12 rounds (2 minutes) of death and a successful <i>trauma survival</i> check is made (see <b>Chapter 3: Statistics</b>, <i>constitution</i>). The deceased poison victim is restored to 0 hp, albeit at a permanent loss of 1 constitution point.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 276,
-                    "spell_name": "Obscure",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 2,
-                    "spell_id": 196,
-                    "spell_name": "Heat Metal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 256,
+                    "spell_name": "Melt Ice",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 213,
+                    "spell_desc": "<p>Causes ice or hard-packed snow to thaw, liquescing a volume equal to 10 cubic feet per CA level. Each 10 cubic feet of ice requires 1 round to melt. So, a 5th-level sorcerer can thaw a sheet of ice that measures 50 \u00d7 1 \u00d7 1 feet, or 25 \u00d7 2 \u00d7 1 feet, and it would take 5 rounds to complete. If <i>melt ice</i> is cast under the feet of an opponent, the victim is allowed an <i>avoidance</i> saving throw to elude the melting area.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
                     "spell_id": 442,
                     "spell_name": "Warp Wood",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "permanent",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Beams, shafts, or planks of wood no more than two inches thick are altered by this spell. The caster can bow a three-foot length of wood per CA level, so a CA 4 sorcerer may <i>warp</i> two six-foot spears or six twofoot arrows. The planks of a boat or a door can also be buckled. Magical wood can be affected by sorcerers of CA 6 or greater.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 2,
+                    "spell_id": 153,
+                    "spell_name": "Find Traps",
+                    "range": "30 feet",
+                    "duration": "1 turn per 2 CA levels",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>The sorcerer detects the presence of any magical or mundane traps within range. The path of detection is 30 feet long and 10 feet wide. The sorcerer must continue to concentrate, hands spread wide, though walking (no jogging or running) is allowed.</p>"
                 }
             ]
         }

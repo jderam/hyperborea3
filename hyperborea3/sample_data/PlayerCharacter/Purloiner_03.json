@@ -1,41 +1,42 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 25,
     "class_name": "Purloiner",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 12,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 12,
-            "atk_mod": 0,
-            "def_adj": 0,
-            "test": 2,
-            "feat": 12
+            "score": 15,
+            "atk_mod": 1,
+            "def_adj": 1,
+            "test": 3,
+            "feat": 24
         },
         "cn": {
-            "score": 7,
+            "score": 9,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 65,
+            "trauma_surv": 75,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "in": {
-            "score": 12,
+            "score": 10,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 13,
-            "will_adj": 0,
-            "bonus_spells": 1,
-            "learn_spell": 65
+            "score": 15,
+            "will_adj": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ch": {
             "score": 10,
@@ -54,15 +55,16 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 16,
-        "deity_name": "Tlakk-Nakka",
+        "deity_id": 13,
+        "deity_name": "Raven",
         "primary_alignment": "Neutral"
     },
-    "race_id": 8,
-    "race": "Kimmerian",
-    "gender": "Female",
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
+    "gender": "Male",
+    "secondary_skill": "minstrel/musician",
     "hd": "3d6",
-    "hp": 13,
+    "hp": 12,
     "fa": 2,
     "ca": 3,
     "ta": 1,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 7,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -125,7 +127,7 @@
             "qty": 1,
             "atk_rate": "1/1",
             "melee_atk": 0,
-            "hurled_atk": 0,
+            "hurled_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         },
@@ -161,7 +163,7 @@
             "weight": 1,
             "qty": 1,
             "ammunition": "bullets \u00d720",
-            "missile_atk": 0,
+            "missile_atk": 1,
             "dmg_adj": 0,
             "mastery": false
         }
@@ -184,10 +186,229 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -259,7 +480,7 @@
         "clr": {
             "spells_per_day": {
                 "lvl1": 2,
-                "lvl2": 1,
+                "lvl2": 2,
                 "lvl3": 0,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -269,68 +490,68 @@
                 {
                     "school": "clr",
                     "spell_level": 1,
+                    "spell_id": 81,
+                    "spell_name": "Create Water",
+                    "range": "10 feet",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 187,
+                    "spell_desc": "<p>The sorcerer conjures as much as three gallons of water per CA level. The water is fresh, clean, and potable. It can be placed within one or more appropriate containers so long as they are touching, or it can be evoked to appear in the air within the spell\u2019s range. The reverse of this spell, <i>destroy water</i>, vaporizes a like amount of water. If used offensively (e.g., several gallons of water dropped on the head of an enemy), the target is allowed an <i>avoidance</i> saving throw.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 302,
+                    "spell_name": "Precipitate",
+                    "range": "special",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 220,
+                    "spell_desc": "<p>Cast outdoors under an at least partly cloudy sky, this spell involves a chanting ritual that requires 1 turn to complete. The spell invokes the clouds to release their water vapour for the duration of the spell. The heaviness and consistency of the rain depend on the cloud cover and the prevailing temperature; hence, <i>precipitation</i> could be sleet if the temperature is at or near freezing, or snow if below freezing.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
+                    "spell_id": 314,
+                    "spell_name": "Purify Food and Drink",
+                    "range": "10 feet",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>Decontaminates one cubic foot of spoilt or rotten foodstuffs per CA level. Even poisonous food is made pure by this spell. The reverse of this spell, <i>putrefy food and drink</i>, spoils and rots an equal amount of food and drink; it cannot make food \u201cpoisonous,\u201d but putrefied food may well sicken a consumer.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 1,
                     "spell_id": 61,
                     "spell_name": "Cold Resistance",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 116,
-                    "spell_name": "Detect Venom",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 1,
-                    "spell_id": 311,
-                    "spell_name": "Protection from Evil",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "clr",
-                    "spell_level": 2,
-                    "spell_id": 232,
-                    "spell_name": "Invisibility to Undead",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 184,
+                    "spell_desc": "<p>Inures the subject\u2019s body to the effects of cold. Even unclothed the subject can withstand temperatures as low as \u221215\u00b0F without suffering ill effects. Against magical cold attacks (e.g., <i>cone of cold</i>, a <b>winter wolf\u2019s</b> breath), the recipient enjoys a +2 saving throw bonus.</p>"
                 },
                 {
                     "school": "clr",
                     "spell_level": 2,
                     "spell_id": 200,
                     "spell_name": "Hold Person",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p><i>Hold person</i> victims are frozen still, motionless, paralyzed. This enchantment affects humans, humanoids, and giants. It can be cast at a single opponent or a group of individuals, so long as they are within a 10-foot radius of the spell\u2019s primary target.</p> <p>When cast at a group, as many as four individuals may be affected, beginning with those closest to the primary target. Each target is allowed a <i>sorcery</i> saving throw to resist the spell; if but a single target is selected, its saving throw is made at a \u22122 penalty. Any targets of 9 HD or greater gain a +4 saving throw bonus. Saving throws are modified by <i>willpower adjustment</i>, if applicable.</p>"
+                },
+                {
+                    "school": "clr",
+                    "spell_level": 2,
+                    "spell_id": 135,
+                    "spell_name": "Enthral",
+                    "range": "30 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 195,
+                    "spell_desc": "<p>The sorcerer orates, preaches, or sermonizes; hence, the listeners must comprehend the language of the speaker and listen for at least two minutes. Then, with clever imperceptibility, the spell is laid. The caster may <i>enthral</i> an audience whose members have 4 HD or fewer unless they make <i>sorcery</i> saving throws, modified by <i>willpower adjustment</i>, if applicable. If the audience is not of the caster\u2019s species (humanoids or giants, for example), or if they are otherwise unfriendly towards the caster\u2019s particular background, the saving throw is made at a +1 to +4 bonus (as judged by the referee). For a large audience, similar HD listeners may be grouped together. <i>Enthralled</i> creatures will continue to listen to the expounding sorcerer, viewing the orator as having 18 charisma. Those who make the save may have an unfavorable reaction, seeing the orator as boring, offensive, foolish, and/or disgusting. Once the sorcerer ceases evangelizing, the spell will terminate, but effects remain for 1 turn.</p>"
                 }
             ]
         }

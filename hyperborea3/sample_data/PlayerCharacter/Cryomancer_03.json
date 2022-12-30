@@ -1,44 +1,45 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 12,
     "class_name": "Cryomancer",
     "attr": {
         "st": {
-            "score": 14,
+            "score": 11,
             "atk_mod": 0,
-            "dmg_adj": 1,
-            "test": 3,
-            "feat": 8
+            "dmg_adj": 0,
+            "test": 2,
+            "feat": 4
         },
         "dx": {
-            "score": 15,
+            "score": 16,
             "atk_mod": 1,
             "def_adj": 1,
             "test": 3,
             "feat": 16
         },
         "cn": {
-            "score": 7,
+            "score": 12,
             "hp_adj": 0,
             "poison_adj": 0,
-            "trauma_surv": 65,
+            "trauma_surv": 75,
             "test": 2,
-            "feat": 2
+            "feat": 4
         },
         "in": {
-            "score": 9,
+            "score": 12,
             "lang": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ws": {
-            "score": 10,
+            "score": 12,
             "will_adj": 0,
             "bonus_spells": 0,
             "learn_spell": 50
         },
         "ch": {
-            "score": 14,
+            "score": 13,
             "react_adj": 1,
             "max_henchmen": 6,
             "turn_adj": 0
@@ -49,20 +50,21 @@
     "xp_to_next": 10000,
     "xp_bonus": false,
     "alignment": {
-        "align_id": 4,
-        "short_name": "LG",
-        "long_name": "Lawful Good"
+        "align_id": 3,
+        "short_name": "LE",
+        "long_name": "Lawful Evil"
     },
     "deity": {
         "deity_id": 2,
         "deity_name": "Artemis",
         "primary_alignment": "Lawful"
     },
-    "race_id": 2,
-    "race": "Amazon",
-    "gender": "Female",
+    "race_id": 1,
+    "race": "Common",
+    "gender": "Male",
+    "secondary_skill": "cooper",
     "hd": "3d4",
-    "hp": 9,
+    "hp": 8,
     "fa": 1,
     "ca": 3,
     "ta": 0,
@@ -126,7 +128,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 1,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -144,7 +146,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 1,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         },
         {
@@ -162,7 +164,7 @@
             "atk_rate": "1/1",
             "melee_atk": 0,
             "hurled_atk": 1,
-            "dmg_adj": 1,
+            "dmg_adj": 0,
             "mastery": false
         }
     ],
@@ -192,10 +194,89 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 3,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -4
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -213,57 +294,57 @@
                 {
                     "school": "cry",
                     "spell_level": 1,
+                    "spell_id": 110,
+                    "spell_name": "Detect Magic",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
+                },
+                {
+                    "school": "cry",
+                    "spell_level": 1,
                     "spell_id": 353,
                     "spell_name": "Shove",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "50 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 229,
+                    "spell_desc": "<p>Evokes an invisible force to push a creature or object. The caster discharges 10 pounds of force per CA level. Inanimate objects do not gain saving throws but might not be affected depending on their weight and mass, as judged by the referee. A targeted creature is allowed a <i>sorcery</i> saving throw to negate the effects of this spell. An affected target is pushed five feet, plus one foot per CA level. Generally, 20\u201330 pounds of force will push a Small creature, 40\u201360 pounds of force will push a Medium creature, and 70+ pounds of force will push a Large creature. Of course, common sense must prevail; e.g., an <b>albino ape</b> may be pushed back by 90 pounds of force, but <b>woolly mammoths</b> and other huge creatures are unlikely to be moved.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 1,
                     "spell_id": 178,
                     "spell_name": "Freezing Hands",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "5 feet",
+                    "duration": "instantaneous",
+                    "reversible": false,
+                    "pp": 201,
+                    "spell_desc": "<p>Plumes of thin, blue-white frost spring from the fingertips of the caster, fanning out in a 120\u00b0 horizontal arc and causing 2 hp damage per CA level, with no saving throw allowed. Small fires can be extinguished by <i>freezing hands</i>. Modest quantities of water, wine, or ale can be frozen, but liquids of higher alcohol content will be unaffected.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 1,
-                    "spell_id": 110,
-                    "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "cry",
-                    "spell_level": 1,
-                    "spell_id": 238,
-                    "spell_name": "Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 428,
+                    "spell_name": "Unseen Servant",
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 243,
+                    "spell_desc": "<p>This spell requires 1 turn to cast and necessitates the sacrifice of a 50-gp gem. It summons an invisible entity of limited means. The <i>unseen servant</i> can clean, fetch and carry a 10-pound item (or drag a 20-pound item), tie a simple knot, mend a torn cloth or sack, open an unlocked door, or perform other menial tasks throughout the duration of the spell.</p> <p>The entity cannot fight, though it is not easy to kill: Magical weapons or spells must be used. The <i>unseen servant</i> has the following statistics: <b>MV</b> 30 (but it cannot run); <b>AC</b> 5; <b>HD</b> 1 (<b>hp</b> 6); <b>#A</b> 0; <b>D</b> \u2014; <b>SV</b> 17. If the caster moves farther than 120 feet away from the <i>unseen servant</i>, it will disappear.</p>"
                 },
                 {
                     "school": "cry",
                     "spell_level": 2,
-                    "spell_id": 206,
-                    "spell_name": "Ice Axe",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 440,
+                    "spell_name": "Wall of Vapours",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Evokes a hedge of \u00c6thereal mists as large as 10 \u00d7 30 \u00d7 30 feet in volume. These <i>vapours</i> are opaque and normal sight cannot penetrate them; likewise, <i>infrared vision</i> is blocked. The <i>wall of vapours</i>, however, is easily dispersed. A <i>gust of wind</i> spell, or any natural wind of 10 mph or greater, will diffuse the effect. The cryomancer version of this spell generates a mist of ice crystals.</p>"
                 }
             ]
         }

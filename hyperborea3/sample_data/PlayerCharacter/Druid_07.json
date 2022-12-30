@@ -1,35 +1,36 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 17,
     "class_name": "Druid",
     "attr": {
         "st": {
-            "score": 8,
-            "atk_mod": 0,
-            "dmg_adj": -1,
-            "test": 2,
-            "feat": 2
+            "score": 16,
+            "atk_mod": 1,
+            "dmg_adj": 1,
+            "test": 3,
+            "feat": 16
         },
         "dx": {
-            "score": 7,
-            "atk_mod": 0,
-            "def_adj": -1,
-            "test": 2,
-            "feat": 2
-        },
-        "cn": {
             "score": 9,
-            "hp_adj": 0,
-            "poison_adj": 0,
-            "trauma_surv": 75,
+            "atk_mod": 0,
+            "def_adj": 0,
             "test": 2,
             "feat": 4
         },
+        "cn": {
+            "score": 14,
+            "hp_adj": 1,
+            "poison_adj": 0,
+            "trauma_surv": 80,
+            "test": 3,
+            "feat": 8
+        },
         "in": {
-            "score": 8,
+            "score": 12,
             "lang": 0,
             "bonus_spells": 0,
-            "learn_spell": 0
+            "learn_spell": 50
         },
         "ws": {
             "score": 16,
@@ -38,10 +39,10 @@
             "learn_spell": 75
         },
         "ch": {
-            "score": 15,
-            "react_adj": 1,
-            "max_henchmen": 8,
-            "turn_adj": 1
+            "score": 12,
+            "react_adj": 0,
+            "max_henchmen": 4,
+            "turn_adj": 0
         }
     },
     "xp": 64000,
@@ -54,15 +55,16 @@
         "long_name": "Neutral"
     },
     "deity": {
-        "deity_id": 13,
-        "deity_name": "Raven",
+        "deity_id": 22,
+        "deity_name": "Yoon'Deh",
         "primary_alignment": "Neutral"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 9,
+    "race": "Kimmeri-Kelt",
     "gender": "Male",
+    "secondary_skill": "gardener",
     "hd": "7d8",
-    "hp": 30,
+    "hp": 35,
     "fa": 5,
     "ca": 7,
     "ta": 0,
@@ -108,7 +110,7 @@
         "description": null
     },
     "shield": null,
-    "ac": 7,
+    "ac": 6,
     "mv": 40,
     "weapons_melee": [
         {
@@ -124,9 +126,9 @@
             "weight": 1,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         },
         {
@@ -142,9 +144,9 @@
             "weight": 5,
             "qty": 1,
             "atk_rate": "1/1",
-            "melee_atk": 0,
+            "melee_atk": 1,
             "hurled_atk": 0,
-            "dmg_adj": -1,
+            "dmg_adj": 1,
             "mastery": false
         }
     ],
@@ -184,10 +186,253 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 2,
+        "gp": 4,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 107,
+                "weapon_type": "War Club",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 3,
+                "weight": 4
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 122,
+                "weapon_type": "Morning Star",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 126,
+                "weapon_type": "Quarterstaff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 5
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 128,
+                "weapon_type": "Long Scimitar",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 130,
+                "weapon_type": "Sickle",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 3,
+                "weight": 2
+            },
+            {
+                "weapon_id": 131,
+                "weapon_type": "Short Spear",
+                "wc": 3,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 4,
+                "weight": 5
+            },
+            {
+                "weapon_id": 132,
+                "weapon_type": "Long Spear",
+                "wc": 4,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 5,
+                "weight": 7
+            },
+            {
+                "weapon_id": 134,
+                "weapon_type": "Spiked Staff",
+                "wc": 3,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d10",
+                "damage_2h": null,
+                "cost": 15,
+                "weight": 7
+            },
+            {
+                "weapon_id": 140,
+                "weapon_type": "Tonfa",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 2,
+                "weight": 1
+            },
+            {
+                "weapon_id": 142,
+                "weapon_type": "Long Trident",
+                "wc": 4,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": "1d8",
+                "cost": 10,
+                "weight": 6
+            },
+            {
+                "weapon_id": 143,
+                "weapon_type": "Whip",
+                "wc": 5,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d2",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 205,
+                "weapon_type": "Lasso",
+                "rof": "1/2",
+                "range_sml": "20 feet",
+                "damage": null,
+                "hurled": 1,
+                "launched": 0,
+                "cost": 3,
+                "weight": 3
+            },
+            {
+                "weapon_id": 209,
+                "weapon_type": "Long Bow",
+                "rof": "3/2",
+                "range_sml": "70/140/210",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 60,
+                "weight": 3
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": null,
     "turn_undead_matrix": null,
@@ -205,233 +450,233 @@
                 {
                     "school": "drd",
                     "spell_level": 1,
+                    "spell_id": 156,
+                    "spell_name": "Fire Resistance",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>Inures the subject\u2019s body to the effects of intense heat. Even clad in full armour, the recipient can withstand temperatures as high as 120\u00b0F without suffering any ill effects. Fire and magical fire attacks are saved against with a +2 bonus.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 1,
                     "spell_id": 314,
                     "spell_name": "Purify Food and Drink",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "10 feet",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 223,
+                    "spell_desc": "<p>Decontaminates one cubic foot of spoilt or rotten foodstuffs per CA level. Even poisonous food is made pure by this spell. The reverse of this spell, <i>putrefy food and drink</i>, spoils and rots an equal amount of food and drink; it cannot make food \u201cpoisonous,\u201d but putrefied food may well sicken a consumer.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 349,
-                    "spell_name": "Shillelagh",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 79,
+                    "spell_name": "Create Firewood",
+                    "range": "10 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 187,
+                    "spell_desc": "<p>Dry, seasoned, split firewood is conjured, a stack measuring 2 \u00d7 2 \u00d7 4 feet. At CA 5, this amount increases to 2 \u00d7 2 \u00d7 8 feet of stacked, split wood. The wood appears on solid ground 10 feet in front of the caster\u2019s outstretched hands. If the firewood is not utilized within 48 hours, it disappears from whence it came.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 224,
-                    "spell_name": "Influence Normal Fire",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 114,
+                    "spell_name": "Detect Snares and Pits",
+                    "range": "30 feet",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>The caster notices outdoor traps, including deadfalls, pits, snares, and spring traps; even natural hazards may be discerned. The path of detection is 30 feet long and 10 feet wide. The sorcerer must continue to concentrate, with hands spread wide. Walking is permitted, but no jogging, running, or the like. Except for pits, snares, and other simple traps as noted above, this spell will not detect the sort of complex mechanical or magical traps typically found in dungeons.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
                     "spell_id": 110,
                     "spell_name": "Detect Magic",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 191,
+                    "spell_desc": "<p>Allows the caster to sense the presence of magic items or other dweomered persons, places, or things (e.g., an enchanted treasure chest, a <i>sorcerer locked</i> door). The dweomered items will glow before the eyes of the caster in a path of detection 60 feet long and 10 feet wide. From a stationary position the caster can slowly rotate, covering 360\u00b0 before the spell ends. <i>Detect magic</i> is obstructed by metal of one-inch thickness, stone of six-inch thickness, or wood of one-foot thickness; lead always masks the presence of magic.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 1,
-                    "spell_id": 134,
-                    "spell_name": "Entangle",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 1,
-                    "spell_id": 26,
-                    "spell_name": "Befriend Animals",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 224,
+                    "spell_name": "Influence Normal Fire",
+                    "range": "60 feet",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>Allows the caster to affect non-magical fires from as small as a torch to as large as a three-foot-diameter bonfire. With a wave of the hand, a fire may be doubled or shrunk to the size of a lit match. The fire\u2019s fuel consumption is influenced by the spell, but heat output is not. Normal fire causes 1d4 damage per round to those who are directly exposed to the flames. If, for example, a bonfire is doubled, and enemies are huddled around it, each may make an <i>avoidance</i> save to escape harm.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
                     "spell_id": 192,
                     "spell_name": "Gust of Wind",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 round",
+                    "reversible": false,
+                    "pp": 203,
+                    "spell_desc": "<p>A breeze blows from the caster (in the direction the sorcerer faces) in a 10-foot-wide path that is 5 feet long per CA level; e.g., a CA 6 sorcerer can evoke a <i>gust of wind</i> that is 10 feet wide and 30 feet long. <i>Gust of wind</i> extinguishes small fires, though it fans and excites the flames of larger blazes; too, it disperses and thus dispels magical clouds, fogs, and smoke, such as <i>cloudkill</i>, <i>fog cloud</i>, and <i>stinking cloud</i>. At its greatest effectiveness, this spell can belly the sail of a small craft.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 256,
-                    "spell_name": "Melt Ice",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 54,
+                    "spell_name": "Charm Person or Beast",
+                    "range": "120 feet",
+                    "duration": "special",
+                    "reversible": false,
+                    "pp": 183,
+                    "spell_desc": "<p>The target of this spell (human, humanoid, giant, or normal animal [mammals only]) must make a <i>sorcery</i> saving throw, modified by <i>willpower adjustment</i>, if applicable. If the save fails, the victim views the caster as a close and trusted comrade to be protected and defended for the duration of the spell. If the ensorcelled victim understands the caster\u2019s language, the caster can \u201csuggest\u201d the victim perform various tasks, so long as they are not diametrically opposite to the victim\u2019s nature.</p> <p>The spell <i>dispel magic</i> can cancel this spell. Otherwise, additional <i>sorcery</i> saving throws (<i>willpower adjustment</i> applies) are allowed to break the spell at a time predicated on the targets intelligence (IN) score.:</p> <ul><li>13\u201318 IN = new save every hour (6 turns)</li> <li>9\u201312 IN = new save every 24 hours</li> <li>3\u20138 IN = new save once per week</li></ul> <p>The spell does not impart linguistic ability, so communication is limited if cast on an animal.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 308,
-                    "spell_name": "Produce Flame",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 104,
+                    "spell_name": "Delay Poison",
+                    "range": "touch",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 190,
+                    "spell_desc": "<p>Suspends the deleterious effects of any toxin to which the subject has been exposed. This spell does not eliminate poison effects as <i>neutralize poison</i> does; as its title suggests, it but <i>delays poison</i>. Poisons that have an immediate impact cannot be <i>delayed</i>; however, poisons that have continuous or secondary effects are <i>delayed</i>. And if a poison has a delayed onset, it too is further <i>delayed</i>. Once the spell has ended, the poison\u2019s effects resume as normal.</p> <p>Note that if the poison affliction is the result of a venomous bite or sting, this spell can be used in conjunction with <i>draw poison</i> ability of barbarians and shamans. With the poison magically suspended in the victim\u2019s system, a barbarian or shaman can <i>draw poison</i> on a 5-in-6 chance of success for the duration of the spell.</p> <p>Lastly, <i>delay poison</i> may also revive one who has expired from poison, so long as the spell is cast within 12 rounds (2 minutes) of death and a successful <i>trauma survival</i> check is made (see <b>Chapter 3: Statistics</b>, <i>constitution</i>). The deceased poison victim is restored to 0 hp, albeit at a permanent loss of 1 constitution point.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 167,
-                    "spell_name": "Flaming Sphere",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 196,
+                    "spell_name": "Heat Metal",
+                    "range": "30 feet",
+                    "duration": "9 rounds",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p>Heats metallic objects to searing temperatures. For every CA level of the sorcerer, five square feet of metal can be affected, equivalent to one Small creature per CA level, or one Medium creature per 2 CA levels; e.g., a CA 6 sorcerer can affect three adjacent armoured people. For larger creatures, the referee must determine a reasonable number of potential targets using the above guidelines (e.g., a <b>mountain ape</b> may be considered the equivalent of two people). <i>Heat metal</i> is quick to warm, burn, and then sear; likewise, it is quick to cool. The dweomer persists for 9 rounds, with metal treated thusly if in contact with skin:</p> <ul><li><b>Round 1:</b> Metal becomes <i>hot</i>, uncomfortable to the touch</li> <li><b>Rounds 2\u20134:</b> Metal becomes <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 5:</b> Metal <i>sears</i> for 2d4 hp damage</li> <li><b>Rounds 6\u20138:</b> Metal cools to <i>extremely hot</i>, burning for 1d4 hp damage per round</li> <li><b>Round 9:</b> Metal cools to <i>hot</i></li></ul> <p>Materials such as cloth, leather, or wood in touch with <i>searing</i> metal are subject to smouldering or even combusting, as per the referee\u2019s judgment. <i>Fire protection</i> and <i>fire resistance</i> negate the harmful effects of this spell.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 72,
-                    "spell_name": "Continuous Light",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 151,
+                    "spell_name": "Find Plants",
+                    "range": "240 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 197,
+                    "spell_desc": "<p>Allows the sorcerer to locate any sought-after plant or plant type, providing it is available. Specific plants with which the caster is familiar may be sought, including roots, fruits and berries, and fungi. Only one species or type can be selected when the spell is cast. The radius of detection is 240 feet from the caster, who may move as normal (though not run) throughout the duration of the spell. Full concentration is not necessary, but the effect is lost if another spell or ability is used.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 2,
-                    "spell_id": 153,
-                    "spell_name": "Find Traps",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 3,
-                    "spell_id": 443,
-                    "spell_name": "Water Breathing",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
-                },
-                {
-                    "school": "drd",
-                    "spell_level": 3,
-                    "spell_id": 422,
-                    "spell_name": "Tree Shape",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 112,
+                    "spell_name": "Detect Neutrality",
+                    "range": "60 feet",
+                    "duration": "1 turn",
+                    "reversible": false,
+                    "pp": 192,
+                    "spell_desc": "<p>Allows the sorcerer to sense whether an observed person, place, or thing is balanced with Neutrality of alignment, tainted neither with Good nor Evil, Law nor Chaos. If the subject of this observation is anything but Neutral, the caster will perceive the imbalance. The caster cannot discern the exact alignment of any non-Neutral person, place, or thing, but merely that the absence of Neutrality is present.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
                     "spell_id": 198,
                     "spell_name": "Hold Animal",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "120 feet",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": false,
+                    "pp": 204,
+                    "spell_desc": "<p>Freezes still (i.e., motionless, paralyzed) up to six Medium animals (amphibians, birds, fish, mammals, and reptiles). The enchantment affects mundane animals only, not magical or supernatural beasts. It can be cast at a single animal or a group of animals, so long as they are within a 20-foot radius of the primary target, which must be selected by the caster. Large and Small animals may be <i>held</i>, too. Three Small animals may be considered equivalent to one Medium animal, and one Large animal may be considered equivalent to three Medium animals. When cast at a group, the spell affects those animals closest to the primary target selected by the caster. Each beast is allowed a <i>sorcery</i> saving throw to resist the spell, but if the spell is focused on a single animal, its saving throw is made at a \u22122 penalty.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
                     "spell_id": 87,
                     "spell_name": "Cure Disease",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "touch",
+                    "duration": "permanent",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Remedies nearly all forms of illness. The subject is alleviated of all debilitating effects within 1d6 rounds. The reverse of this spell, <i>inflict disease</i>, delivers a malady that drains the strength and vitality of its victim if a <i>sorcery</i> saving throw is not made. The disease manifests in 1d6 turns; once it does, the afflicted lose 1 hp per turn and 1 point of strength per hour until total hit points are reduced to one-tenth of normal and strength is reduced to one-third of normal. If the afflicted is not cured within three weeks, a loss of 1 constitution point per day is suffered until that attribute is reduced to one-third of normal. If untreated, the victim will likely die within a year.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 315,
-                    "spell_name": "Pyrotechnics",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 42,
+                    "spell_name": "Call Lightning",
+                    "range": "360 feet",
+                    "duration": "12 rounds (2 minutes) per CA level",
+                    "reversible": false,
+                    "pp": 181,
+                    "spell_desc": "<p>Requiring 1 turn to evoke, this spell is cast outdoors and is contingent on the presence of a thunderstorm, rainstorm, or significantly cloudy conditions. The sorcerer can then <i>call lightning</i> to strike a target within 360 feet. The lightning inflicts 2d8 hp base damage plus 1d8 hp per CA level (e.g., a CA 5 caster calls a 7d8 hp lightning bolt) to the target and any other creature within a 10-foot radius. A successful <i>sorcery</i> saving throw reduces damage by half. The sorcerer may continue to call down another lightning bolt every 12 rounds (2 minutes) until the spell\u2019s duration elapses (i.e., one bolt per CA level) without need of concentration; the sorcerer can cast other spells, move, engage in melee, and so forth.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 3,
-                    "spell_id": 50,
-                    "spell_name": "Chameleon",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 91,
+                    "spell_name": "Cure Moderate Wounds",
+                    "range": "touch",
+                    "duration": "instantaneous",
+                    "reversible": true,
+                    "pp": 188,
+                    "spell_desc": "<p>Heals a living creature for 2d8 hp of damage previously sustained. The reverse of this spell, <i>inflict moderate wounds</i>, is used to harm a living creature for 2d8 hp damage upon a successful touch attack.</p>"
                 },
                 {
                     "school": "drd",
-                    "spell_level": 4,
-                    "spell_id": 93,
-                    "spell_name": "Cure Serious Wounds",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_level": 3,
+                    "spell_id": 443,
+                    "spell_name": "Water Breathing",
+                    "range": "30 feet",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": true,
+                    "pp": 245,
+                    "spell_desc": "<p>Allows the recipient to breathe fresh or salt water as easily as air. The reverse form of this spell, <i>air breathing</i>, allows a water-breathing creature to respire aerially.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 3,
+                    "spell_id": 281,
+                    "spell_name": "Pass without Trace, 15\u0384 r.",
+                    "range": "touch",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 217,
+                    "spell_desc": "<p>The recipient of this spell and all within 15 feet can move through wilderness terrain\u2014be it forest, desert, or snowy mountainside\u2014without leaving a footprint, a scent, or other trace, regardless of armour worn. A tracker has no chance to find a trail; however, should one cast <i>detect magic</i>, a faint trail of magical footprints will be discerned, enduring for 6 turns (1 hour) after the spell\u2019s recipients have passed.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 4,
                     "spell_id": 441,
                     "spell_name": "Ward Off Insects",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 245,
+                    "spell_desc": "<p>Evokes an invisible barrier to form around the caster in a 10-foot radius, repelling all normal insect life. Giant insects are allowed <i>sorcery</i> saving throws. Successful saves allow the creatures to behave as normal, though they suffer 1d6 hp damage for entering the field; failed saves cause the insects to flee in fear. This spell does not affect spiders and centipedes.</p>"
                 },
                 {
                     "school": "drd",
                     "spell_level": 4,
-                    "spell_id": 202,
-                    "spell_name": "Hold Vegetation",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 372,
+                    "spell_name": "Speak with Plants",
+                    "range": "0",
+                    "duration": "1 round per CA level",
+                    "reversible": false,
+                    "pp": 232,
+                    "spell_desc": "<p>Establish rudimentary communication with vegetal life that surrounds the sorcerer in a 30-foot radius. Casting this spell requires 1 turn of meditation. Once complete, the caster can ask a simple question, such as whether a creature passed through the area of effect. The reply is via an empathic feeling conveyed by the plants. The caster may also assert a modicum of control over the area of effect, asking grasses or shrubs to part, even beseeching vines or hanging branches to hinder the progress of a pursuer. This effect should not be confused with the <i>entangle spell</i>, however; the plants are simply nudged to a limited course of action.</p>"
+                },
+                {
+                    "school": "drd",
+                    "spell_level": 4,
+                    "spell_id": 410,
+                    "spell_name": "Them",
+                    "range": "30 feet",
+                    "duration": "2 rounds per CA level",
+                    "reversible": false,
+                    "pp": 239,
+                    "spell_desc": "<p>Transforms one or more ants into <b>giant radioactive ants</b> that at once begin to issue a loud, warbling whistle. The number depends on the sorcerer\u2019s casting ability: 2 ants at CA 7, 3 ants at CA 9, and 4 ants at CA 11. The giant ants can act 1 round after transformation. They will not harm the caster and will obey simple commands such as \u201cAttack!\u201d, \u201cDefend!\u201d, \u201cLift!\u201d, and so forth. If the giant ants are not otherwise instructed, they will attack the nearest creature (not differentiating between and betwixt allies and enemies).</p>"
                 }
             ]
         }

@@ -1,24 +1,25 @@
 {
+    "app_version": "0.3.10",
     "method": 6,
     "class_id": 32,
     "class_name": "Fire Thief",
     "attr": {
         "st": {
-            "score": 9,
+            "score": 10,
             "atk_mod": 0,
             "dmg_adj": 0,
             "test": 2,
             "feat": 4
         },
         "dx": {
-            "score": 13,
+            "score": 14,
             "atk_mod": 0,
             "def_adj": 1,
             "test": 3,
             "feat": 16
         },
         "cn": {
-            "score": 10,
+            "score": 12,
             "hp_adj": 0,
             "poison_adj": 0,
             "trauma_surv": 75,
@@ -26,10 +27,10 @@
             "feat": 4
         },
         "in": {
-            "score": 12,
-            "lang": 0,
-            "bonus_spells": 0,
-            "learn_spell": 50
+            "score": 15,
+            "lang": 1,
+            "bonus_spells": 2,
+            "learn_spell": 75
         },
         "ws": {
             "score": 13,
@@ -38,7 +39,7 @@
             "learn_spell": 65
         },
         "ch": {
-            "score": 12,
+            "score": 9,
             "react_adj": 0,
             "max_henchmen": 4,
             "turn_adj": 0
@@ -54,15 +55,16 @@
         "long_name": "Chaotic Evil"
     },
     "deity": {
-        "deity_id": 3,
-        "deity_name": "Aurorus",
+        "deity_id": 21,
+        "deity_name": "Ymir",
         "primary_alignment": "Chaotic"
     },
-    "race_id": 1,
-    "race": "Common",
+    "race_id": 10,
+    "race": "Pict",
     "gender": "Female",
+    "secondary_skill": "black-/coin-/metalsmith",
     "hd": "5d6",
-    "hp": 16,
+    "hp": 21,
     "fa": 3,
     "ca": 5,
     "ta": 0,
@@ -190,10 +192,218 @@
     ],
     "money": {
         "pp": 0,
-        "gp": 5,
+        "gp": 2,
         "ep": 0,
         "sp": 0,
         "cp": 0
+    },
+    "favoured_weapons": {
+        "any": false,
+        "weapons_melee": [
+            {
+                "weapon_id": 101,
+                "weapon_type": "Hand Axe",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "15/30/45",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 2
+            },
+            {
+                "weapon_id": 106,
+                "weapon_type": "Light Club",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 1,
+                "weight": 2
+            },
+            {
+                "weapon_id": 108,
+                "weapon_type": "Dagger",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "3/2",
+                "range_sml": "10/20/30",
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 1
+            },
+            {
+                "weapon_id": 110,
+                "weapon_type": "Falcata",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 111,
+                "weapon_type": "Horseman's Flail",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 114,
+                "weapon_type": "Horseman's Hammer",
+                "wc": 1,
+                "hurlable": 1,
+                "hurled_rof": "1/1",
+                "range_sml": "10/20/30",
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 119,
+                "weapon_type": "Horseman's Mace",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 4,
+                "weight": 3
+            },
+            {
+                "weapon_id": 123,
+                "weapon_type": "Horseman's Pick",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 5,
+                "weight": 3
+            },
+            {
+                "weapon_id": 127,
+                "weapon_type": "Short Scimitar",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 135,
+                "weapon_type": "Short Sword",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d6",
+                "damage_2h": null,
+                "cost": 10,
+                "weight": 3
+            },
+            {
+                "weapon_id": 136,
+                "weapon_type": "Broad Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 137,
+                "weapon_type": "Long Sword",
+                "wc": 2,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d8",
+                "damage_2h": "1d10",
+                "cost": 20,
+                "weight": 4
+            },
+            {
+                "weapon_id": 141,
+                "weapon_type": "Hand Trident",
+                "wc": 1,
+                "hurlable": 0,
+                "hurled_rof": null,
+                "range_sml": null,
+                "damage": "1d4",
+                "damage_2h": null,
+                "cost": 7,
+                "weight": 1
+            }
+        ],
+        "weapons_missile": [
+            {
+                "weapon_id": 203,
+                "weapon_type": "Dart",
+                "rof": "2/1",
+                "range_sml": "15/30/45",
+                "damage": "1d3",
+                "hurled": 1,
+                "launched": 0,
+                "cost": 1,
+                "weight": 1
+            },
+            {
+                "weapon_id": 211,
+                "weapon_type": "Short Bow",
+                "rof": "3/2",
+                "range_sml": "50/100/150",
+                "damage": "1d6",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 20,
+                "weight": 2
+            },
+            {
+                "weapon_id": 214,
+                "weapon_type": "Light Crossbow",
+                "rof": "1/1",
+                "range_sml": "60/120/180",
+                "damage": "1d6+1",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 15,
+                "weight": 5
+            },
+            {
+                "weapon_id": 216,
+                "weapon_type": "Sling",
+                "rof": "1/1",
+                "range_sml": "50/100/150",
+                "damage": "1d4",
+                "hurled": 0,
+                "launched": 1,
+                "cost": 2,
+                "weight": 1
+            }
+        ],
+        "unskilled_penalty": -2
     },
     "thief_skills": [
         {
@@ -249,8 +459,8 @@
     "spells": {
         "pyr": {
             "spells_per_day": {
-                "lvl1": 1,
-                "lvl2": 1,
+                "lvl1": 2,
+                "lvl2": 2,
                 "lvl3": 1,
                 "lvl4": 0,
                 "lvl5": 0,
@@ -260,57 +470,57 @@
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 428,
-                    "spell_name": "Unseen Servant",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 211,
+                    "spell_name": "Identify",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 206,
+                    "spell_desc": "<p>This ritual requires 6 turns (1 hour) to cast in a peaceful environment and necessitates the sacrifice of 100 gp worth of treasure (e.g., gold, gems) per item <i>identified</i>. The spell enables the caster to perceive the magical properties of one magic item per CA level, each item requiring 1 turn to properly <i>identify</i>. Note that whereas the properties of a magic item can be <i>identified</i>, the charges of a wand or like item may not be reckoned, and the exact description of such magical properties is always at the referee\u2019s discretion. This ritual is exhausting; consequently, the caster will suffer a temporary 8-point constitution drain until appropriate rest is taken. One point of constitution is restored per hour. If the constitution loss results in a score of 3 or less, the caster will fall unconscious for 24 hours.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 1,
-                    "spell_id": 166,
-                    "spell_name": "Flaming Missile",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 311,
+                    "spell_name": "Protection from Evil",
+                    "range": "0",
+                    "duration": "6 turns (1 hour)",
+                    "reversible": true,
+                    "pp": 222,
+                    "spell_desc": "<p>A pale circle of light surrounds the caster, preventing summoned creatures (e.g., d\u00e6mons, elementals) from attacking. Against other Evil creatures, the sorcerer enjoys a +1 bonus to AC, DR, and saving throws versus their attacks. The reverse of this spell, <i>protection from good</i>, can be cast only by Evil or Neutral sorcerers; it functions the same way, except versus creatures of Good alignment.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 192,
-                    "spell_name": "Gust of Wind",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 308,
+                    "spell_name": "Produce Flame",
+                    "range": "0",
+                    "duration": "6 turns (1 hour) per CA level",
+                    "reversible": false,
+                    "pp": 222,
+                    "spell_desc": "<p>A small, torch-like flame ignites in the palm of the sorcerer, creating a 40-foot radius of light. The flame does not harm the caster. It remains in effect for the spell\u2019s duration, so long as no other spells are cast. The sorcerer can terminate the spell by closing his or her hand to a fist.</p> <p>The sorcerer can opt to hurl the flame within 30 feet as a ranged attack using the <i>flask hurling</i> rules (see <b>Chapter 9: Combat</b>, <i>combat options</i>). The flame bursts in a five-foot diameter if it strikes, igniting combustibles and causing 1d4 hp damage, +1 hp per CA level (e.g., a CA 5 sorcerer can hurl a <i>produced flame</i> that inflicts 1d4+5 hp damage). A <i>sorcery</i> saving throw reduces damage by half.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 2,
-                    "spell_id": 161,
-                    "spell_name": "Fire Web",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 236,
+                    "spell_name": "Levitate",
+                    "range": "20 feet per CA level",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 210,
+                    "spell_desc": "<p>The caster or other recipient floats up or down in the air at a rate of 10 MV. Maximum <i>levitation</i> weight is 300 pounds. Horizontal movement is impossible unless some surface such as a ceiling is reached, in which case the <i>levitated</i> person can use his hands and feet to travel at 10 MV. One can cast spells whilst floating, but combat (melee and missiles) is more difficult, the <i>levitate</i> recipient suffering \u22122 \u201cto hit\u201d on attack rolls and losing any DX bonus to AC.</p> <p>If this spell is cast on another person, the sorcerer must concentrate on directing the target, <i>levitating</i> him a maximum distance of 20 feet per CA level. If <i>levitate</i> is cast on an unwilling subject, it is allowed a <i>sorcery</i> saving throw to resist the effect, and if its HD is greater than the sorcerer\u2019s, the saving throw is rolled with a +4 bonus. The spell can be cancelled at a time of the caster\u2019s choosing.</p>"
                 },
                 {
                     "school": "pyr",
                     "spell_level": 3,
-                    "spell_id": 312,
-                    "spell_name": "Protection from Evil, 15\u0384 r.",
-                    "range": null,
-                    "duration": null,
-                    "reversible": null,
-                    "pp": null,
-                    "spell_desc": null
+                    "spell_id": 220,
+                    "spell_name": "Incinerate Normal Missiles",
+                    "range": "0",
+                    "duration": "1 turn per CA level",
+                    "reversible": false,
+                    "pp": 208,
+                    "spell_desc": "<p>The sorcerer is protected from projectiles with shafts of wood. Arrows, bolts, javelins, and spears launched at the caster will <i>incinerate</i> within 10 feet of the sorcerer. Magical missiles are less likely to be affected: +1 missiles will <i>incinerate</i> on a 3-in-6 chance, +2 missiles on a 2-in-6 chance, and +3 missiles on a 1-in-6 chance; missiles greater than +3 are unaffected. The same chance applies to mundane missiles fired from a magical launcher (e.g., if a <b>+2 short bow</b> fires a normal arrow, the arrow will <i>incinerate</i> on a 2-in-6 chance).</p>"
                 }
             ]
         }
