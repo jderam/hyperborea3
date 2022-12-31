@@ -494,6 +494,23 @@ def get_gender():
     return gender
 
 
+def get_age(race_id: int) -> int:
+    grouping_roll = roll_dice(1, 6)
+    if 1 <= grouping_roll <= 3:
+        # age_grouping = "Young Adult"
+        age = 13 + roll_dice(1, 7)
+    elif 4 <= grouping_roll <= 6:
+        # age_grouping = "Adult"
+        # hyperboreans are different
+        if race_id == 5:
+            age = 20 + roll_dice(1, 80)
+        else:
+            age = 20 + roll_dice(1, 24)
+    else:
+        ValueError(f"Result from d6 roll was outside the range 1-6: {grouping_roll}")
+    return age
+
+
 def get_starting_armour(class_id: int) -> Dict[str, Any]:
     """Get starting armour by class.
     The SQL should always return one and only one result.
