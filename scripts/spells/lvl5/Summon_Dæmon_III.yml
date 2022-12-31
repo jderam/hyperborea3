@@ -24,10 +24,10 @@ will attack the sorcerer and/or any allies. If the
 stated target(s) is defeated, the standard chance
 of betrayal applies.
 <p><table><caption><b>Table 115: Summon Dæmon III Spell</b></caption>
-<tr><th>d6 Result</th><th>Defender Summoned</th></tr>
-<tr><td>1–3</td><td>Dæmon, Lesser, Class xi (1)</td></tr>
-<tr><td>4–5</td><td>Dæmon, Lesser, Class xii (1)</td></tr>
-<tr><td>6</td><td>Dæmon, Lesser, Class xiii (1)</td></tr></table></p></li>
+<tr><th>d6 Result</th><th style=text-align:left>Defender Summoned</th></tr>
+<tr><td>1–3</td><td style=text-align:left>Dæmon, Lesser, Class xi (1)</td></tr>
+<tr><td>4–5</td><td style=text-align:left>Dæmon, Lesser, Class xii (1)</td></tr>
+<tr><td>6</td><td style=text-align:left>Dæmon, Lesser, Class xiii (1)</td></tr></table></p></li>
 <li><b>Illuminator</b>: <i>Summons</i> a single <b>class xiv lesser
 dæmon</b>. The beast can use its special <i>legend lore</i>
 ability to determine the whereabouts of an artefact,

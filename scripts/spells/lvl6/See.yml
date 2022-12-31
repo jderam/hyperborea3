@@ -15,11 +15,11 @@ much like a <b>crystal ball</b>. The attempt to <i>see</i> the subject
 is not without chance of failure. The following table
 lists the chance-in-twelve of success:</p>
 <p><table><caption><b>Table 112: See Spell</b></caption>
-<tr style=text-align:center><th>Acquaintance with Subject</th><th>Chance of Success</th></tr>
-<tr style=text-align:center><td>Subject is well known by caster</td><td>11:12</td></tr>
-<tr style=text-align:center>Subject is somewhat known by caster</td><td>9:12</td></tr>
-<tr style=text-align:center>Well-drawn picture of subject available</td><td>7:12</td></tr>
-<tr style=text-align:center>Crudely drawn picture of subject available</td><td>5:12</td></tr></table></p>
+<tr><th style=text-align:left>Acquaintance with Subject</th><th>Chance of Success</th></tr>
+<tr><td style=text-align:left>Subject is well known by caster</td><td>11:12</td></tr>
+<tr><td style=text-align:left>Subject is somewhat known by caster</td><td>9:12</td></tr>
+<tr><td style=text-align:left>Well-drawn picture of subject available</td><td>7:12</td></tr>
+<tr><td style=text-align:left>Crudely drawn picture of subject available</td><td>5:12</td></tr></table></p>
 <p>The chance-in-twelve of success might be modified by
 the following factors:</p>
 <ul><li>Belonging of subject in possession of caster: +1</li>
