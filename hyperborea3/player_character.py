@@ -89,20 +89,20 @@ class PlayerCharacter:
         self.xp_to_next: Optional[int] = get_xp_to_next(self.class_id, self.level)
         self.xp_bonus: bool = get_xp_bonus(self.class_id, self.attr)
 
-        self.race_id = get_race_id()
-        self.race = get_race(self.race_id)
-
-        self.gender = get_gender()
-        self.age = get_age(self.race_id)
-        self.height = ""
-        self.weight = ""
-        self.eye_colour = ""
-        self.hair_colour = ""
-        self.complexion = ""
-        self.alignment = get_alignment(self.class_id)
+        # Background
+        self.race_id: int = get_race_id()
+        self.race: str = get_race(self.race_id)
+        self.gender: str = get_gender()
+        self.age: int = get_age(self.race_id)
+        self.height: str = ""
+        self.weight: str = "0 lbs."
+        self.eye_colour: str = ""
+        self.hair_colour: str = ""
+        self.complexion: str = ""
+        self.alignment: Dict[str, Any] = get_alignment(self.class_id)
         self.languages: List[str] = []
-        self.deity = get_deity(self.alignment["short_name"])
-        self.secondary_skill = get_secondary_skill()
+        self.deity: Dict[str, Any] = get_deity(self.alignment["short_name"])
+        self.secondary_skill: str = get_secondary_skill()
 
         self.hd = get_hd(self.class_id, self.level)
         self.hp = roll_hit_points(
