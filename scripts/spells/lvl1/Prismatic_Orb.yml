@@ -17,37 +17,37 @@ a special orb that cycles rapidly between two colours,
 delivering the effects of both colours.</p>
 <p><table>
 <caption><b>Table 107: Prismatic Orb Effects</b></caption>
-<tr><th>d8 Result</th> <th>Prismatic Orb Effect</th></tr>
-<tr><td>1</td> <td>Red orb that inflicts 1 hp of burning damage
+<tr><th>d8 Result</th><th style=text-align:left>Prismatic Orb Effect</th></tr>
+<tr><td>1</td><td style=text-align:left>Red orb that inflicts 1 hp of burning damage
 per CA level.</td></tr>
-<tr><td>2</td> <td>Orange orb that inflicts 2 hp burning damage
+<tr><td>2</td><td style=text-align:left>Orange orb that inflicts 2 hp burning damage
 per CA level.</td></tr>
 <tr><td>3</td>
-<td>Yellow orb that partially blinds the visual
+<td style=text-align:left>Yellow orb that partially blinds the visual
 organs of the target as per a <i>light</i> spell
 (−2 “to hit,” −2 AC, and −2 saving throws;
 <i>sorcery</i> saving throw negates); duration is
 1d2 + CA level in rounds.</td></tr>
 <tr><td>4</td>
-<td>Green orb that sickens target for 2d4
+<td style=text-align:left>Green orb that sickens target for 2d4
 rounds unless a <i>death</i> (poison) save is made;
 –2 “to hit” and saving throws.</td></tr>
 <tr><td>5</td>
-<td>Blue orb that inflicts effects similar to a <i>chill
+<td style=text-align:left>Blue orb that inflicts effects similar to a <i>chill
 touch</i> spell; <i>sorcery</i> saving throw or victim
 suffers 1d4 hp of energy-sapping damage
 and is penalized –1 “to hit” and damage rolls
 for 1d2 + CA level in rounds.</td></tr>
 <tr><td>6</td>
-<td>Indigo orb that causes the target to wander
+<td style=text-align:left>Indigo orb that causes the target to wander
 about confused for 1d6 rounds; <i>sorcery</i> saving
 throw modified by <i>willpower adjustment</i>
 (if applicable) negates the spell.</td></tr>
 <tr><td>7</td>
-<td>Violet orb that shoves the target with 10
+<td style=text-align:left>Violet orb that shoves the target with 10
 pounds of force per CA level (cf. <i>shove</i>
 spell) unless a <i>sorcery</i> save is made.</td></tr>
-<tr><td>8</td> <td>Two colours: Roll twice, ignoring results of 8.</td></tr>
+<tr><td>8</td><td style=text-align:left>Two colours: Roll twice, ignoring results of 8.</td></tr>
 </table></p>
 <p>A <i>prismatic orb</i> may not be hurled through barriers
 and will return to the caster’s palm up to three times
