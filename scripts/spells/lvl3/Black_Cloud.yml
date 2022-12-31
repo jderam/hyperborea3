@@ -1,0 +1,27 @@
+id: 27
+name: Black Cloud
+pp: 178
+Lvl:
+  - mag 3
+  - cry 3
+  - wch 3
+  - drd 3
+Rng: 240 feet
+Dur: 1 turn
+Rev: 0
+Desc: "<p>A small raincloud appears 30–60 feet above the intended
+target area. It releases a torrent of rain that forms
+a cylinder, showering a 30-foot-diameter area. If this
+spell is cast in an area of subfreezing temperature, the
+precipitation instead will be heavy snow; or, if the temperature
+is just at the freezing point, sleet and freezing
+rain results.</p>
+<p>All attack rolls made whilst under a <i>black cloud</i> are
+at −4 “to hit” penalties. Normal fires will be extinguished;
+magical fires will be temporarily snuffed,
+their dweomers rekindling 1 turn after the spell terminates
+(unless their durations elapse). <i>Black cloud</i> can
+also be used as a protective measure, for if a <i>fireball</i>,
+<i>flaming sphere</i>, or similar effect strikes the deluged
+area, the fire spell will be extinguished, and the rain
+vaporized to a cloud of steam.</p>"
