@@ -55,10 +55,14 @@ def get_count_from_table(table_name: str) -> int:
     return row_count
 
 
-def roll_dice(qty: int, sides: int) -> int:
+def roll_dice(qty: int, sides: int, reroll: List[int] = []) -> int:
+    assert all([x in reroll for x in range(1, sides + 1)]) is not True
     result = 0
     for i in range(qty):
-        result += random.randint(1, sides)
+        die_roll = 0
+        while die_roll == 0 or die_roll in reroll:
+            die_roll = random.randint(1, sides)
+        result += die_roll
     return result
 
 
@@ -509,6 +513,14 @@ def get_age(race_id: int) -> int:
     else:
         ValueError(f"Result from d6 roll was outside the range 1-6: {grouping_roll}")
     return age
+
+
+def get_height():
+    return
+
+
+def get_weight():
+    return
 
 
 def get_starting_armour(class_id: int) -> Dict[str, Any]:
