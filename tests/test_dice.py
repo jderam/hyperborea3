@@ -12,6 +12,17 @@ def test_3d6():
 
 
 @pytest.mark.repeat(1000)
+def test_reroll():
+    result = roll_dice(1, 6, reroll=[1])
+    assert 2 <= result <= 6
+
+
+def test_reroll_exception():
+    with pytest.raises(AssertionError):
+        roll_dice(1, 6, reroll=[1, 2, 3, 4, 5, 6])
+
+
+@pytest.mark.repeat(1000)
 def test_dice_method5():
     attr = roll_stats(method=5, class_id=random.randint(1, 4))
     for stat in attr:
