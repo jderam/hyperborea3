@@ -46,3 +46,7 @@ def test_pc():
             assert pc.money[k] == 0
     if pc.ca == 0:
         assert pc.spells is None
+    if pc.race_id == 5:
+        assert 14 <= pc.age <= 100
+    else:
+        assert 14 <= pc.age <= 44

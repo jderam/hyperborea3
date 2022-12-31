@@ -8,6 +8,7 @@ from hyperborea3.chargen import (
     apply_spells_per_day_bonus,
     calculate_ac,
     class_id_to_name,
+    get_age,
     get_alignment,
     get_attr,
     get_class_abilities,
@@ -88,12 +89,19 @@ class PlayerCharacter:
         self.xp_to_next: Optional[int] = get_xp_to_next(self.class_id, self.level)
         self.xp_bonus: bool = get_xp_bonus(self.class_id, self.attr)
 
-        self.alignment = get_alignment(self.class_id)
-        self.deity = get_deity(self.alignment["short_name"])
-
         self.race_id = get_race_id()
         self.race = get_race(self.race_id)
+
         self.gender = get_gender()
+        self.age = get_age(self.race_id)
+        self.height = ""
+        self.weight = ""
+        self.eye_colour = ""
+        self.hair_colour = ""
+        self.complexion = ""
+        self.alignment = get_alignment(self.class_id)
+        self.languages: List[str] = []
+        self.deity = get_deity(self.alignment["short_name"])
         self.secondary_skill = get_secondary_skill()
 
         self.hd = get_hd(self.class_id, self.level)
