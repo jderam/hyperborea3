@@ -34,6 +34,7 @@ from hyperborea3.chargen import (
     get_turn_undead_matrix,
     get_unskilled_weapon_penalty,
     get_xp_to_next,
+    inches_to_feet,
     list_tables,
     list_views,
     roll_hit_points,
@@ -771,3 +772,10 @@ def test_get_random_familiar():
 def test_get_secondary_skill():
     secondary_skill = get_secondary_skill()
     assert secondary_skill in VALID_SECONDARY_SKILLS
+
+
+def test_inches_to_feet():
+    assert inches_to_feet(60) == "5'0\""
+    assert inches_to_feet(65) == "5'5\""
+    assert inches_to_feet(70) == '''5'10"'''
+    assert inches_to_feet(75) == '''6'3"'''
