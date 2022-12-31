@@ -15,16 +15,16 @@ caster’s enemies as directed; if no enemies are present,
 they may perform other simple tasks as commanded,
 intuiting the sorcerer’s intent.</p>
 <p><table><caption><b>Table 119: Summon Monster IV Spell</b></caption>
-<tr style=text-align:center><th>d12 Result</th><th>Monster Summoned</th></tr>
-<tr style=text-align:center><td>1</td><td>Abominable Snow-Man</td></tr>
-<tr style=text-align:center><td>2</td><td>Ape, Albino</td></tr>
-<tr style=text-align:center><td>3</td><td>Ape, Mountain</td></tr>
-<tr style=text-align:center><td>4</td><td>Gargoyle</td></tr>
-<tr style=text-align:center><td>5</td><td>Ghast</td></tr>
-<tr style=text-align:center><td>6</td><td>Hippogriff</td></tr>
-<tr style=text-align:center><td>7</td><td>Lizard, Giant Draco</td></tr>
-<tr style=text-align:center><td>8</td><td>Night-gaunt</td></tr>
-<tr style=text-align:center><td>9</td><td>Scorpion, Giant</td></tr>
-<tr style=text-align:center><td>10</td><td>Weasel, Giant</td></tr>
-<tr style=text-align:center><td>11</td><td>Wight</td></tr>
-<tr style=text-align:center><td>12</td><td>Wolf, Dire</td></tr></table></p>"
+<tr><th>d12 Result</th><th style=text-align:left>Monster Summoned</th></tr>
+<tr><td>1</td><td style=text-align:left>Abominable Snow-Man</td></tr>
+<tr><td>2</td><td style=text-align:left>Ape, Albino</td></tr>
+<tr><td>3</td><td style=text-align:left>Ape, Mountain</td></tr>
+<tr><td>4</td><td style=text-align:left>Gargoyle</td></tr>
+<tr><td>5</td><td style=text-align:left>Ghast</td></tr>
+<tr><td>6</td><td style=text-align:left>Hippogriff</td></tr>
+<tr><td>7</td><td style=text-align:left>Lizard, Giant Draco</td></tr>
+<tr><td>8</td><td style=text-align:left>Night-gaunt</td></tr>
+<tr><td>9</td><td style=text-align:left>Scorpion, Giant</td></tr>
+<tr><td>10</td><td style=text-align:left>Weasel, Giant</td></tr>
+<tr><td>11</td><td style=text-align:left>Wight</td></tr>
+<tr><td>12</td><td style=text-align:left>Wolf, Dire</td></tr></table></p>"

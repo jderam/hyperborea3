@@ -15,14 +15,14 @@ caster’s enemies as directed; if no enemies are present,
 they may perform other simple tasks as commanded,
 intuiting the sorcerer’s intent.</p>
 <p><table><caption><b>Table 117: Summon Monster II Spell</b></caption>
-<tr><th>d10 Result</th><th>Monster Summoned</th></tr>
-<tr><td>1</td><td>Bat, Giant</td></tr>
-<tr><td>2</td><td>Bandogg</td></tr>
-<tr><td>3</td><td>Dog, War</td></tr>
-<tr><td>4</td><td>Fish-Man</td></tr>
-<tr><td>5</td><td>Ghoul</td></tr>
-<tr><td>6</td><td>Hyæna-Man</td></tr>
-<tr><td>7</td><td>Lizard-Man</td></tr>
-<tr><td>8</td><td>Spider, Giant Crab</td></tr>
-<tr><td>9</td><td>Troglodyte</td></tr>
-<tr><td>10</td><td>Zombie</td></tr></table></p>"
+<tr><th>d10 Result</th><th style=text-align:left>Monster Summoned</th></tr>
+<tr><td>1</td><td style=text-align:left>Bat, Giant</td></tr>
+<tr><td>2</td><td style=text-align:left>Bandogg</td></tr>
+<tr><td>3</td><td style=text-align:left>Dog, War</td></tr>
+<tr><td>4</td><td style=text-align:left>Fish-Man</td></tr>
+<tr><td>5</td><td style=text-align:left>Ghoul</td></tr>
+<tr><td>6</td><td style=text-align:left>Hyæna-Man</td></tr>
+<tr><td>7</td><td style=text-align:left>Lizard-Man</td></tr>
+<tr><td>8</td><td style=text-align:left>Spider, Giant Crab</td></tr>
+<tr><td>9</td><td style=text-align:left>Troglodyte</td></tr>
+<tr><td>10</td><td style=text-align:left>Zombie</td></tr></table></p>"

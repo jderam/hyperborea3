@@ -17,27 +17,27 @@ pass through is affected by two or more colours. Roll a
 d8 twice to determine which colours affect the victim—
 possibly three rolls if an <i>8</i> is one of the results.</p>
 <p><table><caption><b>Table 109: Prismatic Wall Results</b></caption>
-<tr><th>d8 Result</th><th>Prismatic Wall Effect</th></tr>
-<tr><td>1</td><td>Red band inflicts 2 hp of burning damage
+<tr><th>d8 Result</th><th style=text-align:left>Prismatic Wall Effect</th></tr>
+<tr><td>1</td><td style=text-align:left>Red band inflicts 2 hp of burning damage
 per CA level.</td></tr>
-<tr><td>2</td><td>Orange band that inflicts 3 hp of burning
+<tr><td>2</td><td style=text-align:left>Orange band that inflicts 3 hp of burning
 damage per CA level.</td></tr>
-<tr><td>3</td><td>Yellow band that permanently blinds the
+<tr><td>3</td><td style=text-align:left>Yellow band that permanently blinds the
 target unless a <i>sorcery</i> save is made; blind
 creatures always lose initiative and suffer
 −4 “to hit,” −4 AC, and −4 saving throws.</td></tr>
-<tr><td>4</td><td>Green band that poisons the victim; <i>death</i>
+<tr><td>4</td><td style=text-align:left>Green band that poisons the victim; <i>death</i>
 (poison) saving throw or immediate death.</td></tr>
-<tr><td>5</td><td>Blue band that paralyzes the victim for 3d4
+<tr><td>5</td><td style=text-align:left>Blue band that paralyzes the victim for 3d4
 turns unless a <i>death</i> saving throw is made.</td></tr>
-<tr><td>6</td><td>Indigo band causes the target to suffer intense
+<tr><td>6</td><td style=text-align:left>Indigo band causes the target to suffer intense
 hallucinations for 1d6 turns per the
 <i>madness</i> rules (see <b>Table 148</b>) unless a <i>sorcery</i>
 save is made.</td></tr>
-<tr><td>7</td><td>Violet band that throws target backward
+<tr><td>7</td><td style=text-align:left>Violet band that throws target backward
 2d6 feet and <i>stuns</i> the creature for 3d4
 rounds; <i>sorcery</i> saving throw negates.</td></tr>
-<tr><td>8</td><td>Struck by three colours; roll three times,
+<tr><td>8</td><td style=text-align:left>Struck by three colours; roll three times,
 ignoring results of 8.</td></tr></table></p>
 <p>A <i>prismatic wall</i> may be destroyed by a <i>dispel phantasm</i>
 spell or by use of <i>dispel magic</i>; for the latter,

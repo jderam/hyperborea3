@@ -13,25 +13,25 @@ base, 50 feet long, and 20 feet wide at its terminus. Any
 creature within the area of effect will be struck by one
 or more of these rays; roll a d8 to determine which:</p>
 <p><table><caption><b>Table 108: Prismatic Spray Effects</b></caption>
-<tr><th>d8 Result</th><th>Prismatic Spray Effect</th></tr>
-<tr><td>1</td><td>Red ray inflicts 2 hp of burning damage per
+<tr><th>d8 Result</th><th style=text-align:left>Prismatic Spray Effect</th></tr>
+<tr><td>1</td><td style=text-align:left>Red ray inflicts 2 hp of burning damage per
 CA level.</td></tr>
-<tr><td>2</td><td>Orange ray that inflicts 3 hp of burning
+<tr><td>2</td><td style=text-align:left>Orange ray that inflicts 3 hp of burning
 damage per CA level.</td></tr>
-<tr><td>3</td><td>Yellow ray that permanently blinds the
+<tr><td>3</td><td style=text-align:left>Yellow ray that permanently blinds the
 target unless a <i>sorcery</i> save is made; blind
 creatures always lose initiative and suffer
 −4 “to hit,” −4 AC, and −4 saving throws.</td></tr>
-<tr><td>4</td><td>Green ray that poisons the victim; <i>death</i>
+<tr><td>4</td><td style=text-align:left>Green ray that poisons the victim; <i>death</i>
 (poison) saving throw or immediate death.</td></tr>
-<tr><td>5</td><td>Blue ray that paralyzes the victim for 3d4
+<tr><td>5</td><td style=text-align:left>Blue ray that paralyzes the victim for 3d4
 turns unless a <i>death</i> saving throw is made.</td></tr>
-<tr><td>6</td><td>Indigo ray causes the target to suffer intense
+<tr><td>6</td><td style=text-align:left>Indigo ray causes the target to suffer intense
 hallucinations for 1d6 turns per the
 <i>madness</i> rules (see <b>Table 148</b>) unless a
 <i>sorcery</i> save is made, modified by <i>willpower
 adjustment</i>, if applicable.</td></tr>
-<tr><td>7</td><td>Violet ray <i>stuns</i> the target for 3d4 rounds;
+<tr><td>7</td><td style=text-align:left>Violet ray <i>stuns</i> the target for 3d4 rounds;
 <i>sorcery</i> saving throw negates.</td></tr>
-<tr><td>8</td><td>Struck by two rays; roll twice, ignoring results
+<tr><td>8</td><td style=text-align:left>Struck by two rays; roll twice, ignoring results
 of 8.</td></tr></table></p>"
