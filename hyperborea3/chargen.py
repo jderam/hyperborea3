@@ -515,12 +515,19 @@ def get_age(race_id: int) -> int:
     return age
 
 
-def get_height():
-    return
+def inches_to_feet(inches: int) -> str:
+    feet = inches // 12
+    leftover_inches = inches % 12
+    feet_inches = f'''{feet}'{leftover_inches}"'''
+    return feet_inches
+
+
+def get_height(race_id: int, gender: str) -> str:
+    pass
 
 
 def get_weight():
-    return
+    pass
 
 
 def get_starting_armour(class_id: int) -> Dict[str, Any]:
