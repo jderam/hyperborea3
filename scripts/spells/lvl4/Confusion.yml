@@ -17,10 +17,10 @@ throws to ignore the effects, modified by <i>willpower adjustment</i>,
 if applicable. The referee should determine
 the actions of each <i>confusion</i> victim:</p>
 <p><table><caption><b>Table 101: Confusion Spell</b></caption>
-<tr><th>d10 Result</th><th>Confused Action</th></tr>
-<tr><td>1</td><td>Wander away for 1 turn</td></tr>
-<tr><td>2–6</td><td>Stand idle, drooling and confused</td></tr>
-<tr><td>7–9</td><td>Physically attack closest creature</td></tr>
-<tr><td>0</td><td>Physically attack spell caster</td></tr></table></p>
+<tr><th>d10 Result</th><th style=text-align:left>Confused Action</th></tr>
+<tr><td>1</td><td style=text-align:left>Wander away for 1 turn</td></tr>
+<tr><td>2–6</td><td style=text-align:left>Stand idle, drooling and confused</td></tr>
+<tr><td>7–9</td><td style=text-align:left>Physically attack closest creature</td></tr>
+<tr><td>0</td><td style=text-align:left>Physically attack spell caster</td></tr></table></p>
 <p>Once affected, victims need not remain in the spell’s
 area of effect; the damage is done.</p>"
