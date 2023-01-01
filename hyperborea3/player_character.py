@@ -18,6 +18,7 @@ from hyperborea3.chargen import (
     get_favoured_weapons,
     get_gender,
     get_hd,
+    get_height_and_weight,
     get_level,
     get_next_atk_rate,
     get_priest_abilities,
@@ -94,8 +95,9 @@ class PlayerCharacter:
         self.race: str = get_race(self.race_id)
         self.gender: str = get_gender()
         self.age: int = get_age(self.race_id)
-        self.height: str = ""
-        self.weight: str = "0 lbs."
+        height, weight = get_height_and_weight(self.race_id, self.gender)
+        self.height: str = height
+        self.weight: str = weight
         self.eye_colour: str = ""
         self.hair_colour: str = ""
         self.complexion: str = ""
