@@ -16,6 +16,8 @@ from hyperborea3.chargen import (
     get_favoured_weapons,
     get_gender,
     get_hd,
+    get_height_and_weight,
+    get_height_weight_lookup_vals,
     get_level,
     get_qualifying_classes,
     get_race_id,
@@ -779,3 +781,41 @@ def test_inches_to_feet():
     assert inches_to_feet(65) == "5'5\""
     assert inches_to_feet(70) == '''5'10"'''
     assert inches_to_feet(75) == '''6'3"'''
+
+
+@pytest.mark.repeat(1000)
+def test_get_height_weight_lookup_vals():
+    for race_id in VALID_RACE_IDS:
+        for gender in VALID_GENDERS:
+            lookup_roll, lookup_gender = get_height_weight_lookup_vals(race_id, gender)
+            assert 3 <= lookup_roll <= 18
+            assert lookup_gender in ["Female", "Male"]
+            if race_id == 2 and lookup_gender == "Female":
+                assert lookup_roll >= 6
+            if race_id in [10, 11, 17, 20]:
+                assert lookup_roll <= 15
+            if race_id == 5:
+                assert lookup_roll in [17, 18]
+            if race_id == 21:
+                assert 9 <= lookup_roll <= 12
+
+
+def test_get_height_and_weight():
+    for race_id in VALID_RACE_IDS:
+        for gender in VALID_GENDERS:
+            height, weight = get_height_and_weight(race_id, gender)
+            height_ft = int(height.split("'")[0])
+            height_in = int(height.split("'")[1].replace('"', ""))
+            weight_num = int(weight.split()[0])
+            weight_units = weight.split()[-1]
+            assert 0 <= height_in <= 11
+            assert weight_units == "lbs."
+            if gender == "Male":
+                assert 5 <= height_ft <= 7
+                assert 96 <= weight_num <= 350
+            elif gender == "Female":
+                assert 4 <= height_ft <= 6
+                assert 68 <= weight_num <= 273
+            else:
+                assert 4 <= height_ft <= 7
+                assert 68 <= weight_num <= 350
