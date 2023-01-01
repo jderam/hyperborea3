@@ -31,6 +31,8 @@ def test_pc():
     assert pc.level in VALID_LEVELS
     assert pc.race_id in VALID_RACE_IDS
     assert pc.gender in VALID_GENDERS
+    assert pc.height.endswith('"')
+    assert pc.weight.endswith(" lbs.")
     assert pc.secondary_skill in VALID_SECONDARY_SKILLS
     assert pc.alignment["short_name"] in VALID_ALIGMENTS_SHORT
     assert pc.method in VALID_DICE_METHODS
