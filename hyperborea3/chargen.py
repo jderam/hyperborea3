@@ -1,9 +1,13 @@
 from importlib.resources import path
 import random
 import sqlite3
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
-from hyperborea3.valid_data import VALID_ALIGMENTS_SHORT, VALID_SQL_TABLES
+from hyperborea3.valid_data import (
+    VALID_ALIGMENTS_SHORT,
+    VALID_GENDERS,
+    VALID_SQL_TABLES,
+)
 
 with path("hyperborea3", "hyperborea.sqlite3") as p:
     DBPATH = p
@@ -55,10 +59,14 @@ def get_count_from_table(table_name: str) -> int:
     return row_count
 
 
-def roll_dice(qty: int, sides: int) -> int:
+def roll_dice(qty: int, sides: int, reroll: List[int] = []) -> int:
+    assert all([x in reroll for x in range(1, sides + 1)]) is not True
     result = 0
     for i in range(qty):
-        result += random.randint(1, sides)
+        die_roll = 0
+        while die_roll == 0 or die_roll in reroll:
+            die_roll = random.randint(1, sides)
+        result += die_roll
     return result
 
 
@@ -68,6 +76,14 @@ def roll_ndn_drop_lowest(qty: int, sides: int, drop_qty: int) -> int:
         result.append(roll_dice(1, sides))
     result.sort()
     return sum(result[drop_qty:])
+
+
+def roll_ndn_drop_highest(qty: int, sides: int, drop_qty: int) -> int:
+    result = []
+    for i in range(qty):
+        result.append(roll_dice(1, sides))
+    result.sort()
+    return sum(result[:-drop_qty])
 
 
 def get_class_id_map():
@@ -509,6 +525,87 @@ def get_age(race_id: int) -> int:
     else:
         ValueError(f"Result from d6 roll was outside the range 1-6: {grouping_roll}")
     return age
+
+
+def inches_to_feet(inches: int) -> str:
+    feet = inches // 12
+    leftover_inches = inches % 12
+    feet_inches = f'''{feet}'{leftover_inches}"'''
+    return feet_inches
+
+
+def get_height_weight_lookup_vals(race_id: int, gender: str) -> Tuple[int, str]:
+    # Use random Male or Female for lookup if Non-Binary
+    if gender not in VALID_GENDERS[:2]:
+        lookup_gender = random.choice(VALID_GENDERS[:2])
+    else:
+        lookup_gender = gender
+    # 3d6, reroll 1's
+    # Amazon Female
+    if race_id == 2 and lookup_gender == "Female":
+        lookup_roll = roll_dice(3, 6, reroll=[1])
+    # 4d6 drop lowest
+    # Anglo-Saxons, Esquimaux-Ixians, Ixians, Kimmerians, Vikings, Yakuts
+    elif race_id in [6, 8, 12, 13, 15, 24]:
+        lookup_roll = roll_ndn_drop_lowest(4, 6, 1)
+    # 4d6 drop highest
+    # Esquimaux, Lemurians, Tlingits
+    elif race_id in [4, 18, 23]:
+        lookup_roll = roll_ndn_drop_highest(4, 6, 1)
+    # 17 or 18
+    # Hyperboreans
+    elif race_id == 5:
+        d6_roll = roll_dice(1, 6)
+        if d6_roll in [1, 2]:
+            lookup_roll = 17
+        else:
+            lookup_roll = 18
+    # 3d6, reroll 6's
+    # Lapps, Mu, Picts, Half-Blood Picts
+    elif race_id in [10, 11, 17, 20]:
+        lookup_roll = roll_dice(3, 6, reroll=[6])
+    # Use average roll 9-12
+    # Oon
+    elif race_id == 21:
+        lookup_roll = 10
+    # Standard procedure: 3d6 roll
+    # Everyone else
+    else:
+        lookup_roll = roll_dice(3, 6)
+    return lookup_roll, lookup_gender
+
+
+def get_height_and_weight(race_id: int, gender: str) -> Tuple[str, str]:
+    lookup_roll, lookup_gender = get_height_weight_lookup_vals(race_id, gender)
+    cur.execute(
+        f"""
+        SELECT {lookup_gender.lower()}_height AS height_range
+             , {lookup_gender.lower()}_avg_weight AS avg_weight
+          FROM t069_height_and_weight
+         WHERE id = ?
+        """,
+        (lookup_roll,),
+    )
+    result = dict(cur.fetchone())
+    height_range = [int(x) for x in result["height_range"].split("-")]
+    height_inches = random.randint(height_range[0], height_range[1])
+    height = inches_to_feet(height_inches)
+    base_weight = result["avg_weight"]
+    weight_variability_roll = roll_dice(1, 10)
+    if weight_variability_roll in [1, 2, 3]:
+        weight_multiplier = 1 - (roll_dice(1, 4) * 0.05)
+        weight = round(base_weight * weight_multiplier)
+    elif weight_variability_roll in [4, 5, 6, 7]:
+        weight = base_weight
+    elif weight_variability_roll in [8, 9, 10]:
+        weight_multiplier = 1 + (roll_dice(1, 4) * 0.1)
+        weight = round(base_weight * weight_multiplier)
+    else:
+        raise ValueError(
+            "weight_variability_roll out of expected range (1-10): "
+            f"{weight_variability_roll}"
+        )
+    return height, f"{weight} lbs."
 
 
 def get_starting_armour(class_id: int) -> Dict[str, Any]:
