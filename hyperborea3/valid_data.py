@@ -362,6 +362,31 @@ VALID_GP = range(2, 6)
 VALID_HD_QTY = list(range(1, 10))
 VALID_HD_SIZE = [4, 6, 8, 10, 12]
 VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
+VALID_LANGUAGES = [
+    "Common",
+    "Berber",
+    "Esquimaux (Coastal dialect)",
+    "Esquimaux (Tundra dialect)",
+    "Esquimaux-Ixian (pidgin)",
+    "Hellenic (Amazon dialect)",
+    "Hellenic (Atlantean dialect)",
+    "Hellenic (Greek dialect)",
+    "Hellenic (Hyperborean dialect)",
+    "Hellenic (Kimmerian dialect)",
+    "Keltic (Goidelic dialect)",
+    "Keltic (Pictish dialect)",
+    "Latin",
+    "Lemurian",
+    "Muat",
+    "Old Norse (Anglo-Saxon dialect)",
+    "Old Norse (Viking dialect)",
+    "Oonat",
+    "Thracian (Ixian dialect)",
+    "Thracian (Kimmerian dialect)",
+    "Tlingit",
+    "Uralic (Lapp dialect)",
+    "Uralic (Yakut dialect)",
+]
 VALID_LEVELS = list(range(1, 13))
 VALID_MONSTER_IDS = [1, 2, 3]
 VALID_RACE_IDS = list(range(1, 25))
