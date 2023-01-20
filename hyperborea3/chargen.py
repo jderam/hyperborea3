@@ -608,6 +608,37 @@ def get_height_and_weight(race_id: int, gender: str) -> Tuple[str, str]:
     return height, f"{weight} lbs."
 
 
+def get_languages(bonus_languages: int) -> List[str]:
+    """Get known languages."""
+    languages = []
+    cur.execute(
+        """
+        SELECT language_dialect
+          FROM t071_languages
+         WHERE language_id = 1
+        """
+    )
+    language = cur.fetchone()["language_dialect"]
+    languages.append(language)
+    if bonus_languages > 0:
+        new_languages_learned = 0
+        while new_languages_learned < bonus_languages:
+            d100_roll = roll_dice(1, 100)
+            cur.execute(
+                """
+                SELECT language_dialect
+                FROM t071_languages
+                WHERE ? BETWEEN d100_min AND d100_max
+                """,
+                (d100_roll,),
+            )
+            language = cur.fetchone()["language_dialect"]
+            if language not in languages:
+                languages.append(language)
+                new_languages_learned += 1
+    return languages
+
+
 def get_starting_armour(class_id: int) -> Dict[str, Any]:
     """Get starting armour by class.
     The SQL should always return one and only one result.
