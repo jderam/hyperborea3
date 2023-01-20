@@ -18,6 +18,7 @@ from hyperborea3.chargen import (
     get_hd,
     get_height_and_weight,
     get_height_weight_lookup_vals,
+    get_languages,
     get_level,
     get_qualifying_classes,
     get_race_id,
@@ -391,6 +392,16 @@ def test_get_alignment():
             Unexpected alignment '{alignment}' not in
             allowed values {allowed_alignments}
         """
+
+
+def test_get_languages():
+    for i in range(-1, 4):
+        languages = get_languages(i)
+        if i <= 0:
+            assert languages == ["Common"]
+        elif i > 0:
+            assert "Common" in languages
+            assert len(set(languages)) == i + 1
 
 
 @pytest.mark.repeat(20)

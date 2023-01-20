@@ -19,6 +19,7 @@ from hyperborea3.chargen import (
     get_gender,
     get_hd,
     get_height_and_weight,
+    get_languages,
     get_level,
     get_next_atk_rate,
     get_priest_abilities,
@@ -102,7 +103,7 @@ class PlayerCharacter:
         self.hair_colour: str = ""
         self.complexion: str = ""
         self.alignment: Dict[str, Any] = get_alignment(self.class_id)
-        self.languages: List[str] = []
+        self.languages: List[str] = get_languages(self.attr["in"]["lang"])
         self.deity: Dict[str, Any] = get_deity(self.alignment["short_name"])
         self.secondary_skill: str = get_secondary_skill()
 
