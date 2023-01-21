@@ -40,15 +40,18 @@ VALID_CLASS_ID_MAP = {
 }
 VALID_CLASS_IDS = list(range(1, 34))
 VALID_COMPLEXIONS = [
+    "Albino",
     "Bronzed",
     "Coppery",
     "Dark brown",
     "Dusky",
+    "Ebony",
     "Fair",
     "Glaucous",
     "Jaundiced",
     "Light brown",
     "Medium brown",
+    "Milky white",
     "Olive",
     "Ruddy",
     "Tan",
@@ -84,6 +87,7 @@ VALID_DICE_METHODS = [1, 2, 3, 4, 5, 6]
 VALID_EYE_COLOURS = [
     "Amber, Dark",
     "Amber, Light",
+    "Black",
     "Blue, Dark",
     "Blue, Light",
     "Brown, Dark",
