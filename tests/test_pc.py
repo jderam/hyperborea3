@@ -5,11 +5,14 @@ from hyperborea3.valid_data import (
     VALID_ABILITY_SCORES,
     VALID_ALIGMENTS_SHORT,
     VALID_CA,
+    VALID_COMPLEXIONS,
     VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
+    VALID_EYE_COLOURS,
     VALID_FA,
     VALID_GENDERS,
     VALID_GP,
+    VALID_HAIR_COLOURS,
     VALID_LANGUAGES,
     VALID_LEVELS,
     VALID_RACE_IDS,
@@ -34,6 +37,9 @@ def test_pc():
     assert pc.gender in VALID_GENDERS
     assert pc.height.endswith('"')
     assert pc.weight.endswith(" lbs.")
+    assert pc.eye_colour in VALID_EYE_COLOURS
+    assert pc.hair_colour in VALID_HAIR_COLOURS
+    assert pc.complexion in VALID_COMPLEXIONS
     assert pc.secondary_skill in VALID_SECONDARY_SKILLS
     assert pc.alignment["short_name"] in VALID_ALIGMENTS_SHORT
     if pc.attr["in"]["lang"] >= 0:
