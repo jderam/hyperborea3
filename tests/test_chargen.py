@@ -12,9 +12,12 @@ from hyperborea3.chargen import (
     get_class_id_map,
     get_class_level_data,
     get_combat_matrix,
+    get_complexion,
     get_deity,
+    get_eye_colour,
     get_favoured_weapons,
     get_gender,
+    get_hair_colour,
     get_hd,
     get_height_and_weight,
     get_height_weight_lookup_vals,
@@ -50,14 +53,17 @@ from hyperborea3.valid_data import (
     VALID_CA,
     VALID_CLASS_ID_MAP,
     VALID_CLASS_IDS,
+    VALID_COMPLEXIONS,
     VALID_DEITIES,
     VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
+    VALID_EYE_COLOURS,
     VALID_FA,
     VALID_FAMILIARS,
     VALID_FAVOURED_WEAPONS,
     VALID_GENDERS,
     VALID_GP,
+    VALID_HAIR_COLOURS,
     VALID_HD_PLUS,
     VALID_HD_QTY,
     VALID_HD_SIZE,
@@ -830,3 +836,24 @@ def test_get_height_and_weight():
             else:
                 assert 4 <= height_ft <= 7
                 assert 68 <= weight_num <= 350
+
+
+def test_get_eye_colour():
+    for race_id in VALID_RACE_IDS:
+        for gender in VALID_GENDERS:
+            eye_colour = get_eye_colour(race_id, gender)
+            assert eye_colour in VALID_EYE_COLOURS
+
+
+def test_get_hair_colour():
+    for race_id in VALID_RACE_IDS:
+        for gender in VALID_GENDERS:
+            hair_colour = get_hair_colour(race_id, gender)
+            assert hair_colour in VALID_HAIR_COLOURS
+
+
+def test_get_complexion():
+    for race_id in VALID_RACE_IDS:
+        for gender in VALID_GENDERS:
+            complexion = get_complexion(race_id, gender)
+            assert complexion in VALID_COMPLEXIONS

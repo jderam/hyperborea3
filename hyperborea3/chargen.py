@@ -504,7 +504,7 @@ def get_race(race_id: int) -> str:
     return race
 
 
-def get_gender():
+def get_gender() -> str:
     genders = ["Male", "Female", "Non-Binary"]
     gender = random.choices(genders, weights=[47.5, 47.5, 5.0])[0]
     return gender
@@ -606,6 +606,282 @@ def get_height_and_weight(race_id: int, gender: str) -> Tuple[str, str]:
             f"{weight_variability_roll}"
         )
     return height, f"{weight} lbs."
+
+
+def get_eye_colour(race_id: int, gender: str) -> str:
+    # Common
+    if race_id == 1:
+        roll = roll_dice(1, 100) + 10
+    # Amazon
+    elif race_id == 2:
+        roll = roll_dice(1, 20) + 58
+    # Anglo-Saxon
+    elif race_id == 13:
+        roll = roll_dice(1, 50) + 58
+    # Atlantean
+    elif race_id == 3:
+        roll = roll_dice(1, 6) + 4
+    # Carolingian Frank
+    elif race_id == 14:
+        roll = roll_dice(1, 50) + 58
+    # Esquimaux
+    elif race_id == 4:
+        roll = roll_dice(1, 50) + 10
+    # Esquimaux-Ixian
+    elif race_id == 15:
+        roll = roll_dice(1, 50) + 10
+    # Greek
+    elif race_id == 16:
+        roll = roll_dice(1, 50) + 12
+    # Hyperborean
+    elif race_id == 5:
+        roll = roll_dice(1, 4) + 110
+    # Ixian
+    elif race_id == 6:
+        if gender == "Non-Binary":
+            gender = random.choice(["Male", "Female"])
+        if gender == "Female":
+            roll = roll_dice(1, 4)
+        elif gender == "Male":
+            return "Black"
+        else:
+            raise ValueError(f"Unrecognized value for gender: '{gender}'")
+    # Kelt
+    elif race_id == 7:
+        roll = roll_dice(1, 30) + 58
+    # Kimmerian
+    elif race_id == 8:
+        return "Grey, Dark"
+    # Kimmeri-Kelt
+    elif race_id == 9:
+        roll = roll_dice(1, 50) + 58
+    # Lapp
+    elif race_id == 17:
+        roll = roll_dice(1, 50) + 58
+    # Lemurian
+    elif race_id == 18:
+        roll = roll_dice(1, 50) + 10
+    # Moor
+    elif race_id == 19:
+        roll = roll_dice(1, 50) + 34
+    # Mu
+    elif race_id == 20:
+        roll = roll_dice(1, 30) + 12
+    # Oon
+    elif race_id == 21:
+        return "Grey, Dark"
+    # Pict
+    elif race_id == 10:
+        roll = roll_dice(1, 6) + 79
+    # Pict (Half-Blood)
+    elif race_id == 11:
+        roll = roll_dice(1, 50) + 10
+    # Roman
+    elif race_id == 22:
+        roll = roll_dice(1, 50) + 58
+    # Tlingit
+    elif race_id == 23:
+        roll = roll_dice(1, 50) + 10
+    # Viking
+    elif race_id == 12:
+        roll = roll_dice(1, 20) + 58
+    # Yakut
+    elif race_id == 24:
+        roll = roll_dice(1, 30) + 12
+
+    cur.execute(
+        """SELECT eye_colour
+             FROM t070a_eye_colour
+            WHERE ? BETWEEN roll_min AND roll_max;
+        """,
+        (roll,),
+    )
+    eye_colour: str = cur.fetchone()["eye_colour"]
+    return eye_colour
+
+
+def get_hair_colour(race_id: int, gender: str) -> str:
+    # Common
+    if race_id == 1:
+        roll = roll_dice(1, 100) + 20
+    # Amazon
+    elif race_id == 2:
+        roll = roll_dice(1, 50) + 40
+    # Anglo-Saxon
+    elif race_id == 13:
+        roll = roll_dice(1, 50) + 50
+    # Atlantean
+    elif race_id == 3:
+        roll = roll_dice(1, 20) + 20
+    # Carolingian Frank
+    elif race_id == 14:
+        roll = roll_dice(1, 50) + 50
+    # Esquimaux
+    elif race_id == 4:
+        roll = roll_dice(1, 30) + 40
+    # Esquimaux-Ixian
+    elif race_id == 15:
+        return "Black"
+    # Greek
+    elif race_id == 16:
+        roll = roll_dice(1, 20) + 40
+    # Hyperborean
+    elif race_id == 5:
+        if gender == "Non-Binary":
+            gender = random.choice(["Male", "Female"])
+        if gender == "Female":
+            roll = roll_dice(1, 12) + 120
+        elif gender == "Male":
+            roll = roll_dice(1, 10) + 122
+        else:
+            raise ValueError(f"Unrecognized value for gender: '{gender}'")
+    # Ixian
+    elif race_id == 6:
+        return "Black"
+    # Kelt
+    elif race_id == 7:
+        roll = roll_dice(1, 30) + 66
+    # Kimmerian
+    elif race_id == 8:
+        return "Black"
+    # Kimmeri-Kelt
+    elif race_id == 9:
+        roll = roll_dice(1, 50) + 40
+    # Lapp
+    elif race_id == 17:
+        roll = roll_dice(1, 50) + 65
+    # Lemurian
+    elif race_id == 18:
+        roll = roll_dice(1, 20) + 40
+    # Moor
+    elif race_id == 19:
+        return "Black"
+    # Mu
+    elif race_id == 20:
+        return "Black"
+    # Oon
+    elif race_id == 21:
+        return "Black"
+    # Pict
+    elif race_id == 10:
+        roll = roll_dice(1, 20)
+    # Pict (Half-Blood)
+    elif race_id == 11:
+        roll = roll_dice(1, 10) + 18
+    # Roman
+    elif race_id == 22:
+        roll = roll_dice(1, 20) + 40
+    # Tlingit
+    elif race_id == 23:
+        return "Black"
+    # Viking
+    elif race_id == 12:
+        roll = roll_dice(1, 30) + 90
+    # Yakut
+    elif race_id == 24:
+        roll = roll_dice(1, 30) + 40
+
+    cur.execute(
+        """SELECT hair_colour
+             FROM t070b_hair_colour
+            WHERE ? BETWEEN roll_min AND roll_max;
+        """,
+        (roll,),
+    )
+    hair_colour: str = cur.fetchone()["hair_colour"]
+    return hair_colour
+
+
+def get_complexion(race_id: int, gender: str) -> str:
+    # Common
+    if race_id == 1:
+        roll = roll_dice(1, 30) + 70
+    # Amazon
+    elif race_id == 2:
+        roll = roll_dice(1, 30) + 70
+    # Anglo-Saxon
+    elif race_id == 13:
+        roll = roll_dice(1, 20) + 80
+    # Atlantean
+    elif race_id == 3:
+        roll = roll_dice(1, 10)
+    # Carolingian Frank
+    elif race_id == 14:
+        roll = roll_dice(1, 20) + 80
+    # Esquimaux
+    elif race_id == 4:
+        return "Jaundiced"
+    # Esquimaux-Ixian
+    elif race_id == 15:
+        return "Dusky"
+    # Greek
+    elif race_id == 16:
+        roll = roll_dice(1, 30) + 70
+    # Hyperborean
+    elif race_id == 5:
+        return "Milky white"
+    # Ixian
+    elif race_id == 6:
+        return "Dusky"
+    # Kelt
+    elif race_id == 7:
+        roll = roll_dice(1, 20) + 80
+    # Kimmerian
+    elif race_id == 8:
+        roll = roll_dice(1, 30) + 65
+    # Kimmeri-Kelt
+    elif race_id == 9:
+        roll = roll_dice(1, 30) + 70
+    # Lapp
+    elif race_id == 17:
+        roll = roll_dice(1, 30) + 65
+    # Lemurian
+    elif race_id == 18:
+        roll = roll_dice(1, 20) + 40
+    # Moor
+    elif race_id == 19:
+        roll = roll_dice(1, 20) + 10
+    # Mu
+    elif race_id == 20:
+        return "Ebony"
+    # Oon
+    elif race_id == 21:
+        return "Albino"
+    # Pict
+    elif race_id == 10:
+        if gender == "Non-Binary":
+            gender = random.choice(["Male", "Female"])
+        if gender == "Female":
+            roll = roll_dice(1, 12) + 88
+        elif gender == "Male":
+            roll = roll_dice(1, 12) + 80
+        else:
+            raise ValueError(f"Unrecognized value for gender: '{gender}'")
+    # Pict (Half-Blood)
+    elif race_id == 11:
+        roll = roll_dice(1, 10) + 45
+    # Roman
+    elif race_id == 22:
+        roll = roll_dice(1, 30) + 70
+    # Tlingit
+    elif race_id == 23:
+        roll = roll_dice(1, 10) + 30
+    # Viking
+    elif race_id == 12:
+        roll = roll_dice(1, 20) + 80
+    # Yakut
+    elif race_id == 24:
+        roll = roll_dice(1, 50) + 50
+
+    cur.execute(
+        """SELECT complexion
+             FROM t070c_complexion
+            WHERE ? BETWEEN roll_min AND roll_max;
+        """,
+        (roll,),
+    )
+    complexion: str = cur.fetchone()["complexion"]
+    return complexion
 
 
 def get_languages(bonus_languages: int) -> List[str]:
