@@ -39,6 +39,20 @@ VALID_CLASS_ID_MAP = {
     33: "Ice Thief",
 }
 VALID_CLASS_IDS = list(range(1, 34))
+VALID_COMPLEXIONS = [
+    "Bronzed",
+    "Coppery",
+    "Dark brown",
+    "Dusky",
+    "Fair",
+    "Glaucous",
+    "Jaundiced",
+    "Light brown",
+    "Medium brown",
+    "Olive",
+    "Ruddy",
+    "Tan",
+]
 VALID_DEITIES = [
     "Apollo",
     "Artemis",
@@ -67,6 +81,25 @@ VALID_DEITIES = [
 ]
 VALID_DENOMINATIONS = ["pp", "gp", "ep", "sp", "cp"]
 VALID_DICE_METHODS = [1, 2, 3, 4, 5, 6]
+VALID_EYE_COLOURS = [
+    "Amber, Dark",
+    "Amber, Light",
+    "Blue, Dark",
+    "Blue, Light",
+    "Brown, Dark",
+    "Brown, Light",
+    "Green, Dark",
+    "Green, Emerald",
+    "Green, Light",
+    "Grey, Dark",
+    "Grey, Light",
+    "Hazel, Dark",
+    "Hazel, Light",
+    "Violet, Dark",
+    "Violet, Light",
+    "Yellow, Dark",
+    "Yellow, Light",
+]
 VALID_FA = list(range(13))
 VALID_FAMILIARS = [
     "Archæopteryx",
@@ -359,6 +392,29 @@ VALID_FAVOURED_WEAPONS = {
 }
 VALID_GENDERS = ["Male", "Female", "Non-Binary"]
 VALID_GP = range(2, 6)
+VALID_HAIR_COLOURS = [
+    "Auburn, Dark",
+    "Auburn, Light",
+    "Auburn, Medium",
+    "Black",
+    "Blond, Dark",
+    "Blond, Light",
+    "Blond, Medium",
+    "Blue-Black",
+    "Brown, Dark",
+    "Brown, Light",
+    "Brown, Medium",
+    "Golden, Pale",
+    "Golden, Rich",
+    "Red, Dark",
+    "Red, Light",
+    "Red, Medium",
+    "Red-Orange, Dark",
+    "Red-Orange, Light",
+    "Red-Orange, Medium",
+    "Silvery-White",
+    "White",
+]
 VALID_HD_QTY = list(range(1, 10))
 VALID_HD_SIZE = [4, 6, 8, 10, 12]
 VALID_HD_PLUS = [1, 2, 3, 4, 6, 8, 9, 12]
