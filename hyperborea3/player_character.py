@@ -14,9 +14,12 @@ from hyperborea3.chargen import (
     get_class_abilities,
     get_class_level_data,
     get_combat_matrix,
+    get_complexion,
     get_deity,
+    get_eye_colour,
     get_favoured_weapons,
     get_gender,
+    get_hair_colour,
     get_hd,
     get_height_and_weight,
     get_languages,
@@ -99,9 +102,9 @@ class PlayerCharacter:
         height, weight = get_height_and_weight(self.race_id, self.gender)
         self.height: str = height
         self.weight: str = weight
-        self.eye_colour: str = ""
-        self.hair_colour: str = ""
-        self.complexion: str = ""
+        self.eye_colour: str = get_eye_colour(self.race_id, self.gender)
+        self.hair_colour: str = get_hair_colour(self.race_id, self.gender)
+        self.complexion: str = get_complexion(self.race_id, self.gender)
         self.alignment: Dict[str, Any] = get_alignment(self.class_id)
         self.languages: List[str] = get_languages(self.attr["in"]["lang"])
         self.deity: Dict[str, Any] = get_deity(self.alignment["short_name"])
