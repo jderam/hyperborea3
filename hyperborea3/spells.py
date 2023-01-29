@@ -1,8 +1,11 @@
 from importlib.resources import path
+import logging
 import sqlite3
 from typing import Any, Dict, List
 
 from hyperborea3.valid_data import VALID_SPELL_IDS
+
+logger = logging.getLogger(__name__)
 
 with path("hyperborea3", "hyperborea.sqlite3") as p:
     DBPATH = p
