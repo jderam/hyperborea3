@@ -1,4 +1,5 @@
 import json
+import logging
 import random  # noqa: F401
 from typing import Any, Dict, List, Optional
 
@@ -52,6 +53,8 @@ from hyperborea3.valid_data import (
     VALID_DICE_METHODS,
     VALID_SUBCLASS_PARAMS,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class PlayerCharacter:
