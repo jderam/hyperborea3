@@ -1,36 +1,12 @@
 from importlib.resources import path
 import logging
-import os
 import sqlite3
 from typing import Any, Dict, List, Optional, Tuple
 
-# Set up the logger
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.WARN)
-
-# Create a console handler to print to the console
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.WARN)
-
-# Create a formatter for both handlers
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-
-DEBUG = os.getenv("DEBUG", "0")
-
-if DEBUG == "1":
-    logger.setLevel(logging.DEBUG)
-    # Create a file handler to write to a log file
-    file_handler = logging.FileHandler("app.log")
-    file_handler.setLevel(logging.DEBUG)
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
-    console_handler.setLevel(logging.DEBUG)
-
-console_handler.setFormatter(formatter)
-logger.addHandler(console_handler)
 
 
-def dict_factory(cursor, row) -> Dict[str, Any]:
+def dict_factory(cursor: sqlite3.Cursor, row: sqlite3.Row) -> Dict[str, Any]:
     d = {}
     for idx, col in enumerate(cursor.description):
         d[col[0]] = row[idx]
