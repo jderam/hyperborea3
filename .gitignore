@@ -11,3 +11,4 @@ dist/
 local/
 .DS_Store
 .tox
+app.log
