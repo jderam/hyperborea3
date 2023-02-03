@@ -417,7 +417,7 @@ def generate_pictish_name(gender: str) -> str:
     if gender == "Female":
         sql = get_name_sql("t185_pictish_female_names")
         roll = roll_dice(1, 20)
-        first_name = execute_query_one(sql, (roll,))["name"]
+        name: str = execute_query_one(sql, (roll,))["name"]
     else:
         sql = get_name_sql("t186_pictish_male_names")
         roll = roll_dice(1, 40)
