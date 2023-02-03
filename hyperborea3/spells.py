@@ -1,21 +1,15 @@
-from importlib.resources import path
-import sqlite3
+import logging
 from typing import Any, Dict, List
 
+from hyperborea3.db import execute_query_all, execute_query_one
 from hyperborea3.valid_data import VALID_SPELL_IDS
 
-with path("hyperborea3", "hyperborea.sqlite3") as p:
-    DBPATH = p
-URI = f"file:{str(DBPATH)}?mode=ro"
-con = sqlite3.connect(URI, check_same_thread=False, uri=True)
-con.row_factory = sqlite3.Row
-cur = con.cursor()
+logger = logging.getLogger(__name__)
 
 
 def get_all_spells() -> List[Dict[str, Any]]:
     """Get all spells from database."""
-    cur.execute(
-        """
+    all_spells_sql = """
         SELECT spell_id
              , spell_name
              , NULL as level
@@ -25,20 +19,17 @@ def get_all_spells() -> List[Dict[str, Any]]:
              , pp
              , spell_desc
           FROM spells;
-        """,
-    )
-    spell_list: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
-    cur.execute(
-        """
+    """
+    spell_list = execute_query_all(all_spells_sql)
+    school_sql = """
         SELECT spell_id
              , school
              , spell_level
           FROM v_complete_spell_list
          WHERE school != 'run'
         ORDER BY school;
-        """,
-    )
-    school_data: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    """
+    school_data = execute_query_all(school_sql)
     for spell in spell_list:
         level = (", ").join(
             [
@@ -57,8 +48,7 @@ def get_spell(spell_id: int) -> Dict[str, Any]:
     """Get a spell from database."""
     if spell_id not in VALID_SPELL_IDS:
         raise ValueError(f"{spell_id=} is invalid.")
-    cur.execute(
-        """
+    get_spell_sql = """
         SELECT spell_id
              , spell_name
              , NULL as level
@@ -69,22 +59,17 @@ def get_spell(spell_id: int) -> Dict[str, Any]:
              , spell_desc
           FROM spells
          WHERE spell_id = ?;
-        """,
-        (spell_id,),
-    )
-    spell_data: Dict[str, Any] = dict(cur.fetchone())
-    cur.execute(
-        """
+    """
+    spell_data = execute_query_one(get_spell_sql, (spell_id,))
+    school_sql = """
         SELECT school
              , spell_level
           FROM v_complete_spell_list
          WHERE spell_id = ?
            AND school != 'run'
         ORDER BY school;
-        """,
-        (spell_id,),
-    )
-    schools: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    """
+    schools = execute_query_all(school_sql, (spell_id,))
     spell_data.update(
         {
             "level": (", ").join(

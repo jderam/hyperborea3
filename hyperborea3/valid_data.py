@@ -1,3 +1,5 @@
+from typing import Dict
+
 VALID_ABILITIES = ["st", "dx", "cn", "in", "ws", "ch"]
 VALID_ABILITY_SCORES = list(range(3, 19))
 VALID_AC_TYPES = ["ascending", "descending"]
@@ -450,6 +452,32 @@ VALID_LANGUAGES = [
 VALID_LEVELS = list(range(1, 13))
 VALID_MONSTER_IDS = [1, 2, 3]
 VALID_RACE_IDS = list(range(1, 25))
+VALID_RACES_BY_ID: Dict[int, str] = {
+    1: "Common",
+    2: "Amazon",
+    3: "Atlantean",
+    4: "Esquimaux",
+    5: "Hyperborean",
+    6: "Ixian",
+    7: "Kelt",
+    8: "Kimmerian",
+    9: "Kimmeri-Kelt",
+    10: "Pict",
+    11: "Pict (Half-Blood)",
+    12: "Viking",
+    13: "Anglo-Saxon",
+    14: "Carolingian Frank",
+    15: "Esquimaux-Ixian",
+    16: "Greek",
+    17: "Lapp",
+    18: "Lemurian",
+    19: "Moor",
+    20: "Mu",
+    21: "Oon",
+    22: "Roman",
+    23: "Tlingit",
+    24: "Yakut",
+}
 VALID_SAVES = list(range(11, 17))
 VALID_SCHOOLS = ["clr", "cry", "drd", "ill", "mag", "nec", "pyr", "run", "wch"]
 VALID_SECONDARY_SKILLS = [

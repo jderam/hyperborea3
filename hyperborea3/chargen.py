@@ -1,4 +1,5 @@
 from importlib.resources import path
+import logging
 import random
 import sqlite3
 from typing import Any, Dict, List, Optional, Tuple
@@ -8,6 +9,8 @@ from hyperborea3.valid_data import (
     VALID_GENDERS,
     VALID_SQL_TABLES,
 )
+
+logger = logging.getLogger(__name__)
 
 with path("hyperborea3", "hyperborea.sqlite3") as p:
     DBPATH = p

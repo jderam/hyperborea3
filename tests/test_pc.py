@@ -26,6 +26,8 @@ from hyperborea3.valid_data import (
 def test_pc():
     # stress test on building a bunch of characters
     pc = PlayerCharacter(xp=random.randint(1, 1000) * 1000)
+    assert isinstance(pc.name, str)
+    assert len(pc.name) >= 2
     assert pc.attr["st"]["score"] in VALID_ABILITY_SCORES
     assert pc.attr["dx"]["score"] in VALID_ABILITY_SCORES
     assert pc.attr["cn"]["score"] in VALID_ABILITY_SCORES

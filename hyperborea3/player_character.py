@@ -1,4 +1,5 @@
 import json
+import logging
 import random  # noqa: F401
 from typing import Any, Dict, List, Optional
 
@@ -46,12 +47,15 @@ from hyperborea3.chargen import (
     roll_hit_points,
     select_random_class,
 )
+from hyperborea3.namegen import generate_name
 from hyperborea3.valid_data import (
     VALID_AC_TYPES,
     VALID_CLASS_IDS,
     VALID_DICE_METHODS,
     VALID_SUBCLASS_PARAMS,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class PlayerCharacter:
@@ -98,6 +102,7 @@ class PlayerCharacter:
         self.race_id: int = get_race_id()
         self.race: str = get_race(self.race_id)
         self.gender: str = get_gender()
+        self.name: str = generate_name(self.race_id, self.gender)
         self.age: int = get_age(self.race_id)
         height, weight = get_height_and_weight(self.race_id, self.gender)
         self.height: str = height
@@ -126,9 +131,6 @@ class PlayerCharacter:
 
         if ac_type == "descending":
             self.combat_matrix = get_combat_matrix(self.fa)
-
-        self.name = ""
-
         self.armour = get_starting_armour(self.class_id)
         self.shield = get_starting_shield(self.class_id)
 
@@ -355,5 +357,5 @@ class PlayerCharacter:
 if __name__ == "__main__":
     from pprint import pprint
 
-    pc = PlayerCharacter(subclasses=True)
+    pc = PlayerCharacter()
     pprint(pc.to_dict())
