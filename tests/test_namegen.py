@@ -201,7 +201,6 @@ def test_generate_oon_name():
     assert 1 <= int(name) <= 999_999_999
 
 
-@pytest.mark.skip(reason="No mapping for patronymic name: Segovax")
 def test_generate_pictish_name():
     female_name = generate_pictish_name("Female")
     assert isinstance(female_name, str)
@@ -232,7 +231,6 @@ def test_generate_tlingit_name():
     assert 8 <= len(name) <= 15
 
 
-@pytest.mark.skip(reason="No mapping for patronymic names: Björn, Gedda, Hákon, Magnus")
 def test_generate_viking_name():
     female_name = generate_viking_name("Female")
     assert isinstance(female_name, str)
