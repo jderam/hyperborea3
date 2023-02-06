@@ -433,10 +433,11 @@ def generate_pictish_name(gender: str) -> str:
                 patronymic = re.sub(r"ix$", "igis", patronymic_base)
             elif patronymic_base.endswith("os"):
                 patronymic = re.sub(r"os$", "i", patronymic_base)
+            elif patronymic_base == "Segovax":
+                patronymic = "Segovegis"
             else:
                 raise ValueError(
-                    f"Unexpected scenario for patronymic name '{patronymic_base}'. "
-                    "Doesn't end with ex/is/ix/os."
+                    f"No patronymic modification rules for '{patronymic_base}'."
                 )
             name = f"{first_name} nepos {patronymic}"
         else:
@@ -530,6 +531,21 @@ def generate_viking_name(gender: str) -> str:
             patronymic_mod = re.sub(r"rr$", "rs", patronymic_base)
         elif patronymic_base.endswith("r"):
             patronymic_mod = re.sub(r"r$", "s", patronymic_base)
+        # Viking patronymic names: "Björn", "Gedda", "Hákon", "Magnus"
+        elif patronymic_base == "Björn":
+            if gender == "Female":
+                patronymic_mod = "Bjarnar"
+            else:
+                patronymic_mod = "Björns"
+        elif patronymic_base == "Gedda":
+            patronymic_mod = patronymic_base
+        elif patronymic_base == "Hákon":
+            patronymic_mod = "Hákonar"
+        elif patronymic_base == "Magnus":
+            if gender == "Female":
+                patronymic_mod = "Magnús"
+            else:
+                patronymic_mod = patronymic_base
         else:
             raise ValueError(
                 f"Can't map patronymic modification for '{patronymic_base}'"
@@ -583,19 +599,7 @@ def generate_name(race_id: int, gender: str) -> str:
         23: generate_tlingit_name,
         24: generate_yakut_name,
     }
-    # Temporary workaround for last few dangling problem names
-    # Pictish patronymic name: "Segovax"
-    # Viking patronymic names: "Björn", "Gedda", "Hákon", "Magnus"
-    workaround = True
-    if workaround:
-        name = ""
-        while len(name) < 1:
-            try:
-                name = function_map[race_id](gender)
-            except ValueError as e:
-                logger.debug(e)
-    else:
-        name = function_map[race_id](gender)
+    name = function_map[race_id](gender)
     return name
 
 

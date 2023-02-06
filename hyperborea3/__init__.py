@@ -1,7 +1,7 @@
 import logging
 import os
 
-__version__ = "0.5.2"
+__version__ = "0.5.3"
 
 DEBUG = os.getenv("DEBUG", "0")
 
