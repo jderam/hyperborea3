@@ -44,6 +44,7 @@ test = [
 ]
 dev = [
     "fastapi",
+    "ipython",
     "pip-tools",
     "pre-commit",
     "twine",
