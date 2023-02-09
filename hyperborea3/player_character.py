@@ -2,6 +2,7 @@ import json
 import logging
 import random  # noqa: F401
 from typing import Any, Dict, List, Optional
+from uuid import uuid4
 
 from hyperborea3 import __version__ as HYPERBOREA3_VERSION
 from hyperborea3.chargen import (
@@ -74,6 +75,7 @@ class PlayerCharacter:
         assert ac_type in VALID_AC_TYPES
 
         self.app_version = HYPERBOREA3_VERSION
+        self.character_id: str = uuid4().hex
 
         # Always use Method VI if a specific class is chosen
         if class_id != 0:
