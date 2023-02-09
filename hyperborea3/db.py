@@ -1,4 +1,4 @@
-from importlib.resources import path
+from importlib.resources import as_file, files
 import logging
 import sqlite3
 from typing import Any, Dict, List, Optional, Tuple
@@ -16,9 +16,9 @@ def dict_factory(cursor: sqlite3.Cursor, row: sqlite3.Row) -> Dict[str, Any]:
 
 
 def get_cursor() -> sqlite3.Cursor:
-    with path("hyperborea3", "hyperborea.sqlite3") as db_path:
+    with as_file(files("hyperborea3")) as db_path:
         with sqlite3.connect(
-            f"file:{str(db_path)}?mode=ro",
+            f"file:{str(db_path)}/hyperborea.sqlite3?mode=ro",
             check_same_thread=False,
             uri=True,
         ) as conn:
