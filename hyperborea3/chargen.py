@@ -6,6 +6,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from hyperborea3.db import execute_query_all, execute_query_one
 from hyperborea3.valid_data import (
+    VALID_ABILITIES,
     VALID_ALIGMENTS_SHORT,
     VALID_GENDERS,
 )
@@ -73,26 +74,7 @@ def get_class_requirements(class_id: int):
 
 def roll_stats(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
     """Roll stats using the various methods in the Player's Manual"""
-    attr = {
-        "st": {
-            "score": 0,
-        },
-        "dx": {
-            "score": 0,
-        },
-        "cn": {
-            "score": 0,
-        },
-        "in": {
-            "score": 0,
-        },
-        "ws": {
-            "score": 0,
-        },
-        "ch": {
-            "score": 0,
-        },
-    }
+    attr = {ability: {"score": 0} for ability in VALID_ABILITIES}
     # Ensure scores at least qualify for one of the principal classes
     while (
         attr["st"]["score"] < 9
@@ -181,9 +163,9 @@ def roll_stats(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
 
 def get_attr_mod(stat: str, score: int) -> Dict[str, int]:
     """Get the mods for a given stat."""
-    if stat.lower() not in ["st", "dx", "cn", "in", "ws", "ch"]:
-        raise ValueError(f"Invalid value for stat: {stat}")
     stat = stat.lower()
+    if stat not in VALID_ABILITIES:
+        raise ValueError(f"Invalid value for stat: {stat}")
     tbl_map = {
         "st": "t001_strength",
         "dx": "t002_dexterity",
@@ -193,8 +175,7 @@ def get_attr_mod(stat: str, score: int) -> Dict[str, int]:
         "ch": "t006_charisma",
     }
     tbl = tbl_map[stat]
-    cur.execute(f"SELECT * FROM {tbl} WHERE score = ?;", (score,))
-    result = dict(cur.fetchone())
+    result = execute_query_one(f"SELECT * FROM {tbl} WHERE score = ?;", (score,))
     return result
 
 
@@ -213,30 +194,28 @@ def get_qualifying_classes(
     """Return list of class_ids that can be used given the attr."""
     # principal classes, subclasses, and sub-subclasses
     if subclasses == 2:
-        cur.execute("SELECT * FROM class_attr_req;")
+        sql = "SELECT * FROM class_attr_req;"
     # principal classes and subclasses
     elif subclasses == 1:
-        cur.execute(
-            """
+        sql = """
             SELECT car.*
-              FROM classes c
-              JOIN class_attr_req car
-                ON c.class_id = car.class_id
-             WHERE c.class_type IN ('P', 'S');
-            """
-        )
+            FROM classes c
+            JOIN class_attr_req car
+            ON c.class_id = car.class_id
+            WHERE c.class_type IN ('P', 'S');
+        """
     # principal classes only
     elif subclasses == 0:
-        cur.execute(
-            """
+        sql = """
             SELECT car.*
-              FROM classes c
-              JOIN class_attr_req car
-                ON c.class_id = car.class_id
-             WHERE c.class_type = 'P';
-            """
-        )
-    class_req = [dict(x) for x in cur.fetchall()]
+            FROM classes c
+            JOIN class_attr_req car
+            ON c.class_id = car.class_id
+            WHERE c.class_type = 'P';
+        """
+    else:
+        raise ValueError(f"Unrecognized value for subclasses: {subclasses}")
+    class_req = execute_query_all(sql)
     not_met = list(
         set(
             [
@@ -265,16 +244,13 @@ def select_random_class(attr: Dict[str, Dict[str, int]], subclasses: int) -> int
 
 
 def get_level(class_id: int, xp: int) -> int:
-    cur.execute(
-        """
+    sql = """
         SELECT Max(level) as level
-          FROM class_level
-         WHERE class_id = ?
-           AND xp <= ?
-        """,
-        (class_id, xp),
-    )
-    level: int = cur.fetchone()["level"]
+        FROM class_level
+        WHERE class_id = ?
+        AND xp <= ?
+    """
+    level: int = execute_query_one(sql, (class_id, xp))["level"]
     return level
 
 

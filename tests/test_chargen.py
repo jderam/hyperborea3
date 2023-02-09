@@ -119,22 +119,38 @@ def test_class_id_to_name(class_id: int, expected: str) -> None:
     assert class_name == expected
 
 
+def test_get_attr_mod():
+    actual = get_attr_mod(stat="st", score=18)
+    expected = {
+        "score": 18,
+        "atk_mod": 2,
+        "dmg_adj": 3,
+        "test": 5,
+        "feat": 32,
+    }
+    assert actual == expected
+
+
+@pytest.mark.repeat(1000)
 def test_get_qualifying_classes():
-    subclasses = True
-    for i in range(1000):
-        attr = get_attr()
-        qual_classes = get_qualifying_classes(attr, subclasses)
-        for c in qual_classes:
-            assert c in VALID_CLASS_IDS
-    subclasses = False
-    for i in range(1000):
-        attr = get_attr()
-        qual_classes = get_qualifying_classes(attr, subclasses)
-        for c in qual_classes:
-            assert c in range(1, 5)
+    subclasses = 2
+    attr = get_attr()
+    qual_classes = get_qualifying_classes(attr, subclasses)
+    assert all([c in VALID_CLASS_IDS for c in qual_classes])
+
+    subclasses = 1
+    attr = get_attr()
+    qual_classes = get_qualifying_classes(attr, subclasses)
+    assert all([c in range(1, 27) for c in qual_classes])
+
+    subclasses = 0
+    attr = get_attr()
+    qual_classes = get_qualifying_classes(attr, subclasses)
+    assert all([c in range(1, 5) for c in qual_classes])
 
 
 def test_get_level():
+    # TODO: Rework this slow af test
     for class_id in VALID_CLASS_IDS:
         for xp in range(0, 1000000, 1000):
             level = get_level(class_id, xp)
