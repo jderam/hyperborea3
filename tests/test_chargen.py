@@ -11,6 +11,7 @@ from hyperborea3.chargen import (
     get_caster_schools,
     get_class_id_map,
     get_class_level_data,
+    get_class_requirements,
     get_combat_matrix,
     get_complexion,
     get_deity,
@@ -173,6 +174,17 @@ def test_get_class_level_data():
             assert cl_data["ca"] in VALID_CA
             assert cl_data["ta"] in VALID_TA
             assert cl_data["sv"] in VALID_SAVES
+
+
+def test_get_class_requirements():
+    actual = get_class_requirements(class_id=5)
+    actual.sort(key=lambda x: x["attr"])
+    expected = [
+        {"class_id": 5, "attr": "cn", "min_score": 13},
+        {"class_id": 5, "attr": "dx", "min_score": 13},
+        {"class_id": 5, "attr": "st", "min_score": 13},
+    ]
+    assert actual == expected
 
 
 def test_get_hd():

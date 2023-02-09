@@ -4,6 +4,7 @@ import random
 import sqlite3
 from typing import Any, Dict, List, Optional, Tuple
 
+from hyperborea3.db import execute_query_all, execute_query_one
 from hyperborea3.valid_data import (
     VALID_ALIGMENTS_SHORT,
     VALID_GENDERS,
@@ -49,27 +50,25 @@ def roll_ndn_drop_highest(qty: int, sides: int, drop_qty: int) -> int:
 def get_class_id_map():
     """Get mapping between class_id and class_name"""
     sql = """
-            SELECT class_id
-                 , class_name
-              FROM classes
-          """
-    cur.execute(f"{sql};")
-    result = [dict(x) for x in cur.fetchall()]
-    class_map = {}
-    for r in result:
-        class_map[r["class_id"]] = r["class_name"]
+        SELECT class_id
+             , class_name
+        FROM classes
+    """
+    result = execute_query_all(sql)
+    class_map = {r["class_id"]: r["class_name"] for r in result}
     return class_map
 
 
 def class_id_to_name(class_id: int) -> str:
-    cur.execute("SELECT class_name FROM classes WHERE class_id = ?;", (class_id,))
-    class_name = str(cur.fetchone()["class_name"])
+    sql = "SELECT class_name FROM classes WHERE class_id = ?;"
+    class_name: str = execute_query_one(sql, (class_id,))["class_name"]
     return class_name
 
 
 def get_class_requirements(class_id: int):
-    cur.execute("SELECT * FROM class_attr_req WHERE class_id = ?;", (class_id,))
-    return [dict(x) for x in cur.fetchall()]
+    sql = "SELECT * FROM class_attr_req WHERE class_id = ?;"
+    result = execute_query_all(sql, (class_id,))
+    return result
 
 
 def roll_stats(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
