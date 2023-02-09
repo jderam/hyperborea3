@@ -7,7 +7,6 @@ from typing import Any, Dict, List, Optional, Tuple
 from hyperborea3.valid_data import (
     VALID_ALIGMENTS_SHORT,
     VALID_GENDERS,
-    VALID_SQL_TABLES,
 )
 
 logger = logging.getLogger(__name__)
@@ -18,48 +17,6 @@ URI = f"file:{str(DBPATH)}?mode=ro"
 con = sqlite3.connect(URI, check_same_thread=False, uri=True)
 con.row_factory = sqlite3.Row
 cur = con.cursor()
-
-
-def list_tables() -> List[str]:
-    """List all tables in sqlite database."""
-    cur.execute(
-        """
-        SELECT name
-          FROM sqlite_schema
-         WHERE type = 'table'
-           AND name NOT LIKE 'sqlite_%'
-        ORDER BY name;
-        """
-    )
-    tables: List[str] = [dict(x)["name"] for x in cur.fetchall()]
-    return tables
-
-
-def list_views() -> List[str]:
-    """List all views in sqlite database."""
-    cur.execute(
-        """
-        SELECT name
-          FROM sqlite_schema
-         WHERE type = 'view'
-        ORDER BY name;
-        """
-    )
-    views: List[str] = [dict(x)["name"] for x in cur.fetchall()]
-    return views
-
-
-def get_count_from_table(table_name: str) -> int:
-    """Get the row count of a table in sqlite database."""
-    assert table_name in VALID_SQL_TABLES
-    cur.execute(
-        f"""
-        SELECT Count(1) AS row_count
-          FROM {table_name};
-        """
-    )
-    row_count: int = cur.fetchone()["row_count"]
-    return row_count
 
 
 def roll_dice(qty: int, sides: int, reroll: List[int] = []) -> int:

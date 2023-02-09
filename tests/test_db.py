@@ -1,7 +1,14 @@
 from hyperborea3.db import (
     execute_query_all,
     execute_query_one,
+    get_count_from_table,
+    list_tables,
+    list_views,
     table_exists,
+)
+from hyperborea3.valid_data import (
+    VALID_SQL_TABLES,
+    VALID_SQL_VIEWS,
 )
 
 
@@ -97,3 +104,29 @@ def test_table_exists_true():
 
 def test_table_exists_false():
     assert table_exists("fake_table") is False
+
+
+# @pytest.mark.skip(
+#     reason=(
+#         "Currently failing on github "
+#         "'sqlite3.OperationalError: no such table: sqlite_schema'"
+#     )
+# )
+def test_db_tables():
+    assert list_tables() == VALID_SQL_TABLES
+
+
+# @pytest.mark.skip(
+#     reason=(
+#         "Currently failing on github "
+#         "'sqlite3.OperationalError: no such table: sqlite_schema'"
+#     )
+# )
+def test_db_views():
+    assert list_views() == VALID_SQL_VIEWS
+
+
+def test_get_count_from_table():
+    actual = get_count_from_table("alignment")
+    expected = 5
+    assert actual == expected

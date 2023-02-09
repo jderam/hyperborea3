@@ -41,8 +41,6 @@ from hyperborea3.chargen import (
     get_unskilled_weapon_penalty,
     get_xp_to_next,
     inches_to_feet,
-    list_tables,
-    list_views,
     roll_hit_points,
     roll_stats,
 )
@@ -74,8 +72,6 @@ from hyperborea3.valid_data import (
     VALID_SCHOOLS,
     VALID_SCHOOLS_BY_CLASS_ID,
     VALID_SPELL_LEVELS,
-    VALID_SQL_TABLES,
-    VALID_SQL_VIEWS,
     VALID_TA,
     VALID_UNSKILLED_PENALTIES,
 )
@@ -83,26 +79,6 @@ from hyperborea3.valid_data import (
 
 def test_db():
     assert DBPATH.is_file()
-
-
-@pytest.mark.skip(
-    reason=(
-        "Currently failing on github "
-        "'sqlite3.OperationalError: no such table: sqlite_schema'"
-    )
-)
-def test_db_tables():
-    assert list_tables() == VALID_SQL_TABLES
-
-
-@pytest.mark.skip(
-    reason=(
-        "Currently failing on github "
-        "'sqlite3.OperationalError: no such table: sqlite_schema'"
-    )
-)
-def test_db_views():
-    assert list_views() == VALID_SQL_VIEWS
 
 
 def test_xp_to_next():
