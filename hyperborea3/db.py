@@ -8,6 +8,10 @@ from hyperborea3.valid_data import VALID_SQL_TABLES
 logger = logging.getLogger(__name__)
 
 
+with as_file(files("hyperborea3")) as db_path:
+    DB_LOCATION = db_path
+
+
 def dict_factory(cursor: sqlite3.Cursor, row: sqlite3.Row) -> Dict[str, Any]:
     d = {}
     for idx, col in enumerate(cursor.description):
@@ -16,15 +20,14 @@ def dict_factory(cursor: sqlite3.Cursor, row: sqlite3.Row) -> Dict[str, Any]:
 
 
 def get_cursor() -> sqlite3.Cursor:
-    with as_file(files("hyperborea3")) as db_path:
-        with sqlite3.connect(
-            f"file:{str(db_path)}/hyperborea.sqlite3?mode=ro",
-            check_same_thread=False,
-            uri=True,
-        ) as conn:
-            conn.row_factory = dict_factory
-            cur = conn.cursor()
-            return cur
+    with sqlite3.connect(
+        f"file:{DB_LOCATION}/hyperborea.sqlite3?mode=ro",
+        check_same_thread=False,
+        uri=True,
+    ) as conn:
+        conn.row_factory = dict_factory
+        cur = conn.cursor()
+        return cur
 
 
 def execute_query_one(sql: str, params: Tuple[Any, ...] = ()) -> Dict[str, Any]:
