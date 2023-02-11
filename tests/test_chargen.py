@@ -40,6 +40,7 @@ from hyperborea3.chargen import (
     get_thief_skills,
     get_turn_undead_matrix,
     get_unskilled_weapon_penalty,
+    get_xp_bonus,
     get_xp_to_next,
     inches_to_feet,
     roll_hit_points,
@@ -82,12 +83,23 @@ def test_db():
     assert DBPATH.is_file()
 
 
-def test_xp_to_next():
-    # if character is already at max level, should return None
-    level = 12
+def test_get_xp_bonus():
+    class_id = 1
+    attr = {"st": {"score": 16}}
+    assert get_xp_bonus(class_id, attr) is True
+    attr = {"st": {"score": 15}}
+    assert get_xp_bonus(class_id, attr) is False
+
+
+def test_get_xp_to_next():
     for class_id in VALID_CLASS_IDS:
-        xp_to_next = get_xp_to_next(class_id, level)
-        assert xp_to_next is None
+        for level in VALID_LEVELS:
+            xp_to_next = get_xp_to_next(class_id, level)
+            if level == 12:
+                assert xp_to_next is None
+            else:
+                assert isinstance(xp_to_next, int)
+                assert 0 < xp_to_next <= 960_000
 
 
 def test_roll_stats():

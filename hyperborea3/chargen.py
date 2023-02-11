@@ -260,28 +260,22 @@ def get_xp_to_next(class_id: int, level: int) -> Optional[int]:
     if level == 12:
         return None
     next_level = level + 1
-    cur.execute(
-        "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;",
-        (class_id, next_level),
-    )
-    xp_to_next: int = cur.fetchone()["xp"]
+    sql = "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;"
+    xp_to_next: int = execute_query_one(sql, (class_id, next_level))["xp"]
     return xp_to_next
 
 
 def get_xp_bonus(class_id: int, attr: Dict[str, Dict[str, int]]) -> bool:
     """Determine if character qualifies for +10% XP bonus."""
-    cur.execute(
-        "SELECT attr FROM class_prime_attr WHERE class_id = ?;",
-        (class_id,),
-    )
-    prime_attrs = [dict(x)["attr"] for x in cur.fetchall()]
+    sql = "SELECT attr FROM class_prime_attr WHERE class_id = ?;"
+    result: List[Dict[str, str]] = execute_query_all(sql, (class_id,))
+    prime_attrs = [x["attr"] for x in result]
     xp_bonus = all([attr[p]["score"] >= 16 for p in prime_attrs])
     return xp_bonus
 
 
 def get_save_bonuses(class_id: int) -> Dict[str, int]:
-    cur.execute(
-        """
+    sql = """
         SELECT death
              , transformation
              , device
@@ -289,10 +283,8 @@ def get_save_bonuses(class_id: int) -> Dict[str, int]:
              , sorcery
           FROM classes
          WHERE class_id = ?
-        """,
-        (class_id,),
-    )
-    sv_bonus = dict(cur.fetchone())
+    """
+    sv_bonus = execute_query_one(sql, (class_id,))
     return sv_bonus
 
 
