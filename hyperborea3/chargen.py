@@ -289,18 +289,15 @@ def get_save_bonuses(class_id: int) -> Dict[str, int]:
 
 
 def get_class_level_data(class_id: int, level: int) -> Dict[str, Any]:
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM classes c
           JOIN class_level cl
             ON c.class_id = cl.class_id
          WHERE c.class_id = ?
            AND cl.level = ?
-        """,
-        (class_id, level),
-    )
-    result = dict(cur.fetchone())
+    """
+    result = execute_query_one(sql, (class_id, level))
     return result
 
 
@@ -343,17 +340,14 @@ def get_combat_matrix(fa: int) -> Dict[int, int]:
 
 def get_alignment(class_id: int) -> Dict[str, Any]:
     """Choose a random alignment based on the options available to a given class."""
-    cur.execute(
-        """
+    sql = """
         SELECT a.*
           FROM class_alignment ca
           JOIN alignment a
             ON ca.align_id = a.align_id
          WHERE ca.class_id = ?
-        """,
-        (class_id,),
-    )
-    allowed_alignments = [dict(x) for x in cur.fetchall()]
+    """
+    allowed_alignments = execute_query_all(sql, (class_id,))
     alignment = random.choice(allowed_alignments)
     return alignment
 
@@ -369,26 +363,15 @@ def get_deity(short_alignment: str) -> Dict[str, Any]:
         lkp_align = "Lawful"
     elif short_alignment[0] == "N":
         lkp_align = "Neutral"
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM deities
          WHERE primary_alignment = ?;
-        """,
-        (lkp_align,),
-    )
-    deities = [dict(x) for x in cur.fetchall()]
+    """
+    deities = execute_query_all(sql, (lkp_align,))
     if short_alignment in ["CE", "LE"]:
         lkp_align = "Evil"
-        cur.execute(
-            """
-            SELECT *
-            FROM deities
-            WHERE primary_alignment = ?;
-            """,
-            (lkp_align,),
-        )
-        deities.extend([dict(x) for x in cur.fetchall()])
+        deities.extend(execute_query_all(sql, (lkp_align,)))
     deity = random.choice(deities)
     return deity
 
@@ -396,38 +379,30 @@ def get_deity(short_alignment: str) -> Dict[str, Any]:
 def get_race_id() -> int:
     """Roll on race tables to get a randomly selected race."""
     d100_roll = roll_dice(1, 100)
-    cur.execute(
-        """SELECT race_id
+    sql = """SELECT race_id
              FROM t066_primary_races
             WHERE ? BETWEEN d100_min AND d100_max;
-        """,
-        (d100_roll,),
-    )
-    race_id: int = cur.fetchone()["race_id"]
+    """
+    race_id: int = execute_query_one(sql, (d100_roll,))["race_id"]
     if race_id == 99:
         d12_roll = roll_dice(1, 12)
-        cur.execute(
-            """SELECT race_id
+        sql_a = """SELECT race_id
                  FROM t067_ancillary_races
                 WHERE d12_roll = ?;
-            """,
-            (d12_roll,),
-        )
-        race_id = cur.fetchone()["race_id"]
+        """
+        race_id = execute_query_one(sql_a, (d12_roll,))["race_id"]
     if race_id not in range(1, 25):
         raise ValueError(f"Unexpected race_id value: {race_id}. d100_roll={d100_roll}")
     return race_id
 
 
 def get_race(race_id: int) -> str:
-    cur.execute(
-        """SELECT race
-             FROM v_race_lkp
-            WHERE race_id = ?;
-        """,
-        (race_id,),
-    )
-    race: str = cur.fetchone()["race"]
+    sql = """
+        SELECT race
+        FROM v_race_lkp
+        WHERE race_id = ?;
+    """
+    race: str = execute_query_one(sql, (race_id,))["race"]
     return race
 
 
@@ -504,16 +479,13 @@ def get_height_weight_lookup_vals(race_id: int, gender: str) -> Tuple[int, str]:
 
 def get_height_and_weight(race_id: int, gender: str) -> Tuple[str, str]:
     lookup_roll, lookup_gender = get_height_weight_lookup_vals(race_id, gender)
-    cur.execute(
-        f"""
+    sql = f"""
         SELECT {lookup_gender.lower()}_height AS height_range
              , {lookup_gender.lower()}_avg_weight AS avg_weight
           FROM t069_height_and_weight
          WHERE id = ?
-        """,
-        (lookup_roll,),
-    )
-    result = dict(cur.fetchone())
+    """
+    result = execute_query_one(sql, (lookup_roll,))
     height_range = [int(x) for x in result["height_range"].split("-")]
     height_inches = random.randint(height_range[0], height_range[1])
     height = inches_to_feet(height_inches)
@@ -616,14 +588,12 @@ def get_eye_colour(race_id: int, gender: str) -> str:
     elif race_id == 24:
         roll = roll_dice(1, 30) + 12
 
-    cur.execute(
-        """SELECT eye_colour
-             FROM t070a_eye_colour
-            WHERE ? BETWEEN roll_min AND roll_max;
-        """,
-        (roll,),
-    )
-    eye_colour: str = cur.fetchone()["eye_colour"]
+    sql = """
+        SELECT eye_colour
+        FROM t070a_eye_colour
+        WHERE ? BETWEEN roll_min AND roll_max;
+    """
+    eye_colour: str = execute_query_one(sql, (roll,))["eye_colour"]
     return eye_colour
 
 
@@ -708,14 +678,12 @@ def get_hair_colour(race_id: int, gender: str) -> str:
     elif race_id == 24:
         roll = roll_dice(1, 30) + 40
 
-    cur.execute(
-        """SELECT hair_colour
-             FROM t070b_hair_colour
-            WHERE ? BETWEEN roll_min AND roll_max;
-        """,
-        (roll,),
-    )
-    hair_colour: str = cur.fetchone()["hair_colour"]
+    sql = """
+        SELECT hair_colour
+        FROM t070b_hair_colour
+        WHERE ? BETWEEN roll_min AND roll_max;
+    """
+    hair_colour: str = execute_query_one(sql, (roll,))["hair_colour"]
     return hair_colour
 
 
@@ -800,42 +768,35 @@ def get_complexion(race_id: int, gender: str) -> str:
     elif race_id == 24:
         roll = roll_dice(1, 50) + 50
 
-    cur.execute(
-        """SELECT complexion
-             FROM t070c_complexion
-            WHERE ? BETWEEN roll_min AND roll_max;
-        """,
-        (roll,),
-    )
-    complexion: str = cur.fetchone()["complexion"]
+    sql = """
+        SELECT complexion
+        FROM t070c_complexion
+        WHERE ? BETWEEN roll_min AND roll_max;
+    """
+    complexion: str = execute_query_one(sql, (roll,))["complexion"]
     return complexion
 
 
 def get_languages(bonus_languages: int) -> List[str]:
     """Get known languages."""
     languages = []
-    cur.execute(
-        """
+    sql1 = """
         SELECT language_dialect
           FROM t071_languages
          WHERE language_id = 1
-        """
-    )
-    language = cur.fetchone()["language_dialect"]
+    """
+    language = execute_query_one(sql1)["language_dialect"]
     languages.append(language)
     if bonus_languages > 0:
         new_languages_learned = 0
         while new_languages_learned < bonus_languages:
             d100_roll = roll_dice(1, 100)
-            cur.execute(
-                """
+            sql2 = """
                 SELECT language_dialect
                 FROM t071_languages
                 WHERE ? BETWEEN d100_min AND d100_max
-                """,
-                (d100_roll,),
-            )
-            language = cur.fetchone()["language_dialect"]
+            """
+            language = execute_query_one(sql2, (d100_roll,))["language_dialect"]
             if language not in languages:
                 languages.append(language)
                 new_languages_learned += 1
@@ -846,17 +807,14 @@ def get_starting_armour(class_id: int) -> Dict[str, Any]:
     """Get starting armour by class.
     The SQL should always return one and only one result.
     """
-    cur.execute(
-        """
+    sql = """
         SELECT a.*
           FROM starting_armour s
           JOIN t074_armour a
             ON s.armour_id = a.armour_id
          WHERE s.class_id = ?
-        """,
-        (class_id,),
-    )
-    armour = dict(cur.fetchone())
+    """
+    armour = execute_query_one(sql, (class_id,))
     return armour
 
 
@@ -864,35 +822,28 @@ def get_starting_shield(class_id: int) -> Optional[Dict[str, Any]]:
     """Get starting shield by class.
     SQL should return one or zero results.
     """
-    cur.execute(
-        """
+    sql = """
         SELECT ts.*
           FROM starting_shield ss
           JOIN t075_shields ts
             ON ss.shield_id = ts.shield_id
          WHERE ss.class_id = ?
-        """,
-        (class_id,),
-    )
-    result = cur.fetchone()
-    shield = dict(result) if result is not None else result
+    """
+    shield = execute_query_one(sql, (class_id,))
     return shield
 
 
 def get_starting_weapons_melee(class_id: int) -> List[Dict[str, Any]]:
     """Get starting melee weapons by class."""
-    cur.execute(
-        """
+    sql = """
         SELECT w.*
              , sw.qty
           FROM starting_weapons_melee sw
           JOIN t076_melee_weapons w
             ON sw.weapon_id = w.weapon_id
          WHERE sw.class_id = ?;
-        """,
-        (class_id,),
-    )
-    melee_weapons = [dict(x) for x in cur.fetchall()]
+    """
+    melee_weapons = execute_query_all(sql, (class_id,))
     for mw in melee_weapons:
         mw["hurlable"] = bool(mw["hurlable"])
         mw["atk_rate"] = "1/1"
@@ -905,8 +856,7 @@ def get_starting_weapons_melee(class_id: int) -> List[Dict[str, Any]]:
 
 def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
     """Get starting missile weapons by class."""
-    cur.execute(
-        """
+    sql = """
         SELECT w.*
              , sw.qty
              , sw.ammunition
@@ -914,10 +864,8 @@ def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
           JOIN t077_missile_weapons w
             ON sw.weapon_id = w.weapon_id
          WHERE sw.class_id = ?;
-        """,
-        (class_id,),
-    )
-    missile_weapons = [dict(x) for x in cur.fetchall()]
+    """
+    missile_weapons = execute_query_all(sql, (class_id,))
     for mw in missile_weapons:
         mw["hurled"] = bool(mw["hurled"])
         mw["launched"] = bool(mw["launched"])
