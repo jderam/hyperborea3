@@ -758,16 +758,49 @@ def get_complexion(race_id: int, gender: str) -> str:
     return complexion
 
 
-def get_languages(bonus_languages: int) -> List[str]:
+def get_languages(race_id: int, bonus_languages: int) -> List[str]:
     """Get known languages."""
     languages = []
     sql1 = """
         SELECT language_dialect
           FROM t071_languages
-         WHERE language_id = 1
+         WHERE language_id = ?
     """
-    language = execute_query_one(sql1)["language_dialect"]
+    language = execute_query_one(sql1, (1,))["language_dialect"]
     languages.append(language)
+    # racial language, if applicable
+    racial_languages = {
+        2: 6,
+        3: 7,
+        # 4: random.choice([3, 4]),
+        5: 9,
+        6: 19,
+        7: 11,
+        # 8: random.choice([10, 20]),
+        # 9: random.choice([10, 11]),
+        10: 12,
+        11: 12,
+        12: 17,
+        13: 16,
+        14: 13,
+        15: 5,
+        16: 8,
+        17: 22,
+        18: 14,
+        19: 2,
+        20: 15,
+        21: 18,
+        22: 13,
+        23: 21,
+        24: 23,
+    }
+    racial_languages[4] = random.choice([3, 4])
+    racial_languages[8] = random.choice([10, 20])
+    racial_languages[9] = random.choice([10, 11])
+    if race_id in racial_languages:
+        language_id = racial_languages[race_id]
+        language = execute_query_one(sql1, (language_id,))["language_dialect"]
+        languages.append(language)
     if bonus_languages > 0:
         new_languages_learned = 0
         while new_languages_learned < bonus_languages:

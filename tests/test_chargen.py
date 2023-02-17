@@ -546,13 +546,21 @@ def test_get_alignment():
 
 
 def test_get_languages():
-    for i in range(-1, 4):
-        languages = get_languages(i)
-        if i <= 0:
-            assert languages == ["Common"]
-        elif i > 0:
+    for race_id in VALID_RACE_IDS:
+        for bonus_languages in range(-1, 4):
+            languages = get_languages(race_id, bonus_languages)
             assert "Common" in languages
-            assert len(set(languages)) == i + 1
+            assert len(languages) == len(set(languages))
+            if bonus_languages <= 0:
+                if race_id == 1:
+                    assert len(languages) == 1
+                else:
+                    assert len(languages) == 2
+            elif bonus_languages > 0:
+                if race_id == 1:
+                    assert len(languages) == bonus_languages + 1
+                else:
+                    assert len(languages) == bonus_languages + 2
 
 
 @pytest.mark.repeat(20)
