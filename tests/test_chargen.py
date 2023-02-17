@@ -1,16 +1,21 @@
+from typing import no_type_check
+
 import pytest
 
 from hyperborea3.chargen import (
-    DBPATH,
     ac_to_aac,
+    apply_spells_per_day_bonus,
     calculate_ac,
     class_id_to_name,
+    get_age,
     get_alignment,
     get_attr,
     get_attr_mod,
     get_caster_schools,
+    get_class_abilities,
     get_class_id_map,
     get_class_level_data,
+    get_class_requirements,
     get_combat_matrix,
     get_complexion,
     get_deity,
@@ -23,7 +28,10 @@ from hyperborea3.chargen import (
     get_height_weight_lookup_vals,
     get_languages,
     get_level,
+    get_next_atk_rate,
+    get_priest_abilities,
     get_qualifying_classes,
+    get_race,
     get_race_id,
     get_random_familiar,
     get_random_spell,
@@ -39,12 +47,12 @@ from hyperborea3.chargen import (
     get_thief_skills,
     get_turn_undead_matrix,
     get_unskilled_weapon_penalty,
+    get_xp_bonus,
     get_xp_to_next,
     inches_to_feet,
-    list_tables,
-    list_views,
     roll_hit_points,
     roll_stats,
+    select_random_class,
 )
 from hyperborea3.valid_data import (
     VALID_ABILITY_SCORES,
@@ -53,8 +61,10 @@ from hyperborea3.valid_data import (
     VALID_CA,
     VALID_CLASS_ID_MAP,
     VALID_CLASS_IDS,
+    VALID_CLASS_THIEF_ABILITIES,
     VALID_COMPLEXIONS,
     VALID_DEITIES,
+    VALID_DEITY_IDS,
     VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
     VALID_EYE_COLOURS,
@@ -69,48 +79,97 @@ from hyperborea3.valid_data import (
     VALID_HD_SIZE,
     VALID_LEVELS,
     VALID_RACE_IDS,
+    VALID_RACES_BY_ID,
     VALID_SAVES,
     VALID_SECONDARY_SKILLS,
     VALID_SCHOOLS,
     VALID_SCHOOLS_BY_CLASS_ID,
     VALID_SPELL_LEVELS,
-    VALID_SQL_TABLES,
-    VALID_SQL_VIEWS,
     VALID_TA,
     VALID_UNSKILLED_PENALTIES,
 )
 
 
-def test_db():
-    assert DBPATH.is_file()
+@no_type_check
+def test_apply_spells_per_day_bonus():
+    # test for empty spells
+    spells = apply_spells_per_day_bonus(None, bonus_spells_in=4, bonus_spells_ws=4)
+    assert spells is None
 
-
-@pytest.mark.skip(
-    reason=(
-        "Currently failing on github "
-        "'sqlite3.OperationalError: no such table: sqlite_schema'"
+    # test for magician
+    spells = get_spells(class_id=2, level=1, ca=1)
+    assert spells["mag"]["spells_per_day"]["lvl1"] == 1
+    assert spells["mag"]["spells_per_day"]["lvl2"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl3"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl4"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl5"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl6"] == 0
+    updated_spells = apply_spells_per_day_bonus(
+        spells,
+        bonus_spells_in=4,
+        bonus_spells_ws=0,
     )
-)
-def test_db_tables():
-    assert list_tables() == VALID_SQL_TABLES
+    assert updated_spells["mag"]["spells_per_day"]["lvl1"] == 2
+    assert updated_spells["mag"]["spells_per_day"]["lvl2"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl3"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl4"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl5"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl6"] == 0
 
-
-@pytest.mark.skip(
-    reason=(
-        "Currently failing on github "
-        "'sqlite3.OperationalError: no such table: sqlite_schema'"
+    # test for cleric
+    spells = get_spells(class_id=3, level=1, ca=1)
+    assert spells["clr"]["spells_per_day"]["lvl1"] == 1
+    assert spells["clr"]["spells_per_day"]["lvl2"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl3"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl4"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl5"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl6"] == 0
+    updated_spells = apply_spells_per_day_bonus(
+        spells,
+        bonus_spells_in=0,
+        bonus_spells_ws=4,
     )
-)
-def test_db_views():
-    assert list_views() == VALID_SQL_VIEWS
+    assert updated_spells["clr"]["spells_per_day"]["lvl1"] == 2
+    assert updated_spells["clr"]["spells_per_day"]["lvl2"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl3"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl4"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl5"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl6"] == 0
+
+    # test for runegraver
+    spells = get_spells(class_id=20, level=1, ca=1)
+    updated_spells = apply_spells_per_day_bonus(spells, 4, 4)
+    assert spells == updated_spells
 
 
-def test_xp_to_next():
-    # if character is already at max level, should return None
-    level = 12
+@pytest.mark.repeat(10)
+def test_get_age():
+    for race_id in VALID_RACE_IDS:
+        age = get_age(race_id)
+        assert isinstance(age, int)
+        if race_id == 5:
+            assert 14 <= age <= 100
+        else:
+            assert 14 <= age <= 44
+
+
+def test_get_xp_bonus():
+    class_id = 1
+    attr = {"st": {"score": 16}}
+    assert get_xp_bonus(class_id, attr) is True
+    attr = {"st": {"score": 15}}
+    assert get_xp_bonus(class_id, attr) is False
+
+
+def test_get_xp_to_next():
     for class_id in VALID_CLASS_IDS:
-        xp_to_next = get_xp_to_next(class_id, level)
-        assert xp_to_next is None
+        for level in VALID_LEVELS:
+            xp_to_next = get_xp_to_next(class_id, level)
+            if level == 12:
+                assert xp_to_next is None
+            else:
+                assert isinstance(xp_to_next, int)
+                assert 0 < xp_to_next <= 960_000
 
 
 def test_roll_stats():
@@ -126,6 +185,24 @@ def test_roll_stats():
             for stat in attr.keys():
                 assert stat in VALID_ABILITIES
                 assert attr[stat]["score"] in VALID_ABILITY_SCORES
+    # selecting method 6 without a specific class_id should raise an exception
+    with pytest.raises(ValueError):
+        attr = roll_stats(method=6)
+    # valid methods are 1-6, so a value outside that should raise an exception
+    with pytest.raises(ValueError):
+        attr = roll_stats(method=7)
+
+
+def test_get_class_abilities():
+    for class_id in VALID_CLASS_IDS:
+        for level in VALID_LEVELS:
+            class_abilities = get_class_abilities(class_id, level)
+            assert isinstance(class_abilities, list)
+            assert all([isinstance(x, dict) for x in class_abilities])
+            assert all([x["level"] <= level for x in class_abilities])
+            assert all([isinstance(x["ability_title"], str) for x in class_abilities])
+            # Not populated yet
+            # assert all([isinstance(x["ability_desc"], str) for x in class_abilities])
 
 
 def test_get_class_id_map():
@@ -142,32 +219,89 @@ def test_class_id_to_name(class_id: int, expected: str) -> None:
     assert class_name == expected
 
 
+def test_get_attr_mod():
+    actual = get_attr_mod(stat="st", score=18)
+    expected = {
+        "score": 18,
+        "atk_mod": 2,
+        "dmg_adj": 3,
+        "test": 5,
+        "feat": 32,
+    }
+    assert actual == expected
+    with pytest.raises(ValueError):
+        get_attr_mod(stat="FakeStat", score=10)
+
+
+def test_get_priest_abilities():
+    for deity_id in VALID_DEITY_IDS:
+        for level in [1, 9]:
+            priest_abilities = get_priest_abilities(deity_id, level)
+            if level >= 9:
+                assert len(priest_abilities) == 2
+            else:
+                assert len(priest_abilities) == 1
+
+
+@pytest.mark.repeat(1000)
 def test_get_qualifying_classes():
-    subclasses = True
-    for i in range(1000):
-        attr = get_attr()
-        qual_classes = get_qualifying_classes(attr, subclasses)
-        for c in qual_classes:
-            assert c in VALID_CLASS_IDS
-    subclasses = False
-    for i in range(1000):
-        attr = get_attr()
-        qual_classes = get_qualifying_classes(attr, subclasses)
-        for c in qual_classes:
-            assert c in range(1, 5)
+    subclasses = 2
+    attr = get_attr()
+    qual_classes = get_qualifying_classes(attr, subclasses)
+    assert all([c in VALID_CLASS_IDS for c in qual_classes])
+
+    subclasses = 1
+    attr = get_attr()
+    qual_classes = get_qualifying_classes(attr, subclasses)
+    assert all([c in range(1, 27) for c in qual_classes])
+
+    subclasses = 0
+    attr = get_attr()
+    qual_classes = get_qualifying_classes(attr, subclasses)
+    assert all([c in range(1, 5) for c in qual_classes])
+
+
+def test_get_qualifying_classes_invalid():
+    # invalid value for subclasses should raise an exception
+    attr = get_attr()
+    with pytest.raises(ValueError):
+        get_qualifying_classes(attr, subclasses=3)
 
 
 def test_get_level():
+    # TODO: Rework this slow af test
     for class_id in VALID_CLASS_IDS:
         for xp in range(0, 1000000, 1000):
             level = get_level(class_id, xp)
             assert level in VALID_LEVELS
 
 
+def test_get_next_atk_rate():
+    atk_progression = [
+        "1/1",
+        "3/2",
+        "2/1",
+        "5/2",
+        "3/1",
+    ]
+    for atk_rate in atk_progression[:-1]:
+        next_atk_rate = get_next_atk_rate(atk_rate)
+        assert next_atk_rate in atk_progression
+    with pytest.raises(ValueError):
+        get_next_atk_rate(atk_progression[-1])
+
+
 def test_get_race_id():
     for i in range(1000):
         race_id = get_race_id()
         assert race_id in VALID_RACE_IDS
+
+
+def test_get_race():
+    for race_id in VALID_RACE_IDS:
+        race = get_race(race_id)
+        assert isinstance(race, str)
+        assert race in VALID_RACES_BY_ID.values()
 
 
 def test_get_gender():
@@ -197,6 +331,17 @@ def test_get_class_level_data():
             assert cl_data["ca"] in VALID_CA
             assert cl_data["ta"] in VALID_TA
             assert cl_data["sv"] in VALID_SAVES
+
+
+def test_get_class_requirements():
+    actual = get_class_requirements(class_id=5)
+    actual.sort(key=lambda x: x["attr"])
+    expected = [
+        {"class_id": 5, "attr": "cn", "min_score": 13},
+        {"class_id": 5, "attr": "dx", "min_score": 13},
+        {"class_id": 5, "attr": "st", "min_score": 13},
+    ]
+    assert actual == expected
 
 
 def test_get_hd():
@@ -401,13 +546,22 @@ def test_get_alignment():
 
 
 def test_get_languages():
-    for i in range(-1, 4):
-        languages = get_languages(i)
-        if i <= 0:
-            assert languages == ["Common"]
-        elif i > 0:
+    for race_id in VALID_RACE_IDS:
+        for bonus_languages in range(-1, 4):
+            languages = get_languages(race_id, bonus_languages)
             assert "Common" in languages
-            assert len(set(languages)) == i + 1
+            assert len(languages) == len(set(languages))
+            assert 1 <= len(languages) <= 5
+            if bonus_languages <= 0:
+                if race_id == 1:
+                    assert len(languages) == 1
+                else:
+                    assert len(languages) == 2
+            elif bonus_languages > 0:
+                if race_id == 1:
+                    assert len(languages) == bonus_languages + 1
+                else:
+                    assert len(languages) == bonus_languages + 2
 
 
 @pytest.mark.repeat(20)
@@ -645,6 +799,32 @@ def test_get_thief_skills():
     thief_skills = get_thief_skills(4, 12, 16, 16, 16)
     assert thief_skills == expected_thief_skills
 
+    # validate all classes with thief skills
+    for class_id in [4, 5, 6, 8, 10, 18, 22, 23, 24, 25, 26, 31, 32, 33]:
+        thief_skills = get_thief_skills(class_id, 1, 10, 10, 10)
+        if thief_skills:
+            assert [
+                x["thief_skill"] for x in thief_skills
+            ] == VALID_CLASS_THIEF_ABILITIES[class_id]
+        else:
+            raise ValueError(
+                "thief_skills empty for class that is supposed to have them"
+            )
+
+    # invalid class_id should raise exception
+    with pytest.raises(ValueError):
+        get_thief_skills(class_id=34, level=1, dx_score=10, in_score=10, ws_score=10)
+    # invalid level should raise exception
+    with pytest.raises(ValueError):
+        get_thief_skills(class_id=1, level=13, dx_score=10, in_score=10, ws_score=10)
+    # invalid_ability scores should raise exception
+    with pytest.raises(ValueError):
+        get_thief_skills(class_id=1, level=1, dx_score=19, in_score=10, ws_score=10)
+    with pytest.raises(ValueError):
+        get_thief_skills(class_id=1, level=1, dx_score=10, in_score=19, ws_score=10)
+    with pytest.raises(ValueError):
+        get_thief_skills(class_id=1, level=1, dx_score=10, in_score=10, ws_score=19)
+
 
 def test_get_caster_schools():
     for class_id in VALID_CLASS_IDS:
@@ -752,6 +932,13 @@ def test_get_random_spell():
                 assert spell["school"] == school
                 assert spell["spell_level"] == spell_level
                 assert spell["reversible"] in [None, True, False]
+    # invalid input should raise an exception
+    with pytest.raises(AssertionError):
+        get_random_spell(school="FakeSchool", spell_level=1)
+    with pytest.raises(AssertionError):
+        get_random_spell(school="mag", spell_level=7)
+    with pytest.raises(AssertionError):
+        get_random_spell(school="mag", spell_level=1, d100_roll=101)
 
 
 def test_get_spells():
@@ -764,6 +951,7 @@ def test_get_spells():
                 assert spells, f"{class_id=} {level=} {spells=}"
                 schools = list(spells.keys())
             else:
+                assert spells is None
                 schools = []
 
             if ca > 1 and class_id != 21:
@@ -857,3 +1045,9 @@ def test_get_complexion():
         for gender in VALID_GENDERS:
             complexion = get_complexion(race_id, gender)
             assert complexion in VALID_COMPLEXIONS
+
+
+def test_select_random_class():
+    attr = get_attr()
+    class_id = select_random_class(attr=attr, subclasses=2)
+    assert class_id in VALID_CLASS_IDS

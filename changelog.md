@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2023-02-08
+### Changed
+- Removed Docker stuff from Makefile
+- Updated `make gen_requirements` to use `--resolver=backtracking`
+- Added `make rebuild_venv` command
+- Recompiled requirements files on python 3.11
+- Added upgrade `pip` and install `pip-tools` steps to `make resync_requirements` to eliminate the need to do those steps manually.
+- Moved `list_tables()`, `list_views()`, and `get_count_from_table()` functions in `db` module.
+- Updated list of `VALID_SQL_TABLES`
+- Updated `get_languages()` function to include default racial languages.
+
+### Added
+- Added `ipython` as a dev requirement
+
 ## [0.5.4] - 2023-02-08
 ### Added
 - Added `character_id` to PlayerCharacter, a 32-character UUID

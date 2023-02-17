@@ -1,8 +1,12 @@
+.ONESHELL:
 SHELL := bash
 .DEFAULT_GOAL := help
 OS := $(shell uname)
 
-.PHONY: help build run deploy stop test format gen-requirements
+.PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check compile_req install create_venv rebuild_venv run_test_uvicorn
+
+PYENV_VERSION=3.11.2
+VENV_NAME=hyperborea3-venv
 
 build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
 
@@ -37,7 +41,7 @@ pip_install_dev: ## pip install in editable mode
 	python -m pip install -e . --force-reinstall
 
 test: ## Run pytest tests
-	python -m pytest
+	python -m pytest --cov-report term-missing tests/
 
 check: ## Run all linting/formatting checks
 	black . --check
@@ -47,30 +51,29 @@ check: ## Run all linting/formatting checks
 mypy_check: ## Run mypy type checker
 	mypy hyperborea3 tests
 
-gen_requirements: ## Generate new requirements files
-	pip-compile --upgrade -o requirements.txt pyproject.toml
-	pip-compile --upgrade --extra dev -o requirements_dev.txt pyproject.toml
-	pip-compile --upgrade --extra test -o requirements_test.txt pyproject.toml
+compile_req: ## Generate new requirements files
+	pip-compile --resolver=backtracking --upgrade -o requirements.txt pyproject.toml
+	pip-compile --resolver=backtracking --upgrade --extra dev -o requirements_dev.txt pyproject.toml
+	pip-compile --resolver=backtracking --upgrade --extra test -o requirements_test.txt pyproject.toml
 
-resync_requirements: ## reinstall all packages in the environment
-	pip-sync requirements.txt requirements_dev.txt requirements_test.txt
+install: ## install/reinstall all packages in the environment
+	python -m pip install -U pip pip-tools
+	pip-sync requirements*.txt
 	python -m pip install -e . --force-reinstall
+	pyenv rehash
 	pre-commit install
+
+create_venv: ## create virtualenv for this project
+	pyenv install ${PYENV_VERSION} --skip-existing
+	pyenv rehash
+	pyenv virtualenv-delete --force ${VENV_NAME}
+	pyenv virtualenv ${PYENV_VERSION} ${VENV_NAME}
+	pyenv local ${VENV_NAME}
+
+rebuild_venv: create_venv install ## rebuild project virtualenv
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uvicorn main:app --reload
-
-d_build: ## Build the docker container
-	# docker rm hyperborea-tools
-	docker build -t hyperborea-app .
-
-d_run: ## Run the docker container
-	docker run --name hyperborea-tools --detach --rm --publish 8000:8000 hyperborea-app
-
-d_build_and_run: d_build d_run ## build AND run!!!
-
-d_stop: ## Stop running docker container
-	docker stop hyperborea-tools
 
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

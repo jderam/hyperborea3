@@ -113,7 +113,7 @@ class PlayerCharacter:
         self.hair_colour: str = get_hair_colour(self.race_id, self.gender)
         self.complexion: str = get_complexion(self.race_id, self.gender)
         self.alignment: Dict[str, Any] = get_alignment(self.class_id)
-        self.languages: List[str] = get_languages(self.attr["in"]["lang"])
+        self.languages: List[str] = get_languages(self.race_id, self.attr["in"]["lang"])
         self.deity: Dict[str, Any] = get_deity(self.alignment["short_name"])
         self.secondary_skill: str = get_secondary_skill()
 

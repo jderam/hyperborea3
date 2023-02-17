@@ -46,11 +46,17 @@ def test_pc():
     assert pc.complexion in VALID_COMPLEXIONS
     assert pc.secondary_skill in VALID_SECONDARY_SKILLS
     assert pc.alignment["short_name"] in VALID_ALIGMENTS_SHORT
+    assert len(pc.languages) == len(set(pc.languages))
     if pc.attr["in"]["lang"] >= 0:
-        assert len(pc.languages) == pc.attr["in"]["lang"] + 1
+        if pc.race_id == 1:
+            assert len(pc.languages) == pc.attr["in"]["lang"] + 1
+        else:
+            assert len(pc.languages) == pc.attr["in"]["lang"] + 2
     else:
-        assert len(pc.languages) == 1
-    assert len(set(pc.languages)) == len(pc.languages)
+        if pc.race_id == 1:
+            assert len(pc.languages) == 1
+        else:
+            assert len(pc.languages) == 2
     for language in pc.languages:
         assert language in VALID_LANGUAGES
     assert pc.method in VALID_DICE_METHODS

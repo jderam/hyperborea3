@@ -1,65 +1,20 @@
-from importlib.resources import path
 import logging
 import random
-import sqlite3
 from typing import Any, Dict, List, Optional, Tuple
 
+from hyperborea3.db import execute_query_all, execute_query_one
 from hyperborea3.valid_data import (
+    VALID_ABILITIES,
+    VALID_ABILITY_SCORES,
     VALID_ALIGMENTS_SHORT,
+    VALID_CLASS_IDS,
     VALID_GENDERS,
-    VALID_SQL_TABLES,
+    VALID_LEVELS,
+    VALID_SCHOOLS,
+    VALID_SPELL_LEVELS,
 )
 
 logger = logging.getLogger(__name__)
-
-with path("hyperborea3", "hyperborea.sqlite3") as p:
-    DBPATH = p
-URI = f"file:{str(DBPATH)}?mode=ro"
-con = sqlite3.connect(URI, check_same_thread=False, uri=True)
-con.row_factory = sqlite3.Row
-cur = con.cursor()
-
-
-def list_tables() -> List[str]:
-    """List all tables in sqlite database."""
-    cur.execute(
-        """
-        SELECT name
-          FROM sqlite_schema
-         WHERE type = 'table'
-           AND name NOT LIKE 'sqlite_%'
-        ORDER BY name;
-        """
-    )
-    tables: List[str] = [dict(x)["name"] for x in cur.fetchall()]
-    return tables
-
-
-def list_views() -> List[str]:
-    """List all views in sqlite database."""
-    cur.execute(
-        """
-        SELECT name
-          FROM sqlite_schema
-         WHERE type = 'view'
-        ORDER BY name;
-        """
-    )
-    views: List[str] = [dict(x)["name"] for x in cur.fetchall()]
-    return views
-
-
-def get_count_from_table(table_name: str) -> int:
-    """Get the row count of a table in sqlite database."""
-    assert table_name in VALID_SQL_TABLES
-    cur.execute(
-        f"""
-        SELECT Count(1) AS row_count
-          FROM {table_name};
-        """
-    )
-    row_count: int = cur.fetchone()["row_count"]
-    return row_count
 
 
 def roll_dice(qty: int, sides: int, reroll: List[int] = []) -> int:
@@ -92,51 +47,30 @@ def roll_ndn_drop_highest(qty: int, sides: int, drop_qty: int) -> int:
 def get_class_id_map():
     """Get mapping between class_id and class_name"""
     sql = """
-            SELECT class_id
-                 , class_name
-              FROM classes
-          """
-    cur.execute(f"{sql};")
-    result = [dict(x) for x in cur.fetchall()]
-    class_map = {}
-    for r in result:
-        class_map[r["class_id"]] = r["class_name"]
+        SELECT class_id
+             , class_name
+        FROM classes
+    """
+    result = execute_query_all(sql)
+    class_map = {r["class_id"]: r["class_name"] for r in result}
     return class_map
 
 
 def class_id_to_name(class_id: int) -> str:
-    cur.execute("SELECT class_name FROM classes WHERE class_id = ?;", (class_id,))
-    class_name = str(cur.fetchone()["class_name"])
+    sql = "SELECT class_name FROM classes WHERE class_id = ?;"
+    class_name: str = execute_query_one(sql, (class_id,))["class_name"]
     return class_name
 
 
 def get_class_requirements(class_id: int):
-    cur.execute("SELECT * FROM class_attr_req WHERE class_id = ?;", (class_id,))
-    return [dict(x) for x in cur.fetchall()]
+    sql = "SELECT * FROM class_attr_req WHERE class_id = ?;"
+    result = execute_query_all(sql, (class_id,))
+    return result
 
 
 def roll_stats(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
     """Roll stats using the various methods in the Player's Manual"""
-    attr = {
-        "st": {
-            "score": 0,
-        },
-        "dx": {
-            "score": 0,
-        },
-        "cn": {
-            "score": 0,
-        },
-        "in": {
-            "score": 0,
-        },
-        "ws": {
-            "score": 0,
-        },
-        "ch": {
-            "score": 0,
-        },
-    }
+    attr = {ability: {"score": 0} for ability in VALID_ABILITIES}
     # Ensure scores at least qualify for one of the principal classes
     while (
         attr["st"]["score"] < 9
@@ -225,9 +159,9 @@ def roll_stats(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
 
 def get_attr_mod(stat: str, score: int) -> Dict[str, int]:
     """Get the mods for a given stat."""
-    if stat.lower() not in ["st", "dx", "cn", "in", "ws", "ch"]:
-        raise ValueError(f"Invalid value for stat: {stat}")
     stat = stat.lower()
+    if stat not in VALID_ABILITIES:
+        raise ValueError(f"Invalid value for stat: {stat}")
     tbl_map = {
         "st": "t001_strength",
         "dx": "t002_dexterity",
@@ -237,8 +171,7 @@ def get_attr_mod(stat: str, score: int) -> Dict[str, int]:
         "ch": "t006_charisma",
     }
     tbl = tbl_map[stat]
-    cur.execute(f"SELECT * FROM {tbl} WHERE score = ?;", (score,))
-    result = dict(cur.fetchone())
+    result = execute_query_one(f"SELECT * FROM {tbl} WHERE score = ?;", (score,))
     return result
 
 
@@ -257,30 +190,28 @@ def get_qualifying_classes(
     """Return list of class_ids that can be used given the attr."""
     # principal classes, subclasses, and sub-subclasses
     if subclasses == 2:
-        cur.execute("SELECT * FROM class_attr_req;")
+        sql = "SELECT * FROM class_attr_req;"
     # principal classes and subclasses
     elif subclasses == 1:
-        cur.execute(
-            """
+        sql = """
             SELECT car.*
-              FROM classes c
-              JOIN class_attr_req car
-                ON c.class_id = car.class_id
-             WHERE c.class_type IN ('P', 'S');
-            """
-        )
+            FROM classes c
+            JOIN class_attr_req car
+            ON c.class_id = car.class_id
+            WHERE c.class_type IN ('P', 'S');
+        """
     # principal classes only
     elif subclasses == 0:
-        cur.execute(
-            """
+        sql = """
             SELECT car.*
-              FROM classes c
-              JOIN class_attr_req car
-                ON c.class_id = car.class_id
-             WHERE c.class_type = 'P';
-            """
-        )
-    class_req = [dict(x) for x in cur.fetchall()]
+            FROM classes c
+            JOIN class_attr_req car
+            ON c.class_id = car.class_id
+            WHERE c.class_type = 'P';
+        """
+    else:
+        raise ValueError(f"Unrecognized value for subclasses: {subclasses}")
+    class_req = execute_query_all(sql)
     not_met = list(
         set(
             [
@@ -309,16 +240,13 @@ def select_random_class(attr: Dict[str, Dict[str, int]], subclasses: int) -> int
 
 
 def get_level(class_id: int, xp: int) -> int:
-    cur.execute(
-        """
+    sql = """
         SELECT Max(level) as level
-          FROM class_level
-         WHERE class_id = ?
-           AND xp <= ?
-        """,
-        (class_id, xp),
-    )
-    level: int = cur.fetchone()["level"]
+        FROM class_level
+        WHERE class_id = ?
+        AND xp <= ?
+    """
+    level: int = execute_query_one(sql, (class_id, xp))["level"]
     return level
 
 
@@ -328,28 +256,22 @@ def get_xp_to_next(class_id: int, level: int) -> Optional[int]:
     if level == 12:
         return None
     next_level = level + 1
-    cur.execute(
-        "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;",
-        (class_id, next_level),
-    )
-    xp_to_next: int = cur.fetchone()["xp"]
+    sql = "SELECT xp FROM class_level WHERE class_id = ? AND level = ?;"
+    xp_to_next: int = execute_query_one(sql, (class_id, next_level))["xp"]
     return xp_to_next
 
 
 def get_xp_bonus(class_id: int, attr: Dict[str, Dict[str, int]]) -> bool:
     """Determine if character qualifies for +10% XP bonus."""
-    cur.execute(
-        "SELECT attr FROM class_prime_attr WHERE class_id = ?;",
-        (class_id,),
-    )
-    prime_attrs = [dict(x)["attr"] for x in cur.fetchall()]
+    sql = "SELECT attr FROM class_prime_attr WHERE class_id = ?;"
+    result: List[Dict[str, str]] = execute_query_all(sql, (class_id,))
+    prime_attrs = [x["attr"] for x in result]
     xp_bonus = all([attr[p]["score"] >= 16 for p in prime_attrs])
     return xp_bonus
 
 
 def get_save_bonuses(class_id: int) -> Dict[str, int]:
-    cur.execute(
-        """
+    sql = """
         SELECT death
              , transformation
              , device
@@ -357,26 +279,21 @@ def get_save_bonuses(class_id: int) -> Dict[str, int]:
              , sorcery
           FROM classes
          WHERE class_id = ?
-        """,
-        (class_id,),
-    )
-    sv_bonus = dict(cur.fetchone())
+    """
+    sv_bonus = execute_query_one(sql, (class_id,))
     return sv_bonus
 
 
 def get_class_level_data(class_id: int, level: int) -> Dict[str, Any]:
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM classes c
           JOIN class_level cl
             ON c.class_id = cl.class_id
          WHERE c.class_id = ?
            AND cl.level = ?
-        """,
-        (class_id, level),
-    )
-    result = dict(cur.fetchone())
+    """
+    result = execute_query_one(sql, (class_id, level))
     return result
 
 
@@ -419,17 +336,14 @@ def get_combat_matrix(fa: int) -> Dict[int, int]:
 
 def get_alignment(class_id: int) -> Dict[str, Any]:
     """Choose a random alignment based on the options available to a given class."""
-    cur.execute(
-        """
+    sql = """
         SELECT a.*
           FROM class_alignment ca
           JOIN alignment a
             ON ca.align_id = a.align_id
          WHERE ca.class_id = ?
-        """,
-        (class_id,),
-    )
-    allowed_alignments = [dict(x) for x in cur.fetchall()]
+    """
+    allowed_alignments = execute_query_all(sql, (class_id,))
     alignment = random.choice(allowed_alignments)
     return alignment
 
@@ -445,26 +359,15 @@ def get_deity(short_alignment: str) -> Dict[str, Any]:
         lkp_align = "Lawful"
     elif short_alignment[0] == "N":
         lkp_align = "Neutral"
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM deities
          WHERE primary_alignment = ?;
-        """,
-        (lkp_align,),
-    )
-    deities = [dict(x) for x in cur.fetchall()]
+    """
+    deities = execute_query_all(sql, (lkp_align,))
     if short_alignment in ["CE", "LE"]:
         lkp_align = "Evil"
-        cur.execute(
-            """
-            SELECT *
-            FROM deities
-            WHERE primary_alignment = ?;
-            """,
-            (lkp_align,),
-        )
-        deities.extend([dict(x) for x in cur.fetchall()])
+        deities.extend(execute_query_all(sql, (lkp_align,)))
     deity = random.choice(deities)
     return deity
 
@@ -472,38 +375,28 @@ def get_deity(short_alignment: str) -> Dict[str, Any]:
 def get_race_id() -> int:
     """Roll on race tables to get a randomly selected race."""
     d100_roll = roll_dice(1, 100)
-    cur.execute(
-        """SELECT race_id
+    sql = """SELECT race_id
              FROM t066_primary_races
             WHERE ? BETWEEN d100_min AND d100_max;
-        """,
-        (d100_roll,),
-    )
-    race_id: int = cur.fetchone()["race_id"]
+    """
+    race_id: int = execute_query_one(sql, (d100_roll,))["race_id"]
     if race_id == 99:
         d12_roll = roll_dice(1, 12)
-        cur.execute(
-            """SELECT race_id
+        sql_a = """SELECT race_id
                  FROM t067_ancillary_races
                 WHERE d12_roll = ?;
-            """,
-            (d12_roll,),
-        )
-        race_id = cur.fetchone()["race_id"]
-    if race_id not in range(1, 25):
-        raise ValueError(f"Unexpected race_id value: {race_id}. d100_roll={d100_roll}")
+        """
+        race_id = execute_query_one(sql_a, (d12_roll,))["race_id"]
     return race_id
 
 
 def get_race(race_id: int) -> str:
-    cur.execute(
-        """SELECT race
-             FROM v_race_lkp
-            WHERE race_id = ?;
-        """,
-        (race_id,),
-    )
-    race: str = cur.fetchone()["race"]
+    sql = """
+        SELECT race
+        FROM v_race_lkp
+        WHERE race_id = ?;
+    """
+    race: str = execute_query_one(sql, (race_id,))["race"]
     return race
 
 
@@ -525,8 +418,6 @@ def get_age(race_id: int) -> int:
             age = 20 + roll_dice(1, 80)
         else:
             age = 20 + roll_dice(1, 24)
-    else:
-        ValueError(f"Result from d6 roll was outside the range 1-6: {grouping_roll}")
     return age
 
 
@@ -580,16 +471,13 @@ def get_height_weight_lookup_vals(race_id: int, gender: str) -> Tuple[int, str]:
 
 def get_height_and_weight(race_id: int, gender: str) -> Tuple[str, str]:
     lookup_roll, lookup_gender = get_height_weight_lookup_vals(race_id, gender)
-    cur.execute(
-        f"""
+    sql = f"""
         SELECT {lookup_gender.lower()}_height AS height_range
              , {lookup_gender.lower()}_avg_weight AS avg_weight
           FROM t069_height_and_weight
          WHERE id = ?
-        """,
-        (lookup_roll,),
-    )
-    result = dict(cur.fetchone())
+    """
+    result = execute_query_one(sql, (lookup_roll,))
     height_range = [int(x) for x in result["height_range"].split("-")]
     height_inches = random.randint(height_range[0], height_range[1])
     height = inches_to_feet(height_inches)
@@ -603,11 +491,6 @@ def get_height_and_weight(race_id: int, gender: str) -> Tuple[str, str]:
     elif weight_variability_roll in [8, 9, 10]:
         weight_multiplier = 1 + (roll_dice(1, 4) * 0.1)
         weight = round(base_weight * weight_multiplier)
-    else:
-        raise ValueError(
-            "weight_variability_roll out of expected range (1-10): "
-            f"{weight_variability_roll}"
-        )
     return height, f"{weight} lbs."
 
 
@@ -647,8 +530,6 @@ def get_eye_colour(race_id: int, gender: str) -> str:
             roll = roll_dice(1, 4)
         elif gender == "Male":
             return "Black"
-        else:
-            raise ValueError(f"Unrecognized value for gender: '{gender}'")
     # Kelt
     elif race_id == 7:
         roll = roll_dice(1, 30) + 58
@@ -692,14 +573,12 @@ def get_eye_colour(race_id: int, gender: str) -> str:
     elif race_id == 24:
         roll = roll_dice(1, 30) + 12
 
-    cur.execute(
-        """SELECT eye_colour
-             FROM t070a_eye_colour
-            WHERE ? BETWEEN roll_min AND roll_max;
-        """,
-        (roll,),
-    )
-    eye_colour: str = cur.fetchone()["eye_colour"]
+    sql = """
+        SELECT eye_colour
+        FROM t070a_eye_colour
+        WHERE ? BETWEEN roll_min AND roll_max;
+    """
+    eye_colour: str = execute_query_one(sql, (roll,))["eye_colour"]
     return eye_colour
 
 
@@ -736,8 +615,6 @@ def get_hair_colour(race_id: int, gender: str) -> str:
             roll = roll_dice(1, 12) + 120
         elif gender == "Male":
             roll = roll_dice(1, 10) + 122
-        else:
-            raise ValueError(f"Unrecognized value for gender: '{gender}'")
     # Ixian
     elif race_id == 6:
         return "Black"
@@ -784,14 +661,12 @@ def get_hair_colour(race_id: int, gender: str) -> str:
     elif race_id == 24:
         roll = roll_dice(1, 30) + 40
 
-    cur.execute(
-        """SELECT hair_colour
-             FROM t070b_hair_colour
-            WHERE ? BETWEEN roll_min AND roll_max;
-        """,
-        (roll,),
-    )
-    hair_colour: str = cur.fetchone()["hair_colour"]
+    sql = """
+        SELECT hair_colour
+        FROM t070b_hair_colour
+        WHERE ? BETWEEN roll_min AND roll_max;
+    """
+    hair_colour: str = execute_query_one(sql, (roll,))["hair_colour"]
     return hair_colour
 
 
@@ -858,8 +733,6 @@ def get_complexion(race_id: int, gender: str) -> str:
             roll = roll_dice(1, 12) + 88
         elif gender == "Male":
             roll = roll_dice(1, 12) + 80
-        else:
-            raise ValueError(f"Unrecognized value for gender: '{gender}'")
     # Pict (Half-Blood)
     elif race_id == 11:
         roll = roll_dice(1, 10) + 45
@@ -876,42 +749,68 @@ def get_complexion(race_id: int, gender: str) -> str:
     elif race_id == 24:
         roll = roll_dice(1, 50) + 50
 
-    cur.execute(
-        """SELECT complexion
-             FROM t070c_complexion
-            WHERE ? BETWEEN roll_min AND roll_max;
-        """,
-        (roll,),
-    )
-    complexion: str = cur.fetchone()["complexion"]
+    sql = """
+        SELECT complexion
+        FROM t070c_complexion
+        WHERE ? BETWEEN roll_min AND roll_max;
+    """
+    complexion: str = execute_query_one(sql, (roll,))["complexion"]
     return complexion
 
 
-def get_languages(bonus_languages: int) -> List[str]:
+def get_languages(race_id: int, bonus_languages: int) -> List[str]:
     """Get known languages."""
     languages = []
-    cur.execute(
-        """
+    sql1 = """
         SELECT language_dialect
           FROM t071_languages
-         WHERE language_id = 1
-        """
-    )
-    language = cur.fetchone()["language_dialect"]
+         WHERE language_id = ?
+    """
+    language = execute_query_one(sql1, (1,))["language_dialect"]
     languages.append(language)
+    # racial language, if applicable
+    racial_languages = {
+        2: 6,
+        3: 7,
+        # 4: random.choice([3, 4]),
+        5: 9,
+        6: 19,
+        7: 11,
+        # 8: random.choice([10, 20]),
+        # 9: random.choice([10, 11]),
+        10: 12,
+        11: 12,
+        12: 17,
+        13: 16,
+        14: 13,
+        15: 5,
+        16: 8,
+        17: 22,
+        18: 14,
+        19: 2,
+        20: 15,
+        21: 18,
+        22: 13,
+        23: 21,
+        24: 23,
+    }
+    racial_languages[4] = random.choice([3, 4])
+    racial_languages[8] = random.choice([10, 20])
+    racial_languages[9] = random.choice([10, 11])
+    if race_id in racial_languages:
+        language_id = racial_languages[race_id]
+        language = execute_query_one(sql1, (language_id,))["language_dialect"]
+        languages.append(language)
     if bonus_languages > 0:
         new_languages_learned = 0
         while new_languages_learned < bonus_languages:
             d100_roll = roll_dice(1, 100)
-            cur.execute(
-                """
+            sql2 = """
                 SELECT language_dialect
                 FROM t071_languages
                 WHERE ? BETWEEN d100_min AND d100_max
-                """,
-                (d100_roll,),
-            )
-            language = cur.fetchone()["language_dialect"]
+            """
+            language = execute_query_one(sql2, (d100_roll,))["language_dialect"]
             if language not in languages:
                 languages.append(language)
                 new_languages_learned += 1
@@ -922,17 +821,14 @@ def get_starting_armour(class_id: int) -> Dict[str, Any]:
     """Get starting armour by class.
     The SQL should always return one and only one result.
     """
-    cur.execute(
-        """
+    sql = """
         SELECT a.*
           FROM starting_armour s
           JOIN t074_armour a
             ON s.armour_id = a.armour_id
          WHERE s.class_id = ?
-        """,
-        (class_id,),
-    )
-    armour = dict(cur.fetchone())
+    """
+    armour = execute_query_one(sql, (class_id,))
     return armour
 
 
@@ -940,35 +836,28 @@ def get_starting_shield(class_id: int) -> Optional[Dict[str, Any]]:
     """Get starting shield by class.
     SQL should return one or zero results.
     """
-    cur.execute(
-        """
+    sql = """
         SELECT ts.*
           FROM starting_shield ss
           JOIN t075_shields ts
             ON ss.shield_id = ts.shield_id
          WHERE ss.class_id = ?
-        """,
-        (class_id,),
-    )
-    result = cur.fetchone()
-    shield = dict(result) if result is not None else result
+    """
+    shield = execute_query_one(sql, (class_id,))
     return shield
 
 
 def get_starting_weapons_melee(class_id: int) -> List[Dict[str, Any]]:
     """Get starting melee weapons by class."""
-    cur.execute(
-        """
+    sql = """
         SELECT w.*
              , sw.qty
           FROM starting_weapons_melee sw
           JOIN t076_melee_weapons w
             ON sw.weapon_id = w.weapon_id
          WHERE sw.class_id = ?;
-        """,
-        (class_id,),
-    )
-    melee_weapons = [dict(x) for x in cur.fetchall()]
+    """
+    melee_weapons = execute_query_all(sql, (class_id,))
     for mw in melee_weapons:
         mw["hurlable"] = bool(mw["hurlable"])
         mw["atk_rate"] = "1/1"
@@ -981,8 +870,7 @@ def get_starting_weapons_melee(class_id: int) -> List[Dict[str, Any]]:
 
 def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
     """Get starting missile weapons by class."""
-    cur.execute(
-        """
+    sql = """
         SELECT w.*
              , sw.qty
              , sw.ammunition
@@ -990,10 +878,8 @@ def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
           JOIN t077_missile_weapons w
             ON sw.weapon_id = w.weapon_id
          WHERE sw.class_id = ?;
-        """,
-        (class_id,),
-    )
-    missile_weapons = [dict(x) for x in cur.fetchall()]
+    """
+    missile_weapons = execute_query_all(sql, (class_id,))
     for mw in missile_weapons:
         mw["hurled"] = bool(mw["hurled"])
         mw["launched"] = bool(mw["launched"])
@@ -1005,46 +891,37 @@ def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
 
 def get_unskilled_weapon_penalty(class_id: int) -> int:
     """Get penalty when using a weapon not in the favoured list."""
-    cur.execute(
-        """
+    sql = """
         SELECT attack_penalty
           FROM t134_unskilled_weapon_attack_penalty
          WHERE class_id = ?;
-        """,
-        (class_id,),
-    )
-    unskilled_penalty: int = cur.fetchone()["attack_penalty"]
+    """
+    unskilled_penalty: int = execute_query_one(sql, (class_id,))["attack_penalty"]
     return unskilled_penalty
 
 
 def get_favoured_weapons(class_id: int) -> Dict[str, Any]:
     """Get list of favoured weapons for a given class_id."""
     # get favoured melee weapons
-    cur.execute(
-        """
+    melee_sql = """
         SELECT tmw.*
           FROM class_favoured_weapons_melee cfwm
           JOIN t076_melee_weapons tmw
             ON cfwm.weapon_id = tmw.weapon_id
          WHERE cfwm.class_id = ?
         ORDER BY tmw.weapon_id;
-        """,
-        (class_id,),
-    )
-    fav_wpns_melee: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    """
+    fav_wpns_melee: List[Dict[str, Any]] = execute_query_all(melee_sql, (class_id,))
     # get favoured missile weapons
-    cur.execute(
-        """
+    missile_sql = """
         SELECT tmw.*
           FROM class_favoured_weapons_missile cfwm
           JOIN t077_missile_weapons tmw
             ON cfwm.weapon_id = tmw.weapon_id
          WHERE cfwm.class_id = ?
         ORDER BY tmw.weapon_id;
-        """,
-        (class_id,),
-    )
-    fav_wpns_missile: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    """
+    fav_wpns_missile: List[Dict[str, Any]] = execute_query_all(missile_sql, (class_id,))
     # get unskilled penalty
     unskilled_penalty = get_unskilled_weapon_penalty(class_id)
     # get "any" (set True for classes proficient in any/all weapons)
@@ -1060,15 +937,12 @@ def get_favoured_weapons(class_id: int) -> Dict[str, Any]:
 
 def get_starting_gear(class_id: int) -> List[str]:
     """Get starting equipment items by class."""
-    cur.execute(
-        """
+    sql = """
         SELECT item
           FROM starting_gear
          WHERE class_id = ?;
-        """,
-        (class_id,),
-    )
-    equipment = [x["item"] for x in cur.fetchall()]
+    """
+    equipment = [x["item"] for x in execute_query_all(sql, (class_id,))]
     return equipment
 
 
@@ -1102,6 +976,8 @@ def get_next_atk_rate(atk_rate: str) -> str:
     ]
     atk_prog_idx = atk_progression.index(atk_rate)
     atk_prog_idx += 1
+    if atk_prog_idx >= len(atk_progression):
+        raise ValueError(f"Cannot progress attack rate '{atk_rate}' any further.")
     return atk_progression[atk_prog_idx]
 
 
@@ -1124,26 +1000,24 @@ def get_thief_skills(
     stat        (str): The associated ability, which grats a +1 bonus for 16+
     """
     # input validation
-    if class_id not in range(1, 34):
+    if class_id not in VALID_CLASS_IDS:
         raise ValueError(f"Invalid class_id: {class_id}")
-    if level not in range(1, 13):
+    if level not in VALID_LEVELS:
         raise ValueError(f"Invalid value for level: {level}")
-    if dx_score not in range(1, 19):
+    if dx_score not in VALID_ABILITY_SCORES:
         raise ValueError(f"Invalid value for dx_score: {dx_score}")
-    if in_score not in range(1, 19):
+    if in_score not in VALID_ABILITY_SCORES:
         raise ValueError(f"Invalid value for in_score: {in_score}")
-    if ws_score not in range(1, 19):
+    if ws_score not in VALID_ABILITY_SCORES:
         raise ValueError(f"Invalid value for ws_score: {ws_score}")
 
     # get the skills for this class
-    cur.execute(
-        """SELECT thief_skill
-             FROM class_thief_abilities
-            WHERE class_id = ?;
-        """,
-        (class_id,),
-    )
-    skills_list = [dict(x) for x in cur.fetchall()]
+    class_thief_abilities_sql = """
+        SELECT thief_skill
+        FROM class_thief_abilities
+        WHERE class_id = ?;
+    """
+    skills_list = execute_query_all(class_thief_abilities_sql, (class_id,))
     if len(skills_list) == 0:
         return None
 
@@ -1158,16 +1032,25 @@ def get_thief_skills(
 
     # get thief skill scores
     for sk in skills_list:
-        sql = f"SELECT {sk['thief_skill']} FROM t016_thief_abilities WHERE level = ?;"
-        cur.execute(sql, (level,))
-        skill_roll = dict(cur.fetchone())[sk["thief_skill"]]
+        thief_abilities_sql = f"""
+            SELECT {sk['thief_skill']}
+            FROM t016_thief_abilities
+            WHERE level = ?;
+        """
+        skill_roll = execute_query_one(thief_abilities_sql, (level,))[sk["thief_skill"]]
         sk.update({"skill_roll": skill_roll})
 
     # apply bonuses (if any)
     for sk in skills_list:
-        sql = "SELECT stat FROM thief_ability_bonuses WHERE thief_skill = ?;"
-        cur.execute(sql, (sk["thief_skill"],))
-        stat = dict(cur.fetchone())["stat"]
+        thief_ability_bonuses_sql = """
+            SELECT stat
+            FROM thief_ability_bonuses
+            WHERE thief_skill = ?;
+        """
+        stat = execute_query_one(
+            thief_ability_bonuses_sql,
+            (sk["thief_skill"],),
+        )["stat"]
         sk.update({"stat": stat})
         if stat == "dx" and dx_score >= 16:
             sk["skill_roll"] += 1
@@ -1183,8 +1066,7 @@ def get_turn_undead_matrix(ta: int, turn_adj: int) -> Optional[Dict[str, str]]:
     """Get turn undead matrix. Apply CH turning adjustment if applicable."""
     if ta == 0:
         return None
-    cur.execute(
-        """
+    sql = """
         SELECT undead_type_00
              , undead_type_01
              , undead_type_02
@@ -1201,10 +1083,8 @@ def get_turn_undead_matrix(ta: int, turn_adj: int) -> Optional[Dict[str, str]]:
              , undead_type_13
           FROM t013_turn_undead
          WHERE ta = ?;
-        """,
-        (ta,),
-    )
-    turn_undead_matrix = dict(cur.fetchone())
+    """
+    turn_undead_matrix = execute_query_one(sql, (ta,))
     if turn_adj != 0:
         for k, v in turn_undead_matrix.items():
             if ":" in v:
@@ -1219,11 +1099,8 @@ def get_turn_undead_matrix(ta: int, turn_adj: int) -> Optional[Dict[str, str]]:
 
 def get_caster_schools(class_id: int) -> List[str]:
     """Get the school(s) the character will get their spells known from."""
-    cur.execute(
-        "SELECT school_code FROM classes WHERE class_id = ?;",
-        (class_id,),
-    )
-    school_code: Optional[str] = cur.fetchone()["school_code"]
+    sql = "SELECT school_code FROM classes WHERE class_id = ?;"
+    school_code: Optional[str] = execute_query_one(sql, (class_id,))["school_code"]
     if school_code is None:
         return []
     schools = [x.strip() for x in school_code.split(",")]
@@ -1244,9 +1121,10 @@ def get_random_spell(
     """Get a randomly rolled-for spell."""
     if d100_roll is None:
         d100_roll = roll_dice(1, 100)
+    assert school in VALID_SCHOOLS
+    assert spell_level in VALID_SPELL_LEVELS
     assert d100_roll in range(1, 101)
-    cur.execute(
-        """
+    sql = """
         SELECT school
              , spell_level
              , spell_id
@@ -1260,14 +1138,8 @@ def get_random_spell(
          WHERE school = ?
            AND spell_level = ?
            AND ? BETWEEN d100_min AND d100_max;
-        """,
-        (school, spell_level, d100_roll),
-    )
-    try:
-        result = dict(cur.fetchone())
-    except TypeError:
-        print(f"Got no result back. {school=} {spell_level=} {d100_roll=}")
-        raise
+    """
+    result = execute_query_one(sql, (school, spell_level, d100_roll))
     if result["reversible"] is not None:
         result["reversible"] = bool(result["reversible"])
     return result
@@ -1278,33 +1150,17 @@ def get_spells(class_id: int, level: int, ca: int) -> Optional[Dict[str, Any]]:
     if ca == 0:
         return None
     schools = get_caster_schools(class_id)
-    if len(schools) == 0:
-        return None
-    else:
-        spells: Dict[str, Any] = {}
+    spells: Dict[str, Any] = {}
     for school in schools:
         spells[school] = {}
-        cur.execute(
-            """
+        sql = """
             SELECT *
-            FROM class_spells_by_level
-            WHERE class_id = ?
-              AND level = ?
-              AND school = ?;
-            """,
-            (class_id, level, school),
-        )
-        result = cur.fetchone()
-        if result is None:
-            continue
-        try:
-            class_spells = dict(result)
-        except TypeError:
-            print(
-                "No entry found in class_spells_by_level."
-                f" {class_id=} {level=} {school=}"
-            )
-            raise
+              FROM class_spells_by_level
+             WHERE class_id = ?
+               AND level = ?
+               AND school = ?;
+        """
+        class_spells = execute_query_one(sql, (class_id, level, school))
         spells[school]["spells_per_day"] = {
             "lvl1": class_spells["spells_per_day1"],
             "lvl2": class_spells["spells_per_day2"],
@@ -1356,7 +1212,6 @@ def apply_spells_per_day_bonus(
         if school in ["clr", "drd"]:
             for i in range(bonus_spells_ws, 0, -1):
                 lvl_key = f"lvl{i}"
-                # if spells[school]["spells_per_day"][lvl_key] > 0:
                 if spells[school].get("spells_per_day", {}).get(lvl_key, 0) > 0:
                     spells[school]["spells_per_day"][lvl_key] += 1
         elif school in [
@@ -1369,73 +1224,60 @@ def apply_spells_per_day_bonus(
         ]:
             for i in range(bonus_spells_in, 0, -1):
                 lvl_key = f"lvl{i}"
-                # if spells[school]["spells_per_day"][lvl_key] > 0:
                 if spells[school].get("spells_per_day", {}).get(lvl_key, 0) > 0:
                     spells[school]["spells_per_day"][lvl_key] += 1
         elif school == "run":
             # no bonus for runegravers
             continue
-        else:
-            raise ValueError(f"Invalid value for school: {school}")
+        # else:
+        #     raise ValueError(f"Invalid value for school: {school}")
     return spells
 
 
 def get_class_abilities(class_id: int, level: int) -> List[Dict[str, Any]]:
     """Get class abilities from class abilities table."""
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM class_abilities
          WHERE class_id = ?
            AND level <= ?
         ORDER BY level, ability_title;
-        """,
-        (class_id, level),
-    )
-    class_abilities = [dict(x) for x in cur.fetchall()]
+    """
+    class_abilities = execute_query_all(sql, (class_id, level))
     return class_abilities
 
 
 def get_random_familiar() -> str:
     """Roll 2d8 to get a random familiar."""
     roll = roll_dice(2, 8)
-    cur.execute(
-        """
+    sql = """
         SELECT animal
           FROM t010_familiars
          WHERE roll_2d8 = ?;
-        """,
-        (roll,),
-    )
-    animal: str = cur.fetchone()["animal"]
+    """
+    animal: str = execute_query_one(sql, (roll,))["animal"]
     return animal
 
 
 def get_priest_abilities(deity_id: int, level: int) -> List[Dict[str, Any]]:
     """Get priest Specialized Faith abilities."""
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM t047_priest_abilities
          WHERE deity_id = ?
            AND level <= ?
         ORDER BY level;
-        """,
-        (deity_id, level),
-    )
-    priest_abilities = [dict(x) for x in cur.fetchall()]
+    """
+    priest_abilities = execute_query_all(sql, (deity_id, level))
     return priest_abilities
 
 
 def get_secondary_skill() -> str:
     roll = roll_dice(1, 60)
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM t072_secondary_skills
          WHERE id = ?;
-        """,
-        (roll,),
-    )
-    secondary_skill: str = cur.fetchone()["skill_name"]
+    """
+    secondary_skill: str = execute_query_one(sql, (roll,))["skill_name"]
     return secondary_skill
