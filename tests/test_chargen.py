@@ -551,6 +551,7 @@ def test_get_languages():
             languages = get_languages(race_id, bonus_languages)
             assert "Common" in languages
             assert len(languages) == len(set(languages))
+            assert 1 <= len(languages) <= 5
             if bonus_languages <= 0:
                 if race_id == 1:
                     assert len(languages) == 1
