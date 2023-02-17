@@ -3,7 +3,7 @@ SHELL := bash
 .DEFAULT_GOAL := help
 OS := $(shell uname)
 
-.PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check gen_requirements resync_requirements rebuild_venv run_test_uvicorn
+.PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check compile_req install create_venv rebuild_venv run_test_uvicorn
 
 PYENV_VERSION=3.11.2
 VENV_NAME=hyperborea3-venv
@@ -51,28 +51,26 @@ check: ## Run all linting/formatting checks
 mypy_check: ## Run mypy type checker
 	mypy hyperborea3 tests
 
-gen_requirements: ## Generate new requirements files
+compile_req: ## Generate new requirements files
 	pip-compile --resolver=backtracking --upgrade -o requirements.txt pyproject.toml
 	pip-compile --resolver=backtracking --upgrade --extra dev -o requirements_dev.txt pyproject.toml
 	pip-compile --resolver=backtracking --upgrade --extra test -o requirements_test.txt pyproject.toml
 
-resync_requirements: ## reinstall all packages in the environment
-	python -m pip install -U pip setuptools wheel pip-tools
+install: ## install/reinstall all packages in the environment
+	python -m pip install -U pip pip-tools
 	pip-sync requirements*.txt
 	python -m pip install -e . --force-reinstall
+	pyenv rehash
 	pre-commit install
 
-rebuild_venv: ## rebuild project virtualenv
-	pyenv install ${PYTHON_VERSION} --skip-existing
+create_venv: ## create virtualenv for this project
+	pyenv install ${PYENV_VERSION} --skip-existing
 	pyenv rehash
 	pyenv virtualenv-delete --force ${VENV_NAME}
-	pyenv virtualenv ${PYTHON_VERSION} ${VENV_NAME}
+	pyenv virtualenv ${PYENV_VERSION} ${VENV_NAME}
 	pyenv local ${VENV_NAME}
-	python -m pip install -U pip setuptools wheel pip-tools
-	python -m pip install -r requirements_dev.txt -r requirements_test.txt -r requirements.txt
-	python -m pip install -e .
-	pre-commit install
-	pyenv rehash
+
+rebuild_venv: create_venv install ## rebuild project virtualenv
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uvicorn main:app --reload
