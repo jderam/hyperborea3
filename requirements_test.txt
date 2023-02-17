@@ -30,7 +30,7 @@ iniconfig==2.0.0
     # via pytest
 mccabe==0.7.0
     # via flake8
-mypy==1.0.0
+mypy==1.0.1
     # via hyperborea3 (pyproject.toml)
 mypy-extensions==1.0.0
     # via
@@ -70,7 +70,7 @@ pytest-repeat==0.9.1
     # via hyperborea3 (pyproject.toml)
 tox==4.4.5
     # via hyperborea3 (pyproject.toml)
-typing-extensions==4.4.0
+typing-extensions==4.5.0
     # via mypy
 virtualenv==20.19.0
     # via tox
