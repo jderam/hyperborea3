@@ -168,6 +168,7 @@ VALID_COMPLEXIONS = [
     "Ruddy",
     "Tan",
 ]
+VALID_DEITY_IDS = list(range(1, 25))
 VALID_DEITIES = [
     "Apollo",
     "Artemis",

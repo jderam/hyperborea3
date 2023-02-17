@@ -1,7 +1,5 @@
-from importlib.resources import path
 import logging
 import random
-import sqlite3
 from typing import Any, Dict, List, Optional, Tuple
 
 from hyperborea3.db import execute_query_all, execute_query_one
@@ -12,19 +10,11 @@ from hyperborea3.valid_data import (
     VALID_CLASS_IDS,
     VALID_GENDERS,
     VALID_LEVELS,
-    # VALID_RACES_BY_ID,
     VALID_SCHOOLS,
     VALID_SPELL_LEVELS,
 )
 
 logger = logging.getLogger(__name__)
-
-with path("hyperborea3", "hyperborea.sqlite3") as p:
-    DBPATH = p
-URI = f"file:{str(DBPATH)}?mode=ro"
-con = sqlite3.connect(URI, check_same_thread=False, uri=True)
-con.row_factory = sqlite3.Row
-cur = con.cursor()
 
 
 def roll_dice(qty: int, sides: int, reroll: List[int] = []) -> int:
@@ -1127,33 +1117,17 @@ def get_spells(class_id: int, level: int, ca: int) -> Optional[Dict[str, Any]]:
     if ca == 0:
         return None
     schools = get_caster_schools(class_id)
-    if len(schools) == 0:
-        return None
-    else:
-        spells: Dict[str, Any] = {}
+    spells: Dict[str, Any] = {}
     for school in schools:
         spells[school] = {}
-        cur.execute(
-            """
+        sql = """
             SELECT *
-            FROM class_spells_by_level
-            WHERE class_id = ?
-              AND level = ?
-              AND school = ?;
-            """,
-            (class_id, level, school),
-        )
-        result = cur.fetchone()
-        if result is None:
-            continue
-        try:
-            class_spells = dict(result)
-        except TypeError:
-            print(
-                "No entry found in class_spells_by_level."
-                f" {class_id=} {level=} {school=}"
-            )
-            raise
+              FROM class_spells_by_level
+             WHERE class_id = ?
+               AND level = ?
+               AND school = ?;
+        """
+        class_spells = execute_query_one(sql, (class_id, level, school))
         spells[school]["spells_per_day"] = {
             "lvl1": class_spells["spells_per_day1"],
             "lvl2": class_spells["spells_per_day2"],
@@ -1205,7 +1179,6 @@ def apply_spells_per_day_bonus(
         if school in ["clr", "drd"]:
             for i in range(bonus_spells_ws, 0, -1):
                 lvl_key = f"lvl{i}"
-                # if spells[school]["spells_per_day"][lvl_key] > 0:
                 if spells[school].get("spells_per_day", {}).get(lvl_key, 0) > 0:
                     spells[school]["spells_per_day"][lvl_key] += 1
         elif school in [
@@ -1218,73 +1191,60 @@ def apply_spells_per_day_bonus(
         ]:
             for i in range(bonus_spells_in, 0, -1):
                 lvl_key = f"lvl{i}"
-                # if spells[school]["spells_per_day"][lvl_key] > 0:
                 if spells[school].get("spells_per_day", {}).get(lvl_key, 0) > 0:
                     spells[school]["spells_per_day"][lvl_key] += 1
         elif school == "run":
             # no bonus for runegravers
             continue
-        else:
-            raise ValueError(f"Invalid value for school: {school}")
+        # else:
+        #     raise ValueError(f"Invalid value for school: {school}")
     return spells
 
 
 def get_class_abilities(class_id: int, level: int) -> List[Dict[str, Any]]:
     """Get class abilities from class abilities table."""
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM class_abilities
          WHERE class_id = ?
            AND level <= ?
         ORDER BY level, ability_title;
-        """,
-        (class_id, level),
-    )
-    class_abilities = [dict(x) for x in cur.fetchall()]
+    """
+    class_abilities = execute_query_all(sql, (class_id, level))
     return class_abilities
 
 
 def get_random_familiar() -> str:
     """Roll 2d8 to get a random familiar."""
     roll = roll_dice(2, 8)
-    cur.execute(
-        """
+    sql = """
         SELECT animal
           FROM t010_familiars
          WHERE roll_2d8 = ?;
-        """,
-        (roll,),
-    )
-    animal: str = cur.fetchone()["animal"]
+    """
+    animal: str = execute_query_one(sql, (roll,))["animal"]
     return animal
 
 
 def get_priest_abilities(deity_id: int, level: int) -> List[Dict[str, Any]]:
     """Get priest Specialized Faith abilities."""
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM t047_priest_abilities
          WHERE deity_id = ?
            AND level <= ?
         ORDER BY level;
-        """,
-        (deity_id, level),
-    )
-    priest_abilities = [dict(x) for x in cur.fetchall()]
+    """
+    priest_abilities = execute_query_all(sql, (deity_id, level))
     return priest_abilities
 
 
 def get_secondary_skill() -> str:
     roll = roll_dice(1, 60)
-    cur.execute(
-        """
+    sql = """
         SELECT *
           FROM t072_secondary_skills
          WHERE id = ?;
-        """,
-        (roll,),
-    )
-    secondary_skill: str = cur.fetchone()["skill_name"]
+    """
+    secondary_skill: str = execute_query_one(sql, (roll,))["skill_name"]
     return secondary_skill

@@ -1,8 +1,10 @@
+from typing import no_type_check
+
 import pytest
 
 from hyperborea3.chargen import (
-    DBPATH,
     ac_to_aac,
+    apply_spells_per_day_bonus,
     calculate_ac,
     class_id_to_name,
     get_age,
@@ -10,6 +12,7 @@ from hyperborea3.chargen import (
     get_attr,
     get_attr_mod,
     get_caster_schools,
+    get_class_abilities,
     get_class_id_map,
     get_class_level_data,
     get_class_requirements,
@@ -26,6 +29,7 @@ from hyperborea3.chargen import (
     get_languages,
     get_level,
     get_next_atk_rate,
+    get_priest_abilities,
     get_qualifying_classes,
     get_race,
     get_race_id,
@@ -60,6 +64,7 @@ from hyperborea3.valid_data import (
     VALID_CLASS_THIEF_ABILITIES,
     VALID_COMPLEXIONS,
     VALID_DEITIES,
+    VALID_DEITY_IDS,
     VALID_DENOMINATIONS,
     VALID_DICE_METHODS,
     VALID_EYE_COLOURS,
@@ -85,8 +90,56 @@ from hyperborea3.valid_data import (
 )
 
 
-def test_db():
-    assert DBPATH.is_file()
+@no_type_check
+def test_apply_spells_per_day_bonus():
+    # test for empty spells
+    spells = apply_spells_per_day_bonus(None, bonus_spells_in=4, bonus_spells_ws=4)
+    assert spells is None
+
+    # test for magician
+    spells = get_spells(class_id=2, level=1, ca=1)
+    assert spells["mag"]["spells_per_day"]["lvl1"] == 1
+    assert spells["mag"]["spells_per_day"]["lvl2"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl3"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl4"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl5"] == 0
+    assert spells["mag"]["spells_per_day"]["lvl6"] == 0
+    updated_spells = apply_spells_per_day_bonus(
+        spells,
+        bonus_spells_in=4,
+        bonus_spells_ws=0,
+    )
+    assert updated_spells["mag"]["spells_per_day"]["lvl1"] == 2
+    assert updated_spells["mag"]["spells_per_day"]["lvl2"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl3"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl4"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl5"] == 0
+    assert updated_spells["mag"]["spells_per_day"]["lvl6"] == 0
+
+    # test for cleric
+    spells = get_spells(class_id=3, level=1, ca=1)
+    assert spells["clr"]["spells_per_day"]["lvl1"] == 1
+    assert spells["clr"]["spells_per_day"]["lvl2"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl3"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl4"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl5"] == 0
+    assert spells["clr"]["spells_per_day"]["lvl6"] == 0
+    updated_spells = apply_spells_per_day_bonus(
+        spells,
+        bonus_spells_in=0,
+        bonus_spells_ws=4,
+    )
+    assert updated_spells["clr"]["spells_per_day"]["lvl1"] == 2
+    assert updated_spells["clr"]["spells_per_day"]["lvl2"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl3"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl4"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl5"] == 0
+    assert updated_spells["clr"]["spells_per_day"]["lvl6"] == 0
+
+    # test for runegraver
+    spells = get_spells(class_id=20, level=1, ca=1)
+    updated_spells = apply_spells_per_day_bonus(spells, 4, 4)
+    assert spells == updated_spells
 
 
 @pytest.mark.repeat(10)
@@ -140,6 +193,18 @@ def test_roll_stats():
         attr = roll_stats(method=7)
 
 
+def test_get_class_abilities():
+    for class_id in VALID_CLASS_IDS:
+        for level in VALID_LEVELS:
+            class_abilities = get_class_abilities(class_id, level)
+            assert isinstance(class_abilities, list)
+            assert all([isinstance(x, dict) for x in class_abilities])
+            assert all([x["level"] <= level for x in class_abilities])
+            assert all([isinstance(x["ability_title"], str) for x in class_abilities])
+            # Not populated yet
+            # assert all([isinstance(x["ability_desc"], str) for x in class_abilities])
+
+
 def test_get_class_id_map():
     class_id_map = get_class_id_map()
     assert class_id_map == VALID_CLASS_ID_MAP
@@ -166,6 +231,16 @@ def test_get_attr_mod():
     assert actual == expected
     with pytest.raises(ValueError):
         get_attr_mod(stat="FakeStat", score=10)
+
+
+def test_get_priest_abilities():
+    for deity_id in VALID_DEITY_IDS:
+        for level in [1, 9]:
+            priest_abilities = get_priest_abilities(deity_id, level)
+            if level >= 9:
+                assert len(priest_abilities) == 2
+            else:
+                assert len(priest_abilities) == 1
 
 
 @pytest.mark.repeat(1000)
@@ -867,6 +942,7 @@ def test_get_spells():
                 assert spells, f"{class_id=} {level=} {spells=}"
                 schools = list(spells.keys())
             else:
+                assert spells is None
                 schools = []
 
             if ca > 1 and class_id != 21:
