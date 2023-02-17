@@ -37,7 +37,7 @@ pip_install_dev: ## pip install in editable mode
 	python -m pip install -e . --force-reinstall
 
 test: ## Run pytest tests
-	python -m pytest --cov-report term-missing --cov=hyperbprea3 tests/
+	python -m pytest --cov-report term-missing tests/
 
 check: ## Run all linting/formatting checks
 	black . --check
