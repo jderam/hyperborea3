@@ -7,8 +7,14 @@ from typing import Any, Dict, List, Optional, Tuple
 from hyperborea3.db import execute_query_all, execute_query_one
 from hyperborea3.valid_data import (
     VALID_ABILITIES,
+    VALID_ABILITY_SCORES,
     VALID_ALIGMENTS_SHORT,
+    VALID_CLASS_IDS,
     VALID_GENDERS,
+    VALID_LEVELS,
+    # VALID_RACES_BY_ID,
+    VALID_SCHOOLS,
+    VALID_SPELL_LEVELS,
 )
 
 logger = logging.getLogger(__name__)
@@ -391,8 +397,6 @@ def get_race_id() -> int:
                 WHERE d12_roll = ?;
         """
         race_id = execute_query_one(sql_a, (d12_roll,))["race_id"]
-    if race_id not in range(1, 25):
-        raise ValueError(f"Unexpected race_id value: {race_id}. d100_roll={d100_roll}")
     return race_id
 
 
@@ -424,8 +428,6 @@ def get_age(race_id: int) -> int:
             age = 20 + roll_dice(1, 80)
         else:
             age = 20 + roll_dice(1, 24)
-    else:
-        ValueError(f"Result from d6 roll was outside the range 1-6: {grouping_roll}")
     return age
 
 
@@ -499,11 +501,6 @@ def get_height_and_weight(race_id: int, gender: str) -> Tuple[str, str]:
     elif weight_variability_roll in [8, 9, 10]:
         weight_multiplier = 1 + (roll_dice(1, 4) * 0.1)
         weight = round(base_weight * weight_multiplier)
-    else:
-        raise ValueError(
-            "weight_variability_roll out of expected range (1-10): "
-            f"{weight_variability_roll}"
-        )
     return height, f"{weight} lbs."
 
 
@@ -543,8 +540,6 @@ def get_eye_colour(race_id: int, gender: str) -> str:
             roll = roll_dice(1, 4)
         elif gender == "Male":
             return "Black"
-        else:
-            raise ValueError(f"Unrecognized value for gender: '{gender}'")
     # Kelt
     elif race_id == 7:
         roll = roll_dice(1, 30) + 58
@@ -630,8 +625,6 @@ def get_hair_colour(race_id: int, gender: str) -> str:
             roll = roll_dice(1, 12) + 120
         elif gender == "Male":
             roll = roll_dice(1, 10) + 122
-        else:
-            raise ValueError(f"Unrecognized value for gender: '{gender}'")
     # Ixian
     elif race_id == 6:
         return "Black"
@@ -750,8 +743,6 @@ def get_complexion(race_id: int, gender: str) -> str:
             roll = roll_dice(1, 12) + 88
         elif gender == "Male":
             roll = roll_dice(1, 12) + 80
-        else:
-            raise ValueError(f"Unrecognized value for gender: '{gender}'")
     # Pict (Half-Blood)
     elif race_id == 11:
         roll = roll_dice(1, 10) + 45
@@ -877,46 +868,37 @@ def get_starting_weapons_missile(class_id: int) -> List[Dict[str, Any]]:
 
 def get_unskilled_weapon_penalty(class_id: int) -> int:
     """Get penalty when using a weapon not in the favoured list."""
-    cur.execute(
-        """
+    sql = """
         SELECT attack_penalty
           FROM t134_unskilled_weapon_attack_penalty
          WHERE class_id = ?;
-        """,
-        (class_id,),
-    )
-    unskilled_penalty: int = cur.fetchone()["attack_penalty"]
+    """
+    unskilled_penalty: int = execute_query_one(sql, (class_id,))["attack_penalty"]
     return unskilled_penalty
 
 
 def get_favoured_weapons(class_id: int) -> Dict[str, Any]:
     """Get list of favoured weapons for a given class_id."""
     # get favoured melee weapons
-    cur.execute(
-        """
+    melee_sql = """
         SELECT tmw.*
           FROM class_favoured_weapons_melee cfwm
           JOIN t076_melee_weapons tmw
             ON cfwm.weapon_id = tmw.weapon_id
          WHERE cfwm.class_id = ?
         ORDER BY tmw.weapon_id;
-        """,
-        (class_id,),
-    )
-    fav_wpns_melee: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    """
+    fav_wpns_melee: List[Dict[str, Any]] = execute_query_all(melee_sql, (class_id,))
     # get favoured missile weapons
-    cur.execute(
-        """
+    missile_sql = """
         SELECT tmw.*
           FROM class_favoured_weapons_missile cfwm
           JOIN t077_missile_weapons tmw
             ON cfwm.weapon_id = tmw.weapon_id
          WHERE cfwm.class_id = ?
         ORDER BY tmw.weapon_id;
-        """,
-        (class_id,),
-    )
-    fav_wpns_missile: List[Dict[str, Any]] = [dict(x) for x in cur.fetchall()]
+    """
+    fav_wpns_missile: List[Dict[str, Any]] = execute_query_all(missile_sql, (class_id,))
     # get unskilled penalty
     unskilled_penalty = get_unskilled_weapon_penalty(class_id)
     # get "any" (set True for classes proficient in any/all weapons)
@@ -932,15 +914,12 @@ def get_favoured_weapons(class_id: int) -> Dict[str, Any]:
 
 def get_starting_gear(class_id: int) -> List[str]:
     """Get starting equipment items by class."""
-    cur.execute(
-        """
+    sql = """
         SELECT item
           FROM starting_gear
          WHERE class_id = ?;
-        """,
-        (class_id,),
-    )
-    equipment = [x["item"] for x in cur.fetchall()]
+    """
+    equipment = [x["item"] for x in execute_query_all(sql, (class_id,))]
     return equipment
 
 
@@ -974,6 +953,8 @@ def get_next_atk_rate(atk_rate: str) -> str:
     ]
     atk_prog_idx = atk_progression.index(atk_rate)
     atk_prog_idx += 1
+    if atk_prog_idx >= len(atk_progression):
+        raise ValueError(f"Cannot progress attack rate '{atk_rate}' any further.")
     return atk_progression[atk_prog_idx]
 
 
@@ -996,26 +977,24 @@ def get_thief_skills(
     stat        (str): The associated ability, which grats a +1 bonus for 16+
     """
     # input validation
-    if class_id not in range(1, 34):
+    if class_id not in VALID_CLASS_IDS:
         raise ValueError(f"Invalid class_id: {class_id}")
-    if level not in range(1, 13):
+    if level not in VALID_LEVELS:
         raise ValueError(f"Invalid value for level: {level}")
-    if dx_score not in range(1, 19):
+    if dx_score not in VALID_ABILITY_SCORES:
         raise ValueError(f"Invalid value for dx_score: {dx_score}")
-    if in_score not in range(1, 19):
+    if in_score not in VALID_ABILITY_SCORES:
         raise ValueError(f"Invalid value for in_score: {in_score}")
-    if ws_score not in range(1, 19):
+    if ws_score not in VALID_ABILITY_SCORES:
         raise ValueError(f"Invalid value for ws_score: {ws_score}")
 
     # get the skills for this class
-    cur.execute(
-        """SELECT thief_skill
-             FROM class_thief_abilities
-            WHERE class_id = ?;
-        """,
-        (class_id,),
-    )
-    skills_list = [dict(x) for x in cur.fetchall()]
+    class_thief_abilities_sql = """
+        SELECT thief_skill
+        FROM class_thief_abilities
+        WHERE class_id = ?;
+    """
+    skills_list = execute_query_all(class_thief_abilities_sql, (class_id,))
     if len(skills_list) == 0:
         return None
 
@@ -1030,16 +1009,25 @@ def get_thief_skills(
 
     # get thief skill scores
     for sk in skills_list:
-        sql = f"SELECT {sk['thief_skill']} FROM t016_thief_abilities WHERE level = ?;"
-        cur.execute(sql, (level,))
-        skill_roll = dict(cur.fetchone())[sk["thief_skill"]]
+        thief_abilities_sql = f"""
+            SELECT {sk['thief_skill']}
+            FROM t016_thief_abilities
+            WHERE level = ?;
+        """
+        skill_roll = execute_query_one(thief_abilities_sql, (level,))[sk["thief_skill"]]
         sk.update({"skill_roll": skill_roll})
 
     # apply bonuses (if any)
     for sk in skills_list:
-        sql = "SELECT stat FROM thief_ability_bonuses WHERE thief_skill = ?;"
-        cur.execute(sql, (sk["thief_skill"],))
-        stat = dict(cur.fetchone())["stat"]
+        thief_ability_bonuses_sql = """
+            SELECT stat
+            FROM thief_ability_bonuses
+            WHERE thief_skill = ?;
+        """
+        stat = execute_query_one(
+            thief_ability_bonuses_sql,
+            (sk["thief_skill"],),
+        )["stat"]
         sk.update({"stat": stat})
         if stat == "dx" and dx_score >= 16:
             sk["skill_roll"] += 1
@@ -1055,8 +1043,7 @@ def get_turn_undead_matrix(ta: int, turn_adj: int) -> Optional[Dict[str, str]]:
     """Get turn undead matrix. Apply CH turning adjustment if applicable."""
     if ta == 0:
         return None
-    cur.execute(
-        """
+    sql = """
         SELECT undead_type_00
              , undead_type_01
              , undead_type_02
@@ -1073,10 +1060,8 @@ def get_turn_undead_matrix(ta: int, turn_adj: int) -> Optional[Dict[str, str]]:
              , undead_type_13
           FROM t013_turn_undead
          WHERE ta = ?;
-        """,
-        (ta,),
-    )
-    turn_undead_matrix = dict(cur.fetchone())
+    """
+    turn_undead_matrix = execute_query_one(sql, (ta,))
     if turn_adj != 0:
         for k, v in turn_undead_matrix.items():
             if ":" in v:
@@ -1091,11 +1076,8 @@ def get_turn_undead_matrix(ta: int, turn_adj: int) -> Optional[Dict[str, str]]:
 
 def get_caster_schools(class_id: int) -> List[str]:
     """Get the school(s) the character will get their spells known from."""
-    cur.execute(
-        "SELECT school_code FROM classes WHERE class_id = ?;",
-        (class_id,),
-    )
-    school_code: Optional[str] = cur.fetchone()["school_code"]
+    sql = "SELECT school_code FROM classes WHERE class_id = ?;"
+    school_code: Optional[str] = execute_query_one(sql, (class_id,))["school_code"]
     if school_code is None:
         return []
     schools = [x.strip() for x in school_code.split(",")]
@@ -1116,9 +1098,10 @@ def get_random_spell(
     """Get a randomly rolled-for spell."""
     if d100_roll is None:
         d100_roll = roll_dice(1, 100)
+    assert school in VALID_SCHOOLS
+    assert spell_level in VALID_SPELL_LEVELS
     assert d100_roll in range(1, 101)
-    cur.execute(
-        """
+    sql = """
         SELECT school
              , spell_level
              , spell_id
@@ -1132,14 +1115,8 @@ def get_random_spell(
          WHERE school = ?
            AND spell_level = ?
            AND ? BETWEEN d100_min AND d100_max;
-        """,
-        (school, spell_level, d100_roll),
-    )
-    try:
-        result = dict(cur.fetchone())
-    except TypeError:
-        print(f"Got no result back. {school=} {spell_level=} {d100_roll=}")
-        raise
+    """
+    result = execute_query_one(sql, (school, spell_level, d100_roll))
     if result["reversible"] is not None:
         result["reversible"] = bool(result["reversible"])
     return result
