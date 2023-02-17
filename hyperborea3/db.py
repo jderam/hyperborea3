@@ -19,15 +19,28 @@ def dict_factory(cursor: sqlite3.Cursor, row: sqlite3.Row) -> Dict[str, Any]:
     return d
 
 
+with sqlite3.connect(
+    f"file:{DB_LOCATION}/hyperborea.sqlite3?mode=ro",
+    check_same_thread=False,
+    uri=True,
+) as conn:
+    conn.row_factory = dict_factory
+    CUR = conn.cursor()
+
+
 def get_cursor() -> sqlite3.Cursor:
-    with sqlite3.connect(
-        f"file:{DB_LOCATION}/hyperborea.sqlite3?mode=ro",
-        check_same_thread=False,
-        uri=True,
-    ) as conn:
-        conn.row_factory = dict_factory
-        cur = conn.cursor()
-        return cur
+    ## Currently runs very slowly during heavy load using the below code.
+    ## Just keeping an open cursor CUR with the above code block for now
+    ## until I can learn more about it.
+    # with sqlite3.connect(
+    #     f"file:{DB_LOCATION}/hyperborea.sqlite3?mode=ro",
+    #     check_same_thread=False,
+    #     uri=True,
+    # ) as conn:
+    #     conn.row_factory = dict_factory
+    #     cur = conn.cursor()
+    #     return cur
+    return CUR
 
 
 def execute_query_one(sql: str, params: Tuple[Any, ...] = ()) -> Dict[str, Any]:
