@@ -1,16 +1,26 @@
 # mypy: ignore-errors
 
+from contextlib import contextmanager
 import os
+import sqlite3
 import yaml
-from hyperborea3.db import get_cursor
 
 cwd = os.getcwd()
 assert cwd.split("/")[-1] == "class_abilities"
 
-yaml_files = os.listdir("yaml")
-# print(yaml_files)
 
-CUR = get_cursor()
+@contextmanager
+def db_cur():
+    URI = "../../hyperborea3/hyperborea.sqlite3"
+    con = sqlite3.connect(URI, check_same_thread=False)
+    con.row_factory = sqlite3.Row
+    cur = con.cursor()
+    yield cur
+    con.commit()
+    con.close()
+
+
+yaml_files = os.listdir("yaml")
 
 for yf in yaml_files:
     with open(f"yaml/{yf}", "r") as f:
@@ -19,5 +29,10 @@ for yf in yaml_files:
     desc = payload["desc"]
     print(f"{id = }")
     print(f"{desc = }")
-
-CUR.close()
+    with db_cur() as cur:
+        sql = """
+            UPDATE class_abilities
+            SET ability_desc = ?
+            WHERE class_ability_id = ?
+        """
+        cur.execute(sql, (desc, id))
