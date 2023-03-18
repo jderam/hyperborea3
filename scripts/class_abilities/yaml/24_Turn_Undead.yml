@@ -20,7 +20,7 @@ referee may ask the player to roll
 a d12 to determine the outcome, or
 the result may be fixed. The results
 are as follows:</p>
-<ul<li>d12 score equal to/less than the number indicated:
+<ul><li>d12 score equal to/less than the number indicated:
 <b>T (turned)</b></li>
 <li>d12 score greater than the number indicated:
 <b>NT (not turned)</b></li></ul>
@@ -43,20 +43,20 @@ used a number of times per day equal to the character’s
 TA; however, the cleric can make but one attempt
 per encounter unless a second wave of undead arrive.</p>
 <table><caption><b>Table 13: Turn Undead</b></caption>
-<th><td colspan=15>Undead Type (UT)</td></th>
-<th><td>TA</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></th>
-<tr><td>1</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>2</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>3</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>4</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>5</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>6</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>7</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>8</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td></tr>
-<tr><td>9</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td></tr>
-<tr><td>10</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td></tr>
-<tr><td>11</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td></tr>
-<tr><td>12</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td></tr></table>
+<tr style=text-align:center><th colspan=15>Undead Type (UT)</th></tr>
+<tr style=text-align:center><th>TA</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th></tr>
+<tr style=text-align:center><td>1</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>2</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>3</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>4</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>5</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>6</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>7</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>8</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>9</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>10</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td></tr>
+<tr style=text-align:center><td>11</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td></tr>
+<tr style=text-align:center><td>12</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td></tr></table>
 <p><b>How to Turn Multiple Undead Types:</b> If multiple
 kinds of undead are met in a single encounter, only one
 d12 roll is required. The same result is applied to each
