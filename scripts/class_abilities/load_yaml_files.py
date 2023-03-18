@@ -6,7 +6,9 @@ import sqlite3
 import yaml
 
 cwd = os.getcwd()
-assert cwd.split("/")[-1] == "class_abilities"
+assert (
+    cwd.split("/")[-1] == "class_abilities"
+), "you must run this script from inside scripts/class_abilities folder"
 
 
 @contextmanager
