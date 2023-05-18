@@ -1,0 +1,53 @@
+id: 11
+title: Familiar
+desc: "<p>To summon a small animal (bat, cat, owl,
+rat, raven, snake, etc.) of 1d3+1 hp to
+function as a <i>familiar</i> (singular creature
+with uncanny connexion to the sorcerer).</p>
+<p>Retaining a familiar provides
+the following benefits:</p>
+<ul><li>Within range 120 (feet
+indoors, yards outdoors),
+the magician can see
+and hear through the
+animal; sight is narrowly
+focused, sounds reverberate
+metallically.</li>
+<li>The hit point total of the
+familiar is added to the
+magician’s total.</li>
+<li>The magician can memorize
+one extra spell of
+each available spell level
+per day (e.g., a 5th-level
+magician gains bonus
+level 1, 2, and 3 spells).</li></ul>
+<p>These benefits are lost if the
+familiar is rendered dead,
+unconscious, or out of range.</p>
+<p>The familiar is an extraordinary example of the species,
+has a perfect <i>morale</i> score (ML 12), and always
+attends and abides the will of its master. To summon
+a familiar, the magician must perform a series of rites
+and rituals for 24 hours. To determine result, roll 2d8
+on <b>Table 10</b> below.</p>
+<p><table><caption><b>Table 10: Familiars</b></caption>
+<th><td>2d8 Result</td><td>Animal Summoned</td></th>
+<tr><td>2</td><td>Archæopteryx</td></tr>
+<tr><td>3</td><td>Ice Toad</td></tr>
+<tr><td>4</td><td>Falcon/Hawk</td></tr>
+<tr><td>5</td><td>Squirrel</td></tr>
+<tr><td>6</td><td>Hare</td></tr>
+<tr><td>7</td><td>Gull</td></tr>
+<tr><td>8</td><td>Owl</td></tr>
+<tr><td>9</td><td>Cat</td></tr>
+<tr><td>10</td><td>Rat</td></tr>
+<tr><td>11</td><td>Bat</td></tr>
+<tr><td>12</td><td>Raven</td></tr>
+<tr><td>13</td><td>Weasel</td></tr>
+<tr><td>14</td><td>Fox</td></tr>
+<tr><td>15</td><td>Viper</td></tr>
+<tr><td>16</td><td>Pegomastax</td></tr></table></p>
+<p>If the familiar dies, the magician also sustains 3d6 hp
+damage. The magician cannot summon another familiar
+for 1d4+2 months.</p>"

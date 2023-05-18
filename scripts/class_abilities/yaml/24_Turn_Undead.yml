@@ -1,0 +1,79 @@
+id: 24
+title: Turn Undead
+desc: "<p>All clerics can exert control over the
+undead and some dæmonic beings,
+causing them to flee and/or cower.
+Evil clerics can opt instead to compel
+the submission and service of
+these foul creatures. In either case,
+the cleric must do the following:</p>
+<ul><li>Stand before the undead
+(within 30 feet)</li>
+<li>Speak boldly a commandment
+whilst displaying a holy
+symbol</li></ul>
+<p>The referee must cross-reference
+the cleric’s <i>turning ability</i> (TA)
+with the <i>Undead Type</i> to determine
+the cleric’s chance of success. The
+referee may ask the player to roll
+a d12 to determine the outcome, or
+the result may be fixed. The results
+are as follows:</p>
+<ul><li>d12 score equal to/less than the number indicated:
+<b>T (turned)</b></li>
+<li>d12 score greater than the number indicated:
+<b>NT (not turned)</b></li></ul>
+<p><b>Undead Turning Definitions:</b></p>
+<p>The following definitions apply to <b>Table 13:</b></p>
+<ul><li><b>NT (not turned):</b> the undead are
+beyond the cleric’s power to affect.</li>
+<li><b>T (turned):</b> 2d6 undead are compelled to
+cower/flee for 1 turn unless attacked.</li>
+<li><b>D (destroyed):</b> 2d6 undead are
+exorcized/destroyed, crumbling to dust.</li>
+<li><b>UD (ultimate destruction):</b> 1d6+6 undead
+are exorcized/destroyed, crumbling to dust.</li></ul>
+<p><i>N.B.:</i> Clerics of above-average charisma (15+) are
+more commanding; hence, their chance-in-twelve of
+success is improved by one (+1); e.g., a 4-in-12 chance
+becomes 5-in-12 (see <b>Chapter 3: Statistics</b>, <i>charisma</i>).</p>
+<p><b>Frequency of Undead Turning:</b> This ability can be
+used a number of times per day equal to the character’s
+TA; however, the cleric can make but one attempt
+per encounter unless a second wave of undead arrive.</p>
+<table><caption><b>Table 13: Turn Undead</b></caption>
+<tr style=text-align:center><th colspan=15>Undead Type (UT)</th></tr>
+<tr style=text-align:center><th>TA</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th></tr>
+<tr style=text-align:center><td>1</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>2</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>3</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>4</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>5</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>6</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>7</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>8</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>9</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td><td>NT</td></tr>
+<tr style=text-align:center><td>10</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td><td>NT</td></tr>
+<tr style=text-align:center><td>11</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td><td>1:12</td></tr>
+<tr style=text-align:center><td>12</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>UD</td><td>D</td><td>D</td><td>D</td><td>T</td><td>T</td><td>10:12</td><td>7:12</td><td>4:12</td></tr></table>
+<p><b>How to Turn Multiple Undead Types:</b> If multiple
+kinds of undead are met in a single encounter, only one
+d12 roll is required. The same result is applied to each
+<i>Undead Type</i>. Those of the lowest <i>Undead Type</i> are
+affected first, unless the sorcerer specifically targets a
+single creature, in which case only that creature potentially
+is affected (e.g., if a <b>vampire</b> stands at the fore
+of a pack of <b>zombies</b>, the cleric might step forth, holy
+symbol raised, and speak a commandment of abolishment,
+pointing a holy symbol directly at the <b>vampire</b>).</p>
+<p><b>Evil Command of Undead:</b> A cleric of Evil alignment
+may opt to exercise control over the undead on a successful
+<i>turn undead</i> check. Such undead remain under
+the sorcerer’s sway unless <i>turned</i> or <i>commanded</i> by
+another sorcerer of equal or greater turning ability. Up
+to 2 HD of undead per TA level can be controlled. If a
+Neutral cleric attempts to <i>command undead</i>, then he
+or she will have turned to a darker path, submitting to
+Evil and no longer of Neutral alignment; consequences
+may ensue.</p>"

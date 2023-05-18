@@ -9,6 +9,7 @@ settings.json
 build/
 dist/
 local/
+.coverage
 .DS_Store
 .tox
 app.log

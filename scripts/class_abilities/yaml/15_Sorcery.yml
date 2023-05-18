@@ -1,0 +1,26 @@
+id: 15
+title: Sorcery
+desc: "<p>Magicians cast spells that they memorize from arcane
+tomes. The number and levels of spells cast per day
+are charted above (see <b>Table 9</b>), though magicians of
+high intelligence gain bonus spells cast per day (see
+<b>Chapter 3: Statistics</b>, <i>intelligence</i>); also, magicians
+who retain a <i>familiar</i> (see above) gain bonus spells
+cast per day. For example, a 4th-level magician with 13
+intelligence can cast four level 1 spells and two level
+2 spells per day. If the same magician also keeps a
+<i>familiar</i>, spells cast per day improve to five level 1
+spells and three level 2 spells.</p>
+<p>A magician begins with a spell book that contains
+three level 1 spells drawn from the <b>Magician
+Spell List</b> (see <b>Chapter 7: Sorcery</b>, <b>Table 93</b>).
+Through personal research, magicians develop
+one new spell at each level gain; this spell is
+learnt automatically, with no need of a qualification
+roll, but it must be of a castable level (see
+<b>Table 9</b> above).</p>
+<ul><li><b>Initial no. of spells known</b>: ×3</li>
+<li><b>No. of spells gained per level</b>: ×1</li></ul>
+<p>Additional spells may be learnt outside of level
+training, but the process is more arduous (see
+<b>Chapter 7: Sorcery</b>, <i>acquiring new spells</i>).</p>"
