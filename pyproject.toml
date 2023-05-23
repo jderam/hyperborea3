@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=65.4.1", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3.9,<4"]
+build-backend = "flit_core.buildapi"
 
 [project]
 name = "hyperborea3"
@@ -46,7 +46,7 @@ dev = [
     "ipython",
     "pip-tools",
     "pre-commit",
-    "twine",
+    "flit",
     "uvicorn",
 ]
 
