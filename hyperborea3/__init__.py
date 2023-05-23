@@ -1,7 +1,7 @@
 import logging
 import os
 
-__version__ = "0.6.1"
+__version__ = "0.6.4"
 
 
 def get_debug() -> bool:
