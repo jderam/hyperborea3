@@ -4,9 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.4] - 2023-05-22
+### Changed
+- Use flit as the tool for building and publishing
+
 ## [0.6.1] - 2023-02-18
 ### Added
-- Added class ability descriptions
+- Added class ability descriptions (only partially)
 
 ## [0.6.0] - 2023-02-08
 ### Changed
