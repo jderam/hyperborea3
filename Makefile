@@ -5,13 +5,13 @@ OS := $(shell uname)
 
 .PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check compile_req install create_venv rebuild_venv run_test_uvicorn
 
-PYENV_VERSION=3.11.2
+PYENV_VERSION=3.11.3
 VENV_NAME=hyperborea3-venv
 
 build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
 
 build_wheel: ## build the wheel for this package
-	python -m build
+	python -m flit build
 
 clean: ## clean out dist/ directory
 	rm -r dist/*
@@ -21,18 +21,14 @@ deploy_test: ## run all checks, build dist files, upload to test pypi
 	flake8
 	mypy hyperborea3 tests
 	rm -f dist/*
-	python -m build
-	twine check dist/*
-	twine upload --repository hyperborea3test dist/*
+	python -m flit publish --repository hyperborea3test
 
 deploy_prod: ## run all checks, build dist files, upload to prod pypi
 	black . --check
 	flake8
 	mypy hyperborea3 tests
 	rm -f dist/*
-	python -m build
-	twine check dist/*
-	twine upload --repository hyperborea3prod dist/*
+	python -m flit publish --repository hyperborea3prod
 
 pip_install: ## pip install this package
 	python -m pip install dist/hyperborea3-*-py3-none-any.whl --force-reinstall
