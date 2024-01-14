@@ -18,15 +18,11 @@ An app for creating randomly-generated characters for the [Hyperborea](https://w
   - [Future Development](#future-development)
   - [Contributions](#contributions)
 
-
-
 ## Installation
 
 ``` bash
 $ python -m pip install hyperborea3
 ```
-
-
 
 ## Usage
 
@@ -57,12 +53,9 @@ Parameter | Description
 `xp` | _int, default 0_<br>The number of experience points the character has. This will determine the character's level, which is capped at 12.<br>**Allowed Values**: Any positive integer<br>**Example**: `pc = PlayerCharacter(class_id=1, xp=4000)` to create a 3rd-level Fighter.
 `ac_type` | _str, default "descending"_<br>Choose whether to use ascending or descending AC system.<br>**Allowed Values**: `"descending"`, `"ascending"`<br>**Example**: `pc = PlayerCharacter(ac_type="ascending")`
 
-
 ## Sample Output
 
 Check out the [directory of sample characters](https://github.com/jderam/hyperborea3/tree/main/hyperborea3/sample_data/PlayerCharacter) to examine and explore the data structures.
-
-
 
 ## `class_id_map`
 Use this as a reference if you need to pass `class_id` to generate a character of a specific class.
@@ -106,17 +99,11 @@ Use this as a reference if you need to pass `class_id` to generate a character o
 # --------------> subclasses=2 will return a choice from above this line
 ```
 
-
-
 ## Use Cases
 
-I developed this package to generate characters for my personal gaming group. I use the package along with FastAPI and host the app on Heroku. I use it in conjunction with Google's app script (javascript) to get the character data from the Heroku endpoint, and populate it into a Google Sheets character sheet. It's a bit janky, but it gets the job done for us. I put a lot of work into implementing the rules to generate characters of any class and any level up to the game's maximum of level 12.
+I developed this package to generate characters for my personal gaming group. I use the package along with FastAPI and host the app on [render](https://render.com/). I use it in conjunction with Google's app script (javascript) to get the character data from the REST endpoint, and populate it into a Google Sheets character sheet. It's a bit janky, but it gets the job done for us. I put a lot of work into implementing the rules to generate characters of any class and any level up to the game's maximum of level 12.
 
-If someone out there were to use this and create a proper front-end website for it, that would bring me much joy. If you use this, please share what you've built with it!
-
-That being said, I also plan to hone my own web skills and try to build a web-based front end for it, but that will take time.
-
-
+I've also created a print-and-play web-based generator, which can be viewed at https://kilroy86.neocities.org/hyperborea3/hyperborea3-chargen
 
 ## Links
 
@@ -124,26 +111,7 @@ That being said, I also plan to hone my own web skills and try to build a web-ba
 
 [**Google Sheet**](https://docs.google.com/spreadsheets/d/1Ll5aQwxn-bHl_GIYN9iQWbO3TitqnWJLHMm6BHP3EoM/edit?usp=sharing): with character generator integrated via Google's _Apps Script_. If you are intersted in simply making a copy of the Google Sheet character generator for your gaming group to use, see [this blog post](https://peoplethemwithmonsters.blogspot.com/2022/02/google-sheets-character-generator-for.html) for instructions on how to do that.
 
-
-
-## Future Development
-
-I plan to implement the following features into this package, as time and motivation allows:
-
-* Additional character data:
-  * Secondary Skills
-  * Random name generation based on the tables in the rulebook
-  * Height and Weight based on the tables in the rulebook
-
-* Add detailed html-formatted spell descriptions to the spells database table in order to enable spell lookups and possibly some sort of tool to create character spellbook documents. Detailed spell information could be added to the character output as well.
-
-* A fully-detailed monster database table that would enable the lookup of full monster stat blocks.
-
-* A random treasure generator tool. Pass the treasure type and get a randomly generated result with monetary treasure and/or magic items.
-
-* Given completed spells, monsters, and treasure data, I'd like to create compendiums for use with [Foundry VTT](https://foundryvtt.com/).
-
-
+[**Web-based Print-and-Play Character Generator**](https://kilroy86.neocities.org/hyperborea3/hyperborea3-chargen)
 
 ## Contributions
 
