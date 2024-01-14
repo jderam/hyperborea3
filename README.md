@@ -103,15 +103,13 @@ Use this as a reference if you need to pass `class_id` to generate a character o
 
 I developed this package to generate characters for my personal gaming group. I use the package along with FastAPI and host the app on [render](https://render.com/). I use it in conjunction with Google's app script (javascript) to get the character data from the REST endpoint, and populate it into a Google Sheets character sheet. It's a bit janky, but it gets the job done for us. I put a lot of work into implementing the rules to generate characters of any class and any level up to the game's maximum of level 12.
 
-I've also created a print-and-play web-based generator, which can be viewed at https://kilroy86.neocities.org/hyperborea3/hyperborea3-chargen
-
 ## Links
 
 [**App on render**](https://rpg-tools.onrender.com/docs):  All the endpoints prefixed with `/hyperborea3/` use this package. If you are curious about the container that gets deployed, see [this repo](https://github.com/jderam/rpg-tools-containers).
 
 [**Google Sheet**](https://docs.google.com/spreadsheets/d/1Ll5aQwxn-bHl_GIYN9iQWbO3TitqnWJLHMm6BHP3EoM/edit?usp=sharing): with character generator integrated via Google's _Apps Script_. If you are intersted in simply making a copy of the Google Sheet character generator for your gaming group to use, see [this blog post](https://peoplethemwithmonsters.blogspot.com/2022/02/google-sheets-character-generator-for.html) for instructions on how to do that.
 
-[**Web-based Print-and-Play Character Generator**](https://kilroy86.neocities.org/hyperborea3/hyperborea3-chargen)
+[**Web-based Print-and-Play Character Generator**](https://kilroy86.neocities.org/hyperborea3/hyperborea3-chargen): Generate a character using the dropdowns to set options. Note that if you generate a specific class, the dice method automatically changes to `VI`. You should be able to fit the resulting character sheet on a single printed page. In my own experimentation, I've needed to set the scale to 70% to get everything to fit. Enjoy!
 
 ## Contributions
 
