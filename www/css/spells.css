@@ -1,0 +1,41 @@
+table {
+    caption-side: top;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #999;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+h1 {
+    font-family: 'Suez One', 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: normal;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+.spell-head {
+    font-family: 'Suez One', 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+}
+.spell-attr {
+    font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: left;
+}
+.spell-desc {
+    font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: justify;
+}
+.spell-page {
+    font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: left;
+    font-style: italic;
+}

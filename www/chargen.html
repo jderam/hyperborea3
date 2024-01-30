@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPERBOREA CHARACTER GENERATOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/chargen.css">
+</head>
+<body>
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3.4.15/dist/vue.global.prod.js"></script>
+    <!-- <template> -->
+    <div id="app" class="container">
+        <div class="left-col"></div>
+        <div class="center-col">
+            <div class="item banner">HYPERBOREA</div>
+            <div class="item buttons">
+                <!-- class (default to random) -->
+                <label for="selected_class">Class</label>
+                <select v-model="selectedClass" id="selected_class" @change="updateDiceMethod()">
+                    <option value="Random" selected>Random</option>
+                    <option v-for="c in Object.keys(classId)" :value="c">{{ c }}</option>
+                </select>
+                <!-- xp (box entry) -->
+                <label for="selected_xp">XP</label>
+                <input type="text" inputmode="numeric" v-model="selectedXP" id="selected_xp" />
+                <!-- ac type (default to descending) -->
+                <label for="selected_ac">AC Style</label>
+                <select v-model="selectedAC" id="selected_ac">
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+                <br>
+                <!-- dice method (default to III) -->
+                <label for="selected_dice_method">Dice Method</label>
+                <select v-model="selectedDiceMethod" id="selected_dice_method" @change="updateDiceMethod()">
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="3" selected>III</option>
+                    <option value="4">IV</option>
+                    <option value="5">V</option>
+                    <option value="6">VI</option>
+                </select>
+                <!-- <br> -->
+                <!-- if a class is selected, dice_method changes to VI -->
+                <button type="button" @click="getPlayerCharacter()">Generate</button>
+                <button type="button" @click="reset()">Reset</button>
+            </div> <!-- buttons -->
+            <div class="item banner banner-sub">
+                Random Character Generator for the <a href="https://www.hyperborea.tv" target="_blank" rel="noopener noreferrer">HYPERBOREA RPG</a><br>
+                A fan-made tool by <span v-if="spellLinkEnabled"><a href="https://github.com/jderam" target="_blank" rel="noopener noreferrer">Jeremy Deram</a></span>
+                <span v-else>Jeremy Deram</span>
+                <!-- ID</b>: <span v-if="Object.keys(pc).length > 0">{{ pc.character_id }}</span> -->
+            </div>
+                <div class="item name"><b>Name</b>: {{ pc.name }}</div>
+                <div class="item race"><b>Race</b>: {{ pc.race }}</div>
+                <div class="item class"><b>Class</b>: {{ pc.class_name }}</div>
+                <div class="item level"><b>Level</b>: {{ pc.level }}</div>
+                <div class="item xp"><b>XP</b>: {{ to_locale(pc.xp) }}</div>
+                <div class="item alignment"><b>Alignment</b>: {{ pc.alignment.long_name }}</div>
+                <div class="item deity"><b>Deity</b>: {{ pc.deity.deity_name }}</div>
+                <div class="item xp-bonus"><b>+10% XP Bonus</b>: {{ pc.xp_bonus ? "☑" : "☐" }}</div>
+                <div class="item xp-to-next"><b>XP to Next</b>: {{ (to_locale(pc.xp_to_next)) ? to_locale(pc.xp_to_next) : 'N/A'}}</div>
+                <div class="item physique">
+                    <table>
+                        <tr>
+                            <td><b>Gender:</b> {{ pc.gender }}</td>
+                            <td><b>Eye Colour:</b> {{ pc.eye_colour }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Age:</b> {{ pc.age }}</td>
+                            <td><b>Hair Colour:</b> {{ pc.hair_colour }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Height:</b> {{ pc.height }}</td>
+                            <td><b>Complexion:</b> {{ pc.complexion }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Weight:</b> {{ pc.weight }}</td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="item languages">
+                    <b><u>Languages</u></b><br>
+                    <div v-for="language in pc.languages">{{ language }}</div>
+                </div>
+                <div class="item secondary-skills">
+                    <b><u>Secondary Skill</u></b><br>
+                    {{ pc.secondary_skill }}
+                </div>
+                <div class="item ability-score">
+                    <table>
+                        <tr>
+                            <td><div class="ability-score-label">ST</div></td>
+                            <td><div class="ability-score-score">{{ pc.attr.st.score }}</div></td>
+                            <td><div class="ability-score-sub">
+                                <b>Melee Atk</b>: {{ mod_str(pc.attr.st.atk_mod) }}&nbsp;&nbsp;
+                                <b>Melee Dmg</b>: {{ mod_str(pc.attr.st.dmg_adj) }}<br>
+                                <b>Test</b>: {{ d6_test(pc.attr.st.test) }}&nbsp;&nbsp;
+                                <b>Feat</b>: {{ percentile(pc.attr.st.feat) }}
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="ability-score-label">DX</div></td>
+                            <td><div class="ability-score-score">{{ pc.attr.dx.score }}</div></td>
+                            <td><div class="ability-score-sub">
+                                <b>Missile Atk</b>: {{ mod_str(pc.attr.dx.atk_mod) }}&nbsp;&nbsp;
+                                <b>Def Adj</b>: {{ mod_str(pc.attr.dx.def_adj) }}<br>
+                                <b>Test</b>: {{ d6_test(pc.attr.dx.test) }}&nbsp;&nbsp;
+                                <b>Feat</b>: {{ percentile(pc.attr.dx.feat) }}
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="ability-score-label">CN</div></td>
+                            <td><div class="ability-score-score">{{ pc.attr.cn.score }}</div></td>
+                            <td><div class="ability-score-sub">
+                                <b>HP Adj</b>: {{ mod_str(pc.attr.cn.hp_adj) }}&nbsp;&nbsp;
+                                <b>Poison Adj</b>: {{ mod_str(pc.attr.cn.poison_adj) }}&nbsp;&nbsp;
+                                <b>Trauma Surv</b>: {{ percentile(pc.attr.cn.trauma_surv) }}<br>
+                                <b>Test</b>: {{ d6_test(pc.attr.cn.test) }}&nbsp;
+                                <b>Feat</b>: {{ percentile(pc.attr.cn.feat) }}
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="ability-score-label">IN</div></td>
+                            <td><div class="ability-score-score">{{ pc.attr.in.score }}</div></td>
+                            <td><div class="ability-score-sub">
+                                <b>Bonus Lang</b>: {{ pc.attr.in.lang }}&nbsp;&nbsp;
+                                <b>Learn Spell</b>: {{ percentile(pc.attr.in.learn_spell) }}<br>
+                                <b>Bonus Spells</b>: {{ bonus_spells(pc.attr.in.bonus_spells) }}
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="ability-score-label">WS</div></td>
+                            <td><div class="ability-score-score">{{ pc.attr.ws.score }}</div></td>
+                            <td><div class="ability-score-sub">
+                                <b>Willpower Adj</b>: {{ mod_str(pc.attr.ws.will_adj) }}&nbsp;&nbsp;
+                                <b>Learn Spell</b>: {{ percentile(pc.attr.ws.learn_spell) }}<br>
+                                <b>Bonus Spells</b>: {{ bonus_spells(pc.attr.ws.bonus_spells) }}
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="ability-score-label">CH</div></td>
+                            <td><div class="ability-score-score">{{ pc.attr.ch.score }}</div></td>
+                            <td><div class="ability-score-sub">
+                                <b>Reaction Adj</b>: {{ mod_str(pc.attr.ch.react_adj) }}&nbsp;&nbsp;
+                                <b>Max Henchmen</b>: {{ pc.attr.ch.max_henchmen }}<br>
+                                <b>Turn Adj</b>: {{ mod_str(pc.attr.ch.turn_adj) }}
+                            </div></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item saving-throws">
+                    <table>
+
+                        <tr>
+                            <td><div class="saving-throws-header">SAVING THROW</div></td>
+                            <td><div class="saving-throws-st">{{ pc.sv }}</div></td>
+                        </tr>
+                        <tr>
+                            <td><b>Death</b></td>
+                            <td style="text-align: center;">{{ mod_str(pc.sv_bonus.death) }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Transformation</b></td>
+                            <td style="text-align: center;">{{ mod_str(pc.sv_bonus.transformation) }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Device</b></td>
+                            <td style="text-align: center;">{{ mod_str(pc.sv_bonus.device) }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Avoidance</b></td>
+                            <td style="text-align: center;">{{ mod_str(pc.sv_bonus.avoidance) }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Sorcery</b></td>
+                            <td style="text-align: center;">{{ mod_str(pc.sv_bonus.sorcery) }}</td>
+                        </tr>
+                        <tr>
+                            <td><div class="saving-throws-sub">Defence Adjustment</div></td>
+                            <td><div class="saving-throws-sub" style="text-align: center;">{{ mod_str(this.pc.attr.dx.def_adj) }}</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="saving-throws-sub">Poison Adjustment</div></td>
+                            <td><div class="saving-throws-sub" style="text-align: center;">{{ mod_str(this.pc.attr.cn.poison_adj) }}</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="saving-throws-sub">Willpower Adjustment</div></td>
+                            <td><div class="saving-throws-sub" style="text-align: center;">{{ mod_str(this.pc.attr.ws.will_adj) }}</div></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item thief-skills" v-if="(computedThiefSkills.length > 0)">
+                    <table>
+                        <caption style="text-align: left;"><b>THIEF SKILLS</b></caption>
+                        <tr v-for="ts in computedThiefSkills">
+                            <td>{{ ts[0] }}</td>
+                            <td style="text-align: right;">{{ ts[1] }}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item thief-skills" v-else>
+                    <!-- 196 x 220 -->
+                    <table></table>
+                </div>
+                <div class="item ac single-stat">
+                    <div class="single-stat-label">AC</div>
+                    {{ pc.ac }}
+                </div>
+                <div class="item ac-items">
+                    <b>AC ITEMS</b><br>
+                    {{ pc.armour.armour_type }} [{{ pc.armour.ac }}]<br>
+                    <span v-if="pc.shield"><td>{{ pc.shield.shield_type }} [+{{ pc.shield.def_mod }}]</span>
+                </div>
+                <div class="item dr single-stat">
+                    <div class="single-stat-label">DR</div>
+                    {{ pc.armour.dr }}
+                </div>
+                <div class="item mv single-stat">
+                    <div class="single-stat-label">MV</div>
+                    {{ pc.armour.mv }}
+                </div>
+                <div class="item fa single-stat">
+                    <div class="single-stat-label">FA</div>
+                    {{ pc.fa }}
+                </div>
+                <!-- CA -->
+                <div class="item ca single-stat" v-if="pc.ca > 0">
+                    <div class="single-stat-label">CA</div>
+                    {{ pc.ca }}
+                </div>
+                <!-- TA -->
+                <div class="item ta single-stat" v-if="pc.ta > 0">
+                    <div class="single-stat-label">TA</div>
+                    {{ pc.ta }}
+                </div>
+                <div class="item hd single-stat">
+                    <div class="single-stat-label">Hit Dice</div>
+                    {{ pc.hd }}
+                </div>
+                <div class="item hp single-stat">
+                    <div class="single-stat-label">Max HP</div>
+                    {{ pc.hp }}
+                </div>
+                <div class="item chp single-stat">
+                    <div class="single-stat-label">HP</div>
+                </div>
+                <div class="item weapons">
+                    <table>
+                        <caption style="text-align: left;"><b>MELEE WEAPONS</b></caption>
+                        <thead>
+                            <td style="text-align: left;">Weapon</td>
+                            <td>Qty</td>
+                            <td>WC</td>
+                            <td>Atk Rate</td>
+                            <td>Atk Mod</td>
+                            <td>Dmg</td>
+                            <td>Dmg Adj</td>
+                            <td>Mastery</td>
+                            <td>Hurlable</td>
+                            <td>Hurled Atk Mod</td>
+                            <td>ROF</td>
+                            <td>Range</td>
+                        </thead>
+                        <tr v-for="wpn in pc.weapons_melee">
+                            <td style="text-align: left;">{{ wpn.weapon_type }}</td>
+                            <td>{{ wpn.qty }}</td>
+                            <td>{{ wpn.wc }}</td>
+                            <td>{{ wpn.atk_rate }}</td>
+                            <td>{{ mod_str(wpn.melee_atk) }}</td>
+                            <td>{{ wpn.damage }}<span v-if="wpn.damage_2h"> ({{ wpn.damage_2h }})</span></td>
+                            <td>{{ mod_str(wpn.dmg_adj) }}</td>
+                            <td>{{ wpn.mastery ? "☑" : "☐" }}</td>
+                            <td>{{ wpn.hurlable ? "☑" : "☐" }}</td>
+                            <td>{{ mod_str(wpn.hurled_atk) }}</td>
+                            <td>{{ wpn.hurled_rof }}</td>
+                            <td>{{ wpn.range_sml }}</td>
+                        </tr>
+                        <tr v-for="index in emptyMelee"></tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>☐</td>
+                            <td>☐</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div> <!-- melee weapons -->
+                <div class="item weapons">
+                    <table>
+                        <caption style="text-align: left;"><b>MISSILE WEAPONS</b></caption>
+                        <thead>
+                            <td style="text-align: left;">Weapon</td>
+                            <td>Qty</td>
+                            <td>ROF</td>
+                            <td>Atk Mod</td>
+                            <td>Dmg</td>
+                            <td>Dmg Adj</td>
+                            <td>Range</td>
+                            <td>Mastery</td>
+                            <td>Type</td>
+                            <td>Ammunition</td>
+                        </thead>
+                        <tr v-for="wpn in pc.weapons_missile">
+                            <td style="text-align: left;">{{ wpn.weapon_type }}</td>
+                            <td>{{ wpn.qty }}</td>
+                            <td>{{ wpn.rof }}</td>
+                            <td>{{ mod_str(wpn.missile_atk) }}</td>
+                            <td>{{ wpn.damage }}</td>
+                            <td>{{ mod_str(wpn.dmg_adj) }}</td>
+                            <td>{{ wpn.range_sml }}</td>
+                            <td>{{ wpn.mastery ? "☑" : "☐" }}</td>
+                            <td>{{ missile_type(wpn) }}</td>
+                            <td>{{ wpn.ammunition }}</td>
+                        </tr>
+                        <tr v-for="index in emptyMissile"></tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>☐</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div> <!-- missile weapons -->
+                <div class="item class-abilities-spells-turning">
+
+                    <!-- class abilities -->
+                    <div class="item class-abilities">
+                        <table>
+                            <caption style="text-align: left;"><b>CLASS ABILITIES</b></caption>
+                            <thead style="font-weight: bold;">
+                                <td style="text-align: center;">Level</td>
+                                <td>Ability</td>
+                                <td>Description</td>
+                            </thead>
+                            <tr v-for="ability in pc.class_abilities">
+                                <td style="text-align: center;">{{ ability.level }}</td>
+                                <td>{{ ability.ability_title }}</td>
+                                <td>{{ ability.brief_desc }}</td>
+                            </tr>
+                        </table>
+                    </div> <!-- class abilities -->
+
+                    <!-- spells -->
+                    <div class="item spells-lvl-1">
+                        <div v-if="getSpellsByLevel(1)">
+                            <span v-for="school in Object.keys(getSpellsByLevel(1))">
+                                <b><u>Level 1 {{ schoolLookup[school] }} Spells ({{ pc.spells[school].spells_per_day.lvl1 }}/day)</u></b>
+                                <ul>
+                                    <li v-for="spell in getSpellsByLevel(1)[school]">
+                                        <span v-html="spellLink(spell)"></span> (p.{{ spell.pp }})
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div> <!-- spells-lvl-1 -->
+                    <div class="item spells-lvl-2">
+                        <div v-if="getSpellsByLevel(2)">
+                            <span v-for="school in Object.keys(getSpellsByLevel(2))">
+                                <b><u>Level 2 {{ schoolLookup[school] }} Spells ({{ pc.spells[school].spells_per_day.lvl2 }}/day)</u></b>
+                                <ul>
+                                    <li v-for="spell in getSpellsByLevel(2)[school]">
+                                        <span v-html="spellLink(spell)"></span> (p.{{ spell.pp }})
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div> <!-- spells-lvl-2 -->
+                    <div class="item spells-lvl-3">
+                        <div v-if="getSpellsByLevel(3)">
+                            <span v-for="school in Object.keys(getSpellsByLevel(3))">
+                                <b><u>Level 3 {{ schoolLookup[school] }} Spells ({{ pc.spells[school].spells_per_day.lvl3 }}/day)</u></b>
+                                <ul>
+                                    <li v-for="spell in getSpellsByLevel(3)[school]">
+                                        <span v-html="spellLink(spell)"></span> (p.{{ spell.pp }})
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div> <!-- spells-lvl-3 -->
+
+                    <div class="item spells-lvl-4">
+                        <div v-if="getSpellsByLevel(4)">
+                            <span v-for="school in Object.keys(getSpellsByLevel(4))">
+                                <b><u>Level 4 {{ schoolLookup[school] }} Spells ({{ pc.spells[school].spells_per_day.lvl4 }}/day)</u></b>
+                                <ul>
+                                    <li v-for="spell in getSpellsByLevel(4)[school]">
+                                        <span v-html="spellLink(spell)"></span> (p.{{ spell.pp }})
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div> <!-- spells-lvl-4 -->
+                    <div class="item spells-lvl-5">
+                        <div v-if="getSpellsByLevel(5)">
+                            <span v-for="school in Object.keys(getSpellsByLevel(5))">
+                                <b><u>Level 5 {{ schoolLookup[school] }} Spells ({{ pc.spells[school].spells_per_day.lvl5 }}/day)</u></b>
+                                <ul>
+                                    <li v-for="spell in getSpellsByLevel(5)[school]">
+                                        <span v-html="spellLink(spell)"></span> (p.{{ spell.pp }})
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div> <!-- spells-lvl-5 -->
+                    <div class="item spells-lvl-6">
+                        <div v-if="getSpellsByLevel(6)">
+                            <span v-for="school in Object.keys(getSpellsByLevel(6))">
+                                <b><u>Level 6 {{ schoolLookup[school] }} Spells ({{ pc.spells[school].spells_per_day.lvl6 }}/day)</u></b>
+                                <ul>
+                                    <li v-for="spell in getSpellsByLevel(6)[school]">
+                                        <span v-html="spellLink(spell)"></span> (p.{{ spell.pp }})
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div> <!-- spells-lvl-6 -->
+
+                    <!-- Turning -->
+                    <div class="item turning-matrix" v-if="pc.turn_undead_matrix">
+                        <table>
+                            <caption style="text-align: left;"><b>TURN UNDEAD</b></caption>
+                            <thead style="font-weight: bold">
+                                <td>0</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </thead>
+                            <tr>
+                                <td>{{ pc.turn_undead_matrix.undead_type_00 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_01 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_02 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_03 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_04 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_05 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_06 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_07 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_08 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_09 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_10 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_11 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_12 }}</td>
+                                <td>{{ pc.turn_undead_matrix.undead_type_13 }}</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- equipment -->
+                <div class="item equipment">
+                    <table>
+                        <caption style="text-align: left;"><b>MONEY</b></caption>
+                        <tr style="font-weight: bold;">
+                            <td style="text-align: center;">pp</td>
+                            <td style="text-align: center;">gp</td>
+                            <td style="text-align: center;">ep</td>
+                            <td style="text-align: center;">sp</td>
+                            <td style="text-align: center;">cp</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">{{ (pc.money.pp > 0) ? pc.money.pp : "" }}</td>
+                            <td style="text-align: center;">{{ (pc.money.gp > 0) ? pc.money.gp : "" }}</td>
+                            <td style="text-align: center;">{{ (pc.money.ep > 0) ? pc.money.ep : "" }}</td>
+                            <td style="text-align: center;">{{ (pc.money.sp > 0) ? pc.money.sp : "" }}</td>
+                            <td style="text-align: center;">{{ (pc.money.cp > 0) ? pc.money.cp : "" }}</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption style="text-align: left;"><b>EQUIPMENT</b></caption>
+                        <tr v-for="item in pc.equipment">
+                            <td>{{ item }}</td>
+                        </tr>
+                    </table>
+                </div> <!-- equipment -->
+
+        </div> <!-- center-col -->
+        <div class="right-col"></div>
+    </div>
+    <!-- </template> -->
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    pc: {},
+                    classId: {
+                        "Fighter": 1,
+                        "Magician": 2,
+                        "Cleric": 3,
+                        "Thief": 4,
+                        "Barbarian": 5,
+                        "Berserker": 6,
+                        "Cataphract": 7,
+                        "Huntsman": 8,
+                        "Paladin": 9,
+                        "Ranger": 10,
+                        "Warlock": 11,
+                        "Cryomancer": 12,
+                        "Illusionist": 13,
+                        "Necromancer": 14,
+                        "Pyromancer": 15,
+                        "Witch": 16,
+                        "Druid": 17,
+                        "Monk": 18,
+                        "Priest": 19,
+                        "Runegraver": 20,
+                        "Shaman": 21,
+                        "Assassin": 22,
+                        "Bard": 23,
+                        "Legerdemainist": 24,
+                        "Purloiner": 25,
+                        "Scout": 26,
+                        "Fell Paladin": 27,
+                        "Ice Lord": 28,
+                        "Fire Lord": 29,
+                        "Death Soldier": 30,
+                        "Mountebank": 31,
+                        "Fire Thief": 32,
+                        "Ice Thief": 33
+                    },
+                    schoolLookup: {
+                        "clr": "Cleric",
+                        "cry": "Cryomancer",
+                        "drd": "Druid",
+                        "ill": "Illusionist",
+                        "mag": "Magician",
+                        "nec": "Necromancer",
+                        "pyr": "Pyromancer",
+                        "wch": "Witch"
+                    },
+                    selectedXP: 0,
+                    selectedAC: "descending",
+                    selectedClass: "Random",
+                    selectedDiceMethod: 3,
+                    test_style: "die", // "die" or "number"
+                    spellLinkEnabled: true
+                }
+            },
+            computed: {
+                computedThiefSkills() {
+                    console.log(this.pc)
+                    if (Object.keys(this.pc).length === 0) {
+                        return [];
+                    }
+                    let thiefSkills = [];
+                    if (this.pc.thief_skills !== null) {
+                        thiefSkills = this.pc.thief_skills.map((element) => [
+                            element.skill_name.concat(
+                                " [",
+                                element.stat.toUpperCase(),
+                                "]"
+                            ),
+                            this.x_in_y(element.skill_roll, 12)
+                        ]);
+                    }
+                    let dsd = this.pc.class_abilities.filter(
+                        function (element) {
+                            return element.ability_title === 'Detect Secret Doors';
+                        }
+                    ).map((element) => [
+                        element.ability_title,
+                        element.brief_desc.split(' ')[0]
+                    ]);
+                    console.log(`dsd: ${dsd}`)
+                    return thiefSkills.concat(dsd);
+                },
+                selectedClassId() {
+                    return this.classId[this.selectedClass];
+                },
+                baseUrl() {
+                    if (this.selectedClass === "Random") {
+                        return `https://rpg-tools.onrender.com/hyperborea3/random`;
+                    } else {
+                        return `https://rpg-tools.onrender.com/hyperborea3/class_id/${this.selectedClassId}`;
+                    }
+                },
+                queryParams() {
+                    let query_params = [
+                        `ac_type=${this.selectedAC}`,
+                        `xp=${this.selectedXP}`
+                    ]
+                    if (this.selectedClass === "Random") {
+                        query_params.push(`method=${this.selectedDiceMethod}`);
+                    }
+                    return query_params.join('&');
+                },
+                url() {
+                    return `${this.baseUrl}?${this.queryParams}`;
+                },
+                emptyMelee() {
+                    return Array(4 - this.pc.weapons_melee.length);
+                },
+                emptyMissile() {
+                    return Array(4 - this.pc.weapons_missile.length);
+                }
+            },
+            methods: {
+                async getPlayerCharacter() {
+                    console.log(`url: ${this.url}`);
+                    let response = await fetch(this.url);
+                    if (response.ok) {
+                        let pc = await response.json();
+                        this.pc = pc;
+                        console.log(`pc: ${JSON.stringify(this.pc)}`);
+                    } else {
+                        alert("HTTP-Error: " + response.status);
+                    }
+                },
+                updateDiceMethod() {
+                    if (this.selectedClass !== "Random") {
+                        console.log(`If a specific class is selected, the dice method is set to VI`);
+                        this.selectedDiceMethod = 6;
+                    }
+                },
+                reset() {
+                    // this.pc = {};
+                    this.selectedXP = 0;
+                    this.selectedAC = "descending";
+                    this.selectedClass = "Random";
+                    this.selectedDiceMethod = 3;
+                },
+                x_in_y(x, y) {
+                    if (x === undefined || x === null || y === undefined || y === null) {
+                        return "--";
+                    }
+                    return x.toString() + ":" + y.toString();
+                },
+                d6(n) {
+                    let d6roll = "";
+                    switch(n) {
+                        case 1:
+                            d6roll = "⚀";
+                            break;
+                        case 2:
+                            d6roll = "⚁";
+                            break;
+                        case 3:
+                            d6roll = "⚂";
+                            break;
+                        case 4:
+                            d6roll = "⚃";
+                            break;
+                        case 5:
+                            d6roll = "⚄";
+                            break;
+                        case 6:
+                            d6roll = "⚅";
+                    }
+                    return d6roll;
+                },
+                d6_test(n) {
+                    if (this.test_style === "die") {
+                        return this.d6(n);
+                    } else {
+                        return this.x_in_y(n, 6);
+                    }
+                },
+                percentile(n) {
+                    return n.toString() + "%";
+                },
+                mod_str(n) {
+                    if (n === undefined || n === null) {
+                        return "";
+                    }
+                    let nStr;
+                    if (n >= 0) {
+                        nStr = "+" + n.toString();
+                    } else {
+                        nStr = n.toString();
+                    }
+                    return nStr;
+                },
+                bonus_spells(n) {
+                    let bonusString;
+                    if (n === 1) {
+                        bonusString = "1st";
+                    } else if (n === 2) {
+                        bonusString = "1st, 2nd";
+                    } else if (n === 3) {
+                        bonusString = "1st, 2nd, 3rd";
+                    } else if (n === 4) {
+                        bonusString = "1st, 2nd, 3rd, 4th";
+                    } else {
+                        bonusString = "--";
+                    }
+                    return bonusString;
+                },
+                to_locale(number) {
+                    let formatted;
+                    if (number !== undefined && number !== null) {
+                        formatted = number.toLocaleString('en-US');
+                    } else {
+                        formatted = null;
+                    }
+                    return formatted;
+                },
+                missile_type(missile_item) {
+                    if (missile_item.hurled) {
+                        return "Hurled";
+                    } else if (missile_item.launched) {
+                        return "Launched";
+                    } else {
+                        return "";
+                    }
+                },
+                getSpellsByLevel(level) {
+                    let schools;
+                    if (this.pc.spells !== null) {
+                        schools = Object.keys(this.pc.spells);
+                    } else {
+                        return null;
+                    }
+                    let school;
+                    let spells = {};
+                    let spell;
+                    let school_spells;
+                    for (let i = 0; i < schools.length; i++) {
+                        school = schools[i];
+                        spells[school] = [];
+                        school_spells = this.pc.spells[school].spells_known;
+                        for (let j = 0; j < school_spells.length; j++) {
+                            spell = school_spells[j];
+                            if (spell.spell_level === level) {
+                                spells[school].push(spell);
+                            }
+                        }
+                        if (spells[school].length === 0) {
+                            delete spells[school];
+                        }
+                    }
+                    console.log(`spells: ${JSON.stringify(spells)}`);
+                    return spells;
+                },
+                spellLink(spell) {
+                    if (this.spellLinkEnabled) {
+                        let url =`https://jderam.github.io/hyperborea3/www/single-spell.html?spell_id=${spell.spell_id}`;
+                        let link = `<a href="${url}" target="_blank" rel="noopener noreferrer">${spell.spell_name}</a>`;
+                        return link;
+                    } else {
+                        return spell.spell_name;
+                    }
+                }
+            },
+            created() {
+                console.log('created');
+                this.getPlayerCharacter();
+            },
+            unmounted() {
+                console.log('unmounted');
+            }
+        })
+        app.mount('#app');
+    </script>
+</body>
+</html>

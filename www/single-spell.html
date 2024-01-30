@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperborea 3 Spell Description</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/spells.css">
+</head>
+
+<body>
+
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3.4.15/dist/vue.global.prod.js"></script>
+
+    <div id="app" align="center" class="container">
+        <div class="item"></div>
+        <div class="item">
+            <div class="spell-head">
+                <h2>{{ spell.spell_name }}</h2>
+            </div>
+            <div class="spell-attr">
+                <b>Level</b>: {{ spell.level }}<br>
+                <b>Range</b>: {{ spell.rng }}<br>
+                <b>Duration</b>: {{ spell.dur }}<br>
+                <b>Reversible</b>: {{ (spell.reversible) ? 'Yes' : 'No' }}<br>
+            </div>
+            <div class="spell-desc" v-html="spell.spell_desc"></div>
+            <div class="spell-page">pg. {{ spell.pp }}</div>
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    spell: {}
+                }
+            },
+            computed: {
+            },
+            methods: {
+                async getSpell() {
+                    const url = `https://rpg-tools.onrender.com/hyperborea3/spells/${this.spell_id}`;
+                    console.log(`url: ${url}`)
+                    let response = await fetch(url);
+                    if (response.ok) {
+                        let spell = await response.json();
+                        console.log(`spell: ${spell}`)
+                        this.spell = spell;
+                    } else {
+                        alert("HTTP-Error: " + response.status);
+                    }
+                }
+            },
+            created() {
+                let urlParams = new URLSearchParams(window.location.search);
+                console.log(urlParams.has('spell_id')); // true
+                console.log(urlParams.get('spell_id')); // "spell_id"
+                if (urlParams.has('spell_id')) {
+                    this.spell_id = urlParams.get('spell_id');
+                } else {
+                    this.spell_id = 1;
+                }
+                this.getSpell();
+            },
+            unmounted() {
+                console.log('unmounted')
+            }
+        })
+        app.mount('#app')
+    </script>
+
+</body>
+
+</html>
