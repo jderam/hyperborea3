@@ -1,0 +1,428 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'Suez One', 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+ul {
+    list-style-type: "☐";
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+input {
+    margin: 8px;
+    width: 100px;
+    text-align: right;
+}
+select {
+    margin: 8px;
+}
+button {
+    margin: 8px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 816px 1fr;
+}
+
+.center-col {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(30, auto);
+}
+
+.item {
+    padding: 2px;
+    margin: 4px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.banner {
+    grid-column: 1 / span 5;
+    font-family: 'Suez One', 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-align: left;
+    margin-bottom: 0;
+}
+.buttons {
+    grid-column: 6 / span 7;
+    grid-row: 1 / span 2;
+    font-size: small;
+    text-align: right;
+}
+
+.banner-sub {
+    font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+    font-size: small;
+    margin-top: 0;
+}
+
+.name {
+    grid-column: 1 / span 12;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+.race {
+    grid-column: 1 / span 3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.class {
+    grid-column: 4 / span 3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.level {
+    grid-column: 7 / span 3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.xp {
+    grid-column: 10 / span 3;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.alignment {
+    grid-column: 1 / span 3;
+    margin-top: 0;
+}
+.deity {
+    grid-column: 4 / span 3;
+    margin-top: 0;
+}
+.xp-bonus {
+    grid-column: 7 / span 3;
+    margin-top: 0;
+}
+.xp-to-next {
+    grid-column: 10 / span 3;
+    margin-top: 0;
+}
+
+.physique {
+    padding: 0px;
+    grid-column: 1 / span 6;
+    font-size: small;
+    margin-top: 0;
+}
+.physique table {
+    width: 100%;
+    table-layout: fixed;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    text-align: left;
+}
+
+.languages {
+    grid-column: 7 / span 3;
+    font-size: small;
+    margin-top: 0;
+}
+.secondary-skills {
+    grid-column: 10 / span 3;
+    font-size: small;
+    margin-top: 0;
+}
+
+.ability-score {
+    grid-column: 1 / span 6;
+    border-collapse: collapse;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0px;
+}
+.ability-score table {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    padding: 0;
+    text-align: center;
+}
+.ability-score td {
+    border: 1px solid #999;
+    padding: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+.ability-score-label {
+    font-family: 'Suez One', 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+}
+.ability-score-score {
+    font-size: x-large;
+}
+.ability-score-sub {
+    font-size: small;
+    text-align: left;
+}
+
+.saving-throws {
+    grid-column: 7 / span 3;
+    padding: 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.saving-throws table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    padding: 0;
+}
+.saving-throws td {
+    border: 1px solid #999;
+    font-size: large;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.saving-throws-header {
+    font-family: 'Suez One', 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.saving-throws-st {
+    font-size: x-large;
+    text-align: center;
+}
+.saving-throws-sub {
+    font-size: small;
+}
+
+.thief-skills {
+    border: 1px solid #999;
+    border-radius: 5px;
+    grid-column: 10 / span 3;
+    font-size: small;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.thief-skills table {
+    width: 100%;
+    border-collapse: collapse;
+    caption-side: top;
+}
+.thief-skills th td {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.single-stat {
+    font-size: xx-large;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.single-stat-label {
+    font-size: small;
+}
+.ac {
+    grid-column: 1 / span 1;
+}
+.ac-items {
+    grid-column: 2 / span 2;
+    font-size: small;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.dr {
+    grid-column: 4 / span 1;
+}
+.mv {
+    grid-column: 5 / span 1;
+}
+.fa {
+    grid-column: 6 / span 1;
+}
+.ca {
+    grid-column: 7 / span 1;
+}
+.ta {
+    grid-column: 8 / span 1;
+}
+.hd {
+    grid-column: 9 / span 2;
+}
+.hp {
+    grid-column: 11 / span 1;
+}
+.chp {
+    grid-column: 12 / span 1;
+}
+
+.hit-dice {
+    grid-column: 7 / span 3;
+    font-size: large;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.hit-dice table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: center;
+}
+.hit-dice td {
+    border: 1px solid #999;
+    padding-left: 4px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.hit-dice-header {
+    font-family: 'Suez One', 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+.weapons {
+    grid-column: 1 / span 12;
+    font-size: small;
+}
+.weapons table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: center;
+
+}
+.weapons thead {
+    font-weight: bold;
+}
+.weapons tr td {
+    border: 1px solid #999;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    height: 15px;
+}
+
+.class-abilities-spells-turning {
+    grid-column: 1 / span 9;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 0;
+    margin: 0;
+}
+
+.class-abilities {
+    grid-column: 1 / span 9;
+    font-size: small;
+}
+.class-abilities table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: left;
+}
+.class-abilities td {
+    border: 1px solid #999;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+}
+
+.spells-lvl-1 {
+    grid-column: 1 / span 3;
+    font-size: small;
+}
+.spells-lvl-2 {
+    grid-column: 4 / span 3;
+    font-size: small;
+}
+.spells-lvl-3 {
+    grid-column: 7 / span 3;
+    font-size: small;
+}
+.spells-lvl-4 {
+    grid-column: 1 / span 3;
+    font-size: small;
+}
+.spells-lvl-5 {
+    grid-column: 4 / span 3;
+    font-size: small;
+}
+.spells-lvl-6 {
+    grid-column: 7 / span 3;
+    font-size: small;
+}
+
+.turning-matrix {
+    grid-column: 1 / span 9;
+    grid-row: span 4;
+    font-size: small;
+}
+.turning-matrix table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: center;
+}
+.turning-matrix td {
+    border: 1px solid #999;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.equipment {
+    grid-column: 10 / span 3;
+    grid-row: span 4;
+    font-size: small;
+}
+.equipment table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: left;
+}
+.equipment td {
+    border: 1px solid #999;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+}
