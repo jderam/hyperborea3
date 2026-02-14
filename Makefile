@@ -5,6 +5,8 @@ OS := $(shell uname)
 
 .PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check install create_venv rebuild_venv run_test_uvicorn
 
+PYTHON_VERSION=3.14
+
 build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
 
 build_wheel: ## build the wheel for this package
@@ -50,10 +52,10 @@ mypy_check: ## Run mypy type checker
 
 install: ## install/reinstall all packages in the environment
 	uv sync --all-extras
-	pre-commit install
+	uv run pre-commit install
 
 create_venv: ## create virtualenv for this project
-	uv venv --python=3.14
+	uv venv --python=${PYTHON_VERSION}
 
 rebuild_venv: create_venv install ## rebuild project virtualenv
 
