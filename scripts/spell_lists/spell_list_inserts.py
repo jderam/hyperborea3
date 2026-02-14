@@ -57,14 +57,12 @@ def col_to_spell_lvl(col_idx: int, lvl_range: str) -> int:
 
 for line in lines:
     line = line.replace("\n", "")
-    line = line.split(")")
-    for col_idx in range(len(line) - 1):
+    parts = line.split(")")
+    for col_idx in range(len(parts) - 1):
         spell_level = col_to_spell_lvl(col_idx, lvl_range)
-        assert spell_level in range(
-            1, 7
-        ), f"Invalid calculated spell_level: {spell_level}"
+        assert spell_level in range(1, 7), f"Invalid calculated spell_level: {spell_level}"
 
-        spell_info = line[col_idx]
+        spell_info = parts[col_idx]
 
         spell_name = spell_info.split("(")[0].strip()
 
