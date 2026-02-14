@@ -13,7 +13,7 @@ build_wheel: ## build the wheel for this package
 	uv run python -m build
 
 clean: ## clean out dist/ directory
-	rm -r dist/*
+	rm -rf dist/*
 
 deploy_test: ## run all checks, build dist files, upload to test pypi
 	uv run ruff check .
@@ -33,11 +33,8 @@ deploy_prod: ## run all checks, build dist files, upload to prod pypi
 	uv run twine check dist/*
 	uv run twine upload --repository hyperborea3prod dist/*
 
-pip_install: ## pip install this package
+test_wheel_install: ## pip install this package wheel
 	uv pip install dist/hyperborea3-*-py3-none-any.whl
-
-pip_install_dev: ## pip install in editable mode
-	uv pip install -e .
 
 test: ## Run pytest tests
 	uv run pytest --cov-report term-missing tests/
@@ -57,10 +54,13 @@ install: ## install/reinstall all packages in the environment
 create_venv: ## create virtualenv for this project
 	uv venv --python=${PYTHON_VERSION}
 
-rebuild_venv: create_venv install ## rebuild project virtualenv
+rebuild_venv: ## rebuild project virtualenv from scratch
+	rm -rf .venv
+	uv sync --python=${PYTHON_VERSION} --all-extras
+	uv run pre-commit install
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
-	uvicorn main:app --reload
+	uv run uvicorn main:app --reload
 
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
