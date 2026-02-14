@@ -16,7 +16,8 @@ OS := $(shell uname)
 	install \
 	create_venv \
 	run_test_uvicorn \
-	run_test_docker
+	run_test_docker \
+	install_uv
 
 PYTHON_VERSION=3.14
 
@@ -74,6 +75,9 @@ run_test_uvicorn: ## Run fastapi/uvicorn test server
 run_test_docker: ## Run test server in docker container
 	docker build -t hyperborea3 .
 	docker run -p 8000:8000 hyperborea3
+
+install_uv: ## Install or update uv
+	curl -LsSf https://astral.sh/uv/install.sh | sh
 
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
