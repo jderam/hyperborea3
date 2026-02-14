@@ -41,6 +41,7 @@ test = [
     "mypy",
 ]
 dev = [
+    "build",
     "fastapi",
     "ipython",
     "pre-commit",
