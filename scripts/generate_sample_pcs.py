@@ -10,8 +10,7 @@ def generate_sample_pcs():
     print(f"{root_dir=}")
     for class_id, class_name in VALID_CLASS_ID_MAP.items():
         xp = 0
-        xp_to_next = 1
-        while xp_to_next:
+        while True:
             level = get_level(class_id, xp)
             print(f"Generating {class_name=} {level=}")
             xp_to_next = get_xp_to_next(class_id, level)
@@ -22,6 +21,8 @@ def generate_sample_pcs():
             print(f"writing file {out_path=}")
             with open(out_path, "w") as f:
                 f.write(json.dumps(pc_json, indent=4))
+            if xp_to_next is None:
+                break
             xp = xp_to_next
 
 
