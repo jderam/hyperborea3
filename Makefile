@@ -3,11 +3,25 @@ SHELL := bash
 .DEFAULT_GOAL := help
 OS := $(shell uname)
 
-.PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check install create_venv rebuild_venv run_test_uvicorn
+.PHONY: \
+	help \
+	activate \
+	build_wheel \
+	clean \
+	deploy_test \
+	deploy_prod \
+	test \
+	check \
+	mypy_check \
+	install \
+	create_venv \
+	run_test_uvicorn
 
 PYTHON_VERSION=3.14
 
-build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
+activate: ## Show hot to activate/deactivate the virtualenv for this project
+	@echo "To activate the virtualenv, run: source .venv/bin/activate"
+	@echo "To deactivate the virtualenv, run: deactivate"
 
 build_wheel: ## build the wheel for this package
 	uv run python -m build
@@ -18,7 +32,7 @@ clean: ## clean out dist/ directory
 deploy_test: ## run all checks, build dist files, upload to test pypi
 	uv run ruff check .
 	uv run ruff format --check .
-	uv run mypy hyperborea3 tests
+	uv run mypy hyperborea3 scripts tests
 	rm -f dist/*
 	uv run python -m build
 	uv run twine check dist/*
@@ -27,14 +41,11 @@ deploy_test: ## run all checks, build dist files, upload to test pypi
 deploy_prod: ## run all checks, build dist files, upload to prod pypi
 	uv run ruff check .
 	uv run ruff format --check .
-	uv run mypy hyperborea3 tests
+	uv run mypy hyperborea3 scripts tests
 	rm -f dist/*
 	uv run python -m build
 	uv run twine check dist/*
 	uv run twine upload --repository hyperborea3prod dist/*
-
-test_wheel_install: ## pip install this package wheel
-	uv pip install dist/hyperborea3-*-py3-none-any.whl
 
 test: ## Run pytest tests
 	uv run pytest --cov-report term-missing tests/
@@ -51,10 +62,7 @@ install: ## install/reinstall all packages in the environment
 	uv sync --all-extras
 	uv run pre-commit install
 
-create_venv: ## create virtualenv for this project
-	uv venv --python=${PYTHON_VERSION}
-
-rebuild_venv: ## rebuild project virtualenv from scratch
+create_venv: ## create virtualenv for this project from scratch
 	rm -rf .venv
 	uv sync --python=${PYTHON_VERSION} --all-extras
 	uv run pre-commit install
