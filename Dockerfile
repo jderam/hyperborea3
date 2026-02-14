@@ -1,11 +1,8 @@
-FROM python:3.10-slim-bullseye
+FROM ghcr.io/astral-sh/uv:debian-slim
 
 WORKDIR /app
 COPY . .
 
-RUN pip install -U pip
-RUN pip install -r requirements_dev.txt
-RUN python -m build
-RUN pip install dist/hyperborea3-*-py3-none-any.whl
+RUN uv sync --python=3.14 --extra=dev
 
-CMD ["uvicorn", "main:app", "--workers", "2", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uv", "run", "uvicorn", "main:app", "--workers", "2", "--host", "0.0.0.0", "--port", "8000"]
