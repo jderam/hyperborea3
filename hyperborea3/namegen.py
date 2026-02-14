@@ -127,14 +127,10 @@ def generate_atlantean_name(gender: str) -> str:
     }
     first_name_table = table_lookup[gender]
     first_name_roll = roll_dice(1, die_size[gender])
-    first_name = execute_query_one(
-        get_name_sql(first_name_table), (first_name_roll,)
-    ).get("name")
+    first_name = execute_query_one(get_name_sql(first_name_table), (first_name_roll,)).get("name")
     clan_name_table = table_lookup["Clan"]
     clan_name_roll = die_size["Clan"]
-    clan_name = execute_query_one(get_name_sql(clan_name_table), (clan_name_roll,)).get(
-        "name"
-    )
+    clan_name = execute_query_one(get_name_sql(clan_name_table), (clan_name_roll,)).get("name")
     return f"{first_name} {clan_name}"
 
 
@@ -436,9 +432,7 @@ def generate_pictish_name(gender: str) -> str:
             elif patronymic_base == "Segovax":
                 patronymic = "Segovegis"
             else:
-                raise ValueError(
-                    f"No patronymic modification rules for '{patronymic_base}'."
-                )
+                raise ValueError(f"No patronymic modification rules for '{patronymic_base}'.")
             name = f"{first_name} nepos {patronymic}"
         else:
             name = first_name
@@ -463,9 +457,7 @@ def generate_roman_name(gender: str) -> str:
         WHERE id = ?
     """
     praenomen_roll = roll_dice(1, 25)
-    praenomen = execute_query_one(praenomen_sql, (praenomen_roll,))[
-        f"{gender.lower()}_name"
-    ]
+    praenomen = execute_query_one(praenomen_sql, (praenomen_roll,))[f"{gender.lower()}_name"]
     nomen_sql = f"""
         SELECT {gender.lower()}_name
         FROM t189_roman_family_names
@@ -479,9 +471,7 @@ def generate_roman_name(gender: str) -> str:
         WHERE id = ?
     """
     cognomen_roll = roll_dice(1, 50)
-    cognomen = execute_query_one(cognomen_sql, (cognomen_roll,))[
-        f"{gender.lower()}_name"
-    ]
+    cognomen = execute_query_one(cognomen_sql, (cognomen_roll,))[f"{gender.lower()}_name"]
     name = f"{praenomen} {nomen} {cognomen}"
     return name
 
@@ -547,9 +537,7 @@ def generate_viking_name(gender: str) -> str:
             else:
                 patronymic_mod = patronymic_base
         else:
-            raise ValueError(
-                f"Can't map patronymic modification for '{patronymic_base}'"
-            )
+            raise ValueError(f"Can't map patronymic modification for '{patronymic_base}'")
         patronymic_suffix = "dóttir" if gender == "Female" else "son"
         patronymic = f"{patronymic_mod}{patronymic_suffix}"
         full_name = f"{first_name} {patronymic}"

@@ -3,77 +3,81 @@ SHELL := bash
 .DEFAULT_GOAL := help
 OS := $(shell uname)
 
-.PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check compile_req install create_venv rebuild_venv run_test_uvicorn
+.PHONY: \
+	help \
+	activate \
+	build_wheel \
+	clean \
+	deploy_test \
+	deploy_prod \
+	test \
+	check \
+	mypy_check \
+	install \
+	create_venv \
+	run_test_uvicorn \
+	run_test_docker \
+	install_uv
 
-PYENV_VERSION=3.11.2
-VENV_NAME=hyperborea3-venv
+PYTHON_VERSION=3.14
 
-build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
+activate: ## Show how to activate/deactivate the virtualenv for this project
+	@echo "To activate the virtualenv, run: source .venv/bin/activate"
+	@echo "To deactivate the virtualenv, run: deactivate"
 
 build_wheel: ## build the wheel for this package
-	python -m build
+	uv run python -m build
 
 clean: ## clean out dist/ directory
-	rm -r dist/*
+	rm -rf dist/*
 
 deploy_test: ## run all checks, build dist files, upload to test pypi
-	black . --check
-	flake8
-	mypy hyperborea3 tests
+	uv run ruff check .
+	uv run ruff format --check .
+	uv run mypy hyperborea3 scripts tests
 	rm -f dist/*
-	python -m build
-	twine check dist/*
-	twine upload --repository hyperborea3test dist/*
+	uv run python -m build
+	uv run twine check dist/*
+	uv run twine upload --repository hyperborea3test dist/*
 
 deploy_prod: ## run all checks, build dist files, upload to prod pypi
-	black . --check
-	flake8
-	mypy hyperborea3 tests
+	uv run ruff check .
+	uv run ruff format --check .
+	uv run mypy hyperborea3 scripts tests
 	rm -f dist/*
-	python -m build
-	twine check dist/*
-	twine upload --repository hyperborea3prod dist/*
-
-pip_install: ## pip install this package
-	python -m pip install dist/hyperborea3-*-py3-none-any.whl --force-reinstall
-
-pip_install_dev: ## pip install in editable mode
-	python -m pip install -e . --force-reinstall
+	uv run python -m build
+	uv run twine check dist/*
+	uv run twine upload --repository hyperborea3prod dist/*
 
 test: ## Run pytest tests
-	python -m pytest --cov-report term-missing tests/
+	uv run pytest --cov-report term-missing tests/
 
 check: ## Run all linting/formatting checks
-	black . --check
-	flake8
-	mypy hyperborea3 tests
+	uv run ruff check .
+	uv run ruff format --check .
+	uv run mypy hyperborea3 scripts tests
 
 mypy_check: ## Run mypy type checker
-	mypy hyperborea3 tests
-
-compile_req: ## Generate new requirements files
-	pip-compile --resolver=backtracking --upgrade -o requirements.txt pyproject.toml
-	pip-compile --resolver=backtracking --upgrade --extra dev -o requirements_dev.txt pyproject.toml
-	pip-compile --resolver=backtracking --upgrade --extra test -o requirements_test.txt pyproject.toml
+	uv run mypy hyperborea3 scripts tests
 
 install: ## install/reinstall all packages in the environment
-	python -m pip install -U pip pip-tools
-	pip-sync requirements*.txt
-	python -m pip install -e . --force-reinstall
-	pyenv rehash
-	pre-commit install
+	uv sync --all-extras
+	uv run pre-commit install
 
-create_venv: ## create virtualenv for this project
-	pyenv install ${PYENV_VERSION} --skip-existing
-	pyenv rehash
-	pyenv virtualenv-delete --force ${VENV_NAME}
-	pyenv virtualenv ${PYENV_VERSION} ${VENV_NAME}
-	pyenv local ${VENV_NAME}
-
-rebuild_venv: create_venv install ## rebuild project virtualenv
+create_venv: ## create virtualenv for this project from scratch
+	rm -rf .venv
+	uv sync --python=${PYTHON_VERSION} --all-extras
+	uv run pre-commit install
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
-	uvicorn main:app --reload
+	uv run uvicorn main:app --reload
+
+run_test_docker: ## Run test server in docker container
+	docker build -t hyperborea3 .
+	docker run -p 8000:8000 hyperborea3
+
+install_uv: ## Install or update uv
+	curl -LsSf https://astral.sh/uv/install.sh | sh
 
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

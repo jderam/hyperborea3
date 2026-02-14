@@ -19,32 +19,31 @@ keywords = [
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dynamic = [
     "version",
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 dependencies = []
 
 [project.optional-dependencies]
 test = [
-    "black",
-    "flake8",
-    "tox",
+    "ruff",
     "pytest",
     "pytest-cov",
     "pytest-repeat",
     "mypy",
 ]
 dev = [
+    "build",
     "fastapi",
     "ipython",
-    "pip-tools",
     "pre-commit",
     "twine",
     "uvicorn",
@@ -57,9 +56,12 @@ version = {attr = "hyperborea3.__version__"}
 include = ["hyperborea3"]
 exclude = ["tests"]
 
-[tool.black]
-line-length = 88
-target-version = ["py39", "py310", "py311"]
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
 
 [tool.pytest.ini_options]
 addopts = "--cov=hyperborea3"

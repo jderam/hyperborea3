@@ -434,22 +434,15 @@ def test_starting_weapons_missile():
 
 def test_unskilled_penalty():
     for class_id in VALID_CLASS_IDS:
-        assert (
-            get_unskilled_weapon_penalty(class_id)
-            == VALID_UNSKILLED_PENALTIES[class_id]
-        )
+        assert get_unskilled_weapon_penalty(class_id) == VALID_UNSKILLED_PENALTIES[class_id]
 
 
 def test_get_favoured_weapons():
     for class_id in VALID_CLASS_IDS:
         print(f"{class_id=}")
         favoured_weapons = get_favoured_weapons(class_id)
-        actual_melee_wpn_ids = [
-            x["weapon_id"] for x in favoured_weapons["weapons_melee"]
-        ]
-        actual_missile_wpn_ids = [
-            x["weapon_id"] for x in favoured_weapons["weapons_missile"]
-        ]
+        actual_melee_wpn_ids = [x["weapon_id"] for x in favoured_weapons["weapons_melee"]]
+        actual_missile_wpn_ids = [x["weapon_id"] for x in favoured_weapons["weapons_missile"]]
         expected = VALID_FAVOURED_WEAPONS[class_id]
         assert favoured_weapons["any"] == expected["any"]
         assert actual_melee_wpn_ids == expected["melee_wpns"]
@@ -491,9 +484,7 @@ def test_calculate_ac():
             # all AC values for starting characters should be 1 to 11 (level 1)
             # This may need updating after we include higher-level PCs,
             #   depending on if they have any abilities that improve AC
-            assert ac in range(
-                1, 12
-            ), f"""invalid ac:
+            assert ac in range(1, 12), f"""invalid ac:
                 class_id       = {class_id}
                 armour_ac      = {armour["ac"]}
                 shield_def_mod = {shield_def_mod}
@@ -537,9 +528,7 @@ def test_get_alignment():
         else:
             raise ValueError(f"Unexpected class_id: {class_id}")
 
-        assert (
-            alignment["short_name"] in allowed_alignments
-        ), f"""
+        assert alignment["short_name"] in allowed_alignments, f"""
             Unexpected alignment '{alignment}' not in
             allowed values {allowed_alignments}
         """
@@ -595,9 +584,7 @@ def test_get_thief_skills():
         30,
     ]:
         thief_skills = get_thief_skills(class_id, 1, 10, 10, 10)
-        assert (
-            thief_skills is None
-        ), f"class_id: {class_id} is not supposed to have thief skills"
+        assert thief_skills is None, f"class_id: {class_id} is not supposed to have thief skills"
 
     # level 1 thief with 10's
     expected_thief_skills = [
@@ -803,13 +790,9 @@ def test_get_thief_skills():
     for class_id in [4, 5, 6, 8, 10, 18, 22, 23, 24, 25, 26, 31, 32, 33]:
         thief_skills = get_thief_skills(class_id, 1, 10, 10, 10)
         if thief_skills:
-            assert [
-                x["thief_skill"] for x in thief_skills
-            ] == VALID_CLASS_THIEF_ABILITIES[class_id]
+            assert [x["thief_skill"] for x in thief_skills] == VALID_CLASS_THIEF_ABILITIES[class_id]
         else:
-            raise ValueError(
-                "thief_skills empty for class that is supposed to have them"
-            )
+            raise ValueError("thief_skills empty for class that is supposed to have them")
 
     # invalid class_id should raise exception
     with pytest.raises(ValueError):

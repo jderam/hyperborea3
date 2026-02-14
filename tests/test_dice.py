@@ -34,21 +34,13 @@ def test_reroll_exception():
 def test_ndn_drop_lowest():
     sample = [roll_ndn_drop_lowest(4, 6, 1) for _ in range(10000)]
     average = sum(sample) / len(sample)
-    assert (
-        (AVG_4D6_DROP_LOWEST - TOLERANCE)
-        <= average
-        <= (AVG_4D6_DROP_LOWEST + TOLERANCE)
-    )
+    assert (AVG_4D6_DROP_LOWEST - TOLERANCE) <= average <= (AVG_4D6_DROP_LOWEST + TOLERANCE)
 
 
 def test_ndn_drop_highest():
     sample = [roll_ndn_drop_highest(4, 6, 1) for _ in range(10000)]
     average = sum(sample) / len(sample)
-    assert (
-        (AVG_4D6_DROP_HIGHEST - TOLERANCE)
-        <= average
-        <= (AVG_4D6_DROP_HIGHEST + TOLERANCE)
-    )
+    assert (AVG_4D6_DROP_HIGHEST - TOLERANCE) <= average <= (AVG_4D6_DROP_HIGHEST + TOLERANCE)
 
 
 @pytest.mark.repeat(1000)

@@ -9,7 +9,7 @@ settings.json
 build/
 dist/
 local/
+.venv
 .coverage
 .DS_Store
-.tox
 app.log

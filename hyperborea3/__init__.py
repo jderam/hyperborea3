@@ -1,7 +1,7 @@
 import logging
 import os
 
-__version__ = "0.6.1"
+__version__ = "0.7.0"
 
 
 def get_debug() -> bool:
@@ -14,9 +14,7 @@ def get_debug() -> bool:
 def logger_setup() -> logging.Logger:
     debug = get_debug()
     logger = logging.getLogger(__name__)
-    formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    )
+    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
     logger_level = logging.DEBUG if debug else logging.WARNING
 
     logger.setLevel(logger_level)
