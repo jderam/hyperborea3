@@ -42,10 +42,10 @@ test: ## Run pytest tests
 check: ## Run all linting/formatting checks
 	uv run ruff check .
 	uv run ruff format --check .
-	uv run mypy hyperborea3 tests
+	uv run mypy hyperborea3 scripts tests
 
 mypy_check: ## Run mypy type checker
-	uv run mypy hyperborea3 tests
+	uv run mypy hyperborea3 scripts tests
 
 install: ## install/reinstall all packages in the environment
 	uv sync --all-extras
