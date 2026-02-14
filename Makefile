@@ -15,11 +15,12 @@ OS := $(shell uname)
 	mypy_check \
 	install \
 	create_venv \
-	run_test_uvicorn
+	run_test_uvicorn \
+	run_test_docker
 
 PYTHON_VERSION=3.14
 
-activate: ## Show hot to activate/deactivate the virtualenv for this project
+activate: ## Show how to activate/deactivate the virtualenv for this project
 	@echo "To activate the virtualenv, run: source .venv/bin/activate"
 	@echo "To deactivate the virtualenv, run: deactivate"
 
