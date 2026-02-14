@@ -70,5 +70,9 @@ create_venv: ## create virtualenv for this project from scratch
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uv run uvicorn main:app --reload
 
+run_test_docker: ## Run test server in docker container
+	docker build -t hyperborea3 .
+	docker run -p 8000:8000 hyperborea3
+
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
