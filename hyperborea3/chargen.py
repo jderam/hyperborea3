@@ -136,9 +136,7 @@ def roll_stats(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
             until you achieve the requisite minimum.
             """
             if class_id == 0:
-                raise ValueError(
-                    "If rolling with Method VI, you must select a specific class"
-                )
+                raise ValueError("If rolling with Method VI, you must select a specific class")
 
             class_req = get_class_requirements(class_id)
             for stat in attr.keys():
@@ -184,9 +182,7 @@ def get_attr(method: int = 3, class_id: int = 0) -> Dict[str, Dict[str, int]]:
     return attr
 
 
-def get_qualifying_classes(
-    attr: Dict[str, Dict[str, int]], subclasses: int
-) -> List[int]:
+def get_qualifying_classes(attr: Dict[str, Dict[str, int]], subclasses: int) -> List[int]:
     """Return list of class_ids that can be used given the attr."""
     # principal classes, subclasses, and sub-subclasses
     if subclasses == 2:
@@ -213,17 +209,9 @@ def get_qualifying_classes(
         raise ValueError(f"Unrecognized value for subclasses: {subclasses}")
     class_req = execute_query_all(sql)
     not_met = list(
-        set(
-            [
-                x["class_id"]
-                for x in class_req
-                if x["min_score"] > attr[x["attr"]]["score"]
-            ]
-        )
+        set([x["class_id"] for x in class_req if x["min_score"] > attr[x["attr"]]["score"]])
     )
-    qual_classes = list(
-        set([x["class_id"] for x in class_req if x["class_id"] not in not_met])
-    )
+    qual_classes = list(set([x["class_id"] for x in class_req if x["class_id"] not in not_met]))
     assert len(qual_classes) > 0, "There are no qualifying classes to choose from"
     return qual_classes
 
@@ -350,9 +338,7 @@ def get_alignment(class_id: int) -> Dict[str, Any]:
 
 def get_deity(short_alignment: str) -> Dict[str, Any]:
     """Randomly select a deity based on alignment."""
-    assert (
-        short_alignment in VALID_ALIGMENTS_SHORT
-    ), f"Invalid alignment: {short_alignment}"
+    assert short_alignment in VALID_ALIGMENTS_SHORT, f"Invalid alignment: {short_alignment}"
     if short_alignment[0] == "C":
         lkp_align = "Chaotic"
     elif short_alignment[0] == "L":
@@ -1033,7 +1019,7 @@ def get_thief_skills(
     # get thief skill scores
     for sk in skills_list:
         thief_abilities_sql = f"""
-            SELECT {sk['thief_skill']}
+            SELECT {sk["thief_skill"]}
             FROM t016_thief_abilities
             WHERE level = ?;
         """
@@ -1186,9 +1172,7 @@ def get_spells(class_id: int, level: int, ca: int) -> Optional[Dict[str, Any]]:
                 # runes having a 1% greater chance of getting selected.
                 if class_id == 20:
                     d100_roll = roll_dice(1, 99)
-                    random_spell = get_random_spell(
-                        school, spell_level, d100_roll=d100_roll
-                    )
+                    random_spell = get_random_spell(school, spell_level, d100_roll=d100_roll)
                 else:
                     random_spell = get_random_spell(school, spell_level)
                 already_known = [x["spell_id"] for x in spells[school]["spells_known"]]

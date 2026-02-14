@@ -210,10 +210,7 @@ class PlayerCharacter:
             elif self.class_id == 16:
                 school = "wch"
             else:
-                ValueError(
-                    "Only expecting Magician (2) or Witch (16). "
-                    f"Got {self.class_id=}"
-                )
+                ValueError(f"Only expecting Magician (2) or Witch (16). Got {self.class_id=}")
             if self.spells is not None:
                 for spd_lvl in self.spells[school]["spells_per_day"].keys():
                     if self.spells[school]["spells_per_day"][spd_lvl] > 0:
@@ -303,9 +300,7 @@ class PlayerCharacter:
                     }
                 )
             self.class_abilities = [
-                x
-                for x in self.class_abilities
-                if x["ability_title"] != "Specialized Faith"
+                x for x in self.class_abilities if x["ability_title"] != "Specialized Faith"
             ]
 
         def runegraving(level: int):

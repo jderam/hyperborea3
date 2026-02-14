@@ -378,9 +378,7 @@ VALID_FAVOURED_WEAPONS = {
     18: {
         "any": False,
         "melee_wpns": [
-            x + 100
-            for x in range(1, 44)
-            if x not in [103, 116, 121, 125, 129, 133, 139]
+            x + 100 for x in range(1, 44) if x not in [103, 116, 121, 125, 129, 133, 139]
         ],
         "missile_wpns": [x + 200 for x in range(1, 16)],
         "unskilled_penalty": -2,

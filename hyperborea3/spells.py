@@ -72,9 +72,7 @@ def get_spell(spell_id: int) -> Dict[str, Any]:
     schools = execute_query_all(school_sql, (spell_id,))
     spell_data.update(
         {
-            "level": (", ").join(
-                [f"{x['school']} {x['spell_level']}" for x in schools]
-            ),
+            "level": (", ").join([f"{x['school']} {x['spell_level']}" for x in schools]),
             "reversible": bool(spell_data["reversible"]),
         }
     )
