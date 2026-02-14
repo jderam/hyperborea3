@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2026-02-13
+### Changed
+- use `uv` in place of `pyenv` and `pip-tools`
+- use `ruff` in place of `black` and `flake8`
+- update dependencies
+- update pre-commit hooks
+- update github actions workflow
+
 ## [0.6.1] - 2023-02-18
 ### Added
 - Added class ability descriptions
