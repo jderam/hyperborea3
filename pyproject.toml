@@ -56,8 +56,8 @@ include = ["hyperborea3"]
 exclude = ["tests"]
 
 [tool.ruff]
-line-length = 88
-target-version = "py311"
+line-length = 100
+target-version = "py314"
 
 [tool.ruff.lint]
 select = ["E", "F", "W"]
