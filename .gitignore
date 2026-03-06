@@ -8,6 +8,7 @@ settings.json
 *.pyc
 build/
 dist/
+game_files/
 local/
 .venv
 .coverage
