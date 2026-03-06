@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=65.4.1", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "hyperborea3"
@@ -41,20 +41,19 @@ test = [
     "mypy",
 ]
 dev = [
-    "build",
     "fastapi",
     "ipython",
     "pre-commit",
-    "twine",
+    "uv-publish",
     "uvicorn",
 ]
 
-[tool.setuptools.dynamic]
-version = {attr = "hyperborea3.__version__"}
+[tool.hatch.version]
+path = "hyperborea3/__init__.py"
 
-[tool.setuptools.packages.find]
-include = ["hyperborea3"]
-exclude = ["tests"]
+[tool.hatch.build.targets.wheel]
+packages = ["hyperborea3"]
+exclude = ["hyperborea3/sample_data"]
 
 [tool.ruff]
 line-length = 100

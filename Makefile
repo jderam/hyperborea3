@@ -15,6 +15,7 @@ OS := $(shell uname)
 	mypy_check \
 	install \
 	create_venv \
+	upgrade_deps \
 	run_test_uvicorn \
 	run_test_docker \
 	install_uv
@@ -26,28 +27,18 @@ activate: ## Show how to activate/deactivate the virtualenv for this project
 	@echo "To deactivate the virtualenv, run: deactivate"
 
 build_wheel: ## build the wheel for this package
-	uv run python -m build
+	uv build
 
 clean: ## clean out dist/ directory
 	rm -rf dist/*
 
 deploy_test: ## run all checks, build dist files, upload to test pypi
-	uv run ruff check .
-	uv run ruff format --check .
-	uv run mypy hyperborea3 scripts tests
-	rm -f dist/*
-	uv run python -m build
-	uv run twine check dist/*
-	uv run twine upload --repository hyperborea3test dist/*
+	$(MAKE) check
+	uv build --clear
+	uv run uv-publish --repository hyperborea3test
 
 deploy_prod: ## run all checks, build dist files, upload to prod pypi
-	uv run ruff check .
-	uv run ruff format --check .
-	uv run mypy hyperborea3 scripts tests
-	rm -f dist/*
-	uv run python -m build
-	uv run twine check dist/*
-	uv run twine upload --repository hyperborea3prod dist/*
+	@echo "prod deployment is automatic on merge to main branch via GitHub Actions workflow (publish.yml)."
 
 test: ## Run pytest tests
 	uv run pytest --cov-report term-missing tests/
@@ -61,13 +52,16 @@ mypy_check: ## Run mypy type checker
 	uv run mypy hyperborea3 scripts tests
 
 install: ## install/reinstall all packages in the environment
-	uv sync --all-extras
+	uv sync --python=${PYTHON_VERSION} --all-extras --frozen
 	uv run pre-commit install
 
 create_venv: ## create virtualenv for this project from scratch
 	rm -rf .venv
-	uv sync --python=${PYTHON_VERSION} --all-extras
+	uv sync --python=${PYTHON_VERSION} --all-extras --frozen
 	uv run pre-commit install
+
+upgrade_deps: ## upgrade all dependencies to latest versions and update uv.lock
+	uv sync --python=${PYTHON_VERSION} --all-extras --upgrade
 
 run_test_uvicorn: ## Run fastapi/uvicorn test server
 	uv run uvicorn main:app --reload
