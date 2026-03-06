@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.2] - 2026-03-06
+### Added
+- Changelog version check in CI (`tests.yml`) — PRs now fail if `changelog.md` has no entry matching the current version
+- Automatic git tagging in publish workflow (`publish.yml`) — a `v{version}` tag is pushed after each successful PyPI publish
+
+## [0.7.1] - 2026-03-06
+### Changed
+- Migrated build backend from `setuptools` to `hatchling`
+- Replaced `twine` with `uv-publish` for publishing to PyPI
+- `build_wheel` now uses `uv build`
+- `deploy_test` now uses `uv run uv-publish` to upload to Test PyPI
+- `deploy_prod` is now handled automatically via GitHub Actions on merge to main
+- `make install` / `make create_venv` / CI / Dockerfile all use `--frozen` for reproducible installs
+### Added
+- `.github/workflows/publish.yml` — automatically publishes to PyPI on merge to main via OIDC trusted publishing
+- `make upgrade_deps` — upgrades all dependencies and updates `uv.lock`
+### Removed
+- `MANIFEST.in` — unused by hatchling
+- `.flake8` — superseded by ruff
+
 ## [0.7.0] - 2026-02-13
 ### Changed
 - use `uv` in place of `pyenv` and `pip-tools`
