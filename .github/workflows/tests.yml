@@ -13,6 +13,20 @@ jobs:
           python-version: "3.14"
       - name: Install dependencies
         run: uv sync --extra=test --frozen
+      - name: Version Check
+        run: |
+          git fetch origin main --depth=1
+          CURRENT=$(grep -m1 '__version__' hyperborea3/__init__.py | cut -d'"' -f2)
+          MAIN=$(git show origin/main:hyperborea3/__init__.py | grep -m1 '__version__' | cut -d'"' -f2)
+          python3 -c "
+          current = tuple(int(x) for x in '$CURRENT'.split('.'))
+          main = tuple(int(x) for x in '$MAIN'.split('.'))
+          assert current > main, f'Version $CURRENT must be higher than main ($MAIN)'
+          "
+      - name: Changelog Check
+        run: |
+          VERSION=$(grep -m1 '__version__' hyperborea3/__init__.py | cut -d'"' -f2)
+          grep -q "## \[$VERSION\]" changelog.md || (echo "No changelog entry for v$VERSION" && exit 1)
       - name: Lint Check
         run: uv run ruff check .
       - name: Format Check
